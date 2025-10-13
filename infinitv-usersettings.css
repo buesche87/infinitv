@@ -1,0 +1,97 @@
+/*  
+  ==================================
+  User settings
+  ==================================
+
+  infinitv - HTPC Theme for Jellyin
+  Based on: Ultrachromic/login/login_frame.css
+
+*/
+
+/* Improve some menu alignments */
+.navMenuOptionText {
+  margin-top: 0;
+}
+.formDialogHeaderTitle {
+  margin-left: 1em;
+}
+.formDialogContent {
+  margin-bottom: 6.2em;
+}
+.dialogContentInner {
+  padding: .5em 1em 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.listItem-indexnumberleft {
+  margin: 1em;
+}
+
+/* Menu Items */
+.listItem {
+  padding-left: 1em;
+}
+
+/* Menu Items: Hover & Focus */
+/* TODO: FOCUS ok? */
+.listItem:hover,
+.listItem:Focus {
+  transition: 0.2s;
+  background: none !important;
+}
+
+/* Menu Items: Focus & Hover */
+.listItem-button:focus,
+.listItem-button:hover,
+.listItem-border.emby-button:focus,
+.listItem-border.emby-button:hover {
+  background: rgba(var(--accent),0.8) !important;
+}
+
+/* Remove background on some icons */
+.listItemIcon {
+  background: #0000 !important;
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Remove divider on list items */
+.listItem-border {
+  border-color: #0000 !important;
+  border-radius: var(--rounding-system) !important;
+}
+
+/* user settings button */
+div[data-role="controlgroup"] a.ui-btn-active {
+  background: var(--dark40) !important;
+  color: white !important;
+}
+
+/* List items */
+.listItemButton,
+.listItemImage,
+.listItemImageButton,
+.listItem:hover {
+  border-radius: var(--rounding-system) !important;
+}
+
+/*
+| Buttons
+---------------------------------------*/
+
+/* Radius Left */
+div[data-role="controlgroup"] a[data-role="button"]:first-child {
+	border-bottom-left-radius: var(--rounding-media);
+	border-top-left-radius: var(--rounding-media);
+}
+
+/* Radius Right */
+div[data-role="controlgroup"] a[data-role="button"]:last-child {
+	border-bottom-right-radius: var(--rounding-media);
+	border-top-right-radius: var(--rounding-media);
+}
+
+/* user setting tab buttons */
+div[data-role="controlgroup"] a[data-role="button"] {
+  display: table-cell !important;
+  margin: 0 !important;
+}

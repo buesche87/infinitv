@@ -1,0 +1,17 @@
+/* Add to Custom CSS in Dashboard */
+@import url('https://buesche87.github.io/infinitv/infinitv-base.css');
+@import url('https://buesche87.github.io/infinitv/infinitv-login.css');
+@import url('https://buesche87.github.io/infinitv/infinitv-lists.css');
+@import url('https://buesche87.github.io/infinitv/infinitv-media.css');
+@import url('https://buesche87.github.io/infinitv/infinitv-player.css');
+@import url('https://buesche87.github.io/infinitv/infinitv-usersettings.css');
+@import url('https://buesche87.github.io/infinitv/infinitv-dashboard.css');
+@import url('https://buesche87.github.io/infinitv/infinitv-misc.css');
+@import url('https://buesche87.github.io/infinitv/ultrachromic-episodes.css');
+@import url('https://buesche87.github.io/infinitv/ultrachromic-cast.css');
+:root {--accent: 204, 151, 98 ;}
+:root {--rounding: 12px ;}
+:root {--rounding-input: 4px ;}
+:root {--headeropacity: 0.7 ;}
+:root {--bgopacity: 0.4 ;}
+:root {--footeropacity: 0.8 ;}

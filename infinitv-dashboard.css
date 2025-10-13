@@ -1,0 +1,109 @@
+/*  
+  ==================================
+  Dashboard
+  ==================================
+
+  finnyTV - HTPC Theme for Jellyin
+  Based on: Ultrachromic/login/login_frame.css
+
+*/
+
+/* Dashboard */
+#user_usage_report_table,
+.detailTable {
+  background: var(--dark60) ;
+  border-radius: var(--rounding-system) !important;
+}
+
+.dashboardSection h3 {
+  margin: .5em .0em .5em .5em;
+}
+
+.dashboardSection .sectionTitleTextButton > .material-icons.material-icons {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  margin-right: .2em;
+}
+
+/* Transcoding progress */
+#dashboardPage .transcodingProgress > div {
+  background: rgba(var(--accent), 0.35) !important;
+}
+
+/* wider input fields */
+.dashboardGeneralForm {
+  max-width: 66% !important;
+}
+
+/* user profile cards */
+#dashboardPage .card:not(.show-animation) {
+  width: 13em !important;
+}
+
+/* fit search button in settings */
+#dashboardPage .paper-icon-button-light>.material-icons {
+  font-size: 1.5em !important;
+}
+#dashboardPage .selectLabel {
+  margin-bottom: 0em !important;
+}
+
+.customCssContainer textarea {
+  resize: vertical !important;
+}
+
+/* Library Scan Progress */
+#divRunningTasks span,
+#scheduledTasksPage span {
+  color: var(--light60) !important;
+}
+
+
+/*
+| Progressbar
+-----------------------------*/
+
+/* Progress in Cards */
+.activeSession .backgroundProgress, 
+.activeSession .playbackProgress, 
+.activeSession .transcodingProgress {
+  bottom: 0;
+  height: 6px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 92.5%;
+}
+
+/* Playback Progress Background*/
+.playbackProgress > div {
+  background: rgba(var(--accent),0.75) !important;
+}
+
+/* Playback Progress Background*/
+.backgroundProgress > div,
+.transcodingProgress > div {
+  background: #0000 !important;
+}
+
+/* Progressbar: Background */
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background: rgba(var(--accent),0.75) !important;
+  border-radius: var(--rounding-media);
+}
+
+/* Progressbar: Remaining */
+progress::-webkit-progress-bar {
+  border: 0px solid var(--light20) !important;
+  border-radius: var(--rounding-media);
+}
+
+/* Progressbar: Background */
+progress,
+.taskProgressOuter {
+  background: var(--dark40) !important;
+  border: 1px solid var(--light20) !important;
+  border-radius: var(--rounding-media);
+}
+

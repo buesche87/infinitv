@@ -1,0 +1,195 @@
+/*  
+  ==================================
+  Player & Osd
+  ==================================
+
+  infinitv - HTPC Theme for Jellyin
+  Based on: Ultrachromic/progress/floating.css
+
+*/
+
+
+/*
+| Vdeo OSD 
+-------------------------------*/
+
+/* OSD Header */
+.skinHeader-withBackground.osdHeader {
+  height: 3.2em;
+  --webkit-backdrop-filter: none;
+  box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* OSD Bottom */
+.videoOsdBottom {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+  box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
+  padding-top: .5em;
+  padding-bottom: max(env(safe-area-inset-bottom), 1em);
+}
+
+/* OSD Header: Hide some Elements */
+.btnFullscreen,
+.btnPip {
+  display: none;
+}
+
+/* OSD Footer: Space between Icons */
+.buttons.focuscontainer-x {
+  padding: .5em 0 0 !important;
+}
+
+/* OSD Buttons: Style */
+.paper-icon-button-light.show-focus:not(.headerButton) {
+  border: solid 2px #0000 !important;
+  padding: .4em !important;
+}
+
+/* OSD Buttons: Zoom on Focus */
+.paper-icon-button-light.show-focus:not(.headerButton):focus {
+  border: solid 2px rgba(var(--accent), 0.6) !important;
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+
+/* style the controls*/
+.startTimeText,
+.endTimeText {
+  width: 3.4em;
+  display: block;
+  text-align: center;
+}
+
+.osdTitle {
+  margin-left: 0.5em;
+}
+
+.osdPoster img {
+  border-radius: var(--rounding-media); 
+  border: none;
+}
+
+
+/* Fix the UI shifting around */
+.nowPlayingBarCurrentTime {
+  width: 6em;
+}
+
+.osdTextContainer {
+  margin: 0 !important;
+  margin-top: 0.2em !important;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
+}
+
+/* Progressbar */
+.taskProgressInner,
+.sliderMarker.watched {
+  background: rgba(var(--accent),0.75) !important;
+}
+
+
+
+/*
+| Chapter Thumbnails
+-------------------------------*/
+
+/* Shrink the mouseover chapter image when scrobbling, still media player */
+.chapterThumb {
+  height: 14vh;
+  min-width: 14vh;
+	box-shadow: 0 0 1.9vh #000;
+  border-radius: var(--rounding-media) !important;
+}
+.chapterThumbText {
+  font-size: 1em;
+}
+.sliderBubble {
+  background: #0000;
+}
+.chapterThumbTextContainer {
+  right: auto;
+	bottom: 4px;
+	padding: .25em 0.7em;
+  border-radius: var(--rounding-media) !important;
+}
+.chapterThumbContainer {
+  box-shadow: 0 0 1.9vh #000;
+  border-radius: var(--rounding-media) !important;
+}
+.sliderBubble {
+  -webkit-transform: translate3d(-50%,-108%,0);
+  transform: translate3d(-50%,-108%,0);
+}
+
+
+
+/*
+| Skip-Button
+-------------------------------*/
+
+/* Skip-Button */
+.skip-button {
+  color: rgba(var(--accent), 1);
+  background: var(--dark60);
+  box-shadow: 0px 0px 0px 1px rgba(var(--accent)) !important;
+  border-radius: var(--rounding-system);
+}
+
+/* Skip-Button: Hover & Focus */
+.skip-button:focus,
+.skip-button:hover {
+  background: rgba(var(--accent), 1) !important;
+  color: #fff;
+  border-radius: var(--rounding-system);
+}
+
+/*
+| Upnext Dialog
+-------------------------------*/
+
+/* Upnext Dialog */
+.upNextContainer {
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  border-radius: var(--rounding-media) !important;
+  box-shadow: 0px 0px 5px 0px rgba(var(--accent)) !important;
+}
+
+.upNextDialog-poster-img {
+  border-radius: var(--rounding-media) !important;
+}
+
+/* Upnext: Countdown */
+.upNextDialog-countdownText {
+  color: rgba(var(--accent)) !important;
+  /* color: white; */
+}
+
+/*
+| Play Progress
+-------------------------------*/
+
+/* Play progress & volume */
+.mdl-slider {
+  color: rgba(var(--accent)) !important;
+} 
+
+/* Background: Accent: 100% */
+.mdl-slider-background-lower {
+  background: rgba(var(--accent)) !important;
+} 
+
+/* Background & Thumb: Accent: 100% */
+.iconOsdProgressInner,
+.mdl-slider::-webkit-slider-thumb {
+  background: rgba(var(--accent));
+  color: rgba(var(--accent));
+}
+
+
+
+/* Subtitle preview */
+.subtitleappearance-preview {
+  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
+}

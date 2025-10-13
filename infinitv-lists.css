@@ -1,0 +1,250 @@
+/*  
+  ==================================
+  Lists
+  ==================================
+
+  infinitv - HTPC Theme for Jellyin
+  Based on: Ultrachromic
+
+*/
+
+/*
+| Media List: Alignment & Size
+---------------------------------------*/
+
+/* Main List */
+.itemsContainer-tv.vertical-wrap {
+  padding-top: 1% !important;
+  padding-right: 3% !important; 
+  padding-left: 3% !important;
+}
+
+/* Scrollable List */
+.itemsContainer-tv.scrollSlider {
+  padding-top: 1% !important;
+  padding-left: 1% !important;
+}
+
+/* more space for zoomed cards */
+.portraitCard.show-focus.show-animation,
+.backdropCard.show-focus.show-animation {
+  padding-bottom: 1.5em !important;
+}
+
+/* narrow margins */
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+  margin-right: 1.5em !important;
+}
+
+
+/*
+| List Menu: Alignment
+---------------------------------------*/
+
+/* Item Count: Alignment */
+.listPaging > span {
+  margin-right: .5em;
+}
+
+/* Buttons: Alignment */
+.btnPreviousPage,
+.btnNextPage,
+.btnSelectView,
+.btnSort,
+.btnFilter-wrapper {
+  margin-left: .4em;
+  margin-right: .4em;
+}
+
+/* Filter Menu: Alignment */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+  margin-left: 0.5em;
+}
+
+/* Filter Menu: Animation */
+.emby-collapse > .emby-button.show-focus:focus,
+.emby-collapse > .emby-button.show-focus:hover {
+  background: rgba(var(--accent),0.8) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+/* Filter Indicator */
+.filterIndicator {
+  background: rgb(var(--accent), 0.7) !important;
+}
+
+/*
+| Item Cards: Size & Style
+---------------------------------------*/
+
+/* Portrait Card: Size */
+.itemsContainer-tv > .portraitCard {
+  width: 16% !important;
+}
+
+/* Backdrop Card: Size*/
+.itemsContainer-tv > .backdropCard {
+  width: 20% !important;
+}
+
+/* Overflow Portrait Card: Size */
+.itemsContainer-tv > .overflowPortraitCard, 
+.itemsContainer-tv > .overflowSquareCard {
+  width: 16% !important;
+}
+
+/* Overflow Backdrop Card: Size */
+.itemsContainer-tv > .overflowBackdropCard {
+  width: 30% !important;
+}
+
+/* Card Buttons: No background */
+.cardPadder {
+  background-color: #0000 !important;
+}
+
+
+/*
+| Item Card: Content Style
+---------------------------------------*/
+
+/* Full Rounding */
+.blurhash-canvas,
+.cardContent,
+.cardOverlayContainer,
+.cardContent-button, 
+.cardContent-shadow,
+.cardImage,
+.cardOverlayButtonIcon,
+.visualCardBox {
+  border-radius: var(--rounding-media);
+}
+
+/* Round Top, Flat Bottom */
+.visualCardBox:has(.cardFooter) .blurhash-canvas,
+.visualCardBox:has(.cardFooter) .cardImage,
+.visualCardBox:has(.cardFooter) .coveredImage,
+.visualCardBox:has(.cardFooter) .cardImageContainer,
+.visualCardBox:has(.cardFooter) .cardOverlayContainer,
+.visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Media Card Footer */
+.cardFooter:not(.visualCardBox-cardFooter) {
+  border-bottom-left-radius: var(--rounding-media) !important;
+  border-bottom-right-radius: var(--rounding-media) !important;
+}
+
+/*
+| Item Cards: Description
+---------------------------------------*/
+
+/* Series Title: Padding */
+.cardText-first {
+  padding-top: .5em !important;
+}
+
+/* Secondary Text: Size */
+.cardText-secondary {
+  font-size: 75% !important;
+}
+
+/* Overflow Backdrop Card: Hide Series Title */
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
+  display: none;
+}
+
+/* Overflow Backdrop Card: Make "S0E0 - Episodename" Bigger */
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
+  font-size: 100% !important;
+  padding-top: .6em !important;
+  color: inherit;
+}
+
+
+/*
+| Item Cards: Animation
+---------------------------------------*/
+
+/* Zoom on Focus */
+.card.show-animation:focus > .cardBox {
+  -webkit-transform:scale(1.1);
+  transform:scale(1.1);
+}
+
+/* More Space for Zoom-Animation */
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.5em !important;
+  margin-right: 2em;
+}
+
+/* Color on Focus */
+.card.show-animation:focus > .cardBox > .cardText-first,
+.card.show-animation:focus > .cardBox > .cardText-secondary,
+.card.show-animation:focus > .cardBox > .cardFooter > .cardText-first,
+.card.show-animation:focus > .cardBox > .cardFooter > .cardText-secondary {
+  color: rgba(var(--accent));
+}
+
+
+/*
+| Item Cards: Indicators
+-----------------------------*/
+
+/* Alignment */
+.cardIndicators,
+.listItemIndicators,
+.mediaSourceIndicator {
+  right: 0.5em !important;
+  top: 0.5em !important;
+}
+
+/* Count & Played */
+.countIndicator,
+.playedIndicator,
+.mediaSourceIndicator {
+  color: black;
+  background: rgb(var(--accent), 0.7) !important;
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Missing & Unaired */
+.missingIndicator,
+.unairedIndicator {
+  color: #fff;
+  background: #ae3030eb;
+  padding: .3em .6em;
+}
+
+/* Multi Select Checkboxes */
+.multiSelectCheckboxOutline {
+  border-top-left-radius: var(--rounding-media) !important;
+  border-top-right-radius: var(--rounding-system) !important;
+  border-bottom-right-radius: var(--rounding-system) !important;
+  border-bottom-left-radius: var(--rounding-system) !important;
+}
+
+
+/*
+| Item Cards: Progress Bar
+---------------------------------------*/
+
+/* Background */
+.itemProgressBar {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-radius: var(--rounding-media) !important;
+  height: .4em !important;
+  margin: .5em .8em !important;
+  backdrop-filter: blur(6px);
+} 
+
+/* Slider*/
+.itemProgressBarForeground {
+  background-color: rgba(var(--accent), 0.95) !important;
+  border-radius: var(--rounding-media) !important;
+}
+
