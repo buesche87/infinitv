@@ -29,20 +29,6 @@
 | Main UI: Style
 -----------------------------*/
 
-/* Menu Drawer: Transparency */
-.mainDrawer {
-  background: rgb(0 0 0) !important;
-}
-
-/* Menu Drawer: Shadow */
-.drawer-open {
-  box-shadow: 0px 0px 7px rgba(var(--accent), .6) !important;
-}
-
-.drawer-open > .backgroundContainer {
-  padding-top: 5em !important;
-}
-
 /* Dialogs */
 .dialog,
 .formDialogHeader,
@@ -358,6 +344,13 @@
   background: var(--dark40) !important;
 }
 
+/* Menu Drawer */
+.mainDrawer {
+  background: rgb(0 0 0) !important;
+  margin-top: 5.05em !important;
+  box-shadow: none !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
 
 /*
 | Loading spinner & Progress Ring
