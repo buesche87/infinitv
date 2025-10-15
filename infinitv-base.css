@@ -43,9 +43,16 @@
   border-radius: var(--rounding-system) !important;
 }
 
-/* Scrollbar: Color */
+/* Scrollbar */
 * {
-  scrollbar-color: rgba(var(--accent), 0.8) !important;
+  /* scrollbar-color: rgba(var(--accent), 0.8) !important; */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track-piece {
+  background: rgba(var(--accent), 0.8) !important;
 }
 
 /* Scrollbar: Hide */
