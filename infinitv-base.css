@@ -82,6 +82,23 @@
   background:  rgba(0, 0, 0, var(--bgdarkness)) ;
 }
 
+/* Menu Drawer */
+.mainDrawer {
+  background: rgb(0 0 0) !important;
+  margin-top: 5.05em !important;
+  box-shadow: none !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+.navMenuOption:hover {
+  background: rgba(var(--accent),0.7) !important;
+}
+
+.navMenuOption-selected {
+  color: rgba(var(--accent)) !important;
+  background: var(--dark40) !important;
+}
+
 /*
 | TV-UI
 -----------------------------*/
@@ -246,8 +263,7 @@
 /* a[data-role="button"]:hover, */
 .actionSheetMenuItem:hover,
 .css-17c09up:hover,
-.fab:hover,
-.navMenuOption:hover {
+.fab:hover {
   background: rgba(var(--accent),0.8) !important;
 }
 
@@ -340,23 +356,13 @@
 
 /* Fields: Active */
 .css-17c09up.Mui-selected,
-.inputLabelFocused,
-.navMenuOption-selected {
+.inputLabelFocused {
   color: rgba(var(--accent)) !important;
 }
 
 /* Background: Black & White */
-.navMenuOption-selected,
 .selectionCommandsPanel {
   background: var(--dark40) !important;
-}
-
-/* Menu Drawer */
-.mainDrawer {
-  background: rgb(0 0 0) !important;
-  margin-top: 5.05em !important;
-  box-shadow: none !important;
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /*
