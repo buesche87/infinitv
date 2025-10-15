@@ -64,8 +64,9 @@
 }
 
 /* Scrollbar: Hide */
+.layout-tv,
 #loginPage {
-  overflow-y: hidden;
+  scrollbar-width: none;
 }
 
 /* Blurhash */
