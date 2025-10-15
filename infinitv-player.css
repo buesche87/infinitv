@@ -182,14 +182,31 @@
 
 /* Background & Thumb: Accent: 100% */
 .iconOsdProgressInner,
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-ms-thumb,
 .mdl-slider::-webkit-slider-thumb {
   background: rgba(var(--accent));
   color: rgba(var(--accent));
 }
 
-
-
 /* Subtitle preview */
 .subtitleappearance-preview {
   background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
 }
+
+/* Scrollbar div */
+.mdl-slider::-webkit-scrollbar-corner,
+.mdl-slider::-webkit-scrollbar-track-piece {
+  background: #0000 !important;
+}
+
+
+/* Scrollbar Thumb
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-ms-thumb,
+.mdl-slider::-webkit-slider-thumb,
+::-webkit-scrollbar-thumb {
+  border-radius: var(--rounding-media);
+  background: rgba(var(--accent),0.8) !important;
+}
+  */
