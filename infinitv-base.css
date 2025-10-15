@@ -29,11 +29,6 @@
 | Main UI: Style
 -----------------------------*/
 
-/* Header: Transparency */
-.skinHeader-withBackground {
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
 /* Menu Drawer: Transparency */
 .mainDrawer {
   background: var(--dark80) !important;
@@ -64,8 +59,7 @@
 }
 
 /* Scrollbar: Hide */
-.layout-tv,
-#loginPage {
+.layout-tv {
   scrollbar-width: none;
 }
 
@@ -145,8 +139,14 @@
 } */
 
 /* Center the Taskbar */
+.skinHeader,
 .headerTop {
   padding: .6em .6em !important;
+}
+
+/* Transparency */
+.skinHeader-withBackground {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Menu Buttons*/
