@@ -173,7 +173,13 @@
   transform: scale(1.2) !important;
 }
 
-/* Tab Button: Active */
+/* Menu Buttons: Active */
+.paper-icon-button-light:active:not(:disabled) {
+  color: rgba(var(--accent), 0.8) !important;
+  background: #0000 !important;
+}
+
+/* Tab Buttons: Active */
 .emby-tab-button-active {
   background: #0000 !important;
   color: #fff;
@@ -188,6 +194,28 @@
 * {
   scrollbar-color: rgba(var(--accent), 0.8) !important;
 }
+
+/* Force hide */
+#loginPage,
+.preload {
+  overflow-y: hidden;
+}
+
+/* Scrollbar Thumb*/
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-ms-thumb,
+.mdl-slider::-webkit-slider-thumb,
+::-webkit-scrollbar-thumb {
+  border-radius: var(--rounding-media);
+  background: rgba(var(--accent),0.8) !important;
+}
+
+/* Scrollbar div */
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track-piece {
+  background: #0000 !important;
+}
+
 
 /* Show - auto (thin) */
 /*
@@ -215,26 +243,6 @@
 }
 */
 
-/* Force hide */
-#loginPage,
-.preload {
-  scrollbar-width: none !important;
-}
-
-/* Scrollbar Thumb*/
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-ms-thumb,
-.mdl-slider::-webkit-slider-thumb,
-::-webkit-scrollbar-thumb {
-  border-radius: var(--rounding-media);
-  background: rgba(var(--accent),0.8) !important;
-}
-
-/* Scrollbar div */
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-track-piece {
-  background: #0000 !important;
-}
 
 /*
 | Buttons
