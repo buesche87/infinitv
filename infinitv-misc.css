@@ -45,7 +45,19 @@ fieldset {
 | Buttons
 -----------------------------*/
 
+/* Misc Button */
+.fab {
+  border-radius: var(--rounding-system) !important;
+	transition: all 0.2s !important;
+  background: var(--dark40) !important;
+}
 
+.button-flat:hover,
+.button-flat:focus,
+.cardOverlayButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: #0000 !important;
+}
 
 
 /*
@@ -328,3 +340,52 @@ fieldset {
 */
 
 
+/* Adjust Pages
+#indexPage, 
+#moviesPage, 
+#tvRecommendedPage, 
+#musicRecommendedPage {
+  margin-top: 5em !important;
+  padding-top: 5.5em !important;
+}
+   */
+
+
+
+
+/* Scrollbar */
+
+/* Show - auto (thin) */
+/*
+#moviesPage, 
+#moviesPage::-webkit-scrollbar,
+#tvRecommendedPage, 
+#tvRecommendedPage::-webkit-scrollbar,
+#itemDetailPage,
+#itemDetailPage::-webkit-scrollbar {
+  overflow-y: auto !important;
+  scrollbar-width: thin !important; 
+}
+*/
+
+/* Hide */
+/*
+.libraryDocument,
+.libraryDocument::-webkit-scrollbar, 
+#indexPage, 
+#indexPage::-webkit-scrollbar,
+#loginPage,
+#loginPage::-webkit-scrollbar {
+  overflow-y: auto !important;
+  scrollbar-width: none !important; 
+}
+*/
+
+
+
+
+/* Links acting as buttons 
+a[data-role="button"] {
+  background: var(--dark40) !important;
+}
+  */

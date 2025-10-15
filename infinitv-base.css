@@ -80,8 +80,13 @@
   border-radius: 50px !important;
 }
 
+/* Darken Backdrop Background */
+.backgroundContainer.withBackdrop {
+  background:  rgba(0, 0, 0, var(--bgdarkness)) ;
+}
+
 /*
-| TV UI: Style
+| TV-UI
 -----------------------------*/
 
 /* Smaller Size */
@@ -89,46 +94,26 @@
   font-size: 110% !important;
 }
 
-/* Page allignment */
-.page {
-  padding-top: 5.5em !important;
-}
-
-/* Adjust Pages
-#indexPage, 
-#moviesPage, 
-#tvRecommendedPage, 
-#musicRecommendedPage {
-  margin-top: 5em !important;
-  padding-top: 5.5em !important;
-}
-   */
-
 /* Disable Slides (they don't work well with a remote) */
 .layout-tv #slides-container {
   display: var(--displayslides) !important;
 }
 
-/* Move Elements up (more space from hidden slides) */
+/* Use freed Space */
 .layout-tv .homeSectionsContainer {
   top: 0 !important ;
 }
 
-/* Darken Background */
-.layout-tv .backgroundContainer.withBackdrop {
-  background:  rgba(0, 0, 0, var(--bgdarkness)) ;
+/* Page allignments */
+.layout-tv .page {
+  padding-top: 5.5em !important;
 }
 
 /*
-| Desktop UI: Style
+| Desktop-UI
 -----------------------------*/
 
-/* Desktop: Background Opacity */
-.layout-desktop .backgroundContainer.withBackdrop {
-  background: rgba(0, 0, 0, var(--bgdarkness)) ;
-}
-
-/* Desktop: Home Elements Background */
+/* Home Container Background */
 .layout-desktop .homeSectionsContainer {
   background: var(--dark60) !important;
   box-shadow: 1px -10px 20px 10px var(--dark60) !important;
@@ -169,7 +154,7 @@
 }
 
 /*
-| Sections
+| Header Sections
 -----------------------------*/
 
 /* Move into Header */
@@ -217,7 +202,17 @@
 | Buttons
 -----------------------------*/
 
+/* Active Buttons */
+.buttonActive {
+  color: rgba(var(--accent)) !important;
+}
 
+/* Submit Button */
+.button-submit {
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Raised Button */
 .raised {
 	transition: all 0.2s !important;
   background: var(--dark40) !important;
@@ -228,6 +223,7 @@
   background: rgba(var(--accent),0.8) !important;
 }
 
+/* Raised Home Library Button */
 .raised.homeLibraryButton {
   transition: filter 0.2s;
 }
@@ -240,44 +236,19 @@
 }
 
 /* Misc Buttons */
-.button-submit,
-.fab {
-  border-radius: var(--rounding-system) !important;
-}
-
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover {
-  color: rgb(var(--accent)) !important;
-  background: #0000 !important;
-}
-
-a[data-role="button"],
-.fab {
-	transition: all 0.2s !important;
-  background: var(--dark40) !important;
-}
-
-
-
-/* Background on Hover & Focus: Accent 50% */
-a[data-role="button"]:hover,
-.actionSheetMenuItem:hover,
-.alphaPickerButton-tv:focus,
-.alphaPickerButton-tv:hover,
-.css-17c09up:hover,
-.fab:hover,
-.navMenuOption:hover {
-  background: rgba(var(--accent),0.8) !important;
-}
-
-/* Button: Active */
-.buttonActive,
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
   color: rgba(var(--accent)) !important;
 }
 
+/* Background on Hover & Focus: Accent 50% */
+/* a[data-role="button"]:hover, */
+.actionSheetMenuItem:hover,
+.css-17c09up:hover,
+.fab:hover,
+.navMenuOption:hover {
+  background: rgba(var(--accent),0.8) !important;
+}
 
 /*
 | Fields & Inputs
@@ -405,33 +376,3 @@ a[data-role="button"]:hover,
 .progressring-bg {
   display: none;
 }
-
-
-
-/* Scrollbar */
-
-/* Show - auto (thin) */
-/*
-#moviesPage, 
-#moviesPage::-webkit-scrollbar,
-#tvRecommendedPage, 
-#tvRecommendedPage::-webkit-scrollbar,
-#itemDetailPage,
-#itemDetailPage::-webkit-scrollbar {
-  overflow-y: auto !important;
-  scrollbar-width: thin !important; 
-}
-*/
-
-/* Hide */
-/*
-.libraryDocument,
-.libraryDocument::-webkit-scrollbar, 
-#indexPage, 
-#indexPage::-webkit-scrollbar,
-#loginPage,
-#loginPage::-webkit-scrollbar {
-  overflow-y: auto !important;
-  scrollbar-width: none !important; 
-}
-*/

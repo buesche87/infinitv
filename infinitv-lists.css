@@ -37,9 +37,17 @@
   margin-right: 1.5em !important;
 }
 
+/*
+| Alphabet Picker 
+---------------------------------------*/
+
+.alphaPickerButton-tv:focus,
+.alphaPickerButton-tv:hover {
+  background: rgba(var(--accent),0.8) !important;
+}
 
 /*
-| List Menu: Alignment
+| Sorting & Filter Menubar
 ---------------------------------------*/
 
 /* Item Count: Alignment */
