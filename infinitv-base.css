@@ -128,10 +128,10 @@
 | Taskbar
 -----------------------------*/
 
-/* don't scroll taskbar in tv mode */
+/* don't scroll taskbar in tv mode
 .layout-tv .skinHeader {
   position: fixed !important;
-}
+} */
 
 /* center buttons on taskbar */
 .headerTop {
