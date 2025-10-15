@@ -89,14 +89,20 @@
   font-size: 110% !important;
 }
 
-/* Adjust Pages */
+/* Page allignment */
+.page {
+  padding-top: 5.5em !important;
+}
+
+/* Adjust Pages
 #indexPage, 
 #moviesPage, 
 #tvRecommendedPage, 
 #musicRecommendedPage {
-  margin-top: 4em !important;
-  padding-top: 0.5em !important;
+  margin-top: 5em !important;
+  padding-top: 5.5em !important;
 }
+   */
 
 /* Disable Slides (they don't work well with a remote) */
 .layout-tv #slides-container {
