@@ -47,10 +47,7 @@
 * {
   /* scrollbar-color: rgba(var(--accent), 0.8) !important; */
   scrollbar-width: thin;
-  scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
-}
-
-.layout-tv {
+  /* scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity)); */
   scrollbar-color: rgba(0, 0, 0, var(--headeropacity)) rgba(var(--accent), 0.7);
 }
 
