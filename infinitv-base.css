@@ -64,8 +64,7 @@
 }
 
 /* Scrollbar: Hide */
-#loginPage,
-.preload {
+#loginPage {
   overflow-y: hidden;
 }
 
@@ -225,7 +224,8 @@
 .raised.homeLibraryButton {
   transition: filter 0.2s;
 }
-.raised.homeLibraryButton:hover {
+.raised.homeLibraryButton:hover,
+.raised.homeLibraryButton:focus {
   color: rgb(var(--accent)) !important;
   background: var(--light60) !important;
   /* box-shadow: 0px 0px 5px rgb(var(--accent)) !important; */
@@ -244,11 +244,6 @@
   color: rgb(var(--accent)) !important;
   background: #0000 !important;
 }
-
-
-
-/* Transitions */
-
 
 a[data-role="button"],
 .fab {
