@@ -39,6 +39,10 @@
   box-shadow: 0px 0px 7px rgba(var(--accent), .6) !important;
 }
 
+.drawer-open > .backgroundContainer {
+  padding-top: 5em !important;
+}
+
 /* Dialogs */
 .dialog,
 .formDialogHeader,
@@ -92,6 +96,10 @@
 /* Smaller Size */
 .layout-tv {
   font-size: 110% !important;
+}
+
+.layout-tv .backgroundContainer {
+  padding-top: 5em !important;
 }
 
 /* Disable Slides (they don't work well with a remote) */
