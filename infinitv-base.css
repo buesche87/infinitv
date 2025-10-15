@@ -31,7 +31,7 @@
 
 /* Menu Drawer: Transparency */
 .mainDrawer {
-  background: var(--dark80) !important;
+  background: rgb(0 0 0) !important;
 }
 
 /* Menu Drawer: Shadow */
