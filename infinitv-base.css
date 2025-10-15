@@ -139,7 +139,8 @@
 }
 
 /* Taskbar - text & vertical-scroll */
-.headerTabs.sectionTabs {
+.layout-tv .headerTabs.sectionTabs,
+.layout-desktop .headerTabs.sectionTabs {
   text-size-adjust: 105%;
   font-size: 105% !important;
   margin-top: -3.6em !important;
