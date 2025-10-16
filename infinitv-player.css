@@ -15,7 +15,7 @@
 
 /* OSD Header */
 .osdHeader {
-  height: 3.2em;
+  height: 3.2em !important;
   --webkit-backdrop-filter: none;
   box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
 }
