@@ -142,7 +142,7 @@
 }
 
 /* Page allignments */
-.layout-tv .libraryPage:not(.itemDetailPage) {
+.layout-tv .libraryPage {
   padding-top: 5.3em !important;
 }
 
