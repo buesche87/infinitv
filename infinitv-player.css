@@ -172,7 +172,7 @@
 .mdl-slider::-moz-range-thumb,
 .mdl-slider::-webkit-slider-thumb {
   background: rgba(var(--accent)) !important;
-  color: rgba(var(--accent));
+  color: rgba(var(--accent)) !important;
 }
 
 /* Subtitle preview */
