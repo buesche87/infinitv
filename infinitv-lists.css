@@ -59,8 +59,7 @@
 .btnPreviousPage,
 .btnNextPage,
 .btnSelectView,
-.btnSort,
-.btnFilter-wrapper {
+.btnSort {
   margin-left: .4em;
   margin-right: .4em;
 }
