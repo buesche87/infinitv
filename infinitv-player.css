@@ -56,7 +56,6 @@
   border: none;
 }
 
-
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {
   width: 6em;
@@ -74,7 +73,6 @@
 .sliderMarker.watched {
   background: rgba(var(--accent),0.75) !important;
 }
-
 
 
 /*
