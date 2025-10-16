@@ -8,15 +8,15 @@
 
 */
 
-/* Bigger Taskbar */
+/* Bigger Item Details Bar */
 .layout-tv .itemDetailPage {
   padding-top: 4.7em !important;
 }
 
 /* hide some elements on page in ribbon and details */
 .detailLogo,
-.endsAt
-.hide+.detailPageWrapperContainer .itemName
+.endsAt,
+.hide+.detailPageWrapperContainer .itemName,
 .itemExternalLinks,
 .itemTags {
   display: none !important;

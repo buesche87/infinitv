@@ -117,6 +117,11 @@
 | Item Card: Content Style
 ---------------------------------------*/
 
+.cardScalable {
+  border-radius: var(--rounding-media);
+  box-shadow: 4px 4px 10px 10px var(--dark20);
+}
+
 /* Full Rounding */
 .blurhash-canvas,
 .cardContent,
