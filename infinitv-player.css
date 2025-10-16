@@ -166,8 +166,16 @@
 } 
 
 /* Background & Thumb: Accent: 100% */
-.iconOsdProgressInner,
-.mdl-slider::-moz-range-thumb,
+.iconOsdProgressInner {
+  background: rgba(var(--accent)) !important;
+  color: rgba(var(--accent)) !important;
+}
+
+.mdl-slider::-moz-range-thumb {
+  background: rgba(var(--accent)) !important;
+  color: rgba(var(--accent)) !important;
+}
+
 .mdl-slider::-webkit-slider-thumb {
   background: rgba(var(--accent)) !important;
   color: rgba(var(--accent)) !important;
@@ -179,7 +187,10 @@
 }
 
 /* Scrollbar div */
-.mdl-slider::-webkit-scrollbar-corner,
+.mdl-slider::-webkit-scrollbar-corner  {
+  background: #0000 !important;
+}
+
 .mdl-slider::-webkit-scrollbar-track-piece {
   background: #0000 !important;
 }
