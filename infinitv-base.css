@@ -54,10 +54,10 @@
   background: rgba(var(--accent), 0.8) !important;
 }
 
-/* Scrollbar: Hide
+/* Scrollbar: Hide */
 .layout-tv {
   scrollbar-width: none;
-} */
+}
 
 /* Blurhash */
 .blurhash-canvas {
