@@ -43,7 +43,7 @@
 
 .alphaPickerButton-tv:focus,
 .alphaPickerButton-tv:hover {
-  background: rgba(var(--accent),0.8) !important;
+  background: rgba(var(--accent), 0.8) !important;
 }
 
 /*
@@ -125,7 +125,8 @@
 .cardContent-shadow,
 .cardImage,
 .cardOverlayButtonIcon,
-.visualCardBox {
+.visualCardBox,
+.cardBox:not(.visualCardBox) .cardPadder {
   border-radius: var(--rounding-media);
 }
 
