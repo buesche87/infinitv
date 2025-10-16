@@ -149,7 +149,7 @@
 /* Center the Taskbar */
 .skinHeader,
 .headerTop {
-  padding: .6em .6em !important;
+  padding: .5em !important;
 }
 
 /* Transparency */
@@ -187,7 +187,7 @@
 .layout-desktop .headerTabs.sectionTabs {
   text-size-adjust: 105%;
   font-size: 105% !important;
-  margin-top: -3.6em !important;
+  margin-top: -3.5em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
