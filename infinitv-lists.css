@@ -128,6 +128,7 @@
 .visualCardBox,
 .cardBox:not(.visualCardBox) .cardPadder {
   border-radius: var(--rounding-media);
+  box-shadow: none;
 }
 
 /* Round Top, Flat Bottom */
