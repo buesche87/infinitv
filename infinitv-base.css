@@ -86,17 +86,11 @@
 | Scrollbar
 -----------------------------*/
 
-/* Firefox */
+/* Scroollbar: Color */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
 }
-
-/* WebKit 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}*/
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, var(--headeropacity));
@@ -112,7 +106,6 @@
 ::-webkit-scrollbar-corner {
   background: rgba(var(--accent), 0.8);
 }
-
 
 /* Scrollbar: Hide */
 .layout-tv {
@@ -176,7 +169,7 @@
 /* Center the Taskbar */
 .skinHeader,
 .headerTop {
-  padding: .5em !important;
+  padding: .4em !important;
 }
 
 /* Transparency */
@@ -251,7 +244,8 @@
 /* Style Buttons */
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
-  border-radius: var(--rounding-media);
+  background: #0000 !important;
+  /* border-radius: var(--rounding-media); */
 }
 .emby-tab-button:hover,
 .emby-tab-button:focus {
@@ -260,7 +254,6 @@
 }
 .emby-tab-button-active:active:not(:disabled)  {
   color: #fff;
-  background: #0000 !important;
   transform: scale(1.2) !important;
 }
 
