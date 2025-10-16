@@ -92,11 +92,11 @@
   scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
 }
 
-/* WebKit */
+/* WebKit 
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-}
+}*/
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, var(--headeropacity));
