@@ -118,6 +118,7 @@
 .layout-tv {
   overflow: auto;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 .layout-tv::-webkit-scrollbar {
