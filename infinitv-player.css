@@ -170,9 +170,8 @@
 /* Background & Thumb: Accent: 100% */
 .iconOsdProgressInner,
 .mdl-slider::-moz-range-thumb,
-.mdl-slider::-ms-thumb,
 .mdl-slider::-webkit-slider-thumb {
-  background: rgba(var(--accent));
+  background: rgba(var(--accent)) !important;
   color: rgba(var(--accent));
 }
 
