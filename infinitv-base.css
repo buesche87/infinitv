@@ -157,51 +157,41 @@
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* Menu Buttons */
+/* Buttons */
 .paper-icon-button-light {
+  border: solid 2px #0000 !important;
   border-radius: var(--rounding-media);
 }
-.headerButton:hover {
+.paper-icon-button-light:hover {
   color: rgba(var(--accent), 1) !important;
   background: rgba(var(--accent), .2) !important;
 }
-.headerButton:focus {
+.paper-icon-button-light:focus,
+.paper-icon-button-light:active {
   color: rgba(var(--accent), 1) !important;
   background: rgba(var(--accent), .2) !important;
-  -webkit-transform: none !important;
-  transform: none !important;
+  border: solid 2px rgba(var(--accent), 0.6) !important;
 }
-.headerButton:active {
-  color: rgba(var(--accent), 1) !important;
+.paper-icon-button-light:active {
   background: rgba(var(--accent), .4) !important;
+}
+
+/* Header Buttons */
+.paper-icon-button-light:not(.headerButton):focus,
+.paper-icon-button-light:not(.headerButton):active {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+.headerButton:focus,
+.headerButton:active {
   -webkit-transform: none !important;
   transform: none !important;
 }
 
 /* Other Menu Buttons */
 .paper-icon-button-light:not(.headerButton) {
-  border: solid 2px #0000 !important;
   padding: .4em !important;
 }
-.paper-icon-button-light:not(.headerButton):hover {
-  color: rgba(var(--accent), 1) !important;
-  background: rgba(var(--accent), .2) !important;
-}
-.paper-icon-button-light:not(.headerButton):focus {
-  color: rgba(var(--accent), 1) !important;
-  background: rgba(var(--accent), .2) !important;
-  border: solid 2px rgba(var(--accent), 0.6) !important;
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
-}
-.paper-icon-button-light:not(.headerButton):active {
-  color: rgba(var(--accent), 1) !important;
-  background: rgba(var(--accent), .4) !important;
-  border: solid 2px rgba(var(--accent), 0.6) !important;
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
-}
-
 
 /*
 | Header Sections

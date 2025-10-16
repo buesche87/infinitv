@@ -39,19 +39,6 @@
   padding: .5em 0 0 !important;
 }
 
-/* OSD Buttons: Style */
-.paper-icon-button-light.show-focus:not(.headerButton) {
-  border: solid 2px #0000 !important;
-  padding: .4em !important;
-}
-
-/* OSD Buttons: Zoom on Focus */
-.paper-icon-button-light.show-focus:not(.headerButton):focus {
-  border: solid 2px rgba(var(--accent), 0.6) !important;
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
-}
-
 /* style the controls*/
 .startTimeText,
 .endTimeText {
