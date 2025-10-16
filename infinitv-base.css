@@ -116,13 +116,12 @@
 
 /* Scrollbar: Hide */
 .layout-tv {
+  overflow: auto;
   scrollbar-width: none;
 }
 
-/* WebKit */
 .layout-tv::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
+  display: none; /* Chrome, Safari, neuer Edge */
 }
 
 /*
