@@ -119,7 +119,7 @@
 
 .cardScalable {
   border-radius: var(--rounding-media);
-  box-shadow: 4px 4px 10px 5px var(--dark20);
+  box-shadow: 4px 4px 10px 5px var(--dark40);
 }
 
 /* Full Rounding */
