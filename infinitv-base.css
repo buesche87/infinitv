@@ -121,7 +121,7 @@
   scroll-behavior: smooth;
 }
 
-.layout-tv::-webkit-scrollbar {
+.layout-tv ::-webkit-scrollbar {
   display: none; /* Chrome, Safari, neuer Edge */
 }
 
