@@ -115,18 +115,19 @@
 
 /* Skip-Button */
 .skip-button {
-  color: rgba(var(--accent), 1);
+  border: solid 2px rgba(var(--accent), 0.7) !important;
+  border-radius: var(--rounding-media);
+  color: #fff;
   background: var(--dark60);
-  box-shadow: 0px 0px 0px 1px rgba(var(--accent)) !important;
-  border-radius: var(--rounding-system);
 }
 
 /* Skip-Button: Hover & Focus */
 .skip-button:focus,
 .skip-button:hover {
-  background: rgba(var(--accent), 1) !important;
-  color: #fff;
-  border-radius: var(--rounding-system);
+  border: solid 2px rgba(var(--accent), 1) !important;
+  border: solid 2px var(--dark60) !important;
+  border-radius: var(--rounding-media);
+  color: rgba(var(--accent), 1);
 }
 
 /*
