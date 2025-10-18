@@ -25,6 +25,9 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+
+
+
 /*
 | Main UI: Style
 -----------------------------*/
@@ -108,12 +111,14 @@
 }
 
 /* Scrollbar: Hide */
+#loginPage,
 .layout-tv {
   overflow: auto;
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
 
+#loginPage ::-webkit-scrollbar,
 .layout-tv ::-webkit-scrollbar {
   display: none; /* Chrome, Safari, neuer Edge */
 }
