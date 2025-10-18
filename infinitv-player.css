@@ -119,17 +119,17 @@
   border: solid 2px #fff !important;
   border-radius: var(--rounding-media);
   color: #fff;
-  background: var(--dark60) !important;
+  background: #0000 !important;
 }
 
 /* Skip-Button: Hover & Focus */
 .skip-button:focus,
 .skip-button:hover {
   border: solid 2px rgba(var(--accent), 1) !important;
-  /* nborder: solid 2px var(--dark60) !important; */
+  /* border: solid 2px var(--dark60) !important; */
   border-radius: var(--rounding-media);
   color: rgba(var(--accent), 1);
-  background: var(--dark60) !important;
+  background: #0000 !important;
 }
 
 /*
