@@ -118,7 +118,6 @@
   scroll-behavior: smooth;
 }
 
-#loginPage ::-webkit-scrollbar,
 .layout-tv ::-webkit-scrollbar {
   display: none; /* Chrome, Safari, neuer Edge */
 }
