@@ -189,7 +189,7 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active {
   color: rgba(var(--accent), 1) !important;
-  background: rgba(var(--accent), .2) !important;
+  /* background: rgba(var(--accent), .2) !important; */
   border: solid 2px rgba(var(--accent), 0.6) !important;
 }
 .paper-icon-button-light:active {
