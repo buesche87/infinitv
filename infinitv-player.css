@@ -108,14 +108,12 @@
 }
 
 
-
 /*
 | Skip-Button
 -------------------------------*/
 
 /* Skip-Button */
 .skip-button {
-  /* border: solid 2px rgba(var(--accent), 0.7) !important; */
   border: solid 2px #fff !important;
   border-radius: var(--rounding-media);
   color: #fff;
@@ -126,9 +124,8 @@
 .skip-button:focus,
 .skip-button:hover {
   border: solid 2px rgba(var(--accent), 1) !important;
-  /* border: solid 2px var(--dark60) !important; */
   border-radius: var(--rounding-media);
-  color: rgba(var(--accent), 1);
+  color: rgba(var(--accent), 1) !important;
   background: #0000 !important;
 }
 
