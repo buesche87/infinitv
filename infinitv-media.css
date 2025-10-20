@@ -103,10 +103,6 @@
   top: 32% !important;
 }
 
-
-
-
-
 /*
 | Media Description
 -------------------------------------------------*/
@@ -180,6 +176,8 @@ p.itemGenres {
   transform: none !important;
 }
 
+
+
 /*
 | Section Layout (cast, more...)
 -------------------------------------------------*/
@@ -198,6 +196,12 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 .sectionTitleTextButton > .material-icons {
   margin: 0;
 }
+
+/* Season Cards spacing */
+.detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
+  margin-right: .5vw !important;
+}
+
 
 /* Media sections - Mobile layout */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {

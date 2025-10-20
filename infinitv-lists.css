@@ -25,9 +25,9 @@
   padding-left: .6em !important;
 }
 
-/* More spacing for cards */
-.itemsContainer-tv > .overflowBackdropCard {
-  margin-right: .5vw !important;
+/* More spacing for cards on home screen */
+.homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
+  margin-right: 1vw !important;
 }
 
 /* more space for zoomed cards */
