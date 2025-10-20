@@ -25,6 +25,10 @@
   padding-left: .6em !important;
 }
 
+#castCollapsible .itemsContainer-tv.scrollSlider {
+  padding-top: 0em !important;
+}
+
 /* More spacing for cards on home screen */
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
   margin-right: 1vw !important;
