@@ -202,7 +202,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   margin-right: .5vw !important;
 }
 
-
 /* Media sections - Mobile layout */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
  padding-top:0em;
@@ -231,7 +230,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 .defaultCardBackground3 {
   /* background: rgba(var(--accent),0.6) !important; */
-  background: var(--accent);
+  background: hsl(var(--accent-h), var(--accent-s), 100%);
 }
 
 .defaultCardBackground4 {
