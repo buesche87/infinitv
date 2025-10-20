@@ -25,14 +25,16 @@
   /* padding-left: 1% !important; */
 }
 
+/*
 .itemsContainer-tv.scrollSlider > .overflowBackdropCard:focus {
   padding-left: .6em;
 }
+  */
 
-/*
+/* More spacing for cards */
 .itemsContainer-tv>.overflowBackdropCard {
-  padding-left: 0em;
-} */
+  margin-right: 12px !important;
+}
 
 
 
