@@ -213,12 +213,14 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 .defaultCardBackground1 {
   /* background: rgba(var(--accent),0.4) !important; */
-  background: color-mix(in srgb, rgb(var(--accent)) 60%, white);
+  /* background: color-mix(in srgb, rgb(var(--accent)) 60%, white);*/
+  background: hsl(var(--accent-h), var(--accent-s), 60%);
 }
 
 .defaultCardBackground2 {
   /* background: rgba(var(--accent),0.5) !important; */
-  background: color-mix(in srgb, rgb(var(--accent)) 80%, white);
+  /* background: color-mix(in srgb, rgb(var(--accent)) 80%, white); */
+  background: hsl(var(--accent-h), var(--accent-s), 80%);
 }
 
 .defaultCardBackground3 {
@@ -228,10 +230,12 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 .defaultCardBackground4 {
   /* background: rgba(var(--accent),0.7) !important; */
-  background: color-mix(in srgb, rgb(var(--accent)) 80%, black);
+  /* background: color-mix(in srgb, rgb(var(--accent)) 80%, black); */
+  background: hsl(var(--accent-h), var(--accent-s), 40%);
 }
 
 .defaultCardBackground5 {
   /* background: rgba(var(--accent),0.8) !important; */
-  background: color-mix(in srgb, rgb(var(--accent)) 60%, black);
+  /* background: color-mix(in srgb, rgb(var(--accent)) 60%, black); */
+  background: hsl(var(--accent-h), var(--accent-s), 20%);
 }
