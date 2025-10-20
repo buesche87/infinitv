@@ -22,21 +22,13 @@
 /* Scrollable List */
 .itemsContainer-tv.scrollSlider {
   padding-top: .6em !important;
-  /* padding-left: 1% !important; */
+  padding-left: .6em !important;
 }
-
-/*
-.itemsContainer-tv.scrollSlider > .overflowBackdropCard:focus {
-  padding-left: .6em;
-}
-  */
 
 /* More spacing for cards */
 .itemsContainer-tv>.overflowBackdropCard {
   margin-right: 12px !important;
 }
-
-
 
 /* more space for zoomed cards */
 .portraitCard.show-focus.show-animation,
