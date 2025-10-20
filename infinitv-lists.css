@@ -182,16 +182,22 @@
   font-size: 75% !important;
 }
 
-/* Overflow Backdrop Card: Hide Series Title */
+
+/* Episod Card: Hide Series Title */
 .overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
   display: none;
 }
 
-/* Overflow Backdrop Card: Make "S0E0 - Episodename" Bigger */
+/* Episod Card: Make "S0E0 - Episodename" Bigger */
 .overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
   font-size: 100% !important;
   padding-top: .6em !important;
   color: inherit;
+}
+
+/* Movie Cards ind Recent Items: Hide Year */
+.itemsContainer-tv[data-monitor="videoplayback,markplayed"] > .overflowBackdropCard[data-type="Movie"] > .cardBox > .cardText-secondary {
+  display: none;
 }
 
 
