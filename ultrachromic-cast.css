@@ -76,7 +76,6 @@
 /* Correct image aspect ratio behaviour, set border-radius to zero for square tiles */
 @media all and (min-width: 131.25em){
   #guestCastContent .cardScalable, 
-  #guestCastContent .cardScalable, 
   #castContent .cardScalable {
     width: calc(6.3vw - 0.6em) !important; 
     height: calc(6.3vw - 0.6em) !important;
