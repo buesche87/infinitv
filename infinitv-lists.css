@@ -174,12 +174,19 @@
   font-size: 75% !important;
 }
 
+
+/*
+| List: Recently & Next Up
+---------------------------------------*/
+
 /* Episod Card: Hide Series Title */
+.NextUp .overflowBackdropCard[data-type="Episode"] .cardText-first,
 .ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-first {
   display: none;
 }
 
 /* Episod Card: Make "S0E0 - Episodename" Bigger */
+.NextUp .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
 .ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
   font-size: 100% !important;
   padding-top: .6em !important;
@@ -187,6 +194,7 @@
 }
 
 /* Movie Cards ind Recent Items: Hide Year */
+.NextUp .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
 .ContinueWatching .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
   display: none;
 }
