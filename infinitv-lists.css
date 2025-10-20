@@ -27,7 +27,7 @@
 
 /* More spacing for cards */
 .itemsContainer-tv>.overflowBackdropCard {
-  margin-right: 12px !important;
+  margin-right: .5em !important;
 }
 
 /* more space for zoomed cards */
@@ -174,24 +174,22 @@
   font-size: 75% !important;
 }
 
-
 /* Episod Card: Hide Series Title */
-.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
+.ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-first {
   display: none;
 }
 
 /* Episod Card: Make "S0E0 - Episodename" Bigger */
-.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
+.ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
   font-size: 100% !important;
   padding-top: .6em !important;
   color: inherit;
 }
 
 /* Movie Cards ind Recent Items: Hide Year */
-.itemsContainer-tv[data-monitor="videoplayback,markplayed"] > .overflowBackdropCard[data-type="Movie"] > .cardBox > .cardText-secondary {
+.ContinueWatching .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
   display: none;
 }
-
 
 /*
 | Item Cards: Animation
