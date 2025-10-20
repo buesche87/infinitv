@@ -16,7 +16,7 @@
 .itemsContainer-tv.vertical-wrap {
   padding-top: 1% !important;
   padding-right: 3% !important; 
-  padding-left: 3% !important;
+  /* padding-left: 3% !important; */
 }
 
 /* Scrollable List */
