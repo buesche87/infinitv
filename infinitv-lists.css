@@ -105,10 +105,11 @@
 }
 
 /* Overflow Portrait Card: Size */
-.itemsContainer-tv > .overflowPortraitCard, 
-.itemsContainer-tv > .overflowSquareCard {
+.castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
+.guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
   width: 16% !important;
 }
+*/
 
 /* HomePage Overflow Card Size */
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
