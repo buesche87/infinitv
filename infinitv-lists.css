@@ -186,22 +186,22 @@
 ---------------------------------------*/
 
 /* Episod Card: Hide Series Title */
-.NextUp .overflowBackdropCard[data-type="Episode"] .cardText-first,
-.ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-first {
+.section0 .overflowBackdropCard[data-type="Episode"] .cardText-first,
+.section1 .overflowBackdropCard[data-type="Episode"] .cardText-first {
   display: none;
 }
 
 /* Episod Card: Make "S0E0 - Episodename" Bigger */
-.NextUp .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
-.ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
+.section0 .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
+.section1 .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
   font-size: 100% !important;
   padding-top: .6em !important;
   color: inherit;
 }
 
-/* Movie Cards ind Recent Items: Hide Year */
-.NextUp .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
-.ContinueWatching .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
+/* Movie Card in Recent Items: Hide Year */
+.section0 .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
+.section1 .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
   display: none;
 }
 
