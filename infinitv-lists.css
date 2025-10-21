@@ -214,18 +214,32 @@
 .card.show-animation:focus > .cardBox > .cardScalable {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
-
+  transition: all 0.2s !important;
 }
 
-.section0 .overflowBackdropCard[data-type="Episode"]:focus > .cardText-first {
+.cardText-first,
+.cardText-secondary {
+  transition: all 0.2s !important;
+}
+
+.homeSectionsContainer .overflowBackdropCard:focus .cardText-first,
+.homeSectionsContainer .overflowBackdropCard:focus .cardText-secondary,
+.homeSectionsContainer .overflowPortraitCard:focus .cardText-first {
+  font-size: 110%;
+  padding-top: 1em !important;
+}
+
+.homeSectionsContainer .overflowPortraitCard:focus .cardText-secondary {
   font-size: 85%;
 }
 
-.section0 .overflowBackdropCard[data-type="Episode"]:focus > .cardText-secondary,
-.section0 .overflowBackdropCard[data-type="Episode"]:focus > .cardText-secondary {
+.section0 .overflowBackdropCard[data-type="Movie"]:focus .cardText-first,
+.section1 .overflowBackdropCard[data-type="Movie"]:focus .cardText-first,
+.section0 .overflowBackdropCard[data-type="Episode"]:focus .cardText-secondary,
+.section1 .overflowBackdropCard[data-type="Episode"]:focus .cardText-secondary {
   font-size: 110%;
+  padding-top: 1em !important;
 }
-
 
 /* More Space for Zoom-Animation */
 .itemsContainer > .card > .cardBox {
