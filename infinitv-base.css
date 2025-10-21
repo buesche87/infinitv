@@ -117,7 +117,7 @@
 }
 
 .layout-tv ::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, neuer Edge */
+  display: none;
 }
 
 /*
