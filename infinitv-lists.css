@@ -117,7 +117,7 @@
 
 /* HomePage Overflow Card Size */
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
-  width: 27vw;
+  width: 27vw !important;
 }
 
 /* Card Buttons: No background */
@@ -133,6 +133,7 @@
 .cardScalable {
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px var(--dark40);
+  transition: filter 0.5s;
 }
 
 /* Full Rounding */
@@ -177,7 +178,7 @@
 
 /* Secondary Text: Size */
 .cardText-secondary {
-  font-size: 75% !important;
+  font-size: 75%;
 }
 
 
@@ -210,10 +211,20 @@
 ---------------------------------------*/
 
 /* Zoom on Focus */
-.card.show-animation:focus > .cardBox {
+.card.show-animation:focus > .cardBox > .cardScalable {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
+
+.section0 .overflowBackdropCard[data-type="Episode"]:focus > .cardText-first {
+  font-size: 85%;
+}
+
+.section0 .overflowBackdropCard[data-type="Episode"]:focus > .cardText-secondary,
+.section0 .overflowBackdropCard[data-type="Episode"]:focus > .cardText-secondary {
+  font-size: 110%;
+}
+
 
 /* More Space for Zoom-Animation */
 .itemsContainer > .card > .cardBox {
