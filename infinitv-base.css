@@ -116,9 +116,11 @@
   scroll-behavior: smooth;
 }
 
+/*
 .layout-tv ::-webkit-scrollbar {
   display: none;
 }
+  */
 
 /*
 | TV-UI

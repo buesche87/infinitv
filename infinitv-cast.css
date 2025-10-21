@@ -8,10 +8,10 @@
 
 */
 
-  #guestCastContent .card.overflowPortraitCard,
-  #castContent .card.overflowPortraitCard {
-    padding-right: 0.5vw;
-  }
+#guestCastContent .card.overflowPortraitCard,
+#castContent .card.overflowPortraitCard {
+  padding-right: 0.5vw;
+}
 
 /* Shrink and square (or round) cast thumbnails */
 @media all and (min-width: 131.25em){
