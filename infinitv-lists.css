@@ -133,6 +133,7 @@
 .cardScalable {
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px var(--dark40);
+  transition: all 0.2s !important;
 }
 
 /* Full Rounding */
@@ -210,9 +211,10 @@
 ---------------------------------------*/
 
 /* Zoom on Focus */
-.card.show-animation:focus > .cardBox > .cardBox > .cardScalable {
+.card.show-animation:focus > .cardBox > .cardScalable {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
+
 }
 
 .section0 .overflowBackdropCard[data-type="Episode"]:focus > .cardText-first {
