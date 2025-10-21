@@ -133,7 +133,6 @@
 .cardScalable {
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px var(--dark40);
-  transition: filter 0.5s;
 }
 
 /* Full Rounding */
@@ -211,7 +210,7 @@
 ---------------------------------------*/
 
 /* Zoom on Focus */
-.card.show-animation:focus > .cardBox > .cardScalable {
+.card.show-animation:focus > .cardBox > .cardBox > .cardScalable {
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
 }
