@@ -111,7 +111,7 @@
 /* Scrollbar: Hide */
 #loginPage,
 .layout-tv {
-  overflow: auto;
+  overflow-y: auto;
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
