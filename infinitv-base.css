@@ -112,6 +112,7 @@
 #loginPage,
 .layout-tv {
   overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
