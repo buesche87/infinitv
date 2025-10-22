@@ -129,6 +129,7 @@
 }
 
 /* Adjust Pages */
+/*
 #indexPage, 
 #moviesPage, 
 #tvRecommendedPage, 
@@ -136,20 +137,16 @@
   margin-top: 4em !important;
   padding-top: 0.5em !important;
 }
+  */
 
 /* Disable Slides (they don't work well with a remote) */
 .layout-tv #slides-container {
   display: var(--displayslides) !important;
 }
 
-/* Move Elements up (more space from hidden slides) */
+/* Use freed Space */
 .layout-tv .homeSectionsContainer {
   top: 0 !important ;
-}
-
-/* Darken Background */
-.layout-tv .backgroundContainer.withBackdrop {
-  background:  rgba(0, 0, 0, var(--bgdarkness)) ;
 }
 
 /*
@@ -169,13 +166,70 @@
 
 
 /*
+| Header
+-----------------------------*/
+
+/* don't scroll taskbar in tv mode
+.layout-tv .skinHeader {
+  position: fixed !important;
+} */
+
+/* Header: Size */
+.skinHeader,
+.headerTop {
+  padding: .4em !important;
+}
+
+/* Transparency */
+.skinHeader-withBackground {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Buttons */
+.paper-icon-button-light {
+  border: solid 2px #0000 !important;
+  border-radius: var(--rounding-media);
+}
+.paper-icon-button-light:hover {
+  color: rgba(var(--accent), 1) !important;
+  background: rgba(var(--accent), .2) !important;
+}
+.paper-icon-button-light:focus,
+.paper-icon-button-light:active {
+  color: rgba(var(--accent), 1) !important;
+  background: rgba(var(--accent), .2) !important;
+  border: solid 2px rgba(var(--accent), 0.6) !important;
+}
+.paper-icon-button-light:active {
+  background: rgba(var(--accent), .4) !important;
+}
+
+/* Header Buttons */
+.paper-icon-button-light:not(.headerButton):focus,
+.paper-icon-button-light:not(.headerButton):active {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+.headerButton:focus,
+.headerButton:active {
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+/* Other Menu Buttons */
+.paper-icon-button-light:not(.headerButton) {
+  padding: .4em !important;
+}
+
+
+/*
 | Taskbar
 -----------------------------*/
 
-/* don't scroll taskbar in tv mode */
+/* don't scroll taskbar in tv mode
 .layout-tv .skinHeader {
   position: fixed !important;
-}
+} */
 
 /* center buttons on taskbar */
 .headerTop {
