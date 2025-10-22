@@ -78,6 +78,13 @@
 }
 
 /* Media Button: Focus */ 
+.detailButton:hover {
+  color: rgba(var(--accent), 1) !important;
+  background: rgba(var(--accent), .2) !important;
+  transform: scale(1.2) !important;
+}
+
+/* Media Button: Focus */ 
 .detailButton:focus {
   border: solid 2px rgba(var(--accent), 0.6) !important;
   transform: scale(1.2) !important;
