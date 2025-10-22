@@ -36,13 +36,14 @@
 /* style & placement of the ribbon */
 .detailRibbon {
   /* padding-left: 32vw !important; */
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-right: 2% !important;
 }
 
 /* desktop mode only */
 .layout-desktop .detailRibbon {
   height: 9em !important;
-  margin-top: -11em !important;
+  margin-top: -15em !important;
 }
 
 
