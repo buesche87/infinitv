@@ -30,23 +30,21 @@
 }
 
 /* More spacing for cards on home screen */
-/*
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
   margin-right: 1vw !important;
 }
-*/
 
 /* more space for zoomed cards */
 .portraitCard.show-focus.show-animation,
 .backdropCard.show-focus.show-animation {
   padding-bottom: 1.5em !important;
-  /* padding-right: 1vw !important; */
+  padding-right: 1vw !important;
 }
 
 /* narrow margins */
 .cardBox-bottompadded {
   margin-bottom: 0.5em !important;
-  /* margin-right: 1.5vw !important; */
+  margin-right: 1.5vw !important;
 }
 
 /*
