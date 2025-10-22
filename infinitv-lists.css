@@ -44,7 +44,7 @@
 /* narrow margins */
 .cardBox-bottompadded {
   margin-bottom: 0.5em !important;
-  margin-right: 1.5em !important;
+  margin-right: 1.5vw !important;
 }
 
 /*
@@ -98,12 +98,14 @@
 
 /* Portrait Card: Size */
 .itemsContainer-tv > .portraitCard {
-  width: 16% !important;
+  /* width: 16% !important; */
+  width: 19.7% !important;
 }
 
 /* Backdrop Card: Size*/
 .itemsContainer-tv > .backdropCard {
-  width: 20% !important;
+  /* width: 20% !important; */
+  width: 24.6% !important;
 }
 
 /* Overflow Portrait Card: Size */

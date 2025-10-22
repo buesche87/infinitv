@@ -109,6 +109,7 @@
 }
 
 /* Scrollbar: Hide */
+#loginPage,
 .layout-tv {
   overflow: auto;
   scrollbar-width: none;
@@ -165,7 +166,7 @@
 }
 
 /*
-| Taskbar
+| Header
 -----------------------------*/
 
 /* don't scroll taskbar in tv mode */
@@ -173,9 +174,15 @@
   position: fixed !important;
 }
 
-/* center buttons on taskbar */
+/* Header: Size */
+.skinHeader,
 .headerTop {
-  padding: .6em .6em !important;
+  padding: .4em !important;
+}
+
+/* Transparency */
+.skinHeader-withBackground {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Taskbar - text & vertical-scroll */
@@ -227,62 +234,6 @@
   color: #fff;
 }
 
-
-/*
-| Scrollbar
------------------------------*/
-
-/* scrollbar Color */
-* {
-  scrollbar-color: rgba(var(--accent), 0.8) !important;
-}
-
-/* Show - auto (thin) */
-/*
-#moviesPage, 
-#moviesPage::-webkit-scrollbar,
-#tvRecommendedPage, 
-#tvRecommendedPage::-webkit-scrollbar,
-#itemDetailPage,
-#itemDetailPage::-webkit-scrollbar {
-  overflow-y: auto !important;
-  scrollbar-width: thin !important; 
-}
-*/
-
-/* Hide */
-/*
-.libraryDocument,
-.libraryDocument::-webkit-scrollbar, 
-#indexPage, 
-#indexPage::-webkit-scrollbar,
-#loginPage,
-#loginPage::-webkit-scrollbar {
-  overflow-y: auto !important;
-  scrollbar-width: none !important; 
-}
-*/
-
-/* Force hide */
-#loginPage,
-.preload {
-  scrollbar-width: none !important;
-}
-
-/* Scrollbar Thumb*/
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-ms-thumb,
-.mdl-slider::-webkit-slider-thumb,
-::-webkit-scrollbar-thumb {
-  border-radius: var(--rounding-media);
-  background: rgba(var(--accent),0.8) !important;
-}
-
-/* Scrollbar div */
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-track-piece {
-  background: #0000 !important;
-}
 
 /*
 | Buttons
@@ -447,7 +398,8 @@ a[data-role="button"]:hover,
 
 /* Fields: Active */
 .css-17c09up.Mui-selected,
-.inputLabelFocused {
+.inputLabelFocused,
+.navMenuOption-selected {
   color: rgba(var(--accent)) !important;
 }
 
