@@ -16,35 +16,25 @@
 .itemsContainer-tv.vertical-wrap {
   padding-top: 1% !important;
   padding-right: 3% !important; 
-  /* padding-left: 3% !important; */
+  padding-left: 3% !important;
 }
 
 /* Scrollable List */
 .itemsContainer-tv.scrollSlider {
-  padding-top: 1vw !important;
-  padding-left: .6em !important;
-}
-
-#castCollapsible .itemsContainer-tv.scrollSlider {
-  padding-top: 0em !important;
-}
-
-/* More spacing for cards on home screen */
-.homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
-  margin-right: 1vw !important;
+  padding-top: 1% !important;
+  padding-left: 1% !important;
 }
 
 /* more space for zoomed cards */
 .portraitCard.show-focus.show-animation,
 .backdropCard.show-focus.show-animation {
   padding-bottom: 1.5em !important;
-  padding-right: 1vw !important;
 }
 
 /* narrow margins */
 .cardBox-bottompadded {
   margin-bottom: 0.5em !important;
-  margin-right: 1.5vw !important;
+  margin-right: 1.5em !important;
 }
 
 /*
@@ -98,25 +88,23 @@
 
 /* Portrait Card: Size */
 .itemsContainer-tv > .portraitCard {
-  /* width: 16% !important; */
-  width: 19.7% !important;
+  width: 16% !important;
 }
 
 /* Backdrop Card: Size*/
 .itemsContainer-tv > .backdropCard {
-  /* width: 20% !important; */
-  width: 24.6% !important;
+  width: 20% !important;
 }
 
 /* Overflow Portrait Card: Size */
-.castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
-.guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
+.itemsContainer-tv > .overflowPortraitCard, 
+.itemsContainer-tv > .overflowSquareCard {
   width: 16% !important;
 }
 
-/* HomePage Overflow Card Size */
-.homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
-  width: 27vw;
+/* Overflow Backdrop Card: Size */
+.itemsContainer-tv > .overflowBackdropCard {
+  width: 29% !important;
 }
 
 /* Card Buttons: No background */
@@ -171,7 +159,7 @@
 
 /* Series Title: Padding */
 .cardText-first {
-  padding-top: .6em !important;
+  padding-top: .5em !important;
 }
 
 /* Secondary Text: Size */
@@ -179,30 +167,18 @@
   font-size: 75% !important;
 }
 
-
-/*
-| List: Recently & Next Up
----------------------------------------*/
-
-/* Episod Card: Hide Series Title */
-.section0 .overflowBackdropCard[data-type="Episode"] .cardText-first,
-.section1 .overflowBackdropCard[data-type="Episode"] .cardText-first {
+/* Overflow Backdrop Card: Hide Series Title */
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
   display: none;
 }
 
-/* Episod Card: Make "S0E0 - Episodename" Bigger */
-.section0 .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
-.section1 .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
+/* Overflow Backdrop Card: Make "S0E0 - Episodename" Bigger */
+.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
   font-size: 100% !important;
   padding-top: .6em !important;
   color: inherit;
 }
 
-/* Movie Card in Recent Items: Hide Year */
-.section0 .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
-.section1 .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
-  display: none;
-}
 
 /*
 | Item Cards: Animation

@@ -25,7 +25,6 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-
 /*
 | Main UI: Style
 -----------------------------*/
@@ -75,7 +74,7 @@
 }
 
 .navMenuOption:hover {
-  background: rgba(var(--accent),1) !important;
+  background: rgba(var(--accent),0.7) !important;
 }
 
 .navMenuOption-selected {
@@ -109,19 +108,15 @@
 }
 
 /* Scrollbar: Hide */
-#loginPage,
 .layout-tv {
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
 
-/*
 .layout-tv ::-webkit-scrollbar {
-  display: none;
+  display: none; /* Chrome, Safari, neuer Edge */
 }
-  */
 
 /*
 | TV-UI
@@ -194,7 +189,7 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active {
   color: rgba(var(--accent), 1) !important;
-  /* background: rgba(var(--accent), .2) !important; */
+  background: rgba(var(--accent), .2) !important;
   border: solid 2px rgba(var(--accent), 0.6) !important;
 }
 .paper-icon-button-light:active {
