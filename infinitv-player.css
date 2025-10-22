@@ -14,8 +14,8 @@
 -------------------------------*/
 
 /* OSD Header */
-.osdHeader {
-  height: 3.2em !important;
+.skinHeader-withBackground.osdHeader {
+  height: 3.2em;
   --webkit-backdrop-filter: none;
   box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
 }
@@ -25,7 +25,7 @@
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
   box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-top: .5em;
-  padding-bottom: 1em;
+  padding-bottom: max(env(safe-area-inset-bottom), 1em);
 }
 
 /* OSD Header: Hide some Elements */
@@ -37,6 +37,19 @@
 /* OSD Footer: Space between Icons */
 .buttons.focuscontainer-x {
   padding: .5em 0 0 !important;
+}
+
+/* OSD Buttons: Style */
+.paper-icon-button-light.show-focus:not(.headerButton) {
+  border: solid 2px #0000 !important;
+  padding: .4em !important;
+}
+
+/* OSD Buttons: Zoom on Focus */
+.paper-icon-button-light.show-focus:not(.headerButton):focus {
+  border: solid 2px rgba(var(--accent), 0.6) !important;
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
 }
 
 /* style the controls*/
@@ -56,6 +69,7 @@
   border: none;
 }
 
+
 /* Fix the UI shifting around */
 .nowPlayingBarCurrentTime {
   width: 6em;
@@ -73,6 +87,7 @@
 .sliderMarker.watched {
   background: rgba(var(--accent),0.75) !important;
 }
+
 
 
 /*
@@ -108,25 +123,25 @@
 }
 
 
+
 /*
 | Skip-Button
 -------------------------------*/
 
 /* Skip-Button */
 .skip-button {
-  border: solid 2px #fff !important;
-  border-radius: var(--rounding-media);
-  color: #fff;
-  background: #0000 !important;
+  color: rgba(var(--accent), 1);
+  background: var(--dark60);
+  box-shadow: 0px 0px 0px 1px rgba(var(--accent)) !important;
+  border-radius: var(--rounding-system);
 }
 
 /* Skip-Button: Hover & Focus */
 .skip-button:focus,
 .skip-button:hover {
-  border: solid 2px rgba(var(--accent), 1) !important;
-  border-radius: var(--rounding-media);
-  color: rgba(var(--accent), 1) !important;
-  background: #0000 !important;
+  background: rgba(var(--accent), 1) !important;
+  color: #fff;
+  border-radius: var(--rounding-system);
 }
 
 /*
@@ -166,42 +181,15 @@
 } 
 
 /* Background & Thumb: Accent: 100% */
-.iconOsdProgressInner {
-  background: rgba(var(--accent)) !important;
-  color: rgba(var(--accent)) !important;
-}
-
-.mdl-slider::-moz-range-thumb {
-  background: rgba(var(--accent)) !important;
-  color: rgba(var(--accent)) !important;
-}
-
+.iconOsdProgressInner,
 .mdl-slider::-webkit-slider-thumb {
-  background: rgba(var(--accent)) !important;
-  color: rgba(var(--accent)) !important;
+  background: rgba(var(--accent));
+  color: rgba(var(--accent));
 }
+
+
 
 /* Subtitle preview */
 .subtitleappearance-preview {
   background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
 }
-
-/* Scrollbar div */
-.mdl-slider::-webkit-scrollbar-corner  {
-  background: #0000 !important;
-}
-
-.mdl-slider::-webkit-scrollbar-track-piece {
-  background: #0000 !important;
-}
-
-
-/* Scrollbar Thumb
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-ms-thumb,
-.mdl-slider::-webkit-slider-thumb,
-::-webkit-scrollbar-thumb {
-  border-radius: var(--rounding-media);
-  background: rgba(var(--accent),0.8) !important;
-}
-  */

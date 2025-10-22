@@ -41,7 +41,7 @@
 }
 
 /* fit search button in settings */
-#dashboardPage .paper-icon-button-light > .material-icons {
+#dashboardPage .paper-icon-button-light>.material-icons {
   font-size: 1.5em !important;
 }
 #dashboardPage .selectLabel {

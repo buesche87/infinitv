@@ -40,24 +40,23 @@
   background: none !important;
 }
 
-/* List Items */
-.listItem-border {
-  border-color: #0000 !important;
-  border-radius: var(--rounding-system) !important;
-  margin-top: 0.2em !important;
-}
-
 /* Menu Items: Focus & Hover */
 .listItem-button:focus,
 .listItem-button:hover,
 .listItem-border.emby-button:focus,
 .listItem-border.emby-button:hover {
-  background: rgba(var(--accent),0.7) !important;
+  background: rgba(var(--accent),0.8) !important;
 }
 
 /* Remove background on some icons */
 .listItemIcon {
   background: #0000 !important;
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Remove divider on list items */
+.listItem-border {
+  border-color: #0000 !important;
   border-radius: var(--rounding-system) !important;
 }
 
@@ -95,12 +94,4 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
 div[data-role="controlgroup"] a[data-role="button"] {
   display: table-cell !important;
   margin: 0 !important;
-}
-
-/* Don't raise */
-.button-link,
-.button-submit,
-.emby-select-focusscale:focus {
-  -webkit-transform: none !important;
-  transform: none !important;
 }

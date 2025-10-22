@@ -8,15 +8,15 @@
 
 */
 
-/* Bigger Item Details Bar */
+/* Bigger Taskbar */
 .layout-tv .itemDetailPage {
   padding-top: 4.7em !important;
 }
 
 /* hide some elements on page in ribbon and details */
 .detailLogo,
-.endsAt,
-.hide+.detailPageWrapperContainer .itemName,
+.endsAt
+.hide+.detailPageWrapperContainer .itemName
 .itemExternalLinks,
 .itemTags {
   display: none !important;
@@ -103,6 +103,10 @@
   top: 32% !important;
 }
 
+
+
+
+
 /*
 | Media Description
 -------------------------------------------------*/
@@ -138,11 +142,9 @@ p.itemGenres {
 }
 
 /* Media Description */
-/*
 .itemDetailPage {
   padding-top: 6em !important;
 }
-  */
 
 .detailPageSecondaryContainer {
   padding-top: 0em !important;
@@ -176,8 +178,6 @@ p.itemGenres {
   transform: none !important;
 }
 
-
-
 /*
 | Section Layout (cast, more...)
 -------------------------------------------------*/
@@ -197,11 +197,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   margin: 0;
 }
 
-/* Season Cards spacing */
-.detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
-  margin-right: .5vw !important;
-}
-
 /* Media sections - Mobile layout */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
  padding-top:0em;
@@ -218,29 +213,25 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 .defaultCardBackground1 {
   /* background: rgba(var(--accent),0.4) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 60%, white);*/
-  background: hsl(var(--accent-h), var(--accent-s), 60%);
+  background: color-mix(in srgb, rgb(var(--accent)) 60%, white);
 }
 
 .defaultCardBackground2 {
   /* background: rgba(var(--accent),0.5) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 80%, white); */
-  background: hsl(var(--accent-h), var(--accent-s), 80%);
+  background: color-mix(in srgb, rgb(var(--accent)) 80%, white);
 }
 
 .defaultCardBackground3 {
   /* background: rgba(var(--accent),0.6) !important; */
-  background: hsl(var(--accent-h), var(--accent-s), 100%);
+  background: var(--accent);
 }
 
 .defaultCardBackground4 {
   /* background: rgba(var(--accent),0.7) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 80%, black); */
-  background: hsl(var(--accent-h), var(--accent-s), 40%);
+  background: color-mix(in srgb, rgb(var(--accent)) 80%, black);
 }
 
 .defaultCardBackground5 {
   /* background: rgba(var(--accent),0.8) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 60%, black); */
-  background: hsl(var(--accent-h), var(--accent-s), 20%);
+  background: color-mix(in srgb, rgb(var(--accent)) 60%, black);
 }
