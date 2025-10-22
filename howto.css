@@ -5,13 +5,18 @@
 @import url('https://buesche87.github.io/infinitv/infinitv-media.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-player.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-usersettings.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-dashboard.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-misc.css');
 @import url('https://buesche87.github.io/infinitv/ultrachromic-episodes.css');
-@import url('https://buesche87.github.io/infinitv/ultrachromic-cast.css');
-:root {--accent: 204, 151, 98 ;}
-:root {--rounding: 12px ;}
-:root {--rounding-input: 4px ;}
+@import url('https://buesche87.github.io/infinitv/infinitv-cast.css');
+:root {
+  --accent-h: 28;   /* orangebrown */
+  --accent-s: 50%;
+  --accent-l: 55%;
+}
+:root {--accent: 255,153,0 ;}
+:root {--rounding-media: 12px ;}
+:root {--rounding-system: 4px ;}
 :root {--headeropacity: 0.7 ;}
-:root {--bgopacity: 0.4 ;}
+:root {--bgdarkness: 0.7 ;}
 :root {--footeropacity: 0.8 ;}
+:root {--displayslides: none ;}
