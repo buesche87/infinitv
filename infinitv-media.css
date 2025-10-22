@@ -35,8 +35,6 @@
 
 /* style & placement of the ribbon */
 .detailRibbon {
-  /* padding-left: 32vw !important; */
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-right: 2% !important;
 }
 
@@ -44,6 +42,7 @@
 .layout-desktop .detailRibbon {
   height: 9em !important;
   margin-top: -15em !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 
@@ -91,6 +90,12 @@
 .detailButton:focus {
   border: solid 2px rgba(var(--accent), 0.6) !important;
   transform: scale(1.2) !important;
+}
+
+
+.selectVideo:disabled {
+    border: 2px solid var(--light20);
+    opacity: 1;
 }
 
 
