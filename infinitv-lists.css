@@ -52,8 +52,6 @@
 }
 
 
-
-
 /*
 | Alphabet Picker 
 ---------------------------------------*/
@@ -62,6 +60,7 @@
 .alphaPickerButton-tv:hover {
   background: rgba(var(--accent), 0.8) !important;
 }
+
 
 /*
 | Sorting & Filter Menubar
@@ -98,6 +97,7 @@
 .filterIndicator {
   background: rgb(var(--accent), 0.7) !important;
 }
+
 
 /*
 | Item Cards: Size & Style
@@ -210,20 +210,6 @@
   display: none;
 }
 
-/* Overflow Backdrop Card: Hide Series Title */
-/*
-.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-first {
-  display: none;
-}*/
-
-/* Overflow Backdrop Card: Make "S0E0 - Episodename" Bigger */
-/*
-.overflowBackdropCard[data-type="Episode"] > .cardBox > .cardText-secondary {
-  font-size: 100% !important;
-  padding-top: .6em !important;
-  color: inherit;
-}*/
-
 
 /*
 | Item Cards: Animation
@@ -242,10 +228,8 @@
 }
 
 /* Color on Focus */
-.card.show-animation:focus > .cardBox > .cardText-first,
-.card.show-animation:focus > .cardBox > .cardText-secondary,
-.card.show-animation:focus > .cardBox > .cardFooter > .cardText-first,
-.card.show-animation:focus > .cardBox > .cardFooter > .cardText-secondary {
+.card.show-animation:focus .cardText-first,
+.card.show-animation:focus .cardText-secondary {
   color: rgba(var(--accent));
 }
 
