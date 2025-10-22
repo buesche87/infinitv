@@ -93,12 +93,6 @@
 }
 
 
-.selectVideo:disabled {
-    border: 2px solid var(--light20);
-    opacity: 1;
-}
-
-
 /*
 | Media Poster
 -------------------------------------------------*/
@@ -108,6 +102,8 @@
   max-width: 26vw;
   left: 3% !important;
   top: 1em !important;
+  border-radius: var(--rounding-media);
+  box-shadow: 4px 4px 10px 5px var(--dark40);
   /* top: 20px; */
 }
 
@@ -157,12 +153,6 @@ p.itemGenres {
 }
 
 /* Media Description */
-/*
-.itemDetailPage {
-  padding-top: 6em !important;
-}
-*/
-
 .detailPageSecondaryContainer {
   padding-top: 0em !important;
 }
