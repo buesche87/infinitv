@@ -169,6 +169,13 @@
 }
   */
 
+.layout-desktop .overflowBackdropCard:hover .cardScalable,
+.layout-desktop .overflowBackdropCard:focus .cardScalable,
+.layout-desktop .overflowPortraitCard:hover .cardScalable,
+.layout-desktop .overflowPortraitCard:focus .cardScalable {
+  box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
+}
+
 /*
 | Header
 -----------------------------*/
