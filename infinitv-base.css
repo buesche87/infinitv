@@ -185,7 +185,40 @@
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* Taskbar - text & vertical-scroll */
+/* Buttons */
+.paper-icon-button-light {
+  border: solid 2px #0000 !important;
+  border-radius: var(--rounding-media);
+}
+.paper-icon-button-light:hover {
+  color: rgba(var(--accent), 1) !important;
+  background: rgba(var(--accent), .2) !important;
+}
+.paper-icon-button-light:focus,
+.paper-icon-button-light:active {
+  color: rgba(var(--accent), 1) !important;
+  /* background: rgba(var(--accent), .2) !important; */
+  border: solid 2px rgba(var(--accent), 0.6) !important;
+}
+.paper-icon-button-light:active {
+  background: rgba(var(--accent), .4) !important;
+}
+
+/* Header Buttons */
+.paper-icon-button-light:not(.headerButton):focus {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+.headerButton:focus {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1)  !important;
+}
+
+/* Other Menu Buttons */
+.paper-icon-button-light:not(.headerButton) {
+  padding: .4em !important;
+}
+
 /*
 | Header Sections
 -----------------------------*/
@@ -239,75 +272,52 @@
 | Buttons
 -----------------------------*/
 
-/* Buttons */
-.headerButton,
-.headerButton:hover,
-.paper-icon-button-light,
-.paper-icon-button-light:hover {
-  border-radius: var(--rounding-media);
+/* Active Buttons */
+.buttonActive {
+  color: rgba(var(--accent)) !important;
 }
 
-/* Menu Button Animation - Hover & Focus */
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover,
-.paper-icon-button-light:hover,
-.paper-icon-button-light:hover:not(:disabled),
-.paper-icon-button-light:focus,
-.paper-icon-button-light:focus:not(:disabled) {
-  color: rgb(var(--accent)) !important;
-  background: #0000 !important;
-}
-
-/* Misc Buttons */
-.button-submit,
-.fab,
-.raised {
+/* Submit Button */
+.button-submit {
   border-radius: var(--rounding-system) !important;
 }
 
-/*
-| Button Animations
------------------------------*/
-
-/* Transitions */
-.raised.homeLibraryButton {
-  transition: filter 0.2s
-}
-
-a[data-role="button"],
-.fab,
+/* Raised Button */
 .raised {
 	transition: all 0.2s !important;
   background: var(--dark40) !important;
+  border-radius: var(--rounding-system) !important;
 }
-
-.raised.homeLibraryButton:hover {
-  color: rgb(var(--accent)) !important;
-  background: var(--light60) !important;
-  transition: filter 0.2s
-}
-
-/* Background on Hover & Focus: Accent 50% */
-a[data-role="button"]:hover,
-.actionSheetMenuItem:hover,
-.alphaPickerButton-tv:focus,
-.alphaPickerButton-tv:hover,
-.css-17c09up:hover,
-.fab:hover,
-.navMenuOption:hover,
 .raised:hover, 
 .raised:focus {
   background: rgba(var(--accent),0.8) !important;
 }
 
-/* Button: Active */
-.buttonActive,
+/* Raised Home Library Button */
+.raised.homeLibraryButton {
+  transition: filter 0.2s;
+}
+.raised.homeLibraryButton:hover,
+.raised.homeLibraryButton:focus {
+  color: rgb(var(--accent)) !important;
+  background: var(--light60) !important;
+  /* box-shadow: 0px 0px 5px rgb(var(--accent)) !important; */
+  /* border: solid 1px rgba(var(--accent),0.6) !important; */
+}
+
+/* Misc Buttons */
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
   color: rgba(var(--accent)) !important;
 }
 
+/* Background on Hover & Focus: Accent 50% */
+/* a[data-role="button"]:hover, */
+.actionSheetMenuItem:hover,
+.css-17c09up:hover,
+.fab:hover {
+  background: rgba(var(--accent),0.8) !important;
+}
 
 /*
 | Fields & Inputs
