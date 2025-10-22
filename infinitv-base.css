@@ -29,6 +29,21 @@
 | Main UI: Style
 -----------------------------*/
 
+/* Header: Transparency */
+.skinHeader-withBackground {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Menu Drawer: Transparency */
+.mainDrawer {
+  background: var(--dark80) !important;
+}
+
+/* Menu Drawer: Shadow */
+.drawer-open {
+  box-shadow: 0px 0px 7px rgba(var(--accent), .6) !important;
+}
+
 /* Dialogs */
 .dialog,
 .formDialogHeader,
@@ -39,91 +54,29 @@
 /* Toast: Glow */
 .toast {
   box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent), 0.6) !important;
+  border: solid 1px rgba(var(--accent),0.6) !important;
   border-radius: var(--rounding-system) !important;
 }
 
-/* Blurhash */
+/* Desaturate Blurhash */
 .blurhash-canvas {
 	filter: opacity(60%) saturate(60%);
 }
 
-/* Card Shadows */
+/* No Shadows on Cards */
 .cardPadder,
 .visualCardBox,
 .cardImageContainer {
   box-shadow: none;
 }
 
-/* User Icon Fix when using a Profile Image */
+/* Fix top right user icon when using a profile image */
 .headerUserButtonRound {
   border-radius: 50px !important;
 }
 
-/* Darken Backdrop Background */
-.backgroundContainer.withBackdrop {
-  background:  rgba(0, 0, 0, var(--bgdarkness)) ;
-}
-
-/* Menu Drawer */
-.mainDrawer {
-  background: rgb(0 0 0) !important;
-  margin-top: 4.6em !important;
-  box-shadow: none !important;
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-.navMenuOption:hover {
-  background: rgba(var(--accent),0.7) !important;
-}
-
-.navMenuOption-selected {
-  color: rgba(var(--accent)) !important;
-  background: var(--dark40) !important;
-}
-
 /*
-| Scrollbar
------------------------------*/
-
-/* Scroollbar: Color */
-/*
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, var(--headeropacity));
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(var(--accent), 0.7);
-  border-radius: 4px;
-  border: 1px solid transparent;
-  background-clip: content-box;
-}
-
-::-webkit-scrollbar-corner {
-  background: rgba(var(--accent), 0.8);
-}
- */
-
-/* Scrollbar: Hide */
-/*
-.layout-tv {
-  overflow: auto;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-}
-
-.layout-tv ::-webkit-scrollbar {
-  display: none;
-}
-*/
-
-/*
-| TV-UI
+| TV UI: Style
 -----------------------------*/
 
 /* Smaller Size */
@@ -131,8 +84,13 @@
   font-size: 110% !important;
 }
 
-.layout-tv .backgroundContainer {
-  padding-top: 5em !important;
+/* Adjust Pages */
+#indexPage, 
+#moviesPage, 
+#tvRecommendedPage, 
+#musicRecommendedPage {
+  margin-top: 4em !important;
+  padding-top: 0.5em !important;
 }
 
 /* Disable Slides (they don't work well with a remote) */
@@ -140,21 +98,26 @@
   display: var(--displayslides) !important;
 }
 
-/* Use freed Space */
+/* Move Elements up (more space from hidden slides) */
 .layout-tv .homeSectionsContainer {
   top: 0 !important ;
 }
 
-/* Page allignments */
-.layout-tv .libraryPage {
-  padding-top: 5.3em !important;
+/* Darken Background */
+.layout-tv .backgroundContainer.withBackdrop {
+  background:  rgba(0, 0, 0, var(--bgdarkness)) ;
 }
 
 /*
-| Desktop-UI
+| Desktop UI: Style
 -----------------------------*/
 
-/* Home Container Background */
+/* Desktop: Background Opacity */
+.layout-desktop .backgroundContainer.withBackdrop {
+  background: rgba(0, 0, 0, var(--bgdarkness)) ;
+}
+
+/* Desktop: Home Elements Background */
 .layout-desktop .homeSectionsContainer {
   background: var(--dark60) !important;
   box-shadow: 1px -10px 20px 10px var(--dark60) !important;
@@ -162,71 +125,24 @@
 
 
 /*
-| Header
+| Taskbar
 -----------------------------*/
 
-/* don't scroll taskbar in tv mode
+/* don't scroll taskbar in tv mode */
 .layout-tv .skinHeader {
   position: fixed !important;
-} */
+}
 
-/* Header: Size */
-.skinHeader,
+/* center buttons on taskbar */
 .headerTop {
-  padding: .4em !important;
+  padding: .6em .6em !important;
 }
 
-/* Transparency */
-.skinHeader-withBackground {
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Buttons */
-.paper-icon-button-light {
-  border: solid 2px #0000 !important;
-  border-radius: var(--rounding-media);
-}
-.paper-icon-button-light:hover {
-  color: rgba(var(--accent), 1) !important;
-  background: rgba(var(--accent), .2) !important;
-}
-.paper-icon-button-light:focus,
-.paper-icon-button-light:active {
-  color: rgba(var(--accent), 1) !important;
-  background: rgba(var(--accent), .2) !important;
-  border: solid 2px rgba(var(--accent), 0.6) !important;
-}
-.paper-icon-button-light:active {
-  background: rgba(var(--accent), .4) !important;
-}
-
-/* Header Buttons */
-.paper-icon-button-light:not(.headerButton):focus,
-.paper-icon-button-light:not(.headerButton):active {
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
-}
-.headerButton:focus,
-.headerButton:active {
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-
-/* Other Menu Buttons */
-.paper-icon-button-light:not(.headerButton) {
-  padding: .4em !important;
-}
-
-/*
-| Header Sections
------------------------------*/
-
-/* Move into Header */
-.layout-tv .headerTabs.sectionTabs,
-.layout-desktop .headerTabs.sectionTabs {
+/* Taskbar - text & vertical-scroll */
+.headerTabs.sectionTabs {
   text-size-adjust: 105%;
   font-size: 105% !important;
-  margin-top: -3.5em !important;
+  margin-top: -3.6em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
@@ -239,79 +155,159 @@
   transition: filter 0.2s
 }
 
-/* Make Text slighty bigger */
-.layout-tv .sectionTabs,
-.layout-desktop .sectionTabs {
+/* make buttons slightly bigger */
+.sectionTabs {
   font-size: 105% !important;
 }
 
-/* Style Buttons */
+/* Page: Text Buttons */
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
-  background: #0000 !important;
-  /* border-radius: var(--rounding-media); */
 }
+
+/* Tab Buttons: Focus & Hover */
 .emby-tab-button:hover,
 .emby-tab-button:focus {
   color: rgb(var(--accent)) !important;
   transform: scale(1.2) !important;
 }
-.emby-tab-button-active:active:not(:disabled)  {
+
+/* Tab Button: Active */
+.emby-tab-button-active {
+  background: #0000 !important;
   color: #fff;
-  transform: scale(1.2) !important;
 }
 
+
+/*
+| Scrollbar
+-----------------------------*/
+
+/* scrollbar Color */
+* {
+  scrollbar-color: rgba(var(--accent), 0.8) !important;
+}
+
+/* Show - auto (thin) */
+/*
+#moviesPage, 
+#moviesPage::-webkit-scrollbar,
+#tvRecommendedPage, 
+#tvRecommendedPage::-webkit-scrollbar,
+#itemDetailPage,
+#itemDetailPage::-webkit-scrollbar {
+  overflow-y: auto !important;
+  scrollbar-width: thin !important; 
+}
+*/
+
+/* Hide */
+/*
+.libraryDocument,
+.libraryDocument::-webkit-scrollbar, 
+#indexPage, 
+#indexPage::-webkit-scrollbar,
+#loginPage,
+#loginPage::-webkit-scrollbar {
+  overflow-y: auto !important;
+  scrollbar-width: none !important; 
+}
+*/
+
+/* Force hide */
+#loginPage,
+.preload {
+  scrollbar-width: none !important;
+}
+
+/* Scrollbar Thumb*/
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-ms-thumb,
+.mdl-slider::-webkit-slider-thumb,
+::-webkit-scrollbar-thumb {
+  border-radius: var(--rounding-media);
+  background: rgba(var(--accent),0.8) !important;
+}
+
+/* Scrollbar div */
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track-piece {
+  background: #0000 !important;
+}
 
 /*
 | Buttons
 -----------------------------*/
 
-/* Active Buttons */
-.buttonActive {
-  color: rgba(var(--accent)) !important;
+/* Buttons */
+.headerButton,
+.headerButton:hover,
+.paper-icon-button-light,
+.paper-icon-button-light:hover {
+  border-radius: var(--rounding-media);
 }
 
-/* Submit Button */
-.button-submit {
+/* Menu Button Animation - Hover & Focus */
+.button-flat:hover,
+.button-flat:focus,
+.cardOverlayButton:hover,
+.paper-icon-button-light:hover,
+.paper-icon-button-light:hover:not(:disabled),
+.paper-icon-button-light:focus,
+.paper-icon-button-light:focus:not(:disabled) {
+  color: rgb(var(--accent)) !important;
+  background: #0000 !important;
+}
+
+/* Misc Buttons */
+.button-submit,
+.fab,
+.raised {
   border-radius: var(--rounding-system) !important;
 }
 
-/* Raised Button */
+/*
+| Button Animations
+-----------------------------*/
+
+/* Transitions */
+.raised.homeLibraryButton {
+  transition: filter 0.2s
+}
+
+a[data-role="button"],
+.fab,
 .raised {
 	transition: all 0.2s !important;
   background: var(--dark40) !important;
-  border-radius: var(--rounding-system) !important;
 }
+
+.raised.homeLibraryButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: var(--light60) !important;
+  transition: filter 0.2s
+}
+
+/* Background on Hover & Focus: Accent 50% */
+a[data-role="button"]:hover,
+.actionSheetMenuItem:hover,
+.alphaPickerButton-tv:focus,
+.alphaPickerButton-tv:hover,
+.css-17c09up:hover,
+.fab:hover,
+.navMenuOption:hover,
 .raised:hover, 
 .raised:focus {
   background: rgba(var(--accent),0.8) !important;
 }
 
-/* Raised Home Library Button */
-.raised.homeLibraryButton {
-  transition: filter 0.2s;
-}
-.raised.homeLibraryButton:hover,
-.raised.homeLibraryButton:focus {
-  color: rgb(var(--accent)) !important;
-  background: var(--light60) !important;
-  /* box-shadow: 0px 0px 5px rgb(var(--accent)) !important; */
-  /* border: solid 1px rgba(var(--accent),0.6) !important; */
-}
-
-/* Misc Buttons */
+/* Button: Active */
+.buttonActive,
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
   color: rgba(var(--accent)) !important;
 }
 
-/* Background on Hover & Focus: Accent 50% */
-/* a[data-role="button"]:hover, */
-.actionSheetMenuItem:hover,
-.css-17c09up:hover,
-.fab:hover {
-  background: rgba(var(--accent),0.8) !important;
-}
 
 /*
 | Fields & Inputs
@@ -402,14 +398,17 @@
 
 /* Fields: Active */
 .css-17c09up.Mui-selected,
-.inputLabelFocused {
+.inputLabelFocused,
+.navMenuOption-selected {
   color: rgba(var(--accent)) !important;
 }
 
 /* Background: Black & White */
+.navMenuOption-selected,
 .selectionCommandsPanel {
   background: var(--dark40) !important;
 }
+
 
 /*
 | Loading spinner & Progress Ring
@@ -436,3 +435,4 @@
 .progressring-bg {
   display: none;
 }
+
