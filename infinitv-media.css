@@ -102,7 +102,7 @@
 .detailImageContainer .card {
   max-width: 26vw;
   left: 3% !important;
-  top: 1em;
+  top: 1em !important;
   /* top: 20px; */
 }
 

@@ -357,7 +357,8 @@
 /* Select */
 .emby-select-withcolor {
   background: var(--dark60); 
-  border: 0.01em solid var(--light20);
+  border: 2px solid var(--light20);
+  border-radius: var(--rounding-system) !important;
 }
 .selectArrow {
   margin-top: 1.05em;
