@@ -119,8 +119,9 @@
   display: none;
 }
 
+
 /*
-| TV UI: Style
+| TV-UI
 -----------------------------*/
 
 /* Smaller Size */
@@ -129,12 +130,8 @@
 }
 
 /* Adjust Pages */
-#indexPage, 
-#moviesPage, 
-#tvRecommendedPage, 
-#musicRecommendedPage {
-  margin-top: 4em !important;
-  padding-top: 0.5em !important;
+.layout-tv .backgroundContainer {
+  padding-top: 5em !important;
 }
 
 /* Disable Slides (they don't work well with a remote) */
@@ -142,18 +139,18 @@
   display: var(--displayslides) !important;
 }
 
-/* Move Elements up (more space from hidden slides) */
+/* Use freed Space */
 .layout-tv .homeSectionsContainer {
   top: 0 !important ;
 }
 
-/* Darken Background */
-.layout-tv .backgroundContainer.withBackdrop {
-  background:  rgba(0, 0, 0, var(--bgdarkness)) ;
+/* Page allignments */
+.layout-tv .libraryPage {
+  padding-top: 5.3em !important;
 }
 
 /*
-| Desktop UI: Style
+| Desktop-UI
 -----------------------------*/
 
 /* Desktop: Background Opacity */
@@ -166,7 +163,6 @@
   background: var(--dark60) !important;
   box-shadow: 1px -10px 20px 10px var(--dark60) !important;
 }
-
 
 /*
 | Taskbar
