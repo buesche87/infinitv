@@ -37,9 +37,17 @@
   margin-right: 1.5em !important;
 }
 
+/*
+| Alphabet Picker 
+---------------------------------------*/
+
+.alphaPickerButton-tv:focus,
+.alphaPickerButton-tv:hover {
+  background: rgba(var(--accent), 0.8) !important;
+}
 
 /*
-| List Menu: Alignment
+| Sorting & Filter Menubar
 ---------------------------------------*/
 
 /* Item Count: Alignment */
@@ -51,8 +59,7 @@
 .btnPreviousPage,
 .btnNextPage,
 .btnSelectView,
-.btnSort,
-.btnFilter-wrapper {
+.btnSort {
   margin-left: .4em;
   margin-right: .4em;
 }
@@ -97,7 +104,7 @@
 
 /* Overflow Backdrop Card: Size */
 .itemsContainer-tv > .overflowBackdropCard {
-  width: 30% !important;
+  width: 29% !important;
 }
 
 /* Card Buttons: No background */
@@ -110,6 +117,11 @@
 | Item Card: Content Style
 ---------------------------------------*/
 
+.cardScalable {
+  border-radius: var(--rounding-media);
+  box-shadow: 4px 4px 10px 5px var(--dark40);
+}
+
 /* Full Rounding */
 .blurhash-canvas,
 .cardContent,
@@ -118,8 +130,10 @@
 .cardContent-shadow,
 .cardImage,
 .cardOverlayButtonIcon,
-.visualCardBox {
+.visualCardBox,
+.cardBox:not(.visualCardBox) .cardPadder {
   border-radius: var(--rounding-media);
+  box-shadow: none;
 }
 
 /* Round Top, Flat Bottom */
