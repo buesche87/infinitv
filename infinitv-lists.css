@@ -247,11 +247,17 @@
 }
 
 /* Count & Played */
+.playedIndicator {
+  color: rgb(0, 0, 0);
+  background: rgb(var(--accent), 0.8) !important;
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Count & Played */
 .countIndicator,
-.playedIndicator,
 .mediaSourceIndicator {
   color: rgb(255, 255, 255);
-  background: rgb(var(--accent), 0.7) !important;
+  background: rgb(var(--accent), 0.8) !important;
   border-radius: var(--rounding-system) !important;
 }
 
