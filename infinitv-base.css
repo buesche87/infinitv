@@ -387,7 +387,7 @@
 .emby-input:focus,
 .emby-textarea:focus,
 .emby-select-withcolor:focus {
-  border: 0.01em solid rgba(var(--accent),0.5) !important;
+  border: 2px solid rgba(var(--accent), 0.7) !important;
   background: var(--dark40) !important; 
 }
 
