@@ -99,6 +99,7 @@
 .detailImageContainer .card {
   max-width: 26vw;
   left: 3% !important;
+  top: 22px;
 }
 
 /* Portrait Position */
