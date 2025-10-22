@@ -179,10 +179,16 @@
 }
 
 /* Taskbar - text & vertical-scroll */
-.headerTabs.sectionTabs {
+/*
+| Header Sections
+-----------------------------*/
+
+/* Move into Header */
+.layout-tv .headerTabs.sectionTabs,
+.layout-desktop .headerTabs.sectionTabs {
   text-size-adjust: 105%;
   font-size: 105% !important;
-  margin-top: -3.6em !important;
+  margin-top: -3.5em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
@@ -195,14 +201,17 @@
   transition: filter 0.2s
 }
 
-/* make buttons slightly bigger */
-.sectionTabs {
+/* Make Text slighty bigger */
+.layout-tv .sectionTabs,
+.layout-desktop .sectionTabs {
   font-size: 105% !important;
 }
 
-/* Page: Text Buttons */
+/* Style Buttons */
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
+  background: #0000 !important;
+  /* border-radius: var(--rounding-media); */
 }
 
 /* Tab Buttons: Focus & Hover */
@@ -438,8 +447,7 @@ a[data-role="button"]:hover,
 
 /* Fields: Active */
 .css-17c09up.Mui-selected,
-.inputLabelFocused,
-.navMenuOption-selected {
+.inputLabelFocused {
   color: rgba(var(--accent)) !important;
 }
 
