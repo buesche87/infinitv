@@ -82,6 +82,43 @@
   background: var(--dark40) !important;
 }
 
+
+/*
+| Scrollbar
+-----------------------------*/
+
+/* Scroollbar: Color */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, var(--headeropacity));
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(var(--accent), 0.7);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(var(--accent), 0.8);
+}
+
+/* Scrollbar: Hide */
+.layout-tv {
+  overflow: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.layout-tv ::-webkit-scrollbar {
+  display: none;
+}
+
 /*
 | TV UI: Style
 -----------------------------*/
