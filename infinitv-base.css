@@ -29,21 +29,6 @@
 | Main UI: Style
 -----------------------------*/
 
-/* Header: Transparency */
-.skinHeader-withBackground {
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Menu Drawer: Transparency */
-.mainDrawer {
-  background: var(--dark80) !important;
-}
-
-/* Menu Drawer: Shadow */
-.drawer-open {
-  box-shadow: 0px 0px 7px rgba(var(--accent), .6) !important;
-}
-
 /* Dialogs */
 .dialog,
 .formDialogHeader,
@@ -54,25 +39,47 @@
 /* Toast: Glow */
 .toast {
   box-shadow: 0px 0px 5px rgb(var(--accent)) !important;
-  border: solid 1px rgba(var(--accent),0.6) !important;
+  border: solid 1px rgba(var(--accent), 0.6) !important;
   border-radius: var(--rounding-system) !important;
 }
 
-/* Desaturate Blurhash */
+/* Blurhash */
 .blurhash-canvas {
 	filter: opacity(60%) saturate(60%);
 }
 
-/* No Shadows on Cards */
+/* Card Shadows */
 .cardPadder,
 .visualCardBox,
 .cardImageContainer {
   box-shadow: none;
 }
 
-/* Fix top right user icon when using a profile image */
+/* User Icon Fix when using a Profile Image */
 .headerUserButtonRound {
   border-radius: 50px !important;
+}
+
+/* Darken Backdrop Background */
+.backgroundContainer.withBackdrop {
+  background:  rgba(0, 0, 0, var(--bgdarkness)) ;
+}
+
+/* Menu Drawer */
+.mainDrawer {
+  background: rgb(0 0 0) !important;
+  margin-top: 4.6em !important;
+  box-shadow: none !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+.navMenuOption:hover {
+  background: rgba(var(--accent),0.7) !important;
+}
+
+.navMenuOption-selected {
+  color: rgba(var(--accent)) !important;
+  background: var(--dark40) !important;
 }
 
 /*
