@@ -53,6 +53,7 @@
 
 /* Info Container */
 .infoWrapper {
+  padding-top: 0.5em;
   padding-bottom: 0.15em;
 }
 
@@ -101,7 +102,8 @@
 .detailImageContainer .card {
   max-width: 26vw;
   left: 3% !important;
-  top: 22px;
+  top: 1em;
+  /* top: 20px; */
 }
 
 /* Portrait Position */
