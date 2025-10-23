@@ -471,9 +471,11 @@
 }
 
 /* Login Card: Move "please sign in" */
-#loginPage .visualLoginForm,
-#loginPage .manualLoginForm {
+#loginPage .visualLoginForm {
   padding-top: 1em;
+}
+#loginPage .manualLoginForm {
+  padding-top: 2em;
 }
 
 /* Login Card: User */
