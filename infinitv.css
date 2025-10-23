@@ -449,7 +449,7 @@
 
 /* Login background */
 #loginPage {
-  background: url(https://wallpapershome.com/images/pages/pic_h/12740.jpg) !important; 
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)), url(https://wallpapershome.com/images/pages/pic_h/12740.jpg) !important;
   background-size: cover !important;
 }
 
