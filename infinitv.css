@@ -585,7 +585,8 @@
 
 /* Filter Indicator */
 .filterIndicator {
-  background: rgb(var(--accent), 0.7) !important;
+  background: rgb(var(--accent), 1) !important;
+  color: black;
 }
 
 
