@@ -82,9 +82,11 @@
 }
 
 /* Page allignments */
+/*
 .layout-tv .libraryPage {
   padding-top: 5.3em !important;
 }
+  */
 
 /*
 | Menu Drawer 
@@ -338,11 +340,10 @@
   margin-top: 1.05em;
 }
 
-/* Link-Button */
+/* Link-Buttons */
 .button-link {
-  color: rgb(var(--accent), 0.8) !important;
+  color: inherit !important;
 }
-
 
 /*
 | Fields & Inputs: Animation
@@ -378,9 +379,13 @@
   background: rgba(var(--accent), 0.7) !important;
 }
 
-/* Links: Focus */
-.button-link:focus {
-  background: #0000 !important; 
+/* Link-Buttons: Focus & Hover */
+.button-link:focus,
+.button-link:hover {
+  color: rgba(var(--accent),0.8) !important;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
 }
 
 /* Select */
@@ -633,9 +638,11 @@
 */
 
 /* Blurhash */
+/*
 .blurhash-canvas {
   filter: opacity(60%) saturate(60%);
 }
+  */
 
 /* Roundings: Full */
 .blurhash-canvas,
@@ -663,11 +670,16 @@
   border-bottom-right-radius: 0 !important;
 }
 
-/* Media Card Footer */
+/* Roundings: Card Footer */
 .cardFooter:not(.visualCardBox-cardFooter) {
   border-bottom-left-radius: var(--rounding-media) !important;
   border-bottom-right-radius: var(--rounding-media) !important;
 }
+
+
+/*
+| Item Cards: Shadow
+----------------------------------------------------------------*/
 
 /* Box Shadow card with footer */
 .backdropCard:has(.cardFooter) .cardBox,
@@ -686,7 +698,7 @@
 | Item Cards: Text
 ----------------------------------------------------------------*/
 
-/* Series Title: Padding */
+/* Title: Padding */
 .cardText-first {
   padding-top: .6em !important;
 }
@@ -696,13 +708,13 @@
   font-size: 75% !important;
 }
 
-/* Episod Card: Hide Series Title */
+/* Recent & NextUp: Episode - Hide Series Title */
 .section0 .overflowBackdropCard[data-type="Episode"] .cardText-first,
 .section1 .overflowBackdropCard[data-type="Episode"] .cardText-first {
   display: none;
 }
 
-/* Episod Card: Make "S0E0 - Episodename" Bigger */
+/* Recent & NextUp: Episode - Make Episodename Bigger */
 .section0 .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
 .section1 .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
   font-size: 100% !important;
@@ -710,7 +722,7 @@
   color: inherit;
 }
 
-/* Movie Card in Recent Items: Hide Year */
+/* Recent & NextUp: Movie - Hide Year */
 .section0 .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
 .section1 .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
   display: none;
@@ -722,10 +734,12 @@
 ----------------------------------------------------------------*/
 
 /* More Space for Zoom-Animation */
+/*
 .itemsContainer > .card > .cardBox {
   margin-left: 0.5em !important;
   margin-right: 2em;
 }
+  */
 
 /* TV: Zoom on Focus */
 .layout-tv .card.show-animation:focus .cardBox {
@@ -733,19 +747,19 @@
   transform:scale(1.1);
 }
 
-/* Color on Focus */
+/* TV: Color on Focus */
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
   color: rgba(var(--accent));
 }
 
-/* Desktop: Homescreen - Glow cards on hover */
+/* Desktop: Homescreen - Glow images on hover */
 .layout-desktop .homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
 .layout-desktop .homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
-/* Desktop: Lists - Glow cards on hover */
+/* Desktop: Lists - Glow images on hover */
 .layout-desktop .backdropCard:not(:has(.cardFooter)):hover .cardScalable, 
 .layout-desktop .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
@@ -822,7 +836,6 @@
 }
 
 
-
 /* 
   ==================================================================
   Media Details
@@ -830,12 +843,14 @@
 */
 
 /* Bigger Item Details Bar */
+/*
 .layout-tv .itemDetailPage {
   padding-top: 4.7em !important;
 }
+  */
 
 /* hide some elements on page in ribbon and details */
-.detailLogo,
+.layout-tv .detailLogo,
 .endsAt,
 .hide+.detailPageWrapperContainer .itemName,
 .itemExternalLinks,
@@ -851,78 +866,14 @@
 
 
 /*
-| Details Ribbon (Media Infos)
-----------------------------------------------------------------*/
-
-/* style & placement of the ribbon */
-.detailRibbon {
-  padding-right: 2% !important;
-}
-
-/* desktop mode only */
-.layout-desktop .detailRibbon {
-  height: 9em !important;
-  margin-top: -15em !important;
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-
-/*
-| Media Info and Buttons
-----------------------------------------------------------------*/
-
-/* Info Container */
-.infoWrapper {
-  padding-top: 0.5em;
-  padding-bottom: 0.15em;
-}
-
-/* media infos - placement and white color */
-.itemMiscInfo {
-  margin-top: 0.6em;
-  margin-bottom: 0.6em;
-  color: #ffffff !important;
-}
-
-/*
-.parentName {
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-}
-  */
-
-/* Media Button */ 
-.detailButton {
-  font-size: 120% !important;
-  border-radius: var(--rounding-media);
-  border: solid 2px #0000 !important;
-  padding: .6em !important;
-  margin-right: .6em !important;
-}
-
-/* Media Button: Focus */ 
-.detailButton:hover {
-  color: rgba(var(--accent), 1) !important;
-  background: rgba(var(--accent), .2) !important;
-  transform: scale(1.2) !important;
-}
-
-/* Media Button: Focus */ 
-.detailButton:focus {
-  border: solid 2px rgba(var(--accent), 0.6) !important;
-  transform: scale(1.2) !important;
-}
-
-
-/*
-| Media Poster
+| Media: Poster
 ----------------------------------------------------------------*/
 
 /* Cover Style*/
 .detailImageContainer .card {
   max-width: 26vw;
   left: 3% !important;
-  top: 1em !important;
+  /* top: 1em !important; */
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px var(--dark40);
   /* top: 20px; */
@@ -935,7 +886,7 @@
 
 /* Cover Placement TV */
 .layout-desktop .detailImageContainer .card {
-  top: -13.5em !important;
+  top: -12.5em !important;
 }
 
 /* Portrait Position */
@@ -948,38 +899,86 @@
   top: 32% !important;
 }
 
-
 /*
-| Media Description
+| Media: Detail-Ribbon
 ----------------------------------------------------------------*/
 
-/* Episode / Movie Title */
+/* Ribbon */
+.detailRibbon {
+  padding-right: 2% !important;
+}
+
+/* Desktop: Ribbon */
+.layout-desktop .detailRibbon {
+  height: 9em !important;
+  margin-top: -9em !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Info Container */
+.infoWrapper {
+  padding-top: 0.5em;
+  padding-bottom: 0.15em;
+}
+
+/* Media Infos */
+.itemMiscInfo {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+  color: #ffffff !important;
+}
+
+/* Media Button */ 
+.detailButton {
+  font-size: 120% !important;
+  border-radius: var(--rounding-media);
+  border: solid 2px #0000 !important;
+  padding: .6em !important;
+  margin-right: .6em !important;
+}
+
+/* Media Button: Animation */ 
+.detailButton:hover {
+  color: rgba(var(--accent), 1) !important;
+  background: rgba(var(--accent), .2) !important;
+  transform: scale(1.2) !important;
+}
+.detailButton:focus {
+  color: rgba(var(--accent), 1) !important;
+  border: solid 2px rgba(var(--accent), 0.6) !important;
+  transform: scale(1.2) !important;
+}
+
+
+/*
+| Media: Details
+----------------------------------------------------------------*/
+
+/* Title */
+/*
 #itemDetailPage .itemName.infoText.parentNameLast {
   display: block;
   padding-bottom: 0.3em;
 }
+  */
 
-/* Media Title and Buttons */
+/* Container */
 .detailPagePrimaryContent {
   padding-bottom: 1em;
 }
-
-/* Media Title and Buttons */
 .layout-tv .detailPagePrimaryContent {
   padding-top: 0em;
 }
-
-/* Media Title and Buttons */
 .layout-desktop .detailPagePrimaryContent {
   padding-top: 1em;
 }
 
-/* Genres */
+/* Genres: Hide  */
 p.itemGenres {
   display: none;
 }
 
-/* Track Selections (audio & subtitles) */
+/* Tracks & Subtitles */
 .trackSelections {
   max-width: 100%;
   width: 60%;
@@ -992,38 +991,32 @@ p.itemGenres {
   padding: .35em 1.9em .35em .35em !important;
 }
 
-/* Media Description */
+/*
+| Media: Description
+----------------------------------------------------------------*/
+
+/* Container */
 .detailPageSecondaryContainer {
   padding-top: 0em !important;
 }
-.detailVerticalSection {
-  margin-left: -1%;
-  margin-bottom: 0em !important;
-}
 
+/* Description Text */
 .overview.detail-clamp-text {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-/* narrow space between description and genre */
+/* Director & Studio */
 .itemDetailsGroup {
   margin-top: 0.5em !important;
 }
 
-/* Links on media page */
-#itemDetailPage .button-link {
-  color: inherit !important;
+/* Sections (More Like This) */
+.detailVerticalSection {
+  margin-left: -1%;
+  /* margin-bottom: 0em !important; */
 }
 
-/* Links on media page: focus & hover */
-#itemDetailPage .button-link:focus,
-#itemDetailPage .button-link:hover {
-  color: rgba(var(--accent),0.8) !important;
-  background: #0000 !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
 
 /*
 | Section Layout (cast, more...)
@@ -1395,7 +1388,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 /* Don't raise */
-.button-link,
 .button-submit,
 .emby-select-focusscale:focus {
   -webkit-transform: none !important;
