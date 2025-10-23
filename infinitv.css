@@ -70,9 +70,11 @@
 }
 
 /* Adjust Pages */
+/*
 .layout-tv .backgroundContainer {
   padding-top: 5em !important;
 }
+  */
 
 /* Use freed Space */
 .layout-tv .homeSectionsContainer {
@@ -88,7 +90,6 @@
 | Menu Drawer 
 ----------------------------------------------------------------*/
 
-/* Menu Drawer */
 .mainDrawer {
   background: rgb(0 0 0) !important;
   margin-top: 4.6em !important;
@@ -105,12 +106,14 @@
   background: var(--dark40) !important;
 }
 
+.navMenuOptionText {
+  margin-top: 0;
+}
 
 /*
 | Scrollbar
 ----------------------------------------------------------------*/
 
-/* Scroollbar: Color */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
@@ -131,7 +134,7 @@
   background: rgba(var(--accent), 0.8);
 }
 
-/* Scrollbar: Hide */
+/* Hide */
 #loginPage,
 .layout-tv {
   overflow: auto;
@@ -148,12 +151,7 @@
 | Header
 ----------------------------------------------------------------*/
 
-/* don't scroll header in tv mode */
-.layout-tv .skinHeader {
-  position: fixed !important;
-}
-
-/* Header: Size */
+/* Size */
 .skinHeader,
 .headerTop {
   padding: .4em !important;
@@ -170,9 +168,13 @@
   transform: scale(1)  !important;
 }
 
+/* Don't scroll header in tv mode */
+.layout-tv .skinHeader {
+  position: fixed !important;
+}
 
 /*
-| Header Sections
+| Header: Section Tabs
 ----------------------------------------------------------------*/
 
 /* Move into Header */
@@ -437,8 +439,6 @@
 .progressring-bg {
   display: none;
 }
-
-
 
 
 /* 
@@ -1316,9 +1316,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 
 /* Improve some menu alignments */
-.navMenuOptionText {
-  margin-top: 0;
-}
+
 .formDialogHeaderTitle {
   margin-left: 1em;
 }
