@@ -136,6 +136,10 @@
 | Item Card: Content Style
 ---------------------------------------*/
 
+.cardBox {
+  border-radius: var(--rounding-media);
+}
+
 .cardScalable {
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px var(--dark40);
