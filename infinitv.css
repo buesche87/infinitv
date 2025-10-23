@@ -556,6 +556,12 @@
 | Sorting & Filter Menubar
 ----------------------------------------------------------------*/
 
+
+.pageTabContent > .focuscontainer-x {
+  background: var(--dark40);
+}
+
+
 /* Item Count: Alignment */
 .listPaging > span {
   margin-right: .5em;
@@ -845,23 +851,23 @@
 ----------------------------------------------------------------*/
 
 .defaultCardBackground1 {
-  background: hsl(var(--accent-h), var(--accent-s), 60%);
+  background: hsl(var(--accent-h), var(--accent-s), 17%);
 }
 
 .defaultCardBackground2 {
-  background: hsl(var(--accent-h), var(--accent-s), 80%);
+  background: hsl(var(--accent-h), var(--accent-s), 16%);
 }
 
 .defaultCardBackground3 {
-  background: hsl(var(--accent-h), var(--accent-s), 100%);
+  background: hsl(var(--accent-h), var(--accent-s), 15%);
 }
 
 .defaultCardBackground4 {
-  background: hsl(var(--accent-h), var(--accent-s), 40%);
+  background: hsl(var(--accent-h), var(--accent-s), 14%);
 }
 
 .defaultCardBackground5 {
-  background: hsl(var(--accent-h), var(--accent-s), 20%);
+  background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
 
 
