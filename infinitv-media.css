@@ -141,7 +141,16 @@
 /* Media Title and Buttons */
 .detailPagePrimaryContent {
   padding-bottom: 1em;
-  /*border-radius: var(--rounding-media); */
+}
+
+/* Media Title and Buttons */
+.layout-tv .detailPagePrimaryContent {
+  padding-top: 0em;
+}
+
+/* Media Title and Buttons */
+.layout-desktop .detailPagePrimaryContent {
+  padding-top: 1em;
 }
 
 /* Genres */
