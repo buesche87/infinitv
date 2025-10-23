@@ -175,6 +175,11 @@
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
+.layout-desktop .backdropCard:hover .cardBox, 
+.layout-desktop .portraitCard:hover .cardBox {
+  box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
+}
+
 
 
 /*
