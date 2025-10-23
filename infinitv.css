@@ -360,8 +360,9 @@
 }
 
 /* Labels: Focus */
-.selectLabelFocused,
-.textareaLabelFocused {
+.inputLabelFocused,
+.textareaLabelFocused,
+.selectLabelFocused {
   color: rgba(var(--accent)) !important;
 }
 
@@ -401,7 +402,6 @@
 }
 
 /* Fields: Active */
-/* .inputLabelFocused, */
 .Mui-selected {
   color: rgba(var(--accent)) !important;
 }
