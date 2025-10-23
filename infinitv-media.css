@@ -107,6 +107,17 @@
   /* top: 20px; */
 }
 
+/* Cover Placement TV */
+.layout-tv .detailImageContainer .card {
+  top: 1em !important;
+}
+
+/* Cover Placement TV */
+.layout-desktop .detailImageContainer .card {
+  top: -13.5em !important;
+}
+
+
 /* Portrait Position */
 .detailPagePrimaryContainer.detailRibbon .card.portraitCard {
   top: 50% !important;

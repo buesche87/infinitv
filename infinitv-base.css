@@ -420,14 +420,12 @@
 }
 
 /* Fields: Active */
-.css-17c09up.Mui-selected,
-.inputLabelFocused,
-.navMenuOption-selected {
+.Mui-selected,
+.inputLabelFocused {
   color: rgba(var(--accent)) !important;
 }
 
 /* Background: Black & White */
-.navMenuOption-selected,
 .selectionCommandsPanel {
   background: var(--dark40) !important;
 }
