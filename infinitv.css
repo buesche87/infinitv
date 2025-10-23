@@ -762,14 +762,21 @@
   color: rgba(var(--accent));
 }
 
-/* Desktop: Glow cards on hover */
+/* Desktop: Homescreen - Glow cards on hover */
 .layout-desktop .homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
 .layout-desktop .homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
-.layout-desktop .backdropCard:hover .cardBox, 
-.layout-desktop .portraitCard:hover .cardBox {
+/* Desktop: Lists - Glow cards on hover */
+.layout-desktop .backdropCard:not(:has(.cardFooter)):hover .cardScalable, 
+.layout-desktop .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
+  box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
+}
+
+/* Desktop: Lists - Glow cards on hover */
+.layout-desktop .backdropCard:has(.cardFooter):hover .cardBox, 
+.layout-desktop .portraitCard:has(.cardFooter):hover .cardBox {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
