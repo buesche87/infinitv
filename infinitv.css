@@ -177,10 +177,10 @@
 | Header: Section Tabs
 ----------------------------------------------------------------*/
 
-/* Move into Header */
+/* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
-  text-size-adjust: 105%;
+  /* text-size-adjust: 105%; */
   font-size: 105% !important;
   margin-top: -3.5em !important;
   width: 40vw;
@@ -196,34 +196,35 @@
 }
 
 /* Make Text slighty bigger */
+/*
 .layout-tv .sectionTabs,
 .layout-desktop .sectionTabs {
   font-size: 105% !important;
 }
+*/
 
 /* Style Buttons */
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
-  background: #0000 !important;
-  /* border-radius: var(--rounding-media); */
+  /* background: #0000 !important; */
 }
 
 /* Tab Buttons: Focus & Hover */
 .emby-tab-button:hover,
 .emby-tab-button:focus {
   color: rgb(var(--accent)) !important;
-  transform: scale(1.2) !important;
+  /* transform: scale(1.2) !important; */
 }
 
-/* Tab Button: Active */
+/* Active Tab */
 .emby-tab-button-active {
-  background: #0000 !important;
+  /* background: #0000 !important; */
   color: #fff;
 }
 
 
 /*
-| Buttons
+| Buttons: Menu & OSD
 ----------------------------------------------------------------*/
 
 /* Menu & OSD Buttons */
@@ -231,6 +232,8 @@
   border: solid 2px #0000 !important;
   border-radius: var(--rounding-media);
 }
+
+/* Menu & OSD Buttons: Animation */
 .paper-icon-button-light:hover {
   color: rgba(var(--accent), 1) !important;
   background: rgba(var(--accent), .2) !important;
@@ -244,7 +247,7 @@
   background: rgba(var(--accent), .4) !important;
 }
 
-/* Button Animations (not Header Buttons) */
+/* Menu & OSD Buttons: Animations (except Header Buttons) */
 .paper-icon-button-light:not(.headerButton) {
   padding: .4em !important;
 }
@@ -253,21 +256,15 @@
   transform: scale(1.2) !important;
 }
 
-/* Active Buttons */
-/*
-.buttonActive {
-  color: rgba(var(--accent)) !important;
-}
-  */
 
 /* Submit Button */
 .button-submit {
   border-radius: var(--rounding-system) !important;
 }
 
-/* Raised Button */
+/* System Buttons */
 .raised {
-  transition: all 0.2s !important;
+  /* transition: all 0.2s !important; */
   background: var(--dark40) !important;
   border-radius: var(--rounding-system) !important;
 }
@@ -277,6 +274,7 @@
 }
 
 /* Raised Home Library Button */
+/*
 .raised.homeLibraryButton {
   transition: filter 0.2s;
 }
@@ -284,68 +282,63 @@
 .raised.homeLibraryButton:focus {
   color: rgb(var(--accent)) !important;
   background: var(--light60) !important;
-  /* box-shadow: 0px 0px 5px rgb(var(--accent)) !important; */
-  /* border: solid 1px rgba(var(--accent),0.6) !important; */
 }
+*/
 
 /* Misc Buttons */
+/*
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
   color: rgba(var(--accent)) !important;
 }
+  */
 
 /* Background on Hover & Focus: Accent 50% */
 /* a[data-role="button"]:hover, */
+/*
 .actionSheetMenuItem:hover,
 .css-17c09up:hover,
 .fab:hover {
   background: rgba(var(--accent),0.8) !important;
 }
+*/
 
 /*
 | Fields & Inputs
 ----------------------------------------------------------------*/
 
+/* Fields */
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.checkboxOutline {
+  background: var(--dark60); 
+  border: 2px solid var(--light20);
+  border-radius: var(--rounding-system) !important;
+}
+
+/* Input */
+.emby-input {
+  padding: .5em .6em;
+}
+
 /* Textarea */
 .emby-textarea {
-  background: var(--dark60); 
-  border: 0.01em solid var(--light20);
-  border-radius: var(--rounding-system) !important;
   resize: vertical !important;
   font-family: monospace;
   font-size: 10pt;
   padding: .5em .6em;
 }
 
-/* Input */
-.emby-input{
-  background: var(--dark60); 
-  border: 2px solid var(--light20);
-  border-radius: var(--rounding-system) !important;
-  padding: .5em .6em;
-}
-
 /* Select */
-.emby-select-withcolor {
-  background: var(--dark60); 
-  border: 2px solid var(--light20);
+.emby-select {
   border-radius: var(--rounding-system) !important;
 }
 .selectArrow {
   margin-top: 1.05em;
 }
-.emby-select {
-  border-radius: var(--rounding-system) !important;
-}
 
-/* Checkbox */
-.checkboxOutline {
-  background: var(--dark60); 
-  border: 0.01em solid var(--light20);
-  border-radius: var(--rounding-system) !important;
-}
-
-/* Links */
+/* Link-Button */
 .button-link {
   color: rgb(var(--accent), 0.8) !important;
 }
@@ -376,13 +369,13 @@
 }
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-checkbox:hover + span + .checkboxOutline {
-  border: 0.01em solid rgba(var(--accent),0.8) !important;
+  border: 2px solid rgba(var(--accent), 0.7) !important;
 }
 
 /* Checkbox: Checked */
 .emby-checkbox:checked + span + .checkboxOutline {
-  border: 0.01em solid rgba(var(--accent), 0.6) !important;
-  background: rgba(var(--accent), 0.6) !important;
+  border: 2px solid rgba(var(--accent), 0.7) !important;
+  background: rgba(var(--accent), 0.7) !important;
 }
 
 /* Links: Focus */
@@ -396,15 +389,13 @@
 }
 
 .emby-select option:focus,
-.emby-select option:hover,
-.emby-select option:selected {
-  background-color: rgba(var(--accent), 1) !important;
+.emby-select option:hover {
+  background: rgba(var(--accent), 1) !important;
 }
 
-
 /* Fields: Active */
-.Mui-selected,
-.inputLabelFocused {
+/* .inputLabelFocused, */
+.Mui-selected {
   color: rgba(var(--accent)) !important;
 }
 
@@ -505,7 +496,7 @@
 
 /* 
   ==================================================================
-  Lists & Cards
+  Media List
   ==================================================================
 */
 
@@ -635,23 +626,15 @@
 }
 
 
-/*
-| Item Card: Content Style
-----------------------------------------------------------------*/
+/* 
+  ==================================================================
+  Item Cards
+  ==================================================================
+*/
 
 /* Blurhash */
 .blurhash-canvas {
   filter: opacity(60%) saturate(60%);
-}
-
-/* Box Shadow card with footer */
-.visualCardBox:has(.cardFooter) .cardBox {
-  box-shadow: 4px 4px 10px 5px var(--dark40);
-}
-
-/* Box Shadow card without footer */
-.visualCardBox:not(:has(.cardFooter)) .cardScalable {
-  box-shadow: 4px 4px 10px 5px var(--dark40);
 }
 
 /* Roundings: Full */
@@ -686,8 +669,21 @@
   border-bottom-right-radius: var(--rounding-media) !important;
 }
 
+/* Box Shadow card with footer */
+.backdropCard:has(.cardFooter) .cardBox,
+.portraitCard:has(.cardFooter) .cardBox {
+  box-shadow: 4px 4px 10px 5px var(--dark40);
+}
+
+/* Box Shadow card without footer */
+.backdropCard:not(:has(.cardFooter)) .cardScalable,
+.portraitCard:not(:has(.cardFooter)) .cardScalable {
+  box-shadow: 4px 4px 10px 5px var(--dark40);
+}
+
+
 /*
-| Item Cards: Description
+| Item Cards: Text
 ----------------------------------------------------------------*/
 
 /* Series Title: Padding */
@@ -699,10 +695,6 @@
 .cardText-secondary {
   font-size: 75% !important;
 }
-
-/*
-| List: Recently & Next Up
-----------------------------------------------------------------*/
 
 /* Episod Card: Hide Series Title */
 .section0 .overflowBackdropCard[data-type="Episode"] .cardText-first,
