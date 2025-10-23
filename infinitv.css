@@ -914,25 +914,32 @@
   /* top: 20px; */
 }
 
-/* Cover Placement TV */
+/* Cover Placement (TV) */
 .layout-tv .detailImageContainer .card {
   top: 1em !important;
 }
 
-/* Cover Placement TV */
+/* Cover Placement (Desktop) */
+/*
 .layout-desktop .detailImageContainer .card {
-  top: -12.5em !important;
+  top: -7.5em !important;
 }
+*/
+
 
 /* Portrait Position */
+/*
 .detailPagePrimaryContainer.detailRibbon .portraitCard {
   top: 50% !important;
 }
+  */
 
 /* Landscane Position */
+/*
 .detailPagePrimaryContainer.detailRibbon .backdropCard {
   top: 32% !important;
 }
+  */
 
 /*
 | Media: Detail-Ribbon
