@@ -137,13 +137,13 @@
 ---------------------------------------*/
 
 /* Box Shadow card with footer */
-.visualCardBox:not(:has(.cardFooter)) .cardBox {
+.visualCardBox:not(:has(.cardFooter)) .cardScalable {
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px var(--dark40);
 }
 
 /* Box Shadow card with footer */
-.visualCardBox:has(.cardFooter) .cardScalable {
+.visualCardBox:has(.cardFooter) .cardBox {
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px var(--dark40);
 }
