@@ -270,13 +270,15 @@
   background: var(--dark40) !important;
   border-radius: var(--rounding-system) !important;
 }
-.raised:hover, 
+.raised:hover {
+  background: rgba(var(--accent), 0.6) !important;
+}
 .raised:focus {
-  background: rgba(var(--accent),0.8) !important;
+  background: rgba(var(--accent), 0.8) !important;
 }
 
+
 /* Raised Home Library Button */
-/*
 .raised.homeLibraryButton {
   transition: filter 0.2s;
 }
@@ -285,7 +287,7 @@
   color: rgb(var(--accent)) !important;
   background: var(--light60) !important;
 }
-*/
+
 
 /* Misc Buttons */
 /*
@@ -495,7 +497,7 @@
 /* Login Form: Buttons */
 #loginPage .emby-button.block {
   margin: 0.5em 0;
-  background: var(--dark60) !important;
+  /* background: var(--dark60) !important; */
 }
 
 
