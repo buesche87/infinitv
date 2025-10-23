@@ -26,9 +26,9 @@
 
 
 /*  
-  ================================================================
+================================================================
   Base
-  ================================================================
+================================================================
 */
 
 
@@ -438,9 +438,9 @@
 
 
 /* 
-  ==================================================================
+==================================================================
   Login Page
-  ==================================================================
+==================================================================
 */
 
 /* Login background */
@@ -500,15 +500,10 @@
 
 
 /* 
-  ==================================================================
+==================================================================
   Media List
-  ==================================================================
+==================================================================
 */
-
-
-/*
-| Media List: Alignment & Size
-----------------------------------------------------------------*/
 
 /* Main List */
 .itemsContainer-tv.vertical-wrap {
@@ -523,6 +518,7 @@
   padding-left: .6em !important;
 }
 
+/* Cast List */
 #castCollapsible .itemsContainer-tv.scrollSlider {
   padding-top: 0em !important;
 }
@@ -597,44 +593,10 @@
 }
 
 
-/*
-| Item Cards: Size & Style
-----------------------------------------------------------------*/
-
-/* Portrait Card: Size */
-.itemsContainer-tv > .portraitCard {
-  /* width: 16% !important; */
-  width: 19.7% !important;
-}
-
-/* Backdrop Card: Size*/
-.itemsContainer-tv > .backdropCard {
-  /* width: 20% !important; */
-  width: 24.6% !important;
-}
-
-/* Overflow Portrait Card: Size */
-.castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
-.guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
-  width: 16% !important;
-}
-
-/* Overflow Backdrop Card: Size */
-.itemsContainer-tv > .overflowBackdropCard {
-  width: 29% !important;
-}
-
-/* Card Buttons: No background or Shadow */
-.cardPadder {
-  background-color: #0000 !important;
-  box-shadow: none;
-}
-
-
 /* 
-  ==================================================================
+==================================================================
   Item Cards
-  ==================================================================
+==================================================================
 */
 
 /* Blurhash */
@@ -670,10 +632,40 @@
   border-bottom-right-radius: 0 !important;
 }
 
-/* Roundings: Card Footer */
+/* Card Footer */
 .cardFooter:not(.visualCardBox-cardFooter) {
   border-bottom-left-radius: var(--rounding-media) !important;
   border-bottom-right-radius: var(--rounding-media) !important;
+  background: rgba(0, 0, 0, var(--footeropacity)) !important;
+}
+
+/* Portrait Card: Size */
+.itemsContainer-tv > .portraitCard {
+  /* width: 16% !important; */
+  width: 19.7% !important;
+}
+
+/* Backdrop Card: Size*/
+.itemsContainer-tv > .backdropCard {
+  /* width: 20% !important; */
+  width: 24.6% !important;
+}
+
+/* Overflow Portrait Card: Size */
+.castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
+.guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
+  width: 16% !important;
+}
+
+/* Overflow Backdrop Card: Size */
+.itemsContainer-tv > .overflowBackdropCard {
+  width: 29% !important;
+}
+
+/* Card Buttons: No background or Shadow */
+.cardPadder {
+  background-color: #0000 !important;
+  box-shadow: none;
 }
 
 
@@ -817,7 +809,7 @@
 
 
 /*
-| Item Cards: Progress Bar
+| Item Cards: Progressbar
 ----------------------------------------------------------------*/
 
 /* Background */
@@ -836,10 +828,35 @@
 }
 
 
+/*
+| Item Cards: Default Backgrounds
+----------------------------------------------------------------*/
+
+.defaultCardBackground1 {
+  background: hsl(var(--accent-h), var(--accent-s), 60%);
+}
+
+.defaultCardBackground2 {
+  background: hsl(var(--accent-h), var(--accent-s), 80%);
+}
+
+.defaultCardBackground3 {
+  background: hsl(var(--accent-h), var(--accent-s), 100%);
+}
+
+.defaultCardBackground4 {
+  background: hsl(var(--accent-h), var(--accent-s), 40%);
+}
+
+.defaultCardBackground5 {
+  background: hsl(var(--accent-h), var(--accent-s), 20%);
+}
+
+
 /* 
-  ==================================================================
-  Media Details
-  ==================================================================
+==================================================================
+  Media
+==================================================================
 */
 
 /* Bigger Item Details Bar */
@@ -1011,33 +1028,34 @@ p.itemGenres {
   margin-top: 0.5em !important;
 }
 
+
+/*
+| Media: Sections (cast, more like this...)
+----------------------------------------------------------------*/
+
 /* Sections (More Like This) */
 .detailVerticalSection {
   margin-left: -1%;
-  /* margin-bottom: 0em !important; */
 }
 
-
-/*
-| Section Layout (cast, more...)
-----------------------------------------------------------------*/
-
-/* space between sections */
+/* Space between Sections */
 .layout-tv .detailVerticalSection {
-    margin-bottom: 1em !important;
+  margin-bottom: 1em !important;
 }
 
-/* fix section title placement */
+/* Section Title: Placement */
 h2.sectionTitle.sectionTitle-cards.padded-right {
-	margin-left: .4em !important;
-	margin-top: .2em !important;
-	margin-bottom: .2em !important;
+  margin-left: .4em !important;
+  margin-top: .2em !important;
+  margin-bottom: .2em !important;
 }
+
+/* Section Icons */
 .sectionTitleTextButton > .material-icons {
   margin: 0;
 }
 
-/* Season Cards spacing */
+/* Cards spacing */
 .detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
   margin-right: .5vw !important;
 }
@@ -1052,49 +1070,14 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 
-/*
-| Default card backgrounds
-----------------------------------------------------------------*/
-
-.defaultCardBackground1 {
-  /* background: rgba(var(--accent),0.4) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 60%, white);*/
-  background: hsl(var(--accent-h), var(--accent-s), 60%);
-}
-
-.defaultCardBackground2 {
-  /* background: rgba(var(--accent),0.5) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 80%, white); */
-  background: hsl(var(--accent-h), var(--accent-s), 80%);
-}
-
-.defaultCardBackground3 {
-  /* background: rgba(var(--accent),0.6) !important; */
-  background: hsl(var(--accent-h), var(--accent-s), 100%);
-}
-
-.defaultCardBackground4 {
-  /* background: rgba(var(--accent),0.7) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 80%, black); */
-  background: hsl(var(--accent-h), var(--accent-s), 40%);
-}
-
-.defaultCardBackground5 {
-  /* background: rgba(var(--accent),0.8) !important; */
-  /* background: color-mix(in srgb, rgb(var(--accent)) 60%, black); */
-  background: hsl(var(--accent-h), var(--accent-s), 20%);
-}
-
-
-
 /* 
-  ==================================================================
+==================================================================
   Player
-  ==================================================================
+==================================================================
 */
 
 /*
-| Vdeo OSD 
+| Player: OSD 
 ----------------------------------------------------------------*/
 
 /* OSD Header */
@@ -1104,7 +1087,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* OSD Bottom */
+/* OSD Footer */
 .videoOsdBottom {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
   box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
@@ -1123,7 +1106,16 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   padding: .5em 0 0 !important;
 }
 
-/* style the controls*/
+/* Fix the UI shifting around */
+.nowPlayingBarCurrentTime {
+  width: 6em;
+}
+
+/*
+| Player: OSD Controls
+----------------------------------------------------------------*/
+
+/* style the controls */
 .startTimeText,
 .endTimeText {
   width: 3.4em;
@@ -1138,11 +1130,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 .osdPoster img {
   border-radius: var(--rounding-media); 
   border: none;
-}
-
-/* Fix the UI shifting around */
-.nowPlayingBarCurrentTime {
-  width: 6em;
 }
 
 .osdTextContainer {
@@ -1160,7 +1147,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 
 /*
-| Chapter Thumbnails
+| OSD: Chapter Thumbnails
 ----------------------------------------------------------------*/
 
 /* Shrink the mouseover chapter image when scrobbling, still media player */
@@ -1193,7 +1180,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 
 /*
-| Skip-Button
+| OSD: Skip-Button
 ----------------------------------------------------------------*/
 
 /* Skip-Button */
@@ -1214,7 +1201,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /*
-| Upnext Dialog
+| OSD: UpNext Dialog
 ----------------------------------------------------------------*/
 
 /* Upnext Dialog */
@@ -1236,7 +1223,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /*
-| Play Progress
+| OSD: Play Progress
 ----------------------------------------------------------------*/
 
 /* Play progress & volume */
@@ -1291,17 +1278,13 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   */
 
 
-
-
 /* 
-  ==================================================================
+==================================================================
   User settings
-  ==================================================================
+==================================================================
 */
 
-
 /* Improve some menu alignments */
-
 .formDialogHeaderTitle {
   margin-left: 1em;
 }
@@ -1367,7 +1350,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 /*
 | Buttons
----------------------------------------*/
+----------------------------------------------------------------*/
 
 /* Radius Left */
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
@@ -1395,17 +1378,10 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 /* 
-  ==================================================================
+==================================================================
   Misc & Unknown (aka TODOs)
-  ==================================================================
+==================================================================
 */
-
-
-
-/* Card Footer */
-.cardFooter:not(.visualCardBox-cardFooter) {
-  background: rgba(0, 0, 0, var(--footeropacity)) !important;
-}
 
 /* Background: Dark */
 .paperList {
@@ -1427,6 +1403,7 @@ fieldset {
 /* Borders: Accent 50% */
 .itemSelectionPanel {
   border: 0.01em solid rgba(var(--accent),0.5) !important;
+  border-radius: var(--rounding-media) !important;
 }
 
 .layout-mobile .listItemImageButton,
@@ -1628,18 +1605,15 @@ fieldset {
   border-radius: 2px;
 }
 
-
-
 /* Cards & Items */
 .itemDetailImage,
-.itemSelectionPanel,
-.nowPlayingPageImage,
 .primaryImageWrapper > img {
   border-radius: var(--rounding-media) !important;
 }
 
 .nowPlayingPageImage {
   border: none;
+  border-radius: var(--rounding-media) !important;
 }
 
 
