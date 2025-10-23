@@ -169,21 +169,7 @@
 }
   */
 
-/* Glow cards on hover */
-.layout-desktop .homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
-.layout-desktop .homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
-  box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
-  border-radius: var(--rounding-media);
-}
-
-.layout-desktop .backdropCard:hover .cardBox, 
-.layout-desktop .portraitCard:hover .cardBox {
-  box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
-  border-radius: var(--rounding-media);
-}
-
-
-
+  
 /*
 | Header
 -----------------------------*/
