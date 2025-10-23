@@ -674,14 +674,14 @@
 ----------------------------------------------------------------*/
 
 /* Box Shadow card with footer */
-.backdropCard:has(.cardFooter) .cardBox,
-.portraitCard:has(.cardFooter) .cardBox {
+.card:has(.cardFooter) .cardBox,
+.card:has(.cardFooter) .cardBox {
   box-shadow: 4px 4px 10px 5px var(--dark40);
 }
 
 /* Box Shadow card without footer */
-.backdropCard:not(:has(.cardFooter)) .cardScalable,
-.portraitCard:not(:has(.cardFooter)) .cardScalable {
+.card:not(:has(.cardFooter)) .cardScalable,
+.card:not(:has(.cardFooter)) .cardScalable {
   box-shadow: 4px 4px 10px 5px var(--dark40);
 }
 
