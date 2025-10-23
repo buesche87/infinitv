@@ -725,13 +725,10 @@
 | Item Cards: Animation
 ----------------------------------------------------------------*/
 
-/* More Space for Zoom-Animation */
-/*
+/* More Space for Animations */
 .itemsContainer > .card > .cardBox {
   margin-left: 0.5em !important;
-  margin-right: 2em;
 }
-  */
 
 /* TV: Zoom on Focus */
 .layout-tv .card.show-animation:focus .cardBox {
