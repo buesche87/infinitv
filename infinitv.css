@@ -800,13 +800,15 @@
   background: rgb(var(--accent), 0.8) !important;
   border-radius: var(--rounding-system) !important;
 }
-
-/* Count & Played */
 .countIndicator,
 .mediaSourceIndicator {
   color: rgb(255, 255, 255);
   background: rgb(var(--accent), 0.8) !important;
   border-radius: var(--rounding-system) !important;
+}
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating {
+  color: rgba(var(--accent)) !important;
 }
 
 /* Missing & Unaired */
