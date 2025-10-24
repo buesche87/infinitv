@@ -1,5 +1,5 @@
 /*  
-===========================================================================
+====================================================================================
    ___  ________   ________ ___  ________   ___  _________  ___      ___ 
   |\  \|\   ___  \|\  _____\\  \|\   ___  \|\  \|\___   ___\\  \    /  /|
   \ \  \ \  \\ \  \ \  \__/\ \  \ \  \\ \  \ \  \|___ \  \_\ \  \  /  / /
@@ -8,16 +8,16 @@
      \ \__\ \__\\ \__\ \__\   \ \__\ \__\\ \__\ \__\   \ \__\ \ \__/ /   
       \|__|\|__| \|__|\|__|    \|__|\|__| \|__|\|__|    \|__|  \|__|/    
                                                                          
-===========================================================================
+====================================================================================
 
      HTPC Theme for Jellyfin - Designed for the Big Screen Experience     
 
 */
 
 /*  
-===========================================================================
+====================================================================================
   Background & Fonts
-===========================================================================
+====================================================================================
 */
 
 /* Background Image on Login Page */
@@ -40,11 +40,10 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-
 /*  
-===========================================================================
+====================================================================================
   System & Dialogs
-===========================================================================
+====================================================================================
 */
 
 /* Overall Smaller Size */
@@ -68,9 +67,9 @@
 }
 
 /*  
-===========================================================================
+====================================================================================
   Menu Drawer
-===========================================================================
+====================================================================================
 */
 
 .mainDrawer {
@@ -94,9 +93,9 @@
 }
 
 /*  
-===========================================================================
+====================================================================================
   Scrollbar
-===========================================================================
+====================================================================================
 */
 
 * {
@@ -132,9 +131,9 @@
 }
 
 /*  
-===========================================================================
+====================================================================================
   Header
-===========================================================================
+====================================================================================
 */
 
 /* Size */
@@ -165,9 +164,9 @@
 }
 
 /*  
-===========================================================================
+====================================================================================
   Header: Section Tabs
-===========================================================================
+====================================================================================
 */
 
 /* Move Section Tabs into Header */
@@ -200,9 +199,9 @@
 }
 
 /*  
-===========================================================================
+====================================================================================
   Buttons
-===========================================================================
+====================================================================================
 */
 
 /* Buttons: Menu & OSD */
@@ -271,11 +270,10 @@
   transform: none !important;
 }
 
-
 /*  
-===========================================================================
+====================================================================================
   Fields & Inputs
-===========================================================================
+====================================================================================
 */
 
 /* Fields & Input */
@@ -356,11 +354,10 @@
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
-
 /* 
-==================================================================
+===========================================================================
   Login Page
-==================================================================
+===========================================================================
 */
 
 /* Hide some elements */
@@ -409,75 +406,53 @@
   margin: 0.5em 0;
 }
 
-
 /* 
-==================================================================
-  Media List
-==================================================================
+===========================================================================
+  Library Pages
+===========================================================================
 */
 
-/* Main List */
+/* Media Pages */
 .itemsContainer-tv.vertical-wrap {
   padding-top: 1% !important;
   padding-right: 3% !important; 
-  /* padding-left: 3% !important; */
 }
 
-/* Scrollable List */
+/* Media Scroller */
 .itemsContainer-tv.scrollSlider {
   padding-top: 1vw !important;
   padding-left: .6em !important;
 }
 
-/* Cast List */
-#castCollapsible .itemsContainer-tv.scrollSlider {
-  padding-top: 0em !important;
-}
-
-/* More spacing for cards on home screen */
-.homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
-  margin-right: 1vw !important;
-}
-
-
+/* More Space between Media Scroller */
 .sectionTitleContainer-cards {
   padding-top: 1.5em;
 }
 
-/* narrow margins */
-.cardBox-bottompadded {
-  margin-bottom: 0.5em !important;
-  margin-right: 1.5vw !important;
+/* Backdrop Card Spacing in Media Scroller */
+.homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
+  margin-right: 1vw !important;
 }
 
-
-/*
-| Alphabet Picker 
--------------------------------------------------------------------------*/
-
+/* Alphabet Picker */
 .alphaPickerButton-tv:focus,
 .alphaPickerButton-tv:hover {
   background: rgba(var(--accent), 0.8) !important;
 }
 
+/* 
+===========================================================================
+  Library Pages: Sorting & Filter
+===========================================================================
+*/
 
-/*
-| Sorting & Filter Menubar
--------------------------------------------------------------------------*/
-
-
+/* Background Bar */
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 1.25em;
 }
 
-
-/* Item Count: Alignment */
-.listPaging > span {
-  margin-right: .5em;
-}
-
-/* Buttons: Alignment */
+/* Buttons */
 .btnPreviousPage,
 .btnNextPage,
 .btnSelectView,
@@ -485,18 +460,21 @@
   margin-left: .4em;
   margin-right: .4em;
 }
-
-/* Filter Menu: Alignment */
-.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
-  margin-left: 0.5em;
-}
-
-/* Filter Menu: Animation */
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: rgba(var(--accent),0.8) !important;
   -webkit-transform: none !important;
   transform: none !important;
+}
+
+/* Item Count Button: Alignment */
+.listPaging > span {
+  margin-right: .5em;
+}
+
+/* Filter Button Menu */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+  margin-left: 0.5em;
 }
 
 /* Filter Indicator */
@@ -505,24 +483,54 @@
   color: black;
 }
 
-
 /* 
-==================================================================
-  Item Cards
-==================================================================
+===========================================================================
+  Cards: Size & Alignment
+===========================================================================
 */
 
-/* Blurhash */
-/*
-.blurhash-canvas {
-  filter: opacity(60%) saturate(60%);
+/* Portrait Card (TV) */
+.itemsContainer-tv > .portraitCard {
+  width: 19.7% !important;
 }
-  */
 
+/* BackdropCard (TV) */
+.itemsContainer-tv > .backdropCard {
+  width: 24.6% !important;
+}
 
-/*
-| Cards: Rounding
--------------------------------------------------------------------------*/
+/* OverflowPortraitCard (TV) */
+.castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
+.guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
+  width: 16% !important;
+}
+
+/* OverflowBackdropCard (TV) */
+.itemsContainer-tv > .overflowBackdropCard {
+  width: 29% !important;
+}
+
+/* Hover Play Button */
+.cardPadder {
+  background-color: #0000 !important;
+  box-shadow: none !important;
+}
+
+/* More Space for Animations */
+.portraitCard.show-focus.show-animation,
+.backdropCard.show-focus.show-animation {
+  padding-bottom: 1.5em !important;
+  padding-right: 1vw !important;
+}
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.5em !important;
+}
+
+/* 
+===========================================================================
+  Cards: Roundings
+===========================================================================
+*/
 
 /* Roundings: Full */
 .blurhash-canvas,
@@ -557,53 +565,17 @@
   background: rgba(0, 0, 0, var(--footeropacity)) !important;
 }
 
-/*
-| Cards: Size & Alignment
--------------------------------------------------------------------------*/
-
-/* Portrait Card (TV) */
-.itemsContainer-tv > .portraitCard {
-  /* width: 16% !important; */
-  width: 19.7% !important;
+/* narrow margins */
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+  margin-right: 1.5vw !important;
 }
 
-/* BackdropCard (TV) */
-.itemsContainer-tv > .backdropCard {
-  /* width: 20% !important; */
-  width: 24.6% !important;
-}
-
-/* OverflowPortraitCard (TV) */
-.castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
-.guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
-  width: 16% !important;
-}
-
-/* OverflowBackdropCard (TV) */
-.itemsContainer-tv > .overflowBackdropCard {
-  width: 29% !important;
-}
-
-/* Hover Play Button */
-.cardPadder {
-  background-color: #0000 !important;
-  box-shadow: none !important;
-}
-
-/* More Space for Animations */
-.portraitCard.show-focus.show-animation,
-.backdropCard.show-focus.show-animation {
-  padding-bottom: 1.5em !important;
-  padding-right: 1vw !important;
-}
-.itemsContainer > .card > .cardBox {
-  margin-left: 0.5em !important;
-}
-
-
-/*
-| Cards: Shadow
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Cards: Shadows
+===========================================================================
+*/
 
 /* Box Shadow card with footer */
 .portraitCard:has(.cardFooter) .cardBox,
@@ -621,10 +593,11 @@
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
-
-/*
-| Cards: Text
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Cards: Text
+===========================================================================
+*/
 
 /* Title */
 .cardText-first {
@@ -656,10 +629,11 @@
   display: none;
 }
 
-
-/*
-| Cards: Animation
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Cards: Animations
+===========================================================================
+*/
 
 /* Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
@@ -691,10 +665,11 @@
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
-
-/*
-| Item Cards: Indicators
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Cards: Indicators
+===========================================================================
+*/
 
 /* Alignment */
 .cardIndicators,
@@ -737,10 +712,12 @@
   border-bottom-left-radius: var(--rounding-system) !important;
 }
 
+/* 
+===========================================================================
+  Cards: Progressbar
+===========================================================================
+*/
 
-/*
-| Item Cards: Progressbar
--------------------------------------------------------------------------*/
 
 /* Background */
 .itemProgressBar {
@@ -757,10 +734,11 @@
   border-radius: var(--rounding-media) !important;
 }
 
-
-/*
-| Item Cards: Default Backgrounds
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Cards: Default Backgrounds
+===========================================================================
+*/
 
 .defaultCardBackground1 {
   background: hsl(var(--accent-h), var(--accent-s), 17%);
@@ -784,19 +762,12 @@
 
 
 /* 
-==================================================================
-  Media
-==================================================================
+===========================================================================
+  Media Pages
+===========================================================================
 */
 
-/* Bigger Item Details Bar */
-/*
-.layout-tv .itemDetailPage {
-  padding-top: 4.7em !important;
-}
-  */
-
-/* hide some elements on page in ribbon and details */
+/* Hide some Elements */
 .layout-tv .detailLogo,
 .endsAt,
 .hide+.detailPageWrapperContainer .itemName,
@@ -811,10 +782,16 @@
   padding-top: 2em;
 }
 
+/* Cast Scroller */
+#castCollapsible .itemsContainer-tv.scrollSlider {
+  padding-top: 0em !important;
+}
 
-/*
-| Media: Poster
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Media Pages: Poster
+===========================================================================
+*/
 
 /* Cover Style*/
 .detailImageContainer .card {
@@ -831,31 +808,11 @@
   top: 12.5vh !important;
 }
 
-/* Cover Placement (Desktop) */
-/*
-.layout-desktop .detailImageContainer .card {
-  top: -7.5em !important;
-}
+/* 
+===========================================================================
+  Media Pages: Detail-Ribbon
+===========================================================================
 */
-
-
-/* Portrait Position */
-/*
-.detailPagePrimaryContainer.detailRibbon .portraitCard {
-  top: 50% !important;
-}
-  */
-
-/* Landscane Position */
-/*
-.detailPagePrimaryContainer.detailRibbon .backdropCard {
-  top: 32% !important;
-}
-  */
-
-/*
-| Media: Detail-Ribbon
--------------------------------------------------------------------------*/
 
 /* Ribbon */
 .detailRibbon {
@@ -903,18 +860,11 @@
   transform: scale(1.2) !important;
 }
 
-
-/*
-| Media: Details
--------------------------------------------------------------------------*/
-
-/* Title */
-/*
-#itemDetailPage .itemName.infoText.parentNameLast {
-  display: block;
-  padding-bottom: 0.3em;
-}
-  */
+/* 
+===========================================================================
+  Media Pages: Media Details
+===========================================================================
+*/
 
 /* Container */
 .detailPagePrimaryContent {
@@ -945,9 +895,11 @@ p.itemGenres {
   padding: .35em 1.9em .35em .35em !important;
 }
 
-/*
-| Media: Description
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Media Pages: Media Description
+===========================================================================
+*/
 
 /* Container */
 .detailPageSecondaryContainer {
@@ -965,10 +917,11 @@ p.itemGenres {
   margin-top: 0.5em !important;
 }
 
-
-/*
-| Media: Sections (cast, more like this...)
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Media Pages: Section Scroller
+===========================================================================
+*/
 
 /* Sections (More Like This) */
 .detailVerticalSection {
@@ -1006,36 +959,31 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   padding-top: .2em;
 }
 
-
 /* 
-==================================================================
-  Player
-==================================================================
+===========================================================================
+  Player OSD
+===========================================================================
 */
 
-/*
-| Player: OSD 
--------------------------------------------------------------------------*/
+/* OSD: Hide some Elements */
+.btnFullscreen,
+.btnPip {
+  display: none;
+}
 
-/* OSD Header */
+/* OSD: Header */
 .osdHeader {
   height: 3.2em !important;
   --webkit-backdrop-filter: none;
   box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* OSD Footer */
+/* OSD: Footer */
 .videoOsdBottom {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
   box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-top: .5em;
   padding-bottom: 1em;
-}
-
-/* OSD Header: Hide some Elements */
-.btnFullscreen,
-.btnPip {
-  display: none;
 }
 
 /* OSD Footer: Space between Icons */
@@ -1048,9 +996,25 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   width: 6em;
 }
 
+/* Subtitle preview */
+.subtitleappearance-preview {
+  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
+}
+
+
+/* Progressbar (dashboard?) */
 /*
-| Player: OSD Controls
--------------------------------------------------------------------------*/
+.taskProgressInner,
+.sliderMarker.watched {
+  background: rgba(var(--accent),0.75) !important;
+}
+  */
+
+/* 
+===========================================================================
+  Player OSD: Controls
+===========================================================================
+*/
 
 /* style the controls */
 .startTimeText,
@@ -1076,16 +1040,50 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   padding-right: 0.5em !important;
 }
 
-/* Progressbar */
-.taskProgressInner,
-.sliderMarker.watched {
-  background: rgba(var(--accent),0.75) !important;
+/* 
+===========================================================================
+  Player OSD: Progressbar & Volume
+===========================================================================
+*/
+
+/* Play progress & volume */
+.mdl-slider {
+  color: rgba(var(--accent)) !important;
+} 
+
+/* Background: Accent: 100% */
+.mdl-slider-background-lower {
+  background: rgba(var(--accent)) !important;
+} 
+
+/* Background & Thumb: Accent: 100% */
+.iconOsdProgressInner {
+  background: rgba(var(--accent)) !important;
+  color: rgba(var(--accent)) !important;
 }
 
+.mdl-slider::-moz-range-thumb {
+  background: rgba(var(--accent)) !important;
+  color: rgba(var(--accent)) !important;
+}
+.mdl-slider::-webkit-slider-thumb {
+  background: rgba(var(--accent)) !important;
+  color: rgba(var(--accent)) !important;
+}
 
-/*
-| OSD: Chapter Thumbnails
--------------------------------------------------------------------------*/
+.mdl-slider::-webkit-scrollbar-corner  {
+  background: #0000 !important;
+}
+
+.mdl-slider::-webkit-scrollbar-track-piece {
+  background: #0000 !important;
+}
+
+/* 
+===========================================================================
+  Player OSD: Chapter Thumbnails
+===========================================================================
+*/
 
 /* Shrink the mouseover chapter image when scrobbling, still media player */
 .chapterThumb {
@@ -1115,10 +1113,11 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   transform: translate3d(-50%,-108%,0);
 }
 
-
-/*
-| OSD: Skip-Button
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Player OSD: Skip-Button
+===========================================================================
+*/
 
 /* Skip-Button */
 .skip-button {
@@ -1137,9 +1136,11 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   background: #0000 !important;
 }
 
-/*
-| OSD: UpNext Dialog
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  Player OSD: UpNext Dialog
+===========================================================================
+*/
 
 /* Upnext Dialog */
 .upNextContainer {
@@ -1159,66 +1160,10 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   /* color: white; */
 }
 
-/*
-| OSD: Play Progress
--------------------------------------------------------------------------*/
-
-/* Play progress & volume */
-.mdl-slider {
-  color: rgba(var(--accent)) !important;
-} 
-
-/* Background: Accent: 100% */
-.mdl-slider-background-lower {
-  background: rgba(var(--accent)) !important;
-} 
-
-/* Background & Thumb: Accent: 100% */
-.iconOsdProgressInner {
-  background: rgba(var(--accent)) !important;
-  color: rgba(var(--accent)) !important;
-}
-
-.mdl-slider::-moz-range-thumb {
-  background: rgba(var(--accent)) !important;
-  color: rgba(var(--accent)) !important;
-}
-
-.mdl-slider::-webkit-slider-thumb {
-  background: rgba(var(--accent)) !important;
-  color: rgba(var(--accent)) !important;
-}
-
-/* Subtitle preview */
-.subtitleappearance-preview {
-  background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
-}
-
-/* Scrollbar div */
-.mdl-slider::-webkit-scrollbar-corner  {
-  background: #0000 !important;
-}
-
-.mdl-slider::-webkit-scrollbar-track-piece {
-  background: #0000 !important;
-}
-
-
-/* Scrollbar Thumb
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-ms-thumb,
-.mdl-slider::-webkit-slider-thumb,
-::-webkit-scrollbar-thumb {
-  border-radius: var(--rounding-media);
-  background: rgba(var(--accent),0.8) !important;
-}
-  */
-
-
 /* 
-==================================================================
-  User settings
-==================================================================
+===========================================================================
+  User Settings
+===========================================================================
 */
 
 /* Improve some menu alignments */
@@ -1243,7 +1188,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /* Menu Items: Hover & Focus */
-/* TODO: FOCUS ok? */
 .listItem:hover,
 .listItem:Focus {
   transition: 0.2s;
@@ -1285,9 +1229,11 @@ div[data-role="controlgroup"] a.ui-btn-active {
   border-radius: var(--rounding-system) !important;
 }
 
-/*
-| Buttons
--------------------------------------------------------------------------*/
+/* 
+===========================================================================
+  User Settings: Buttons
+===========================================================================
+*/
 
 /* Radius Left */
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
@@ -1314,13 +1260,10 @@ div[data-role="controlgroup"] a[data-role="button"] {
   transform: none !important;
 }
 
-
-
-
 /*  
-===========================================================================
+====================================================================================
   Loading spinner & Progress Ring
-===========================================================================
+====================================================================================
 */
 
 /* Loading Spinner: Accent Color */
@@ -1348,12 +1291,10 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 
 
-
-
 /* 
-==================================================================
+===========================================================================
   Misc & Unknown (aka TODOs)
-==================================================================
+===========================================================================
 */
 
 /* Background: Dark */
@@ -1384,10 +1325,11 @@ fieldset {
   background: #0000 !important;
 }
 
-
-/*
-| Buttons
------------------------------*/
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Buttons
+===========================================================================
+*/
 
 /* Misc Button */
 .fab {
@@ -1403,10 +1345,11 @@ fieldset {
   background: #0000 !important;
 }
 
-
-/*
-| Mobile
------------------------------*/
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Mobile
+===========================================================================
+*/
 
 /* Accommodate mobile and align buttons and indicators */
 @media all and (min-width: 70em){
@@ -1437,10 +1380,61 @@ fieldset {
   }
 }
 
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Menu Page
+===========================================================================
+*/
 
-/*
-| Syncplay
------------------------------*/
+/* home library button */
+.homeLibraryButton {
+  min-width: 12em;
+  margin: 0.4em;
+}
+@media all and (max-width: 26em){
+  .homeLibraryButton {
+    min-width: 45%;
+    width: auto !important;
+  }
+}
+.homeLibraryButton {
+  width: auto !important;
+}
+
+/* current sessions */
+.sessionCardFooter {
+  border: none;
+}
+
+/* Fix footers/headers displaying on small pop-ups */
+.formDialogFooter-clear,
+.formDialogHeader-clear {
+  background: #0000 !important;
+  background-color: #0000 !important;
+}
+
+/*Theme slider marker style*/
+.sliderMarker {
+  width: 3px;
+  border-radius: 2px;
+}
+
+/* Cards & Items */
+.itemDetailImage,
+.primaryImageWrapper > img {
+  border-radius: var(--rounding-media) !important;
+}
+
+.nowPlayingPageImage {
+  border: none;
+  border-radius: var(--rounding-media) !important;
+}
+
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Syncplay
+===========================================================================
+*/
 
 .syncPlayIconCircle {
   color: rgba(var(--accent),1) !important;
@@ -1541,53 +1535,6 @@ fieldset {
 }
 
 
-/*
-| Menu Page
------------------------------*/
-
-/* home library button */
-.homeLibraryButton {
-  min-width: 12em;
-  margin: 0.4em;
-}
-@media all and (max-width: 26em){
-  .homeLibraryButton {
-    min-width: 45%;
-    width: auto !important;
-  }
-}
-.homeLibraryButton {
-  width: auto !important;
-}
-
-/* current sessions */
-.sessionCardFooter {
-  border: none;
-}
-
-/* Fix footers/headers displaying on small pop-ups */
-.formDialogFooter-clear,
-.formDialogHeader-clear {
-  background: #0000 !important;
-  background-color: #0000 !important;
-}
-
-/*Theme slider marker style*/
-.sliderMarker {
-  width: 3px;
-  border-radius: 2px;
-}
-
-/* Cards & Items */
-.itemDetailImage,
-.primaryImageWrapper > img {
-  border-radius: var(--rounding-media) !important;
-}
-
-.nowPlayingPageImage {
-  border: none;
-  border-radius: var(--rounding-media) !important;
-}
 
 
 
