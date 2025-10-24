@@ -40,21 +40,17 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Transparent Backgrounds on Elements */
-:root {--light80: rgba(255, 255, 255, 0.8) ;}
-:root {--light60: rgba(255, 255, 255, 0.6) ;}
-:root {--light40: rgba(255, 255, 255, 0.4) ;}
-:root {--light20: rgba(255, 255, 255, 0.2) ;}
-:root {--dark20: rgba(0, 0, 0, 0.2) ;}
-:root {--dark40: rgba(0, 0, 0, 0.4) ;}
-:root {--dark60: rgba(0, 0, 0, 0.6) ;}
-:root {--dark80: rgba(0, 0, 0, 0.8) ;}
 
 /*  
 ===========================================================================
-  Dialogs
+  System & Dialogs
 ===========================================================================
 */
+
+/* Overall Smaller Size */
+.layout-tv {
+  font-size: 110% !important;
+}
 
 /* Dialogs: Rounding */
 .dialog,
@@ -71,38 +67,11 @@
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
-
-/*
-| TV-UI
-----------------------------------------------------------------*/
-
-/* Overall Smaller Size */
-.layout-tv {
-  font-size: 110% !important;
-}
-
-/* Adjust Pages */
-/*
-.layout-tv .backgroundContainer {
-  padding-top: 5em !important;
-}
-  */
-
-/* Use freed Space */
-.layout-tv .homeSectionsContainer {
-  top: 0 !important ;
-}
-
-/* Page allignments */
-/*
-.layout-tv .libraryPage {
-  padding-top: 5.3em !important;
-}
-  */
-
-/*
-| Menu Drawer 
-----------------------------------------------------------------*/
+/*  
+===========================================================================
+  Menu Drawer
+===========================================================================
+*/
 
 .mainDrawer {
   background: rgb(0 0 0) !important;
@@ -117,16 +86,18 @@
 
 .navMenuOption-selected {
   color: rgba(var(--accent)) !important;
-  background: var(--dark40) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 .navMenuOptionText {
   margin-top: 0;
 }
 
-/*
-| Scrollbar
-----------------------------------------------------------------*/
+/*  
+===========================================================================
+  Scrollbar
+===========================================================================
+*/
 
 * {
   scrollbar-width: thin;
@@ -160,10 +131,11 @@
   display: none;
 }
 
-  
-/*
-| Header
-----------------------------------------------------------------*/
+/*  
+===========================================================================
+  Header
+===========================================================================
+*/
 
 /* Size */
 .skinHeader,
@@ -192,14 +164,15 @@
   border-radius: 50px !important;
 }
 
-/*
-| Header: Section Tabs
-----------------------------------------------------------------*/
+/*  
+===========================================================================
+  Header: Section Tabs
+===========================================================================
+*/
 
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
-  /* text-size-adjust: 105%; */
   font-size: 105% !important;
   margin-top: -3.5em !important;
   width: 40vw;
@@ -214,45 +187,29 @@
   transition: filter 0.2s
 }
 
-/* Make Text slighty bigger */
-/*
-.layout-tv .sectionTabs,
-.layout-desktop .sectionTabs {
-  font-size: 105% !important;
-}
-*/
-
-/* Style Buttons */
+/* Tab Buttons */
 .emby-tab-button {
   padding: 1.1em 1.5em !important;
-  /* background: #0000 !important; */
 }
-
-/* Tab Buttons: Focus & Hover */
 .emby-tab-button:hover,
 .emby-tab-button:focus {
   color: rgb(var(--accent)) !important;
-  /* transform: scale(1.2) !important; */
 }
-
-/* Active Tab */
 .emby-tab-button-active {
-  /* background: #0000 !important; */
   color: #fff;
 }
 
+/*  
+===========================================================================
+  Buttons
+===========================================================================
+*/
 
-/*
-| Buttons: Menu & OSD
-----------------------------------------------------------------*/
-
-/* Menu & OSD Buttons */
+/* Buttons: Menu & OSD */
 .paper-icon-button-light {
   border: solid 2px #0000 !important;
   border-radius: var(--rounding-media);
 }
-
-/* Menu & OSD Buttons: Animation */
 .paper-icon-button-light:hover {
   color: rgba(var(--accent), 1) !important;
   background: rgba(var(--accent), .2) !important;
@@ -266,7 +223,7 @@
   background: rgba(var(--accent), .4) !important;
 }
 
-/* Menu & OSD Buttons: Animations (except Header Buttons) */
+/* Buttons: Not Header */
 .paper-icon-button-light:not(.headerButton) {
   padding: .4em !important;
 }
@@ -275,16 +232,14 @@
   transform: scale(1.2) !important;
 }
 
-
-/* Submit Button */
+/* Button: Submit */
 .button-submit {
   border-radius: var(--rounding-system) !important;
 }
 
-/* System Buttons */
+/* Buttons: Login, Save & Co. */
 .raised {
-  /* transition: all 0.2s !important; */
-  background: var(--dark40) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   border-radius: var(--rounding-system) !important;
 }
 .raised:hover {
@@ -294,112 +249,20 @@
   background: rgba(var(--accent), 0.8) !important;
 }
 
-
-/* Raised Home Library Button */
+/* Buttons: Home Library */
 .raised.homeLibraryButton {
   transition: filter 0.2s;
 }
 .raised.homeLibraryButton:hover,
 .raised.homeLibraryButton:focus {
   color: rgb(var(--accent)) !important;
-  background: var(--light60) !important;
+  background: rgba(255, 255, 255, 0.6) !important;
 }
 
-
-/* Misc Buttons */
-/*
-.playstatebutton-icon-played,
-.ratingbutton-icon-withrating {
-  color: rgba(var(--accent)) !important;
-}
-  */
-
-/* Background on Hover & Focus: Accent 50% */
-/* a[data-role="button"]:hover, */
-/*
-.actionSheetMenuItem:hover,
-.css-17c09up:hover,
-.fab:hover {
-  background: rgba(var(--accent),0.8) !important;
-}
-*/
-
-/*
-| Fields & Inputs
-----------------------------------------------------------------*/
-
-/* Fields */
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor,
-.checkboxOutline {
-  background: var(--dark60); 
-  border: 2px solid var(--light20);
-  border-radius: var(--rounding-system) !important;
-}
-
-/* Input */
-.emby-input {
-  padding: .5em .6em;
-}
-
-/* Textarea */
-.emby-textarea {
-  resize: vertical !important;
-  font-family: monospace;
-  font-size: 10pt;
-  padding: .5em .6em;
-}
-
-/* Select */
-.emby-select {
-  border-radius: var(--rounding-system) !important;
-}
-.selectArrow {
-  margin-top: 1.05em;
-}
-
-/* Link-Buttons */
+/* Link-Button */
 .button-link {
   color: inherit !important;
 }
-
-/*
-| Fields & Inputs: Animation
-----------------------------------------------------------------*/
-
-/* Input, Textarea & Select: Focus */
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus {
-  border: 2px solid rgba(var(--accent), 0.7) !important;
-  background: var(--dark40) !important; 
-}
-
-/* Labels: Focus */
-.inputLabelFocused,
-.textareaLabelFocused,
-.selectLabelFocused {
-  color: rgba(var(--accent)) !important;
-}
-
-/* Checkbox: Focus & Hover */
-.emby-checkbox:focus + .checkboxLabel,
-.emby-checkbox:hover + .checkboxLabel {
-  color: rgb(var(--accent), 0.8) !important;
-}
-.emby-checkbox:focus + span + .checkboxOutline,
-.emby-checkbox:hover + span + .checkboxOutline {
-  border: 2px solid rgba(var(--accent), 0.7) !important;
-}
-
-/* Checkbox: Checked */
-.emby-checkbox:checked + span + .checkboxOutline {
-  border: 2px solid rgba(var(--accent), 0.7) !important;
-  background: rgba(var(--accent), 0.7) !important;
-}
-
-/* Link-Buttons: Focus & Hover */
 .button-link:focus,
 .button-link:hover {
   color: rgba(var(--accent),0.8) !important;
@@ -408,51 +271,89 @@
   transform: none !important;
 }
 
-/* Select */
-.emby-select option {
-  background: rgba(0, 0, 0, 0.8) !important;
+
+/*  
+===========================================================================
+  Fields & Inputs
+===========================================================================
+*/
+
+/* Fields & Input */
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.checkboxOutline {
+  background: rgba(0, 0, 0, 0.6) ; 
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--rounding-system) !important;
+}
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.checkboxOutline:focus {
+  border: 2px solid rgba(var(--accent), 0.7) !important;
+  background: rgba(0, 0, 0, 0.4) !important; 
 }
 
+/* Input: Fix Text alignment*/
+.emby-input {
+  padding: .5em .6em;
+}
+
+/* Textarea: Verticaly Resizable */
+.emby-textarea {
+  resize: vertical !important;
+  font-family: monospace;
+  font-size: 10pt;
+  padding: .5em .6em;
+}
+
+/* Select: Without colors & Arrow */
+.emby-select {
+  border-radius: var(--rounding-system) !important;
+}
+.selectArrow {
+  margin-top: 1.05em;
+}
+
+/* Select: Option Colors */
+.emby-select option {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
 .emby-select option:focus,
 .emby-select option:hover {
-  background: rgba(var(--accent), 1) !important;
+  background-color: rgba(var(--accent), 1) !important;
 }
 
-/* Fields: Active */
-.Mui-selected {
+/* Checkbox: Outline */
+.emby-checkbox:focus + span + .checkboxOutline,
+.emby-checkbox:hover + span + .checkboxOutline {
+  border: 2px solid rgba(var(--accent), 0.7) !important;
+}
+.emby-checkbox:checked + span + .checkboxOutline {
+  border: 2px solid rgba(var(--accent), 0.7) !important;
+  background: rgba(var(--accent), 0.7) !important;
+}
+
+/* Labels: Fields & Input */
+.inputLabelFocused,
+.textareaLabelFocused,
+.selectLabelFocused {
   color: rgba(var(--accent)) !important;
 }
 
-/* Background: Black & White */
+/* Labels: Checkbox */
+.emby-checkbox:focus + .checkboxLabel,
+.emby-checkbox:hover + .checkboxLabel {
+  color: rgb(var(--accent), 0.8) !important;
+}
+
+/* Misc */
+.Mui-selected {
+  color: rgba(var(--accent)) !important;
+}
 .selectionCommandsPanel {
-  background: var(--dark40) !important;
-}
-
-
-/*
-| Loading spinner & Progress Ring
-----------------------------------------------------------------*/
-
-/* Loading Spinner: Accent Color */
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4 {
-  border-color: rgba(var(--accent)) !important;
-}
-
-/* Theme process progress ring */
-.progressring-spiner {
-  border-color: rgba(var(--accent));
-  border-width: .35em;
-}
-
-/* Theme process progress ring */
-.progressring {
-  margin: .4em;
-}
-.progressring-bg {
-  display: none;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 
@@ -468,18 +369,18 @@
   display: none;
 }
 
-/* Login Card */
+/* Login Card: Dimensions & Colors */
 #loginPage .padded-left.padded-right.padded-bottom-page {
   margin-top: 8em;
   margin-left: auto;
   margin-right: auto;
-  background: var(--dark40) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   width: 24em;
   border-radius: var(--rounding-media);
   padding-bottom: 2em !important;
 }
 
-/* Login Card: Move "please sign in" */
+/* Login Card: "please sign in" */
 #loginPage .visualLoginForm {
   padding-top: 1em;
 }
@@ -492,23 +393,20 @@
   width: 33%;
   margin: 1em !important;
 }
-
-/* Login Card: User Image */
 #loginPage .cardImage {
   color: rgba(var(--accent)) !important;
-  background: var(--light20) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
 }
 
-/* Login Form */
+/* Manual Login Form */
 #loginPage .readOnlyContent,
 #loginPage form {
   max-width: 22em;
 }
 
-/* Login Form: Buttons */
+/* Buttons */
 #loginPage .emby-button.block {
   margin: 0.5em 0;
-  /* background: var(--dark60) !important; */
 }
 
 
@@ -517,11 +415,6 @@
   Media List
 ==================================================================
 */
-
-#tvRecommendedPage {
-  padding-top: 6em !important;
-}
-
 
 /* Main List */
 .itemsContainer-tv.vertical-wrap {
@@ -560,7 +453,7 @@
 
 /*
 | Alphabet Picker 
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 .alphaPickerButton-tv:focus,
 .alphaPickerButton-tv:hover {
@@ -570,7 +463,7 @@
 
 /*
 | Sorting & Filter Menubar
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 
 .pageTabContent > .focuscontainer-x {
@@ -629,7 +522,7 @@
 
 /*
 | Cards: Rounding
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Roundings: Full */
 .blurhash-canvas,
@@ -666,7 +559,7 @@
 
 /*
 | Cards: Size & Alignment
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Portrait Card (TV) */
 .itemsContainer-tv > .portraitCard {
@@ -710,14 +603,14 @@
 
 /*
 | Cards: Shadow
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Box Shadow card with footer */
 .portraitCard:has(.cardFooter) .cardBox,
 .backdropCard:has(.cardFooter) .cardBox,
 .overflowPortraitCard:has(.cardFooter) .cardBox,
 .overflowBackdropCard:has(.cardFooter) .cardBox {
-  box-shadow: 4px 4px 10px 5px var(--dark40);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 /* Box Shadow card without footer */
@@ -725,13 +618,13 @@
 .backdropCard:not(:has(.cardFooter)) .cardScalable,
 .overflowPortraitCard:not(:has(.cardFooter)) .cardScalable,
 .overflowBackdropCard:not(:has(.cardFooter)) .cardScalable {
-  box-shadow: 4px 4px 10px 5px var(--dark40);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
 }
 
 
 /*
 | Cards: Text
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Title */
 .cardText-first {
@@ -766,7 +659,7 @@
 
 /*
 | Cards: Animation
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
@@ -801,7 +694,7 @@
 
 /*
 | Item Cards: Indicators
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Alignment */
 .cardIndicators,
@@ -847,7 +740,7 @@
 
 /*
 | Item Cards: Progressbar
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Background */
 .itemProgressBar {
@@ -867,7 +760,7 @@
 
 /*
 | Item Cards: Default Backgrounds
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 .defaultCardBackground1 {
   background: hsl(var(--accent-h), var(--accent-s), 17%);
@@ -921,7 +814,7 @@
 
 /*
 | Media: Poster
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Cover Style*/
 .detailImageContainer .card {
@@ -929,7 +822,7 @@
   left: 3% !important;
   /* top: 1em !important; */
   border-radius: var(--rounding-media);
-  box-shadow: 4px 4px 10px 5px var(--dark40);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
   /* top: 20px; */
 }
 
@@ -962,7 +855,7 @@
 
 /*
 | Media: Detail-Ribbon
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Ribbon */
 .detailRibbon {
@@ -1013,7 +906,7 @@
 
 /*
 | Media: Details
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Title */
 /*
@@ -1054,7 +947,7 @@ p.itemGenres {
 
 /*
 | Media: Description
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Container */
 .detailPageSecondaryContainer {
@@ -1075,7 +968,7 @@ p.itemGenres {
 
 /*
 | Media: Sections (cast, more like this...)
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Sections (More Like This) */
 .detailVerticalSection {
@@ -1122,7 +1015,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /*
 | Player: OSD 
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* OSD Header */
 .osdHeader {
@@ -1157,7 +1050,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /*
 | Player: OSD Controls
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* style the controls */
 .startTimeText,
@@ -1192,7 +1085,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /*
 | OSD: Chapter Thumbnails
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Shrink the mouseover chapter image when scrobbling, still media player */
 .chapterThumb {
@@ -1225,7 +1118,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /*
 | OSD: Skip-Button
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Skip-Button */
 .skip-button {
@@ -1246,7 +1139,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /*
 | OSD: UpNext Dialog
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Upnext Dialog */
 .upNextContainer {
@@ -1268,7 +1161,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /*
 | OSD: Play Progress
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Play progress & volume */
 .mdl-slider {
@@ -1380,7 +1273,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* user settings button */
 div[data-role="controlgroup"] a.ui-btn-active {
-  background: var(--dark40) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   color: white !important;
 }
 
@@ -1394,7 +1287,7 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 /*
 | Buttons
-----------------------------------------------------------------*/
+-------------------------------------------------------------------------*/
 
 /* Radius Left */
 div[data-role="controlgroup"] a[data-role="button"]:first-child {
@@ -1421,6 +1314,42 @@ div[data-role="controlgroup"] a[data-role="button"] {
   transform: none !important;
 }
 
+
+
+
+/*  
+===========================================================================
+  Loading spinner & Progress Ring
+===========================================================================
+*/
+
+/* Loading Spinner: Accent Color */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: rgba(var(--accent)) !important;
+}
+
+/* Theme process progress ring */
+.progressring-spiner {
+  border-color: rgba(var(--accent));
+  border-width: .35em;
+}
+
+/* Theme process progress ring */
+.progressring {
+  margin: .4em;
+}
+.progressring-bg {
+  display: none;
+}
+
+
+
+
+
+
 /* 
 ==================================================================
   Misc & Unknown (aka TODOs)
@@ -1429,7 +1358,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 /* Background: Dark */
 .paperList {
-  background: var(--dark40);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: var(--rounding-system) !important;
 }
 
@@ -1464,7 +1393,7 @@ fieldset {
 .fab {
   border-radius: var(--rounding-system) !important;
 	transition: all 0.2s !important;
-  background: var(--dark40) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 .button-flat:hover,
@@ -1725,6 +1654,6 @@ fieldset {
 
 /* Links acting as buttons 
 a[data-role="button"] {
-  background: var(--dark40) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
 }
   */
