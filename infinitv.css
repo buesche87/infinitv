@@ -30,6 +30,11 @@
   background-repeat: no-repeat !important;
 }
 
+/* Darken Backdrop Background */
+.backgroundContainer.withBackdrop {
+  background: rgba(0, 0, 0, var(--bgdarkness));
+}
+
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -66,10 +71,6 @@
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
-/* Darken Background */
-.backgroundContainer.withBackdrop {
-  background: rgba(0, 0, 0, var(--bgdarkness));
-}
 
 /*
 | TV-UI
@@ -517,6 +518,11 @@
 ==================================================================
 */
 
+#tvRecommendedPage {
+  padding-top: 6em !important;
+}
+
+
 /* Main List */
 .itemsContainer-tv.vertical-wrap {
   padding-top: 1% !important;
@@ -568,7 +574,8 @@
 
 
 .pageTabContent > .focuscontainer-x {
-  background: var(--dark40);
+  background: rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.25em;
 }
 
 
@@ -928,7 +935,7 @@
 
 /* Cover Placement (TV) */
 .layout-tv .detailImageContainer .card {
-  top: 1em !important;
+  top: 12.5vh !important;
 }
 
 /* Cover Placement (Desktop) */
