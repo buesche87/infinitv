@@ -1,22 +1,22 @@
-/* Add to Custom CSS in Dashboard */
-@import url('https://buesche87.github.io/infinitv/infinitv-base.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-login.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-lists.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-media.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-player.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-usersettings.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-misc.css');
-@import url('https://buesche87.github.io/infinitv/ultrachromic-episodes.css');
+/* Add to Custom CSS in Dashboard > Branding */
+@import url('https://buesche87.github.io/infinitv/infinitv.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-cast.css');
+@import url('https://buesche87.github.io/infinitv/ultrachromic-episodes.css');
+
+/* Accent Color */
 :root {
-  --accent-h: 28;   /* orangebrown */
-  --accent-s: 50%;
-  --accent-l: 55%;
+  --accent-h: 36;    /* Hue: Orange */
+  --accent-s: 100%;  /* Saturation */
+  --accent-l: 50%;   /* Brightness */
 }
-:root {--accent: 255,153,0 ;}
+:root {--accent: 255,153,0 ;} /* will deprecate in future updates */
+
+/* Darkness & Opacity */
+:root {--bgdarkness: 0.6 ;}
+:root {--headeropacity: 0.7 ;}
+:root {--draweropacity: 0.9 ;}
+:root {--footeropacity: 0.8 ;}
+
+/* Roundings */
 :root {--rounding-media: 12px ;}
 :root {--rounding-system: 4px ;}
-:root {--headeropacity: 0.9 ;}
-:root {--bgdarkness: 0.7 ;}
-:root {--footeropacity: 0.8 ;}
-:root {--displayslides: none ;}
