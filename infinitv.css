@@ -16,14 +16,9 @@
 
 /*  
 ===========================================================================
-  Font & Backgrounds
+  Background & Fonts
 ===========================================================================
 */
-
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-}
 
 /* Background Image on Login Page */
 #loginPage {
@@ -33,6 +28,11 @@
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Transparent Backgrounds on Elements */
