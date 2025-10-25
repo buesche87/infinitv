@@ -72,6 +72,7 @@
 ====================================================================================
 */
 
+/* Main Drawer */
 .mainDrawer {
   background: rgb(0 0 0) !important;
   margin-top: 4.6em !important;
@@ -79,17 +80,16 @@
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
 
+/* Options */
+.navMenuOptionText {
+  margin-top: 0;
+}
 .navMenuOption:hover {
   background: rgba(var(--accent), 1) !important;
 }
-
 .navMenuOption-selected {
   color: rgba(var(--accent)) !important;
   background: rgba(0, 0, 0, 0.4) !important;
-}
-
-.navMenuOptionText {
-  margin-top: 0;
 }
 
 /*  
@@ -582,7 +582,7 @@
 .backdropCard:has(.cardFooter) .cardBox,
 .overflowPortraitCard:has(.cardFooter) .cardBox,
 .overflowBackdropCard:has(.cardFooter) .cardBox {
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Box Shadow card without footer */
@@ -590,7 +590,7 @@
 .backdropCard:not(:has(.cardFooter)) .cardScalable,
 .overflowPortraitCard:not(:has(.cardFooter)) .cardScalable,
 .overflowBackdropCard:not(:has(.cardFooter)) .cardScalable {
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* 
@@ -647,23 +647,24 @@
   color: rgba(var(--accent));
 }
 
-/* Desktop: Homescreen - Glow images on hover */
+/* Glow: Cards (Desktop) */
+.layout-desktop .backdropCard:has(.cardFooter):hover .cardBox, 
+.layout-desktop .portraitCard:has(.cardFooter):hover .cardBox {
+  box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
+}
+
+/* Glow: Only Images on Cards in Homescreen (Desktop) */
 .layout-desktop .homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
 .layout-desktop .homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
-/* Desktop: Lists - Glow images on hover */
+/* Glow: Media Scroller Cards (Desktop) */
 .layout-desktop .backdropCard:not(:has(.cardFooter)):hover .cardScalable, 
 .layout-desktop .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
-/* Desktop: Lists - Glow cards on hover */
-.layout-desktop .backdropCard:has(.cardFooter):hover .cardBox, 
-.layout-desktop .portraitCard:has(.cardFooter):hover .cardBox {
-  box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
-}
 
 /* 
 ===========================================================================
@@ -799,7 +800,7 @@
   left: 3% !important;
   /* top: 1em !important; */
   border-radius: var(--rounding-media);
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
   /* top: 20px; */
 }
 
