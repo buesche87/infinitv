@@ -101,7 +101,7 @@
 ============================================================================
 */
 
-* {
+.layout-desktop {
   scrollbar-width: thin;
   scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
 }
