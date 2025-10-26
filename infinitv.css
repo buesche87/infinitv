@@ -159,11 +159,11 @@
   */
 
 /* Don't scroll header in tv mode */
-/*
+
 .layout-tv .skinHeader {
   position: fixed !important;
 }
-  */
+
 
 /* User Icon Fix */
 .headerUserButtonRound {
@@ -241,8 +241,6 @@
 .paper-icon-button-light:not(.headerButton) {
   padding: .4em !important;
 }
-
-/* Not Header Button */
 .paper-icon-button-light:not(.headerButton):focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
