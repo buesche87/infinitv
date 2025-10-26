@@ -745,7 +745,7 @@ div#tvRecommendedPage {
 /* Color on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
-  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
 /* Glow: Cards (Desktop) */
