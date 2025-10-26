@@ -22,10 +22,6 @@
   --accent-l: 50%;   /* Brightness */
   --accent: 255,153,0; /* will deprecate in future updates */
 
-  --accentcolorman: hsl(36,100,50%);
-  --accentcolor: hsl(var(--accent-h),var(--accent-s),var(--accent-l));
-
-
   /* Darkness & Opacity */
   --bgdarkness: 0.6;
   --headeropacity: 0.7;
@@ -42,11 +38,8 @@
 
   --accentcolorman: hsl(36,100,50%);
   --accentcolor: hsl(var(--accent-h),var(--accent-s),var(--accent-l),1.0);
-
   --furz: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8);
-
   --accentold: rgba(255,153,0,1.0);
-  
   --testcolor: hsla(36, 100%, 50%,1.0);
 }
 
