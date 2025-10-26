@@ -170,7 +170,6 @@
   align-self: center;
   position: relative;
   transition: filter 0.2s;
-  scroll-snap-type: x proximity;
 }
 
 /* Tab Buttons */
@@ -235,6 +234,7 @@
 .headerButton:focus {
   -webkit-transform: none !important;
   transform: none !important;
+  scroll-margin-top: 0; /* optional, Abstand zum Header */
 }
 
 /* Buttons: Submit */
