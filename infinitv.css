@@ -842,7 +842,7 @@
   max-width: 26vw;
   left: 3% !important;
   border-radius: var(--rounding-media);
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: var(--cardshadow) !important;
 }
 
 /* Cover Placement (TV) */
