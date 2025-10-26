@@ -124,9 +124,10 @@
 /* Hide */
 #loginPage,
 .layout-tv {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: none;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 .layout-tv ::-webkit-scrollbar {
@@ -158,30 +159,36 @@
 }
   */
 
-
-.layout-tv .skinHeader *:focus {
-  scroll-margin: 0 !important;
-  scroll-padding: 0 !important;
-}
-
-/* WICHTIG: Hauptseite darf beim Fokus auf Header-Buttons nicht mitscrollen */
-.layout-tv .skinHeader {
-  overscroll-behavior: contain;
-}
-
-/* Optional – Browser darf den Fokus nicht zentrieren */
-.layout-tv .skinHeader * {
-  scroll-margin-block: 0 !important;
-  scroll-margin-inline: 0 !important;
-}
-
 /*
 .layout-tv .skinHeader {
-  position: sticky;
+  position: sticky !important;
   top: 0;
   will-change: transform;
 }
 */
+
+/*
+.layout-tv .skinHeader *:focus {
+  scroll-margin: 0 !important;
+  scroll-padding: 0 !important;
+}
+*/
+
+/* WICHTIG: Hauptseite darf beim Fokus auf Header-Buttons nicht mitscrollen */
+/*
+.layout-tv .skinHeader {
+  overscroll-behavior: contain;
+}
+*/
+
+/* Optional – Browser darf den Fokus nicht zentrieren */
+/*
+.layout-tv .skinHeader * {
+  scroll-margin-block: 0 !important;
+  scroll-margin-inline: 0 !important;
+}
+*/
+
 
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
