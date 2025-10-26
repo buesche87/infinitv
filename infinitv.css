@@ -644,7 +644,7 @@ div#tvRecommendedPage {
 ===========================================================================
 */
 
-.libraryPage .cardImageContainer {
+.libraryPage .cardScalable {
   box-shadow: var(--cardshadow) !important;
 }
 
