@@ -167,7 +167,7 @@
 
 
 .layout-tv .skinHeader {
-    position: sticky;
+    position: sticky !important;
     top: 0;
     will-change: transform;
 }
