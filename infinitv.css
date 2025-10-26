@@ -173,22 +173,31 @@
   transition: filter 0.2s;
 }
 
+.emby-tab-button.show-focus:focus {
+  background: 0 !important;
+
+}
+
 /* Tab Buttons */
 .emby-tab-button {
-  padding: 1em 1.5em !important;
+  padding: 1em !important;
 }
 .emby-tab-button:hover,
 .emby-tab-button:focus {
   color: rgb(var(--accent)) !important;
 }
+.emby-tab-button:focus {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
 .emby-tab-button-active {
   color: #fff;
 }
 
+/* Text */
 .pageTitle {
   font-weight: bold;
 }
-
 .currentTimeText {
   font-size: 105% !important;
   font-weight: bold;
