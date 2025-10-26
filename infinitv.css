@@ -185,6 +185,10 @@
   color: #fff;
 }
 
+.pageTitle {
+  font-weight: bold;
+}
+
 .currentTimeText {
   font-size: 105% !important;
   font-weight: bold;
