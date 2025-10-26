@@ -239,15 +239,14 @@
   padding: .4em !important;
 }
 .paper-icon-button-light:not(.headerButton):focus {
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 /* Buttons: Header */
 .headerButton:focus {
   -webkit-transform: none !important;
   transform: none !important;
-  scroll-margin-top: 0; /* optional, Abstand zum Header */
 }
 
 /* Buttons: Submit */
