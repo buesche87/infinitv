@@ -670,7 +670,7 @@ div#tvRecommendedPage {
 #tvRecommendedPage .cardBox:not(:has(.cardFooter)) .cardContent
 */
 
-.libraryPage .cardBox:not(:has(.cardFooter)) .cardContent {
+.libraryPage .cardBox:not(:has(.cardFooter)) .cardImageContainer {
   box-shadow: var(--cardshadow) !important;
 }
 
