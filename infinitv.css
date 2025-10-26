@@ -1,5 +1,5 @@
 /*  
-====================================================================================
+============================================================================
    ___  ________   ________ ___  ________   ___  _________  ___      ___ 
   |\  \|\   ___  \|\  _____\\  \|\   ___  \|\  \|\___   ___\\  \    /  /|
   \ \  \ \  \\ \  \ \  \__/\ \  \ \  \\ \  \ \  \|___ \  \_\ \  \  /  / /
@@ -8,16 +8,16 @@
      \ \__\ \__\\ \__\ \__\   \ \__\ \__\\ \__\ \__\   \ \__\ \ \__/ /   
       \|__|\|__| \|__|\|__|    \|__|\|__| \|__|\|__|    \|__|  \|__|/    
                                                                          
-====================================================================================
+============================================================================
 
      HTPC Theme for Jellyfin - Designed for the Big Screen Experience     
 
 */
 
 /*  
-====================================================================================
+============================================================================
   Background & Fonts
-====================================================================================
+============================================================================
 */
 
 /* Background Image on Login Page */
@@ -41,9 +41,9 @@
 }
 
 /*  
-====================================================================================
+============================================================================
   System & Dialogs
-====================================================================================
+============================================================================
 */
 
 /* Overall Smaller Size */
@@ -67,9 +67,9 @@
 }
 
 /*  
-====================================================================================
+============================================================================
   Menu Drawer
-====================================================================================
+============================================================================
 */
 
 /* Main Drawer */
@@ -93,9 +93,9 @@
 }
 
 /*  
-====================================================================================
+============================================================================
   Scrollbar
-====================================================================================
+============================================================================
 */
 
 * {
@@ -131,9 +131,9 @@
 }
 
 /*  
-====================================================================================
+============================================================================
   Header
-====================================================================================
+============================================================================
 */
 
 /* Size */
@@ -147,16 +147,18 @@
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* Header Button Animation */
+/* Header Buttons: No Animation */
 .headerButton:focus {
   -webkit-transform: scale(1) !important;
-  transform: scale(1)  !important;
+  transform: scale(1) !important;
 }
 
 /* Don't scroll header in tv mode */
+/*
 .layout-tv .skinHeader {
   position: fixed !important;
 }
+  */
 
 /* User Icon Fix */
 .headerUserButtonRound {
@@ -164,9 +166,9 @@
 }
 
 /*  
-====================================================================================
+============================================================================
   Header: Section Tabs
-====================================================================================
+============================================================================
 */
 
 /* Move Section Tabs into Header */
@@ -199,9 +201,9 @@
 }
 
 /*  
-====================================================================================
+============================================================================
   Buttons
-====================================================================================
+============================================================================
 */
 
 /* Buttons: Menu & OSD */
@@ -281,10 +283,20 @@
   transform: none !important;
 }
 
+/*
+.button-flat:hover,
+.button-flat:focus,
+.cardOverlayButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: #0000 !important;
+}
+  */
+
+
 /*  
-====================================================================================
+============================================================================
   Fields & Inputs
-====================================================================================
+============================================================================
 */
 
 /* Fields & Input */
@@ -606,7 +618,7 @@
 
 /* 
 ===========================================================================
-  Cards: Text
+  Cards: Text & Buttons
 ===========================================================================
 */
 
@@ -638,6 +650,12 @@
 .section0 .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
 .section1 .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
   display: none;
+}
+
+/* Play Button Hover */
+.cardOverlayButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: #0000 !important;
 }
 
 /* 
@@ -1176,8 +1194,8 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 .dialogContentInner {
   padding: .5em 1em 1em;
-  padding-right: 1em;
-  padding-left: 1em;
+  /* padding-right: 1em; */
+  /* padding-left: 1em; */
 }
 .listItem-indexnumberleft {
   margin: 1em;
@@ -1186,20 +1204,26 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 /* Menu Items */
 .listItem {
   padding-left: 1em;
+  border-radius: var(--rounding-system) !important;
 }
-
-/* Menu Items: Hover & Focus */
 .listItem:hover,
 .listItem:Focus {
   transition: 0.2s;
   background: none !important;
 }
 
-/* List Items */
+/* Menu Items: Border */
 .listItem-border {
   border-color: #0000 !important;
   border-radius: var(--rounding-system) !important;
   margin-top: 0.2em !important;
+}
+
+/* Menu Items */
+.listItemButton,
+.listItemImage,
+.listItemImageButton {
+  border-radius: var(--rounding-system) !important;
 }
 
 /* Menu Items: Focus & Hover */
@@ -1222,13 +1246,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
   color: white !important;
 }
 
-/* List items */
-.listItemButton,
-.listItemImage,
-.listItemImageButton,
-.listItem:hover {
-  border-radius: var(--rounding-system) !important;
-}
 
 /* 
 ===========================================================================
@@ -1262,9 +1279,9 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 /*  
-====================================================================================
+============================================================================
   Loading spinner & Progress Ring
-====================================================================================
+============================================================================
 */
 
 /* Loading Spinner: Accent Color */
@@ -1310,10 +1327,12 @@ div[data-role="controlgroup"] a[data-role="button"] {
 }
 
 /* ?? */
+/*
 fieldset {
   border: 1px solid rgba(40, 40, 40, 0.8); 
   border-radius: 0.4em;
 }
+  */
 
 /* Borders: Accent 50% */
 .itemSelectionPanel {
@@ -1339,12 +1358,6 @@ fieldset {
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover {
-  color: rgb(var(--accent)) !important;
-  background: #0000 !important;
-}
 
 /* 
 ===========================================================================
@@ -1388,10 +1401,12 @@ fieldset {
 */
 
 
-/* current sessions */
+/* current sessions (dashboard?) */
+/*
 .sessionCardFooter {
   border: none;
 }
+  */
 
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
