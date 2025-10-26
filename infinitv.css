@@ -479,8 +479,8 @@ div#indexPage {
 ===========================================================================
 */
 
-/* Background Bar */
-.pageTabContent > .focuscontainer-x {
+/* Background Bar (Desktop) */
+.layout-desktop .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 1.25em;
 }
