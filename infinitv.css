@@ -143,7 +143,6 @@
 .skinHeader,
 .headerTop {
   padding: .3em !important;
-  /* padding: .2em .4em !important; */
 }
 
 /* Transparency */
@@ -171,11 +170,6 @@
   align-self: center;
   position: relative;
   transition: filter 0.2s;
-}
-
-.emby-tab-button.show-focus:focus {
-  background: 0 !important;
-
 }
 
 /* Tab Buttons */
@@ -491,8 +485,6 @@ div#indexPage {
 /* Background Bar */
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
-}
-.layout-desktop .pageTabContent > .focuscontainer-x {
   margin-bottom: 1.25em;
 }
 
@@ -503,6 +495,13 @@ div#indexPage {
 .btnSort {
   margin-left: .4em;
   margin-right: .4em;
+}
+.btnPreviousPage:focus,
+.btnNextPage:focus,
+.btnSelectView:focus,
+.btnSort:focus {
+  -webkit-transform: none !important;
+  transform: none !important;
 }
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
