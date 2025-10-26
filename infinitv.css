@@ -505,7 +505,7 @@ div#tvRecommendedPage {
   margin-right: .4em;
 }
 
-.focuscontainer-x > .paper-icon-button-light:focus {
+.focuscontainer-x .paper-icon-button-light:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
