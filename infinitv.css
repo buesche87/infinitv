@@ -208,14 +208,6 @@
 ============================================================================
 */
 
-/* Button Animations */
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover {
-  color: rgb(var(--accent)) !important;
-  background: #0000 !important;
-}
-
 /* Buttons: Menu & OSD */
 .paper-icon-button-light {
   border: solid 2px #0000 !important;
@@ -232,6 +224,14 @@
 }
 .paper-icon-button-light:active {
   background: rgba(var(--accent), 0.4) !important;
+}
+
+/* Button Animations */
+.button-flat:hover,
+.button-flat:focus,
+.cardOverlayButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: #0000 !important;
 }
 
 /* Buttons: Not Header */
@@ -644,19 +644,12 @@ div#tvRecommendedPage {
 ===========================================================================
 */
 
-/*
-.libraryPage .cardImageContainer,
-.libraryPage .cardFooter {
-  box-shadow: var(--cardshadow) !important;
-}
-  */
-
 /* Box Shadow card with footer */
 .libraryPage .cardBox:has(.cardFooter) {
   box-shadow: var(--cardshadow) !important;
 }
 
-/* Box Shadow card without footer */
+/* Box Shadow image for card without footer */
 .libraryPage .cardBox:not(:has(.cardFooter)) .cardImageContainer {
   box-shadow: var(--cardshadow) !important;
 }
