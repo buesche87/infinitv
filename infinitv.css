@@ -644,12 +644,27 @@ div#tvRecommendedPage {
 ===========================================================================
 */
 
-/* TEST: Box-Shadows */
+.libraryPage .cardImageContainer,
+.libraryPage .cardFooter {
+  box-shadow: var(--cardshadow) !important;
+}
+
+/* Box Shadow card with footer */
 /*
-.visualLoginForm .cardContent {
+.libraryPage .cardBox:has(.cardFooter) {
+  box-shadow: var(--cardshadow) !important;
+}
+  /*
+
+
+
+/* Box Shadow card without footer */
+/*
+.libraryPage .cardBox:not(:has(.cardFooter)) .cardImageContainer {
   box-shadow: var(--cardshadow) !important;
 }
   */
+
 
 /* Box Shadow card with footer */
 /*
@@ -657,10 +672,6 @@ div#tvRecommendedPage {
 #moviesPage .cardBox:has(.cardFooter),
 #tvRecommendedPage .cardBox:has(.cardFooter)
 */
-
-.libraryPage .cardBox:has(.cardFooter) {
-  box-shadow: var(--cardshadow) !important;
-}
 
 /* Box Shadow card without footer */
 /*
@@ -670,9 +681,7 @@ div#tvRecommendedPage {
 #tvRecommendedPage .cardBox:not(:has(.cardFooter)) .cardContent
 */
 
-.libraryPage .cardBox:not(:has(.cardFooter)) .cardImageContainer {
-  box-shadow: var(--cardshadow) !important;
-}
+
 
 /* 
 ===========================================================================
