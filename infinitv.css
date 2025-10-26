@@ -789,12 +789,12 @@ div#tvRecommendedPage {
 .countIndicator,
 .mediaSourceIndicator {
   color: rgb(255, 255, 255);
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border-radius: var(--rounding-system) !important;
 }
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
-  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
 /* Missing & Unaired */
