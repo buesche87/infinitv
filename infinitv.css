@@ -78,7 +78,7 @@
 
 /* Main Drawer */
 .mainDrawer {
-  margin-top: 4.6em !important;
+  margin-top: 4.2em !important;
   box-shadow: none !important;
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
@@ -142,8 +142,8 @@
 /* Size */
 .skinHeader,
 .headerTop {
-  /* padding: .4em !important; */
-  padding: .2em .4em !important;
+  padding: .3em !important;
+  /* padding: .2em .4em !important; */
 }
 
 /* Transparency */
@@ -488,10 +488,12 @@ div#indexPage {
 ===========================================================================
 */
 
-/* Background Bar (Desktop) */
+/* Background Bar */
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
-  /* margin-bottom: 1.25em; */
+}
+.layout-desktop .pageTabContent > .focuscontainer-x {
+  margin-bottom: 1.25em;
 }
 
 /* Buttons */
