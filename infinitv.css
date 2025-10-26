@@ -537,23 +537,11 @@ div#tvRecommendedPage {
   margin-right: .4em;
 }
 
+/* Library-Buttons */
 .focuscontainer-x .paper-icon-button-light:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
-
-/*
-.btnPreviousPage:focus,
-.btnNextPage:focus,
-.btnPlayAll:focus,
-.btnShuffle:focus,
-.btnSelectView:focus,
-.btnSort:focus,
-.btnFilter:focus {
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-  */
 
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
@@ -583,20 +571,6 @@ div#tvRecommendedPage {
   Cards: Size & Alignment
 ===========================================================================
 */
-
-/* Portrait Card (TV) */
-/*
-.itemsContainer-tv > .portraitCard {
-  width: 19.7% !important;
-}
-*/
-
-/* BackdropCard (TV) */
-/*
-.itemsContainer-tv > .backdropCard {
-  width: 24.6% !important;
-}
-  */
 
 /* OverflowPortraitCard (TV) */
 .castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
@@ -645,6 +619,7 @@ div#tvRecommendedPage {
 .cardContent-button, 
 .cardContent-shadow,
 .cardImage,
+.cardImageContainer,
 .cardOverlayButtonIcon,
 .cardScalable,
 .visualCardBox,
