@@ -2,21 +2,24 @@
 @import url('https://buesche87.github.io/infinitv/infinitv.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-cast.css');
 @import url('https://buesche87.github.io/infinitv/ultrachromic-episodes.css');
-
-/* Accent Color */
 :root {
+
+  /* Accent Color */
   --accent-h: 36;    /* Hue: Orange */
   --accent-s: 100%;  /* Saturation */
   --accent-l: 50%;   /* Brightness */
+  --accent: 255,153,0; /* will deprecate in future updates */
+
+  /* Darkness & Opacity */
+  --bgdarkness: 0.6;    /* Background Darkness */
+  --headeropacity: 0.7; /* Header Opacity */
+  --draweropacity: 0.9; /* Drawer Opacity */
+  --footeropacity: 0.8; /* Card Footer Opacity */
+
+  /* Roundings */
+  --rounding-media: 12px;
+  --rounding-system: 4px;
+
+  /* Card Shadow */
+  --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
 }
-:root {--accent: 255,153,0 ;} /* will deprecate in future updates */
-
-/* Darkness & Opacity */
-:root {--bgdarkness: 0.6 ;}
-:root {--headeropacity: 0.7 ;}
-:root {--draweropacity: 0.9 ;}
-:root {--footeropacity: 0.8 ;}
-
-/* Roundings */
-:root {--rounding-media: 12px ;}
-:root {--rounding-system: 4px ;}
