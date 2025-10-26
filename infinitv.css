@@ -1002,15 +1002,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   background: linear-gradient(140deg,rgb(var(--accent)),#111) !important;
 }
 
-
-/* Progressbar (dashboard?) */
-/*
-.taskProgressInner,
-.sliderMarker.watched {
-  background: rgba(var(--accent),0.75) !important;
-}
-  */
-
 /* 
 ===========================================================================
   Player OSD: Controls
@@ -1052,12 +1043,16 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   color: rgba(var(--accent)) !important;
 } 
 
-/* Background: Accent: 100% */
+/* OSD: Vertical marker */
+.taskProgressInner,
+.sliderMarker.watched {
+  background: rgba(var(--accent),0.75) !important;
+}
+
 .mdl-slider-background-lower {
   background: rgba(var(--accent)) !important;
 } 
 
-/* Background & Thumb: Accent: 100% */
 .iconOsdProgressInner {
   background: rgba(var(--accent)) !important;
   color: rgba(var(--accent)) !important;
