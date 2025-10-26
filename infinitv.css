@@ -88,7 +88,7 @@
   margin-top: 0;
 }
 .navMenuOption:hover {
-  background: rgba(var(--accent), 1) !important;
+  background: rgba(var(--accent), 0.8) !important;
 }
 .navMenuOption-selected {
   color: rgba(var(--accent)) !important;
@@ -103,7 +103,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
+  scrollbar-color: rgba(var(--accent), 0.8) rgba(0, 0, 0, var(--headeropacity));
 }
 
 ::-webkit-scrollbar-track {
@@ -111,7 +111,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(var(--accent), 0.7);
+  background-color: rgba(var(--accent), 0.8);
   border-radius: 4px;
   border: 1px solid transparent;
   background-clip: content-box;
@@ -321,7 +321,7 @@
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .checkboxOutline:focus {
-  border: 2px solid rgba(var(--accent), 0.7) !important;
+  border: 2px solid rgba(var(--accent), 0.8) !important;
   background: rgba(0, 0, 0, 0.4) !important; 
 }
 
@@ -358,18 +358,18 @@
 /* Checkbox: Outline */
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-checkbox:hover + span + .checkboxOutline {
-  border: 2px solid rgba(var(--accent), 0.7) !important;
+  border: 2px solid rgba(var(--accent), 0.8) !important;
 }
 .emby-checkbox:checked + span + .checkboxOutline {
-  border: 2px solid rgba(var(--accent), 0.7) !important;
-  background: rgba(var(--accent), 0.7) !important;
+  border: 2px solid rgba(var(--accent), 0.8) !important;
+  background: rgba(var(--accent), 0.8) !important;
 }
 
 /* Labels: Fields & Input */
 .inputLabelFocused,
 .textareaLabelFocused,
 .selectLabelFocused {
-  color: rgba(var(--accent)) !important;
+  color: rgba(var(--accent), 0.8) !important;
 }
 
 /* Labels: Checkbox */
@@ -380,7 +380,7 @@
 
 /* Misc */
 .Mui-selected {
-  color: rgba(var(--accent)) !important;
+  color: rgba(var(--accent), 0.8) !important;
 }
 .selectionCommandsPanel {
   background: rgba(0, 0, 0, 0.4) !important;
@@ -745,7 +745,7 @@ div#tvRecommendedPage {
 /* Color on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
-  color: rgba(var(--accent));
+  color: rgba(var(--accent), 0.8) !important;
 }
 
 /* Glow: Cards (Desktop) */
@@ -794,7 +794,7 @@ div#tvRecommendedPage {
 }
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
-  color: rgba(var(--accent)) !important;
+  color: rgb(var(--accent), 0.8) !important;
 }
 
 /* Missing & Unaired */
@@ -902,7 +902,7 @@ div#tvRecommendedPage {
 
 /* Cover Placement (TV) */
 .layout-tv .detailImageContainer .card {
-  top: 2vh !important;
+  top: 2.2vh !important;
 }
 
 /* 
@@ -953,7 +953,7 @@ div#tvRecommendedPage {
 }
 .detailButton:focus {
   color: rgba(var(--accent), 1) !important;
-  border: solid 2px rgba(var(--accent), 0.6) !important;
+  border: solid 2px rgba(var(--accent), 0.8) !important;
   transform: scale(1.2) !important;
 }
 
