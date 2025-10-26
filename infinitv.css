@@ -142,7 +142,8 @@
 /* Size */
 .skinHeader,
 .headerTop {
-  padding: .4em !important;
+  /* padding: .4em !important; */
+  padding: .2em .4em !important;
 }
 
 /* Transparency */
@@ -159,7 +160,7 @@
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
   font-size: 105% !important;
-  margin-top: -3.5em !important;
+  margin-top: -3.3em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
@@ -174,7 +175,7 @@
 
 /* Tab Buttons */
 .emby-tab-button {
-  padding: 1.1em 1.5em !important;
+  padding: 1em 1.5em !important;
 }
 .emby-tab-button:hover,
 .emby-tab-button:focus {
@@ -182,6 +183,11 @@
 }
 .emby-tab-button-active {
   color: #fff;
+}
+
+.currentTimeText {
+  font-size: 105% !important;
+  font-weight: bold;
 }
 
 /* User Icon Fix */
