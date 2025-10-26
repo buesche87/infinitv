@@ -435,10 +435,8 @@
 */
 
 /* HomePage */
-@media (min-width: 100em) {
-    .pageWithAbsoluteTabs:not(.noSecondaryNavPage) {
-        padding-top: 4.7em !important;
-    }
+.homePage {
+    padding-top: 4.7em !important;
 }
 
 /* Media Pages */
