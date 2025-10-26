@@ -444,11 +444,15 @@
 */
 
 /* HomePage: Move up */
-div#indexPage,
-div#moviesPage,
-div#tvRecommendedPage {
+div#indexPage {
   padding-top: 4.5em !important;
 }
+
+div#moviesPage,
+div#tvRecommendedPage {
+  padding-top: 5em !important;
+}
+
 
 /* Media Pages */
 .itemsContainer-tv.vertical-wrap {
@@ -487,7 +491,7 @@ div#tvRecommendedPage {
 /* Background Bar */
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
   padding: 0.5em;
 }
 
