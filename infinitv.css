@@ -165,17 +165,10 @@
 }
   */
 
-
 .layout-tv .skinHeader {
     position: sticky !important;
     top: 0;
     will-change: transform;
-}
-
-
-/* User Icon Fix */
-.headerUserButtonRound {
-  border-radius: 50px !important;
 }
 
 /* Move Section Tabs into Header */
@@ -195,10 +188,21 @@
   position: relative;
   transition: filter 0.2s;
   scroll-snap-type: x proximity;
-  scroll-margin-inline: 0 !important;
-  scroll-margin-left: .5em;
-  scroll-margin-right: .5em;
 }
+
+
+/* Das ist entscheidend: auf die Kinder anwenden */
+.layout-tv .headerTabs.sectionTabs > * {
+    scroll-margin-inline: 0 !important;
+    scroll-margin-left: .5em;
+    scroll-margin-right: .5em;
+}
+
+/* Optional – sanftes Snapping für Tastatursteuerung */
+.layout-tv .headerTabs.sectionTabs > * {
+    scroll-snap-align: start;
+}
+
 
 /* Tab Buttons */
 .emby-tab-button {
@@ -211,6 +215,12 @@
 .emby-tab-button-active {
   color: #fff;
 }
+
+/* User Icon Fix */
+.headerUserButtonRound {
+  border-radius: 50px !important;
+}
+
 
 /*  
 ============================================================================
