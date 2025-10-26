@@ -1083,7 +1083,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 /* OSD: Vertical marker */
 .taskProgressInner,
 .sliderMarker.watched {
-  background: rgba(var(--accent),0.75) !important;
+  background: rgba(var(--accent)) !important;
 }
 
 .mdl-slider-background-lower {
