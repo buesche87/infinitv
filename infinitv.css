@@ -101,7 +101,7 @@
 ============================================================================
 */
 
-.layout-desktop {
+* {
   scrollbar-width: thin;
   scrollbar-color: rgba(var(--accent), 0.7) rgba(0, 0, 0, var(--headeropacity));
 }
@@ -153,11 +153,10 @@
 }
 
 /* Don't scroll header in tv mode */
-/*
 .layout-tv .skinHeader {
   position: fixed !important;
 }
-  */
+
 
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
@@ -193,38 +192,6 @@
 .headerUserButtonRound {
   border-radius: 50px !important;
 }
-
-
-
-
-/* Prevent viewport scroll when focusing header buttons */
-.layout-tv .skinHeader {
-  position: sticky !important;
-  top: 0;
-  overscroll-behavior: contain;
-  contain: layout paint; /* verhindert Layoutverschiebung durch Fokus */
-}
-
-.layout-tv .skinHeader .headerButton:focus {
-  scroll-margin: 0 !important;
-  scroll-padding: 0 !important;
-}
-
-/* Erzwingt, dass Fokus im Header nicht den Haupt-Viewport verschiebt */
-html,
-body {
-  scroll-behavior: auto !important;
-}
-
-.layout-tv body:focus-within .skinHeader,
-.layout-tv .skinHeader *:focus {
-  scroll-margin-block: 0 !important;
-  scroll-margin-inline: 0 !important;
-}
-
-
-
-
 
 /*  
 ============================================================================
@@ -634,7 +601,6 @@ body {
 /* TEST: Box-Shadows */
 .visualLoginForm .cardContent,
 .homePage .cardContent {
-  /* box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important; */
   box-shadow: var(--cardshadow) !important;
 }
 
@@ -717,14 +683,14 @@ body {
 }
 
 /* Glow: Only Images on Cards in Homescreen (Desktop) */
-.layout-desktop .homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
-.layout-desktop .homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
+.layout-desktop .homeSectionsContainer .overflowBackdropCard:hover .cardContent,
+.layout-desktop .homeSectionsContainer .overflowPortraitCard:hover .cardContent {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
 /* Glow: Media Scroller Cards (Desktop) */
-.layout-desktop .backdropCard:not(:has(.cardFooter)):hover .cardScalable, 
-.layout-desktop .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
+.layout-desktop .backdropCard:not(:has(.cardFooter)):hover .cardContent, 
+.layout-desktop .portraitCard:not(:has(.cardFooter)):hover .cardContent {
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
