@@ -165,11 +165,30 @@
 }
   */
 
+
+.layout-tv .skinHeader *:focus {
+    scroll-margin: 0 !important;
+    scroll-padding: 0 !important;
+}
+
+/* WICHTIG: Hauptseite darf beim Fokus auf Header-Buttons nicht mitscrollen */
 .layout-tv .skinHeader {
-    position: sticky !important;
+    overscroll-behavior: contain;
+}
+
+/* Optional – Browser darf den Fokus nicht zentrieren */
+.layout-tv .skinHeader * {
+    scroll-margin-block: 0 !important;
+    scroll-margin-inline: 0 !important;
+}
+
+/*
+.layout-tv .skinHeader {
+    position: sticky;
     top: 0;
     will-change: transform;
 }
+*/
 
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
@@ -178,10 +197,9 @@
   margin-top: -3.5em !important;
   width: 40vw;
   scrollbar-width: none;
-  /* scroll-behavior: smooth !important; */
+  scroll-behavior: smooth !important;
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-behavior: auto !important;
   white-space: nowrap;
   align-items: center;
   align-self: center;
@@ -189,20 +207,6 @@
   transition: filter 0.2s;
   scroll-snap-type: x proximity;
 }
-
-
-/* Das ist entscheidend: auf die Kinder anwenden */
-.layout-tv .headerTabs.sectionTabs > * {
-    scroll-margin-inline: 0 !important;
-    scroll-margin-left: .5em;
-    scroll-margin-right: .5em;
-}
-
-/* Optional – sanftes Snapping für Tastatursteuerung */
-.layout-tv .headerTabs.sectionTabs > * {
-    scroll-snap-align: start;
-}
-
 
 /* Tab Buttons */
 .emby-tab-button {
@@ -220,7 +224,6 @@
 .headerUserButtonRound {
   border-radius: 50px !important;
 }
-
 
 /*  
 ============================================================================
