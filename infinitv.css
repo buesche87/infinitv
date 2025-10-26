@@ -434,6 +434,13 @@
 ===========================================================================
 */
 
+/* HomePage */
+@media (min-width: 100em) {
+    .pageWithAbsoluteTabs:not(.noSecondaryNavPage) {
+        padding-top: 4.7em !important;
+    }
+}
+
 /* Media Pages */
 .itemsContainer-tv.vertical-wrap {
   padding-top: 1% !important;
@@ -598,6 +605,11 @@
   Cards: Shadows
 ===========================================================================
 */
+
+/* TEST: Box-Shadows */
+.homePage .cardBox {
+  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
+}
 
 /* Box Shadow card with footer */
 .portraitCard:has(.cardFooter) .cardBox,
@@ -831,7 +843,7 @@
 
 /* Cover Placement (TV) */
 .layout-tv .detailImageContainer .card {
-  top: 12.5vh !important;
+  top: 2vh !important;
 }
 
 /* 
