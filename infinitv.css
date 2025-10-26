@@ -135,7 +135,7 @@
 
 /*  
 ============================================================================
-  Header
+  Header & Section Tabs
 ============================================================================
 */
 
@@ -159,22 +159,22 @@
   */
 
 /* Don't scroll header in tv mode */
-
+/*
 .layout-tv .skinHeader {
   position: fixed !important;
 }
+  */
 
+.layout-tv .skinHeader {
+    position: sticky;
+    top: 0;
+    will-change: transform;
+}
 
 /* User Icon Fix */
 .headerUserButtonRound {
   border-radius: 50px !important;
 }
-
-/*  
-============================================================================
-  Header: Section Tabs
-============================================================================
-*/
 
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
@@ -183,14 +183,19 @@
   margin-top: -3.5em !important;
   width: 40vw;
   scrollbar-width: none;
-  scroll-behavior: smooth !important;
+  /* scroll-behavior: smooth !important; */
   overflow-x: auto;
   overflow-y: hidden;
+  scroll-behavior: auto !important;
   white-space: nowrap;
   align-items: center;
   align-self: center;
   position: relative;
-  transition: filter 0.2s
+  transition: filter 0.2s;
+  scroll-snap-type: x proximity;
+  scroll-margin-inline: 0 !important;
+  scroll-margin-left: .5em;
+  scroll-margin-right: .5em;
 }
 
 /* Tab Buttons */
