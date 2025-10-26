@@ -78,7 +78,6 @@
 
 /* Main Drawer */
 .mainDrawer {
-  background: rgb(0 0 0) !important;
   margin-top: 4.6em !important;
   box-shadow: none !important;
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
@@ -253,10 +252,12 @@
   */
 
 /* Buttons: Header */
+/*
 .headerButton:focus {
   -webkit-transform: scale(1) !important;
   transform: scale(1) !important;
 }
+  */
 
 /* Buttons: Submit */
 .button-submit {
