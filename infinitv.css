@@ -443,16 +443,14 @@
 ===========================================================================
 */
 
-/* HomePage: Move up */
+/* Library Pages: Move up */
 div#indexPage {
   padding-top: 4.5em !important;
 }
-
 div#moviesPage,
 div#tvRecommendedPage {
   padding-top: 5em !important;
 }
-
 
 /* Media Pages */
 .itemsContainer-tv.vertical-wrap {
