@@ -152,10 +152,12 @@
 }
 
 /* Header Buttons: No Animation */
+/*
 .headerButton:focus {
   -webkit-transform: scale(1) !important;
   transform: scale(1) !important;
 }
+  */
 
 /* Don't scroll header in tv mode */
 /*
