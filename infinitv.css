@@ -644,9 +644,12 @@ div#tvRecommendedPage {
 ===========================================================================
 */
 
-.libraryPage .cardImageContainer,
-.libraryPage .cardFooter {
+.libraryPage .cardImageContainer {
   box-shadow: var(--cardshadow) !important;
+}
+
+.libraryPage .cardFooter {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4),  -4px 4px 10px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* Box Shadow card with footer */
