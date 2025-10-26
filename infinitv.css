@@ -496,6 +496,8 @@ div#tvRecommendedPage {
 /* Buttons */
 .btnPreviousPage,
 .btnNextPage,
+.btnPlayAll,
+.btnShuffle,
 .btnSelectView,
 .btnSort {
   margin-left: .4em;
@@ -503,6 +505,8 @@ div#tvRecommendedPage {
 }
 .btnPreviousPage:focus,
 .btnNextPage:focus,
+.btnPlayAll:focus,
+.btnShuffle:focus,
 .btnSelectView:focus,
 .btnSort:focus {
   -webkit-transform: none !important;
