@@ -645,20 +645,24 @@ div#tvRecommendedPage {
 */
 
 /* TEST: Box-Shadows */
-.visualLoginForm .cardContent,
-.homePage .cardContent {
+/*
+.visualLoginForm .cardContent {
   box-shadow: var(--cardshadow) !important;
 }
+  */
 
 /* Box Shadow card with footer */
-.moviesPage .cardBox:has(.cardFooter),
-.tvRecommendedPage .cardBox:has(.cardFooter) {
+#indexPage .cardBox:has(.cardFooter),
+#moviesPage .cardBox:has(.cardFooter),
+#tvRecommendedPage .cardBox:has(.cardFooter) {
   box-shadow: var(--cardshadow) !important;
 }
 
 /* Box Shadow card without footer */
-.moviesPage .cardBox:not(:has(.cardFooter)) .cardContent,
-.tvRecommendedPage .cardBox:not(:has(.cardFooter)) .cardContent {
+#loginPage .visualLoginForm .cardContent,
+#indexPage .cardBox:not(:has(.cardFooter)) .cardContent,
+#moviesPage .cardBox:not(:has(.cardFooter)) .cardContent,
+#tvRecommendedPage .cardBox:not(:has(.cardFooter)) .cardContent {
   box-shadow: var(--cardshadow) !important;
 }
 
