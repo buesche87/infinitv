@@ -165,13 +165,13 @@
 }
   */
 
-  /*
+
 .layout-tv .skinHeader {
     position: sticky;
     top: 0;
     will-change: transform;
 }
-    */
+
 
 /* User Icon Fix */
 .headerUserButtonRound {
@@ -255,8 +255,8 @@
 
 /* Buttons: Header */
 .headerButton:focus {
-  -webkit-transform: scale(1) !important;
-  transform: scale(1) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
 }
 
 /* Buttons: Submit */
