@@ -444,7 +444,9 @@
 */
 
 /* HomePage: Move up */
-div#indexPage {
+div#indexPage,
+div#moviesPage,
+div#tvRecommendedPage {
   padding-top: 4.5em !important;
 }
 
@@ -486,6 +488,7 @@ div#indexPage {
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 1.25em;
+  padding: 0.5em;
 }
 
 /* Buttons */
