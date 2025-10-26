@@ -632,14 +632,12 @@ div#indexPage {
 }
 
 /* Box Shadow card with footer */
-.moviesPage .cardBox:has(.cardFooter),
-.tvRecommendedPage .cardBox:has(.cardFooter) {
+.cardBox:has(.cardFooter) {
   box-shadow: var(--cardshadow) !important;
 }
 
 /* Box Shadow card without footer */
-.moviesPage .cardBox:not(:has(.cardFooter)) .cardContent,
-.tvRecommendedPage .cardBox:not(:has(.cardFooter)) .cardContent {
+.cardBox:not(:has(.cardFooter)) .cardContent {
   box-shadow: var(--cardshadow) !important;
 }
 
