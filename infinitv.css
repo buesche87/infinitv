@@ -126,7 +126,7 @@
 .layout-tv {
   overflow: auto;
   scrollbar-width: none;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 .layout-tv ::-webkit-scrollbar {
@@ -150,13 +150,6 @@
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* Header Buttons: No Animation */
-/*
-.headerButton:focus {
-  -webkit-transform: scale(1) !important;
-  transform: scale(1) !important;
-}
-  */
 
 /* Don't scroll header in tv mode */
 /*
@@ -167,26 +160,26 @@
 
 
 .layout-tv .skinHeader *:focus {
-    scroll-margin: 0 !important;
-    scroll-padding: 0 !important;
+  scroll-margin: 0 !important;
+  scroll-padding: 0 !important;
 }
 
 /* WICHTIG: Hauptseite darf beim Fokus auf Header-Buttons nicht mitscrollen */
 .layout-tv .skinHeader {
-    overscroll-behavior: contain;
+  overscroll-behavior: contain;
 }
 
 /* Optional – Browser darf den Fokus nicht zentrieren */
 .layout-tv .skinHeader * {
-    scroll-margin-block: 0 !important;
-    scroll-margin-inline: 0 !important;
+  scroll-margin-block: 0 !important;
+  scroll-margin-inline: 0 !important;
 }
 
 /*
 .layout-tv .skinHeader {
-    position: sticky;
-    top: 0;
-    will-change: transform;
+  position: sticky;
+  top: 0;
+  will-change: transform;
 }
 */
 
