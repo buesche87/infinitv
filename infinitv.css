@@ -523,14 +523,18 @@ div#indexPage {
 */
 
 /* Portrait Card (TV) */
+/*
 .itemsContainer-tv > .portraitCard {
   width: 19.7% !important;
 }
+*/
 
 /* BackdropCard (TV) */
+/*
 .itemsContainer-tv > .backdropCard {
   width: 24.6% !important;
 }
+  */
 
 /* OverflowPortraitCard (TV) */
 .castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
