@@ -37,10 +37,10 @@
 
 
   --accentcolorman: hsl(36,100,50%);
-  --accentcolor: hsl(var(--accent-h),var(--accent-s),var(--accent-l),1.0);
-  --furz: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8);
+  --accentcolor: hsla(var(--accent-h),var(--accent-s),var(--accent-l),1.0);
+  --furz: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8);
   --accentold: rgba(255,153,0,1.0);
-  --testcolor: hsla(36, 100%, 50%,1.0);
+  --testcolor: hsla(36, 100%, 50%, 1.0);
 }
 
 /*  
@@ -112,7 +112,7 @@
   margin-top: 0;
 }
 .navMenuOption:hover {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   /* background: rgba(var(--accent), 0.8) !important; */
 }
 .navMenuOption-selected {
@@ -129,7 +129,7 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) rgba(0, 0, 0, var(--headeropacity)) !important;
+  scrollbar-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) rgba(0, 0, 0, var(--headeropacity)) !important;
   /* scrollbar-color: rgba(var(--accent), 0.8) rgba(0, 0, 0, var(--headeropacity)); */
 }
 
@@ -138,7 +138,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   /* background-color: rgba(var(--accent), 0.8); */
   border-radius: 4px;
   border: 1px solid transparent;
@@ -146,7 +146,7 @@
 }
 
 ::-webkit-scrollbar-corner {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   /* background: rgba(var(--accent), 0.8); */
 }
 
@@ -245,15 +245,15 @@
 }
 .paper-icon-button-light:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
 }
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border: solid 2px hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.6) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.6) !important;
 }
 .paper-icon-button-light:active {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
 
 /* Button Animations */
@@ -293,10 +293,10 @@
   border-radius: var(--rounding-system) !important;
 }
 .raised:hover {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.6) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.6) !important;
 }
 .raised:focus {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Buttons: Home Library */
@@ -327,7 +327,7 @@
 }
 .button-link:focus,
 .button-link:hover {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
@@ -353,7 +353,7 @@
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .checkboxOutline:focus {
-  border: 2px solid hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: rgba(0, 0, 0, 0.4) !important; 
 }
 
@@ -384,35 +384,35 @@
 }
 .emby-select option:focus,
 .emby-select option:hover {
-  background-color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Checkbox: Outline */
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-checkbox:hover + span + .checkboxOutline {
-  border: 2px solid hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 .emby-checkbox:checked + span + .checkboxOutline {
-  border: 2px solid hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Labels: Fields & Input */
 .inputLabelFocused,
 .textareaLabelFocused,
 .selectLabelFocused {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Labels: Checkbox */
 .emby-checkbox:focus + .checkboxLabel,
 .emby-checkbox:hover + .checkboxLabel {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Misc */
 .Mui-selected {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 .selectionCommandsPanel {
   background: rgba(0, 0, 0, 0.4) !important;
@@ -510,7 +510,7 @@ div#tvRecommendedPage {
 /* Alphabet Picker */
 .alphaPickerButton-tv:focus,
 .alphaPickerButton-tv:hover {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* 
@@ -557,7 +557,7 @@ div#tvRecommendedPage {
 
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   -webkit-transform: none !important;
   transform: none !important;
 }
@@ -745,7 +745,7 @@ div#tvRecommendedPage {
 /* Color on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Glow: Cards (Desktop) */
@@ -783,18 +783,18 @@ div#tvRecommendedPage {
 /* Count & Played */
 .playedIndicator {
   color: rgb(0, 0, 0);
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border-radius: var(--rounding-system) !important;
 }
 .countIndicator,
 .mediaSourceIndicator {
   color: rgb(255, 255, 255);
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   border-radius: var(--rounding-system) !important;
 }
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Missing & Unaired */
@@ -830,7 +830,7 @@ div#tvRecommendedPage {
 
 /* Slider*/
 .itemProgressBarForeground {
-  background-color: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.9)!important;
+  background-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.9)!important;
   border-radius: var(--rounding-media) !important;
 }
 
@@ -948,12 +948,12 @@ div#tvRecommendedPage {
 /* Media Buttons: Animation */ 
 .detailButton:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
   transform: scale(1.2) !important;
 }
 .detailButton:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border: solid 2px hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   transform: scale(1.2) !important;
 }
 
@@ -1303,7 +1303,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 .listItem-button:hover,
 .listItem-border.emby-button:focus,
 .listItem-border.emby-button:hover {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
 }
 
 /* Remove background on some icons */
@@ -1395,7 +1395,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
 
 /* ?? */
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
-  background: hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.5);
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5);
 }
 
 /* ?? */
@@ -1408,7 +1408,7 @@ fieldset {
 
 /* Borders: Accent 50% */
 .itemSelectionPanel {
-  border: 0.01em solid hsl(var(--accent-h),var(--accent-s),var(--accent-l),0.5) !important;
+  border: 0.01em solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5) !important;
   border-radius: var(--rounding-media) !important;
 }
 
