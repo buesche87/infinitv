@@ -127,8 +127,6 @@
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: none;
-  scroll-behavior: auto !important;
-  overscroll-behavior: contain !important;
 }
 
 .layout-tv ::-webkit-scrollbar {
@@ -434,7 +432,7 @@
 
 /* HomePage: Move up */
 div#indexPage {
-    padding-top: 4.5em !important;
+    padding-top: 5em !important;
 }
 
 /* Media Pages */
