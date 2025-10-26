@@ -206,6 +206,14 @@
 ============================================================================
 */
 
+/* Button Animations */
+.button-flat:hover,
+.button-flat:focus,
+.cardOverlayButton:hover {
+  color: rgb(var(--accent)) !important;
+  background: #0000 !important;
+}
+
 /* Buttons: Menu & OSD */
 .paper-icon-button-light {
   border: solid 2px #0000 !important;
@@ -282,15 +290,6 @@
   -webkit-transform: none !important;
   transform: none !important;
 }
-
-/*
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover {
-  color: rgb(var(--accent)) !important;
-  background: #0000 !important;
-}
-  */
 
 
 /*  
@@ -618,7 +617,7 @@
 
 /* 
 ===========================================================================
-  Cards: Text & Buttons
+  Cards: Text
 ===========================================================================
 */
 
@@ -653,10 +652,12 @@
 }
 
 /* Play Button Hover */
+/*
 .cardOverlayButton:hover {
   color: rgb(var(--accent)) !important;
   background: #0000 !important;
 }
+  */
 
 /* 
 ===========================================================================
