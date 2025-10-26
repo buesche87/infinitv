@@ -165,11 +165,13 @@
 }
   */
 
+  /*
 .layout-tv .skinHeader {
     position: sticky;
     top: 0;
     will-change: transform;
 }
+    */
 
 /* User Icon Fix */
 .headerUserButtonRound {
