@@ -238,9 +238,11 @@
 .paper-icon-button-light:not(.headerButton) {
   padding: .4em !important;
 }
-.paper-icon-button-light:not(.headerButton):focus {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+
+/* OSD Buttons */
+.ltr > .paper-icon-button-light:focus {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
 }
 
 /* Buttons: Header */
@@ -520,6 +522,7 @@ div#tvRecommendedPage {
   transform: none !important;
 }
   */
+
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: rgba(var(--accent),0.8) !important;
