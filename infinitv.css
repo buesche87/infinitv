@@ -233,18 +233,29 @@
 .paper-icon-button-light:active {
   color: rgba(var(--accent), 1) !important;
   border: solid 2px rgba(var(--accent), 0.6) !important;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .paper-icon-button-light:active {
-  background: rgba(var(--accent), .4) !important;
+  background: rgba(var(--accent), 0.4) !important;
 }
 
 /* Buttons: Not Header */
 .paper-icon-button-light:not(.headerButton) {
   padding: .4em !important;
 }
+
+/*
 .paper-icon-button-light:not(.headerButton):focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
+}
+  */
+
+/* Buttons: Header */
+.headerButton:focus {
+  -webkit-transform: scale(1) !important;
+  transform: scale(1) !important;
 }
 
 /* Buttons: Submit */
