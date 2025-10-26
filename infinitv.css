@@ -15,7 +15,7 @@
 */
 
 :root {
-  --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
+  --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.6);
 }
 
 /*  
@@ -614,7 +614,7 @@ div#tvRecommendedPage {
 .cardContent-shadow,
 .cardImage,
 .cardOverlayButtonIcon,
-.cardScalable,
+/* .cardScalable, */
 .visualCardBox,
 .cardBox:not(.visualCardBox) .cardPadder {
   border-radius: var(--rounding-media);
@@ -644,12 +644,9 @@ div#tvRecommendedPage {
 ===========================================================================
 */
 
-.libraryPage .cardScalable {
-  box-shadow: var(--cardshadow) !important;
-}
-
+.libraryPage .cardScalable,
 .libraryPage .cardFooter {
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4),  -4px 4px 10px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: var(--cardshadow) !important;
 }
 
 /* Box Shadow card with footer */
@@ -659,31 +656,12 @@ div#tvRecommendedPage {
 }
   /*
 
-
-
 /* Box Shadow card without footer */
 /*
 .libraryPage .cardBox:not(:has(.cardFooter)) .cardImageContainer {
   box-shadow: var(--cardshadow) !important;
 }
   */
-
-
-/* Box Shadow card with footer */
-/*
-#indexPage .cardBox:has(.cardFooter),
-#moviesPage .cardBox:has(.cardFooter),
-#tvRecommendedPage .cardBox:has(.cardFooter)
-*/
-
-/* Box Shadow card without footer */
-/*
-#loginPage .visualLoginForm .cardContent,
-#indexPage .cardBox:not(:has(.cardFooter)) .cardContent,
-#moviesPage .cardBox:not(:has(.cardFooter)) .cardContent,
-#tvRecommendedPage .cardBox:not(:has(.cardFooter)) .cardContent
-*/
-
 
 
 /* 
