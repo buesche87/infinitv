@@ -502,15 +502,24 @@ div#tvRecommendedPage {
   margin-left: .4em;
   margin-right: .4em;
 }
+
+.focuscontainer-x > .paper-icon-button-light:focus {
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+/*
 .btnPreviousPage:focus,
 .btnNextPage:focus,
 .btnPlayAll:focus,
 .btnShuffle:focus,
 .btnSelectView:focus,
-.btnSort:focus {
+.btnSort:focus,
+.btnFilter:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
+  */
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: rgba(var(--accent),0.8) !important;
