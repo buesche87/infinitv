@@ -614,7 +614,7 @@ div#tvRecommendedPage {
 .cardContent-shadow,
 .cardImage,
 .cardOverlayButtonIcon,
-/* .cardScalable, */
+.cardScalable,
 .visualCardBox,
 .cardBox:not(.visualCardBox) .cardPadder {
   border-radius: var(--rounding-media);
@@ -644,7 +644,7 @@ div#tvRecommendedPage {
 ===========================================================================
 */
 
-.libraryPage .cardScalable,
+.libraryPage .cardImageContainer,
 .libraryPage .cardFooter {
   box-shadow: var(--cardshadow) !important;
 }
