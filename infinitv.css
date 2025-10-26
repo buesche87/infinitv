@@ -231,7 +231,7 @@
   transform: scale(1.2) !important;
 }
 
-/* Button: Submit */
+/* Buttons: Submit */
 .button-submit {
   border-radius: var(--rounding-system) !important;
 }
@@ -249,6 +249,17 @@
 }
 
 /* Buttons: Home Library */
+.homeLibraryButton {
+  min-width: 12em;
+  margin: 0.4em;
+  width: auto !important;
+}
+@media all and (max-width: 26em){
+  .homeLibraryButton {
+    min-width: 45%;
+    width: auto !important;
+  }
+}
 .raised.homeLibraryButton {
   transition: filter 0.2s;
 }
@@ -526,6 +537,12 @@
   margin-left: 0.5em !important;
 }
 
+/* narrow margins */
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+  margin-right: 1.5vw !important;
+}
+
 /* 
 ===========================================================================
   Cards: Roundings
@@ -563,12 +580,6 @@
   border-bottom-left-radius: var(--rounding-media) !important;
   border-bottom-right-radius: var(--rounding-media) !important;
   background: rgba(0, 0, 0, var(--footeropacity)) !important;
-}
-
-/* narrow margins */
-.cardBox-bottompadded {
-  margin-bottom: 0.5em !important;
-  margin-right: 1.5vw !important;
 }
 
 /* 
@@ -665,7 +676,6 @@
   box-shadow: 0px 0px 10px 1px rgba(var(--accent)) !important;
 }
 
-
 /* 
 ===========================================================================
   Cards: Indicators
@@ -719,7 +729,6 @@
 ===========================================================================
 */
 
-
 /* Background */
 .itemProgressBar {
   background: rgba(0, 0, 0, 0.4) !important;
@@ -761,7 +770,6 @@
   background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
 
-
 /* 
 ===========================================================================
   Media Pages
@@ -798,10 +806,8 @@
 .detailImageContainer .card {
   max-width: 26vw;
   left: 3% !important;
-  /* top: 1em !important; */
   border-radius: var(--rounding-media);
   box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
-  /* top: 20px; */
 }
 
 /* Cover Placement (TV) */
@@ -820,7 +826,7 @@
   padding-right: 2% !important;
 }
 
-/* Desktop: Ribbon */
+/* Ribbon (Desktop) */
 .layout-desktop .detailRibbon {
   height: 9em !important;
   margin-top: -9em !important;
@@ -840,7 +846,7 @@
   color: #ffffff !important;
 }
 
-/* Media Button */ 
+/* Media Buttons */ 
 .detailButton {
   font-size: 120% !important;
   border-radius: var(--rounding-media);
@@ -849,7 +855,7 @@
   margin-right: .6em !important;
 }
 
-/* Media Button: Animation */ 
+/* Media Buttons: Animation */ 
 .detailButton:hover {
   color: rgba(var(--accent), 1) !important;
   background: rgba(var(--accent), .2) !important;
@@ -1153,7 +1159,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 /* Upnext: Countdown */
 .upNextDialog-countdownText {
   color: rgba(var(--accent)) !important;
-  /* color: white; */
 }
 
 /* 
@@ -1382,20 +1387,6 @@ fieldset {
 ===========================================================================
 */
 
-/* home library button */
-.homeLibraryButton {
-  min-width: 12em;
-  margin: 0.4em;
-}
-@media all and (max-width: 26em){
-  .homeLibraryButton {
-    min-width: 45%;
-    width: auto !important;
-  }
-}
-.homeLibraryButton {
-  width: auto !important;
-}
 
 /* current sessions */
 .sessionCardFooter {
