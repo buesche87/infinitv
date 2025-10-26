@@ -438,11 +438,6 @@
 ===========================================================================
 */
 
-/* HomePage */
-.homePage {
-    padding-top: 4.7em !important;
-}
-
 /* Media Pages */
 .itemsContainer-tv.vertical-wrap {
   padding-top: 1% !important;
@@ -609,25 +604,19 @@
 */
 
 /* TEST: Box-Shadows */
-.visualLoginForm .cardScalable,
-.homePage .cardScalable {
+.visualLoginForm .cardContent,
+.homePage .cardContent {
   /* box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important; */
   box-shadow: var(--cardshadow) !important;
 }
 
 /* Box Shadow card with footer */
-.portraitCard:has(.cardFooter) .cardBox,
-.backdropCard:has(.cardFooter) .cardBox,
-.overflowPortraitCard:has(.cardFooter) .cardBox,
-.overflowBackdropCard:has(.cardFooter) .cardBox {
+.tvRecommendedPage .cardBox:has(.cardFooter) {
   box-shadow: var(--cardshadow) !important;
 }
 
 /* Box Shadow card without footer */
-.portraitCard:not(:has(.cardFooter)) .cardScalable,
-.backdropCard:not(:has(.cardFooter)) .cardScalable,
-.overflowPortraitCard:not(:has(.cardFooter)) .cardScalable,
-.overflowBackdropCard:not(:has(.cardFooter)) .cardScalable {
+.tvRecommendedPage .cardBox:not(:has(.cardFooter)) .cardContent {
   box-shadow: var(--cardshadow) !important;
 }
 
