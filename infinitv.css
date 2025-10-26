@@ -194,6 +194,38 @@
   border-radius: 50px !important;
 }
 
+
+
+
+/* Prevent viewport scroll when focusing header buttons */
+.layout-tv .skinHeader {
+  position: sticky !important;
+  top: 0;
+  overscroll-behavior: contain;
+  contain: layout paint; /* verhindert Layoutverschiebung durch Fokus */
+}
+
+.layout-tv .skinHeader .headerButton:focus {
+  scroll-margin: 0 !important;
+  scroll-padding: 0 !important;
+}
+
+/* Erzwingt, dass Fokus im Header nicht den Haupt-Viewport verschiebt */
+html,
+body {
+  scroll-behavior: auto !important;
+}
+
+.layout-tv body:focus-within .skinHeader,
+.layout-tv .skinHeader *:focus {
+  scroll-margin-block: 0 !important;
+  scroll-margin-inline: 0 !important;
+}
+
+
+
+
+
 /*  
 ============================================================================
   Buttons
