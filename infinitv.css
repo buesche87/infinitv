@@ -14,6 +14,10 @@
 
 */
 
+:root {
+  --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
 /*  
 ============================================================================
   Background & Fonts
@@ -605,8 +609,10 @@
 */
 
 /* TEST: Box-Shadows */
+.visualLoginForm .cardScalable,
 .homePage .cardScalable {
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
+  /* box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important; */
+  box-shadow: var(--cardshadow) !important;
 }
 
 /* Box Shadow card with footer */
@@ -614,7 +620,7 @@
 .backdropCard:has(.cardFooter) .cardBox,
 .overflowPortraitCard:has(.cardFooter) .cardBox,
 .overflowBackdropCard:has(.cardFooter) .cardBox {
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: var(--cardshadow) !important;
 }
 
 /* Box Shadow card without footer */
@@ -622,7 +628,7 @@
 .backdropCard:not(:has(.cardFooter)) .cardScalable,
 .overflowPortraitCard:not(:has(.cardFooter)) .cardScalable,
 .overflowBackdropCard:not(:has(.cardFooter)) .cardScalable {
-  box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: var(--cardshadow) !important;
 }
 
 /* 
