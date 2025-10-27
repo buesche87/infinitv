@@ -678,22 +678,22 @@ div#tvRecommendedPage {
 }
 
 /* Recent & NextUp: Hide Series Title */
-.section0 .overflowBackdropCard[data-type="Episode"] .cardText-first,
-.section1 .overflowBackdropCard[data-type="Episode"] .cardText-first {
+.ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-first,
+.NextUp .overflowBackdropCard[data-type="Episode"] .cardText-first {
   display: none;
 }
 
 /* Recent & NextUp: Inflate Episode Name */
-.section0 .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
-.section1 .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
+.ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
+.NextUp .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
   font-size: 100% !important;
   padding-top: .6em !important;
   color: inherit;
 }
 
 /* Recent & NextUp: Hide Movie Year */
-.section0 .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
-.section1 .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
+.ContinueWatching .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
+.NextUp .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
   display: none;
 }
 
