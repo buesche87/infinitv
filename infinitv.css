@@ -1,36 +1,21 @@
-/*  
-============================================================================
-   ___  ________   ________ ___  ________   ___  _________  ___      ___ 
-  |\  \|\   ___  \|\  _____\\  \|\   ___  \|\  \|\___   ___\\  \    /  /|
-  \ \  \ \  \\ \  \ \  \__/\ \  \ \  \\ \  \ \  \|___ \  \_\ \  \  /  / /
-   \ \  \ \  \\ \  \ \   __\\ \  \ \  \\ \  \ \  \   \ \  \ \ \  \/  / / 
-    \ \  \ \  \\ \  \ \  \_| \ \  \ \  \\ \  \ \  \   \ \  \ \ \    / /  
-     \ \__\ \__\\ \__\ \__\   \ \__\ \__\\ \__\ \__\   \ \__\ \ \__/ /   
-      \|__|\|__| \|__|\|__|    \|__|\|__| \|__|\|__|    \|__|  \|__|/    
-                                                                         
-============================================================================
-
-     HTPC Theme for Jellyfin - Designed for the Big Screen Experience     
-
+/*
+   ___  ________   ________ ___  ________   ___  _________  ___      ___   
+  |\  \|\   ___  \|\  _____\\  \|\   ___  \|\  \|\___   ___\\  \    /  /|  
+  \ \  \ \  \\ \  \ \  \__/\ \  \ \  \\ \  \ \  \|___ \  \_\ \  \  /  / /  
+   \ \  \ \  \\ \  \ \   __\\ \  \ \  \\ \  \ \  \   \ \  \ \ \  \/  / /   
+    \ \  \ \  \\ \  \ \  \_| \ \  \ \  \\ \  \ \  \   \ \  \ \ \    / /    
+     \ \__\ \__\\ \__\ \__\   \ \__\ \__\\ \__\ \__\   \ \__\ \ \__/ /     
+      \|__|\|__| \|__|\|__|    \|__|\|__| \|__|\|__|    \|__|  \|__|/      
+                                                                           
+                                                                           
+                        The Big Screen Experience                          
+                                                                           
 */
+
 
 :root {
 
-  /* Accent Color */
-  --accent-h: 36;    /* Hue: Orange */
-  --accent-s: 100%;  /* Saturation */
-  --accent-l: 50%;   /* Brightness */
-  --accent: 255,153,0; /* will deprecate in future updates */
 
-  /* Darkness & Opacity */
-  --bgdarkness: 0.6;
-  --headeropacity: 0.7;
-  --draweropacity: 0.9;
-  --footeropacity: 0.8;
-
-  /* Roundings */
-  --rounding-media: 12px;
-  --rounding-system: 4px;
 
   /* Card Shadow */
   --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
@@ -163,6 +148,11 @@
 ============================================================================
 */
 
+/* Don't scroll header in TV mode */
+.layout-tv .skinHeader {
+  position: fixed !important;
+}
+
 /* Size */
 .skinHeader,
 .headerTop {
@@ -172,11 +162,6 @@
 /* Transparency */
 .skinHeader-withBackground {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Don't scroll header in tv mode */
-.layout-tv .skinHeader {
-  position: fixed !important;
 }
 
 /* Move Section Tabs into Header */
@@ -203,7 +188,6 @@
 .emby-tab-button:hover,
 .emby-tab-button:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  /* color: rgb(var(--accent)) !important; */
 }
 .emby-tab-button:focus {
   -webkit-transform: scale(1.2) !important;
@@ -698,7 +682,6 @@ div#tvRecommendedPage {
   display: none;
 }
 
-
 /* 
 ===========================================================================
   Cards: Animations
@@ -1189,8 +1172,8 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* Skip-Button */
 .skip-button {
-  border: solid 2px #fff !important;
-  border-radius: var(--rounding-media);
+  /* border: solid 2px #fff !important; */
+  /* border-radius: var(--rounding-media); */
   color: #fff;
   background: #0000 !important;
 }
@@ -1198,8 +1181,8 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 /* Skip-Button: Hover & Focus */
 .skip-button:focus,
 .skip-button:hover {
-  border: solid 2px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border-radius: var(--rounding-media);
+  /* border: solid 2px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important; */
+  /* border-radius: var(--rounding-media); */
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   background: #0000 !important;
 }
@@ -1242,8 +1225,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 .dialogContentInner {
   padding: .5em 1em 1em;
-  /* padding-right: 1em; */
-  /* padding-left: 1em; */
 }
 .listItem-indexnumberleft {
   margin: 1em;
@@ -1293,7 +1274,6 @@ div[data-role="controlgroup"] a.ui-btn-active {
   background: rgba(0, 0, 0, 0.4) !important;
   color: white !important;
 }
-
 
 /* 
 ===========================================================================
@@ -1353,9 +1333,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .progressring-bg {
   display: none;
 }
-
-
-
 
 /* 
 ===========================================================================
@@ -1447,14 +1424,6 @@ fieldset {
   Misc & Unknown (aka TODOs): Menu Page
 ===========================================================================
 */
-
-
-/* current sessions (dashboard?) */
-/*
-.sessionCardFooter {
-  border: none;
-}
-  */
 
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
@@ -1585,12 +1554,6 @@ fieldset {
 }
 
 
-
-
-
-
-
-
 /* Mobile tweaks */
 /*
 .layout-mobile .adminDrawerLogo {
@@ -1603,19 +1566,6 @@ fieldset {
     position: absolute !important;
 }
 */
-
-
-/* Adjust Pages
-#indexPage, 
-#moviesPage, 
-#tvRecommendedPage, 
-#musicRecommendedPage {
-  margin-top: 5em !important;
-  padding-top: 5.5em !important;
-}
-   */
-
-
 
 
 /* Scrollbar */
@@ -1645,12 +1595,3 @@ fieldset {
   scrollbar-width: none !important; 
 }
 */
-
-
-
-
-/* Links acting as buttons 
-a[data-role="button"] {
-  background: rgba(0, 0, 0, 0.4) !important;
-}
-  */
