@@ -1064,6 +1064,13 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 ===========================================================================
 */
 
+/* Buttons: Zoom */
+.ltr > .paper-icon-button-light:focus {
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+}
+
+
 /* style the controls */
 .startTimeText,
 .endTimeText {
