@@ -235,7 +235,7 @@
 
 /* Buttons: Menu & OSD */
 .paper-icon-button-light {
-  border: solid 2px #0000 !important;
+  /* border: solid 2px #0000 !important; */
   border-radius: var(--rounding-media);
 }
 .paper-icon-button-light:hover {
@@ -245,11 +245,13 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.6) !important;
+  /* border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.6) !important; */
 }
+/*
 .paper-icon-button-light:active {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
+  */
 
 /* Button Animations */
 .button-flat:hover,
