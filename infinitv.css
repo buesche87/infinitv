@@ -113,11 +113,9 @@
 }
 .navMenuOption:hover {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  /* background: rgba(var(--accent), 0.8) !important; */
 }
 .navMenuOption-selected {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  /* color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important; */
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -130,7 +128,6 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) rgba(0, 0, 0, var(--headeropacity)) !important;
-  /* scrollbar-color: rgba(var(--accent), 0.8) rgba(0, 0, 0, var(--headeropacity)); */
 }
 
 ::-webkit-scrollbar-track {
@@ -139,7 +136,6 @@
 
 ::-webkit-scrollbar-thumb {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  /* background-color: rgba(var(--accent), 0.8); */
   border-radius: 4px;
   border: 1px solid transparent;
   background-clip: content-box;
@@ -147,7 +143,6 @@
 
 ::-webkit-scrollbar-corner {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  /* background: rgba(var(--accent), 0.8); */
 }
 
 /* Hide */
@@ -261,7 +256,6 @@
 .button-flat:focus,
 .cardOverlayButton:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  /* color: rgb(var(--accent)) !important; */
   background: #0000 !important;
 }
 
@@ -317,7 +311,6 @@
 .raised.homeLibraryButton:hover,
 .raised.homeLibraryButton:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  /* color: rgb(var(--accent)) !important; */
   background: rgba(255, 255, 255, 0.6) !important;
 }
 
@@ -538,11 +531,10 @@ div#tvRecommendedPage {
 }
 
 /* Library-Buttons */
-.focuscontainer-x .paper-icon-button-light:focus {
+.focuscontainer-x > .paper-icon-button-light:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
-
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
@@ -697,13 +689,6 @@ div#tvRecommendedPage {
   display: none;
 }
 
-/* Play Button Hover */
-/*
-.cardOverlayButton:hover {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  background: #0000 !important;
-}
-  */
 
 /* 
 ===========================================================================
