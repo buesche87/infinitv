@@ -500,6 +500,9 @@ div#tvRecommendedPage {
   color: hsl(0deg 0% 100% / 75%);
   box-shadow: 0px 0px 10px 1px hsl(0deg 0% 100% / 10%) !important;
 }
+h2.sectionTitle.sectionTitle-cards {
+  font-weight: 600;
+}
 
 /* Backdrop Card Spacing in Media Scroller */
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
