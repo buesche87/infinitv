@@ -17,6 +17,9 @@
   /* Card Shadow */
   --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
 
+  /* Show Slides */
+  --displayslides: none;
+
   /* Temp Div */
   --accentcolorman: hsl(36,100,50%);
   --accentcolor: hsla(var(--accent-h),var(--accent-s),var(--accent-l),1.0);
@@ -63,10 +66,9 @@
 }
 
 /* Disable Slides (they don't work well with a remote) */
-/*
 .layout-tv #slides-container {
   display: var(--displayslides) !important;
-}*/
+}
 
 /* Dialogs: Rounding */
 .dialog,
