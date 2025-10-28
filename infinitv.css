@@ -490,9 +490,14 @@ div#tvRecommendedPage {
   padding-left: .6em !important;
 }
 
-/* More Space between Media Scroller */
+/* Section Titles */
 .sectionTitleContainer-cards {
-  padding-top: 1.5em;
+  padding-top: .75em;
+  margin-top: 1em;
+  margin-bottom: .25em;
+  padding-bottom: .5em;
+  background: hsl(0deg 0% 100% / 5%);
+  color: hsl(0deg 0% 100% / 75%);
 }
 
 /* Backdrop Card Spacing in Media Scroller */
@@ -844,7 +849,7 @@ div#tvRecommendedPage {
 
 .selfBackdropPage h1.parentName.focuscontainer-x {
   font-size: 150%;
-  padding-bottom: .2em;
+  /* padding-bottom: .2em; */
 }
 
 
@@ -860,6 +865,10 @@ div#tvRecommendedPage {
 }
 
 
+
+#childrenContent .card {
+  padding-bottom: 1em;
+}
 
 
 /* 
@@ -959,14 +968,13 @@ div#tvRecommendedPage {
 */
 
 /* Container */
-.detailPagePrimaryContent {
-  padding-bottom: 1em;
-}
 .layout-tv .detailPagePrimaryContent {
   padding-top: 0em;
+  padding-bottom: 0em;
 }
 .layout-desktop .detailPagePrimaryContent {
   padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 /* Genres: Hide  */
@@ -1006,7 +1014,8 @@ p.itemGenres {
 
 /* Director & Studio */
 .itemDetailsGroup {
-  margin-top: 0.5em !important;
+  margin-top: 0.5em;
+  padding-bottom: 1em;
 }
 
 /* 
@@ -1016,9 +1025,10 @@ p.itemGenres {
 */
 
 /* Sections (More Like This) */
+/*
 .detailVerticalSection {
   margin-left: -1%;
-}
+} */
 
 /* Space between Sections */
 .layout-tv .detailVerticalSection {
@@ -1027,7 +1037,7 @@ p.itemGenres {
 
 /* Section Title: Placement */
 h2.sectionTitle.sectionTitle-cards.padded-right {
-  margin-left: .4em !important;
+  /* margin-left: .4em !important; */
   margin-top: .2em !important;
   margin-bottom: .2em !important;
 }
