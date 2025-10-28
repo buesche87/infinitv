@@ -12,15 +12,12 @@
                                                                            
 */
 
-
 :root {
-
-
 
   /* Card Shadow */
   --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
 
-
+  /* Temp Div */
   --accentcolorman: hsl(36,100,50%);
   --accentcolor: hsla(var(--accent-h),var(--accent-s),var(--accent-l),1.0);
   --furz: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8);
@@ -63,6 +60,11 @@
 /* Overall Smaller Size */
 .layout-tv {
   font-size: 110% !important;
+}
+
+/* Disable Slides (they don't work well with a remote) */
+.layout-tv #slides-container {
+  display: var(--displayslides) !important;
 }
 
 /* Dialogs: Rounding */
@@ -908,6 +910,23 @@ div#tvRecommendedPage {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   /* border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important; */
   transform: scale(1.2) !important;
+}
+
+/* Slides Buttons */
+.detail-button,
+.play-button,
+.favorite-button {
+  border-radius: var(--rounding-media);
+  padding: .6em !important;
+  margin-right: .6em !important;
+  color: #ffffff !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Slides Buttons */
+.play-button {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
 }
 
 /* 
