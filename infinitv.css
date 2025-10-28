@@ -826,15 +826,29 @@ div#tvRecommendedPage {
 */
 
 /* Hide some Elements */
-.layout-tv .detailLogo,
-.endsAt,
+/* .layout-tv .detailLogo, */
+.layout-tv .itemExternalLinks,
+.layout-tv .detailsGroupItem.directorsGroup,
+.layout-tv .detailsGroupItem.writersGroup,
 .hide+.detailPageWrapperContainer .itemName,
-.itemExternalLinks,
+.endsAt,
 .itemTags {
   display: none !important;
 }
 
-/* Move page content to bottom */
+/* Increase Season Title */
+.selfBackdropPage h3.itemName.infoText.subtitle.focuscontainer-x {
+  font-size: 200%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.selfBackdropPage h1.parentName.focuscontainer-x {
+  font-size: 150%;
+  padding-bottom: .2em;
+}
+
+
+/* Move page content */
 .layout-tv .detailPagePrimaryContainer {
   display: block;
   padding-top: 2em;
@@ -844,6 +858,9 @@ div#tvRecommendedPage {
 #castCollapsible .itemsContainer-tv.scrollSlider {
   padding-top: 0em !important;
 }
+
+
+
 
 /* 
 ===========================================================================
@@ -890,24 +907,25 @@ div#tvRecommendedPage {
 
 /* Media Infos */
 .itemMiscInfo {
-  margin-top: 0.6em;
+  font-size: 125%;
+  margin-top: 0.25em;
   margin-bottom: 0.6em;
-  color: #ffffff !important;
+  /* color: #ffffff !important; */
 }
 
 /* Media Buttons */ 
 .detailButton {
   font-size: 120% !important;
   border-radius: var(--rounding-media);
-  /* border: solid 2px #0000 !important; */
-  padding: .6em !important;
-  margin-right: .6em !important;
+  margin-right: 1.5em !important;
+  border: solid 2px hsl(0deg 0% 100% / 20%) !important;
 }
 
 /* Media Buttons: Animation */ 
 .detailButton:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   transform: scale(1.2) !important;
 }
 .detailButton:focus {
