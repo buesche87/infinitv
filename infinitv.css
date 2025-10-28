@@ -63,9 +63,10 @@
 }
 
 /* Disable Slides (they don't work well with a remote) */
+/*
 .layout-tv #slides-container {
   display: var(--displayslides) !important;
-}
+}*/
 
 /* Dialogs: Rounding */
 .dialog,
