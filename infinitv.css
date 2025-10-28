@@ -931,7 +931,7 @@ div#tvRecommendedPage {
 .detailButton:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border: solid 2px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   transform: scale(1.2) !important;
 }
 
