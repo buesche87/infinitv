@@ -492,16 +492,19 @@ div#tvRecommendedPage {
 
 /* Section Titles */
 .sectionTitleContainer-cards {
-  padding-top: .5vh;
-  margin-top: 2vh;
-  margin-bottom: 1vh;
-  padding-bottom: .5vh;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-left: 3em;
+  border-radius: var(--rounding-system);
   background: hsl(0deg 0% 100% / 5%);
   color: hsl(0deg 0% 100% / 75%);
   box-shadow: 0px 0px 5px 1px hsl(0deg 0% 100% / 10%) !important;
 }
 h2.sectionTitle.sectionTitle-cards {
   font-weight: 600;
+  margin-left: -1em;
 }
 
 /* Backdrop Card Spacing in Media Scroller */
@@ -945,6 +948,7 @@ h2.sectionTitle.sectionTitle-cards {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   transform: scale(1.2) !important;
 }
 
@@ -1077,24 +1081,40 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   display: none;
 }
 
-/* OSD: Header */
+/* OSD: Height Header */
 .osdHeader {
-  height: 3.2em !important;
+  height: 3.3em !important;
   --webkit-backdrop-filter: none;
-  box-shadow: 0px 10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* OSD: Footer */
+/* OSD Footer: Wide */
 .videoOsdBottom {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
-  box-shadow: 0px -10px 15px 10px rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-top: .5em;
   padding-bottom: 1em;
 }
 
-/* OSD Footer: Space between Icons */
+/* OSD Footer: Box-Layout */
+@media all and (min-width: 92em) {
+  .layout-tv .videoOsdBottom {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    border-radius: var(--rounding-media);
+  } 
+}
+
+/* OSD Footer: Hide "Ends at Time" */
+.videoOsdBottom .endsAtText {
+  display: none;
+}
+
+/* OSD Footer: Lift Progressbar */
 .buttons.focuscontainer-x {
-  padding: .5em 0 0 !important;
+  padding-top: 1em;
 }
 
 /* Fix the UI shifting around */
