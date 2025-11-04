@@ -526,8 +526,8 @@ div#tvRecommendedPage {
 
 /* Section Titles */
 .sectionTitleContainer-cards {
-  padding-top: 1em;
-  padding-bottom: 1em;
+    padding-top: .75em;
+    padding-bottom: .5em;
   margin-top: 2vh;
   /* margin-bottom: 1vh; */
   margin-left: 3em;
