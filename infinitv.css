@@ -1062,6 +1062,9 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   padding-top: .2em;
 }
 
+
+
+
 /* Episodes in Season Overview */
 .itemsContainer > .listItem {
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
@@ -1079,7 +1082,9 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
-
+.listItemImage {
+  border-radius: var(--rounding-media);
+}
 
 /* 
 ===========================================================================
@@ -1323,7 +1328,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   padding-left: 1em;
   border-radius: var(--rounding-system) !important;
   border-color: #0000 !important;
-  border-radius: var(--rounding-system) !important;
   margin-top: 0.2em !important;
 }
 
@@ -1339,7 +1343,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* Menu Items: Additional content */
 .listItemButton,
-.listItemImage,
 .listItemImageButton {
   border-radius: var(--rounding-system) !important;
 }
