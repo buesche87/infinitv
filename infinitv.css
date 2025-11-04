@@ -502,10 +502,11 @@ div#tvRecommendedPage {
   margin-top: 1em;
   /* margin-bottom: 1em; */
   margin-left: 3em;
+  margin-right: -.1em;
   border-radius: var(--rounding-system);
-  background: hsl(0deg 0% 100% / 5%);
-  color: hsl(0deg 0% 100% / 75%);
-  box-shadow: 0px 0px 5px 1px hsl(0deg 0% 100% / 10%) !important;
+  background: hsl(0deg 0% 100% / 10%);
+  /* color: hsl(0deg 0% 100% / 75%); */
+  /* box-shadow: 0px 0px 5px 1px hsl(0deg 0% 100% / 10%) !important; */
 }
 #indexPage h2.sectionTitle.sectionTitle-cards {
   font-weight: 600;
