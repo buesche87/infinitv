@@ -526,10 +526,10 @@ div#tvRecommendedPage {
 
 /* Section Titles */
 .sectionTitleContainer-cards {
-  padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-top: 1em;
+  padding-bottom: 1em;
   margin-top: 2vh;
-  margin-bottom: 2vh;
+  /* margin-bottom: 1vh; */
   margin-left: 3em;
   margin-right: -.1em;
   border-radius: var(--rounding-system);
