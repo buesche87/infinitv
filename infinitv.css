@@ -948,7 +948,7 @@ h2.sectionTitle.sectionTitle-cards {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
   transform: scale(1.2) !important;
 }
 
@@ -1095,14 +1095,14 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /* OSD Footer: Box-Layout */
-@media all and (min-width: 92em) {
+@media all and (min-width: 1700px) {
   .layout-tv .videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: .5em;
     padding-bottom: 1em;
     margin-bottom: 2em;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    margin-left: 24vw;
+    margin-right: 24vw;
     border-radius: var(--rounding-media);
   } 
 }
