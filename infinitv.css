@@ -1032,12 +1032,6 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Sections (More Like This) */
-/*
-.detailVerticalSection {
-  margin-left: -1%;
-} */
-
 /* Space between Sections */
 .layout-tv .detailVerticalSection {
   margin-bottom: 1em !important;
@@ -1068,6 +1062,21 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 .layout-mobile .sectionTitleTextButton > .material-icons {
   padding-top: .2em;
 }
+
+/* Episodes in Season Overview */
+.itemsContainer > .listItem {
+  border-radius: var(--rounding-media);
+}
+
+.itemsContainer > .listItem:hover {
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+.itemsContainer > .listItem:focus {
+  box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+}
+
+
 
 /* 
 ===========================================================================
@@ -1138,7 +1147,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   -webkit-transform:scale(1.2);
   transform:scale(1.2);
 }
-
 
 /* style the controls */
 .startTimeText,
@@ -1308,36 +1316,27 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /* Menu Items */
-.listItem {
+.readOnlyContent .listItem-border {
   padding-left: 1em;
   border-radius: var(--rounding-system) !important;
-}
-.listItem:hover,
-.listItem:Focus {
-  transition: 0.2s;
-  background: none !important;
-}
-
-/* Menu Items: Border */
-.listItem-border {
   border-color: #0000 !important;
   border-radius: var(--rounding-system) !important;
   margin-top: 0.2em !important;
 }
 
-/* Menu Items */
+/* Menu Items: Focus & Hover */
+.readOnlyContent .listItem-border:focus,
+.readOnlyContent .listItem-border:hover {
+  transition: 0.2s;
+  background: none !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
+}
+
+/* Menu Items: Additional content */
 .listItemButton,
 .listItemImage,
 .listItemImageButton {
   border-radius: var(--rounding-system) !important;
-}
-
-/* Menu Items: Focus & Hover */
-.listItem-button:focus,
-.listItem-button:hover,
-.listItem-border.emby-button:focus,
-.listItem-border.emby-button:hover {
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
 }
 
 /* Remove background on some icons */
