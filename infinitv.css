@@ -397,6 +397,11 @@
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
+/* Labels: Select */
+.selectLabel {
+  align-self: center;
+}
+
 /* Labels: Checkbox */
 .emby-checkbox:focus + .checkboxLabel,
 .emby-checkbox:hover + .checkboxLabel {
@@ -502,7 +507,7 @@ div#tvRecommendedPage {
   color: hsl(0deg 0% 100% / 75%);
   box-shadow: 0px 0px 5px 1px hsl(0deg 0% 100% / 10%) !important;
 }
-h2.sectionTitle.sectionTitle-cards {
+#indexPage h2.sectionTitle.sectionTitle-cards {
   font-weight: 600;
   margin-left: -1em;
 }
@@ -1038,10 +1043,11 @@ p.itemGenres {
 }
 
 /* Section Title: Placement */
+/*
 h2.sectionTitle.sectionTitle-cards.padded-right {
   margin-top: .2em !important;
   margin-bottom: .2em !important;
-}
+} */
 
 /* Section Icons */
 .sectionTitleTextButton > .material-icons {
@@ -1055,7 +1061,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* Media sections - Mobile layout */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
- padding-top:0em;
+  padding-top:0em;
 }
 
 .layout-mobile .sectionTitleTextButton > .material-icons {
