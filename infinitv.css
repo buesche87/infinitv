@@ -374,27 +374,46 @@
 .emby-select {
   border-radius: var(--rounding-system) !important;
 }
+.selectArrowContainer {
+  top: 2em;
+}
 .selectArrow {
   margin-top: .1em !important;
 }
 
 /* Select: Option Colors */
 .emby-select option {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
 }
-.emby-select option:focus,
 .emby-select option:hover {
-  background-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+.emby-select option:focus {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Checkbox: Outline */
-.emby-checkbox:focus + span + .checkboxOutline,
 .emby-checkbox:hover + span + .checkboxOutline {
-  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+.emby-checkbox:focus + span + .checkboxOutline {
+  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
 .emby-checkbox:checked + span + .checkboxOutline {
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+}
+
+/* Labels: Animation */
+.emby-select:hover + .selectLabel,
+.inputLabel:hover,
+.textareaLabel:hover {
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+.selectLabel:focus,
+.inputLabel:focus,
+.textareaLabel:focus {
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Labels: Fields & Input */
@@ -410,8 +429,11 @@
 }
 
 /* Labels: Checkbox */
-.emby-checkbox:focus + .checkboxLabel,
 .emby-checkbox:hover + .checkboxLabel {
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+
+.emby-checkbox:focus + .checkboxLabel {
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
@@ -570,6 +592,7 @@ div#tvRecommendedPage {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   -webkit-transform: none !important;
   transform: none !important;
+  border-radius: var(--rounding-system);
 }
 
 /* Item Count Button: Alignment */
