@@ -1096,7 +1096,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* OSD Footer: Box-Layout */
 @media all and (min-width: 1700px) {
-  .layout-tv .videoOsdBottom {
+  .videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: .5em;
     padding-bottom: 1em;
