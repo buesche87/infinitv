@@ -560,8 +560,13 @@ div#tvRecommendedPage {
   -webkit-transform: none !important;
   transform: none !important;
 }
+
+/*
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
+  */
+.emby-button.show-focus:focus,
+.emby-button.show-focus:hover {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   -webkit-transform: none !important;
   transform: none !important;
