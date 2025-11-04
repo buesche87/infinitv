@@ -1070,6 +1070,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
   border-radius: var(--rounding-media);
   margin-bottom: 1em;
+  padding: .25em .25em .25em .25em;
 }
 
 .itemsContainer > .listItem:hover {
@@ -1324,7 +1325,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /* Menu Items */
-.readOnlyContent .listItem-border {
+.actionSheetScroller .listItem {
   padding-left: 1em;
   border-radius: var(--rounding-system) !important;
   border-color: #0000 !important;
@@ -1334,8 +1335,8 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 /* Menu Items: Focus & Hover */
 .readOnlyContent .listItem-border:focus,
 .readOnlyContent .listItem-border:hover,
-.readOnlyContent .listItem-button:focus,
-.readOnlyContent .listItem-button:hover  {
+.actionSheetScroller .listItem:focus,
+.actionSheetScroller .listItem:hover  {
   transition: 0.2s;
   background: none !important;
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
