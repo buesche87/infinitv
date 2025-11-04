@@ -1039,7 +1039,6 @@ p.itemGenres {
 
 /* Section Title: Placement */
 h2.sectionTitle.sectionTitle-cards.padded-right {
-  /* margin-left: .4em !important; */
   margin-top: .2em !important;
   margin-bottom: .2em !important;
 }
@@ -1065,15 +1064,19 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* Episodes in Season Overview */
 .itemsContainer > .listItem {
+  border: solid 2px hsl(0deg 0% 100% / 20%) !important;
   border-radius: var(--rounding-media);
+  margin-bottom: 1em;
 }
 
 .itemsContainer > .listItem:hover {
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
 }
 .itemsContainer > .listItem:focus {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
 }
 
 
@@ -1326,7 +1329,9 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* Menu Items: Focus & Hover */
 .readOnlyContent .listItem-border:focus,
-.readOnlyContent .listItem-border:hover {
+.readOnlyContent .listItem-border:hover,
+.readOnlyContent .listItem-button:focus,
+.readOnlyContent .listItem-button:hover  {
   transition: 0.2s;
   background: none !important;
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
