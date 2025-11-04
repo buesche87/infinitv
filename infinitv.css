@@ -342,12 +342,19 @@
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--rounding-system) !important;
 }
+.emby-input:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.checkboxOutline:not(:disabled):hover {
+  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
 .emby-input:focus,
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .checkboxOutline:focus {
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  background: rgba(0, 0, 0, 0.4) !important; 
+  background: rgba(0, 0, 0, 0.6) !important; 
 }
 
 /* Input: Fix Text alignment*/
@@ -869,7 +876,7 @@ div#tvRecommendedPage {
 /* Move page content */
 .layout-tv .detailPagePrimaryContainer {
   display: block;
-  padding-top: 2em;
+  padding-top: 2vh;
 }
 
 /* Cast Scroller */
@@ -900,7 +907,7 @@ div#tvRecommendedPage {
 
 /* Cover Placement (TV) */
 .layout-tv .detailImageContainer .card {
-  top: 2.2vh !important;
+  top: 2vh !important;
 }
 
 /* 
