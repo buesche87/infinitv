@@ -287,7 +287,6 @@
   color: inherit !important;
   -webkit-transform: none !important;
   transform: none !important;
-  border: solid 2px #0000 !important;
 }
 .button-link:hover,
 .button-link:focus {
