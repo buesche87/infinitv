@@ -274,14 +274,12 @@
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   background: #0000 !important;
-  border-radius: var(--rounding-system) !important;
 }
 .emby-button:not(.emby-tab-button):focus,
 .button-submit:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8) !important;
   background: #0000 !important;
-  border-radius: var(--rounding-system) !important;
 }
 
 .listItem:hover {
