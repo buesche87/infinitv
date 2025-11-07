@@ -348,6 +348,7 @@
 .checkboxOutline:not(:disabled):hover {
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   background: rgba(0, 0, 0, 0.4) !important;
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 .emby-input:focus,
 .emby-textarea:focus,
@@ -356,6 +357,14 @@
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: rgba(0, 0, 0, 0.6) !important; 
 }
+
+.emby-select-withcolor:hover + .selectArrowContainer {
+  color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
+}
+.emby-select-withcolor:focus + .selectArrowContainer {
+  color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
+}
+
 
 /* Input: Fix Text alignment*/
 .emby-input {
@@ -375,7 +384,7 @@
   border-radius: var(--rounding-system) !important;
 }
 .selectArrowContainer {
-  top: 2em;
+  top: .3em;
 }
 .selectArrow {
   margin-top: .1em !important;
