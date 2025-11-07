@@ -269,13 +269,13 @@
   -webkit-transform: none !important;
   transform: none !important;
 }
-.emby-button:not(.emby-tab-button):hover,
+.emby-button:not(.emby-tab-button):not(.button-link):hover, 
 .button-submit:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   background: #0000 !important;
 }
-.emby-button:not(.emby-tab-button):focus,
+.emby-button:not(.emby-tab-button):not(.button-link):focus,
 .button-submit:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
@@ -286,15 +286,8 @@
 .button-link {
   color: inherit !important;
 }
-.button-link:hover,
-.button-link:focus {
-  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  background: #0000 !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-  border: solid 2px #0000  !important;
-}
 
+/* Menu List Item */
 .listItem:hover {
   background: #0000 !important;
 }
