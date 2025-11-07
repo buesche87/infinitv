@@ -429,12 +429,14 @@
   background: rgba(0, 0, 0, 0.6) !important; 
 }
 
+/*
 .emby-select-withcolor:hover + .selectArrowContainer {
   color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
 }
 .emby-select-withcolor:focus + .selectArrowContainer {
   color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
 }
+  */
 
 
 /* Input: Fix Text alignment*/
@@ -457,7 +459,6 @@
 .selectContainer .selectArrowContainer {
   top: 2em;
 }
-
 .trackSelectionFieldContainer .selectArrowContainer {
   top: .3em;
 }
@@ -1039,7 +1040,6 @@ div#tvRecommendedPage {
   font-size: 125%;
   margin-top: 0.25em;
   margin-bottom: 0.6em;
-  /* color: #ffffff !important; */
 }
 
 /* Media Buttons */ 
