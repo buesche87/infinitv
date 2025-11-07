@@ -271,14 +271,14 @@
 }
 .emby-button:not(.emby-tab-button):hover,
 .button-submit:hover {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l));
-  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4);
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   background: #0000 !important;
 }
 .emby-button:not(.emby-tab-button):focus,
 .button-submit:focus {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l));
-  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8);
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: #0000 !important;
 }
 
@@ -292,7 +292,7 @@
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
-  border-color: #0000 !important;
+  border: solid 2px #0000  !important;
 }
 
 .listItem:hover {
