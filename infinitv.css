@@ -262,7 +262,8 @@
 */
 
 /* Lists: Subtitles */
-.emby-button:not(.emby-tab-button) {
+.emby-button:not(.emby-tab-button),
+.button-submit {
   border-radius: var(--rounding-system);
   border: solid 2px #0000;
   background: #0000 !important;
@@ -294,6 +295,9 @@
   background: #0000 !important;
 }
 /* Menu List Item */
+.listItem-border {
+  border: solid 2px #0000 !important;
+}
 .listItem:hover {
   background: #0000 !important;
 }
