@@ -268,42 +268,23 @@
 ============================================================================
 */
 
-/* Buttons: Submit */
-.button-submit,
-.listItem-button {
-  border-radius: var(--rounding-system) !important;
-}
-
-/* Button Animations */
-
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  background: #0000 !important;
-}
-
-/* List Items (Subtitles & Co.) */
-.listItem-button {
+/* Buttons: Submit & List Items */
+.listItem-button,
+.button-submit {
   border-radius: var(--rounding-system) !important;
   border: solid 2px #0000 !important;
 }
 
 /* Lists: Subtitles */
-.listItem-button:hover {
+.listItem-button:hover,
+.button-submit:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  /* background: #0000 !important; */
-  border-radius: var(--rounding-system) !important;
-  /* ackground: rgba(0, 0, 0, 0.4) !important; */
-  /* border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important; */
 }
 
-.listItem-button:focus {
+.listItem-button:focus,
+.button-submit:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  /* background: #0000 !important; */
-  border-radius: var(--rounding-system) !important;
-  /* ackground: rgba(0, 0, 0, 0.4) !important; */
-  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
 
 /* Buttons: Login, Save & Co. */
@@ -317,6 +298,15 @@
 .raised:focus {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
+
+/* Button Animations */
+.button-flat:hover,
+.button-flat:focus,
+.cardOverlayButton:hover {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  background: #0000 !important;
+}
+
 
 /* Buttons: Home Library */
 .homeLibraryButton {
@@ -1408,15 +1398,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   border-radius: var(--rounding-system) !important;
   border-color: #0000 !important;
   margin-top: 0.2em !important;
-}
-
-/* Menu Items: Focus & Hover */
-.readOnlyContent .listItem-border .listItem:focus,
-.readOnlyContent .listItem-border .listItem:hover,
-.actionSheetScroller .listItem:focus,
-.actionSheetScroller .listItem:hover  {
-  transition: 0.2s;
-  background: none !important;
 }
 
 /* Menu Items: Additional content */
