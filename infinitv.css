@@ -905,7 +905,7 @@ div#tvRecommendedPage {
 /* Move page content */
 .layout-tv .detailPagePrimaryContainer {
   display: block;
-  padding-top: 2vh;
+  padding-top: 5vh;
 }
 
 /* Cast Scroller */
@@ -1377,16 +1377,13 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /* Menu Items: Focus & Hover */
-/*
 .readOnlyContent .listItem-border .listItem:focus,
 .readOnlyContent .listItem-border .listItem:hover,
 .actionSheetScroller .listItem:focus,
 .actionSheetScroller .listItem:hover  {
   transition: 0.2s;
   background: none !important;
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
 }
-  */
 
 /* Menu Items: Additional content */
 .listItemButton,
