@@ -272,13 +272,13 @@
 .emby-button:not(.emby-tab-button):hover,
 .button-submit:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l));
-  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4);
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4);
   background: #0000 !important;
 }
 .emby-button:not(.emby-tab-button):focus,
 .button-submit:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l));
-  border-color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8);
   background: #0000 !important;
 }
 
@@ -1372,9 +1372,10 @@ p.itemGenres {
 .actionSheetScroller .listItem {
   padding-left: 1em;
   border-radius: var(--rounding-system) !important;
-  border-color: #0000 !important;
   margin-top: 0.2em !important;
+  border: solid 2px #0000 !important;
 }
+
 
 /* Menu Items: Additional content */
 .listItemButton,
