@@ -226,7 +226,6 @@
 
 /* Buttons: Menu & OSD */
 .paper-icon-button-light {
-  /* border: solid 2px #0000 !important; */
   border-radius: var(--rounding-media);
 }
 .paper-icon-button-light:hover {
@@ -236,13 +235,7 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  /* border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.6) !important; */
 }
-/*
-.paper-icon-button-light:active {
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
-}
-  */
 
 /* Buttons: Not Header */
 .paper-icon-button-light:not(.headerButton) {
@@ -295,56 +288,6 @@
   background: #0000 !important;
 }
 
-
-
-/*
-.verticalSection > .emby-button.show-focus:focus,
-.verticalSection > .emby-button.show-focus:hover,
-.emby-collapse > .emby-button.show-focus:focus,
-.emby-collapse > .emby-button.show-focus:hover {
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-  border-radius: var(--rounding-system);
-}
-*/
-
-/* Buttons: Submit & List Items */
-/*
-.listItem-button,
-.button-submit {
-  border-radius: var(--rounding-system) !important;
-  border: solid 2px #0000 !important;
-}
-.listItem-button:hover,
-.button-submit:hover {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-}
-.listItem-button:focus,
-.button-submit:focus {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
-}
-*/
-
-
-
-
-
-
-
-/* Buttons: Submit & List Items */
-/*
-.listItem-button,
-.button-submit {
-  border-radius: var(--rounding-system) !important;
-  border: solid 2px #0000 !important;
-}
-  */
-
-
-
-
 /* Buttons: Login, Save & Co. */
 .raised {
   background: rgba(0, 0, 0, 0.4) !important;
@@ -364,7 +307,6 @@
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   background: #0000 !important;
 }
-
 
 /* Buttons: Home Library */
 .homeLibraryButton {
@@ -621,11 +563,8 @@ div#tvRecommendedPage {
   margin-right: -.1em;
   border-radius: var(--rounding-system);
   background: hsl(0deg 0% 100% / 10%);
-  /* color: hsl(0deg 0% 100% / 75%); */
-  /* box-shadow: 0px 0px 5px 1px hsl(0deg 0% 100% / 10%) !important; */
 }
 #indexPage h2.sectionTitle.sectionTitle-cards {
-  /* font-weight: 600; */
   margin-left: -1em;
 }
 
@@ -1152,13 +1091,6 @@ p.itemGenres {
   margin-bottom: 1em !important;
 }
 
-/* Section Title: Placement */
-/*
-h2.sectionTitle.sectionTitle-cards.padded-right {
-  margin-top: .2em !important;
-  margin-bottom: .2em !important;
-} */
-
 /* Section Icons */
 .sectionTitleTextButton > .material-icons {
   margin: 0;
@@ -1173,13 +1105,9 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   padding-top:0em;
 }
-
 .layout-mobile .sectionTitleTextButton > .material-icons {
   padding-top: .2em;
 }
-
-
-
 
 /* Episodes in Season Overview */
 .itemsContainer > .listItem {
@@ -1382,8 +1310,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 
 /* Skip-Button */
 .skip-button {
-  /* border: solid 2px #fff !important; */
-  /* border-radius: var(--rounding-media); */
   color: #fff;
   background: #0000 !important;
 }
@@ -1391,8 +1317,6 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 /* Skip-Button: Hover & Focus */
 .skip-button:focus,
 .skip-button:hover {
-  /* border: solid 2px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important; */
-  /* border-radius: var(--rounding-media); */
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   background: #0000 !important;
 }
@@ -1542,14 +1466,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5);
 }
-
-/* ?? */
-/*
-fieldset {
-  border: 1px solid rgba(40, 40, 40, 0.8); 
-  border-radius: 0.4em;
-}
-  */
 
 /* Borders: Accent 50% */
 .itemSelectionPanel {
@@ -1759,31 +1675,3 @@ fieldset {
 }
 */
 
-
-/* Scrollbar */
-
-/* Show - auto (thin) */
-/*
-#moviesPage, 
-#moviesPage::-webkit-scrollbar,
-#tvRecommendedPage, 
-#tvRecommendedPage::-webkit-scrollbar,
-#itemDetailPage,
-#itemDetailPage::-webkit-scrollbar {
-  overflow-y: auto !important;
-  scrollbar-width: thin !important; 
-}
-*/
-
-/* Hide */
-/*
-.libraryDocument,
-.libraryDocument::-webkit-scrollbar, 
-#indexPage, 
-#indexPage::-webkit-scrollbar,
-#loginPage,
-#loginPage::-webkit-scrollbar {
-  overflow-y: auto !important;
-  scrollbar-width: none !important; 
-}
-*/
