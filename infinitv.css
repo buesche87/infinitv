@@ -268,6 +268,35 @@
 ============================================================================
 */
 
+
+.emby-button:not(.emby-tab-button) {
+  border-radius: var(--rounding-system) !important;
+  border: solid 2px #0000 !important;
+}
+
+/* Buttons: Submit & List Items */
+/*
+.listItem-button,
+.button-submit {
+  border-radius: var(--rounding-system) !important;
+  border: solid 2px #0000 !important;
+}
+  */
+
+/* Lists: Subtitles */
+.emby-button:not(.emby-tab-button):hover,
+.button-submit:hover {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+}
+
+.emby-button:not(.emby-tab-button):focus,
+.button-submit:focus {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+
+
+
 /* Buttons: Submit & List Items */
 .listItem-button,
 .button-submit {
@@ -286,6 +315,20 @@
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
+
+
+
+.listItem:hover {
+  background: #0000 !important;
+}
+
+
+
+
+
+
+
+
 
 /* Buttons: Login, Save & Co. */
 .raised {
