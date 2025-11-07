@@ -525,7 +525,7 @@ div#tvRecommendedPage {
 }
 
 /* Section Titles */
-.sectionTitleContainer-cards {
+#indexPage .sectionTitleContainer-cards {
   padding-top: .75em;
   padding-bottom: .5em;
   margin-top: 2vh;
@@ -538,7 +538,7 @@ div#tvRecommendedPage {
   /* box-shadow: 0px 0px 5px 1px hsl(0deg 0% 100% / 10%) !important; */
 }
 #indexPage h2.sectionTitle.sectionTitle-cards {
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-left: -1em;
 }
 
@@ -584,6 +584,10 @@ div#tvRecommendedPage {
 }
 
 
+
+
+.verticalSection > .emby-button.show-focus:focus,
+.verticalSection > .emby-button.show-focus:hover,
 .emby-collapse > .emby-button.show-focus:focus,
 .emby-collapse > .emby-button.show-focus:hover {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
@@ -1373,6 +1377,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
 }
 
 /* Menu Items: Focus & Hover */
+/*
 .readOnlyContent .listItem-border .listItem:focus,
 .readOnlyContent .listItem-border .listItem:hover,
 .actionSheetScroller .listItem:focus,
@@ -1381,6 +1386,7 @@ h2.sectionTitle.sectionTitle-cards.padded-right {
   background: none !important;
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.7) !important;
 }
+  */
 
 /* Menu Items: Additional content */
 .listItemButton,
