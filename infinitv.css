@@ -269,16 +269,34 @@
 */
 
 /* Buttons: Submit */
-.button-submit {
+.button-submit,
+.listItem-button {
   border-radius: var(--rounding-system) !important;
 }
 
 /* Button Animations */
+
 .button-flat:hover,
 .button-flat:focus,
 .cardOverlayButton:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   background: #0000 !important;
+}
+
+/* List Items (Subtitles & Co.) */
+.listItem-button {
+  border-radius: var(--rounding-system) !important;
+  border: solid 2px #0000 !important;
+}
+
+/* Lists: Subtitles */
+.listItem-button:hover,
+.listItem-button:focus {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  /* background: #0000 !important; */
+  border-radius: var(--rounding-system) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
 
 /* Buttons: Login, Save & Co. */
@@ -991,7 +1009,7 @@ div#tvRecommendedPage {
 /* Media Buttons: Animation */ 
 .detailButton:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   transform: scale(1.2) !important;
 }
