@@ -268,11 +268,65 @@
 ============================================================================
 */
 
-
+/* Lists: Subtitles */
 .emby-button:not(.emby-tab-button) {
   border-radius: var(--rounding-system) !important;
   border: solid 2px #0000 !important;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
 }
+.emby-button:not(.emby-tab-button):hover,
+.button-submit:hover {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+}
+.emby-button:not(.emby-tab-button):focus,
+.button-submit:focus {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+
+.listItem:hover {
+  background: #0000 !important;
+}
+
+
+
+/*
+.verticalSection > .emby-button.show-focus:focus,
+.verticalSection > .emby-button.show-focus:hover,
+.emby-collapse > .emby-button.show-focus:focus,
+.emby-collapse > .emby-button.show-focus:hover {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  border-radius: var(--rounding-system);
+}
+*/
+
+/* Buttons: Submit & List Items */
+/*
+.listItem-button,
+.button-submit {
+  border-radius: var(--rounding-system) !important;
+  border: solid 2px #0000 !important;
+}
+.listItem-button:hover,
+.button-submit:hover {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+}
+.listItem-button:focus,
+.button-submit:focus {
+  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
+  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+}
+*/
+
+
+
+
+
+
 
 /* Buttons: Submit & List Items */
 /*
@@ -282,50 +336,6 @@
   border: solid 2px #0000 !important;
 }
   */
-
-/* Lists: Subtitles */
-.emby-button:not(.emby-tab-button):hover,
-.button-submit:hover {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-}
-
-.emby-button:not(.emby-tab-button):focus,
-.button-submit:focus {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
-}
-
-
-
-/* Buttons: Submit & List Items */
-.listItem-button,
-.button-submit {
-  border-radius: var(--rounding-system) !important;
-  border: solid 2px #0000 !important;
-}
-
-/* Lists: Subtitles */
-.listItem-button:hover,
-.button-submit:hover {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-}
-
-.listItem-button:focus,
-.button-submit:focus {
-  color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
-  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
-}
-
-
-
-.listItem:hover {
-  background: #0000 !important;
-}
-
-
-
-
-
 
 
 
@@ -648,19 +658,6 @@ div#tvRecommendedPage {
 .focuscontainer-x > .paper-icon-button-light:focus {
   -webkit-transform: none !important;
   transform: none !important;
-}
-
-
-
-
-.verticalSection > .emby-button.show-focus:focus,
-.verticalSection > .emby-button.show-focus:hover,
-.emby-collapse > .emby-button.show-focus:focus,
-.emby-collapse > .emby-button.show-focus:hover {
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-  border-radius: var(--rounding-system);
 }
 
 /* Item Count Button: Alignment */
