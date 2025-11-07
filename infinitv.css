@@ -1045,7 +1045,7 @@ div#tvRecommendedPage {
 /* Media Buttons */ 
 .detailButton {
   font-size: 120% !important;
-  border-radius: var(--rounding-media);
+  border-radius: var(--rounding-media) !important;
   margin-right: 1.5em !important;
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
 }
