@@ -997,6 +997,7 @@ div#tvRecommendedPage {
   background: rgba(0, 0, 0, 0.4) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   transform: scale(1.2) !important;
+  border-radius: var(--rounding-media) !important;
 }
 .detailButton:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
@@ -1004,6 +1005,7 @@ div#tvRecommendedPage {
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: rgba(0, 0, 0, 0.7) !important;
   transform: scale(1.2) !important;
+  border-radius: var(--rounding-media) !important;  
 }
 
 /* Slides Buttons */
