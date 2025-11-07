@@ -294,6 +294,7 @@
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: #0000 !important;
 }
+
 /* Menu List Item */
 .listItem-border {
   border: solid 2px #0000 !important;
