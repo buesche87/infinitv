@@ -294,7 +294,7 @@
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   /* background: #0000 !important; */
   border-radius: var(--rounding-system) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  /* ackground: rgba(0, 0, 0, 0.4) !important; */
   /* border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important; */
 }
 
@@ -302,7 +302,7 @@
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   /* background: #0000 !important; */
   border-radius: var(--rounding-system) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  /* ackground: rgba(0, 0, 0, 0.4) !important; */
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
 
