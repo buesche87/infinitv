@@ -17,6 +17,9 @@
   /* Card Shadow */
   --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
 
+  /* Accent predefinition */
+  --fullaccent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
+
   /* Temp Div */
   --accentcolorman: hsl(36,100,50%);
   --accentcolor: hsla(var(--accent-h),var(--accent-s),var(--accent-l),1.0);
@@ -308,7 +311,6 @@
   border: 2px solid #0000 !important;
 }
 
-
 /* Menu List Item (like user settings) */
 .listItem-border {
   border: solid 2px #0000 !important;
@@ -370,35 +372,26 @@
 .emby-textarea,
 .emby-select-withcolor,
 .checkboxOutline {
-  background: rgba(0, 0, 0, 0.6) ; 
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--rounding-system) !important;
+  /* background: rgba(0, 0, 0, 0.6); */
 }
 .emby-input:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .checkboxOutline:not(:disabled):hover {
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   background: rgba(0, 0, 0, 0.4) !important;
-  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 .emby-input:focus,
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .checkboxOutline:focus {
+  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: rgba(0, 0, 0, 0.6) !important; 
 }
-
-/*
-.emby-select-withcolor:hover + .selectArrowContainer {
-  color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
-}
-.emby-select-withcolor:focus + .selectArrowContainer {
-  color: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.8);
-}
-  */
-
 
 /* Input: Fix Text alignment*/
 .emby-input {
@@ -413,7 +406,7 @@
   padding: .5em .6em;
 }
 
-/* Select: Without colors & Arrow */
+/* Select */
 .emby-select {
   border-radius: var(--rounding-system) !important;
 }
@@ -425,6 +418,11 @@
 }
 .selectArrow {
   margin-top: .1em !important;
+}
+
+/* Select: Label alignment */
+.selectLabel {
+  align-self: center;
 }
 
 /* Select: Option Colors */
@@ -443,7 +441,7 @@
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
 .emby-checkbox:focus + span + .checkboxOutline {
-  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
+  border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 .emby-checkbox:checked + span + .checkboxOutline {
   border: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
@@ -451,42 +449,28 @@
 }
 
 /* Labels: Animation */
-.emby-select:hover + .selectLabel,
 .inputLabel:hover,
-.textareaLabel:hover {
+.textareaLabel:hover,
+.emby-checkbox:hover + .checkboxLabel,
+.emby-select:hover + .selectLabel {
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
 }
-.selectLabel:focus,
 .inputLabel:focus,
-.textareaLabel:focus {
+.textareaLabel:focus
+.emby-checkbox:focus + .checkboxLabel,
+.selectLabel:focus {
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
-/* Labels: Fields & Input */
+/* Labels: Focused-Class */
 .inputLabelFocused,
 .textareaLabelFocused,
-.selectLabelFocused {
-  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-}
-
-/* Labels: Select */
-.selectLabel {
-  align-self: center;
-}
-
-/* Labels: Checkbox */
-.emby-checkbox:hover + .checkboxLabel {
-  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
-}
-
-.emby-checkbox:focus + .checkboxLabel {
+.selectLabelFocused,
+.Mui-selected {
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
 }
 
 /* Misc */
-.Mui-selected {
-  color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
-}
 .selectionCommandsPanel {
   background: rgba(0, 0, 0, 0.4) !important;
 }
