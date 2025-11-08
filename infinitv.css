@@ -26,7 +26,7 @@
 
 }
 
-/*  
+/* 
 ============================================================================
   Background & Fonts
 ============================================================================
@@ -1323,8 +1323,6 @@ p.itemGenres {
   transform: translate3d(-50%,-108%,0);
 }
 
-
-
 /* 
 ===========================================================================
   Player OSD: UpNext Dialog
@@ -1354,6 +1352,23 @@ p.itemGenres {
 ===========================================================================
 */
 
+/* User Profile: Image */
+.imagePlaceHolder {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--rounding-media);
+}
+.imagePlaceHolder:hover {
+  border: solid 2px var(--accent40) !important;
+}
+
+/* Username bold */
+h2.username {
+  margin-top: 0px;
+  font-weight: 600;
+  color: #fff;
+}
+
+
 /* Improve some menu alignments */
 .formDialogHeaderTitle {
   margin-left: 1em;
@@ -1376,7 +1391,6 @@ p.itemGenres {
   margin-top: 0.2em !important;
   border: solid 2px #0000 !important;
 }
-
 
 /* Menu Items: Additional content */
 .listItemButton,
