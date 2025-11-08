@@ -261,7 +261,7 @@
 ============================================================================
 */
 
-/* Lists: Subtitles */
+/* Most System Buttons */
 .emby-button:not(.emby-tab-button),
 .button-submit,
 .clearLink {
@@ -271,20 +271,20 @@
   -webkit-transform: none !important;
   transform: none !important;
 }
-.emby-button:not(.emby-tab-button):not(.button-link):hover, 
+.emby-button:not(.emby-tab-button):not(.button-link):not(.clearLink):hover, 
 .button-submit:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   background: #0000 !important;
 }
-.emby-button:not(.emby-tab-button):not(.button-link):focus,
+.emby-button:not(.emby-tab-button):not(.button-link):not(.clearLink):focus,
 .button-submit:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
   background: #0000 !important;
 }
 
-/* Link-Button */
+/* Link-Buttons (Links acting as buttons) */
 .button-link {
   color: inherit !important;
   -webkit-transform: none !important;
@@ -296,14 +296,20 @@
   background: #0000 !important;
 }
 
-
+/* Link-Buttons with Button inside (like "More" in actor page) */
 .clearLink {
   padding: .2em 1em !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
 }
+.clearLink > .emby-button,
+.clearLink > .emby-button:hover,
+.clearLink > .emby-button:focus {
+  padding: .2em 1em !important;
+  border: 2px solid #0000 !important;
+}
 
 
-/* Menu List Item */
+/* Menu List Item (like user settings) */
 .listItem-border {
   border: solid 2px #0000 !important;
 }
@@ -351,8 +357,6 @@
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   background: rgba(255, 255, 255, 0.6) !important;
 }
-
-
 
 
 /*  
