@@ -1334,7 +1334,7 @@ p.itemGenres {
   padding-left: 1.25em;
   padding-right: 1.25em;
   border-radius: var(--rounding-media) !important;
-  box-shadow: 0px 0px 5px 0px var(--fullaccent) !important;
+  box-shadow: 0px 0px 10px 0px var(--fullaccent) !important;
 }
 
 .upNextDialog-poster-img {
