@@ -467,7 +467,7 @@
   color: var(--accent40) !important;
 }
 .inputLabel:focus,
-.textareaLabel:focus
+.textareaLabel:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .selectLabel:focus {
   color: var(--accent80) !important;
@@ -1367,7 +1367,6 @@ h2.username {
   font-weight: 600;
   color: #fff;
 }
-
 
 /* Improve some menu alignments */
 .formDialogHeaderTitle {
