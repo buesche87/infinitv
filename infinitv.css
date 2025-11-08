@@ -564,7 +564,7 @@ div#tvRecommendedPage {
   padding-bottom: .5em;
   margin-top: 2vh;
   margin-bottom: .5vh;
-  margin-left: 3em;
+  margin-left: 3.3vw;
   margin-right: -.1em;
   border-radius: var(--rounding-system);
   background: hsl(0deg 0% 100% / 10%);
