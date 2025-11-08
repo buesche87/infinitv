@@ -791,19 +791,19 @@ div#tvRecommendedPage {
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
-/* Glow on Hover: Cards */
+/* Glow: Cards (Desktop) */
 .backdropCard:has(.cardFooter):hover .cardBox, 
 .portraitCard:has(.cardFooter):hover .cardBox {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
-/* Glow on Hover: Only Images on Cards */
-.overflowBackdropCard:hover .cardContent,
-.overflowPortraitCard:hover .cardContent {
+/* Glow: Only Images on Cards in Homescreen (Desktop) */
+.homeSectionsContainer .overflowBackdropCard:hover .cardContent,
+.homeSectionsContainer .overflowPortraitCard:hover .cardContent {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
-/* Glow on Hover: Media Scroller Cards (Desktop) */
+/* Glow: Media Scroller Cards (Desktop) */
 .backdropCard:not(:has(.cardFooter)):hover .cardContent, 
 .portraitCard:not(:has(.cardFooter)):hover .cardContent {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
