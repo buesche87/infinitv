@@ -1176,7 +1176,7 @@ p.itemGenres {
 .videoOsdBottom {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-top: .5em;
-  padding-bottom: 1em;
+  padding-bottom: .5em;
 }
 
 /* OSD Footer: Small Box-Layout */
@@ -1199,7 +1199,7 @@ p.itemGenres {
 
 /* OSD Footer: Lift Progressbar */
 .buttons.focuscontainer-x {
-  padding-top: 1em;
+  padding-top: .5em;
 }
 
 /* Fix the UI shifting around */
