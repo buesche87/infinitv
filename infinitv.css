@@ -267,7 +267,7 @@
 ============================================================================
 */
 
-/* Most System Buttons */
+/* Most System Buttons: Colored Test and Border on Hover & Focus */
 .emby-button:not(.emby-tab-button),
 .button-submit,
 .clearLink {
@@ -302,11 +302,14 @@
   background: #0000 !important;
 }
 
-/* Link-Buttons with Button inside (like "More" in actor page) */
+/* Submit & Special Buttons: Light Border */
+.button-submit,
 .clearLink {
   padding: .2em 1em !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
 }
+
+/* Link-Buttons with Buttons inside (why...?) */
 .clearLink > .emby-button,
 .clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus {
@@ -314,7 +317,7 @@
   border: 2px solid #0000 !important;
 }
 
-/* Menu List Item (user settings) */
+/* Menulist Item-Buttons (like user settings) */
 .listItem-border {
   border: solid 2px #0000 !important;
 }
@@ -1232,6 +1235,19 @@ p.itemGenres {
   padding-right: 0.5em !important;
 }
 
+/* Skip-Button */
+.skip-button {
+  color: #fff;
+  background: #0000 !important;
+  border: none !important;
+}
+.skip-button:focus,
+.skip-button:hover {
+  color: var(--fullaccent) !important;
+  background: #0000 !important;
+  border:none !important
+}
+
 /* 
 ===========================================================================
   Player OSD: Progressbar & Volume
@@ -1304,24 +1320,7 @@ p.itemGenres {
   transform: translate3d(-50%,-108%,0);
 }
 
-/* 
-===========================================================================
-  Player OSD: Skip-Button
-===========================================================================
-*/
 
-/* Skip-Button */
-.skip-button {
-  color: #fff;
-  background: #0000 !important;
-}
-
-/* Skip-Button: Hover & Focus */
-.skip-button:focus,
-.skip-button:hover {
-  color: var(--fullaccent) !important;
-  background: #0000 !important;
-}
 
 /* 
 ===========================================================================
