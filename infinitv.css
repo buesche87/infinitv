@@ -33,7 +33,8 @@
 */
 
 /* Background Image on Login Page */
-#loginPage {
+#loginPage,
+#userProfilePage {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
     url("https://wallpapershome.com/images/pages/pic_h/12740.jpg") !important;
@@ -384,7 +385,7 @@
 .checkboxOutline {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--rounding-system) !important;
-  /* background: rgba(0, 0, 0, 0.6); */
+  background: rgba(0, 0, 0, 0.4);
 }
 .emby-input:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
@@ -392,7 +393,7 @@
 .checkboxOutline:not(:disabled):hover {
   color: var(--accent80) !important;
   border: 2px solid var(--accent40) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 .emby-input:focus,
 .emby-textarea:focus,
@@ -400,7 +401,7 @@
 .checkboxOutline:focus {
   color: var(--accent80) !important;
   border: 2px solid var(--accent80) !important;
-  background: rgba(0, 0, 0, 0.6) !important; 
+  background: rgba(0, 0, 0, 0.8) !important; 
 }
 
 /* Input: Fix Text alignment*/
