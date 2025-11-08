@@ -298,16 +298,9 @@
 
 
 .clearLink {
-  border-radius: var(--rounding-media) !important;
+  padding: .2em 1em !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
 }
-.clearLink:hover {
-  border-radius: var(--rounding-media) !important;
-}
-.clearLink:focus {
-  border-radius: var(--rounding-media) !important;
-}
-
 
 
 /* Menu List Item */
