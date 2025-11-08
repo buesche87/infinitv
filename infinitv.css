@@ -1179,8 +1179,8 @@ p.itemGenres {
   padding-bottom: 1em;
 }
 
-/* OSD Footer: Box-Layout */
-@media all and (min-width: 1700px) {
+/* OSD Footer: Small Box-Layout */
+@media all and (min-width: 105em) {
   .videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: .5em;
