@@ -392,7 +392,7 @@
 .emby-select-withcolor:not(:disabled):hover,
 .checkboxOutline:not(:disabled):hover {
   color: var(--accent80) !important;
-  border: 2px solid var(--accent40) !important;
+  border: 2px solid var(--accent40);
   background: rgba(0, 0, 0, 0.6) !important;
 }
 .emby-input:focus,
@@ -401,7 +401,7 @@
 .checkboxOutline:focus {
   color: var(--accent80) !important;
   border: 2px solid var(--accent80) !important;
-  background: rgba(0, 0, 0, 0.8) !important; 
+  background: rgba(0, 0, 0, 0.6) !important; 
 }
 
 /* Input: Fix Text alignment*/
