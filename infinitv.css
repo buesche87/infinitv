@@ -791,19 +791,23 @@ div#tvRecommendedPage {
   color: hsla(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
-/* Glow: Cards (Desktop) */
+/* Glow: Cards */
 .backdropCard:has(.cardFooter):hover .cardBox, 
 .portraitCard:has(.cardFooter):hover .cardBox {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
-/* Glow: Only Images on Cards in Homescreen (Desktop) */
+/* Glow: Only Images on Cards in Homescreen */
+#itemDetailPage .overflowBackdropCard:hover .cardContent,
+#itemDetailPage .overflowPortraitCard:hover .cardContent,
 .homeSectionsContainer .overflowBackdropCard:hover .cardContent,
 .homeSectionsContainer .overflowPortraitCard:hover .cardContent {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
 }
 
-/* Glow: Media Scroller Cards (Desktop) */
+/* Glow: Media Scroller Cards */
+#itemDetailPage .backdropCard:not(:has(.cardFooter)):hover .cardContent,
+#itemDetailPage .portraitCard:not(:has(.cardFooter)):hover .cardContent,
 .backdropCard:not(:has(.cardFooter)):hover .cardContent, 
 .portraitCard:not(:has(.cardFooter)):hover .cardContent {
   box-shadow: 0px 0px 10px 1px hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
