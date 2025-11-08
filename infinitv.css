@@ -271,13 +271,13 @@
   -webkit-transform: none !important;
   transform: none !important;
 }
-.emby-button:not(.emby-tab-button):not(.button-link):not(.clearLink):hover, 
+.emby-button:not(.emby-tab-button):not(.button-link):not(.raised):hover, 
 .button-submit:hover {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.4) !important;
   background: #0000 !important;
 }
-.emby-button:not(.emby-tab-button):not(.button-link):not(.clearLink):focus,
+.emby-button:not(.emby-tab-button):not(.button-link):not(.raised):focus,
 .button-submit:focus {
   color: hsl(var(--accent-h),var(--accent-s),var(--accent-l)) !important;
   border: solid 2px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.8) !important;
