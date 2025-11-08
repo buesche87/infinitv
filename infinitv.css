@@ -305,8 +305,10 @@
 /* Submit & Special Buttons: Light Border */
 .button-submit,
 .clearLink {
-  padding: .2em 1em !important;
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
+}
+.clearLink {
+  padding: .2em 1em !important;
 }
 
 /* Link-Buttons with Buttons inside (why...?) */
