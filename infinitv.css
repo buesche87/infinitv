@@ -35,13 +35,15 @@
 */
 
 /* Background Image on Login Page */
-.backgroundContainer {
+/* .backgroundContainer */
+#loginPage {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
     var(--bgImage) !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 
 .parent:has(.child) {
