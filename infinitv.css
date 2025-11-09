@@ -666,13 +666,16 @@
 .btnSort {
   margin-left: .4em;
   margin-right: .4em;
-}
-
-/* Library-Buttons */
-.focuscontainer-x > .paper-icon-button-light:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
+
+/* Library-Buttons */
+/*
+.focuscontainer-x > .paper-icon-button-light:focus {
+  -webkit-transform: none !important;
+  transform: none !important;
+}*/
 
 /* Item Count Button: Alignment */
 .listPaging > span {
