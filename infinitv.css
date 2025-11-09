@@ -14,6 +14,8 @@
 
 :root {
 
+  --bgImage: url("https://wallpapershome.com/images/pages/pic_h/12740.jpg");
+
   /* Card Shadow */
   --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
 
@@ -36,7 +38,7 @@
 .backgroundContainer {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
-    url("https://wallpapershome.com/images/pages/pic_h/12740.jpg") !important;
+    var(--bgImage) !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
