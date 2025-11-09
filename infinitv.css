@@ -198,8 +198,6 @@
   transition: filter 0.2s;
 }
 
-
-
 /* Text: Page Title & Time */
 .pageTitle {
   font-weight: bold;
@@ -209,18 +207,58 @@
   font-weight: bold;
 }
 
-/* User Icon Fix */
-/*
-.headerUserButtonRound {
-  border-radius: 50px !important;
-}
-  */
-
 /*  
 ============================================================================
-  Buttons: Menu & OSD
+  Buttons
 ============================================================================
 */
+
+/* .emby-button: (TODO)
+---------------------------------------------*/
+
+/* Most System Buttons: Colored Text and Border on Hover & Focus */
+/*
+.emby-button:not(.emby-tab-button):not(.detailButton):not(.skip-button) {
+  border-radius: var(--rounding-system);
+  border: solid 2px #0000;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+  */
+.emby-button:not(.emby-tab-button):not(.button-link):not(.skip-button):not(.detailButton):hover {
+  color: var(--fullaccent) !important;
+  border: solid 2px var(--accent40) !important;
+  background: #0000 !important;
+}
+.emby-button:not(.emby-tab-button):not(.button-link):not(.skip-button):not(.detailButton):focus {
+  color: var(--fullaccent) !important;
+  border: solid 2px var(--accent80) !important;
+  background: #0000 !important;
+}
+
+
+/* Buttons on Login Page (brauchts die?) */
+#loginPage .emby-button.block {
+  border-radius: var(--rounding-system);
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  background: #0000 !important;
+  margin: 0.5em 0;
+}
+#loginPage .emby-button.block:hover {
+  color: var(--fullaccent) !important;
+  border-color: var(--accent40) !important;
+  /* border: 2px solid var(--accent40) !important; */
+}
+#loginPage .emby-button.block:focus {
+  color: var(--fullaccent) !important;
+  border-color: var(--accent80) !important;
+  /* border: 2px solid var(--accent80) !important; */
+}
+
+
+/* .paper-icon-button-light
+---------------------------------------------*/
 
 /* Buttons: Menu & OSD */
 .paper-icon-button-light {
@@ -240,48 +278,31 @@
   padding: .4em !important;
 }
 
-/* Header Buttons: Don't zoom */
+
+
+
+/* .headerButton
+---------------------------------------------*/
+
+/* button.headerButton.headerButtonRight.headerSearchButton.paper-icon-button-light.show-focus */
+.headerButton {
+  border-radius: var(--rounding-media);
+}
+.headerButton:hover {
+  color: var(--fullaccent) !important;
+  background: var(--accent20) !important;
+}
 .headerButton:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
 
-/* OSD Buttons */
-.ltr > .paper-icon-button-light:focus {
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
-}
 
-/*  
-============================================================================
-  Buttons: System & Other
-============================================================================
-*/
+/* .emby-tab-button 
+---------------------------------------------*/
 
-/* Most System Buttons: Colored Text and Border on Hover & Focus */
-.emby-button:not(.emby-tab-button):not(.detailButton):not(.skip-button),
-.button-submit,
-.clearLink {
-  border-radius: var(--rounding-system);
-  border: solid 2px #0000;
-  background: #0000 !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-.emby-button:not(.emby-tab-button):not(.button-link):not(.skip-button):not(.detailButton):hover, 
-.button-submit:hover {
-  color: var(--fullaccent) !important;
-  border: solid 2px var(--accent40) !important;
-  background: #0000 !important;
-}
-.emby-button:not(.emby-tab-button):not(.button-link):not(.skip-button):not(.detailButton):focus,
-.button-submit:focus {
-  color: var(--fullaccent) !important;
-  border: solid 2px var(--accent80) !important;
-  background: #0000 !important;
-}
-
-/* Tab Buttons */
+/* HeaderTab Buttons */
+/* button.emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused */
 .emby-tab-button {
   padding: 1em 1.25em !important;
 }
@@ -297,7 +318,36 @@
   color: #fff;
 }
 
-/* Link-Buttons (Links acting as buttons) */
+
+
+
+/* .button-submit
+-------------------*/
+/* button.raised.button-submit.block.btnSave.emby-button.show-focus */
+.button-submit {
+  border-radius: var(--rounding-system);
+  border: solid 2px #0000;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+.button-submit:hover {
+  color: var(--fullaccent) !important;
+  border: solid 2px var(--accent40) !important;
+  background: #0000 !important;
+}
+.button-submit:focus {
+  color: var(--fullaccent) !important;
+  border: solid 2px var(--accent80) !important;
+  background: #0000 !important;
+}
+
+
+/* .button-link 
+-------------------*/
+
+/* Links acting as buttons */
+/* a.button-link.emby-button.show-focus */
 .button-link {
   color: inherit !important;
   -webkit-transform: none !important;
@@ -308,6 +358,9 @@
   color: var(--accent80) !important;
   background: #0000 !important;
 }
+
+/* .skip-button 
+-------------------*/
 
 /* Skip-Button */
 /* button.skip-button.emby-button.show-focus.no-transition */
@@ -327,7 +380,11 @@
 }
 
 
+/* detailButton 
+-------------------*/
+
 /* Media Buttons */ 
+/* button.button-flat.btnPlay.detailButton.emby-button.show-focus */
 .detailButton {
   font-size: 120% !important;
   border-radius: var(--rounding-media) !important;
@@ -350,6 +407,39 @@
   border-radius: var(--rounding-media) !important;  
 }
 
+/* More Button Flat (??) */
+.button-flat:hover,
+.button-flat:focus,
+.cardOverlayButton:hover {
+  color: var(--fullaccent) !important;
+  background: #0000 !important;
+}
+
+
+
+
+/* OSD Buttons */
+/* button.btnPause.autoSize.paper-icon-button-light.show-focus */
+
+/* OSD Buttons */
+.ltr > .paper-icon-button-light:focus {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+
+
+
+/* .clearLink
+-------------------*/
+
+
+.clearLink {
+  border-radius: var(--rounding-system);
+  border: solid 2px #0000;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
 
 /* Submit & Special Buttons: Light Border */
 .button-submit,
@@ -368,6 +458,9 @@
   border: 2px solid #0000 !important;
 }
 
+
+/* .listItem
+-------------------*/
 /* Menulist Item-Buttons (like user settings) */
 .listItem-border {
   border: solid 2px #0000 !important;
@@ -375,6 +468,14 @@
 .listItem:hover {
   background: #0000 !important;
 }
+
+
+
+
+
+
+
+
 
 /* Buttons: Login, Save & Co. */
 /*
@@ -391,27 +492,11 @@
   */
 
 
-/* Login Buttons */
-#loginPage .emby-button.block {
-  margin: 0.5em 0;
-  border: 2px solid rgba(255, 255, 255, 0.2) !important;
-}
-#loginPage .emby-button.block:hover {
-  border: 2px solid var(--accent40) !important;
-}
-#loginPage .emby-button.block:focus {
-  border: 2px solid var(--accent80) !important;
-}
 
-/* More Button Animations */
-.button-flat:hover,
-.button-flat:focus,
-.cardOverlayButton:hover {
-  color: var(--fullaccent) !important;
-  background: #0000 !important;
-}
+
 
 /* Buttons: Home Library */
+/* 
 .homeLibraryButton {
   min-width: 12em;
   margin: 0.4em;
@@ -431,7 +516,7 @@
   color: var(--fullaccent) !important;
   background: rgba(255, 255, 255, 0.6) !important;
 }
-
+*/
 
 /*  
 ============================================================================
@@ -1247,12 +1332,6 @@ p.itemGenres {
   Player OSD: Controls
 ===========================================================================
 */
-
-/* OSD Buttons: Zoom */
-.ltr > .paper-icon-button-light:focus {
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
-}
 
 /* OSD Infos */
 .osdTitle {
