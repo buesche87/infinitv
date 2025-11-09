@@ -306,7 +306,14 @@
   padding: .4em !important;
 }
 
-
+/* OSD Buttons */
+/* button.btnPause.autoSize.paper-icon-button-light.show-focus */
+/* button.btnUserRating.autoSize.paper-icon-button-light.show-focus
+/* OSD Buttons */
+.ltr > .paper-icon-button-light:focus {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
 
 
 /* .headerButton
@@ -446,14 +453,7 @@
 
 
 
-/* OSD Buttons */
-/* button.btnPause.autoSize.paper-icon-button-light.show-focus */
 
-/* OSD Buttons */
-.ltr > .paper-icon-button-light:focus {
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
-}
 
 
 
@@ -778,9 +778,12 @@
 }
 
 /* Buttons */
+/* button.btnSort.autoSize.paper-icon-button-light.show-focus */
+/* button.btnFilter.autoSize.paper-icon-button-light.show-focus */
 .btnPreviousPage,
 .btnNextPage,
 .btnPlayAll,
+.btnFilter,
 .btnShuffle,
 .btnSelectView,
 .btnSort {
@@ -789,13 +792,6 @@
   -webkit-transform: none !important;
   transform: none !important;
 }
-
-/* Library-Buttons */
-/*
-.focuscontainer-x > .paper-icon-button-light:focus {
-  -webkit-transform: none !important;
-  transform: none !important;
-}*/
 
 /* Item Count Button: Alignment */
 .listPaging > span {
@@ -952,8 +948,8 @@
 
 /* Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Color on Focus (TV) */
