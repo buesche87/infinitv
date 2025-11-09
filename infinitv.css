@@ -259,7 +259,7 @@
 */
 
 /* Most System Buttons: Colored Text and Border on Hover & Focus */
-.emby-button:not(.emby-tab-button):not(.detailButton),
+.emby-button:not(.emby-tab-button):not(.detailButton):not(.skip-button),
 .button-submit,
 .clearLink {
   border-radius: var(--rounding-system);
@@ -310,18 +310,21 @@
 }
 
 /* Skip-Button */
+/* button.skip-button.emby-button.show-focus.no-transition */
 .skip-button {
+  border-radius: var(--rounding-system);
   color: #fff;
   background: #0000 !important;
   border: none !important;
+  margin-right: 10em;
+  margin-bottom: 5em;
 }
 .skip-button:focus,
 .skip-button:hover {
   color: var(--fullaccent) !important;
-  background: #0000 !important;
-  border:none !important
+  /* background: #0000 !important; */
+  /* border:none !important; */
 }
-
 
 
 /* Media Buttons */ 
