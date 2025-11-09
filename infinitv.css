@@ -226,6 +226,7 @@
   transform: none !important;
 }
   */
+  /*
 .emby-button:not(.emby-tab-button):not(.button-link):not(.skip-button):not(.detailButton):hover {
   color: var(--fullaccent) !important;
   border: solid 2px var(--accent40) !important;
@@ -236,7 +237,7 @@
   border: solid 2px var(--accent80) !important;
   background: #0000 !important;
 }
-
+*/
 
 /* Buttons on Login Page (brauchts die?) */
 #loginPage .emby-button.block {
