@@ -33,14 +33,17 @@
 */
 
 /* Background Image on Login Page */
-#loginPage,
-#userProfilePage {
+.backgroundContainer {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
     url("https://wallpapershome.com/images/pages/pic_h/12740.jpg") !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+}
+
+.parent:has(.child) {
+  background: red;
 }
 
 /* Darken Backdrop Background */
@@ -218,7 +221,6 @@
 /* Buttons: Menu & OSD */
 .paper-icon-button-light {
   border-radius: var(--rounding-media);
-  padding: .4em !important;
 }
 .paper-icon-button-light:hover {
   color: var(--fullaccent) !important;
@@ -230,11 +232,9 @@
 }
 
 /* Buttons: Not Header */
-/*
 .paper-icon-button-light:not(.headerButton) {
   padding: .4em !important;
 }
-  */
 
 /* Header Buttons: Don't zoom */
 .headerButton:focus {
@@ -592,11 +592,10 @@
 */
 
 /* Library Pages: Move up */
-div#indexPage {
-  padding-top: 4.5em !important;
-}
-div#moviesPage,
-div#tvRecommendedPage {
+#indexPage,
+#moviesPage,
+#tvRecommendedPage,
+#myPreferencesMenuPage {
   padding-top: 5em !important;
 }
 
