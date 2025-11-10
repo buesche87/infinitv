@@ -223,20 +223,23 @@
 
 /* Buttons on Login Page (brauchts die?) */
 /* #loginPage .emby-button.block */
-.emby-button.block {
+.emby-button.block,
+.upNextDialog-button {
   border-radius: var(--rounding-system);
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
   background: #0000 !important;
   margin: 0.5em 0;
 }
 /* #loginPage .emby-button.block:hover */
-.emby-button.block:hover {
+.emby-button.block:hover,
+.upNextDialog-button:hover {
   color: var(--fullaccent) !important;
   border-color: var(--accent40) !important;
   /* border: 2px solid var(--accent40) !important; */
 }
 /* #loginPage .emby-button.block:focus */
-.emby-button.block:focus {
+.emby-button.block:focus,
+.upNextDialog-button:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent80) !important;
   /* border: 2px solid var(--accent80) !important; */
