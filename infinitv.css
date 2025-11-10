@@ -290,6 +290,7 @@
 
 /* OSD Buttons */
 /* button.btnPause.autoSize.paper-icon-button-light.show-focus */
+.volumeButtons > .paper-icon-button-light:focus,
 .ltr > .paper-icon-button-light:focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
