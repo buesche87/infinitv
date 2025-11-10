@@ -348,6 +348,7 @@
 .listItem-border {
   border-radius: var(--rounding-system);
   border: solid 2px #0000;
+  border-color: #0000;
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
@@ -1479,7 +1480,7 @@ p.itemGenres {
   padding-left: 1.25em;
   padding-right: 1.25em;
   border-radius: var(--rounding-media) !important;
-  box-shadow: 0px 0px 10px 0px var(--fullaccent) !important;
+  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
 .upNextDialog-poster-img {
