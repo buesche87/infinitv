@@ -223,23 +223,20 @@
 
 /* Buttons on Login Page (brauchts die?) */
 /* #loginPage .emby-button.block */
-.emby-button.block,
-.upNextDialog-button {
+.emby-button.block {
   border-radius: var(--rounding-system);
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
   background: #0000 !important;
   margin: 0.5em 0;
 }
 /* #loginPage .emby-button.block:hover */
-.emby-button.block:hover,
-.upNextDialog-button:hover {
+.emby-button.block:hover {
   color: var(--fullaccent) !important;
   border-color: var(--accent40) !important;
   /* border: 2px solid var(--accent40) !important; */
 }
 /* #loginPage .emby-button.block:focus */
-.emby-button.block:focus,
-.upNextDialog-button:focus {
+.emby-button.block:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent80) !important;
   /* border: 2px solid var(--accent80) !important; */
@@ -299,6 +296,8 @@
 }
 
 
+
+
 /* .headerButton
 --------------------------------------------------------------------------*/
 
@@ -314,7 +313,6 @@
   background: var(--accent20) !important;
 }*/
 
-.upNextDialog-button:focus,
 .headerButton:focus {
   -webkit-transform: none !important;
   transform: none !important;
@@ -392,26 +390,42 @@
 /* button.button-flat.btnPlay.detailButton.emby-button.show-focus */
 .detailButton {
   font-size: 120% !important;
-  border-radius: var(--rounding-media) !important;
   margin-right: 1.5em !important;
+  border-radius: var(--rounding-media) !important;
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
 }
 .detailButton:hover {
   color: var(--fullaccent) !important;
   background: rgba(0, 0, 0, 0.2) !important;
-  border: solid 2px var(--accent40) !important;
-  transform: scale(1.2) !important;
-  border-radius: var(--rounding-media) !important;
+  border-color: var(--accent40) !important;
+  /* border: solid 2px var(--accent40) !important; */
+  /* transform: scale(1.2) !important; */
+  /* border-radius: var(--rounding-media) !important; */
 }
 .detailButton:focus {
   color: var(--fullaccent) !important;
-  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
-  border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.4) !important;
-  transform: scale(1.2) !important;
-  border-radius: var(--rounding-media) !important;  
+  border-color: var(--accent80) !important;
+  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
+  /* border: solid 2px var(--accent80) !important; */
+  /* transform: scale(1.2) !important; */
+  /* border-radius: var(--rounding-media) !important; */
 }
 
+
+
+/* UpNext Buttons */
+.upNextDialog-button {
+  -webkit-transform: none !important;
+  transform: none !important;
+  margin-left: .5em;
+}
+.upNextDialog-button:hover,
+.upNextDialog-button:focus {
+  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
+}
 
 /* .button-link 
 --------------------------------------------------------------------------*/
