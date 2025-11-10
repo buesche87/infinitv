@@ -348,7 +348,7 @@
 .listItem-border {
   border-radius: var(--rounding-system);
   border: solid 2px #0000;
-  border-color: #0000;
+  border-color: #0000 !important;
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
@@ -1636,10 +1636,11 @@ div[data-role="controlgroup"] a[data-role="button"] {
   border-radius: var(--rounding-media) !important;
 }
 
+/*
 .layout-mobile .listItemImageButton,
 .detailTableBodyRow-shaded {
   background: #0000 !important;
-}
+}*/
 
 /* 
 ===========================================================================
