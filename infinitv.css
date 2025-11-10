@@ -213,7 +213,7 @@
 ============================================================================
 */
 
-/* Login Page: .emby-button.block
+/* .emby-button.block
 --------------------------------------------------------------------------*/
 /* 
 > Login Page
@@ -267,33 +267,8 @@
 }
 */
 
-/* ListMenu Buttons: .listItem-border / .listItem-button
---------------------------------------------------------------------------*/
-
-/* a.emby-button.lnkUserProfile.listItem-border.show-focus */
-.listItem-button,
-.listItem-border {
-  border-radius: var(--rounding-system);
-  border: solid 2px #0000;
-  background: #0000 !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-.listItem-button:hover,
-.listItem-border:hover {
-  color: var(--fullaccent) !important;
-  border: solid 2px var(--accent40) !important;
-  background: #0000 !important;
-}
-.listItem-button:focus,
-.listItem-border:focus {
-  color: var(--fullaccent) !important;
-  border: solid 2px var(--accent80) !important;
-  background: #0000 !important;
-}
-
 /* .paper-icon-button-light
----------------------------------------------*/
+--------------------------------------------------------------------------*/
 
 /* Buttons: Menu & OSD */
 .paper-icon-button-light {
@@ -315,8 +290,6 @@
 
 /* OSD Buttons */
 /* button.btnPause.autoSize.paper-icon-button-light.show-focus */
-/* button.btnUserRating.autoSize.paper-icon-button-light.show-focus
-/* OSD Buttons */
 .ltr > .paper-icon-button-light:focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
@@ -324,7 +297,7 @@
 
 
 /* .headerButton
----------------------------------------------*/
+--------------------------------------------------------------------------*/
 
 /* button.headerButton.headerButtonRight.headerSearchButton.paper-icon-button-light.show-focus */
 /*
@@ -345,7 +318,7 @@
 
 
 /* .emby-tab-button 
----------------------------------------------*/
+--------------------------------------------------------------------------*/
 
 /* HeaderTab Buttons */
 /* button.emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused */
@@ -364,47 +337,50 @@
   color: #fff;
 }
 
+/* ListMenu Buttons: .listItem-border / .listItem-button
+--------------------------------------------------------------------------*/
 
-
-/* .button-link 
--------------------*/
-
-/* Links acting as buttons */
-/* a.button-link.emby-button.show-focus */
-.button-link {
-  color: inherit !important;
+/* a.emby-button.lnkUserProfile.listItem-border.show-focus */
+/* button.listItem.listItem-button.actionSheetMenuItem.listItem-focusscale.emby-button.show-focus */
+.listItem-button,
+.listItem-border {
+  border-radius: var(--rounding-system);
+  border: solid 2px #0000;
+  background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
 }
-.button-link:hover,
-.button-link:focus {
-  color: var(--accent80) !important;
-  background: #0000 !important;
-}
-
-/* .skip-button 
--------------------*/
-
-/* Skip-Button */
-/* button.skip-button.emby-button.show-focus.no-transition */
-.skip-button {
-  border-radius: var(--rounding-system);
-  color: #fff;
-  background: #0000 !important;
-  border: none !important;
-  margin-right: 10em;
-  margin-bottom: 5em;
-}
-.skip-button:focus,
-.skip-button:hover {
+.listItem-button:hover,
+.listItem-border:hover {
   color: var(--fullaccent) !important;
-  /* background: #0000 !important; */
-  /* border:none !important; */
+  border: solid 2px var(--accent40) !important;
+  background: #0000 !important;
+}
+.listItem-button:focus,
+.listItem-border:focus {
+  color: var(--fullaccent) !important;
+  border: solid 2px var(--accent80) !important;
+  background: #0000 !important;
 }
 
 
-/* detailButton 
+/* .listItem
 -------------------*/
+
+
+/* Menulist Item-Buttons (like user settings) */
+/*
+.listItem-border {
+  border: solid 2px #0000 !important;
+}
+.listItem:hover {
+  background: #0000 !important;
+}
+*/
+
+
+/* .detailButton 
+--------------------------------------------------------------------------*/
 
 /* Media Buttons */ 
 /* button.button-flat.btnPlay.detailButton.emby-button.show-focus */
@@ -430,21 +406,48 @@
   border-radius: var(--rounding-media) !important;  
 }
 
+
+/* .button-link 
+--------------------------------------------------------------------------*/
+
+/* Links acting as buttons */
+/* a.button-link.emby-button.show-focus */
+.button-link {
+  color: inherit !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+.button-link:hover,
+.button-link:focus {
+  color: var(--accent80) !important;
+  background: #0000 !important;
+}
+
+/* .skip-button 
+--------------------------------------------------------------------------*/
+
+/* Skip-Button */
+/* button.skip-button.emby-button.show-focus.no-transition */
+.skip-button {
+  border-radius: var(--rounding-system);
+  color: #fff;
+  background: #0000 !important;
+  border: none !important;
+  margin-right: 10em;
+  margin-bottom: 5em;
+}
+.skip-button:focus,
+.skip-button:hover {
+  color: var(--fullaccent) !important;
+  /* background: #0000 !important; */
+  /* border:none !important; */
+}
+
+
 /* More Button Flat (??) */
 /*
 .button-flat:hover,
 .button-flat:focus,*/
-
-.cardOverlayButton:hover {
-  color: var(--fullaccent) !important;
-  background: #0000 !important;
-}
-
-
-
-
-
-
 
 
 /* .clearLink
@@ -475,21 +478,6 @@
   padding: .2em 1em !important;
   border: 2px solid #0000 !important;
 }
-
-
-/* .listItem
--------------------*/
-/* Menulist Item-Buttons (like user settings) */
-.listItem-border {
-  border: solid 2px #0000 !important;
-}
-.listItem:hover {
-  background: #0000 !important;
-}
-
-
-
-
 
 
 
@@ -934,6 +922,11 @@
 .ContinueWatching .overflowBackdropCard[data-type="Movie"] .cardText-secondary,
 .NextUp .overflowBackdropCard[data-type="Movie"] .cardText-secondary {
   display: none;
+}
+
+.cardOverlayButton:hover {
+  color: var(--fullaccent) !important;
+  background: #0000 !important;
 }
 
 /* 
