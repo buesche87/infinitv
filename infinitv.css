@@ -372,6 +372,9 @@
 /* .listItem
 -------------------*/
 
+.listItem:hover {
+  background: #0000 !important;
+}
 
 /* Menulist Item-Buttons (like user settings) */
 /*
@@ -1292,7 +1295,6 @@ p.itemGenres {
   margin-bottom: 1em;
   padding: .25em .25em .25em .25em;
 }
-
 .itemsContainer > .listItem:hover {
   border: solid 2px var(--accent40) !important;
   background: rgba(0, 0, 0, 0.7) !important;
@@ -1303,6 +1305,7 @@ p.itemGenres {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
+/* Episode Image */
 .listItemImage {
   border-radius: var(--rounding-media);
 }
