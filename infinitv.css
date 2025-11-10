@@ -287,6 +287,8 @@
 }
 
 
+
+
 /* .paper-icon-button-light
 ---------------------------------------------*/
 
@@ -439,14 +441,16 @@
   color: var(--fullaccent) !important;
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
   border: solid 2px var(--accent80) !important;
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   transform: scale(1.2) !important;
   border-radius: var(--rounding-media) !important;  
 }
 
 /* More Button Flat (??) */
+/*
 .button-flat:hover,
-.button-flat:focus,
+.button-flat:focus,*/
+
 .cardOverlayButton:hover {
   color: var(--fullaccent) !important;
   background: #0000 !important;
@@ -569,7 +573,7 @@
 .checkboxOutline:not(:disabled):hover {
   color: var(--accent80) !important;
   border: 2px solid var(--accent40);
-  background: rgba(0, 0, 0, 0.6) !important;
+  /* background: rgba(0, 0, 0, 0.6) !important; */
 }
 .emby-input:focus,
 .emby-textarea:focus,
@@ -577,7 +581,7 @@
 .checkboxOutline:focus {
   color: var(--accent80) !important;
   border: 2px solid var(--accent80) !important;
-  background: rgba(0, 0, 0, 0.6) !important; 
+  /* background: rgba(0, 0, 0, 0.6) !important; */
 }
 
 /* Input: Fix Text alignment*/
@@ -605,6 +609,12 @@
 }
 .selectArrow {
   margin-top: .1em !important;
+}
+
+/* Don't raise */
+.emby-select-focusscale:focus {
+  -webkit-transform: none !important;
+  transform: none !important;
 }
 
 /* Select: Label alignment */
@@ -1522,10 +1532,11 @@ h2.username {
 .readOnlyContent .listItem-border .listItem,
 .actionSheetScroller .listItem {
   padding-left: 1em;
-  border-radius: var(--rounding-system) !important;
+  /* border-radius: var(--rounding-system) !important; */
   margin-top: 0.2em !important;
-  border: solid 2px #0000 !important;
+  /* border: solid 2px #0000 !important; */
 }
+
 
 /* Menu Items: Additional content */
 .listItemButton,
@@ -1569,11 +1580,7 @@ div[data-role="controlgroup"] a[data-role="button"] {
   margin: 0 !important;
 }
 
-/* Don't raise */
-.emby-select-focusscale:focus {
-  -webkit-transform: none !important;
-  transform: none !important;
-}
+
 
 /*  
 ============================================================================
