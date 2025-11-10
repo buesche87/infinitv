@@ -353,14 +353,16 @@
 .listItem-button:hover,
 .listItem-border:hover {
   color: var(--fullaccent) !important;
-  border: solid 2px var(--accent40) !important;
-  background: #0000 !important;
+  border-color: var(--accent40) !important;
+  /* border: solid 2px var(--accent40) !important; */
+  /* background: #0000 !important; */
 }
 .listItem-button:focus,
 .listItem-border:focus {
   color: var(--fullaccent) !important;
-  border: solid 2px var(--accent80) !important;
-  background: #0000 !important;
+  border-color: var(--accent80) !important;
+  /* border: solid 2px var(--accent80) !important; */
+  /* background: #0000 !important; */
 }
 
 
