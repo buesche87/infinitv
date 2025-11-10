@@ -400,6 +400,7 @@
 /* UpNext Buttons */
 .upNextDialog-button {
   margin-left: .5em;
+  background: #0000;
   border-radius: var(--rounding-system) !important;
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
   -webkit-transform: none !important;
