@@ -397,8 +397,6 @@
   margin-right: 1.5em !important;
   border-radius: var(--rounding-media) !important;
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
 }
 
 /* UpNext Buttons */
@@ -429,6 +427,11 @@
   /* border: solid 2px var(--accent80) !important; */
   /* transform: scale(1.2) !important; */
   /* border-radius: var(--rounding-media) !important; */
+}
+
+.detailButton:focus {
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
 }
 
 
