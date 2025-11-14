@@ -856,13 +856,13 @@
 /* Title */
 .cardText-first {
   padding-top: .6em !important;
-  text-shadow: 0 0 2px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 /* Secondary Text */
 .cardText-secondary {
   font-size: 75% !important;
-  text-shadow: 0 0 2px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 /* Recent & NextUp: Hide Series Title */
