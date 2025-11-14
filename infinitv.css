@@ -196,7 +196,7 @@
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
-  /* font-size: 105% !important; */
+  font-size: 110% !important;
   margin-top: -3.3em !important;
   width: 40vw;
   scrollbar-width: none;
@@ -215,7 +215,7 @@
   font-weight: bold;
 }
 .currentTimeText {
-  /* font-size: 105% !important; */
+  font-size: 110% !important;
   font-weight: bold;
 }
 
@@ -317,16 +317,22 @@
 .emby-tab-button {
   padding: 1em 1.25em !important;
 }
-.emby-tab-button:hover,
-.emby-tab-button:focus {
+.emby-tab-button:hover {
   color: var(--fullaccent) !important;
 }
 .emby-tab-button:focus {
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
+  color: var(--fullaccent) !important;
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
 }
 .emby-tab-button-active {
   color: #fff;
+}
+
+.emby-tab-button.show-focus:focus {
+    background: 0!important;
+    -webkit-transform: scale(1.1)!important;
+    transform: scale(1.1)!important;
 }
 
 /* ListMenu Buttons: .listItem-border / .listItem-button
