@@ -196,7 +196,7 @@
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
-  font-size: 105% !important;
+  /* font-size: 105% !important; */
   margin-top: -3.3em !important;
   width: 40vw;
   scrollbar-width: none;
@@ -215,7 +215,7 @@
   font-weight: bold;
 }
 .currentTimeText {
-  font-size: 105% !important;
+  /* font-size: 105% !important; */
   font-weight: bold;
 }
 
