@@ -346,22 +346,23 @@
 }
 .listItem-button:hover,
 .listItem-border:hover {
-  /* color: var(--fullaccent) !important; */
   border-color: var(--accent40) !important;
-  /* border: solid 2px var(--accent40) !important; */
   background: #0000 !important;
+  color: var(--accent40) !important;
 }
 .listItem-button:focus {
   border-color: var(--accent60) !important;
-  /* border: solid 2px var(--accent80) !important; */
   background: #0000 !important;
 }
 
+
+.listItem-button .listItemIcon {
+  color: var(--accent80) !important;
+}
 
 .listItem-border:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent80) !important;
-  /* border: solid 2px var(--accent80) !important; */
   background: #0000 !important;
 }
 
@@ -937,13 +938,17 @@
 
 /* Count & Played */
 .playedIndicator {
-  color: rgb(0, 0, 0);
-  background: var(--fullaccent) !important;
+  color: var(--fullaccent) !important;
+  /* color: rgb(0, 0, 0); */
+  /* background: var(--fullaccent) !important; */
+  background: rgba(0, 0, 0, 1);
   border-radius: var(--rounding-system) !important;
 }
 .countIndicator,
 .mediaSourceIndicator {
-  color: rgb(255, 255, 255);
+  color: rgb(0 0 0);
+  font-weight: 600;
+  font-size: 89%;
   background: var(--fullaccent) !important;
   border-radius: var(--rounding-system) !important;
 }
