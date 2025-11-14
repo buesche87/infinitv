@@ -47,6 +47,16 @@
   background-attachment: fixed !important;
 }
 
+.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages #indexPage) {
+  background: 
+    linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
+    var(--bgImage) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
 /*
 .parent:has(.child) {
   background: red;
@@ -332,6 +342,7 @@
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
+  margin-bottom: .2em !important;
 }
 .listItem-button:hover,
 .listItem-border:hover {
