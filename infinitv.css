@@ -47,7 +47,7 @@
   background-attachment: fixed !important;
 }
 
-.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage) {
+.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
     var(--bgImage) !important;
