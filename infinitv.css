@@ -47,6 +47,7 @@
   background-attachment: fixed !important;
 }
 
+.backgroundContainer:not(.withbackdrop),
 .backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -98,6 +99,7 @@
 .formDialogHeader,
 .formDialogFooter {
   border-radius: var(--rounding-system) !important;
+  background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
 
 /* Toasts: Background & Glow*/
@@ -196,8 +198,8 @@
 /* Move Section Tabs into Header */
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
-  font-size: 105% !important;
-  margin-top: -3.3em !important;
+  font-size: 110% !important;
+  margin-top: -3.2em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
@@ -215,7 +217,7 @@
   font-weight: bold;
 }
 .currentTimeText {
-  font-size: 105% !important;
+  font-size: 110% !important;
   font-weight: bold;
 }
 
@@ -317,16 +319,22 @@
 .emby-tab-button {
   padding: 1em 1.25em !important;
 }
-.emby-tab-button:hover,
-.emby-tab-button:focus {
+.emby-tab-button:hover {
   color: var(--fullaccent) !important;
 }
 .emby-tab-button:focus {
-  -webkit-transform: scale(1.2) !important;
-  transform: scale(1.2) !important;
+  color: var(--fullaccent) !important;
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
 }
 .emby-tab-button-active {
   color: #fff;
+}
+
+.emby-tab-button.show-focus:focus {
+    background: 0!important;
+    -webkit-transform: scale(1.1)!important;
+    transform: scale(1.1)!important;
 }
 
 /* ListMenu Buttons: .listItem-border / .listItem-button
@@ -346,26 +354,22 @@
 }
 .listItem-button:hover,
 .listItem-border:hover {
+  color: var(--accent80) !important;
   border-color: var(--accent40) !important;
   background: #0000 !important;
-  color: var(--accent40) !important;
 }
 .listItem-button:focus {
+  color: var(--fullaccent) !important;
+  background: #0000 !important;
+}
+.listItem-border:focus {
+  color: var(--fullaccent) !important;
   border-color: var(--accent60) !important;
   background: #0000 !important;
 }
-
-
-.listItem-button .listItemIcon {
-  color: var(--accent80) !important;
-}
-
-.listItem-border:focus {
+.actionSheetContent .listItemIcon.check {
   color: var(--fullaccent) !important;
-  border-color: var(--accent80) !important;
-  background: #0000 !important;
 }
-
 
 
 /* .listItem
@@ -850,11 +854,13 @@
 /* Title */
 .cardText-first {
   padding-top: .6em !important;
+  text-shadow: 2px 2px 4px black;
 }
 
 /* Secondary Text */
 .cardText-secondary {
   font-size: 75% !important;
+  text-shadow: 2px 2px 4px black;
 }
 
 /* Recent & NextUp: Hide Series Title */
@@ -939,18 +945,18 @@
 /* Count & Played */
 .playedIndicator {
   color: var(--fullaccent) !important;
-  /* color: rgb(0, 0, 0); */
-  /* background: var(--fullaccent) !important; */
   background: rgba(0, 0, 0, 1);
   border-radius: var(--rounding-system) !important;
+  border: none;
 }
 .countIndicator,
 .mediaSourceIndicator {
-  color: rgb(0 0 0);
   font-weight: 600;
   font-size: 89%;
+  color: rgba(0, 0, 0, 1);
   background: var(--fullaccent) !important;
   border-radius: var(--rounding-system) !important;
+  border: none;
 }
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
