@@ -218,6 +218,7 @@
 }
 .currentTimeText {
   font-size: 110% !important;
+  font-size: 110% !important;
   font-weight: bold;
 }
 
@@ -320,15 +321,25 @@
   padding: 1em 1.25em !important;
 }
 .emby-tab-button:hover {
+.emby-tab-button:hover {
   color: var(--fullaccent) !important;
 }
 .emby-tab-button:focus {
   color: var(--fullaccent) !important;
   -webkit-transform: scale(1.1) !important;
   transform: scale(1.1) !important;
+  color: var(--fullaccent) !important;
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
 }
 .emby-tab-button-active {
   color: #fff;
+}
+
+.emby-tab-button.show-focus:focus {
+    background: 0!important;
+    -webkit-transform: scale(1.1)!important;
+    transform: scale(1.1)!important;
 }
 
 .emby-tab-button.show-focus:focus {
@@ -855,11 +866,13 @@
 .cardText-first {
   padding-top: .6em !important;
   text-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 /* Secondary Text */
 .cardText-secondary {
   font-size: 75% !important;
+  text-shadow: 2px 2px 4px black;
   text-shadow: 2px 2px 4px black;
 }
 
