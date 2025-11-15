@@ -352,7 +352,11 @@
   transform: none !important;
   margin-bottom: .2em !important;
 }
-.listItem-button:hover,
+.listItem-button:hover {
+  color: var(--fullaccent) !important;
+  border-color: var(--accent40) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
 .listItem-border:hover {
   color: var(--fullaccent) !important;
   border-color: var(--accent20) !important;
