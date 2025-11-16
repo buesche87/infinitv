@@ -195,7 +195,7 @@
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
   font-size: 110% !important;
-  margin-top: -2.8em !important;
+  margin-top: -2.7em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
@@ -356,7 +356,7 @@
 
 /* Settings Menu Items */
 .listItem-border:hover {
-  color: var(--fullaccent) !important;
+  color: var(--accent80) !important;
   border-color: var(--accent20) !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
@@ -368,7 +368,7 @@
 
 /* Action Menu Items */
 .listItem-button:hover {
-  color: var(--fullaccent) !important;
+  color: var(--accent80) !important;
   border-color: var(--accent40) !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
@@ -387,13 +387,17 @@
 /* .emby-collapsible-button 
 --------------------------------------------------------------------------*/
 
+.collapseContent {
+  background: #0000 !important;
+}
+
 .emby-collapsible-button {
   -webkit-transform: none !important;
   transform: none !important;
   margin-bottom: .2em !important;
 }
 .emby-collapsible-button:hover {
-  color: var(--fullaccent) !important;
+  color: var(--accent80) !important;
   border-color: var(--accent20) !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
@@ -598,9 +602,22 @@
   border: 2px solid var(--accent80) !important;
 }
 .emby-checkbox:checked + span + .checkboxOutline {
-  border: 2px solid var(--accent80) !important;
+  border: 2px solid var(--accent20) !important;
   background: var(--accent80) !important;
 }
+
+/* Radio Buttons */
+.mdl-radio.show-focus .mdl-radio__button:hover+.mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio.show-focus .mdl-radio__button:hover+.mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio.show-focus .mdl-radio__button:focus+.mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio.show-focus .mdl-radio__button:focus+.mdl-radio__circles .mdl-radio__outer-circle {
+  color: var(--accent80) !important;
+}
+
+.mdl-radio__focus-circle {
+  background: var(--fullaccent) !important;
+}
+
 
 /* Labels: Animation */
 .inputLabel:hover,
@@ -774,6 +791,11 @@
 .filterIndicator {
   background: var(--fullaccent) !important;
   color: black;
+}
+
+/* Sorting Menu */
+.radio-label-block {
+  margin-top: .6em !important;
 }
 
 /* 
