@@ -231,6 +231,8 @@
   border-radius: var(--rounding-system);
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
   background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
 }
 .emby-button.block:hover,
 .button-submit:hover {
@@ -360,6 +362,11 @@
   background: #0000 !important;
 }
 
+/* No Background on Hover */
+.listItem:hover {
+  background: #0000 !important;
+}
+
 /* List Items Checked: Icon Color */
 .actionSheetContent .listItemIcon.check {
   color: var(--fullaccent) !important;
@@ -454,9 +461,10 @@
   color: var(--fullaccent) !important;
 }
 
-/* .clearLink
+/* .clearLink: Link-Buttons with Buttons inside (but why...?)
 --------------------------------------------------------------------------*/
 
+/* Clearlink Container */
 .clearLink {
   border-radius: var(--rounding-system);
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
@@ -466,7 +474,7 @@
   transform: none !important;
 }
 
-/* Link-Buttons with Buttons inside (why...?) */
+/* Button inside */
 .clearLink > .emby-button,
 .clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus {
@@ -476,11 +484,11 @@
 
 /*  
 ============================================================================
-  Fields & Inputs
+  Inputs and Labels
 ============================================================================
 */
 
-/* Fields & Input */
+/* Inputs */
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
@@ -489,34 +497,53 @@
   border-radius: var(--rounding-system) !important;
   background: rgba(0, 0, 0, 0.4);
 }
-.emby-input:not(:disabled):hover,
-.emby-textarea:not(:disabled):hover,
-.emby-select-withcolor:not(:disabled):hover,
-.checkboxOutline:not(:disabled):hover {
-  color: var(--accent80) !important;
-  border: 2px solid var(--accent40);
-  /* background: rgba(0, 0, 0, 0.6) !important; */
-}
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus,
-.checkboxOutline:focus {
-  color: var(--accent80) !important;
-  border: 2px solid var(--accent80) !important;
-  /* background: rgba(0, 0, 0, 0.6) !important; */
-}
 
-/* Input: Fix Text alignment*/
+/* Inputs: Text */
 .emby-input {
   padding: .5em .6em;
 }
 
-/* Textarea: Verticaly Resizable */
+/* Inputs: Textarea */
 .emby-textarea {
   resize: vertical !important;
   font-family: monospace;
   font-size: 10pt;
   padding: .5em .6em;
+}
+
+/* Inputs: Hover */
+.emby-input:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.checkboxOutline:not(:disabled):hover {
+  border: 2px solid var(--accent40);
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Inputs: Focus */
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.checkboxOutline:focus {
+  border: 2px solid var(--accent80) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Labels: Hover */
+.emby-checkbox:hover + .checkboxLabel {
+  color: var(--accent80) !important;
+}
+
+.emby-textarea:hover + .textareaLabel {
+  color: var(--accent80) !important;
+}
+
+/* Labels: Focus */
+.inputLabelFocused,
+.textareaLabelFocused,
+.selectLabelFocused,
+.emby-checkbox:focus + .checkboxLabel {
+  color: var(--fullaccent) !important;
 }
 
 /* Select */
@@ -578,19 +605,13 @@
   background: var(--fullaccent) !important;
 }
 
-/* Labels: Animation */
-.emby-checkbox:hover + .checkboxLabel,
-.emby-select:hover + .selectLabel {
-  color: var(--accent80) !important;
-}
 
-.inputLabelFocused,
-.textareaLabelFocused,
-.selectLabelFocused,
-.emby-checkbox:focus + .checkboxLabel,
+/* Cards: Multiselect */
 .Mui-selected {
   color: var(--accent80) !important;
 }
+
+
 
 /* Misc */
 .selectionCommandsPanel {
@@ -831,6 +852,11 @@
   Cards: Shadows
 ===========================================================================
 */
+
+/* Workaround until QT6 */
+#indexPage .cardImageContainer {
+  box-shadow: var(--cardshadow) !important;
+}
 
 /* Box Shadow card with footer */
 .libraryPage .cardBox:has(.cardFooter) {
