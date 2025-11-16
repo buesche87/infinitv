@@ -11,6 +11,8 @@
   --accent: 255,153,0; /* will deprecate in future updates */
 
   /* Background Image */
+  /* > There are limitations when using jellyfin media player */
+  /* > the chromium version shipped with qt-webengine5 is too old for some rules*/
   --bgImage: url("https://wallpapershome.com/images/pages/pic_h/12740.jpg");
 
   /* Darkness & Opacity */
