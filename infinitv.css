@@ -204,7 +204,7 @@
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
   font-size: 110% !important;
-  margin-top: -2.8em !important;
+  margin-top: -3em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
