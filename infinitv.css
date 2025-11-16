@@ -178,7 +178,7 @@
   position: fixed !important;
 }
 
-/* Size */
+/* Size & Alignment */
 .skinHeader {
   padding: .3em !important;
   height: 3.3em;
@@ -186,7 +186,6 @@
 .headerTop {
   padding: .3em !important;
 }
-
 .skinHeader-withBackground {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
@@ -246,38 +245,16 @@
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
+/* Spacing for buttons */
 .emby-button.block {
   margin: 0.5em 0;
 }
 
-/* .button-submit
+
+/* .paper-icon-button-light: Menu & OSD 
 --------------------------------------------------------------------------*/
 
-/* button.raised.button-submit.block.btnSave.emby-button.show-focus */
-/*
-.button-submit {
-  border-radius: var(--rounding-system);
-  border: 2px solid rgba(255, 255, 255, 0.2) !important;
-  background: #0000 !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-.button-submit:hover {
-  color: var(--fullaccent) !important;
-  border: solid 2px var(--accent40) !important;
-  background: #0000 !important;
-}
-.button-submit:focus {
-  color: var(--fullaccent) !important;
-  border: solid 2px var(--accent80) !important;
-  background: #0000 !important;
-}
-  */
-
-/* .paper-icon-button-light
---------------------------------------------------------------------------*/
-
-/* Buttons: Menu & OSD */
+/* Paper Icon Buttons */
 .paper-icon-button-light {
   border-radius: var(--rounding-media);
 }
@@ -290,28 +267,26 @@
   color: var(--fullaccent) !important;
 }
 
-/* Buttons: Not Header */
+/* Paper Icon Buttons: Not Header */
 .paper-icon-button-light:not(.headerButton) {
   padding: .4em !important;
 }
 
-/* OSD Buttons */
-/* button.btnPause.autoSize.paper-icon-button-light.show-focus */
+/* Paper Icon Buttons: OSD */
 .volumeButtons > .paper-icon-button-light:focus,
 .ltr > .paper-icon-button-light:focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
 }
 
+/* Paper Icon Buttons: OSD Volume */
 .volumeButtons > .paper-icon-button-light:focus,
 .osdControls > .focuscontainer-x > .paper-icon-button-light:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
 
-/* .headerButton
---------------------------------------------------------------------------*/
-
+/* Header Buttons: No Zoom */
 .headerButton:focus {
   -webkit-transform: none !important;
   transform: none !important;
@@ -320,8 +295,7 @@
 /* .emby-tab-button 
 --------------------------------------------------------------------------*/
 
-/* HeaderTab Buttons */
-/* button.emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused */
+/* Header Tab Buttons */
 .emby-tab-button {
   padding: .6em 1.25em .8em 1.25em !important;
 }
@@ -330,29 +304,21 @@
 }
 .emby-tab-button:focus {
   color: var(--fullaccent) !important;
-  -webkit-transform: scale(1.1) !important;
-  transform: scale(1.1) !important;
 }
 .emby-tab-button-active {
   color: #fff;
 }
 
+/* Header Tab Buttons: Zoom */
 .emby-tab-button.show-focus:focus {
-    background: 0 !important;
-    -webkit-transform: scale(1.1)!important;
-    transform: scale(1.1)!important;
+  -webkit-transform: scale(1.1)!important;
+  transform: scale(1.1)!important;
 }
 
 /* ListMenu Buttons: .listItem-border / .listItem-button
 --------------------------------------------------------------------------*/
 
-/* a.emby-button.lnkUserProfile.listItem-border.show-focus */
-/* button.listItem.listItem-button.actionSheetMenuItem.listItem-focusscale.emby-button.show-focus */
-
-.listItem:hover {
-  background: #0000 !important;
-}
-
+/* List Items */
 .listItem-button,
 .listItem-border {
   border-radius: var(--rounding-system);
@@ -364,66 +330,51 @@
   margin-bottom: .2em !important;
 }
 
-/* Settings Menu Items */
-.listItem-border:hover {
-  color: var(--accent80) !important;
-  border-color: var(--accent20) !important;
-  background: rgba(0, 0, 0, 0.2) !important;
-}
-.listItem-border:focus {
-  color: var(--fullaccent) !important;
-  border-color: var(--accent60) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
-}
-
-/* Action Menu Items */
-.listItem-button:hover {
-  color: var(--accent80) !important;
-  border-color: var(--accent40) !important;
-  background: rgba(0, 0, 0, 0.2) !important;
-}
-.listItem-button:focus {
-  color: var(--fullaccent) !important;
-  background: #0000 !important;
-}
-
-/* Checked List Item Icon Color */
-.actionSheetContent .listItemIcon.check {
-  color: var(--fullaccent) !important;
-}
-
-
-
-/* .emby-collapsible-button 
---------------------------------------------------------------------------*/
-
-.collapseContent {
-  background: #0000 !important;
-}
-
+/* Collapsible Menu Buttons */
 .emby-collapsible-button {
   -webkit-transform: none !important;
   transform: none !important;
   margin-bottom: .2em !important;
 }
+
+/* List Items: Hover */
+.listItem-button:hover,
+.listItem-border:hover,
 .emby-collapsible-button:hover {
   color: var(--accent80) !important;
   border-color: var(--accent20) !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
+
+/* List Items Focus: Settings Menu */
+.listItem-border:focus,
 .emby-collapsible-button:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent60) !important;
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
+/* List Items Focus: Action Menu */
+.listItem-button:focus {
+  color: var(--fullaccent) !important;
+  background: #0000 !important;
+}
+
+/* List Items Checked: Icon Color */
+.actionSheetContent .listItemIcon.check {
+  color: var(--fullaccent) !important;
+}
+
+/* Collapsible Menu */
+.collapseContent {
+  background: #0000 !important;
+}
 
 
 /* .detailButton 
 --------------------------------------------------------------------------*/
 
-/* Media Buttons */ 
-/* button.button-flat.btnPlay.detailButton.emby-button.show-focus */
+/* Detail Buttons */ 
 .detailButton {
   font-size: 120% !important;
   margin-right: 1.5em !important;
