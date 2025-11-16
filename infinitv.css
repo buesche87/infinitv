@@ -865,9 +865,14 @@
 
 /* Title */
 .cardText-first {
-  padding-top: .6em !important;
+  /* padding-top: .6em !important; */
   text-shadow: 2px 2px 4px black;
 }
+
+.backdropCard:not(:has(.cardFooter)) .cardText-first {
+  padding-top: .6em !important;
+}
+
 
 /* Secondary Text */
 .cardText-secondary {
