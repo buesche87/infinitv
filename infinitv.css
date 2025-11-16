@@ -613,30 +613,20 @@
 .mdl-radio.show-focus .mdl-radio__button:focus+.mdl-radio__circles .mdl-radio__outer-circle {
   color: var(--accent80) !important;
 }
-
 .mdl-radio__focus-circle {
   background: var(--fullaccent) !important;
 }
 
-
 /* Labels: Animation */
-.inputLabel:hover,
-.textareaLabel:hover,
 .emby-checkbox:hover + .checkboxLabel,
 .emby-select:hover + .selectLabel {
-  color: var(--accent40) !important;
-}
-.inputLabel:focus,
-.textareaLabel:focus,
-.emby-checkbox:focus + .checkboxLabel,
-.selectLabel:focus {
   color: var(--accent80) !important;
 }
 
-/* Labels: Focused-Class */
 .inputLabelFocused,
 .textareaLabelFocused,
 .selectLabelFocused,
+.emby-checkbox:focus + .checkboxLabel,
 .Mui-selected {
   color: var(--accent80) !important;
 }
@@ -1348,11 +1338,6 @@ p.itemGenres {
   width: 6em;
 }
 
-/* Subtitle preview */
-.subtitleappearance-preview {
-  background: linear-gradient(140deg,var(--fullaccent),#111) !important;
-}
-
 /* 
 ===========================================================================
   Player OSD: Controls
@@ -1542,6 +1527,12 @@ h2.username {
 div[data-role="controlgroup"] a.ui-btn-active {
   background: rgba(0, 0, 0, 0.4) !important;
   color: white !important;
+}
+
+/* Subtitle preview */
+.subtitleappearance-preview {
+  background: linear-gradient(140deg,var(--fullaccent),#111) !important;
+  border-radius: var(--rounding-system) !important;
 }
 
 /* 
