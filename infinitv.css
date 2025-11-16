@@ -226,26 +226,35 @@
 /* .emby-button.block (Save-Buttons etc.)
 --------------------------------------------------------------------------*/
 
-/* Buttons on Login Page */
-.emby-button.block {
+/* Submit & Save Buttons */
+.emby-button.block,
+.button-submit {
   border-radius: var(--rounding-system);
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
   background: #0000 !important;
-  margin: 0.5em 0;
 }
-.emby-button.block:hover {
+.emby-button.block:hover,
+.button-submit:hover {
   color: var(--fullaccent) !important;
   border-color: var(--accent40) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
-.emby-button.block:focus {
+.emby-button.block:focus,
+.button-submit:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent80) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+.emby-button.block {
+  margin: 0.5em 0;
 }
 
 /* .button-submit
 --------------------------------------------------------------------------*/
 
 /* button.raised.button-submit.block.btnSave.emby-button.show-focus */
+/*
 .button-submit {
   border-radius: var(--rounding-system);
   border: 2px solid rgba(255, 255, 255, 0.2) !important;
@@ -263,6 +272,7 @@
   border: solid 2px var(--accent80) !important;
   background: #0000 !important;
 }
+  */
 
 /* .paper-icon-button-light
 --------------------------------------------------------------------------*/
@@ -685,8 +695,6 @@
   max-width: 22em;
 }
 
-
-
 /* 
 ===========================================================================
   Library Pages
@@ -1047,19 +1055,15 @@
 .defaultCardBackground1 {
   background: hsl(var(--accent-h), var(--accent-s), 17%);
 }
-
 .defaultCardBackground2 {
   background: hsl(var(--accent-h), var(--accent-s), 16%);
 }
-
 .defaultCardBackground3 {
   background: hsl(var(--accent-h), var(--accent-s), 15%);
 }
-
 .defaultCardBackground4 {
   background: hsl(var(--accent-h), var(--accent-s), 14%);
 }
-
 .defaultCardBackground5 {
   background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
@@ -1104,7 +1108,6 @@
 #childrenContent .card {
   padding-bottom: 1em;
 }
-
 
 /* 
 ===========================================================================
@@ -1155,27 +1158,6 @@
   margin-top: 0.25em;
   margin-bottom: 0.6em;
 }
-
-/* Slides Buttons */
-/*
-.detail-button,
-.play-button,
-.favorite-button {
-  border-radius: var(--rounding-media);
-  padding: .6em !important;
-  margin-right: .6em !important;
-  color: #ffffff !important;
-  background: rgba(0, 0, 0, 0.4) !important;
-}
-  */
-
-/* Slides Buttons */
-/*
-.play-button {
-  padding-left: 1em !important;
-  padding-right: 1em !important;
-}
-  */
 
 /* 
 ===========================================================================
@@ -1368,8 +1350,6 @@ p.itemGenres {
   padding-right: 0.5em !important;
 }
 
-
-
 /* 
 ===========================================================================
   Player OSD: Progressbar & Volume
@@ -1505,11 +1485,8 @@ h2.username {
 .readOnlyContent .listItem-border .listItem,
 .actionSheetScroller .listItem {
   padding-left: 1em;
-  /* border-radius: var(--rounding-system) !important; */
   margin-top: 0.2em !important;
-  /* border: solid 2px #0000 !important; */
 }
-
 
 /* Menu Items: Additional content */
 .listItemButton,
@@ -1558,8 +1535,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
   display: table-cell !important;
   margin: 0 !important;
 }
-
-
 
 /*  
 ============================================================================
@@ -1612,12 +1587,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
   border-radius: var(--rounding-media) !important;
 }
 
-/*
-.layout-mobile .listItemImageButton,
-.detailTableBodyRow-shaded {
-  background: #0000 !important;
-}*/
-
 /* 
 ===========================================================================
   Misc & Unknown (aka TODOs): Buttons
@@ -1630,7 +1599,6 @@ div[data-role="controlgroup"] a[data-role="button"] {
 	transition: all 0.2s !important;
   background: rgba(0, 0, 0, 0.4) !important;
 }
-
 
 /* 
 ===========================================================================
