@@ -984,7 +984,7 @@
 
 /* Background */
 .itemProgressBar {
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
   border-radius: var(--rounding-media) !important;
   height: .4em !important;
   margin: .5em .8em !important;
