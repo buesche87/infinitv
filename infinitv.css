@@ -24,6 +24,9 @@
   --accent40: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
   --accent20: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
 
+  /* Jellyfin Media Player Remote Debugging:
+     jellyfinmediaplayer --remote-debugging-port=9222
+  */
 }
 
 /* 
@@ -380,6 +383,28 @@
 }
 
 
+
+/* .emby-collapsible-button 
+--------------------------------------------------------------------------*/
+
+.emby-collapsible-button {
+  -webkit-transform: none !important;
+  transform: none !important;
+  margin-bottom: .2em !important;
+}
+.emby-collapsible-button:hover {
+  color: var(--fullaccent) !important;
+  border-color: var(--accent20) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.emby-collapsible-button:focus {
+  color: var(--fullaccent) !important;
+  border-color: var(--accent60) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+
+
 /* .detailButton 
 --------------------------------------------------------------------------*/
 
@@ -721,9 +746,7 @@
   padding: 0.5em;
 }
 
-/* Buttons */
-/* button.btnSort.autoSize.paper-icon-button-light.show-focus */
-/* button.btnFilter.autoSize.paper-icon-button-light.show-focus */
+/* Buttons (Sort / Filter) */ 
 .btnPreviousPage,
 .btnNextPage,
 .btnPlayAll,
