@@ -1102,7 +1102,7 @@
 
 /* Cover Placement (TV) */
 .layout-tv .detailImageContainer .card {
-  top: 2vh !important;
+  top: 1vh !important;
 }
 
 /* 
@@ -1125,7 +1125,7 @@
 
 /* Info Container */
 .infoWrapper {
-  padding-top: 0.5em;
+  /* padding-top: 0.5em; */
   padding-bottom: 0.15em;
 }
 
