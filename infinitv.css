@@ -336,17 +336,23 @@
   color: #fff;
 }
 
+/* 
 .emby-tab-button.show-focus:focus {
-    background: 0!important;
+    background: 0 !important;
     -webkit-transform: scale(1.1)!important;
     transform: scale(1.1)!important;
-}
+} */
 
 /* ListMenu Buttons: .listItem-border / .listItem-button
 --------------------------------------------------------------------------*/
 
 /* a.emby-button.lnkUserProfile.listItem-border.show-focus */
 /* button.listItem.listItem-button.actionSheetMenuItem.listItem-focusscale.emby-button.show-focus */
+
+.listItem:hover {
+  background: #0000 !important;
+}
+
 .listItem-button,
 .listItem-border {
   border-radius: var(--rounding-system);
@@ -358,6 +364,7 @@
   margin-bottom: .2em !important;
 }
 
+/* Settings Menu Items */
 .listItem-border:hover {
   color: var(--fullaccent) !important;
   border-color: var(--accent20) !important;
@@ -369,6 +376,7 @@
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
+/* Action Menu Items */
 .listItem-button:hover {
   color: var(--fullaccent) !important;
   border-color: var(--accent40) !important;
@@ -379,16 +387,9 @@
   background: #0000 !important;
 }
 
+/* Checked List Item Icon Color */
 .actionSheetContent .listItemIcon.check {
   color: var(--fullaccent) !important;
-}
-
-
-/* .listItem
--------------------*/
-
-.listItem:hover {
-  background: #0000 !important;
 }
 
 
@@ -428,25 +429,34 @@
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
+/* Zoom on Focus */
 .detailButton:focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
 }
 
-/* .button-link 
+/* .button-link (Genres, Show More...)
 --------------------------------------------------------------------------*/
 
 /* Links acting as buttons */
 /* a.button-link.emby-button.show-focus */
-.button-link {
+.button-link,
+.overview-expand {
   color: inherit !important;
+  background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
+  text-decoration: none;
 }
 .button-link:hover,
-.button-link:focus {
+.overview-expand:hover {
   color: var(--accent80) !important;
-  background: #0000 !important;
+  text-decoration: none;
+}
+.button-link:focus,
+.overview-expand:focus {
+  color: var(--fullaccent) !important;
+  text-decoration: none;
 }
 
 /* .skip-button 
@@ -460,38 +470,23 @@
   background: #0000 !important;
   border: none !important;
 }
-.skip-button:focus,
 .skip-button:hover {
+  color: var(--accent80) !important;
+}
+.skip-button:focus {
   color: var(--fullaccent) !important;
 }
 
 /* .clearLink
--------------------*/
+--------------------------------------------------------------------------*/
 
-.overview-expand,
 .clearLink {
   border-radius: var(--rounding-system);
-  border: solid 2px #0000;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  padding: .2em 1em !important;
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
-}
-
-/* Submit & Special Buttons: Light Border */
-.button-submit,
-.clearLink {
-  border: 2px solid rgba(255, 255, 255, 0.2) !important;
-}
-.clearLink {
-  padding: .2em 1em !important;
-}
-
-/* Show More Button */
-.overview-expand:hover {
-  color: var(--accent80);
-}
-.overview-expand:focus {
-  color: var(--fullaccent);
 }
 
 /* Link-Buttons with Buttons inside (why...?) */
