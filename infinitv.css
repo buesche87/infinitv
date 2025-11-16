@@ -99,7 +99,7 @@
   top: 0 !important ;
 }
 
-/* Dialogs: Rounding */
+/* Dialogs */
 .dialog,
 .formDialogHeader,
 .formDialogFooter {
@@ -111,7 +111,7 @@
 .toast {
   box-shadow: 0px 0px 5px var(--fullaccent) !important;
   border-radius: var(--rounding-system) !important;
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
 
 /*  
@@ -127,7 +127,7 @@
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
 
-/* Options */
+/* Main Drawer Options */
 .navMenuOptionText {
   margin-top: 0;
 }
