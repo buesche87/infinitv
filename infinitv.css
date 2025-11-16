@@ -36,6 +36,7 @@
 
 /* Background Image on Login Page */
 /* .backgroundContainer */
+/*
 #loginPage,
 #userProfilePage {
   background: 
@@ -45,10 +46,9 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
-}
+}*/
 
-.backgroundContainer:not(.withbackdrop),
-.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
+.backgroundContainer:not(.withbackdrop) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
     var(--bgImage) !important;
@@ -58,10 +58,15 @@
   background-attachment: fixed !important;
 }
 
-/*
-.parent:has(.child) {
-  background: red;
-} */
+.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
+  background: 
+    linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
+    var(--bgImage) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
 
 /* Darken Backdrop Background */
 .backgroundContainer.withBackdrop {
