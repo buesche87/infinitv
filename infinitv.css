@@ -14,8 +14,6 @@
 
 :root {
 
-  --bgImage: url("https://wallpapershome.com/images/pages/pic_h/12740.jpg");
-
   /* Card Shadow */
   --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
 
@@ -34,20 +32,7 @@
 ============================================================================
 */
 
-/* Background Image on Login Page */
-/* .backgroundContainer */
-/*
-#loginPage,
-#userProfilePage {
-  background: 
-    linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
-    var(--bgImage) !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}*/
-
+/* Background Image if Backdrop disabled */
 .backgroundContainer:not(.withBackdrop) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -58,6 +43,7 @@
   background-attachment: fixed !important;
 }
 
+/* Background Image on Homescreen even with Backdrop enabled */
 .backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -190,12 +176,14 @@
 }
 
 /* Size */
-.skinHeader,
+.skinHeader {
+  padding: .3em !important;
+  height: 3.3em;
+}
 .headerTop {
   padding: .3em !important;
 }
 
-/* Transparency */
 .skinHeader-withBackground {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
@@ -204,7 +192,8 @@
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
   font-size: 110% !important;
-  margin-top: -3em !important;
+  top: -.25em;
+  margin-top: -2.8em !important;
   width: 40vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
@@ -322,7 +311,7 @@
 /* HeaderTab Buttons */
 /* button.emby-tab-button.emby-button.show-focus.emby-tab-button-active.lastFocused */
 .emby-tab-button {
-  padding: .8em 1.25em .6em 1.25em !important
+  padding: .6em 1.25em .8em 1.25em !important;
 }
 .emby-tab-button:hover {
   color: var(--fullaccent) !important;

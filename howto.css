@@ -10,6 +10,9 @@
   --accent-l: 50%;   /* Brightness */
   --accent: 255,153,0; /* will deprecate in future updates */
 
+  /* Background Image */
+  --bgImage: url("https://wallpapershome.com/images/pages/pic_h/12740.jpg");
+
   /* Darkness & Opacity */
   --bgdarkness: 0.6;    /* Background Darkness */
   --headeropacity: 0.7; /* Header Opacity */
