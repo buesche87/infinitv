@@ -869,6 +869,7 @@
   text-shadow: 2px 2px 4px black;
 }
 
+.overflowBackdropCard:not(:has(.cardFooter)) .cardText-first,
 .backdropCard:not(:has(.cardFooter)) .cardText-first {
   padding-top: .6em !important;
 }
