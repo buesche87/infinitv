@@ -488,10 +488,10 @@
 
 /* Show More Button */
 .overview-expand:hover {
-  color: var(--accent40);
+  color: var(--accent80);
 }
 .overview-expand:focus {
-  color: var(--accent80);
+  color: var(--fullaccent);
 }
 
 /* Link-Buttons with Buttons inside (why...?) */
