@@ -468,6 +468,8 @@
 /* .clearLink
 -------------------*/
 
+
+.overview-expand,
 .clearLink {
   border-radius: var(--rounding-system);
   border: solid 2px #0000;
@@ -483,6 +485,17 @@
 }
 .clearLink {
   padding: .2em 1em !important;
+}
+
+/* Show More Button */
+.overview-expand {
+  border: 2px solid rgba(255, 255, 255, 0) !important; 
+}
+.overview-expand:hover {
+  border-color: var(--accent40);
+}
+.overview-expand:focus {
+  border-color: var(--accent80);
 }
 
 /* Link-Buttons with Buttons inside (why...?) */
