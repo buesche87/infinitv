@@ -36,7 +36,7 @@
 */
 
 /* Background Image if Backdrop disabled */
-.backgroundContainer:not(.withBackdrop) {
+.backgroundContainer:not(.withBackdrop):not(.backgroundContainer-transparent) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
     var(--bgImage) !important;
