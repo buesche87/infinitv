@@ -8,7 +8,6 @@
   --accent-h: 36;    /* Hue: Orange */
   --accent-s: 100%;  /* Saturation */
   --accent-l: 50%;   /* Brightness */
-  --accent: 255,153,0; /* will deprecate in future updates */
 
   /* Background Image */
   /* > There are limitations when using jellyfin media player */
