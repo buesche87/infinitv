@@ -48,7 +48,7 @@
   background-attachment: fixed !important;
 }*/
 
-.backgroundContainer:not(.withbackdrop) {
+.backgroundContainer:not(.withBackdrop) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
     var(--bgImage) !important;
