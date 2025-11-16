@@ -891,7 +891,7 @@
 .ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-secondary,
 .NextUp .overflowBackdropCard[data-type="Episode"] .cardText-secondary {
   font-size: 100% !important;
-  /* padding-top: .6em !important; */
+  padding-top: .6em !important;
   color: inherit;
 }
 
