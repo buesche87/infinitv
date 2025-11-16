@@ -863,13 +863,9 @@
 ===========================================================================
 */
 
-/* Title */
-.cardText-first {
-  /* padding-top: .6em !important; */
+/* Card Title (not on poster thumbs) */
+:not(.cardFooter) .cardText-first {
   text-shadow: 2px 2px 4px black;
-}
-
-.card:not(:has(.cardFooter)) .cardText-first {
   padding-top: .5em !important;
 }
 
