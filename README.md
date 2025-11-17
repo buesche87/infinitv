@@ -12,6 +12,10 @@ Optimal results:
 
 This is a hobby project to expand my basic knowledge of CSS. Therefore, it does not claim to be complete or bug-free. Ideas and problems will be addressed when free time allows.
 
+*There are limitations when using jellyfin media player. The chromium version shipped with qt-webengine5 is too old for some rules*
+
+---
+
 Add the following to your custom branding:
 
 ```css
@@ -27,8 +31,6 @@ Add the following to your custom branding:
   --accent-l: 50%;   /* Brightness */
 
   /* Background Image */
-  /* > There are limitations when using jellyfin media player */
-  /* > the chromium version shipped with qt-webengine5 is too old for some rules*/
   --bgImage: url("https://wallpapershome.com/images/pages/pic_h/12740.jpg");
 
   /* Darkness & Opacity */
