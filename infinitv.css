@@ -98,7 +98,8 @@
 
 /* Toasts: Background & Glow*/
 .toast {
-  box-shadow: 0px 0px 5px var(--fullaccent) !important;
+  /* box-shadow: 0px 0px 5px var(--fullaccent) !important; */
+  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
   border-radius: var(--rounding-system) !important;
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
@@ -195,7 +196,8 @@
 .layout-desktop .headerTabs.sectionTabs {
   font-size: 110% !important;
   margin-top: -2.7em !important;
-  width: 40vw;
+  width: 42vw;
+  min-width: 26vw;
   scrollbar-width: none;
   scroll-behavior: smooth !important;
   overflow-x: auto;
@@ -704,6 +706,7 @@
   margin-right: -.1em;
   border-radius: var(--rounding-system); */
   background: hsl(0deg 0% 100% / 10%);
+  /* background: rgb(0 0 0 / 35%); */
   text-align: center;
 }
 #indexPage h2.sectionTitle.sectionTitle-cards {
