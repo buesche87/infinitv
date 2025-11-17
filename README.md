@@ -42,8 +42,5 @@ Add the following to your custom branding:
   /* Roundings */
   --rounding-media: 12px;
   --rounding-system: 4px;
-
-  /* Card Shadow */
-  --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
 }
 ```
