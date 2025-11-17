@@ -93,7 +93,7 @@
 .formDialogHeader,
 .formDialogFooter {
   border-radius: var(--rounding-system) !important;
-  background: rgba(0, 0, 0, var(--draweropacity)) !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Toasts: Background & Glow*/
@@ -354,7 +354,7 @@
 .listItem-border:focus,
 .emby-collapsible-button:focus {
   color: var(--fullaccent) !important;
-  border-color: var(--accent60) !important;
+  /* border-color: var(--accent60) !important; */
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
