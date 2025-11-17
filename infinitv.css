@@ -354,7 +354,7 @@
 .listItem-border:focus,
 .emby-collapsible-button:focus {
   color: var(--fullaccent) !important;
-  /* border-color: var(--accent60) !important; */
+  border-color: var(--accent60) !important;
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
