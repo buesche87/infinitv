@@ -691,7 +691,7 @@
 /* Media Scroller */
 .itemsContainer-tv.scrollSlider {
   padding-top: 1vw !important;
-  padding-left: .6em !important;
+  /* padding-left: .6em !important; */
 }
 
 /* Section Titles */
@@ -704,6 +704,7 @@
   margin-right: -.1em;
   border-radius: var(--rounding-system);
   background: hsl(0deg 0% 100% / 10%);
+      text-align: center;
 }
 #indexPage h2.sectionTitle.sectionTitle-cards {
   margin-left: -1em;
