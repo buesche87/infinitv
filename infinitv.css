@@ -974,7 +974,7 @@
 }
 .countIndicator,
 .mediaSourceIndicator {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 89%;
   color: rgba(0, 0, 0, 1);
   background: var(--fullaccent) !important;
