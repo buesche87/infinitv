@@ -700,11 +700,11 @@
   padding-bottom: .5em;
   margin-top: 2vh;
   margin-bottom: .5vh;
-  margin-left: 3.3vw;
+  /* margin-left: 3.3vw;
   margin-right: -.1em;
-  border-radius: var(--rounding-system);
+  border-radius: var(--rounding-system); */
   background: hsl(0deg 0% 100% / 10%);
-      text-align: center;
+  text-align: center;
 }
 #indexPage h2.sectionTitle.sectionTitle-cards {
   margin-left: -1em;
