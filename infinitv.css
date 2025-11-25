@@ -112,7 +112,7 @@
 
 /* Main Drawer */
 .mainDrawer {
-  margin-top: 4.2em !important;
+  margin-top: 3.9em !important;
   box-shadow: none !important;
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
