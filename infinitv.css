@@ -1210,7 +1210,7 @@ p.itemGenres {
 
 /* Cards spacing */
 .detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
-  margin-right: .5vw !important;
+  margin-left: .5vw !important;
 }
 
 /* Media sections - Mobile layout */
