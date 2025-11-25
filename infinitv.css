@@ -323,7 +323,7 @@
 --------------------------------------------------------------------------*/
 
 /* List Items */
-.listItem-button,
+.listItem-button:not(.listItem-largeImage),
 .listItem-border {
   border-radius: var(--rounding-system);
   border: solid 2px #0000;
@@ -342,7 +342,7 @@
 }
 
 /* List Items: Hover */
-.listItem-button:hover,
+.listItem-button:not(.listItem-largeImage):hover,
 .listItem-border:hover,
 .emby-collapsible-button:hover {
   color: var(--accent80) !important;
@@ -351,17 +351,12 @@
 }
 
 /* List Items Focus: Settings Menu */
+.listItem-button:not(.listItem-largeImage):focus,
 .listItem-border:focus,
 .emby-collapsible-button:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent60) !important;
   background: rgba(0, 0, 0, 0.4) !important;
-}
-
-/* List Items Focus: Action Menu */
-.listItem-button:focus {
-  color: var(--fullaccent) !important;
-  background: #0000 !important;
 }
 
 /* No Background on Hover */
@@ -1227,20 +1222,37 @@ p.itemGenres {
 }
 
 /* Episodes in Season Overview */
-.itemsContainer > .listItem {
+.itemsContainer > .listItem-button {
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
   border-radius: var(--rounding-media);
   margin-bottom: 1em;
-  padding: .25em .25em .25em .25em;
+  padding: 0em;
+  height: 25vh;
+  border-color: hsl(0deg 0% 100% / 20%) !important;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
 }
-.itemsContainer > .listItem:hover {
+.itemsContainer > .listItem-button:hover {
   border: solid 2px var(--accent40) !important;
   background: rgba(0, 0, 0, 0.7) !important;
 }
-.itemsContainer > .listItem:focus {
+.itemsContainer > .listItem-button:focus {
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.listItem-button:hover {
+  /* color: var(--accent80) !important; */
+  border-color: var(--accent20) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Episode Title */
+.listItem-button:focus .listItemBodyText:not(.secondary) {
+  color: var(--fullaccent) !important;
+  background: #0000 !important;
 }
 
 /* Episode Image */
