@@ -324,7 +324,8 @@
 
 /* List Items */
 .listItem-button:not(.listItem-largeImage),
-.listItem-border {
+.listItem-border,
+.listTextButton-autohide {
   border-radius: var(--rounding-system);
   border: solid 2px #0000;
   border-color: #0000 !important;
@@ -344,7 +345,8 @@
 /* List Items: Hover */
 .listItem-button:not(.listItem-largeImage):hover,
 .listItem-border:hover,
-.emby-collapsible-button:hover {
+.emby-collapsible-button:hover,
+.listTextButton-autohide:hover {
   color: var(--accent80) !important;
   border-color: var(--accent20) !important;
   background: rgba(0, 0, 0, 0.2) !important;
@@ -353,7 +355,8 @@
 /* List Items Focus: Settings Menu */
 .listItem-button:not(.listItem-largeImage):focus,
 .listItem-border:focus,
-.emby-collapsible-button:focus {
+.emby-collapsible-button:focus,
+.listTextButton-autohide:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent60) !important;
   background: rgba(0, 0, 0, 0.4) !important;
@@ -464,7 +467,7 @@
 /* Clearlink Container */
 .clearLink {
   border-radius: var(--rounding-system);
-  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid #0000 !important;
   padding: .2em 1em !important;
   background: #0000 !important;
   -webkit-transform: none !important;
@@ -472,12 +475,18 @@
 }
 
 /* Button inside */
-.clearLink > .emby-button,
-.clearLink > .emby-button:hover,
-.clearLink > .emby-button:focus {
+.clearLink > .emby-button {
   padding: .2em 1em !important;
   border: 2px solid #0000 !important;
+  background: #0000 !important;
 }
+
+.clearLink > .emby-button:hover,
+.clearLink > .emby-button:focus {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-color: var(--accent40) !important;
+}
+
 
 /*  
 ============================================================================
