@@ -970,11 +970,11 @@
 */
 
 /* Alignment */
-.cardIndicators,
-.listItemIndicators,
+.cardContent .cardIndicators,
+/* .cardContent .listItemIndicators, */
 .mediaSourceIndicator {
-  right: 0.5em;
-  top: 0.5em;
+  right: 0.5em !important;
+  top: 0.5em !important;
 }
 
 /* Count & Played */
@@ -986,7 +986,7 @@
 }
 .countIndicator,
 .mediaSourceIndicator {
-  /* font-weight: 600; */
+  font-weight: 600;
   font-size: 89%;
   color: rgba(0, 0, 0, 1);
   background: var(--fullaccent) !important;
