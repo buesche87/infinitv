@@ -12,7 +12,7 @@ Optimal results:
 - Activate backdrops
 
 Give it *your* accent by changing `:root` values:
-- `accent-h: 36` > use the `L` value from a HSL-color picker
+- `accent-h: 36` > use the `H` value from an HSL-color picker
 - Set your background image with `bgImage: url("https://url.to/picture.jpg")`
 - set background darkness from `0.00` to `1.00`
 - set opacity from `1.00` to `0.00`
