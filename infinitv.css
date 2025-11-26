@@ -694,14 +694,15 @@
 
 /* Media Pages */
 .itemsContainer-tv.vertical-wrap {
-  padding-top: 1% !important;
-  padding-right: 3% !important; 
+  /* padding-top: 1% !important; */
+  /* padding-right: 3% !important; */
 }
+
 
 /* Media Scroller */
 .itemsContainer-tv.scrollSlider {
   padding-top: 1vw !important;
-  /* padding-left: .6em !important; */
+  padding-left: .6em !important;
 }
 
 /* Section Titles */
@@ -795,8 +796,8 @@
 /* OverflowBackdropCard (TV)
 .itemsContainer-tv > .overflowBackdropCard {
   width: 29% !important;
-} */
-
+}
+ */
 /* Hover Play Button */
 .cardPadder {
   background-color: #0000 !important;
@@ -1096,6 +1097,7 @@
 
 #childrenContent .card {
   padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 /* 
