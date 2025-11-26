@@ -62,5 +62,5 @@ Add the following to your custom branding:
 <img width="1939" height="1098" alt="userprofile_focused" src="https://github.com/user-attachments/assets/879e1aff-f2a1-4c0b-bd91-e04fee03a07d" />
 
 ## Different Accents
-<img width="1944" height="1104" alt="home_purple" src="https://github.com/user-attachments/assets/8be33d63-9a50-42b9-a831-69454bc164ba" />
+<img width="1948" height="1107" alt="home_purple" src="https://github.com/user-attachments/assets/a54df518-e033-43fa-a8d0-08c2505ddd5b" />
 <img width="1951" height="1110" alt="home_cyan" src="https://github.com/user-attachments/assets/bd2a1238-508c-43aa-95ca-ca4fa6c5b3e9" />
