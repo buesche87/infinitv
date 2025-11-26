@@ -792,10 +792,10 @@
   width: 16% !important;
 }
 
-/* OverflowBackdropCard (TV) */
+/* OverflowBackdropCard (TV)
 .itemsContainer-tv > .overflowBackdropCard {
   width: 29% !important;
-}
+} */
 
 /* Hover Play Button */
 .cardPadder {
