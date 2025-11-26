@@ -53,8 +53,7 @@ Add the following to your custom branding:
 ```
 
 # Screenshots
-
-<img width="1946" height="1103" alt="home_focused" src="https://github.com/user-attachments/assets/8e61244a-38e7-49f2-b6c6-5cbdd2dc03a8" />
+<img width="1944" height="1105" alt="home_focused" src="https://github.com/user-attachments/assets/280f081f-3475-4de1-82d8-133c62b229db" />
 <img width="1954" height="1112" alt="poster_cards_focus" src="https://github.com/user-attachments/assets/0bc4337c-ce95-45d1-985a-081cfdd15388" />
 <img width="1964" height="1116" alt="series" src="https://github.com/user-attachments/assets/dbaff509-a708-4e26-9a0b-52cc804288d0" />
 <img width="1935" height="1096" alt="seasons_focused" src="https://github.com/user-attachments/assets/2d548971-aa17-4f6a-9f2c-3e327a203f3a" />
