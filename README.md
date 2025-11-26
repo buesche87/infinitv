@@ -61,3 +61,7 @@ Add the following to your custom branding:
 <img width="1952" height="1016" alt="player" src="https://github.com/user-attachments/assets/bd4afc57-9031-4226-b650-8626dfafcdcd" />
 <img width="1944" height="1104" alt="movie_backdrops" src="https://github.com/user-attachments/assets/78d2378b-17e1-4a13-895c-9352a6d293b8" />
 <img width="1939" height="1098" alt="userprofile_focused" src="https://github.com/user-attachments/assets/879e1aff-f2a1-4c0b-bd91-e04fee03a07d" />
+
+## Different Accents
+<img width="1951" height="1110" alt="home_cyan" src="https://github.com/user-attachments/assets/bd2a1238-508c-43aa-95ca-ca4fa6c5b3e9" />
+
