@@ -30,7 +30,6 @@ Add the following to your custom branding:
 /* Add to Custom CSS in Dashboard > Branding */
 @import url('https://buesche87.github.io/infinitv/infinitv.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-cast.css');
-@import url('https://buesche87.github.io/infinitv/ultrachromic-episodes.css');
 :root {
 
   /* Accent Color */
