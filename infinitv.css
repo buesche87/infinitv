@@ -85,7 +85,11 @@
 
 /* Use freed Space */
 .layout-tv .homeSectionsContainer {
-  top: 0 !important ;
+  top: 0;
+}
+
+.layout-desktop .homeSectionsContainer {
+  top: 74vh;
 }
 
 /* Dialogs */
@@ -969,8 +973,8 @@
 .cardIndicators,
 .listItemIndicators,
 .mediaSourceIndicator {
-  right: 0.5em !important;
-  top: 0.5em !important;
+  right: 0.5em;
+  top: 0.5em;
 }
 
 /* Count & Played */
@@ -1252,23 +1256,30 @@ p.itemGenres {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
+
 .listItem-button:hover {
-  /* color: var(--accent80) !important; */
   border-color: var(--accent20) !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
-
-/* Episode Title */
 .listItem-button:focus .listItemBodyText:not(.secondary) {
   color: var(--fullaccent) !important;
   background: #0000 !important;
 }
 
+.listItemImage-large {
+  max-height: 15em;
+}
 
-/* Episode Image */
+.listItemIndicators {
+  left: 0.5em;
+  top: 0.5em;
+}
+
+
+/* Episode Image
 .listItemImage {
   border-radius: var(--rounding-media);
-}
+} */
 
 /* 
 ===========================================================================
