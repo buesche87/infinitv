@@ -63,4 +63,4 @@ Add the following to your custom branding:
 
 ## Different Accents
 <img width="1948" height="1107" alt="home_purple" src="https://github.com/user-attachments/assets/a54df518-e033-43fa-a8d0-08c2505ddd5b" />
-<img width="1941" height="1107" alt="home_cyan" src="https://github.com/user-attachments/assets/35da3df6-80a3-4e64-8350-e567b6cb5e25" />
+<img width="1947" height="1104" alt="episodes_cyan" src="https://github.com/user-attachments/assets/62bb20bb-a5d3-4fd0-a6d1-0f226d9861e1" />
