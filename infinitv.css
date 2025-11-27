@@ -227,7 +227,7 @@
 ============================================================================
 */
 
-/* .emby-button.block (Save-Buttons etc.)
+/* Save / Login Buttons: .emby-button.block
 --------------------------------------------------------------------------*/
 
 /* Submit & Save Buttons */
@@ -258,7 +258,7 @@
 }
 
 
-/* .paper-icon-button-light: Menu & OSD 
+/* Menu & OSD Buttons: .paper-icon-button-light
 --------------------------------------------------------------------------*/
 
 /* Paper Icon Buttons */
@@ -299,7 +299,7 @@
   transform: none !important;
 }
 
-/* .emby-tab-button 
+/* Header Tab Buttons: .emby-tab-button: 
 --------------------------------------------------------------------------*/
 
 /* Header Tab Buttons */
@@ -381,7 +381,7 @@
 }
 
 
-/* .detailButton 
+/* Media Buttons: .detailButton 
 --------------------------------------------------------------------------*/
 
 /* Detail Buttons */ 
@@ -391,25 +391,12 @@
   border-radius: var(--rounding-media) !important;
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
 }
-
-/* UpNext Buttons */
-.upNextDialog-button {
-  margin-left: .5em;
-  background: #0000;
-  border-radius: var(--rounding-system) !important;
-  border: solid 2px hsl(0deg 0% 100% / 20%) !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-
-.detailButton:hover,
-.upNextDialog-button:hover {
+.detailButton:hover {
   color: var(--fullaccent) !important;
   background: rgba(0, 0, 0, 0.4) !important;
   border-color: var(--accent40) !important;
 }
-.detailButton:focus,
-.upNextDialog-button:focus {
+.detailButton:focus {
   color: var(--fullaccent) !important;
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: var(--accent80) !important;
@@ -422,7 +409,7 @@
   transform: scale(1.2) !important;
 }
 
-/* .button-link (Genres, Show More...)
+/* Links: .button-link
 --------------------------------------------------------------------------*/
 
 /* Links acting as buttons */
@@ -443,23 +430,6 @@
 .overview-expand:focus {
   color: var(--fullaccent) !important;
   text-decoration: none;
-}
-
-/* .skip-button 
---------------------------------------------------------------------------*/
-
-/* Skip-Button */
-.skip-button {
-  border-radius: var(--rounding-system);
-  color: #fff;
-  background: #0000 !important;
-  border: none !important;
-}
-.skip-button:hover {
-  color: var(--accent80) !important;
-}
-.skip-button:focus {
-  color: var(--fullaccent) !important;
 }
 
 /* .clearLink: Link-Buttons with Buttons inside (but why...?)
@@ -1261,19 +1231,62 @@ p.itemGenres {
 ===========================================================================
 */
 
+/* OSD: Media Infos */
+.osdTitle {
+  margin-left: 0.5em;
+}
+.startTimeText,
+.endTimeText {
+  width: 3.4em;
+  display: block;
+  text-align: center;
+}
+.osdPoster img {
+  border-radius: var(--rounding-media); 
+  border: none;
+}
+.osdTextContainer {
+  margin: 0 !important;
+  margin-top: 0.2em !important;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
+}
+
+/* OSD: Skip-Button */
+.skip-button {
+  border-radius: var(--rounding-system);
+  color: #fff;
+  background: #0000 !important;
+  border: none !important;
+}
+.skip-button:hover {
+  color: var(--accent80) !important;
+}
+.skip-button:focus {
+  color: var(--fullaccent) !important;
+}
+
+/* 
+===========================================================================
+  Player OSD: Header & Footer
+===========================================================================
+*/
+
 /* OSD: Hide some Elements */
 .btnFullscreen,
-.btnPip {
+.btnPip,
+.videoOsdBottom .endsAtText {
   display: none;
 }
 
-/* OSD: Height Header */
+
+/* OSD Header: Height */
 .osdHeader {
   height: 3.3em !important;
   --webkit-backdrop-filter: none;
 }
 
-/* OSD Footer: Wide */
+/* OSD Footer: Full Layout */
 .videoOsdBottom {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-top: .5em;
@@ -1293,71 +1306,24 @@ p.itemGenres {
   } 
 }
 
-/* OSD Footer: Hide "Ends at Time" */
-.videoOsdBottom .endsAtText {
-  display: none;
-}
-
 /* OSD Footer: Lift Progressbar */
 .buttons.focuscontainer-x {
   padding-top: .5em;
 }
 
-/* Fix the UI shifting around */
+/* Fix the UI shifting around
 .nowPlayingBarCurrentTime {
   width: 6em;
 }
-
-/* 
-===========================================================================
-  Player OSD: Controls
-===========================================================================
-*/
-
-/* OSD Infos */
-.osdTitle {
-  margin-left: 0.5em;
-}
-
-.startTimeText,
-.endTimeText {
-  width: 3.4em;
-  display: block;
-  text-align: center;
-}
-
-.osdPoster img {
-  border-radius: var(--rounding-media); 
-  border: none;
-}
-
-.osdTextContainer {
-  margin: 0 !important;
-  margin-top: 0.2em !important;
-  padding-left: 0.5em !important;
-  padding-right: 0.5em !important;
-}
-
+ */
 /* 
 ===========================================================================
   Player OSD: Progressbar & Volume
 ===========================================================================
 */
 
-/* Play progress & volume */
+/* OSD: Play Progress & Volume */
 .mdl-slider {
-  color: var(--fullaccent) !important;
-} 
-
-/* OSD: Vertical marker */
-.taskProgressInner,
-.sliderMarker.watched,
-.mdl-slider-background-lower {
-  background: var(--fullaccent) !important;
-}
-
-.iconOsdProgressInner {
-  background: var(--fullaccent) !important;
   color: var(--fullaccent) !important;
 }
 .mdl-slider::-webkit-slider-thumb {
@@ -1368,12 +1334,24 @@ p.itemGenres {
   background: var(--fullaccent) !important;
   color: var(--fullaccent) !important;
 }
-
 .mdl-slider::-webkit-scrollbar-corner {
   background: #0000 !important;
 }
 .mdl-slider::-webkit-scrollbar-track-piece {
   background: #0000 !important;
+}
+
+/* OSD Progressbar: Vertical Marker */
+.taskProgressInner,
+.sliderMarker.watched,
+.mdl-slider-background-lower {
+  background: var(--fullaccent) !important;
+}
+
+/* OSD Progressbar: Background */
+.iconOsdProgressInner {
+  background: var(--fullaccent) !important;
+  color: var(--fullaccent) !important;
 }
 
 /* 
@@ -1382,7 +1360,7 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Shrink the mouseover chapter image when scrobbling, still media player */
+/* Shrink the mouseover chapter image when scrobbling */
 .chapterThumb {
   height: 14vh;
   min-width: 14vh;
@@ -1416,7 +1394,7 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Upnext Dialog */
+/* UpNext: Dialog-Box */
 .upNextContainer {
   padding-left: 1.25em;
   padding-right: 1.25em;
@@ -1428,9 +1406,30 @@ p.itemGenres {
   border-radius: var(--rounding-media) !important;
 }
 
-/* Upnext: Countdown */
+/* UpNext: Countdown */
 .upNextDialog-countdownText {
   color: var(--fullaccent) !important;
+}
+
+/* UpNext: Buttons */
+.upNextDialog-button {
+  margin-left: .5em;
+  background: #0000;
+  border-radius: var(--rounding-system) !important;
+  border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+.upNextDialog-button:hover {
+  color: var(--fullaccent) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-color: var(--accent40) !important;
+}
+.upNextDialog-button:focus {
+  color: var(--fullaccent) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: var(--accent80) !important;
+  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
 /* 
