@@ -102,7 +102,6 @@
 
 /* Toasts: Background & Glow*/
 .toast {
-  /* box-shadow: 0px 0px 5px var(--fullaccent) !important; */
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
   border-radius: var(--rounding-system) !important;
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
@@ -427,7 +426,6 @@
 --------------------------------------------------------------------------*/
 
 /* Links acting as buttons */
-/* a.button-link.emby-button.show-focus */
 .button-link,
 .overview-expand {
   color: inherit !important;
@@ -451,7 +449,6 @@
 --------------------------------------------------------------------------*/
 
 /* Skip-Button */
-/* button.skip-button.emby-button.show-focus.no-transition */
 .skip-button {
   border-radius: var(--rounding-system);
   color: #fff;
@@ -619,13 +616,10 @@
   background: var(--fullaccent) !important;
 }
 
-
 /* Cards: Multiselect */
 .Mui-selected {
   color: var(--accent80) !important;
 }
-
-
 
 /* Misc */
 .selectionCommandsPanel {
@@ -696,13 +690,6 @@
   padding-top: 5em !important;
 }
 
-/* Media Pages */
-.itemsContainer-tv.vertical-wrap {
-  /* padding-top: 1% !important; */
-  /* padding-right: 3% !important; */
-}
-
-
 /* Media Scroller */
 .itemsContainer-tv.scrollSlider {
   padding-top: 1vw !important;
@@ -715,11 +702,7 @@
   padding-bottom: .5em;
   margin-top: 2vh;
   margin-bottom: .5vh;
-  /* margin-left: 3.3vw;
-  margin-right: -.1em;
-  border-radius: var(--rounding-system); */
   background: hsl(0deg 0% 100% / 10%);
-  /* background: rgb(0 0 0 / 35%); */
   text-align: center;
 }
 #indexPage h2.sectionTitle.sectionTitle-cards {
@@ -797,11 +780,6 @@
   width: 16% !important;
 }
 
-/* OverflowBackdropCard (TV)
-.itemsContainer-tv > .overflowBackdropCard {
-  width: 29% !important;
-}
- */
 /* Hover Play Button */
 .cardPadder {
   background-color: #0000 !important;
@@ -976,7 +954,6 @@
 
 /* Alignment */
 .cardContent .cardIndicators,
-/* .cardContent .listItemIndicators, */
 .mediaSourceIndicator {
   right: 0.5em !important;
   top: 0.5em !important;
@@ -1143,7 +1120,6 @@
 
 /* Info Container */
 .infoWrapper {
-  /* padding-top: 0.5em; */
   padding-bottom: 0.15em;
 }
 
@@ -1246,7 +1222,6 @@ p.itemGenres {
   border-radius: var(--rounding-media);
   margin-bottom: 1em;
   padding: 0em;
-  /* height: 25vh; */
   border-color: hsl(0deg 0% 100% / 20%) !important;
   background: #0000 !important;
   -webkit-transform: none !important;
@@ -1261,7 +1236,6 @@ p.itemGenres {
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
 }
-
 
 .listItem-button:hover {
   border-color: var(--accent20) !important;
@@ -1280,12 +1254,6 @@ p.itemGenres {
   left: 0.5em;
   top: 0.5em;
 }
-
-
-/* Episode Image
-.listItemImage {
-  border-radius: var(--rounding-media);
-} */
 
 /* 
 ===========================================================================
@@ -1788,17 +1756,3 @@ div[data-role="controlgroup"] a[data-role="button"] {
   box-shadow:0 0 0 0 rgba(0,0,0,0)
  }
 }
-
-
-/* Mobile tweaks */
-/*
-.layout-mobile .adminDrawerLogo {
-    border-bottom: none;
-}
-.layout-mobile .itemBackdrop {
-    margin-top: 4rem;
-}
-.layout-mobile .detailImageContainer .card {
-    position: absolute !important;
-}
-*/
