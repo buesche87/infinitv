@@ -406,13 +406,13 @@
 .detailButton:hover,
 .upNextDialog-button:hover {
   color: var(--fullaccent) !important;
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   border-color: var(--accent40) !important;
 }
 .detailButton:focus,
 .upNextDialog-button:focus {
   color: var(--fullaccent) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-color: var(--accent80) !important;
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
@@ -470,27 +470,31 @@
 
 /* Clearlink Container */
 .clearLink {
-  border-radius: var(--rounding-system);
-  border: 2px solid #0000 !important;
   padding: .2em 1em !important;
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
+  margin-left: 0px !important;
 }
 
 /* Button inside */
 .clearLink > .emby-button {
   padding: .2em 1em !important;
-  border: 2px solid #0000 !important;
   background: #0000 !important;
+  font-size: 1.5em;
+  font-weight: 400;
 }
-
 .clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus {
-  background: rgba(0, 0, 0, 0.2) !important;
-  border-color: var(--accent40) !important;
+  background: #0000 !important;
+  border-color: #0000 !important;
+  color: var(--fullaccent) !important;
 }
 
+/* Won't focus with remote - so hide */
+.layout-tv .sectionTitleContainer > .clearLink {
+  display: none;
+}
 
 /*  
 ============================================================================
