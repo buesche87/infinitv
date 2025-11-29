@@ -687,6 +687,18 @@
   background: var(--accent80) !important;
 }
 
+
+/* Section title */
+.sectionTitleTextButton>.sectionTitle,
+.sectionTitleTextButton>.material-icons {
+  margin: 0;
+}
+
+/* Section Scroll Buttons */
+.emby-scrollbuttons {
+  top: .85em;
+}
+
 /* 
 ===========================================================================
   Library Pages: Sorting & Filter
@@ -816,9 +828,10 @@
 */
 
 /* Workaround until QT6 */
+/*
 #indexPage .cardImageContainer {
   box-shadow: var(--cardshadow) !important;
-}
+}*/
 
 /* Box Shadow card with footer */
 .libraryPage .cardBox:has(.cardFooter) {
@@ -1165,10 +1178,14 @@ p.itemGenres {
   margin-bottom: 1em !important;
 }
 
+
+
 /* Section Icons */
-.sectionTitleTextButton > .material-icons {
+/*
+.sectionTitleTextButton>.material-icons {
   margin: 0;
 }
+  */
 
 /* Cards spacing */
 .detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
