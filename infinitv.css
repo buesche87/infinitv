@@ -23,10 +23,6 @@
   --accent60: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
   --accent40: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
   --accent20: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
-
-  /* Jellyfin Media Player Remote Debugging:
-     jellyfinmediaplayer --remote-debugging-port=9222
-  */
 }
 
 /* 
@@ -257,7 +253,6 @@
   margin: 0.5em 0;
 }
 
-
 /* Menu & OSD Buttons: .paper-icon-button-light
 --------------------------------------------------------------------------*/
 
@@ -379,7 +374,6 @@
 .collapseContent {
   background: #0000 !important;
 }
-
 
 /* Media Buttons: .detailButton 
 --------------------------------------------------------------------------*/
@@ -687,10 +681,7 @@
   background: var(--accent80) !important;
 }
 
-
-
-
-/* Section title */
+/* Section Titles */
 .sectionTitleTextButton>.sectionTitle,
 .sectionTitleTextButton>.material-icons {
   margin: 0;
@@ -833,12 +824,6 @@
   Cards: Shadows
 ===========================================================================
 */
-
-/* Workaround until QT6 */
-/*
-#indexPage .cardImageContainer {
-  box-shadow: var(--cardshadow) !important;
-}*/
 
 /* Box Shadow card with footer */
 .libraryPage .cardBox:has(.cardFooter) {
@@ -1185,15 +1170,6 @@ p.itemGenres {
   margin-bottom: 1em !important;
 }
 
-
-
-/* Section Icons */
-/*
-.sectionTitleTextButton>.material-icons {
-  margin: 0;
-}
-  */
-
 /* Cards spacing */
 .detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
   margin-left: .5vw !important;
@@ -1300,7 +1276,6 @@ p.itemGenres {
   display: none;
 }
 
-
 /* OSD Header: Height */
 .osdHeader {
   height: 3.3em !important;
@@ -1332,11 +1307,6 @@ p.itemGenres {
   padding-top: .5em;
 }
 
-/* Fix the UI shifting around
-.nowPlayingBarCurrentTime {
-  width: 6em;
-}
- */
 /* 
 ===========================================================================
   Player OSD: Progressbar & Volume
