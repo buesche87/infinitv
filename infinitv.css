@@ -675,9 +675,6 @@
   background: hsl(0deg 0% 100% / 10%);
   text-align: center;
 }
-#indexPage h2.sectionTitle.sectionTitle-cards {
-  margin-left: -1em;
-}
 
 /* Backdrop Card Spacing in Media Scroller */
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
@@ -1497,6 +1494,13 @@ div[data-role="controlgroup"] a.ui-btn-active {
 .subtitleappearance-preview {
   background: linear-gradient(140deg,var(--fullaccent),#111) !important;
   border-radius: var(--rounding-system) !important;
+}
+
+/* Quick Connect: Center content */
+#quickConnectPreferencesPage {
+  justify-content: center;
+  display: flex;
+  text-align: center;
 }
 
 /* 
