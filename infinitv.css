@@ -688,10 +688,17 @@
 }
 
 
+
+
 /* Section title */
 .sectionTitleTextButton>.sectionTitle,
 .sectionTitleTextButton>.material-icons {
   margin: 0;
+}
+
+/* Emby Scroller */
+.layout-desktop #indexPage .emby-scroller {
+  padding-top: 1em;
 }
 
 /* Section Scroll Buttons */
