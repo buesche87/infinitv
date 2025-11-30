@@ -42,7 +42,7 @@
   background-attachment: fixed !important;
 }
 
-/* Background Image: On HomePage even if Backdrops enabled */
+/* Background Image: On home page even if Backdrops enabled */
 .backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
   background: 
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -130,11 +130,6 @@
   -webkit-transform: none !important;
   transform: none !important;
   margin-bottom: .2em !important;
-}
-
-/* Collapsible Menu: Button Text */
-.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
-  margin-left: 0.5em;
 }
 
 /* Collapsible Menu Items: No Background on Hover */
@@ -631,9 +626,15 @@
   padding-right: 3vw !important;
 }
 
+/* Media Scroller */
+.itemsContainer-tv.scrollSlider {
+  padding-top: 1vw !important;
+  padding-left: .6em !important;
+}
+
 /* Section Titles */
 #indexPage .sectionTitleContainer-cards {
-  padding-top: .5em;
+  padding-top: .75em;
   padding-bottom: .5em;
   margin-top: 2vh;
   margin-bottom: .5vh;
@@ -641,31 +642,9 @@
   text-align: center;
 }
 
-/* Section Titles: Text & Icons */
-.sectionTitleTextButton>.sectionTitle,
-.sectionTitleTextButton>.material-icons {
-  margin: 0;
-}
-
-/* Media Scroller: Spacing (Desktop) */
-.layout-desktop #indexPage .emby-scroller {
-  padding-top: 1em;
-}
-
-/* Media Scroller: Spacing */
-.itemsContainer-tv.scrollSlider {
-  padding-top: 1vw !important;
-  padding-left: .6em !important;
-}
-
-/* Media Scroller: Backdrop Card spacing  */
+/* Backdrop Card Spacing in Media Scroller */
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
   margin-right: 1vw !important;
-}
-
-/* Media Scroller: Buttons */
-.emby-scrollbuttons {
-  top: .85em;
 }
 
 /* Alphabet Picker */
@@ -674,27 +653,37 @@
   background: var(--accent80) !important;
 }
 
+/* Section Titles */
+.sectionTitleTextButton>.sectionTitle,
+.sectionTitleTextButton>.material-icons {
+  margin: 0;
+}
+
+/* Emby Scroller */
+.layout-desktop #indexPage .emby-scroller {
+  padding-top: 1em;
+}
+
+/* Section Scroll Buttons */
+.emby-scrollbuttons {
+  top: .85em;
+}
+
 /* 
 ===========================================================================
   Library Pages: Sorting & Filter
 ===========================================================================
 */
 
-/* Filter & Sorting Header */
+/* Background Bar */
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 1em;
   padding: 0.5em;
 }
 
-/* Filter & Sorting Header: Buttons */ 
-.pageTabContent .focuscontainer-x .paper-icon-button-light {
-  margin-left: .4em;
-  margin-right: .4em;
-  -webkit-transform: none !important;
-  transform: none !important;
-}
-/*
+/* Buttons (Sort / Filter) */ 
+.btnPreviousPage,
 .btnNextPage,
 .btnPlayAll,
 .btnFilter,
@@ -705,11 +694,16 @@
   margin-right: .4em;
   -webkit-transform: none !important;
   transform: none !important;
-} */
+}
 
-/* Filter & Sorting Header: Item Count */
+/* Item Count Button: Alignment */
 .listPaging > span {
   margin-right: .5em;
+}
+
+/* Filter Button Menu */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+  margin-left: 0.5em;
 }
 
 /* Filter Indicator */
@@ -718,7 +712,7 @@
   color: black;
 }
 
-/* Sorting Menu: Radio Button spacing */
+/* Sorting Menu */
 .radio-label-block {
   margin-top: .6em !important;
 }
@@ -729,23 +723,29 @@
 ===========================================================================
 */
 
-/* Cards: OverflowPortraitCard (TV) > TODO (useful?)
+/* OverflowPortraitCard (TV) */
 .castCollapsible .itemsContainer-tv > .overflowPortraitCard, 
 .guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
   width: 16% !important;
-}  */
+}
 
-/* Cards: More Space for Animations */
-.backdropCard.show-focus.show-animation,
-.portraitCard.show-focus.show-animation {
-  padding-bottom: 1.5vh !important;
+/* Hover Play Button */
+.cardPadder {
+  background-color: #0000 !important;
+  box-shadow: none !important;
+}
+
+/* More Space for Animations */
+.portraitCard.show-focus.show-animation,
+.backdropCard.show-focus.show-animation {
+  padding-bottom: 1.5em !important;
   padding-right: 1vw !important;
 }
 .itemsContainer > .card > .cardBox {
   margin-left: 0.5em !important;
 }
 
-/* Cards: Narrow margins */
+/* narrow margins */
 .cardBox-bottompadded {
   margin-bottom: 0.5em !important;
   margin-right: 1.5vw !important;
@@ -757,7 +757,7 @@
 ===========================================================================
 */
 
-/* Cards: Full Rounding */
+/* Roundings: Full */
 .blurhash-canvas,
 .cardBox,
 .cardContent,
@@ -773,7 +773,7 @@
   border-radius: var(--rounding-media);
 }
 
-/* Cards: Rounding Top, Bottom Flat */
+/* Roundings: Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
 .visualCardBox:has(.cardFooter) .cardImage,
 .visualCardBox:has(.cardFooter) .coveredImage,
@@ -784,7 +784,7 @@
   border-bottom-right-radius: 0 !important;
 }
 
-/* Cards: Footer Rounnding */
+/* Card Footer */
 .cardFooter:not(.visualCardBox-cardFooter) {
   border-bottom-left-radius: var(--rounding-media) !important;
   border-bottom-right-radius: var(--rounding-media) !important;
@@ -845,7 +845,6 @@
   display: none;
 }
 
-/* Misc */
 .cardOverlayButton:hover {
   color: var(--fullaccent) !important;
   background: #0000 !important;
@@ -897,7 +896,7 @@
 ===========================================================================
 */
 
-/* Card Indicators: Alignment */
+/* Alignment */
 .cardContent .cardIndicators,
 .mediaSourceIndicator {
   right: 0.5em !important;
