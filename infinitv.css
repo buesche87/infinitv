@@ -15,7 +15,7 @@
 :root {
 
   /* Card Shadow */
-  --cardshadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.5);
+  --cardshadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.5);
 
   /* Accent predefinition */
   --fullaccent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
@@ -162,9 +162,14 @@
   background: #0000 !important;
 }
 
-/* List Items Checked: Icon Color */
+/* Action Sheet: Checked Icon Color */
 .actionSheetContent .listItemIcon.check {
   color: var(--fullaccent) !important;
+}
+
+/* Action Sheet: Item size */
+.actionSheetContent .listItem {
+  padding: .5em;
 }
 
 /*
@@ -355,7 +360,7 @@
 .emby-collapsible-button:hover,
 .listTextButton-autohide:hover {
   color: var(--accent80) !important;
-  border-color: var(--accent20) !important;
+  border-color: var(--accent40) !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
 .listItem-button:not(.listItem-largeImage):focus,
@@ -652,8 +657,8 @@
   padding-top: 5em !important;
 }
 
-/* Library Pages: Center Content (TV) */
-.layout-tv .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer-tv {
+/* Library Pages: Center Content */
+.libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer {
   padding-left: 3vw !important;
   padding-right: 3vw !important;
 }
@@ -663,7 +668,7 @@
   padding-top: .5em;
   padding-bottom: .5em;
   padding-left: 0em;
-  margin-top: 2vh;
+  margin-top: 1.5vh;
   margin-bottom: .5vh;
   background: hsl(0deg 0% 100% / 10%);
   text-align: center;
@@ -680,7 +685,7 @@
   padding-top: 1em;
 }
 
-#indexPage .scrollSlider {
+.layout-tv #indexPage .scrollSlider {
   padding-top: 2vh !important;
 }
 
@@ -695,8 +700,10 @@
 }
 
 /* Alphabet Picker */
-.alphaPickerButton-tv:focus,
-.alphaPickerButton-tv:hover {
+.alphaPickerButton:hover {
+  background: var(--accent60) !important;
+}
+.alphaPickerButton:focus {
   background: var(--accent80) !important;
 }
 
@@ -813,12 +820,12 @@
 
 /* Box Shadow card with footer */
 .libraryPage .cardBox:has(.cardFooter) {
-  box-shadow: var(--cardshadow) !important;
+  box-shadow: var(--cardshadow);
 }
 
 /* Box Shadow image for card without footer */
-.libraryPage .cardBox:not(:has(.cardFooter)) .cardImageContainer {
-  box-shadow: var(--cardshadow) !important;
+.libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable {
+  box-shadow: var(--cardshadow);
 }
 
 /*
@@ -904,10 +911,10 @@
 }
 
 /* Cards: Glow only Images on Cards without Footer  */
-#itemDetailPage .backdropCard:not(:has(.cardFooter)):hover .cardContent,
-#itemDetailPage .portraitCard:not(:has(.cardFooter)):hover .cardContent,
-.backdropCard:not(:has(.cardFooter)):hover .cardContent,
-.portraitCard:not(:has(.cardFooter)):hover .cardContent {
+#itemDetailPage .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+#itemDetailPage .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+.backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+.portraitCard:not(:has(.cardFooter)):hover .cardScalable {
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
