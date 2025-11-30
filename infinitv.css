@@ -299,13 +299,13 @@
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
-/* Buttons: Menu & OSD
+/* Buttons: Header, Menus, Filter & OSD
 --------------------------------------------------------------------------*/
 
 .paper-icon-button-light {
   border-radius: var(--rounding-media);
 }
-.paper-icon-button-light:hover {
+.paper-icon-button-light:not(:disabled):hover {
   color: var(--fullaccent) !important;
   background: var(--accent20) !important;
 }
@@ -313,11 +313,6 @@
 .paper-icon-button-light:active {
   color: var(--fullaccent) !important;
 }
-
-/* Paper Icon Buttons: Not Header
-.paper-icon-button-light:not(.headerButton) {
-  padding: .4em !important;
-} */
 
 /* Buttons: Header-Tab
 --------------------------------------------------------------------------*/
@@ -899,7 +894,7 @@
 /* Cards: Glow Cards with Footer on hover */
 .backdropCard:has(.cardFooter):hover .cardBox,
 .portraitCard:has(.cardFooter):hover .cardBox {
-  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
+  box-shadow: 0px 0px 10px 3px var(--accent60) !important;
 }
 
 /* Cards: Glow only Images on overflow Cards */
@@ -907,7 +902,7 @@
 #itemDetailPage .overflowPortraitCard:hover .cardScalable,
 .homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
 .homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
-  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
+  box-shadow: 0px 0px 10px 3px var(--accent60) !important;
 }
 
 /* Cards: Glow only Images on Cards without Footer  */
@@ -915,9 +910,8 @@
 #itemDetailPage .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
 .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
 .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
-  box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
+  box-shadow: 0px 0px 10px 3px var(--accent60) !important;
 }
-
 /*
 ===========================================================================
   Cards: Indicators
