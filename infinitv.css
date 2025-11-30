@@ -1151,25 +1151,32 @@ p.itemGenres {
 /* Section Titles */
 .detailPagePrimaryContainer .sectionTitle,
 .detailPageSecondaryContainer .sectionTitle {
-  padding-bottom: .5em !important;
+  margin-bottom: .5em !important;
+  background: hsl(0deg 0% 100% / 10%);
+  border-radius: var(--rounding-system) !important;
+  padding-top: .3em !important;
+  padding-bottom: .3em !important;
+  margin-left: -.5em !important;
+  padding-left: .5em !important;
+  margin-right: -.5em !important;
+  margin-bottom: .5em !important;
 }
 
 /* Section Scroller: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
-  margin-bottom: .2em !important;
+  margin-bottom: 1em !important;
+}
+
+/* Section Scroller: Space for Zoom Animation */
+.detailPagePrimaryContainer .verticalSection .emby-scroller,
+.detailPageSecondaryContainer .verticalSection .emby-scroller {
+  padding-left: .3em !important;
 }
 
 /* Section Scroller: Cards spacing */
 .detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
   margin-left: .5vw !important;
 }
-
-/* Media Scroller: Spacing
-.itemsContainer-tv.scrollSlider {
-  padding-top: 1vh;
-  padding-left: .6em;
-} */
-
 
 /* Section Scroller (Mobile) */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
@@ -1462,8 +1469,8 @@ p.itemGenres {
 .homeScreenSettingsContainer .sectionTitle {
   background: hsl(0deg 0% 100% / 10%);
   border-radius: var(--rounding-system) !important;
-  padding-top: .2em;
-  padding-bottom: .2em;
+  padding-top: .3em;
+  padding-bottom: .3em;
   margin-left: -.5em;
   padding-left: .5em;
   margin-right: -.5em;
