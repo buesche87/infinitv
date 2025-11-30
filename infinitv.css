@@ -455,6 +455,17 @@
   margin-top: .1em !important;
 }
 
+/* Select: Option Colors */
+.emby-select option {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+.emby-select option:hover {
+  background: var(--accent40) !important;
+}
+.emby-select option:focus {
+  background: var(--accent80) !important;
+}
+
 /* Inputs: Accent */
 .emby-input,
 .emby-textarea,
@@ -477,34 +488,6 @@
 .checkboxOutline:focus {
   border: 2px solid var(--accent80) !important;
   background: rgba(0, 0, 0, 0.8) !important;
-}
-
-/* Labels */
-.emby-textarea:hover + .textareaLabel,
-.emby-checkbox:hover + .checkboxLabel {
-  color: var(--accent80) !important;
-}
-.inputLabelFocused,
-.textareaLabelFocused,
-.selectLabelFocused,
-.emby-checkbox:focus + .checkboxLabel {
-  color: var(--fullaccent) !important;
-}
-
-/* Labels: Select */
-.selectLabel {
-  align-self: center;
-}
-
-/* Select: Option Colors */
-.emby-select option {
-  background: rgba(0, 0, 0, 0.8) !important;
-}
-.emby-select option:hover {
-  background: var(--accent40) !important;
-}
-.emby-select option:focus {
-  background: var(--accent80) !important;
 }
 
 /* Checkbox: Outline */
@@ -530,12 +513,24 @@
   background: var(--fullaccent) !important;
 }
 
-/* Cards: Multiselect */
-.Mui-selected {
+/* Labels */
+.emby-textarea:hover + .textareaLabel,
+.emby-checkbox:hover + .checkboxLabel {
   color: var(--accent80) !important;
 }
+.inputLabelFocused,
+.textareaLabelFocused,
+.selectLabelFocused,
+.emby-checkbox:focus + .checkboxLabel {
+  color: var(--fullaccent) !important;
+}
 
-/* Misc */
+/* Labels: Select */
+.selectLabel {
+  align-self: center;
+}
+
+/* Misc (TODO) */
 .selectionCommandsPanel {
   background: rgba(0, 0, 0, 0.4) !important;
 }
@@ -552,7 +547,7 @@
   display: none;
 }
 
-/* Login Card: Dimensions & Colors */
+/* Login Form: Dimensions & Colors */
 #loginPage .padded-left.padded-right.padded-bottom-page {
   position: fixed;
   top: 50%;
@@ -563,6 +558,12 @@
   width: 24em;
   border-radius: var(--rounding-media);
   padding-bottom: 2em !important;
+}
+
+/* Manual Login Form */
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
 }
 
 /* Login Card: "please sign in" */
@@ -581,12 +582,6 @@
 #loginPage .cardImage {
   color: var(--fullaccent) !important;
   background: rgba(255, 255, 255, 0.2) !important;
-}
-
-/* Manual Login Form */
-#loginPage .readOnlyContent,
-#loginPage form {
-  max-width: 22em;
 }
 
 /*  
@@ -623,6 +618,12 @@
 #tvRecommendedPage,
 #myPreferencesMenuPage {
   padding-top: 5em !important;
+}
+
+/* Library Pages: Center Content (TV) */
+.layout-tv .itemsContainer-tv {
+  padding-left: 3vw !important;
+  padding-right: 3vw !important;
 }
 
 /* Media Scroller */
@@ -937,6 +938,11 @@
   border-top-right-radius: var(--rounding-system) !important;
   border-bottom-right-radius: var(--rounding-system) !important;
   border-bottom-left-radius: var(--rounding-system) !important;
+}
+
+/* Cards: Multiselect */
+.Mui-selected {
+  color: var(--accent80) !important;
 }
 
 /* 
