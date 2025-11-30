@@ -1451,12 +1451,17 @@ p.itemGenres {
   padding-top: 5em !important;
 }
 
-/* Menu Items
-.readOnlyContent .listItem-border .listItem,
-.actionSheetScroller .listItem {
-  padding-left: 1em;
-  margin-top: 0.2em !important;
-} */
+/* Settings: Titles */
+.settingsContainer .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle {
+  background: hsl(0deg 0% 100% / 10%);
+  border-radius: var(--rounding-system) !important;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  margin-left: -.5em;
+  padding-left: .5em;
+  margin-right: -.5em;
+}
 
 /* Menu Items: Additional content */
 .listItemButton,
@@ -1507,6 +1512,17 @@ p.itemGenres {
 }
 .listItem-indexnumberleft {
   margin: 1em;
+}
+
+/* User Profile: Form Alignment */
+.updatePasswordForm br {
+  display: none;
+}
+.updatePasswordForm .inputContainer {
+  margin-bottom: 1em;
+}
+.updatePasswordForm .emby-button.block {
+  margin-top: 2em;
 }
 
 /* User Profile: Image */
