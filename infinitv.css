@@ -662,6 +662,7 @@
 #indexPage .sectionTitleContainer-cards {
   padding-top: .5em;
   padding-bottom: .5em;
+  padding-left: 0em;
   margin-top: 2vh;
   margin-bottom: .5vh;
   background: hsl(0deg 0% 100% / 10%);
