@@ -903,10 +903,10 @@
 }
 
 /* Cards: Glow only Images on overflow Cards */
-#itemDetailPage .overflowBackdropCard:hover .cardContent,
-#itemDetailPage .overflowPortraitCard:hover .cardContent,
-.homeSectionsContainer .overflowBackdropCard:hover .cardContent,
-.homeSectionsContainer .overflowPortraitCard:hover .cardContent {
+#itemDetailPage .overflowBackdropCard:hover .cardScalable,
+#itemDetailPage .overflowPortraitCard:hover .cardScalable,
+.homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
+.homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
