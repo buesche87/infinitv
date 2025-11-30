@@ -823,6 +823,11 @@
   box-shadow: var(--cardshadow);
 }
 
+/* Smoothen Card Image */
+.libraryPage  .cardImageContainer {
+  box-shadow: inset -1px 3px 14px 0px rgb(255 255 255 / 10%), inset -3px -3px 14px 0px rgb(0 0 0 / 40%);
+}
+
 /*
 ===========================================================================
   Cards: Text
