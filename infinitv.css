@@ -89,26 +89,6 @@
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
 
-/* Loading Spinner */
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4 {
-  border-color: var(--fullaccent) !important;
-}
-
-/* Progress Ring */
-.progressring {
-  margin: .4em;
-}
-.progressring-bg {
-  display: none;
-}
-.progressring-spiner {
-  border-color: var(--fullaccent);
-  border-width: .35em;
-}
-
 /*  
 ============================================================================
   Menu Drawer
@@ -804,7 +784,7 @@
   border-bottom-right-radius: 0 !important;
 }
 
-/* Card Footer: Flat Top, Rounding Bottom */
+/* Cards: Footer Rounnding */
 .cardFooter:not(.visualCardBox-cardFooter) {
   border-bottom-left-radius: var(--rounding-media) !important;
   border-bottom-right-radius: var(--rounding-media) !important;
@@ -833,13 +813,13 @@
 ===========================================================================
 */
 
-/* Card Text: Title (not on poster thumbs) */
+/* Card Title (not on poster thumbs) */
 :not(.cardFooter) > .cardText-first {
   text-shadow: 2px 2px 4px black;
   padding-top: .5em !important;
 }
 
-/* Card Text: Secondary Text */
+/* Secondary Text */
 .cardText-secondary {
   font-size: 75% !important;
   text-shadow: 2px 2px 4px black;
@@ -877,25 +857,25 @@
 ===========================================================================
 */
 
-/* Cards: Zoom on Focus (TV) */
+/* Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
-/* Cards: Text Color on Focus (TV) */
+/* Color on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
   color: var(--fullaccent) !important;
 }
 
-/* Cards: Glow Cards with Footer on hover */
+/* Glow: Cards */
 .backdropCard:has(.cardFooter):hover .cardBox, 
 .portraitCard:has(.cardFooter):hover .cardBox {
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
-/* Cards: Glow only Images on overflow Cards */
+/* Glow: Only Images on Cards in Homescreen */
 #itemDetailPage .overflowBackdropCard:hover .cardContent,
 #itemDetailPage .overflowPortraitCard:hover .cardContent,
 .homeSectionsContainer .overflowBackdropCard:hover .cardContent,
@@ -903,7 +883,7 @@
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
-/* Cards: Glow only Images on Cards without Footer  */
+/* Glow: Media Scroller Cards */
 #itemDetailPage .backdropCard:not(:has(.cardFooter)):hover .cardContent,
 #itemDetailPage .portraitCard:not(:has(.cardFooter)):hover .cardContent,
 .backdropCard:not(:has(.cardFooter)):hover .cardContent, 
@@ -924,7 +904,7 @@
   top: 0.5em !important;
 }
 
-/* Card Indicators: Count & Played */
+/* Count & Played */
 .playedIndicator {
   color: var(--fullaccent) !important;
   background: rgba(0, 0, 0, 1);
@@ -945,7 +925,7 @@
   color: var(--fullaccent) !important;
 }
 
-/* Card Indicators: Missing & Unaired */
+/* Missing & Unaired */
 .missingIndicator,
 .unairedIndicator {
   color: #fff;
@@ -953,7 +933,7 @@
   padding: .3em .6em;
 }
 
-/* Card Indicators: Multi Select Checkboxes */
+/* Multi Select Checkboxes */
 .multiSelectCheckboxOutline {
   border-top-left-radius: var(--rounding-media) !important;
   border-top-right-radius: var(--rounding-system) !important;
@@ -961,7 +941,7 @@
   border-bottom-left-radius: var(--rounding-system) !important;
 }
 
-/* Card Indicators: Multiselect selected */
+/* Cards: Multiselect */
 .Mui-selected {
   color: var(--accent80) !important;
 }
@@ -972,7 +952,7 @@
 ===========================================================================
 */
 
-/* Card Progressbar: Background */
+/* Background */
 .itemProgressBar {
   background: rgba(0, 0, 0, 0.5) !important;
   border-radius: var(--rounding-media) !important;
@@ -981,7 +961,7 @@
   backdrop-filter: blur(6px);
 } 
 
-/* Card Progressbar: Progress */
+/* Slider*/
 .itemProgressBarForeground {
   background-color: var(--fullaccent) !important;
   border-radius: var(--rounding-media) !important;
@@ -993,7 +973,6 @@
 ===========================================================================
 */
 
-/* Background color for Cards without Pictures */
 .defaultCardBackground1 {
   background: hsl(var(--accent-h), var(--accent-s), 17%);
 }
@@ -1016,32 +995,49 @@
 ===========================================================================
 */
 
-/* Media Pages: Hide some Elements (TV) */
+/* Hide some Elements */
 .layout-tv .itemExternalLinks,
 .layout-tv .detailsGroupItem.directorsGroup,
 .layout-tv .detailsGroupItem.writersGroup,
-.layout-tv .hide+.detailPageWrapperContainer .itemName,
-.layout-tv .endsAt,
-.layout-tv .itemTags {
+.hide+.detailPageWrapperContainer .itemName,
+.endsAt,
+.itemTags {
   display: none !important;
 }
 
-/* Media Pages: Move Content up (TV) */
+/* Increase Season Title */
+.selfBackdropPage h3.itemName.infoText.subtitle.focuscontainer-x {
+  font-size: 150%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.selfBackdropPage h1.parentName.focuscontainer-x {
+  font-size: 150%;
+}
+
+/* Move page content */
 .layout-tv .detailPagePrimaryContainer {
   display: block;
   padding-top: 5vh;
 }
 
-/* Media Pages: Increase Season Title Text */
-.selfBackdropPage h3.itemName.infoText.subtitle.focuscontainer-x {
-  font-size: 150%;
-  color: rgba(255, 255, 255, 0.8);
-}
-.selfBackdropPage h1.parentName.focuscontainer-x {
-  font-size: 150%;
+/* Cast Scroller */
+#castCollapsible .itemsContainer-tv.scrollSlider {
+  padding-top: 0em !important;
 }
 
-/* Media Pages: Poster Image */
+#childrenContent .card {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+/* 
+===========================================================================
+  Media Pages: Poster
+===========================================================================
+*/
+
+/* Cover Style*/
 .detailImageContainer .card {
   max-width: 26vw;
   left: 3% !important;
@@ -1049,7 +1045,7 @@
   box-shadow: var(--cardshadow) !important;
 }
 
-/* Media Pages: Poster Image Placement (TV) */
+/* Cover Placement (TV) */
 .layout-tv .detailImageContainer .card {
   top: 1vh !important;
 }
@@ -1060,24 +1056,24 @@
 ===========================================================================
 */
 
-/* Detail-Ribbon */
+/* Ribbon */
 .detailRibbon {
   padding-right: 2% !important;
 }
 
-/* Detail-Ribbon (Desktop) */
+/* Ribbon (Desktop) */
 .layout-desktop .detailRibbon {
   height: 9em !important;
   margin-top: -9em !important;
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
-/* Detail-Ribbon: Info Container */
+/* Info Container */
 .infoWrapper {
   padding-bottom: 0.15em;
 }
 
-/* Detail-Ribbon: Media Infos */
+/* Media Infos */
 .itemMiscInfo {
   font-size: 125%;
   margin-top: 0.25em;
@@ -1090,7 +1086,7 @@
 ===========================================================================
 */
 
-/* Media Details: Container */
+/* Container */
 .layout-tv .detailPagePrimaryContent {
   padding-top: 0em;
   padding-bottom: 0em;
@@ -1100,12 +1096,12 @@
   padding-bottom: 1em;
 }
 
-/* Media Details: Hide Genres  */
+/* Genres: Hide  */
 p.itemGenres {
   display: none;
 }
 
-/* Media Details: Tracks & Subtitles */
+/* Tracks & Subtitles */
 .trackSelections {
   max-width: 100%;
   width: 60%;
@@ -1113,7 +1109,6 @@ p.itemGenres {
   padding-bottom: 0.5em;
 }
 
-/* Media Details: Track Select */
 .detailTrackSelect {
   background: #0000 !important;
   padding: .35em 1.9em .35em .35em !important;
@@ -1125,18 +1120,18 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Media Description: Container */
+/* Container */
 .detailPageSecondaryContainer {
   padding-top: 0em !important;
 }
 
-/* Media Description: Text */
+/* Description Text */
 .overview.detail-clamp-text {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 
-/* Media Description: Director & Studio */
+/* Director & Studio */
 .itemDetailsGroup {
   margin-top: 0.5em;
   padding-bottom: 1em;
@@ -1148,17 +1143,17 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Section Scroller: Space between Sections (TV) */
+/* Space between Sections */
 .layout-tv .detailVerticalSection {
   margin-bottom: 1em !important;
 }
 
-/* Section Scroller: Cards spacing */
+/* Cards spacing */
 .detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
   margin-left: .5vw !important;
 }
 
-/* Section Scroller (Mobile) */
+/* Media sections - Mobile layout */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
   padding-top:0em;
 }
@@ -1166,7 +1161,7 @@ p.itemGenres {
   padding-top: .2em;
 }
 
-/* Section Scroller: Episodes in Season Overview */
+/* Episodes in Season Overview */
 .itemsContainer > .listItem-button {
   border: solid 2px hsl(0deg 0% 100% / 20%) !important;
   border-radius: var(--rounding-media);
@@ -1186,6 +1181,7 @@ p.itemGenres {
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
 }
+
 .listItem-button:hover {
   border-color: var(--accent20) !important;
   background: rgba(0, 0, 0, 0.2) !important;
@@ -1195,26 +1191,13 @@ p.itemGenres {
   background: #0000 !important;
 }
 
-/* Section Scroller: Large Episodes in Season Overview */
 .listItemImage-large {
   max-height: 15em;
 }
 
-/* Section Scroller: Large Episode Indicator */
 .listItemIndicators {
   left: 0.5em;
   top: 0.5em;
-}
-
-/* Section Scroller: Cast */
-#castCollapsible .itemsContainer-tv.scrollSlider {
-  padding-top: 0em !important;
-}
-
-/* Section Scroller: Cast Cards */
-#childrenContent .card {
-  padding-bottom: 1em;
-  padding-top: 1em;
 }
 
 /* 
@@ -1223,14 +1206,7 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Player OSD: Hide some Elements */
-.btnFullscreen,
-.btnPip,
-.videoOsdBottom .endsAtText {
-  display: none;
-}
-
-/* Player OSD: Media Infos */
+/* OSD: Media Infos */
 .osdTitle {
   margin-left: 0.5em;
 }
@@ -1251,20 +1227,20 @@ p.itemGenres {
   padding-right: 0.5em !important;
 }
 
-/* Player OSD: Media-Buttons */
+/* OSD: Media-Buttons */
 .ltr > .paper-icon-button-light:focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
 }
 
-/* Player OSD: Volume-Button */
+/* OSD: Volume-Button */
 .volumeButtons > .paper-icon-button-light:focus,
 .osdControls > .focuscontainer-x > .paper-icon-button-light:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
 
-/* Player OSD: Skip-Button */
+/* OSD: Skip-Button */
 .skip-button {
   border-radius: var(--rounding-system);
   color: #fff;
@@ -1283,6 +1259,13 @@ p.itemGenres {
   Player OSD: Header & Footer
 ===========================================================================
 */
+
+/* OSD: Hide some Elements */
+.btnFullscreen,
+.btnPip,
+.videoOsdBottom .endsAtText {
+  display: none;
+}
 
 /* OSD Header: Height */
 .osdHeader {
@@ -1321,7 +1304,7 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Player OSD: Play Progress & Volume */
+/* OSD: Play Progress & Volume */
 .mdl-slider {
   color: var(--fullaccent) !important;
 }
@@ -1340,16 +1323,14 @@ p.itemGenres {
   background: #0000 !important;
 }
 
-/* Player OSD: Progressbar Vertical Marker */
-.sliderMarker {
-  width: 3px;
-  border-radius: 2px;
-}
-.sliderMarker.watched {
+/* OSD Progressbar: Vertical Marker */
+.taskProgressInner,
+.sliderMarker.watched,
+.mdl-slider-background-lower {
   background: var(--fullaccent) !important;
 }
 
-/* Player OSD: Progressbar Background */
+/* OSD Progressbar: Background */
 .iconOsdProgressInner {
   background: var(--fullaccent) !important;
   color: var(--fullaccent) !important;
@@ -1361,34 +1342,32 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Chapter Thumbnails */
-.chapterThumbContainer {
-  box-shadow: 0 0 1.9vh #000;
-  border-radius: var(--rounding-media) !important;
-}
+/* Shrink the mouseover chapter image when scrobbling */
 .chapterThumb {
   height: 14vh;
   min-width: 14vh;
 	box-shadow: 0 0 1.9vh #000;
   border-radius: var(--rounding-media) !important;
 }
-
-/* Chapter Thumbnails: Slider Bubble */
+.chapterThumbText {
+  font-size: 1em;
+}
 .sliderBubble {
   background: #0000;
-  -webkit-transform: translate3d(-50%,-108%,0);
-  transform: translate3d(-50%,-108%,0);
 }
-
-/* Chapter Thumbnails: Text */
 .chapterThumbTextContainer {
   right: auto;
 	bottom: 4px;
 	padding: .25em 0.7em;
   border-radius: var(--rounding-media) !important;
 }
-.chapterThumbText {
-  font-size: 1em;
+.chapterThumbContainer {
+  box-shadow: 0 0 1.9vh #000;
+  border-radius: var(--rounding-media) !important;
+}
+.sliderBubble {
+  -webkit-transform: translate3d(-50%,-108%,0);
+  transform: translate3d(-50%,-108%,0);
 }
 
 /* 
@@ -1405,7 +1384,6 @@ p.itemGenres {
   box-shadow: 0px 0px 10px 1px var(--fullaccent) !important;
 }
 
-/* UpNext: Poster */
 .upNextDialog-poster-img {
   border-radius: var(--rounding-media) !important;
 }
@@ -1438,9 +1416,39 @@ p.itemGenres {
 
 /* 
 ===========================================================================
-  Settings
+  User Settings
 ===========================================================================
 */
+
+/* User Profile: Image */
+.imagePlaceHolder {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--rounding-media);
+}
+.imagePlaceHolder:hover {
+  border: solid 2px var(--accent40) !important;
+}
+
+/* Username bold */
+h2.username {
+  margin-top: 0px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Improve some menu alignments */
+.formDialogHeaderTitle {
+  margin-left: 1em;
+}
+.formDialogContent {
+  margin-bottom: 6.2em;
+}
+.dialogContentInner {
+  padding: .5em 1em 1em;
+}
+.listItem-indexnumberleft {
+  margin: 1em;
+}
 
 /* Menu Items */
 .readOnlyContent .listItem-border .listItem,
@@ -1455,19 +1463,19 @@ p.itemGenres {
   border-radius: var(--rounding-system) !important;
 }
 
-/* Menu Items: Remove background on some icons */
+/* Remove background on some icons */
 .listItemIcon {
   background: #0000 !important;
   border-radius: var(--rounding-system) !important;
 }
 
-/* user settings button
+/* user settings button */
 div[data-role="controlgroup"] a.ui-btn-active {
   background: rgba(0, 0, 0, 0.4) !important;
   color: white !important;
-} */
+}
 
-/* Subtitles: Preview-Box */
+/* Subtitle preview */
 .subtitleappearance-preview {
   background: linear-gradient(140deg,var(--fullaccent),#111) !important;
   border-radius: var(--rounding-system) !important;
@@ -1482,38 +1490,54 @@ div[data-role="controlgroup"] a.ui-btn-active {
 
 /* 
 ===========================================================================
-  Settings: User Profile
+  User Settings: Buttons
 ===========================================================================
 */
 
-/* User Profile: Improve Alignments */
-.formDialogHeaderTitle {
-  margin-left: 1em;
-}
-.formDialogContent {
-  margin-bottom: 6.2em;
-}
-.dialogContentInner {
-  padding: .5em 1em 1em;
-}
-.listItem-indexnumberleft {
-  margin: 1em;
+/* Radius Left */
+div[data-role="controlgroup"] a[data-role="button"]:first-child {
+	border-bottom-left-radius: var(--rounding-media);
+	border-top-left-radius: var(--rounding-media);
 }
 
-/* User Profile: Image */
-.imagePlaceHolder {
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--rounding-media);
-}
-.imagePlaceHolder:hover {
-  border: solid 2px var(--accent40) !important;
+/* Radius Right */
+div[data-role="controlgroup"] a[data-role="button"]:last-child {
+	border-bottom-right-radius: var(--rounding-media);
+	border-top-right-radius: var(--rounding-media);
 }
 
-/* User Profile: Username bold */
-h2.username {
-  margin-top: 0px;
-  font-weight: 600;
-  color: #fff;
+/* user setting tab buttons */
+div[data-role="controlgroup"] a[data-role="button"] {
+  display: table-cell !important;
+  margin: 0 !important;
+}
+
+/*  
+============================================================================
+  Loading spinner & Progress Ring
+============================================================================
+*/
+
+/* Loading Spinner: Accent Color */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+  border-color: var(--fullaccent) !important;
+}
+
+/* Theme process progress ring */
+.progressring-spiner {
+  border-color: var(--fullaccent);
+  border-width: .35em;
+}
+
+/* Theme process progress ring */
+.progressring {
+  margin: .4em;
+}
+.progressring-bg {
+  display: none;
 }
 
 /* 
@@ -1539,12 +1563,59 @@ h2.username {
   border-radius: var(--rounding-media) !important;
 }
 
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Buttons
+===========================================================================
+*/
+
 /* Misc Button */
 .fab {
   border-radius: var(--rounding-system) !important;
 	transition: all 0.2s !important;
   background: rgba(0, 0, 0, 0.4) !important;
 }
+
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Mobile
+===========================================================================
+*/
+
+/* Accommodate mobile and align buttons and indicators */
+@media all and (min-width: 70em){
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
+  .cardOverlayButtonIcon {
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+/* Play button hovering (for low width windows) */
+@media all and (max-width: 70em){
+  .cardOverlayFab-primary {
+    background-color: #00000000;
+  }
+  .cardOverlayButtonIcon {
+    background-color: #00000000 !important;
+  }
+  .cardOverlayContainer {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .cardOverlayButton {
+    padding: 0.25em;
+  }
+}
+
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Menu Page
+===========================================================================
+*/
 
 /* Fix footers/headers displaying on small pop-ups */
 .formDialogFooter-clear,
@@ -1553,10 +1624,10 @@ h2.username {
   background-color: #0000 !important;
 }
 
-/* Progress */
-.taskProgressInner,
-.mdl-slider-background-lower {
-  background: var(--fullaccent) !important;
+/*Theme slider marker style*/
+.sliderMarker {
+  width: 3px;
+  border-radius: 2px;
 }
 
 /* Cards & Items */
@@ -1565,13 +1636,111 @@ h2.username {
   border-radius: var(--rounding-media) !important;
 }
 
+.nowPlayingPageImage {
+  border: none;
+  border-radius: var(--rounding-media) !important;
+}
+
+/* 
+===========================================================================
+  Misc & Unknown (aka TODOs): Syncplay
+===========================================================================
+*/
+
 .syncPlayIconCircle {
   color: var(--fullaccent) !important;
   text-shadow: none !important;
 }
 
-/* NowPlaying > Old - Dashboard ? 
-.nowPlayingPageImage {
-  border: none;
-  border-radius: var(--rounding-media) !important;
-} */
+@-webkit-keyframes pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@keyframes pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@-webkit-keyframes infinite-pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
+@keyframes infinite-pulse {
+ 0% {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,.3)
+ }
+ 70% {
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  color:rgba(0,0,0,.6);
+  background:rgba(0,0,0,0);
+  box-shadow:0 0 0 60px rgba(0,0,0,0)
+ }
+ to {
+  -webkit-transform:scale(.95);
+  transform:scale(.95);
+  color:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.3);
+  box-shadow:0 0 0 0 rgba(0,0,0,0)
+ }
+}
