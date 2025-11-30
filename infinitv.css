@@ -640,8 +640,7 @@
 #loginPage,
 #indexPage,
 #moviesPage,
-#tvRecommendedPage,
-#myPreferencesMenuPage {
+#tvRecommendedPage {
   padding-top: 5em !important;
 }
 
@@ -1442,6 +1441,13 @@ p.itemGenres {
 ===========================================================================
 */
 
+/* Settings: Center content */
+#myPreferencesMenuPage {
+  justify-content: center;
+  display: flex;
+  padding-top: 5em !important;
+}
+
 /* Menu Items */
 .readOnlyContent .listItem-border .listItem,
 .actionSheetScroller .listItem {
@@ -1461,23 +1467,23 @@ p.itemGenres {
   border-radius: var(--rounding-system) !important;
 }
 
-/* user settings button
-div[data-role="controlgroup"] a.ui-btn-active {
-  background: rgba(0, 0, 0, 0.4) !important;
-  color: white !important;
-} */
-
 /* Subtitles: Preview-Box */
 .subtitleappearance-preview {
   background: linear-gradient(140deg,var(--fullaccent),#111) !important;
   border-radius: var(--rounding-system) !important;
 }
 
-/* Quick Connect: Center content */
+/* Settings Pages: Center content and Text */
+#userProfilePage,
 #quickConnectPreferencesPage {
   justify-content: center;
   display: flex;
   text-align: center;
+}
+
+/* Settings Pages: Move content up */
+#quickConnectPreferencesPage {
+  padding-top: 5em !important;
 }
 
 /* 
@@ -1522,56 +1528,44 @@ h2.username {
 ===========================================================================
 */
 
-/* Background: Dark */
+/* Misc: paperList  */
 .paperList {
   background: rgba(0, 0, 0, 0.4);
   border-radius: var(--rounding-system) !important;
 }
 
-/* ?? */
+/* Misc: MDL-Switch */
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5);
 }
 
-/* Borders: Accent 50% */
+/* Misc: Item Selection Panel */
 .itemSelectionPanel {
   border: 0.01em solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5) !important;
   border-radius: var(--rounding-media) !important;
 }
 
-/* Misc Button */
+/* Misc: Fab-Button */
 .fab {
   border-radius: var(--rounding-system) !important;
 	transition: all 0.2s !important;
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
-/* Fix footers/headers displaying on small pop-ups */
-.formDialogFooter-clear,
-.formDialogHeader-clear {
-  background: #0000 !important;
-  background-color: #0000 !important;
-}
-
-/* Progress */
+/* Misc: Progressbar */
 .taskProgressInner,
 .mdl-slider-background-lower {
   background: var(--fullaccent) !important;
 }
 
-/* Cards & Items */
+/* Misc: Cards & Items */
 .itemDetailImage,
 .primaryImageWrapper > img {
   border-radius: var(--rounding-media) !important;
 }
 
+/* Misc: SyncPlay */
 .syncPlayIconCircle {
   color: var(--fullaccent) !important;
   text-shadow: none !important;
 }
-
-/* NowPlaying > Old - Dashboard ? 
-.nowPlayingPageImage {
-  border: none;
-  border-radius: var(--rounding-media) !important;
-} */
