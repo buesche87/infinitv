@@ -680,10 +680,8 @@
   padding-top: 1em;
 }
 
-/* Media Scroller: Spacing */
-.itemsContainer-tv.scrollSlider {
-  padding-top: 1vw !important;
-  padding-left: .6em !important;
+#indexPage .scrollSlider {
+  padding-top: 2vh !important;
 }
 
 /* Media Scroller: Backdrop Card spacing  */
@@ -1150,15 +1148,28 @@ p.itemGenres {
 ===========================================================================
 */
 
+/* Section Titles */
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitle {
+  padding-bottom: .5em !important;
+}
+
 /* Section Scroller: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
-  margin-bottom: 1em !important;
+  margin-bottom: .2em !important;
 }
 
 /* Section Scroller: Cards spacing */
 .detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
   margin-left: .5vw !important;
 }
+
+/* Media Scroller: Spacing
+.itemsContainer-tv.scrollSlider {
+  padding-top: 1vh;
+  padding-left: .6em;
+} */
+
 
 /* Section Scroller (Mobile) */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
@@ -1206,11 +1217,6 @@ p.itemGenres {
 .listItemIndicators {
   left: 0.5em;
   top: 0.5em;
-}
-
-/* Section Scroller: Cast */
-#castCollapsible .itemsContainer-tv.scrollSlider {
-  padding-top: 0em !important;
 }
 
 /* Section Scroller: Cast Cards */
