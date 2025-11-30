@@ -623,14 +623,14 @@
   display: none !important;
 }
 
-/* Scroller Alignment */
-#indexPage .emby-scroller {
-  padding-left: 2vw;
-}
-
 /* Use freed up Space (TV) */
 .layout-tv .homeSectionsContainer {
   top: 0;
+}
+
+/* Scroller Alignment */
+#indexPage .homeSectionsContainer .emby-scroller {
+  padding-left: 2vw;
 }
 
 /* Move content below Slides (Desktop) */
@@ -653,7 +653,7 @@
 }
 
 /* Library Pages: Center Content (TV) */
-.layout-tv .itemsContainer-tv {
+.layout-tv .libraryPage:not(#indexPage) .itemsContainer-tv {
   padding-left: 3vw !important;
   padding-right: 3vw !important;
 }
