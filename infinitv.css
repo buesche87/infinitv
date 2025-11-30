@@ -711,7 +711,7 @@
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
   margin-bottom: 1em;
-  padding: 0.5em;
+  padding: 0.25em;
 }
 
 /* Filter & Sorting Header: Buttons */
