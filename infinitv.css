@@ -123,16 +123,25 @@
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
 
-/* Main Drawer: Options */
-.navMenuOptionText {
-  margin-top: 0;
+/* Main Drawer: options */
+.navMenuOption {
+  margin-left: -.2em !important;
+  background: none !important;
+  border: solid 1px #0000;
+  margin-right: -.2em !important;
 }
 .navMenuOption:hover {
-  background: var(--accent80) !important;
+  background: none !important;
+  color: var(--fullaccent) !important;
+  border: solid 1px var(--accent80);
 }
 .navMenuOption-selected {
   color: var(--fullaccent) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  border: solid 1px #0000;
+}
+
+.navMenuOptionText {
+  margin-top: 0;
 }
 
 /*
@@ -333,11 +342,11 @@
   color: #fff;
 }
 
-/* Buttons: List & Menu Items
+/* Buttons: Menu Items
 --------------------------------------------------------------------------*/
 
+
 .listItem-button:not(.listItem-largeImage),
-.listItem-border,
 .emby-collapsible-button,
 .listTextButton-autohide {
   border-radius: var(--rounding-system);
@@ -352,7 +361,6 @@
   padding-right: .5em !important;
 }
 .listItem-button:not(.listItem-largeImage):hover,
-.listItem-border:hover,
 .emby-collapsible-button:hover,
 .listTextButton-autohide:hover {
   color: var(--accent80) !important;
@@ -360,12 +368,36 @@
   background: rgba(0, 0, 0, 0.2) !important;
 }
 .listItem-button:not(.listItem-largeImage):focus,
-.listItem-border:focus,
 .emby-collapsible-button:focus,
 .listTextButton-autohide:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent60) !important;
   background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Buttons: Menu List Items
+--------------------------------------------------------------------------*/
+
+/* List Item Border */
+.listItem-border {
+  border-radius: var(--rounding-system);
+  border: solid 2px #0000;
+  border-color: #0000 !important;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  margin-top: .2em !important;
+  margin-bottom: .2em !important;
+  padding-left: .5em !important;
+  padding-right: .5em !important;
+}
+.listItem-border:hover {
+  color: var(--fullaccent) !important;
+  border-color: var(--accent60) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.listItem-border:focus {
+  color: var(--fullaccent) !important;
 }
 
 /* Buttons: Media Page Play-Buttons
