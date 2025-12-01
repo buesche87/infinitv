@@ -1,4 +1,5 @@
-/*
+/*                                                                         *
+
    ___  ________   ________ ___  ________   ___  _________  ___      ___
   |\  \|\   ___  \|\  _____\\  \|\   ___  \|\  \|\___   ___\\  \    /  /|
   \ \  \ \  \\ \  \ \  \__/\ \  \ \  \\ \  \ \  \|___ \  \_\ \  \  /  / /
@@ -10,7 +11,12 @@
 
                         The Big Screen Experience
 
-*/
+*                                                                          */
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
 :root {
 
@@ -25,6 +31,7 @@
   --accent20: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
 }
 
+
 /*
 ============================================================================
   Background & Font
@@ -32,17 +39,7 @@
 */
 
 /* Background Image: If Backdrops disabled */
-.backgroundContainer:not(.withBackdrop):not(.backgroundContainer-transparent) {
-  background:
-    linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
-    var(--bgImage) !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
-}
-
-/* Background Image: On HomePage even if Backdrops enabled */
+.backgroundContainer:not(.withBackdrop):not(.backgroundContainer-transparent),
 .backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
   background:
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -56,11 +53,6 @@
 /* Darken Background with Backdrops enables */
 .backgroundContainer.withBackdrop {
   background-color: rgba(0, 0, 0, var(--bgdarkness)) !important;
-}
-
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /*
