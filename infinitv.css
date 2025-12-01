@@ -123,7 +123,7 @@
   background: rgba(0, 0, 0, var(--draweropacity)) !important;
 }
 
-/* Main Drawer: options */
+/* Main Drawer: Options */
 .navMenuOption {
   margin-left: -.2em !important;
   background: none !important;
@@ -344,7 +344,6 @@
 
 /* Buttons: Menu Items
 --------------------------------------------------------------------------*/
-
 
 .listItem-button:not(.listItem-largeImage),
 .emby-collapsible-button,
@@ -750,8 +749,6 @@
 
 /* Filter & Sorting Header: Buttons */
 .pageTabContent .focuscontainer-x .paper-icon-button-light {
-  /* margin-left: .4em;
-  margin-right: .4em; */
   -webkit-transform: none !important;
   transform: none !important;
 }
@@ -777,12 +774,6 @@
   Cards: Size & Alignment
 ===========================================================================
 */
-
-/* Cards: OverflowPortraitCard (TV) > TODO (useful?)
-.castCollapsible .itemsContainer-tv > .overflowPortraitCard,
-.guestCastCollapsible .itemsContainer-tv > .overflowSquareCard {
-  width: 16% !important;
-}  */
 
 /* Cards: More Space for Animations */
 .backdropCard.show-focus.show-animation,
