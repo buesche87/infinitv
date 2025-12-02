@@ -368,14 +368,14 @@
 .listTextButton-autohide:hover {
   color: var(--accent80) !important;
   border-color: var(--accent40) !important;
-  background: rgba(0, 0, 0, 0.2) !important;
+  /* background: rgba(0, 0, 0, 0.2) !important; */
 }
 .listItem-button:not(.listItem-largeImage):focus,
 .emby-collapsible-button:focus,
 .listTextButton-autohide:focus {
   color: var(--fullaccent) !important;
-  border-color: var(--accent60) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  /* border-color: var(--accent60) !important;
+  background: rgba(0, 0, 0, 0.4) !important; */
 }
 
 /* Buttons: Menu List Items
@@ -546,7 +546,7 @@
 .emby-textarea:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .checkboxOutline:not(:disabled):hover {
-  border: 2px solid var(--accent40);
+  border: 2px solid var(--accent40) !important;
   background: rgba(0, 0, 0, 0.6) !important;
 }
 .emby-input:focus,
@@ -1058,6 +1058,7 @@
 .layout-tv .itemExternalLinks,
 .layout-tv .detailsGroupItem.directorsGroup,
 .layout-tv .detailsGroupItem.writersGroup,
+.layout-tv .detailsGroupItem.studiosGroup,
 .layout-tv .hide+.detailPageWrapperContainer .itemName,
 .layout-tv .endsAt,
 .layout-tv .itemTags {
