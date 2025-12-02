@@ -570,11 +570,17 @@
 }
 
 /* Radio Buttons */
-.mdl-radio.show-focus .mdl-radio__button:hover+.mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio.show-focus .mdl-radio__button:hover+.mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio.show-focus .mdl-radio__button:focus+.mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio.show-focus .mdl-radio__button:focus+.mdl-radio__circles .mdl-radio__outer-circle {
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label {
   color: var(--accent80) !important;
+}
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle {
+  color: var(--fullaccent) !important;
 }
 .mdl-radio__focus-circle {
   background: var(--fullaccent) !important;
