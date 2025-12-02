@@ -349,7 +349,7 @@
 /* Buttons: Menu Items
 --------------------------------------------------------------------------*/
 
-.actionSheetMenuItem,
+.listItem-button:not(.listItem-largeImage),
 .emby-collapsible-button,
 .listTextButton-autohide {
   border-radius: var(--rounding-system);
@@ -363,16 +363,19 @@
   padding-left: .5em !important;
   padding-right: .5em !important;
 }
-.actionSheetMenuItem:hover,
+.listItem-button:not(.listItem-largeImage):hover,
 .emby-collapsible-button:hover,
 .listTextButton-autohide:hover {
   color: var(--accent80) !important;
   border-color: var(--accent40) !important;
+  /* background: rgba(0, 0, 0, 0.2) !important; */
 }
-.actionSheetMenuItem:focus,
+.listItem-button:not(.listItem-largeImage):focus,
 .emby-collapsible-button:focus,
 .listTextButton-autohide:focus {
   color: var(--fullaccent) !important;
+  /* border-color: var(--accent60) !important;
+  background: rgba(0, 0, 0, 0.4) !important; */
 }
 
 /* Buttons: Menu List Items
@@ -607,227 +610,6 @@
 
 /*
 ===========================================================================
-  Cards
-===========================================================================
-*/
-
-/* Cards: Narrow margins */
-.cardBox-bottompadded {
-  margin-bottom: 0.5em !important;
-  /* margin-right: 1.5vw !important; */
-}
-
-/* Cards: Full Rounding */
-.blurhash-canvas,
-.cardBox,
-.cardContent,
-.cardOverlayContainer,
-.cardContent-button,
-.cardContent-shadow,
-.cardImage,
-.cardImageContainer,
-.cardOverlayButtonIcon,
-.cardScalable,
-.visualCardBox,
-.cardBox:not(.visualCardBox) .cardPadder {
-  border-radius: var(--rounding-media);
-}
-
-/* Cards: Rounding Top, Flat Bottom */
-.visualCardBox:has(.cardFooter) .blurhash-canvas,
-.visualCardBox:has(.cardFooter) .cardImage,
-.visualCardBox:has(.cardFooter) .coveredImage,
-.visualCardBox:has(.cardFooter) .cardImageContainer,
-.visualCardBox:has(.cardFooter) .cardOverlayContainer,
-.visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent {
-  border-bottom-left-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-}
-
-/* Card Footer: Flat Top, Rounding Bottom */
-.cardFooter:not(.visualCardBox-cardFooter) {
-  border-bottom-left-radius: var(--rounding-media) !important;
-  border-bottom-right-radius: var(--rounding-media) !important;
-  background: rgba(0, 0, 0, var(--footeropacity)) !important;
-}
-
-/*
-===========================================================================
-  Cards: Shadows
-===========================================================================
-*/
-
-/* Box Shadow card with footer */
-.libraryPage .cardBox:has(.cardFooter) {
-  box-shadow: var(--cardshadow);
-}
-
-/* Box Shadow image for card without footer */
-.libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable {
-  box-shadow: var(--cardshadow);
-}
-
-/* Smoothen Card Image */
-.libraryPage  .cardImageContainer {
-  box-shadow: var(--insettop), var(--insetbottom);
-}
-
-/*
-===========================================================================
-  Cards: Text
-===========================================================================
-*/
-
-/* Card Text Container */
-.cardPadder {
-  background-color: #0000 !important;
-  box-shadow: none !important;
-}
-
-/* Card Text: Shadow (only without footer) */
-:not(.cardFooter) > .cardText-first {
-  text-shadow: var(--textshadow) !important;
-  padding-top: .5em !important;
-}
-
-/* Card Text: Secondary Text */
-.cardText-secondary {
-  font-size: 75% !important;
-  text-shadow: var(--textshadow) !important;
-}
-
-/* Card Hover-Buttons: Play */
-.cardOverlayButton:hover {
-  color: var(--fullaccent) !important;
-  background: #0000 !important;
-}
-
-/*
-===========================================================================
-  Cards: Animations
-===========================================================================
-*/
-
-/* Cards: Zoom on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardBox {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-/* Cards: Text Color on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary {
-  color: var(--fullaccent) !important;
-}
-
-/* Cards: Glow only Images on overflow Cards */
-.overflowBackdropCard:hover .cardScalable,
-.overflowPortraitCard:hover .cardScalable {
-  box-shadow: var(--cardglow) !important;
-}
-
-/*
-===========================================================================
-  Cards: Indicators
-===========================================================================
-*/
-
-/* Card Indicators: Alignment */
-.cardContent .cardIndicators,
-.mediaSourceIndicator {
-  right: 0.5em !important;
-  top: 0.5em !important;
-}
-
-/* Card Indicators: Count & Played */
-.playedIndicator {
-  color: var(--fullaccent) !important;
-  background: rgba(0, 0, 0, 1);
-  border-radius: var(--rounding-system) !important;
-  border: none;
-}
-.countIndicator,
-.mediaSourceIndicator {
-  font-weight: 600;
-  font-size: 89%;
-  color: rgba(0, 0, 0, 1);
-  background: var(--fullaccent) !important;
-  border-radius: var(--rounding-system) !important;
-  border: none;
-}
-.playstatebutton-icon-played,
-.ratingbutton-icon-withrating {
-  color: var(--fullaccent) !important;
-}
-
-/* Card Indicators: Missing & Unaired */
-.missingIndicator,
-.unairedIndicator {
-  color: #fff;
-  background: #ae3030eb;
-  padding: .3em .6em;
-}
-
-/* Card Indicators: Multi Select Checkboxes */
-.multiSelectCheckboxOutline {
-  border-top-left-radius: var(--rounding-media) !important;
-  border-top-right-radius: var(--rounding-system) !important;
-  border-bottom-right-radius: var(--rounding-system) !important;
-  border-bottom-left-radius: var(--rounding-system) !important;
-}
-
-/* Card Indicators: Multiselect selected */
-.Mui-selected {
-  color: var(--accent80) !important;
-}
-
-/*
-===========================================================================
-  Cards: Progressbar
-===========================================================================
-*/
-
-/* Card Progressbar: Background */
-.itemProgressBar {
-  background: rgba(0, 0, 0, 0.5) !important;
-  border-radius: var(--rounding-media) !important;
-  height: .4em !important;
-  margin: .5em .8em !important;
-  backdrop-filter: blur(6px);
-}
-
-/* Card Progressbar: Progress */
-.itemProgressBarForeground {
-  background-color: var(--fullaccent) !important;
-  border-radius: var(--rounding-media) !important;
-}
-
-/*
-===========================================================================
-  Cards: Default Backgrounds
-===========================================================================
-*/
-
-/* Background color for Cards without Pictures */
-.defaultCardBackground1 {
-  background: hsl(var(--accent-h), var(--accent-s), 17%);
-}
-.defaultCardBackground2 {
-  background: hsl(var(--accent-h), var(--accent-s), 16%);
-}
-.defaultCardBackground3 {
-  background: hsl(var(--accent-h), var(--accent-s), 15%);
-}
-.defaultCardBackground4 {
-  background: hsl(var(--accent-h), var(--accent-s), 14%);
-}
-.defaultCardBackground5 {
-  background: hsl(var(--accent-h), var(--accent-s), 13%);
-}
-
-
-/*
-===========================================================================
   Login Page
 ===========================================================================
 */
@@ -997,14 +779,115 @@
 
 /* Sorting Menu: Radio Button spacing */
 .radio-label-block {
-  margin: 1em !important;
+  margin-top: .6em !important;
 }
 
 /*
 ===========================================================================
-  Library Pages: Recent & NextUp
+  Cards: Size & Alignment
 ===========================================================================
 */
+
+/* Cards: More Space for Animations */
+.backdropCard.show-focus.show-animation,
+.portraitCard.show-focus.show-animation {
+  padding-bottom: 1.5vh !important;
+  padding-right: 1vw !important;
+}
+.itemsContainer > .card > .cardBox {
+  margin-left: 0.5em !important;
+}
+
+/* Cards: Narrow margins */
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+  margin-right: 1.5vw !important;
+}
+
+/*
+===========================================================================
+  Cards: Roundings
+===========================================================================
+*/
+
+/* Cards: Full Rounding */
+.blurhash-canvas,
+.cardBox,
+.cardContent,
+.cardOverlayContainer,
+.cardContent-button,
+.cardContent-shadow,
+.cardImage,
+.cardImageContainer,
+.cardOverlayButtonIcon,
+.cardScalable,
+.visualCardBox,
+.cardBox:not(.visualCardBox) .cardPadder {
+  border-radius: var(--rounding-media);
+}
+
+/* Cards: Rounding Top, Bottom Flat */
+.visualCardBox:has(.cardFooter) .blurhash-canvas,
+.visualCardBox:has(.cardFooter) .cardImage,
+.visualCardBox:has(.cardFooter) .coveredImage,
+.visualCardBox:has(.cardFooter) .cardImageContainer,
+.visualCardBox:has(.cardFooter) .cardOverlayContainer,
+.visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* Card Footer: Flat Top, Rounding Bottom */
+.cardFooter:not(.visualCardBox-cardFooter) {
+  border-bottom-left-radius: var(--rounding-media) !important;
+  border-bottom-right-radius: var(--rounding-media) !important;
+  background: rgba(0, 0, 0, var(--footeropacity)) !important;
+}
+
+/*
+===========================================================================
+  Cards: Shadows
+===========================================================================
+*/
+
+/* Box Shadow card with footer */
+.libraryPage .cardBox:has(.cardFooter) {
+  box-shadow: var(--cardshadow);
+}
+
+/* Box Shadow image for card without footer */
+.libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable {
+  box-shadow: var(--cardshadow);
+}
+
+/* Smoothen Card Image */
+.libraryPage  .cardImageContainer {
+  box-shadow: var(--insettop), var(--insetbottom);
+}
+
+/*
+===========================================================================
+  Cards: Text
+===========================================================================
+*/
+
+/* Card Text Container */
+.cardPadder {
+  background-color: #0000 !important;
+  box-shadow: none !important;
+}
+
+/* Card Text: Title (not on poster thumbs) */
+:not(.cardFooter) > .cardText-first {
+  text-shadow: var(--textshadow) !important;
+  padding-top: .5em !important;
+}
+
+/* Card Text: Secondary Text */
+.cardText-secondary {
+  font-size: 75% !important;
+  text-shadow: var(--textshadow) !important;
+}
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .overflowBackdropCard[data-type="Episode"] .cardText-first,
@@ -1026,98 +909,149 @@
   display: none;
 }
 
+/* Misc */
+.cardOverlayButton:hover {
+  color: var(--fullaccent) !important;
+  background: #0000 !important;
+}
+
 /*
 ===========================================================================
-  Library Pages: Views
+  Cards: Animations
 ===========================================================================
 */
 
-/* Views: Banner
---------------------------------------------------------------------------*/
-
-.itemsContainer > .bannerCard {
-  padding-bottom: 1.5vh !important;
-  padding-right: 1vw !important;
+/* Cards: Zoom on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardBox {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.itemsContainer > .bannerCard:hover > .cardBox {
+
+/* Cards: Text Color on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary {
+  color: var(--fullaccent) !important;
+}
+
+/* Cards: Glow Cards with Footer on hover */
+.backdropCard:has(.cardFooter):hover .cardBox,
+.portraitCard:has(.cardFooter):hover .cardBox {
   box-shadow: var(--cardglow) !important;
 }
 
-/* Views: List
---------------------------------------------------------------------------*/
-
-/* List Item Cards */
-.itemsContainer > .listItem-focusscale {
-  border: var(--buttonborder) !important;
-  border-radius: var(--rounding-media);
-  background: rgba(0, 0, 0, 0.2) !important;
-  padding-bottom: 1.5vh !important;
-  padding-right: 1vw !important;
-  margin-bottom: .5em;
-}
-.itemsContainer > .listItem-focusscale:hover {
-  border: solid 2px var(--accent40) !important;
-  background: rgba(0, 0, 0, 0.7) !important;
-}
-.itemsContainer > .listItem-focusscale:focus {
-  box-shadow: var(--buttonglow) !important;
-  border: solid 2px var(--accent80) !important;
-  background: rgba(0, 0, 0, 0.7) !important;
-}
-
-/* List Item Cards: Picture Size */
-.itemsContainer > .listItem-focusscale .listItemImage {
-  height: 5em;
-  width: 5em;
-}
-
-/* Hide Alphapicker > steals focus with remote */
-.itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
-  display: none
-}
-
-/* Views: Poster
---------------------------------------------------------------------------*/
-
-.itemsContainer > .portraitCard:not(:has(.cardFooter)) {
-  padding-bottom: 1.5vh !important;
-  padding-right: 1vw !important;
-}
-.itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
+/* Cards: Glow only Images on overflow Cards */
+#itemDetailPage .overflowBackdropCard:hover .cardScalable,
+#itemDetailPage .overflowPortraitCard:hover .cardScalable,
+.homeSectionsContainer .overflowBackdropCard:hover .cardScalable,
+.homeSectionsContainer .overflowPortraitCard:hover .cardScalable {
   box-shadow: var(--cardglow) !important;
 }
 
-/* Views: Poster Card
---------------------------------------------------------------------------*/
-
-.itemsContainer > .portraitCard:has(.cardFooter) {
-  padding-bottom: 1.5vh !important;
-  padding-right: 1vw !important;
-}
-.itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox {
+/* Cards: Glow only Images on Cards without Footer  */
+#itemDetailPage .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+#itemDetailPage .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+.backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+.portraitCard:not(:has(.cardFooter)):hover .cardScalable {
   box-shadow: var(--cardglow) !important;
 }
 
-/* Views: Thumb
---------------------------------------------------------------------------*/
+/*
+===========================================================================
+  Cards: Indicators
+===========================================================================
+*/
 
-.itemsContainer > .backdropCard:not(:has(.cardFooter)) {
-  padding-bottom: 1.5vh !important;
-  padding-right: 1vw !important;
-}
-.itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable {
-  box-shadow: var(--cardglow) !important;
+/* Card Indicators: Alignment */
+.cardContent .cardIndicators,
+.mediaSourceIndicator {
+  right: 0.5em !important;
+  top: 0.5em !important;
 }
 
-/* Views: Thumb Card
---------------------------------------------------------------------------*/
-
-.itemsContainer > .backdropCard:has(.cardFooter) {
-  padding-bottom: 1.5vh !important;
-  padding-right: 1vw !important;
+/* Card Indicators: Count & Played */
+.playedIndicator {
+  color: var(--fullaccent) !important;
+  background: rgba(0, 0, 0, 1);
+  border-radius: var(--rounding-system) !important;
+  border: none;
 }
-.itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox {
-  box-shadow: var(--cardglow) !important;
+.countIndicator,
+.mediaSourceIndicator {
+  font-weight: 600;
+  font-size: 89%;
+  color: rgba(0, 0, 0, 1);
+  background: var(--fullaccent) !important;
+  border-radius: var(--rounding-system) !important;
+  border: none;
+}
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating {
+  color: var(--fullaccent) !important;
+}
+
+/* Card Indicators: Missing & Unaired */
+.missingIndicator,
+.unairedIndicator {
+  color: #fff;
+  background: #ae3030eb;
+  padding: .3em .6em;
+}
+
+/* Card Indicators: Multi Select Checkboxes */
+.multiSelectCheckboxOutline {
+  border-top-left-radius: var(--rounding-media) !important;
+  border-top-right-radius: var(--rounding-system) !important;
+  border-bottom-right-radius: var(--rounding-system) !important;
+  border-bottom-left-radius: var(--rounding-system) !important;
+}
+
+/* Card Indicators: Multiselect selected */
+.Mui-selected {
+  color: var(--accent80) !important;
+}
+
+/*
+===========================================================================
+  Cards: Progressbar
+===========================================================================
+*/
+
+/* Card Progressbar: Background */
+.itemProgressBar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: var(--rounding-media) !important;
+  height: .4em !important;
+  margin: .5em .8em !important;
+  backdrop-filter: blur(6px);
+}
+
+/* Card Progressbar: Progress */
+.itemProgressBarForeground {
+  background-color: var(--fullaccent) !important;
+  border-radius: var(--rounding-media) !important;
+}
+
+/*
+===========================================================================
+  Cards: Default Backgrounds
+===========================================================================
+*/
+
+/* Background color for Cards without Pictures */
+.defaultCardBackground1 {
+  background: hsl(var(--accent-h), var(--accent-s), 17%);
+}
+.defaultCardBackground2 {
+  background: hsl(var(--accent-h), var(--accent-s), 16%);
+}
+.defaultCardBackground3 {
+  background: hsl(var(--accent-h), var(--accent-s), 15%);
+}
+.defaultCardBackground4 {
+  background: hsl(var(--accent-h), var(--accent-s), 14%);
+}
+.defaultCardBackground5 {
+  background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
 
 /*
@@ -1164,7 +1098,6 @@
 .layout-tv .detailImageContainer .card {
   top: 1vh !important;
 }
-
 
 /*
 ===========================================================================
@@ -1271,8 +1204,7 @@ p.itemGenres {
   margin-left: -.5em !important;
   padding-left: .5em !important;
   margin-right: -.5em !important;
-  margin-bottom: 1em !important;
-  margin-top: .5em !important;
+  margin-bottom: .5em !important;
 }
 
 /* Section Scroller: Space between Sections (TV) */
@@ -1280,18 +1212,15 @@ p.itemGenres {
   margin-bottom: 1em !important;
 }
 
-.detailPageSecondaryContainer .itemsContainer-tv {
-  margin-left: .5em !important;
+/* Section Scroller: Space for Zoom Animation */
+.detailPagePrimaryContainer .verticalSection .emby-scroller,
+.detailPageSecondaryContainer .verticalSection .emby-scroller {
+  padding-left: .3em !important;
 }
 
-#childrenContent .itemsContainer .overflowPortraitCard,
-#childrenContent .itemsContainer .overflowBackdropCard,
-.verticalSection > .itemsContainer .overflowPortraitCard,
-.verticalSection > .itemsContainer .overflowBackdropCard,
-.emby-scroller .overflowPortraitCard,
-.emby-scroller .overflowBackdropCard {
-  margin-left: .5em !important;
-  margin-right: .5em !important;
+/* Section Scroller: Cards spacing */
+.detailVerticalSection .itemsContainer-tv > .overflowBackdropCard {
+  margin-left: .5vw !important;
 }
 
 /* Section Scroller (Mobile) */
@@ -1303,7 +1232,7 @@ p.itemGenres {
 }
 
 /* Section Scroller: Episodes in Season Overview */
-.itemsContainer > .listItem-largeImage {
+.itemsContainer > .listItem-button {
   border: var(--buttonborder) !important;
   border-radius: var(--rounding-media);
   margin-bottom: 1em;
@@ -1313,17 +1242,19 @@ p.itemGenres {
   -webkit-transform: none !important;
   transform: none !important;
 }
-.itemsContainer > .listItem-largeImage:hover {
+.itemsContainer > .listItem-button:hover {
   border: solid 2px var(--accent40) !important;
   background: rgba(0, 0, 0, 0.7) !important;
 }
-.itemsContainer > .listItem-largeImage:focus {
+.itemsContainer > .listItem-button:focus {
   box-shadow: var(--buttonglow) !important;
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
 }
-
-/* Eisode Title Accent */
+.listItem-button:hover {
+  border-color: var(--accent20) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+}
 .listItem-button:focus .listItemBodyText:not(.secondary) {
   color: var(--fullaccent) !important;
   background: #0000 !important;
@@ -1338,6 +1269,12 @@ p.itemGenres {
 .listItemIndicators {
   left: 0.5em;
   top: 0.5em;
+}
+
+/* Section Scroller: Cast Cards */
+#childrenContent .card {
+  padding-bottom: 1em;
+  padding-top: 1em;
 }
 
 /*
@@ -1688,7 +1625,7 @@ h2.username {
 /* Misc: Fab-Button */
 .fab {
   border-radius: var(--rounding-system) !important;
-  transition: all 0.2s !important;
+	transition: all 0.2s !important;
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
