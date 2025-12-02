@@ -33,12 +33,12 @@ Add the following to your custom branding:
 :root {
 
   /* Accent Color */
-  --accent-h: 36;    /* Hue: Orange */
+  --accent-h: 310;   /* Hue: Purple */
   --accent-s: 100%;  /* Saturation */
   --accent-l: 50%;   /* Brightness */
 
   /* Background Image */
-  --bgImage: url("https://wallpapershome.com/images/pages/pic_h/12740.jpg");
+  --bgImage: url("https://wallpaperaccess.com/download/purple-galaxy-439751");
 
   /* Darkness & Opacity */
   --bgdarkness: 0.6;    /* Background Darkness */

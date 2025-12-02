@@ -29,9 +29,8 @@
 
   /* Card Shadow */
   --cardshadow: 4px 4px 10px 3px rgb(0 0 0 / 40%);
-  --cardshadow: 4px 4px 10px 3px rgb(0 0 0 / 40%);
 
-  /* Card smoothening */
+  /* Card Smoothening */
   --insettop: inset -1px 3px 14px 0px rgb(255 255 255 / 10%);
   --insetbottom: inset -3px -3px 14px 0px rgb(0 0 0 / 40%);
 
