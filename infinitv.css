@@ -39,6 +39,8 @@
   --cardglow: 0px 0px 10px 3px var(--accent80) !important;
   --buttonglow: 0px 0px 10px 1px var(--fullaccent) !important;
 
+  --textshadow: 2px 2px 4px black;
+
 }
 
 /*
@@ -397,6 +399,9 @@
 }
 .listItem-border:focus {
   color: var(--fullaccent) !important;
+}
+.listItemBodyText {
+  text-shadow: var(--textshadow) !important;
 }
 
 /* Buttons: Media Page Play-Buttons
@@ -866,14 +871,14 @@
 
 /* Card Text: Title (not on poster thumbs) */
 :not(.cardFooter) > .cardText-first {
-  text-shadow: 2px 2px 4px black;
+  text-shadow: var(--textshadow) !important;
   padding-top: .5em !important;
 }
 
 /* Card Text: Secondary Text */
 .cardText-secondary {
   font-size: 75% !important;
-  text-shadow: 2px 2px 4px black;
+  text-shadow: var(--textshadow) !important;
 }
 
 /* Recent & NextUp: Hide Series Title */
@@ -1630,5 +1635,4 @@ h2.username {
 /* Misc: SyncPlay */
 .syncPlayIconCircle {
   color: var(--fullaccent) !important;
-  text-shadow: none !important;
 }
