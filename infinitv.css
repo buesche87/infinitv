@@ -157,18 +157,8 @@
 /* Collapsible Menu */
 .collapseContent {
   background: #0000 !important;
-}
-
-/* Collapsible Menu: Buttons */
-.emby-collapsible-button {
-  -webkit-transform: none !important;
-  transform: none !important;
-  margin-bottom: .2em !important;
-}
-
-/* Collapsible Menu: Button Text */
-.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
-  margin-left: 0.5em;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 /* Collapsible Menu Items: No Background on Hover */
@@ -316,15 +306,15 @@
 /* Buttons: Header, Menus, Filter & OSD
 --------------------------------------------------------------------------*/
 
-.paper-icon-button-light {
+.paper-icon-button-light:not(.alphaPickerButton) {
   border-radius: var(--rounding-media);
 }
-.paper-icon-button-light:not(:disabled):hover {
+.paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
   color: var(--fullaccent) !important;
   background: var(--accent20) !important;
 }
-.paper-icon-button-light:focus,
-.paper-icon-button-light:active {
+.paper-icon-button-light:not(.alphaPickerButton):focus,
+.paper-icon-button-light:not(.alphaPickerButton):active {
   color: var(--fullaccent) !important;
 }
 
@@ -346,12 +336,10 @@
   color: #fff;
 }
 
-/* Buttons: Menu Items
+/* Buttons: actionSheetMenuItem
 --------------------------------------------------------------------------*/
 
-.actionSheetMenuItem,
-.emby-collapsible-button,
-.listTextButton-autohide {
+.actionSheetMenuItem {
   border-radius: var(--rounding-system);
   border: solid 2px #0000;
   border-color: #0000 !important;
@@ -363,17 +351,59 @@
   padding-left: .5em !important;
   padding-right: .5em !important;
 }
-.actionSheetMenuItem:hover,
-.emby-collapsible-button:hover,
+.actionSheetMenuItem:hover {
+  color: var(--accent80) !important;
+  border-color: var(--accent40) !important;
+}
+.actionSheetMenuItem:focus {
+  color: var(--fullaccent) !important;
+}
+
+/* Buttons: Menu Items
+--------------------------------------------------------------------------*/
+
+.listTextButton-autohide {
+  border-radius: var(--rounding-system);
+  border: solid 2px #0000;
+  border-color: #0000 !important;
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  padding: .75em !important;
+  margin: .2em !important;
+}
 .listTextButton-autohide:hover {
   color: var(--accent80) !important;
   border-color: var(--accent40) !important;
 }
-.actionSheetMenuItem:focus,
-.emby-collapsible-button:focus,
 .listTextButton-autohide:focus {
   color: var(--fullaccent) !important;
 }
+
+/* Buttons: Collapsible
+--------------------------------------------------------------------------*/
+
+.emby-collapsible-button {
+  border-radius: var(--rounding-system);
+  background: #0000 !important;
+  border: solid 2px #0000;
+  padding: .75em !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+.emby-collapsible-button:hover {
+  color: var(--accent80) !important;
+  border-color: var(--accent40) !important;
+}
+.emby-collapsible-button:focus {
+  color: var(--fullaccent) !important;
+}
+
+/* Collapsible Menu: Button Text */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+  margin-left: 0.5em;
+}
+
 
 /* Buttons: Menu List Items
 --------------------------------------------------------------------------*/
@@ -651,6 +681,7 @@
   border-bottom-left-radius: var(--rounding-media) !important;
   border-bottom-right-radius: var(--rounding-media) !important;
   background: rgba(0, 0, 0, var(--footeropacity)) !important;
+  text-align: center;
 }
 
 /*
@@ -893,7 +924,8 @@
 }
 
 /* Scroller Alignment */
-#indexPage .homeSectionsContainer .emby-scroller {
+#indexPage .homeSectionsContainer .emby-scroller,
+#tvRecommendedPage .verticalSection .itemsContainer-tv {
   padding-left: 2em;
 }
 
@@ -909,6 +941,7 @@
 */
 
 /* Library Pages: Move up */
+.libraryPage,
 #loginPage,
 #indexPage,
 #moviesPage,
@@ -923,14 +956,22 @@
 }
 
 /* Section Titles */
-#indexPage .sectionTitleContainer-cards {
+#indexPage .sectionTitleContainer-cards,
+#tvRecommendedPage .sectionTitleContainer-cards {
   padding-top: .5em;
   padding-bottom: .5em;
   padding-left: 0em;
   margin-top: .5em;
-  margin-bottom: .5vh;
+  margin-bottom: .5em;
   background: hsl(0deg 0% 100% / 10%);
   text-align: center;
+}
+
+#tvRecommendedPage .sectionTitleContainer-cards .button-flat:focus {
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  color: var(--fullaccent) !important;
 }
 
 /* Section Titles: Text & Icons */
@@ -938,7 +979,6 @@
 .sectionTitleTextButton>.material-icons {
   margin: 0;
 }
-
 
 /* Section Titles: Spacing between cards */
 .itemsContainer-tv .overflowPortraitCard,
@@ -965,11 +1005,18 @@
 }
 
 /* Alphabet Picker */
+.alphaPickerButton {
+  height: 1.6em;
+}
 .alphaPickerButton:hover {
   background: var(--accent60) !important;
+  color: inherit !important;
 }
 .alphaPickerButton:focus {
   background: var(--accent80) !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  transition: none !important;
 }
 
 /*
@@ -1061,6 +1108,8 @@
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
   margin-bottom: .5em;
+  padding-left: 0em;
+  height: 5em;
 }
 .itemsContainer > .listItem-focusscale:hover {
   border: solid 2px var(--accent40) !important;
@@ -1075,12 +1124,16 @@
 /* List Item Cards: Picture Size */
 .itemsContainer > .listItem-focusscale .listItemImage {
   height: 5em;
-  width: 5em;
+  width: 10em;
+  top: .3em;
 }
 
 /* Hide Alphapicker > steals focus with remote */
 .itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
-  display: none
+  display: none !important;
+}
+#moviesPage:has(.listItem-focusscale) .alphaPicker {
+  display: none !important;
 }
 
 /* Views: Poster
@@ -1618,7 +1671,8 @@ p.itemGenres {
 #quickConnectPreferencesPage,
 #displayPreferencesPage,
 #homeScreenPreferencesPage,
-#languagePreferencesPage {
+#languagePreferencesPage,
+#searchPage {
   padding-top: 5em !important;
 }
 
@@ -1645,6 +1699,26 @@ p.itemGenres {
   margin-top: 2em;
 }
 
+#searchPage .searchFieldsInner {
+  padding-bottom: 1em;
+}
+
+/* Section Titles */
+#searchPage .sectionTitle {
+  padding-top: .3em;
+  padding-bottom: .3em;
+  padding-left: 0em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  background: hsl(0deg 0% 100% / 10%);
+  text-align: center;
+}
+
+.searchSuggestionsList > div:hover,
+.searchSuggestionsList > div:has(.emby-button:focus) {
+  background: hsl(0deg 0% 100% / 10%);
+  border-radius: var(--rounding-system);
+}
 
 /*
 ===========================================================================
