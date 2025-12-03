@@ -497,6 +497,8 @@
   resize: vertical !important;
   font-family: monospace;
   font-size: .9em;
+  min-height: 6em;  /* beliebig */
+  overflow-y: hidden;
 }
 
 /* Select Container */
@@ -825,7 +827,6 @@
   background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
 
-
 /*
 ===========================================================================
   Login Page
@@ -957,12 +958,6 @@
 .layout-desktop #indexPage .emby-scroller {
   padding-top: 1em;
 }
-
-
-/* Media Scroller: Backdrop Card spacing 
-.homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
-  margin-right: 1vw !important;
-} */
 
 /* Media Scroller: Buttons */
 .emby-scrollbuttons {
@@ -1294,16 +1289,13 @@ p.itemGenres {
 .detailPageSecondaryContainer .itemsContainer-tv {
   margin-left: 1em !important;
 }
-
 .detailPagePrimaryContainer #childrenContent .itemsContainer-tv,
 .detailPageSecondaryContainer #childrenContent .itemsContainer-tv {
   padding-top: .5em;
 }
-
 .detailPageSecondaryContainer .verticalSection .emby-scroller:has(.overflowPortraitCard:not(.personCard)) {
   padding-top: 2em;
 }
-
 
 /* Section Scroller (Mobile) */
 .layout-mobile:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
@@ -1622,9 +1614,37 @@ p.itemGenres {
 }
 
 /* Settings Pages: Move content up */
-#quickConnectPreferencesPage {
+#myPreferencesMenuPage,
+#quickConnectPreferencesPage,
+#displayPreferencesPage,
+#homeScreenPreferencesPage,
+#languagePreferencesPage {
   padding-top: 5em !important;
 }
+
+/* Preferences Pages */
+#homeScreenPreferencesPage .verticalSection-extrabottompadding,
+#languagePreferencesPage .verticalSection-extrabottompadding {
+  margin-bottom: 0em;
+}
+#languagePreferencesPage .selectContainer,
+#displayPreferencesPage .inputContainer {
+  margin-bottom: 1em;
+}
+#displayPreferencesPage .checkboxContainer,
+#displayPreferencesPage .selectContainer, 
+#homeScreenPreferencesPage .selectContainer,
+#homeScreenPreferencesPage .checkboxContainer,
+#homeScreenPreferencesPage .checkboxListContainer,
+#languagePreferencesPage .checkboxContainer {
+  margin-bottom: 1.25em;
+}
+#displayPreferencesPage .btnSave,
+#homeScreenPreferencesPage .btnSave,
+#languagePreferencesPage .btnSave {
+  margin-top: 2em;
+}
+
 
 /*
 ===========================================================================
