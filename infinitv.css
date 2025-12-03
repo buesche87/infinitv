@@ -893,7 +893,7 @@
 
 /* Scroller Alignment */
 #indexPage .homeSectionsContainer .emby-scroller {
-  padding-left: 2.5em;
+  padding-left: 2em;
 }
 
 /* Move content below Slides (Desktop) */
@@ -926,7 +926,7 @@
   padding-top: .5em;
   padding-bottom: .5em;
   padding-left: 0em;
-  margin-top: 1.5vh;
+  margin-top: .5em;
   margin-bottom: .5vh;
   background: hsl(0deg 0% 100% / 10%);
   text-align: center;
