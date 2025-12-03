@@ -893,7 +893,7 @@
 
 /* Scroller Alignment */
 #indexPage .homeSectionsContainer .emby-scroller {
-  padding-left: 3vw;
+  padding-left: 2.5em;
 }
 
 /* Move content below Slides (Desktop) */
@@ -944,13 +944,13 @@
 }
 
 .layout-tv #indexPage .scrollSlider {
-  padding-top: 2vh !important;
+  padding-top: 1em !important;
 }
 
-/* Media Scroller: Backdrop Card spacing  */
+/* Media Scroller: Backdrop Card spacing 
 .homeSectionsContainer .itemsContainer-tv > .overflowBackdropCard {
   margin-right: 1vw !important;
-}
+} */
 
 /* Media Scroller: Buttons */
 .emby-scrollbuttons {
@@ -1290,8 +1290,8 @@ p.itemGenres {
 .verticalSection > .itemsContainer .overflowBackdropCard,
 .emby-scroller .overflowPortraitCard,
 .emby-scroller .overflowBackdropCard {
-  margin-left: .5em !important;
-  margin-right: .5em !important;
+  margin-left: .3em !important;
+  margin-right: .3em !important;
 }
 
 /* Section Scroller (Mobile) */
