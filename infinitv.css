@@ -944,7 +944,7 @@
 }
 
 .layout-tv #indexPage .scrollSlider {
-  padding-top: 1em !important;
+  padding-top: .5em !important;
 }
 
 /* Media Scroller: Backdrop Card spacing 
@@ -1263,7 +1263,6 @@ p.itemGenres {
 /* Section Titles */
 .detailPagePrimaryContainer .sectionTitle,
 .detailPageSecondaryContainer .sectionTitle {
-  margin-bottom: .5em !important;
   background: hsl(0deg 0% 100% / 10%);
   border-radius: var(--rounding-system) !important;
   padding-top: .3em !important;
@@ -1271,7 +1270,7 @@ p.itemGenres {
   margin-left: -.5em !important;
   padding-left: .5em !important;
   margin-right: -.5em !important;
-  margin-bottom: 1em !important;
+  margin-bottom: .5em !important;
   margin-top: .5em !important;
 }
 
@@ -1279,9 +1278,9 @@ p.itemGenres {
 .layout-tv .detailVerticalSection {
   margin-bottom: 1em !important;
 }
-
+/* Section Scroller: Space for Animation */
 .detailPageSecondaryContainer .itemsContainer-tv {
-  margin-left: .5em !important;
+  margin-left: 1em !important;
 }
 
 #childrenContent .itemsContainer .overflowPortraitCard,
