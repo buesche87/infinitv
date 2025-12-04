@@ -991,7 +991,7 @@
 
 /* Max card width */
 .itemsContainer-tv>.overflowBackdropCard {
-    max-width: 13vw;
+  max-width: 28em;
 }
 
 /* Media Scroller: Spacing (TV) */
