@@ -989,6 +989,11 @@
   margin-right: .4em !important;
 }
 
+/* Max card width */
+.itemsContainer-tv>.overflowBackdropCard {
+    max-width: 13vw;
+}
+
 /* Media Scroller: Spacing (TV) */
 .layout-tv #indexPage .scrollSlider {
   padding-top: .5em !important;
