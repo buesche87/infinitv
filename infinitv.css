@@ -1127,7 +1127,7 @@
 }
 
 /* List Item Cards: Picture Size */
-.itemsContainer > .listItem-focusscale .listItemImage {
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage) .listItemImage {
   height: 5em;
   width: 10em;
   top: .3em;
