@@ -1106,7 +1106,7 @@
 --------------------------------------------------------------------------*/
 
 /* List Item Cards */
-.itemsContainer > .listItem-focusscale {
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage) {
   border: var(--buttonborder) !important;
   border-radius: var(--rounding-media);
   background: rgba(0, 0, 0, 0.2) !important;
@@ -1116,11 +1116,11 @@
   padding-left: 0em;
   height: 5em;
 }
-.itemsContainer > .listItem-focusscale:hover {
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):hover {
   border: solid 2px var(--accent40) !important;
   background: rgba(0, 0, 0, 0.7) !important;
 }
-.itemsContainer > .listItem-focusscale:focus {
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
   box-shadow: var(--buttonglow) !important;
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
