@@ -48,7 +48,7 @@ Add the following to your custom branding:
 
   /* Roundings */
   --rounding-media: 12px;
-  --rounding-system: 4px;
+  --rounding-system: 6px;
 }
 ```
 
