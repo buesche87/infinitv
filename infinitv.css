@@ -313,12 +313,12 @@
   border-radius: var(--rounding-media);
 }
 .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
-  color: var(--fullaccent) !important;
-  background: var(--accent20) !important;
+  color: var(--fullaccent);
+  background-color: var(--accent20);
 }
 .paper-icon-button-light:not(.alphaPickerButton):focus,
 .paper-icon-button-light:not(.alphaPickerButton):active {
-  color: var(--fullaccent) !important;
+  color: var(--fullaccent);
 }
 
 /* Buttons: Header-Tab
