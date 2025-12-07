@@ -281,7 +281,8 @@
 --------------------------------------------------------------------------*/
 
 .emby-button.block,
-.button-submit {
+.button-submit,
+.raised {
   border-radius: var(--rounding-system);
   border: 2px solid rgba(255, 255, 255, 0.2);
   margin: 0.5em 0;
@@ -291,13 +292,15 @@
   transform: none !important;
 }
 .emby-button.block:hover,
-.button-submit:hover {
+.button-submit:hover,
+.raised:hover {
   color: var(--fullaccent) !important;
   border-color: var(--accent40) !important;
   background: rgba(0, 0, 0, 0.2) !important;
 }
 .emby-button.block:focus,
-.button-submit:focus {
+.button-submit:focus,
+.raised:focus {
   color: var(--fullaccent) !important;
   border-color: var(--accent80) !important;
   background: rgba(0, 0, 0, 0.4) !important;
@@ -757,6 +760,12 @@
 .overflowBackdropCard:hover .cardScalable,
 .overflowPortraitCard:hover .cardScalable {
   box-shadow: var(--cardglow) !important;
+}
+
+/* Space for glow animation */
+.layout-desktop .overflowBackdropCard .cardScalable,
+.layout-desktop .overflowPortraitCard .cardScalable {
+  margin-left: .5em;
 }
 
 /*
