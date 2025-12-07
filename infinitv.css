@@ -1363,8 +1363,8 @@ p.itemGenres {
   padding-top: .2em;
 }
 
-/* Section Scroller: Episodes in Season Overview */
-.itemsContainer > .listItem-largeImage {
+/* Cards: Large List Items */
+.listItem-largeImage {
   border: var(--buttonborder) !important;
   border-radius: var(--rounding-media);
   margin-bottom: 1em;
@@ -1373,15 +1373,29 @@ p.itemGenres {
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
+  height: 15em;
+  margin-right: .5em;
 }
-.itemsContainer > .listItem-largeImage:hover {
+.listItem-largeImage:hover {
   border: solid 2px var(--accent40) !important;
   background: rgba(0, 0, 0, 0.7) !important;
 }
-.itemsContainer > .listItem-largeImage:focus {
+.listItem-largeImage:focus {
   box-shadow: var(--buttonglow) !important;
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Large List Items: Align Body */
+.listItem-largeImage .listItemBody {
+  align-self: normal;
+  padding-top: .5em;
+  padding-left: .5em;
+}
+
+/* Large List Items: Text */
+.listItem-largeImage .listItemBodyText {
+  max-height: 10em;
 }
 
 /* Eisode Title Accent */
