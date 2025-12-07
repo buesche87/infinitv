@@ -763,10 +763,8 @@
 }
 
 /* Space for glow animation */
-.layout-desktop .overflowBackdropCard .cardScalable,
-.layout-desktop .overflowPortraitCard .cardScalable,
-.layout-mobile .overflowBackdropCard .cardScalable,
-.layout-mobile .overflowPortraitCard .cardScalable {
+.layout-desktop .card .cardScalable,
+.layout-mobile .card .cardScalable {
   margin-left: .5em;
 }
 
