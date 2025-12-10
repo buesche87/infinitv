@@ -768,7 +768,7 @@
 }
 
 /* Space for glow animation */
-.itemsContainer-tv .card .cardBox {
+.itemsContainer .card .cardBox {
   margin-left: .5em !important;;
   background-color: #0000;
 }
