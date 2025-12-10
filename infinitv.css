@@ -439,19 +439,30 @@
 /* Buttons: Media Page Play-Buttons
 --------------------------------------------------------------------------*/
 
-.detailButton {
+.detailButton,
+.favorite-button {
   font-size: 120% !important;
-  margin-right: 1.5em !important;
+  margin-right: .2em !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: inherit;
   border-radius: var(--rounding-media) !important;
   border: var(--buttonborder) !important;
+  height: 3.5em;
 }
-.detailButton:hover {
+.detail-button,
+.favorite-button {
+  width: 3.5em;
+}
+
+.detailButton:hover,
+.favorite-button:hover {
   color: var(--accent100) !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
   border-color: var(--accent40) !important;
 }
-.detailButton:focus {
-  background: rgba(0, 0, 0, 0.6) !important;
+.detailButton:focus,
+.favorite-button:focus {
+  background: rgba(0, 0, 0, 0.8) !important;
   border-color: var(--accent80) !important;
   box-shadow: var(--buttonglow) !important;
   -webkit-transform: scale(1.2) !important;
@@ -938,15 +949,28 @@
   top: 0;
 }
 
+/* Use freed up Space (Mobile) */
+.layout-desktop .homeSectionsContainer {
+  top: 73vh;
+}
+
 /* Scroller Alignment */
 #indexPage .homeSectionsContainer .emby-scroller,
 #tvRecommendedPage .verticalSection .itemsContainer-tv {
   padding-left: 2em;
 }
 
-/* Move content below Slides (Desktop) */
-.layout-desktop .homeSectionsContainer {
-  top: 74vh;
+/* Slides */
+.slide .plot-container {
+  font-size: 120%;
+}
+
+.slide .info-container {
+  font-size: 150%;
+}
+
+.slide .genre {
+  font-size: 120%;
 }
 
 /*
@@ -956,11 +980,11 @@
 */
 
 /* Library Pages: Move up */
-.libraryPage,
-#loginPage,
-#indexPage,
-#moviesPage,
-#tvRecommendedPage {
+.layout-tv .libraryPage,
+.layout-tv #loginPage,
+.layout-tv #indexPage,
+.layout-tv #moviesPage,
+.layout-tv #tvRecommendedPage {
   padding-top: 5em !important;
 }
 
@@ -1009,10 +1033,10 @@
   padding-top: .5em !important;
 } */
 
-/* Media Scroller: Spacing (Desktop) */
+/* Media Scroller: Spacing (Desktop)
 .layout-desktop #indexPage .emby-scroller {
   padding-top: 1em;
-}
+} */
 
 /* Media Scroller: Max card width */
 .itemsContainer-tv > .overflowBackdropCard {
