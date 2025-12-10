@@ -439,7 +439,31 @@
 /* Buttons: Media Page Play-Buttons
 --------------------------------------------------------------------------*/
 
-.detailButton,
+.detailButton {
+  font-size: 120% !important;
+  margin-right: 1.5em !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-radius: var(--rounding-media) !important;
+  border: var(--buttonborder) !important;
+}
+.detailButton:hover {
+  color: var(--accent100) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-color: var(--accent40) !important;
+}
+.detailButton:focus {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: var(--accent80) !important;
+  box-shadow: var(--buttonglow) !important;
+  -webkit-transform: scale(1.2) !important;
+  transform: scale(1.2) !important;
+}
+
+
+/* Buttons: Slide-Buttons
+--------------------------------------------------------------------------*/
+.play-button,
+.detail-button,
 .favorite-button {
   font-size: 120% !important;
   margin-right: .2em !important;
@@ -454,20 +478,27 @@
   width: 3.5em;
 }
 
-.detailButton:hover,
+.play-button:hover,
+.detail-button:hover,
 .favorite-button:hover {
   color: var(--accent100) !important;
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: var(--accent40) !important;
 }
-.detailButton:focus,
+.play-button:focus,
+.detail-button:focus,
 .favorite-button:focus {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   border-color: var(--accent80) !important;
   box-shadow: var(--buttonglow) !important;
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
 }
+
+.layout-mobile .info-container .runTime  {
+  display: none;
+}
+
 
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
