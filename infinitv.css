@@ -1004,10 +1004,10 @@
   margin-right: .4em !important;
 } */
 
-/* Media Scroller: Spacing (TV) */
+/* Media Scroller: Spacing (TV)
 .layout-tv #indexPage .scrollSlider {
   padding-top: .5em !important;
-}
+} */
 
 /* Media Scroller: Spacing (Desktop) */
 .layout-desktop #indexPage .emby-scroller {
@@ -1020,12 +1020,20 @@
 }
 
 /* Media Scroller: Card Spacing */
-.verticalSection .emby-scroller .itemsContainer-tv > .overflowPortraitCard,
-.verticalSection .emby-scroller .itemsContainer-tv > .overflowBackdropCard {
-  margin-top: .2vh;
+.itemsContainer-tv > .overflowPortraitCard,
+.itemsContainer-tv > .overflowBackdropCard {
+  margin-top: 1vh;
   margin-right: .6vw;
-  margin-bottom: .2vh;
+  margin-bottom: .6vh;
 }
+
+
+/* Section Scroller: Card Spacing
+.detailPagePrimaryContainer #childrenContent .itemsContainer-tv .overflowPortraitCard,
+.detailPageSecondaryContainer #childrenContent .itemsContainer-tv .overflowBackdropCard {
+  margin-bottom: .5em;
+  margin-top: .2em;
+} */
 
 /* Media Scroller: Title Buttons */
 .emby-scrollbuttons {
@@ -1059,7 +1067,7 @@
 /* Filter & Sorting Header */
 .pageTabContent > .focuscontainer-x {
   background: rgba(0, 0, 0, 0.4);
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
   padding: 0.25em;
 }
 
@@ -1136,6 +1144,7 @@
   border: var(--buttonborder) !important;
   border-radius: var(--rounding-media);
   background: rgba(0, 0, 0, 0.2) !important;
+  padding-top: 1.5vh !important;
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
   margin-bottom: .5em;
@@ -1156,7 +1165,9 @@
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage) .listItemImage {
   height: 5em;
   width: 10em;
-  top: .3em;
+}
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus .listItemImage {
+  width: 11em;
 }
 
 /* Hide Alphapicker > steals focus with remote */
@@ -1332,7 +1343,7 @@ p.itemGenres {
 
 /* Media Description: Container */
 .detailPageSecondaryContainer {
-  padding-top: 0em !important;
+  padding-top: .5em !important;
 }
 
 /* Media Description: Text */
@@ -1362,9 +1373,10 @@ p.itemGenres {
   padding-bottom: .3em !important;
   padding-left: 1em !important;
   margin-top: .5em !important;
-  margin-bottom: .5em !important; 
+  margin-bottom: .5em !important;
   margin-left: -.5em !important;
   margin-right: -.5em !important;
+  display: block;
 }
 
 .layout-desktop .detailPagePrimaryContainer .sectionTitle, 
@@ -1382,14 +1394,7 @@ p.itemGenres {
 .detailPageSecondaryContainer #childrenContent .itemsContainer-tv {
   padding-top: .5em;
   padding-right: 0em;
-}
-
-/* Section Scroller: Card Spacing */
-.detailPagePrimaryContainer #childrenContent .itemsContainer-tv .overflowPortraitCard,
-.detailPageSecondaryContainer #childrenContent .itemsContainer-tv .overflowBackdropCard {
-  margin-bottom: .5em;
-  margin-top: .2em;
-}
+} */
 
 /* there was something, but what was it... */
 .detailPageSecondaryContainer .itemsContainer-tv {
