@@ -1023,8 +1023,8 @@
 }
 
 /* Section Titles */
-#indexPage .sectionTitleContainer-cards,
-#tvRecommendedPage .sectionTitleContainer-cards {
+.layout-desktop #indexPage .sectionTitleContainer-cards,
+.layout-desktop #tvRecommendedPage .sectionTitleContainer-cards {
   padding-top: .5em;
   padding-bottom: .6em;
   margin-top: .5em;
@@ -1034,6 +1034,11 @@
 
 .layout-tv #indexPage .sectionTitleContainer-cards,
 .layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  background: hsl(0deg 0% 100% / 10%);
   text-align: center;
   padding-left: 0em;
 }
