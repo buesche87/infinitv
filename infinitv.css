@@ -1055,7 +1055,7 @@
 .itemsContainer-tv > .overflowPortraitCard:not(.personCard),
 .itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
   margin-top: 1vh;
-  margin-right: .6vw;
+  margin-left: .6vw;
   margin-bottom: .6vh;
 }
 
