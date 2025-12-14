@@ -1266,10 +1266,14 @@
 }
 
 /* Media Pages: Move Content up (TV) */
+.detailPageWrapperContainer {
+  padding-top: 1em;
+}
+/* 
 .layout-tv .detailPagePrimaryContainer {
   display: block;
   padding-top: 5vh;
-}
+} */
 
 /* Media Pages: Increase Season Title Text */
 .selfBackdropPage h3.itemName.infoText.subtitle.focuscontainer-x {
