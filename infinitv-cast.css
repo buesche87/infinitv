@@ -9,8 +9,15 @@
 */
 
 /* Center Card Images */
-.personCard > .cardBox > .cardScalable {
-  margin-left: .2em;
+.personCard > .cardBox {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+/* Media Scroller: Card Spacing */
+.itemsContainer-tv > .personCard > .cardBox {
+  margin-right: .2em !important;
+  margin-left: .2em !important;
 }
 
 /* Shrink and square (or round) cast thumbnails */

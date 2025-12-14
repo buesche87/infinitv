@@ -143,7 +143,6 @@
   color: var(--accent100) !important;
   border: solid 1px #0000;
 }
-
 .navMenuOptionText {
   margin-top: 0;
 }
@@ -226,6 +225,11 @@
   position: fixed !important;
 }
 
+/* Header: Opacity */
+.skinHeader-withBackground {
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
 /* Header: Size & Alignment */
 .skinHeader {
   padding: .3em !important;
@@ -233,9 +237,6 @@
 }
 .headerTop {
   padding: .3em !important;
-}
-.skinHeader-withBackground {
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Hader: Page Title & Time */
@@ -247,13 +248,13 @@
   font-weight: bold;
 }
 
-/* Header: Buttons no Zoom */
+/* Header Buttons: no Zoom */
 .headerButton:focus {
   -webkit-transform: none !important;
   transform: none !important;
 }
 
-/* Section Tabs: Move into Header */
+/* Header Section Tabs: Stay in Header with invisible scroll */
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
   font-size: 110% !important;
@@ -339,7 +340,7 @@
   color: #fff;
 }
 
-/* Buttons: actionSheetMenuItem
+/* Buttons: Action Sheet Menu Items
 --------------------------------------------------------------------------*/
 
 .actionSheetMenuItem {
@@ -362,7 +363,7 @@
   color: var(--accent100) !important;
 }
 
-/* Buttons: Menu Items
+/* Buttons: List Menu Items
 --------------------------------------------------------------------------*/
 
 .listTextButton-autohide {
@@ -436,7 +437,7 @@
   text-shadow: var(--textshadow) !important;
 }
 
-/* Buttons: Media Page Play-Buttons
+/* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
 
 .detailButton {
@@ -460,7 +461,7 @@
 }
 
 
-/* Buttons: Slide-Buttons
+/* Buttons: Buttons on Slides (Desktop & Mobile)
 --------------------------------------------------------------------------*/
 .play-button,
 .detail-button,
@@ -477,7 +478,6 @@
 .favorite-button {
   width: 3.5em;
 }
-
 .play-button:hover,
 .detail-button:hover,
 .favorite-button:hover {
@@ -495,6 +495,7 @@
   transform: scale(1.2) !important;
 }
 
+/* Hide "Ends at" (Mobile) */
 .layout-mobile .info-container .runTime  {
   display: none;
 }
@@ -503,7 +504,6 @@
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
 
-/* Links acting as buttons */
 .button-link,
 .overview-expand {
   color: inherit !important;
@@ -571,7 +571,7 @@
   resize: vertical !important;
   font-family: monospace;
   font-size: .9em;
-  min-height: 6em;  /* beliebig */
+  min-height: 6em;
   overflow-y: hidden;
 }
 
@@ -670,8 +670,6 @@
 .emby-checkbox:focus + .checkboxLabel {
   color: var(--accent100) !important;
 }
-
-/* Labels: Select */
 .selectLabel {
   align-self: center;
 }
@@ -690,7 +688,6 @@
 /* Cards: Narrow margins */
 .cardBox-bottompadded {
   margin-bottom: 0.5em !important;
-  /* margin-right: 1.5vw !important; */
 }
 
 /* Cards: Full Rounding */
@@ -734,24 +731,24 @@
 ===========================================================================
 */
 
-/* Box Shadow card with footer */
+/* Shadow for cards with footer */
 .libraryPage .cardBox:has(.cardFooter) {
   box-shadow: var(--cardshadow);
 }
 
-/* Box Shadow image for card without footer */
+/* Shadow for cards without footer */
 .libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable {
   box-shadow: var(--cardshadow);
 }
 
-/* Smoothen Card Image */
-.libraryPage  .cardImageContainer {
+/* Smoothen card images with inset shadows */
+.libraryPage .cardImageContainer {
   box-shadow: var(--insettop), var(--insetbottom);
 }
 
 /*
 ===========================================================================
-  Cards: Text
+  Cards: Text & Buttons
 ===========================================================================
 */
 
@@ -763,8 +760,8 @@
 
 /* Card Text: Shadow (only without footer) */
 :not(.cardFooter) > .cardText-first {
-  text-shadow: var(--textshadow) !important;
   padding-top: .5em !important;
+  text-shadow: var(--textshadow) !important;
 }
 
 /* Card Text: Secondary Text */
@@ -779,7 +776,7 @@
   background: #0000 !important;
 }
 
-/* Links / Action-Text in card Footer */
+/* Links / Action-Text in card footer */
 .layout-desktop .card .textActionButton:hover {
   color: var(--accent100);
   text-decoration: none;
@@ -803,18 +800,17 @@
   color: var(--accent100) !important;
 }
 
-/* Cards: Glow only Images on overflow Cards */
+/* Cards: Glow Images on overflow Cards */
 .overflowBackdropCard:hover .cardScalable,
 .overflowPortraitCard:hover .cardScalable {
   box-shadow: var(--cardglow) !important;
 }
 
-/* Space for glow animation */
+/* More space for glow animation */
 .itemsContainer .card .cardBox {
   margin-left: .5em !important;;
   background-color: #0000;
 }
-
 
 /*
 ===========================================================================
@@ -1050,45 +1046,18 @@
   margin: 0;
 }
 
-/* Section Titles: Spacing between cards 
-.itemsContainer-tv .overflowPortraitCard,
-.itemsContainer-tv .overflowBackdropCard,
-.emby-scroller .overflowPortraitCard,
-.emby-scroller .overflowBackdropCard {
-  margin-left: .4em !important;
-  margin-right: .4em !important;
-} */
-
-/* Media Scroller: Spacing (TV)
-.layout-tv #indexPage .scrollSlider {
-  padding-top: .5em !important;
-} */
-
-/* Media Scroller: Spacing (Desktop)
-.layout-desktop #indexPage .emby-scroller {
-  padding-top: 1em;
-} */
-
 /* Media Scroller: Max card width */
 .itemsContainer-tv > .overflowBackdropCard {
   max-width: 28em;
 }
 
 /* Media Scroller: Card Spacing */
-.itemsContainer-tv > .overflowPortraitCard,
-.itemsContainer-tv > .overflowBackdropCard {
+.itemsContainer-tv > .overflowPortraitCard:not(.personCard),
+.itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
   margin-top: 1vh;
   margin-right: .6vw;
   margin-bottom: .6vh;
 }
-
-
-/* Section Scroller: Card Spacing
-.detailPagePrimaryContainer #childrenContent .itemsContainer-tv .overflowPortraitCard,
-.detailPageSecondaryContainer #childrenContent .itemsContainer-tv .overflowBackdropCard {
-  margin-bottom: .5em;
-  margin-top: .2em;
-} */
 
 /* Media Scroller: Title Buttons */
 .emby-scrollbuttons {
