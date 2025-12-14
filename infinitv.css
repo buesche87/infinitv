@@ -1288,10 +1288,10 @@
   box-shadow: var(--cardshadow) !important;
 }
 
-/* Media Pages: Poster Image Placement (TV) */
+/* Media Pages: Poster Image Placement (TV)
 .layout-tv .detailImageContainer .card {
   top: 1vh !important;
-}
+} */
 
 
 /*
