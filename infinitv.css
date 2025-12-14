@@ -978,12 +978,12 @@
 
 /* Use freed up Space (Mobile) */
 .layout-desktop .homeSectionsContainer {
-  top: 73vh;
+  top: 60vh;
 }
 
 /* Scroller Alignment */
-#indexPage .homeSectionsContainer .emby-scroller,
-#tvRecommendedPage .verticalSection .itemsContainer-tv {
+.layout-tv #indexPage .homeSectionsContainer .emby-scroller,
+.layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
   padding-left: 2em;
 }
 
@@ -1026,19 +1026,37 @@
 #indexPage .sectionTitleContainer-cards,
 #tvRecommendedPage .sectionTitleContainer-cards {
   padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 0em;
+  padding-bottom: .6em;
   margin-top: .5em;
   margin-bottom: .5em;
   background: hsl(0deg 0% 100% / 10%);
-  text-align: center;
 }
 
+.layout-tv #indexPage .sectionTitleContainer-cards,
+.layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
+  text-align: center;
+  padding-left: 0em;
+}
+
+/* Icon inside scroll-button */
 #tvRecommendedPage .sectionTitleContainer-cards .button-flat:focus {
   background: #0000 !important;
   -webkit-transform: none !important;
   transform: none !important;
   color: var(--accent100) !important;
+}
+
+/* Media Scroller: Title Buttons */
+.layout-desktop .emby-scrollbuttons {
+  padding-top: .65em;
+}
+.detailVerticalSection .emby-scrollbuttons {
+  top: .5em;
+}
+
+/* Icon inside scroll-button */
+.emby-scrollbuttons-button > .material-icons {
+  top: .075em;
 }
 
 /* Section Titles: Text & Icons */
@@ -1058,14 +1076,6 @@
   margin-top: 1vh;
   margin-left: .6vw;
   margin-bottom: .6vh;
-}
-
-/* Media Scroller: Title Buttons */
-.emby-scrollbuttons {
-  top: .85em;
-}
-.detailVerticalSection .emby-scrollbuttons {
-  top: .5em;
 }
 
 /* Alphabet Picker */
