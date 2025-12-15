@@ -6,10 +6,10 @@ This theme was created with a focus on HTPCs.
 - Custom background image
 
 Optimal results:
-- *use the newest jellyfin media player built with qt6-webengine*
 - Set theme to `Dark`
 - Set display mode to `TV`
-- Activate backdrops
+- Activate Backdrops
+- *infinitv will look as intended starting with `Jellyfin Desktop v2.0.0`*
 
 Give it *your* accent by changing `:root` values:
 - `accent-h: 36` > use the `H` value from an HSL-color picker
