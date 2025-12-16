@@ -984,7 +984,7 @@
 /* Scroller Alignment */
 .layout-tv #indexPage .homeSectionsContainer .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 /* Slides */
@@ -1073,15 +1073,15 @@
 
 /* Media Scroller: Max card width */
 .itemsContainer-tv > .overflowBackdropCard {
-  max-width: 28em;
+  max-width: 30em;
 }
 
 /* Media Scroller: Card Spacing */
 .itemsContainer-tv > .overflowPortraitCard:not(.personCard),
 .itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
-  margin-top: 1vh;
-  margin-left: .6vw;
-  margin-bottom: .6vh;
+  margin-top: .5em;
+  margin-left: 1em;
+  margin-bottom: .5em;
 }
 
 /* Alphabet Picker */
