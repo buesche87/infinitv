@@ -1412,7 +1412,6 @@ p.itemGenres {
   border-radius: var(--rounding-system) !important;
   padding-top: .3em !important;
   padding-bottom: .3em !important;
-  padding-left: 1em !important;
   margin-top: .5em !important;
   margin-bottom: .5em !important;
   margin-left: -.5em !important;
@@ -1420,6 +1419,12 @@ p.itemGenres {
   display: block;
 }
 
+/* Section Titles: Items Page */
+.layout-tv .detailPagePrimaryContainer .sectionTitle, 
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
+  padding-left: 1em;
+  font-weight: 600;
+}
 .layout-desktop .detailPagePrimaryContainer .sectionTitle, 
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
   padding-left: 1em !important;
