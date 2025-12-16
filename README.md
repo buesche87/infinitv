@@ -1,28 +1,30 @@
-This theme was created with a focus on HTPCs. 
+This theme was created with a focus on HTPCs running jellyfin-desktop as client.
 
-- Minimalist design
-- Remote control operation
-- Custom accent color and transparency
-- Custom background image
+- Minimalist UI optimized for remote and keyboard use
+- Customizable accent color, transparency, and background image
+- Compact player OSD on sufficiently wide screens
+- Custom cards with custom animations
+- Centered menus, pages, and titles where appropriate
+
 
 Optimal results:
+- *infinitv will look as intended starting with `Jellyfin Desktop v2.0.0`*
 - Set theme to `Dark`
 - Set display mode to `TV`
 - Activate Backdrops
-- *infinitv will look as intended starting with `Jellyfin Desktop v2.0.0`*
 
-Give it *your* accent by changing `:root` values:
-- `accent-h: 36` > use the `H` value from an HSL-color picker
-- Set your background image with `bgImage: url("https://url.to/picture.jpg")`
+
+Give it *your* style by changing `:root` values:
+- `accent-h: 310` > use the `H` value from an HSL-color picker
+- Set your wallpaper with `bgImage: url("https://url.to/picture.jpg")`
 - set background darkness from `0.00` to `1.00`
 - set opacity from `1.00` to `0.00`
 - give roundings more radius
 
 
-This is a hobby project to expand my basic knowledge of CSS. Therefore, it does not claim to be complete or bug-free. Ideas and problems will be addressed when free time allows.
-
-
+> *This is a hobby project to expand my basic knowledge of CSS. Therefore, it does not claim to be complete or bug-free. Ideas and problems will be addressed when free time allows.*
 ---
+
 
 Add the following to your custom branding:
 
