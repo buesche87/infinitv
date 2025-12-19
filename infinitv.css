@@ -448,7 +448,6 @@
 --------------------------------------------------------------------------*/
 
 .detailButton {
-  margin-right: .5em !important;
   border-radius: var(--rounding-media) !important;
   border: var(--buttonborder) !important;
 }
@@ -463,14 +462,18 @@
   box-shadow: var(--buttonglow) !important;
 }
 
-.leyout-tv .detailButton,
-.leyout-desktop .detailButton {
+.layout-tv .detailButton,
+.layout-desktop .detailButton {
   font-size: 120% !important;
   margin-right: 1.5em !important;
 }
-.leyout-tv .detailButton:focus {
+.layout-tv .detailButton:focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
+}
+
+.layout-mobile .detailButton {
+  margin-right: .5em !important;
 }
 
 /* Buttons: Buttons on Slides (Desktop & Mobile)
