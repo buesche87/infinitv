@@ -231,11 +231,13 @@
 }
 
 /* Header: Size & Alignment */
-.skinHeader {
+.layout-tv .skinHeader,
+.layout-desktop .skinHeader {
   padding: .3em !important;
   height: 3.3em;
 }
-.headerTop {
+.layout-tv .headerTop,
+.layout-desktop .headerTop {
   padding: .3em !important;
 }
 
@@ -494,12 +496,6 @@
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
 }
-
-/* Hide "Ends at" (Mobile) */
-.layout-mobile .info-container .runTime  {
-  display: none;
-}
-
 
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
@@ -993,11 +989,15 @@
 }
 
 .slide .info-container {
-  font-size: 150%;
+  font-size: 120%;
 }
 
 .slide .genre {
   font-size: 120%;
+}
+
+.layout-mobile .homeSectionsContainer {
+  top: 67vh;
 }
 
 /*
@@ -1016,15 +1016,24 @@
 }
 
 /* Library Pages: Center Content */
-.libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
-.libraryPage .padded-right-withalphapicker {
+.layout-tv .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+.layout-tv .libraryPage .padded-right-withalphapicker {
   padding-left: 3vw !important;
   padding-right: 3vw !important;
 }
 
+/* Library Pages: Center Content */
+.layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+.layout-mobile .libraryPage .padded-right-withalphapicker {
+  padding-left: 3vw !important;
+  padding-right: 4vw !important;
+}
+
 /* Section Titles (Desktop) */
 .layout-desktop #indexPage .sectionTitleContainer-cards,
-.layout-desktop #tvRecommendedPage .sectionTitleContainer-cards {
+.layout-desktop #tvRecommendedPage .sectionTitleContainer-cards,
+.layout-mobile #indexPage .sectionTitleContainer-cards,
+.layout-mobile #tvRecommendedPage .sectionTitleContainer-cards{
   padding-top: .5em;
   padding-bottom: .6em;
   margin-top: .5em;
@@ -1034,7 +1043,9 @@
 
 /* Section Titles (TV) */
 .layout-tv #indexPage .sectionTitleContainer-cards,
-.layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
+.layout-tv #tvRecommendedPage .sectionTitleContainer-cards,
+.layout-mobile #indexPage .sectionTitleContainer-cards,
+.layout-mobile #tvRecommendedPage .sectionTitleContainer-cards {
   padding-top: .5em;
   padding-bottom: .5em;
   margin-top: .5em;
@@ -1075,6 +1086,11 @@
 .itemsContainer-tv > .overflowBackdropCard {
   max-width: 30em;
 }
+
+/* Media Scroller: Card width (Mobile)
+.layout-tv .itemsContainer > .overflowBackdropCard {
+  width: 30em;
+} */
 
 /* Media Scroller: Card Spacing */
 .itemsContainer-tv > .overflowPortraitCard:not(.personCard),
@@ -1223,11 +1239,11 @@
 /* Views: Poster
 --------------------------------------------------------------------------*/
 
-.itemsContainer > .portraitCard:not(:has(.cardFooter)) {
+.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)) {
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
-.itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
+.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
   box-shadow: var(--cardglow) !important;
 }
 
