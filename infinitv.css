@@ -439,13 +439,16 @@
   text-shadow: var(--textshadow) !important;
 }
 
+.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
+  width: 100%;
+  text-align: center;
+}
+
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
 
 .detailButton {
-  font-size: 120% !important;
-  margin-right: 1.5em !important;
-  /* background: rgba(0, 0, 0, 0.4) !important; */
+  margin-right: .5em !important;
   border-radius: var(--rounding-media) !important;
   border: var(--buttonborder) !important;
 }
@@ -458,10 +461,17 @@
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: var(--accent80) !important;
   box-shadow: var(--buttonglow) !important;
+}
+
+.leyout-tv .detailButton,
+.leyout-desktop .detailButton {
+  font-size: 120% !important;
+  margin-right: 1.5em !important;
+}
+.leyout-tv .detailButton:focus {
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
 }
-
 
 /* Buttons: Buttons on Slides (Desktop & Mobile)
 --------------------------------------------------------------------------*/
@@ -1087,11 +1097,6 @@
   max-width: 30em;
 }
 
-/* Media Scroller: Card width (Mobile)
-.layout-tv .itemsContainer > .overflowBackdropCard {
-  width: 30em;
-} */
-
 /* Media Scroller: Card Spacing */
 .itemsContainer-tv > .overflowPortraitCard:not(.personCard),
 .itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
@@ -1314,7 +1319,7 @@
 }
 
 /* Media Pages: Poster Image */
-.detailImageContainer .card {
+.detailImageContainer .card .cardBox {
   max-width: 26vw;
   left: 3% !important;
   border-radius: var(--rounding-media);
@@ -1343,6 +1348,14 @@
   height: 9em !important;
   margin-top: -9em !important;
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Detail-Ribbon (Mobile) */
+.layout-mobile .detailRibbon {
+  /* height: 9em !important; */
+  margin-top: -1em !important;
+  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+  padding-bottom: 1em;
 }
 
 /* Detail-Ribbon: Info Container */
@@ -1379,7 +1392,7 @@ p.itemGenres {
 }
 
 /* Media Details: Tracks & Subtitles */
-.trackSelections {
+.leyout-tv .trackSelections {
   max-width: 100%;
   width: 60%;
   padding-top: 0.5em;
@@ -1441,6 +1454,11 @@ p.itemGenres {
   padding-left: 1em;
   font-weight: 600;
 }
+.layout-mobile .detailPagePrimaryContainer .sectionTitle, 
+.layout-mobile .detailPageSecondaryContainer .sectionTitle{
+  text-align: center;
+  font-weight: 600;
+}
 .layout-desktop .detailPagePrimaryContainer .sectionTitle, 
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
   padding-left: 1em !important;
@@ -1451,7 +1469,7 @@ p.itemGenres {
   margin-bottom: 0em !important;
 }
 
-/* Section Scroller: Space for Animation */
+/* Section Scroller: Space for Animation
 .detailPagePrimaryContainer #childrenContent .itemsContainer-tv,
 .detailPageSecondaryContainer #childrenContent .itemsContainer-tv {
   padding-top: .5em;
@@ -1757,8 +1775,8 @@ p.itemGenres {
 #myPreferencesMenuPage {
   justify-content: center;
   display: flex;
-  padding-top: 5em !important;
 }
+
 
 /* Settings: Titles */
 .settingsContainer .sectionTitle,
@@ -1782,6 +1800,11 @@ p.itemGenres {
 .listItemIcon {
   background: #0000 !important;
   border-radius: var(--rounding-system) !important;
+}
+
+.layout-mobile .listItemIcon {
+    width: 41% !important;
+    text-align: right;
 }
 
 /* Subtitles: Preview-Box */

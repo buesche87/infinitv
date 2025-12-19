@@ -38,21 +38,21 @@
 @media all and (min-width: 100em) and (max-width: 120em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 8.6vw !important; 
+    width: 9vw !important; 
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 87.5em) and (max-width: 100em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 9.3vw !important; 
+    width: 10vw !important; 
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 75em) and (max-width: 87.5em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 10.5vw !important; 
+    width: 12.8vw !important; 
     font-size: 90% !important;
   }
 }
@@ -66,21 +66,21 @@
 @media all and (min-width: 43.75em) and (max-width: 50em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 20.1vw !important; 
+    width: 17.8vw !important; 
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 25em) and (max-width: 43.75em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 31.2vw !important; 
+    width: 22.3vw !important; 
     font-size: 90% !important;
   }
 }
 @media all and (max-width: 25em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 40vw !important; 
+    width: 22.3vw !important; 
     font-size: 90% !important;
   }
 }
@@ -103,22 +103,22 @@
 @media all and (min-width: 100em) and (max-width: 120em){
   #guestCastContent .cardScalable, 
   #castContent .cardScalable {
-    width:  calc(7.6vw - 1.75em) !important;
-    height: calc(7.6vw) !important;
+    width:  calc(9vw - 1.75em) !important;
+    height: calc(9vw) !important;
   }
 }
 @media all and (min-width: 87.5em) and (max-width: 100em){
   #guestCastContent .cardScalable, 
   #castContent .cardScalable {
-    width:  calc(9.3vw - 1.75em) !important;
-    height: calc(9.3vw) !important;
+    width:  calc(10vw - 1.75em) !important;
+    height: calc(10vw) !important;
   }
 }
 @media all and (min-width: 75em) and (max-width: 87.5em){
   #guestCastContent .cardScalable, 
   #castContent .cardScalable {
-    width:  calc(10.5vw - 1.75em) !important;
-    height: calc(10.5vw ) !important;
+    width:  calc(12.8vw - 1.75em) !important;
+    height: calc(12.8vw) !important;
   }
 }
 @media all and (min-width: 50em) and (max-width: 75em){
@@ -131,21 +131,21 @@
 @media all and (min-width: 43.75em) and (max-width: 50em){
   #guestCastContent .cardScalable, 
   #castContent .cardScalable {
-    width:  calc(20.1vw - 1.75em) !important;
-    height: calc(20.1vw) !important;
+    width:  calc(17.8vw  - 1.75em) !important;
+    height: calc(17.8vw) !important;
   }
 }
 @media all and (min-width: 25em) and (max-width: 43.75em){
   #guestCastContent .cardScalable, 
   #castContent .cardScalable {
-    width:  calc(31.2vw - 1.75em) !important;
-    height: calc(31.2vw) !important;
+    width:  calc(22.3vw - 1.75em) !important;
+    height: calc(22.3vw) !important;
   }
 }
 @media all and (max-width: 25em){
   #guestCastContent .cardScalable, 
   #castContent .cardScalable {
-    width:  calc(40vw - 1.75em) !important;
-    height: calc(40vw) !important;
+    width:  calc(22.3vw - 1.75em) !important;
+    height: calc(22.3vw) !important;
   }
 }
