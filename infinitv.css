@@ -1395,7 +1395,7 @@ p.itemGenres {
 }
 
 /* Media Details: Tracks & Subtitles */
-.leyout-tv .trackSelections {
+.layout-tv .trackSelections {
   max-width: 100%;
   width: 60%;
   padding-top: 0.5em;
