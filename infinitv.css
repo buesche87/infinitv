@@ -1020,11 +1020,7 @@
 */
 
 /* Library Pages: Move up */
-.layout-tv .libraryPage,
-.layout-tv #loginPage,
-.layout-tv #indexPage,
-.layout-tv #moviesPage,
-.layout-tv #tvRecommendedPage {
+.layout-tv .libraryPage {
   padding-top: 5em !important;
 }
 
@@ -1066,6 +1062,11 @@
   background: hsl(0deg 0% 100% / 10%);
   text-align: center;
   padding-left: 0em;
+}
+
+/* Move down Item backdrop (Mobile) */
+.layout-mobile .itemBackdrop {
+  margin-top: 3.9rem;
 }
 
 /* Icon inside scroll-button */
@@ -1194,7 +1195,7 @@
 /* Views: Banner
 --------------------------------------------------------------------------*/
 
-.itemsContainer > .bannerCard {
+.layout-tv .itemsContainer > .bannerCard {
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
@@ -1237,10 +1238,10 @@
 }
 
 /* Hide Alphapicker > steals focus with remote */
-.itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
+.layout-tv .itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
   display: none !important;
 }
-#moviesPage:has(.listItem-focusscale) .alphaPicker {
+.layout-tv #moviesPage:has(.listItem-focusscale) .alphaPicker {
   display: none !important;
 }
 
@@ -1251,14 +1252,14 @@
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
-.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
+.itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
   box-shadow: var(--cardglow) !important;
 }
 
 /* Views: Poster Card
 --------------------------------------------------------------------------*/
 
-.itemsContainer > .portraitCard:has(.cardFooter) {
+.layout-tv .itemsContainer > .portraitCard:has(.cardFooter) {
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
@@ -1269,7 +1270,7 @@
 /* Views: Thumb
 --------------------------------------------------------------------------*/
 
-.itemsContainer > .backdropCard:not(:has(.cardFooter)) {
+.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)) {
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
@@ -1395,7 +1396,7 @@ p.itemGenres {
 }
 
 /* Media Details: Tracks & Subtitles */
-.layout-tv .trackSelections {
+.leyout-tv .trackSelections {
   max-width: 100%;
   width: 60%;
   padding-top: 0.5em;
@@ -1805,7 +1806,8 @@ p.itemGenres {
   border-radius: var(--rounding-system) !important;
 }
 
-.layout-mobile .listItemIcon {
+/* Center Settings Items (Mobile) */
+.layout-mobile #myPreferencesMenuPage .listItemIcon {
     width: 41% !important;
     text-align: right;
 }
