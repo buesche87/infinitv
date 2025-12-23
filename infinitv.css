@@ -122,9 +122,13 @@
 
 /* Main Drawer */
 .mainDrawer {
-  margin-top: 3.9em !important;
+  margin-top: 3.9em;
   box-shadow: none !important;
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+.layout-mobile .mainDrawer {
+  margin-top: 6.1em;
 }
 
 /* Main Drawer: Options */
@@ -472,10 +476,6 @@
   transform: scale(1.2) !important;
 }
 
-.layout-mobile .detailButton {
-  margin-right: .5em !important;
-}
-
 /* Buttons: Buttons on Slides (Desktop & Mobile)
 --------------------------------------------------------------------------*/
 .play-button,
@@ -483,7 +483,7 @@
 .favorite-button {
   font-size: 120% !important;
   margin-right: .2em !important;
-  background: rgba(0, 0, 0, 0.4) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
   color: inherit;
   border-radius: var(--rounding-media) !important;
   border: var(--buttonborder) !important;
@@ -779,6 +779,16 @@
   text-shadow: var(--textshadow) !important;
 }
 
+/* Card Action-Button (Mobile) */
+.cardOverlayButtonIcon {
+  background: rgba(0,0,0, 0.7) !important;
+  border-radius: var(--rounding-system);
+}
+.layout-mobile .cardFooter .itemAction {
+  margin-bottom: 5em !important;
+  margin-right: .25em !important;
+}
+
 /* Card Hover-Buttons: Play */
 .cardOverlayButton:hover {
   color: var(--accent100) !important;
@@ -790,6 +800,7 @@
   color: var(--accent100);
   text-decoration: none;
 }
+
 
 /*
 ===========================================================================
@@ -1036,6 +1047,7 @@
 .layout-mobile .libraryPage .padded-right-withalphapicker {
   padding-left: 3vw !important;
   padding-right: 4vw !important;
+  text-shadow: var(--textshadow);
 }
 
 /* Section Titles (Desktop) */
@@ -1144,6 +1156,11 @@
   transform: none !important;
 }
 
+/* Filter & Sorting Header: Buttons */
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
+  margin: 0 .2em;
+}
+
 /* Filter & Sorting Header: Item Count */
 .listPaging > span {
   margin-right: .5em;
@@ -1192,7 +1209,7 @@
 ===========================================================================
 */
 
-/* Views: Banner
+/* View: Banner
 --------------------------------------------------------------------------*/
 
 .layout-tv .itemsContainer > .bannerCard {
@@ -1203,7 +1220,7 @@
   box-shadow: var(--cardglow) !important;
 }
 
-/* Views: List
+/* View: List
 --------------------------------------------------------------------------*/
 
 /* List Item Cards */
@@ -1228,6 +1245,18 @@
   background: rgba(0, 0, 0, 0.7) !important;
 }
 
+/* List Item Cards: Hide Poster on small screens (Mobile) */
+@media (max-width: 40em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: flex;
+    }
+}
+@media (max-width: 30em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: none;
+    }
+}
+
 /* List Item Cards: Picture Size */
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage) .listItemImage {
   height: 5em;
@@ -1245,7 +1274,7 @@
   display: none !important;
 }
 
-/* Views: Poster
+/* View: Poster
 --------------------------------------------------------------------------*/
 
 .layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)) {
@@ -1256,7 +1285,7 @@
   box-shadow: var(--cardglow) !important;
 }
 
-/* Views: Poster Card
+/* View: Poster Card
 --------------------------------------------------------------------------*/
 
 .layout-tv .itemsContainer > .portraitCard:has(.cardFooter) {
@@ -1267,7 +1296,7 @@
   box-shadow: var(--cardglow) !important;
 }
 
-/* Views: Thumb
+/* View: Thumb
 --------------------------------------------------------------------------*/
 
 .layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)) {
@@ -1278,9 +1307,8 @@
   box-shadow: var(--cardglow) !important;
 }
 
-/* Views: Thumb Card
+/* View: Thumb Card
 --------------------------------------------------------------------------*/
-
 
 .layout-tv .itemsContainer > .backdropCard:has(.cardFooter) {
   padding-bottom: 1.5vh !important;
@@ -1330,11 +1358,13 @@
   box-shadow: var(--cardshadow) !important;
 }
 
-/* Media Pages: Poster Image Placement (TV)
-.layout-tv .detailImageContainer .card {
-  top: 1vh !important;
-} */
-
+/* Media Pages: Center Content (Mobile) */
+.layout-mobile .verticalSection .itemsContainer.vertical-wrap {
+  justify-content: center;
+}
+.layout-mobile .verticalSection .sectionTitleContainer {
+  text-align: center;
+}
 
 /*
 ===========================================================================
@@ -1356,7 +1386,6 @@
 
 /* Detail-Ribbon (Mobile) */
 .layout-mobile .detailRibbon {
-  /* height: 9em !important; */
   margin-top: -1em !important;
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
   padding-bottom: 1em;
@@ -1372,6 +1401,12 @@
   font-size: 125%;
   margin-top: 0.25em;
   margin-bottom: 0.6em;
+}
+
+/* Detail-Ribbon: Media Buttons */
+.layout-mobile .mainDetailButtons .detailButton {
+  margin-right: .5em !important;
+  margin-left: .5em !important;
 }
 
 /*
@@ -1484,9 +1519,10 @@ p.itemGenres {
 .detailPageSecondaryContainer .itemsContainer-tv {
   margin-left: 1em !important;
 }
+/*
 .detailPageSecondaryContainer .verticalSection .emby-scroller:has(.overflowPortraitCard:not(.personCard)) {
   padding-top: 2em;
-}
+} */
 
 /* Section Scroller (Mobile) */
 .layout-mobile :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
