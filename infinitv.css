@@ -1388,7 +1388,9 @@
 .layout-mobile .detailRibbon {
   margin-top: -1em !important;
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
-  padding-bottom: 1em;
+  padding-bottom: 1.25em;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 /* Detail-Ribbon: Info Container */
@@ -1416,7 +1418,8 @@
 */
 
 /* Media Details: Container */
-.layout-tv .detailPagePrimaryContent {
+.layout-tv .detailPagePrimaryContent,
+.layout-mobile .detailPagePrimaryContent {
   padding-top: 0em;
   padding-bottom: 0em;
 }
@@ -1424,6 +1427,7 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
 
 /* Media Details: Hide Genres  */
 p.itemGenres {
@@ -1817,7 +1821,6 @@ p.itemGenres {
   display: flex;
 }
 
-
 /* Settings: Titles */
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle {
@@ -1844,8 +1847,8 @@ p.itemGenres {
 
 /* Center Settings Items (Mobile) */
 .layout-mobile #myPreferencesMenuPage .listItemIcon {
-    width: 41% !important;
-    text-align: right;
+  padding-left: 25vw;
+  text-align: right;
 }
 
 /* Subtitles: Preview-Box */
