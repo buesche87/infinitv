@@ -1130,7 +1130,7 @@
 .itemsContainer-tv > .overflowPortraitCard:not(.personCard),
 .itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
   margin-top: .5em;
-  margin-left: 1em;
+  margin-left: .8em;
   margin-bottom: .5em;
 }
 
@@ -1545,10 +1545,10 @@ p.itemGenres {
   padding-right: 0em;
 } */
 
-/* there was something, but what was it... */
+/* there was something, but what was it... 
 .detailPageSecondaryContainer .itemsContainer-tv {
   margin-left: 1em !important;
-}
+} */
 /*
 .detailPageSecondaryContainer .verticalSection .emby-scroller:has(.overflowPortraitCard:not(.personCard)) {
   padding-top: 2em;
