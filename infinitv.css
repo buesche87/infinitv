@@ -997,11 +997,6 @@
   top: 0;
 }
 
-/* Use freed up Space (Mobile) */
-.layout-desktop .homeSectionsContainer {
-  top: 60vh;
-}
-
 /* Scroller Alignment */
 .layout-tv #indexPage .homeSectionsContainer .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
@@ -1050,91 +1045,12 @@
   padding-right: 4vw !important;
 }
 
-
-
-
-#indexPage .verticalSection > .sectionTitle-cards,
-#tvRecommendedPage .verticalSection > .sectionTitle-cards {
-  padding-top: 0.5em;
-  padding-bottom: .5em;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  background: hsl(0deg 0% 100% / 10%);
-}
-
-#indexPage .verticalSection > .sectionTitleContainer-cards,
-#tvRecommendedPage .verticalSection > .sectionTitleContainer-cards {
-  padding-top: 0.75em;
-  padding-bottom: .75em;
-  margin-top: .5em;
-  margin-bottom: .5em;
-  background: hsl(0deg 0% 100% / 10%);
-}
-
-
-.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
-.layout-tv #tvRecommendedPage .verticalSection > .sectionTitle-cards {
-  padding-top: 0.335em;
-  padding-bottom: 0.335em;
-}
-
-.layout-tv #indexPage .verticalSection > .sectionTitleContainer-cards,
-.layout-tv #tvRecommendedPage .verticalSection > .sectionTitleContainer-cards {
-  padding-top: 0.5em;
-  padding-bottom: .5em;
-}
-
-
-
-
-
-.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
-.layout-mobile #indexPage .verticalSection > .sectionTitle-cards,
-.layout-tv #indexPage .verticalSection > .sectionTitleContainer-cards,
-.layout-mobile #indexPage .verticalSection > .sectionTitleContainer-cards {
-  text-align: center;
-  padding-left: 0em;
-}
-
-
-
-
-/* Move down Item backdrop (Mobile) */
+/* Library Pages: Item backdrop alignment (Mobile) */
 .layout-mobile .itemBackdrop {
   margin-top: 3.9rem;
 }
 
-/* Icon inside scroll-button */
-#tvRecommendedPage .sectionTitleContainer-cards .button-flat:focus {
-  background: #0000 !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-  color: var(--accent100) !important;
-}
-
-
-
-
-/* Section Titles: Text & Icons */
-.sectionTitleTextButton>.sectionTitle,
-.sectionTitleTextButton>.material-icons {
-  margin: 0;
-}
-
-/* Media Scroller: Max card width */
-.itemsContainer-tv > .overflowBackdropCard {
-  max-width: 30em;
-}
-
-/* Media Scroller: Card Spacing */
-.itemsContainer-tv > .overflowPortraitCard:not(.personCard),
-.itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
-  margin-top: .5em;
-  margin-left: .8em;
-  margin-bottom: .5em;
-}
-
-/* Alphabet Picker */
+/* Library Pages: Alphabet Picker */
 .alphaPickerButton {
   height: 1.6em;
 }
@@ -1147,6 +1063,114 @@
   -webkit-transform: none !important;
   transform: none !important;
   transition: none !important;
+}
+
+/*
+===========================================================================
+  Library Pages: Section Titles
+===========================================================================
+*/
+
+/* Section Titles */
+.verticalSection > .sectionTitle-cards,
+.verticalSection > .sectionTitleContainer-cards {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  background: hsl(0deg 0% 100% / 10%);
+}
+
+/* Section Titles: INdex & Recommended Pages */
+.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
+.layout-tv #tvRecommendedPage .verticalSection > .sectionTitle-cards {
+  padding-top: 0.335em;
+  padding-bottom: 0.335em;
+  margin-bottom: .25em;
+  margin-top: .25em;
+}
+.layout-desktop #indexPage .verticalSection > .sectionTitle-cards,
+.layout-desktop #tvRecommendedPage .verticalSection > .sectionTitle-cards {
+  padding-top: 0.335em;
+  padding-bottom: 0.335em;
+  margin-top: .5em !important;
+  margin-bottom: .5em !important;
+}
+
+/* Section Titles: Center on Home (TV & Mobile) */
+.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
+.layout-mobile #indexPage .verticalSection > .sectionTitle-cards,
+.layout-tv #indexPage .verticalSection > .sectionTitleContainer-cards,
+.layout-mobile #indexPage .verticalSection > .sectionTitleContainer-cards {
+  text-align: center;
+  padding-left: 0em;
+}
+
+/* Section Title: Media Pages */
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitle {
+  padding-top: .3em !important;
+  padding-bottom: .3em !important;
+  margin-top: .5em !important;
+  margin-bottom: .5em !important;
+  display: block;
+}
+
+.layout-tv .detailPagePrimaryContainer .sectionTitle, 
+.layout-tv .detailPageSecondaryContainer .sectionTitle,
+.layout-mobile .detailPagePrimaryContainer .sectionTitle, 
+.layout-mobile .detailPageSecondaryContainer .sectionTitle {
+  padding-left: 3%;
+  font-weight: 600;
+  text-align: center;
+}
+
+.layout-desktop .detailPagePrimaryContainer .sectionTitle, 
+.layout-desktop .detailPageSecondaryContainer .sectionTitle {
+  padding-left: 1em !important;
+}
+
+/* Section Titles: Text & Icons */
+.sectionTitleTextButton > .sectionTitle,
+.sectionTitleTextButton > .material-icons {
+  margin: 0;
+}
+
+/* Icon inside scroll-button */
+#tvRecommendedPage .sectionTitleContainer-cards .button-flat:focus {
+  background: #0000 !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  color: var(--accent100) !important;
+}
+
+/*
+===========================================================================
+  Library Pages: Media Scroller
+===========================================================================
+*/
+
+/* Media Scroller: Position (TV) */
+.layout-tv .verticalSection .emby-scroller {
+  padding-left: 2%;
+}
+
+/* Media Scroller: Max card width */
+.itemsContainer-tv > .overflowBackdropCard {
+  max-width: 30em;
+}
+
+/* Media Scroller: Card Spacing */
+.itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
+  margin-left: 1%;
+  margin-top: .5%;
+  margin-bottom: .5%;
+}
+
+.itemsContainer-tv > .overflowPortraitCard:not(.personCard) {
+  margin-left: .75%;
+  margin-top: .8%;
+  margin-bottom: .7%;
 }
 
 /*
@@ -1474,15 +1498,15 @@ p.itemGenres {
 /* Media Description: Secondary Content */
 .layout-tv .detailPageSecondaryContainer,
 .layout-desktop .detailPageSecondaryContainer{
-  padding-top: .5em !important;
+  padding-top: 1em !important;
 }
 .layout-mobile .detailPageSecondaryContainer {
   padding-top: 0em !important;
 }
 
 .layout-tv .detailPageSecondaryContainer .detailPageContent {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Media Description: Text */
@@ -1503,56 +1527,10 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Section Titles */
-.detailPagePrimaryContainer .sectionTitle,
-.detailPageSecondaryContainer .sectionTitle {
-  background: hsl(0deg 0% 100% / 10%);
-  border-radius: var(--rounding-system) !important;
-  padding-top: .3em !important;
-  padding-bottom: .3em !important;
-  margin-top: .5em !important;
-  margin-bottom: .5em !important;
-  margin-left: -.5em !important;
-  margin-right: -.5em !important;
-  display: block;
-}
-
-/* Section Titles: Items Page */
-.layout-tv .detailPagePrimaryContainer .sectionTitle, 
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
-  padding-left: 1em;
-  font-weight: 600;
-}
-.layout-mobile .detailPagePrimaryContainer .sectionTitle, 
-.layout-mobile .detailPageSecondaryContainer .sectionTitle{
-  text-align: center;
-  font-weight: 600;
-}
-.layout-desktop .detailPagePrimaryContainer .sectionTitle, 
-.layout-desktop .detailPageSecondaryContainer .sectionTitle {
-  padding-left: 1em !important;
-}
-
 /* Section Scroller: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
   margin-bottom: 0em !important;
 }
-
-/* Section Scroller: Space for Animation
-.detailPagePrimaryContainer #childrenContent .itemsContainer-tv,
-.detailPageSecondaryContainer #childrenContent .itemsContainer-tv {
-  padding-top: .5em;
-  padding-right: 0em;
-} */
-
-/* there was something, but what was it... 
-.detailPageSecondaryContainer .itemsContainer-tv {
-  margin-left: 1em !important;
-} */
-/*
-.detailPageSecondaryContainer .verticalSection .emby-scroller:has(.overflowPortraitCard:not(.personCard)) {
-  padding-top: 2em;
-} */
 
 /* Section Scroller (Mobile) */
 .layout-mobile :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
@@ -1600,7 +1578,6 @@ p.itemGenres {
 
 /* Large List Items: Text */
 .listItem-largeImage .listItem-overview {
-  /* padding-bottom: 1em; */
   max-height: 8.5em;
 }
 
