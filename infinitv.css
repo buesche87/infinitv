@@ -1050,31 +1050,54 @@
   padding-right: 4vw !important;
 }
 
-/* Section Titles (Desktop) */
-.layout-desktop #indexPage .sectionTitleContainer-cards,
-.layout-desktop #tvRecommendedPage .sectionTitleContainer-cards,
-.layout-mobile #indexPage .sectionTitleContainer-cards,
-.layout-mobile #tvRecommendedPage .sectionTitleContainer-cards{
-  padding-top: .5em;
-  padding-bottom: .6em;
+
+
+
+#indexPage .verticalSection > .sectionTitle-cards,
+#tvRecommendedPage .verticalSection > .sectionTitle-cards {
+  padding-top: 0.5em;
+  padding-bottom: .5em;
   margin-top: .5em;
   margin-bottom: .5em;
   background: hsl(0deg 0% 100% / 10%);
 }
 
-/* Section Titles (TV) */
-.layout-tv #indexPage .sectionTitleContainer-cards,
-.layout-tv #tvRecommendedPage .sectionTitleContainer-cards,
-.layout-mobile #indexPage .sectionTitleContainer-cards,
-.layout-mobile #tvRecommendedPage .sectionTitleContainer-cards {
-  padding-top: .5em;
-  padding-bottom: .5em;
+#indexPage .verticalSection > .sectionTitleContainer-cards,
+#tvRecommendedPage .verticalSection > .sectionTitleContainer-cards {
+  padding-top: 0.75em;
+  padding-bottom: .75em;
   margin-top: .5em;
   margin-bottom: .5em;
   background: hsl(0deg 0% 100% / 10%);
+}
+
+
+.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
+.layout-tv #tvRecommendedPage .verticalSection > .sectionTitle-cards {
+  padding-top: 0.335em;
+  padding-bottom: 0.335em;
+}
+
+.layout-tv #indexPage .verticalSection > .sectionTitleContainer-cards,
+.layout-tv #tvRecommendedPage .verticalSection > .sectionTitleContainer-cards {
+  padding-top: 0.5em;
+  padding-bottom: .5em;
+}
+
+
+
+
+
+.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
+.layout-mobile #indexPage .verticalSection > .sectionTitle-cards,
+.layout-tv #indexPage .verticalSection > .sectionTitleContainer-cards,
+.layout-mobile #indexPage .verticalSection > .sectionTitleContainer-cards {
   text-align: center;
   padding-left: 0em;
 }
+
+
+
 
 /* Move down Item backdrop (Mobile) */
 .layout-mobile .itemBackdrop {
@@ -1089,18 +1112,8 @@
   color: var(--accent100) !important;
 }
 
-/* Media Scroller: Title Buttons */
-.layout-desktop .emby-scrollbuttons {
-  padding-top: .65em;
-}
-.detailVerticalSection .emby-scrollbuttons {
-  top: .5em;
-}
 
-/* Icon inside scroll-button */
-.emby-scrollbuttons-button > .material-icons {
-  top: .075em;
-}
+
 
 /* Section Titles: Text & Icons */
 .sectionTitleTextButton>.sectionTitle,
