@@ -463,13 +463,20 @@
 .detailButton:focus {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: var(--accent80) !important;
+}
+
+.layout-tv .detailButton:focus,
+.layout-desktop .detailButton:focus {
   box-shadow: var(--buttonglow) !important;
 }
 
-.layout-tv .detailButton,
-.layout-desktop .detailButton {
+.layout-tv .mainDetailButtons .detailButton {
   font-size: 120% !important;
   margin-right: 1.5em !important;
+}
+.layout-desktop .mainDetailButtons .detailButton {
+  font-size: 120% !important;
+  margin-right: 1em !important;
 }
 .layout-tv .detailButton:focus {
   -webkit-transform: scale(1.2) !important;
@@ -488,10 +495,12 @@
   border-radius: var(--rounding-media) !important;
   border: var(--buttonborder) !important;
   height: 3.5em;
+  margin-right: 1em !important;
 }
 .detail-button,
 .favorite-button {
   width: 3.5em;
+  margin-right: 1em !important;
 }
 .play-button:hover,
 .detail-button:hover,
@@ -505,9 +514,20 @@
 .favorite-button:focus {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: var(--accent80) !important;
-  box-shadow: var(--buttonglow) !important;
   -webkit-transform: scale(1.2) !important;
   transform: scale(1.2) !important;
+}
+.layout-tv .play-button:focus,
+.layout-tv .detail-button:focus,
+.layout-tv .favorite-button:focus,
+.layout-desktop .play-button:focus,
+.layout-desktop .detail-button:focus,
+.layout-desktop .favorite-button:focus {
+  box-shadow: var(--buttonglow) !important;
+}
+
+.favorite-button.favorited {
+  color: var(--accent100) !important;
 }
 
 /* Buttons: Links acting as Buttons
@@ -793,7 +813,7 @@
 /* Card Hover-Buttons: Play */
 .cardOverlayButton:hover {
   color: var(--accent100) !important;
-  
+  background-color: #0000 !important;
 }
 
 /* Links / Action-Text in card footer */
@@ -822,13 +842,16 @@
 }
 
 /* Cards: Glow Images on overflow Cards */
-.overflowBackdropCard:hover .cardScalable,
-.overflowPortraitCard:hover .cardScalable {
+.layout-tv .overflowBackdropCard:hover .cardScalable,
+.layout-tv .overflowPortraitCard:hover .cardScalable,
+.layout-desktop .overflowBackdropCard:hover .cardScalable,
+.layout-desktop .overflowPortraitCard:hover .cardScalable {
   box-shadow: var(--cardglow) !important;
 }
 
 /* More space for glow animation */
-.itemsContainer .card .cardBox {
+.layout-tv .itemsContainer .card .cardBox,
+.layout-desktop .itemsContainer .card .cardBox {
   margin-left: .5em !important;;
   background-color: #0000;
 }
@@ -1076,137 +1099,89 @@
   background: hsl(0deg 0% 100% / 10%);
 }
 
-
-/* Section Titles */
+/* Section Titles: TV */
+.layout-tv .verticalSection > .sectionTitle-cards,
 .layout-tv .verticalSection > .sectionTitleContainer-cards {
   text-align: center;
+  padding-left: 0%;
+  padding-top: .5%;
+  padding-bottom: .5%;
   margin-top: .25em;
   margin-bottom: .25em;
-  padding-top: .375em;
-  padding-bottom: .375em;
 }
 
-/* Section Titles without link */
-.layout-tv .verticalSection > .sectionTitle-cards {
-  padding-left: 2.5%;
-  padding-top: .25em;
-  padding-bottom: .25em;
-  margin-top: .25em;
-  margin-bottom: .15em;
-  text-align: center;
-}
-
-
-
-/* Section Titles */
+/* Section Titles: Desktop */
+.layout-desktop .verticalSection > .sectionTitle-cards,
 .layout-desktop .verticalSection > .sectionTitleContainer-cards {
   padding-left: 3.8%;
-  margin-top: .25em;  
+  padding-top: .5%;
+  padding-bottom: .5%;
   margin-bottom: .25em;
-  padding-top: 0em;
-  padding-bottom: 0em;
 }
-
-/* Section Titles without link */
-.layout-desktop .verticalSection > .sectionTitle-cards {
-  padding-left: 3.8%;
-  padding-top: .3em;
-  padding-bottom: .3em;
-  margin-top: .25em;  
-  margin-bottom: .15em;
-}
-
-/* Section Titles with link */
-.layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards {
-  padding-top: 0.275em;
-  padding-bottom: 0.275em;
+.layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards,
+.layout-desktop .sectionTitleTextButton > .material-icons {
   margin-top: 0em;  
   margin-bottom: 0em;
 }
-
-.layout-desktop .sectionTitleTextButton > .material-icons {
-  padding-top: 0em;
-  margin-bottom: 0em;
-}
-
-
-.layout-desktop #indexPage .verticalSection > .emby-scrollbuttons,
-.layout-desktop #tvRecommendedPage .verticalSection > .emby-scrollbuttons{
-  margin-top: .25em;
-  padding-top: 0em;
-}
-
-
-
-
-/* Section Titles */
-.layout-mobile .verticalSection > .sectionTitleContainer-cards {
-  text-align: center;
-  margin-top: .25em;
-  margin-bottom: .25em;
-  padding-top: .375em;
-  padding-bottom: .375em;
-}
-
-/* Section Titles without link */
-.layout-mobile .verticalSection > .sectionTitle-cards {
-  padding-left: 2.5%;
-  padding-top: .25em;
-  padding-bottom: .25em;
-  margin-top: .25em;
-  margin-bottom: .15em;
-  text-align: center;
-}
-
-
-/* Section Titles with link */
-.layout-mobile .verticalSection .sectionTitleTextButton .sectionTitle-cards {
-  padding-top: 0em;
+.layout-desktop .verticalSection > .emby-scrollbuttons {
+  padding-top: .2%;
   padding-bottom: 0em;
 }
 
+/* Section Titles: Mobile */
+.layout-mobile .verticalSection > .sectionTitle-cards,
+.layout-mobile .verticalSection > .sectionTitleContainer-cards {
+  text-align: center;
+  padding-left: 0em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+/* Section Title inside link-button (Mobile) */
+.layout-mobile :not(.sectionTitleContainer-cards) .sectionTitleTextButton .sectionTitle-cards {
+  padding-left: 0em;
+  padding-top: 0em;
+}
 .layout-mobile .sectionTitleTextButton > .material-icons {
   padding-top: 0em;
 }
 
-.layout-mobile .overflowBackdropCard {
-  width: 51%;
-}
-.layout-mobile .overflowPortraitCard {
-  width: 26%;
-}
 
 
 
-/* Section Title: Media Pages */
+/* Media Page Section Titles */
 .detailPagePrimaryContainer .sectionTitle,
 .detailPageSecondaryContainer .sectionTitle {
-  /* padding-top: .3em !important;
-  padding-bottom: .3em !important;
-  margin-top: .5em !important;
-  margin-bottom: .5em !important; */
   display: block;
+  font-weight: 600;
 }
 
-.layout-tv .detailPageSecondaryContainer .sectionTitle, 
-.layout-mobile .detailPagePrimaryContainer .sectionTitle, 
-.layout-mobile .detailPageSecondaryContainer .sectionTitle {
-  font-weight: 600;
+/* Media Page Section Titles: TV */
+.layout-tv .detailPagePrimaryContainer .sectionTitle {
+  text-align: left;
+  padding-left: 3%;
+  border-radius: var(--rounding-system);
+}
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
   text-align: center;
 }
 
-.layout-tv .detailPagePrimaryContainer .sectionTitle {
-  font-weight: 600;
-  text-align: left;
-  padding-left: 3%;
+/* Media Page Section Titles: Desktop */
+.layout-desktop .detailPagePrimaryContainer .sectionTitle {
+  padding-left: 1.5% !important;
+  border-radius: var(--rounding-system);
 }
-
-.layout-desktop .detailPagePrimaryContainer .sectionTitle, 
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
-  font-weight: 600;
   padding-left: 3.5% !important;
 }
 
+
+/* Media Page Section Titles: Mobile */
+.layout-mobile .detailPageWrapperContainer .sectionTitle {
+  border-radius: var(--rounding-system);
+}
 
 /*
 ===========================================================================
@@ -1229,22 +1204,37 @@
   max-width: 30em;
 }
 
-/* Media Scroller: Card Spacing */
-.itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
+
+/* Media Scroller: Card Spacing (TV) */
+.layout-tv .itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
   margin-left: 1%;
   margin-top: .5%;
   margin-bottom: .5%;
 }
-
-.itemsContainer-tv > .overflowPortraitCard:not(.personCard) {
+.layout-tv .itemsContainer-tv > .overflowPortraitCard:not(.personCard) {
   margin-left: .75%;
-  margin-top: .8%;
-  margin-bottom: .7%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.layout-tv .itemsContainer-tv > .personCard {
+  margin-top: .25%;
+  margin-bottom: .25%;
 }
 
-.itemsContainer-tv > .personCard {
-  margin-top: .8%;
-  margin-bottom: .7%;
+
+/* Media Scroller: Card Spacing (Desktop) */
+.layout-desktop .itemsContainer > .overflowBackdropCard ,
+.layout-desktop .itemsContainer > .overflowPortraitCard {
+  margin-top: .25%;
+  margin-bottom: .25%;
+}
+
+/* Media Scroller: Card Size (Mobile) */
+.layout-mobile .overflowBackdropCard {
+  width: 52%;
+}
+.layout-mobile .overflowPortraitCard {
+  width: 26%;
 }
 
 
@@ -1328,7 +1318,8 @@
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
-.itemsContainer > .bannerCard:hover > .cardBox {
+.layout-tv .itemsContainer > .bannerCard:hover > .cardBox,
+.layout-desktop .itemsContainer > .bannerCard:hover > .cardBox {
   box-shadow: var(--cardglow) !important;
 }
 
@@ -1352,9 +1343,12 @@
   background: rgba(0, 0, 0, 0.7) !important;
 }
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
-  box-shadow: var(--buttonglow) !important;
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
+}
+.layout-tv .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
+.layout-desktop .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
+  box-shadow: var(--buttonglow) !important;
 }
 
 /* List Item Cards: Hide Poster on small screens (Mobile) */
@@ -1393,7 +1387,8 @@
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
-.itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
+.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable{
   box-shadow: var(--cardglow) !important;
 }
 
@@ -1404,7 +1399,8 @@
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
-.itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox {
+.layout-tv .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
+.layout-desktop .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox {
   box-shadow: var(--cardglow) !important;
 }
 
@@ -1415,7 +1411,8 @@
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
-.itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable {
+.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable {
   box-shadow: var(--cardglow) !important;
 }
 
@@ -1426,8 +1423,8 @@
   padding-bottom: 1.5vh !important;
   padding-right: 1vw !important;
 }
-
-.itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox {
+.layout-tv .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
+.layout-desktop .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox {
   box-shadow: var(--cardglow) !important;
 }
 
@@ -1474,9 +1471,6 @@
 /* Media Pages: Center Content (Mobile) */
 .layout-mobile .verticalSection .itemsContainer.vertical-wrap {
   justify-content: center;
-}
-.layout-mobile .verticalSection .sectionTitleContainer {
-  text-align: center;
 }
 
 /*
@@ -1626,9 +1620,12 @@ p.itemGenres {
   background: rgba(0, 0, 0, 0.7) !important;
 }
 .listItem-largeImage:focus {
-  box-shadow: var(--buttonglow) !important;
   border: solid 2px var(--accent80) !important;
   background: rgba(0, 0, 0, 0.7) !important;
+}
+.layout-tv .listItem-largeImage:focus,
+.layout-desktop .listItem-largeImage:focus{
+  box-shadow: var(--buttonglow) !important;
 }
 
 /* Large List Items: Align Body */
