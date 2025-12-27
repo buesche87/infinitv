@@ -804,7 +804,7 @@
   margin-bottom: 4.4em !important;
   margin-right: .25em !important;
 }
-.layout-mobile .itemAction .material-icons {
+.layout-mobile .itemAction > .material-icons {
   background: #0000 !important;
   text-shadow: 0 0 3px rgba(0,0,0,0.8);
   color: white;
