@@ -1071,78 +1071,142 @@
 ===========================================================================
 */
 
-/* Section Titles */
-.verticalSection > .sectionTitle-cards,
-.verticalSection > .sectionTitleContainer-cards {
-  padding-top: .5em;
-  padding-bottom: .5em;
-  margin-top: .5em;
-  margin-bottom: .5em;
+.verticalSection > .sectionTitleContainer-cards,
+.verticalSection > .sectionTitle-cards {
   background: hsl(0deg 0% 100% / 10%);
 }
 
-/* Section Titles: INdex & Recommended Pages */
-.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
-.layout-tv #tvRecommendedPage .verticalSection > .sectionTitle-cards {
-  padding-top: 0.335em;
-  padding-bottom: 0.335em;
-  margin-bottom: .25em;
+
+/* Section Titles */
+.layout-tv .verticalSection > .sectionTitleContainer-cards {
+  text-align: center;
   margin-top: .25em;
-}
-.layout-desktop #indexPage .verticalSection > .sectionTitle-cards,
-.layout-desktop #tvRecommendedPage .verticalSection > .sectionTitle-cards {
-  padding-top: 0.335em;
-  padding-bottom: 0.335em;
-  margin-top: .5em !important;
-  margin-bottom: .5em !important;
+  margin-bottom: .25em;
+  padding-top: .375em;
+  padding-bottom: .375em;
 }
 
-/* Section Titles: Center on Home (TV & Mobile) */
-.layout-tv #indexPage .verticalSection > .sectionTitle-cards,
-.layout-mobile #indexPage .verticalSection > .sectionTitle-cards,
-.layout-tv #indexPage .verticalSection > .sectionTitleContainer-cards,
-.layout-mobile #indexPage .verticalSection > .sectionTitleContainer-cards {
+/* Section Titles without link */
+.layout-tv .verticalSection > .sectionTitle-cards {
+  padding-left: 2.5%;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  margin-top: .25em;
+  margin-bottom: .15em;
   text-align: center;
-  padding-left: 0em;
 }
+
+
+
+/* Section Titles */
+.layout-desktop .verticalSection > .sectionTitleContainer-cards {
+  padding-left: 3.8%;
+  margin-top: .25em;  
+  margin-bottom: .25em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+/* Section Titles without link */
+.layout-desktop .verticalSection > .sectionTitle-cards {
+  padding-left: 3.8%;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  margin-top: .25em;  
+  margin-bottom: .15em;
+}
+
+/* Section Titles with link */
+.layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards {
+  padding-top: 0.275em;
+  padding-bottom: 0.275em;
+  margin-top: 0em;  
+  margin-bottom: 0em;
+}
+
+.layout-desktop .sectionTitleTextButton > .material-icons {
+  padding-top: 0em;
+  margin-bottom: 0em;
+}
+
+
+.layout-desktop #indexPage .verticalSection > .emby-scrollbuttons,
+.layout-desktop #tvRecommendedPage .verticalSection > .emby-scrollbuttons{
+  margin-top: .25em;
+  padding-top: 0em;
+}
+
+
+
+
+/* Section Titles */
+.layout-mobile .verticalSection > .sectionTitleContainer-cards {
+  text-align: center;
+  margin-top: .25em;
+  margin-bottom: .25em;
+  padding-top: .375em;
+  padding-bottom: .375em;
+}
+
+/* Section Titles without link */
+.layout-mobile .verticalSection > .sectionTitle-cards {
+  padding-left: 2.5%;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  margin-top: .25em;
+  margin-bottom: .15em;
+  text-align: center;
+}
+
+
+/* Section Titles with link */
+.layout-mobile .verticalSection .sectionTitleTextButton .sectionTitle-cards {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+.layout-mobile .sectionTitleTextButton > .material-icons {
+  padding-top: 0em;
+}
+
+.layout-mobile .overflowBackdropCard {
+  width: 51%;
+}
+.layout-mobile .overflowPortraitCard {
+  width: 26%;
+}
+
+
 
 /* Section Title: Media Pages */
 .detailPagePrimaryContainer .sectionTitle,
 .detailPageSecondaryContainer .sectionTitle {
-  padding-top: .3em !important;
+  /* padding-top: .3em !important;
   padding-bottom: .3em !important;
   margin-top: .5em !important;
-  margin-bottom: .5em !important;
+  margin-bottom: .5em !important; */
   display: block;
 }
 
-.layout-tv .detailPagePrimaryContainer .sectionTitle, 
-.layout-tv .detailPageSecondaryContainer .sectionTitle,
+.layout-tv .detailPageSecondaryContainer .sectionTitle, 
 .layout-mobile .detailPagePrimaryContainer .sectionTitle, 
 .layout-mobile .detailPageSecondaryContainer .sectionTitle {
-  padding-left: 3%;
   font-weight: 600;
   text-align: center;
 }
 
+.layout-tv .detailPagePrimaryContainer .sectionTitle {
+  font-weight: 600;
+  text-align: left;
+  padding-left: 3%;
+}
+
 .layout-desktop .detailPagePrimaryContainer .sectionTitle, 
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
-  padding-left: 1em !important;
+  font-weight: 600;
+  padding-left: 3.5% !important;
 }
 
-/* Section Titles: Text & Icons */
-.sectionTitleTextButton > .sectionTitle,
-.sectionTitleTextButton > .material-icons {
-  margin: 0;
-}
-
-/* Icon inside scroll-button */
-#tvRecommendedPage .sectionTitleContainer-cards .button-flat:focus {
-  background: #0000 !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-  color: var(--accent100) !important;
-}
 
 /*
 ===========================================================================
@@ -1153,6 +1217,11 @@
 /* Media Scroller: Position (TV) */
 .layout-tv .verticalSection .emby-scroller {
   padding-left: 2%;
+}
+
+/* Media Scroller: Position (TV) */
+.layout-desktop .verticalSection .emby-scroller {
+  padding-left: 3%;
 }
 
 /* Media Scroller: Max card width */
@@ -1172,6 +1241,12 @@
   margin-top: .8%;
   margin-bottom: .7%;
 }
+
+.itemsContainer-tv > .personCard {
+  margin-top: .8%;
+  margin-bottom: .7%;
+}
+
 
 /*
 ===========================================================================
@@ -1504,7 +1579,8 @@ p.itemGenres {
   padding-top: 0em !important;
 }
 
-.layout-tv .detailPageSecondaryContainer .detailPageContent {
+.layout-tv .detailPageSecondaryContainer .detailPageContent,
+.layout-desktop .detailPageSecondaryContainer .detailPageContent {
   padding-left: 0;
   padding-right: 0;
 }
@@ -1530,14 +1606,6 @@ p.itemGenres {
 /* Section Scroller: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
   margin-bottom: 0em !important;
-}
-
-/* Section Scroller (Mobile) */
-.layout-mobile :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-  padding-top: 0em;
-}
-.layout-mobile .sectionTitleTextButton > .material-icons {
-  padding-top: .2em;
 }
 
 /* Cards: Large List Items */
