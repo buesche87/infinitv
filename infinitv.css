@@ -862,7 +862,7 @@
 /* More space for glow animation */
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox {
-    margin-left: .5em !important;;
+    margin-left: .5em !important;
     background-color: #0000;
 }
 

@@ -50,7 +50,7 @@
 
 /*
 ============================================================================
-    Background & Font
+   Background & Font
 ============================================================================
 */
 
@@ -71,6 +71,97 @@
     background-color: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
+
+
+
+/*
+============================================================================
+   Roundings
+============================================================================
+*/
+
+/* Rounding Media */
+.blurhash-canvas,
+.cardBox,
+.cardContent,
+.cardOverlayContainer,
+.cardContent-button,
+.cardContent-shadow,
+.cardImage,
+.cardImageContainer,
+.cardOverlayButtonIcon,
+.cardScalable,
+.itemDetailImage,
+.primaryImageWrapper > img,
+.visualCardBox,
+.cardBox:not(.visualCardBox) .cardPadder,
+.itemProgressBar,
+.itemProgressBarForeground,
+.detailButton,
+.play-button,
+.detail-button,
+.favorite-button,
+.listItem-focusscale,
+.listItem-largeImage,
+.detailImageContainer .card,
+.osdPoster img,
+.chapterThumbContainer,
+.chapterThumb,
+.chapterThumbTextContainer,
+.upNextContainer,
+.upNextDialog-poster-img,
+.imagePlaceHolder,
+.paper-icon-button-light:not(.alphaPickerButton),
+#loginPage .padded-left.padded-right.padded-bottom-page,
+.detailPagePrimaryContainer .sectionTitle,
+.layout-mobile .detailPageSecondaryContainer .sectionTitle {
+    border-radius: var(--rounding-media) !important;
+}
+
+/* Rounding System */
+.dialog,
+.formDialogHeader,
+.formDialogFooter,
+.toast,
+.actionSheetMenuItem,
+.listTextButton-autohide,
+.listItem-border,
+.detailButton,
+.emby-button.block,
+.emby-collapsible-button,
+.emby-select,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.checkboxOutline,
+.button-submit,
+.raised,
+.playedIndicator,
+.countIndicator,
+.mediaSourceIndicator,
+.skip-button,
+.upNextDialog-button,
+.settingsContainer .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle,
+.listItemButton,
+.listItemImageButton,
+.listItemIcon,
+.subtitleappearance-preview,
+.searchSuggestionsList > div:hover,
+.searchSuggestionsList > div:has(.emby-button:focus) {
+    border-radius: var(--rounding-system) !important;
+}
+
+/*
+============================================================================
+   ...
+============================================================================
+*/
+
+
+
+
+
 /*
 ============================================================================
    System & Dialogs
@@ -86,14 +177,12 @@
 .dialog,
 .formDialogHeader,
 .formDialogFooter {
-    border-radius: var(--rounding-system) !important;
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Toasts */
 .toast {
     box-shadow: var(--cardglow) !important;
-    border-radius: var(--rounding-system) !important;
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
@@ -301,7 +390,6 @@
 .emby-button.block,
 .button-submit,
 .raised {
-    border-radius: var(--rounding-system);
     border: 2px solid rgba(255, 255, 255, 0.2);
     margin: 0.5em 0;
     border-color: rgba(255, 255, 255, 0.2) !important;
@@ -327,9 +415,6 @@
 /* Buttons: Header, Menus, Filter & OSD
 --------------------------------------------------------------------------*/
 
-.paper-icon-button-light:not(.alphaPickerButton) {
-    border-radius: var(--rounding-media);
-}
 .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
     color: var(--accent100);
     background-color: var(--accent20);
@@ -361,7 +446,6 @@
 --------------------------------------------------------------------------*/
 
 .actionSheetMenuItem {
-    border-radius: var(--rounding-system);
     border: solid 2px #0000;
     border-color: #0000 !important;
     background: #0000 !important;
@@ -384,7 +468,6 @@
 --------------------------------------------------------------------------*/
 
 .listTextButton-autohide {
-    border-radius: var(--rounding-system);
     border: solid 2px #0000;
     border-color: #0000 !important;
     background: #0000 !important;
@@ -405,7 +488,6 @@
 --------------------------------------------------------------------------*/
 
 .emby-collapsible-button {
-    border-radius: var(--rounding-system);
     background: #0000 !important;
     border: solid 2px #0000;
     padding: .75em !important;
@@ -431,7 +513,6 @@
 
 /* List Item Border */
 .listItem-border {
-    border-radius: var(--rounding-system);
     border: solid 2px #0000;
     border-color: #0000 !important;
     background: #0000 !important;
@@ -463,7 +544,6 @@
 --------------------------------------------------------------------------*/
 
 .detailButton {
-    border-radius: var(--rounding-media) !important;
     border: var(--buttonborder) !important;
 }
 .detailButton:hover {
@@ -503,7 +583,6 @@
     margin-right: .2em !important;
     background: rgba(0, 0, 0, 0.2) !important;
     color: inherit;
-    border-radius: var(--rounding-media) !important;
     border: var(--buttonborder) !important;
     height: 3.5em;
     margin-right: 1em !important;
@@ -616,9 +695,6 @@
 }
 
 /* Select Container */
-.emby-select {
-    border-radius: var(--rounding-system) !important;
-}
 .emby-select-focusscale:focus {
     -webkit-transform: none !important;
     transform: none !important;
@@ -652,7 +728,6 @@
 .emby-select-withcolor,
 .checkboxOutline {
     border: var(--buttonborder) !important;
-    border-radius: var(--rounding-system) !important;
     background: rgba(0, 0, 0, 0.4);
 }
 .emby-input:not(:disabled):hover,
@@ -728,24 +803,6 @@
 /* Cards: Narrow margins */
 .cardBox-bottompadded {
     margin-bottom: 0.5em !important;
-}
-
-/* Cards: Full Rounding */
-.blurhash-canvas,
-.cardBox,
-.cardContent,
-.cardOverlayContainer,
-.cardContent-button,
-.cardContent-shadow,
-.cardImage,
-.cardImageContainer,
-.cardOverlayButtonIcon,
-.cardScalable,
-.itemDetailImage,
-.primaryImageWrapper > img,
-.visualCardBox,
-.cardBox:not(.visualCardBox) .cardPadder {
-    border-radius: var(--rounding-media);
 }
 
 /* Cards: Rounding Top, Flat Bottom */
@@ -864,7 +921,7 @@
 /* More space for glow animation */
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox {
-    margin-left: .5em !important;;
+    margin-left: .5em !important;
     background-color: #0000;
 }
 
@@ -885,7 +942,6 @@
 .playedIndicator {
     color: var(--accent100) !important;
     background: rgba(0, 0, 0, 1);
-    border-radius: var(--rounding-system) !important;
     border: none;
 }
 .countIndicator,
@@ -894,7 +950,6 @@
     font-size: 89%;
     color: rgba(0, 0, 0, 1);
     background: var(--accent100) !important;
-    border-radius: var(--rounding-system) !important;
     border: none;
 }
 .playstatebutton-icon-played,
@@ -932,7 +987,6 @@
 /* Card Progressbar: Background */
 .itemProgressBar {
     background: rgba(0, 0, 0, 0.5) !important;
-    border-radius: var(--rounding-media) !important;
     height: .4em !important;
     margin: .5em .8em !important;
     backdrop-filter: blur(6px);
@@ -941,7 +995,6 @@
 /* Card Progressbar: Progress */
 .itemProgressBarForeground {
     background-color: var(--accent100) !important;
-    border-radius: var(--rounding-media) !important;
 }
 
 /*
@@ -988,7 +1041,6 @@
     margin: 0;
     background: rgba(0, 0, 0, 0.4) !important;
     width: 24em;
-    border-radius: var(--rounding-media);
     padding-bottom: 2em !important;
 }
 
@@ -1171,7 +1223,6 @@
 .layout-tv .detailPagePrimaryContainer .sectionTitle {
     text-align: left;
     padding-left: 3%;
-    border-radius: var(--rounding-system);
 }
 .layout-tv .detailPageSecondaryContainer .sectionTitle {
     text-align: center;
@@ -1180,15 +1231,9 @@
 /* Media Page Section Titles: Desktop */
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
     padding-left: 1.5% !important;
-    border-radius: var(--rounding-system);
 }
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
     padding-left: 3.5% !important;
-}
-
-/* Media Page Section Titles: Mobile */
-.layout-mobile .detailPageWrapperContainer .sectionTitle {
-    border-radius: var(--rounding-system);
 }
 
 /*
@@ -1335,7 +1380,6 @@
 /* List Item Cards */
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage) {
     border: var(--buttonborder) !important;
-    border-radius: var(--rounding-media);
     background: rgba(0, 0, 0, 0.2) !important;
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
@@ -1470,7 +1514,6 @@
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     left: 3% !important;
-    border-radius: var(--rounding-media);
     box-shadow: var(--cardshadow) !important;
     max-width: 26vw;
 }
@@ -1613,7 +1656,6 @@ p.itemGenres {
 /* Cards: Large List Items */
 .listItem-largeImage {
     border: var(--buttonborder) !important;
-    border-radius: var(--rounding-media) !important;
     margin-bottom: 1em;
     padding: 0em;
     border-color: hsl(0deg 0% 100% / 20%) !important;
@@ -1690,7 +1732,6 @@ p.itemGenres {
     text-align: center;
 }
 .osdPoster img {
-    border-radius: var(--rounding-media);
     border: none;
 }
 .osdTextContainer {
@@ -1715,7 +1756,6 @@ p.itemGenres {
 
 /* Player OSD: Skip-Button */
 .skip-button {
-    border-radius: var(--rounding-system);
     color: #fff;
     background: #0000 !important;
     border: none !important;
@@ -1817,13 +1857,11 @@ p.itemGenres {
 /* Chapter Thumbnails */
 .chapterThumbContainer {
     box-shadow: 0 0 1.9vh #000;
-    border-radius: var(--rounding-media) !important;
 }
 .chapterThumb {
     height: 14vh;
     min-width: 14vh;
 	box-shadow: 0 0 1.9vh #000;
-    border-radius: var(--rounding-media) !important;
 }
 
 /* Chapter Thumbnails: Slider Bubble */
@@ -1838,7 +1876,6 @@ p.itemGenres {
     right: auto;
 	bottom: 4px;
 	padding: .25em 0.7em;
-    border-radius: var(--rounding-media) !important;
 }
 .chapterThumbText {
     font-size: 1em;
@@ -1854,13 +1891,7 @@ p.itemGenres {
 .upNextContainer {
     padding-left: 1.25em;
     padding-right: 1.25em;
-    border-radius: var(--rounding-media) !important;
     box-shadow: var(--buttonglow) !important;
-}
-
-/* UpNext: Poster */
-.upNextDialog-poster-img {
-    border-radius: var(--rounding-media) !important;
 }
 
 /* UpNext: Countdown */
@@ -1872,7 +1903,6 @@ p.itemGenres {
 .upNextDialog-button {
     margin-left: .5em;
     background: #0000;
-    border-radius: var(--rounding-system) !important;
     border: var(--buttonborder) !important;
     -webkit-transform: none !important;
     transform: none !important;
@@ -1905,7 +1935,6 @@ p.itemGenres {
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle {
     background: hsl(0deg 0% 100% / 10%);
-    border-radius: var(--rounding-system) !important;
     padding-top: .3em;
     padding-bottom: .3em;
     margin-left: -.5em;
@@ -1913,16 +1942,9 @@ p.itemGenres {
     margin-right: -.5em;
 }
 
-/* Menu Items: Additional content */
-.listItemButton,
-.listItemImageButton {
-    border-radius: var(--rounding-system) !important;
-}
-
 /* Menu Items: Remove background on some icons */
 .listItemIcon {
     background: #0000 !important;
-    border-radius: var(--rounding-system) !important;
 }
 
 /* Center Settings Items (Mobile) */
@@ -1934,7 +1956,6 @@ p.itemGenres {
 /* Subtitles: Preview-Box */
 .subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
-    border-radius: var(--rounding-system) !important;
 }
 
 /* Settings Pages: Center content and Text */
@@ -1996,7 +2017,6 @@ p.itemGenres {
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
     background: hsl(0deg 0% 100% / 10%);
-    border-radius: var(--rounding-system);
 }
 
 /*
@@ -2033,7 +2053,6 @@ p.itemGenres {
 /* User Profile: Image */
 .imagePlaceHolder {
     border: var(--buttonborder) !important;
-    border-radius: var(--rounding-media);
 }
 .imagePlaceHolder:hover {
     border: solid 2px var(--accent40) !important;
