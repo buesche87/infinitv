@@ -19,13 +19,27 @@
 
 /* Main Drawer:  (Mobile) */
 .layout-mobile .mainDrawer {
-  margin-bottom: 3.9em;
+  margin-top: 0em;
+  margin-bottom: 4em;
   align-items: flex-end;
 }
 
 .layout-mobile .emby-tab-button {
   padding: 1.5em 1.25em .5em 1.25em !important;
-  /* border: 2px solid rgba(255, 255, 255, 0.2); */
-  /* border-radius: var(--rounding-system); */
 }
 
+.layout-mobile .mainDrawer-scrollContainer {
+  padding-bottom: 1vh;
+}
+
+.layout-mobile .itemBackdrop {
+  margin-top: 0rem;
+}
+
+.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+  padding-top: 0em !important;
+}
+
+.layout-mobile .alphaPicker {
+  bottom: 8em;
+}

@@ -47,7 +47,7 @@
 
 /*
 ============================================================================
-  Background & Font
+  Background
 ============================================================================
 */
 
@@ -175,7 +175,7 @@
   color: var(--accent100) !important;
 }
 
-/* Action Sheet: Item size */
+/* Action Sheet: Item alignment */
 .actionSheetContent .listItem {
   padding: .5em;
 }
@@ -830,7 +830,6 @@
   color: var(--accent100);
   text-decoration: none;
 }
-
 
 /*
 ===========================================================================
