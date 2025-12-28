@@ -3,6 +3,7 @@
   top: auto;
   bottom: 0;
   flex-direction: column;
+  background: rgba(0, 0, 0, 1) !important;
 }
 .layout-mobile .skinHeader.headroom--unpinned {
   transform: translateY(100%);
