@@ -79,25 +79,6 @@
   font-size: 110% !important;
 }
 
-/* Mobile: Header at Bottom */
-.layout-mobile .skinHeader {
-  top: auto;
-  bottom: 0;
-  flex-direction: column;
-}
-.layout-mobile .skinHeader.headroom--unpinned {
-  transform: translateY(100%);
-}
-.layout-mobile .skinHeader.headroom--pinned {
-  transform: translateY(0);
-}
-.layout-mobile .headerTop {
-  order: 2;
-}
-.layout-mobile .sectionTabs {
-  order: 1;
-}
-
 /* Dialogs */
 .dialog,
 .formDialogHeader,
@@ -141,24 +122,15 @@
 
 /* Main Drawer */
 .mainDrawer {
+  margin-top: 3.9em;
   box-shadow: none !important;
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Main Drawer:  (Mobile) */
-.layout-mobile .mainDrawer {
-  margin-bottom: 3.9em;
-  align-items: flex-end;
 }
 
 /* Main Drawer: Hide HeaderTabs when open (Mobile) */
 .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
   display: none !important;
 }
-
-
-
-
 
 /* Main Drawer: Options */
 .navMenuOption {
@@ -373,11 +345,6 @@
 }
 .emby-tab-button-active {
   color: #fff;
-}
-.layout-mobile .emby-tab-button {
-  padding: 1.5em 1.25em .5em 1.25em !important;
-  /* border: 2px solid rgba(255, 255, 255, 0.2); */
-  /* border-radius: var(--rounding-system); */
 }
     
 

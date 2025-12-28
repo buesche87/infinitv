@@ -1,0 +1,31 @@
+/* Mobile: Header at Bottom */
+.layout-mobile .skinHeader {
+  top: auto;
+  bottom: 0;
+  flex-direction: column;
+}
+.layout-mobile .skinHeader.headroom--unpinned {
+  transform: translateY(100%);
+}
+.layout-mobile .skinHeader.headroom--pinned {
+  transform: translateY(0);
+}
+.layout-mobile .headerTop {
+  order: 2;
+}
+.layout-mobile .sectionTabs {
+  order: 1;
+}
+
+/* Main Drawer:  (Mobile) */
+.layout-mobile .mainDrawer {
+  margin-bottom: 3.9em;
+  align-items: flex-end;
+}
+
+.layout-mobile .emby-tab-button {
+  padding: 1.5em 1.25em .5em 1.25em !important;
+  /* border: 2px solid rgba(255, 255, 255, 0.2); */
+  /* border-radius: var(--rounding-system); */
+}
+
