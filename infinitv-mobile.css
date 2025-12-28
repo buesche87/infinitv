@@ -17,29 +17,39 @@
   order: 1;
 }
 
-/* Main Drawer:  (Mobile) */
+/* Main Drawer: Alignment */
 .layout-mobile .mainDrawer {
   margin-top: 0em;
   margin-bottom: 4em;
   align-items: flex-end;
 }
 
+/* Header Tabs: Alignment */
 .layout-mobile .emby-tab-button {
   padding: 1.25em 1.25em .5em 1.25em !important;
 }
 
+/* Drawer: Move options to bottom */
 .layout-mobile .mainDrawer-scrollContainer {
   padding-bottom: 1vh;
 }
 
-.layout-mobile .itemBackdrop {
-  margin-top: 0rem;
-}
-
+/* Library Pages: Move up */
 .layout-mobile .libraryPage:not(#indexPage) {
   padding-top: 0em !important;
 }
 
+/* Media Details: Move image up */
+.layout-mobile .itemBackdrop {
+  margin-top: 0rem;
+}
+
+/* Media Lists: Alphabet Picker */
 .layout-mobile .alphaPicker {
   bottom: 8em;
+}
+
+/* Media Lists: Filter Bar */
+.layout-mobile .pageTabContent > .focuscontainer-x {
+  margin-top: 1.5em;
 }

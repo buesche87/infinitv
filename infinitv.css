@@ -43,6 +43,7 @@
 
   /* Border */
   --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
+
 }
 
 /*
@@ -739,6 +740,8 @@
 .cardImageContainer,
 .cardOverlayButtonIcon,
 .cardScalable,
+.itemDetailImage,
+.primaryImageWrapper > img,
 .visualCardBox,
 .cardBox:not(.visualCardBox) .cardPadder {
   border-radius: var(--rounding-media);
@@ -759,7 +762,7 @@
 .cardFooter:not(.visualCardBox-cardFooter) {
   border-bottom-left-radius: var(--rounding-media) !important;
   border-bottom-right-radius: var(--rounding-media) !important;
-  background: rgba(0, 0, 0, var(--footeropacity)) !important;
+  background: rgba(0, 0, 0, var(--itemopacity)) !important;
   text-align: center;
 }
 
@@ -1274,6 +1277,7 @@
 
 /* Filter & Sorting Header: Item Count */
 .listPaging > span {
+  margin-left: .5em;
   margin-right: .5em;
 }
 
@@ -1499,13 +1503,13 @@
 .layout-desktop .detailRibbon {
   height: 9em !important;
   margin-top: -9em !important;
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+  background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
 /* Detail-Ribbon (Mobile) */
 .layout-mobile .detailRibbon {
   margin-top: -1em !important;
-  background: rgba(0, 0, 0, var(--headeropacity)) !important;
+  background: rgba(0, 0, 0, var(--itemopacity)) !important;
   padding-bottom: 1.25em;
   padding-right: 5% !important;
   padding-left: 5%;
@@ -1793,6 +1797,10 @@ p.itemGenres {
   background: #0000 !important;
 }
 
+.mdl-slider-background-lower {
+  background: var(--accent100) !important;
+}
+
 /* Player OSD: Progressbar Vertical Marker */
 .sliderMarker {
   width: 3px;
@@ -2052,41 +2060,29 @@ h2.username {
 ===========================================================================
 */
 
-/* Misc: paperList  */
+/* Misc: paperList
 .paperList {
   background: rgba(0, 0, 0, 0.4);
   border-radius: var(--rounding-system) !important;
-}
+} */
 
-/* Misc: MDL-Switch */
+/* Misc: MDL-Switch
 .mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5);
-}
+} */
 
-/* Misc: Item Selection Panel */
+/* Misc: Item Selection Panel 
 .itemSelectionPanel {
   border: 0.01em solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5) !important;
   border-radius: var(--rounding-media) !important;
-}
+} */
 
-/* Misc: Fab-Button */
+/* Misc: Fab-Button
 .fab {
   border-radius: var(--rounding-system) !important;
   transition: all 0.2s !important;
   background: rgba(0, 0, 0, 0.4) !important;
-}
-
-/* Misc: Progressbar */
-.taskProgressInner,
-.mdl-slider-background-lower {
-  background: var(--accent100) !important;
-}
-
-/* Misc: Cards & Items */
-.itemDetailImage,
-.primaryImageWrapper > img {
-  border-radius: var(--rounding-media) !important;
-}
+} */
 
 /* Misc: SyncPlay */
 .syncPlayIconCircle {
