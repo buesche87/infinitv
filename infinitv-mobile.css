@@ -28,13 +28,15 @@
 .layout-mobile .headerLeft {
     order: 2;
     justify-content: flex-end;
+    padding-right: 1em;
 }
 .layout-mobile .headerRight {
     order: 1;
+    padding-left: 1em;
 }
 
 /* Header: Remove Logo */
-.layout-mobile .pageTitleWithLogo {
+.layout-mobile .pageTitle {
     display: none;
 }
 
