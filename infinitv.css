@@ -47,7 +47,7 @@
 
 /*
 ============================================================================
-  Background
+  Background & Font
 ============================================================================
 */
 
@@ -175,7 +175,7 @@
   color: var(--accent100) !important;
 }
 
-/* Action Sheet: Item alignment */
+/* Action Sheet: Item size */
 .actionSheetContent .listItem {
   padding: .5em;
 }
@@ -831,6 +831,7 @@
   text-decoration: none;
 }
 
+
 /*
 ===========================================================================
   Cards: Animations
@@ -1456,10 +1457,12 @@
 /* Media Pages: Move Content up (TV) */
 .detailPageWrapperContainer {
   padding-top: 1em;
+  /* margin-bottom: 4em; */
 }
 
 /* Media Pages: Increase Season Title Text */
-.selfBackdropPage h3.itemName.infoText.subtitle.focuscontainer-x {
+.layout-tv .selfBackdropPage .itemName,
+.layout-desktop .selfBackdropPage .itemName{
   font-size: 150%;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -1514,7 +1517,8 @@
 }
 
 /* Detail-Ribbon: Media Infos */
-.itemMiscInfo {
+.layout-tv .itemMiscInfo,
+.layout-desktop .itemMiscInfo{
   font-size: 125%;
   margin-top: 0.25em;
   margin-bottom: 0.6em;
