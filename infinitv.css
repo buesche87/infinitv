@@ -230,6 +230,12 @@
   position: fixed !important;
 }
 
+/* Header: Fixed size (Mobile) */
+.layout-mobile .headerTop {
+  padding-top: 0.55em;
+  padding-bottom: 0.55em;
+}
+
 /* Header: Opacity */
 .skinHeader-withBackground {
   background: rgba(0, 0, 0, var(--headeropacity)) !important;
