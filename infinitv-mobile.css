@@ -36,7 +36,7 @@
   margin-top: 0rem;
 }
 
-.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+.layout-mobile .libraryPage:not(#indexPage) {
   padding-top: 0em !important;
 }
 
