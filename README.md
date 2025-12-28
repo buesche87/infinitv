@@ -45,7 +45,7 @@ Add the following to your custom branding:
   /* Darkness & Opacity */
   --bgdarkness: 0.6;    /* Background Darkness */
   --headeropacity: 0.7; /* Header & Drawer Opacity */
-  --footeropacity: 0.8; /* Card Footer Opacity */
+  --itemopacity: 0.8;   /* Item Opacity (Card Footer, Detail Ribbon) */
 
   /* Roundings */
   --rounding-media: 12px;
