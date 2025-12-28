@@ -1,56 +1,76 @@
+/*
+============================================================================
+   Mobile Layout: Bottom alignment 
+============================================================================
+*/
+
 /* Mobile: Header at Bottom */
 .layout-mobile .skinHeader {
-  top: auto;
-  bottom: 0;
-  flex-direction: column;
-  background: rgba(0, 0, 0, 1) !important;
+    top: auto;
+    bottom: 0;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 1) !important;
 }
 .layout-mobile .skinHeader.headroom--unpinned {
-  transform: translateY(100%);
+    transform: translateY(100%);
 }
 .layout-mobile .skinHeader.headroom--pinned {
-  transform: translateY(0);
+    transform: translateY(0);
 }
 .layout-mobile .headerTop {
-  order: 2;
+    order: 2;
 }
 .layout-mobile .sectionTabs {
-  order: 1;
+    order: 1;
+}
+
+/* Header: Switch Buttons */
+.layout-mobile .headerLeft {
+    order: 2;
+    justify-content: flex-end;
+}
+.layout-mobile .headerRight {
+    order: 1;
+}
+
+/* Header: Remove Logo */
+.layout-mobile .pageTitleWithLogo {
+    display: none;
 }
 
 /* Main Drawer: Alignment */
 .layout-mobile .mainDrawer {
-  margin-top: 0em;
-  margin-bottom: 4em;
-  align-items: flex-end;
+    margin-top: 0em;
+    margin-bottom: 4em;
+    align-items: flex-end;
 }
 
 /* Header Tabs: Alignment */
 .layout-mobile .emby-tab-button {
-  padding: 1.25em 1.25em .5em 1.25em !important;
+    padding: 1.25em 1.25em .5em 1.25em !important;
 }
 
 /* Drawer: Move options to bottom */
 .layout-mobile .mainDrawer-scrollContainer {
-  padding-bottom: 1vh;
+    padding-bottom: 1vh;
 }
 
 /* Library Pages: Move up */
 .layout-mobile .libraryPage:not(#indexPage) {
-  padding-top: 0em !important;
+    padding-top: 0em !important;
 }
 
 /* Media Details: Move image up */
 .layout-mobile .itemBackdrop {
-  margin-top: 0rem;
+    margin-top: 0rem;
 }
 
 /* Media Lists: Alphabet Picker */
 .layout-mobile .alphaPicker {
-  bottom: 8em;
+    bottom: 8em;
 }
 
 /* Media Lists: Filter Bar */
 .layout-mobile .pageTabContent > .focuscontainer-x {
-  margin-top: 1.5em;
+    margin-top: 1.5em;
 }
