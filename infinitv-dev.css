@@ -46,11 +46,15 @@
     /* Border */
     --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
 
+    /* TODO: Header accent color (keep it dark) */
+    --haccent-h: 310;
+    --headeraccent: hsla(var(--haccent-h), 100%, 20%, var(--headeropacity));
+
 }
 
 /*
 ============================================================================
-   Background & Font
+   Background Image & Font
 ============================================================================
 */
 
@@ -69,6 +73,354 @@
 /* Darken Background with Backdrops enables */
 .backgroundContainer.withBackdrop {
     background-color: rgba(0, 0, 0, var(--bgdarkness)) !important;
+}
+
+/*
+============================================================================
+   Colors
+============================================================================
+*/
+
+/* Colors: Text
+--------------------------------------------------------------------------*/
+
+/* Colors: accent 80 % */
+.actionSheetMenuItem:hover,
+.button-link:hover,
+.detailButton:focus,
+.emby-collapsible-button:hover,
+.emby-textarea:hover + .textareaLabel,
+.emby-checkbox:hover + .checkboxLabel,
+.listTextButton-autohide:hover,
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label,
+.Mui-selected,
+.navMenuOption:hover,
+.navMenuOption-selected,
+.overview-expand:hover {
+    color: var(--accent80) !important;
+}
+
+/* Colors: accent 100 % */
+.actionSheetContent .listItemIcon.check,
+.actionSheetMenuItem:focus,
+.button-link:focus,
+.button-submit:hover,
+.button-submit:focus,
+.cardOverlayButton:hover,
+.clearLink > .emby-button:hover,
+.clearLink > .emby-button:focus,
+.detail-button:hover,
+.detailButton:hover,
+.emby-button.block:hover,
+.emby-button.block:focus,
+.emby-checkbox:focus + .checkboxLabel,
+.emby-collapsible-button:focus,
+.emby-tab-button:hover,
+.emby-tab-button:focus,
+.favorite-button:hover,
+.inputLabelFocused,
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary,
+.listItem-border:hover,
+.listItem-border:focus,
+.listItem-button:focus .listItemBodyText:not(.secondary),
+.listTextButton-autohide:focus,
+#loginPage .cardImage,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-slider,
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-webkit-slider-thumb,
+.overview-expand:focus,
+.paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover,
+.paper-icon-button-light:not(.alphaPickerButton):focus,
+.paper-icon-button-light:not(.alphaPickerButton):active,
+.play-button:hover,
+.playedIndicator,
+.playstatebutton-icon-played,
+.raised:focus,
+.raised:hover,
+.ratingbutton-icon-withrating,
+.selectLabelFocused,
+.skip-button:hover,
+.skip-button:focus,
+.syncPlayIconCircle,
+.textActionButton:hover,
+.textareaLabelFocused,
+.upNextDialog-button:hover,
+.upNextDialog-button:focus,
+.upNextDialog-countdownText {
+    color: var(--accent100) !important;
+}
+
+/* Colors: Borders
+--------------------------------------------------------------------------*/
+
+/* border color: accent 40% */ 
+.actionSheetMenuItem:hover,
+.button-submit:hover,
+.detail-button:hover,
+.detailButton:hover,
+.emby-button.block:hover,
+.emby-collapsible-button:hover,
+.favorite-button:hover,
+.listTextButton-autohide:hover,
+.play-button:hover,
+.raised:hover,
+.upNextDialog-button:hover {
+    border-color: var(--accent40) !important;
+}
+
+/* border color: accent 60% */ 
+.listItem-border:hover {
+    border-color: var(--accent60) !important;
+}
+
+/* border color: accent 80% */ 
+.button-submit:focus,
+.detail-button:focus,
+.emby-button.block:focus,
+.favorite-button:focus,
+.favorite-button.favorited,
+.play-button:focus,
+.raised:focus,
+.upNextDialog-button:focus {
+    border-color: var(--accent80) !important;
+}
+
+
+/* border color: accent 100% */ 
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4,
+.progressring-spiner {
+    border-color: var(--accent100) !important;
+}
+
+
+/* border color: transparent */ 
+.clearLink > .emby-button:hover,
+.clearLink > .emby-button:focus,
+.listItem-border {
+    border-color: #0000 !important;
+}
+
+/* border color: grey */ 
+.emby-button.block,
+.button-submit,
+.raised {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/*
+============================================================================
+   Backgrounds
+============================================================================
+*/
+
+/* Backgrounds: Transparency
+--------------------------------------------------------------------------*/
+
+/* Backgrounds: --headeropacity */
+.dialog,
+.formDialogHeader,
+.formDialogFooter,
+.mainDrawer,
+.skinHeader-withBackground,
+.toast,
+.videoOsdBottom,
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Backgrounds: --itemopacity */
+.cardFooter:not(.visualCardBox-cardFooter),
+.layout-desktop .detailRibbon,
+.layout-mobile .detailRibbon {
+    background: rgba(0, 0, 0, var(--itemopacity)) !important;
+}
+
+/* Backgrounds: transparent*/
+.actionSheetMenuItem,
+.button-link,
+.button-submit,
+.cardPadder,
+.collapseContent,
+.collapseContent .listItem:hover,
+.clearLink,
+.clearLink > .emby-button,
+.clearLink > .emby-button:hover,
+.clearLink > .emby-button:focus,
+.detailTrackSelect,
+.emby-collapsible-button,
+.emby-button.block,
+.listItem-border,
+.listItem-largeImage,
+.listItemBodyText,
+.listItemIcon,
+.listTextButton-autohide,
+.material-icons,
+.mdl-slider::-webkit-scrollbar-corner,
+.mdl-slider::-webkit-scrollbar-track-piece,
+.navMenuOption,
+.navMenuOption:hover,
+.overview-expand,
+.raised,
+.sliderBubble,
+.skip-button,
+.upNextDialog-button {
+    background: #0000 !important;
+}
+
+/* Backgrounds: Light
+--------------------------------------------------------------------------*/
+
+/* Backgrounds: white 10% */
+#loginPage .cardImage,
+.homeScreenSettingsContainer .sectionTitle,
+#searchPage .sectionTitle,
+.searchSuggestionsList > div:hover,
+.searchSuggestionsList > div:has(.emby-button:focus),
+.settingsContainer .sectionTitle,
+.verticalSection > .sectionTitle-cards,
+.verticalSection > .sectionTitleContainer-cards {
+    background: hsl(0deg 0% 100% / 10%);
+}
+
+/* Backgrounds: Dark
+--------------------------------------------------------------------------*/
+
+/* Backgrounds: black 20% */
+.button-submit:hover,
+.emby-button.block:hover,
+.detail-button,
+.favorite-button,
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage),
+.play-button,
+.raised:hover {
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Backgrounds: black 40% */
+.button-submit:focus,
+.checkboxOutline,
+.detailButton:hover,
+.emby-button.block:focus,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.itemProgressBar,
+.itemsViewSettingsContainer,
+.listItem-border:hover,
+.pageTabContent > .focuscontainer-x,
+.raised:focus,
+.selectionCommandsPanel,
+.upNextDialog-button:hover,
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Backgrounds: black 60% */
+.checkboxOutline:not(:disabled):hover,
+.detailButton:focus,
+.emby-input:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.listItem-focusscale:hover,
+.upNextDialog-button:focus {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Backgrounds: black 80% */
+.checkboxOutline:focus
+.detail-button:hover,
+.detail-button:focus,
+.emby-input:focus,
+.emby-select option,
+.emby-select-withcolor:focus,
+.emby-textarea:focus,
+.favorite-button:hover,
+.favorite-button:focus,
+.listItem-focusscale:focus
+.play-button:hover,
+.play-button:focus {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Backgrounds: Accent
+--------------------------------------------------------------------------*/
+
+/* Backgrounds: accent 40% */
+.emby-select option:hover {
+    background: var(--accent40) !important;
+}
+
+/* Backgrounds: accent 60% */
+.alphaPickerButton:hover {
+    background: var(--accent60) !important;
+}
+
+/* Backgrounds: accent 80% */
+.alphaPickerButton:focus,
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-select option:focus,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb {
+    background: var(--accent80) !important;
+}
+
+/* Backgrounds: accent 100% */
+.countIndicator,
+.filterIndicator,
+.iconOsdProgressInner,
+.mediaSourceIndicator,
+.mdl-radio__focus-circle,
+.mdl-slider::-webkit-slider-thumb,
+.mdl-slider::-moz-range-thumb,
+.mdl-slider-background-lower,
+.sliderMarker.watched {
+    background: var(--accent100) !important;
+}
+
+/* Backgrounds: background-color
+--------------------------------------------------------------------------*/
+
+/* Background Colors: accent 20% */
+.paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
+    background-color: var(--accent20);
+}
+
+/* Background Colors: transparent */
+.cardOverlayButton:hover,
+.layout-tv .itemsContainer .card .cardBox,
+.layout-desktop .itemsContainer .card .cardBox {
+    background-color: #0000 !important;
+}
+
+/* Backgrounds: Card defaults
+--------------------------------------------------------------------------*/
+
+/* Backgrounds: default for empty cards */
+.defaultCardBackground1 {
+    background: hsl(var(--accent-h), var(--accent-s), 17%);
+}
+.defaultCardBackground2 {
+    background: hsl(var(--accent-h), var(--accent-s), 16%);
+}
+.defaultCardBackground3 {
+    background: hsl(var(--accent-h), var(--accent-s), 15%);
+}
+.defaultCardBackground4 {
+    background: hsl(var(--accent-h), var(--accent-s), 14%);
+}
+.defaultCardBackground5 {
+    background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
 
 /*
@@ -93,9 +445,9 @@
 .chapterThumbContainer,
 .chapterThumbTextContainer,
 .detailButton,
-/* .detailImageContainer .card, */
-/* .detail-button, */
-/* .favorite-button, */
+.detailImageContainer .card,
+.detail-button,
+.favorite-button,
 .imagePlaceHolder,
 .primaryImageWrapper > img,
 .osdPoster img,
@@ -129,7 +481,6 @@
 .emby-textarea,
 .formDialogHeader,
 .formDialogFooter,
-
 .listItem-border,
 .listItemButton,
 .listItemImageButton,
@@ -151,96 +502,62 @@
 
 /*
 ============================================================================
-   Backgrounds
+   Box Shadows
 ============================================================================
 */
 
-/* Transparent */
-.actionSheetMenuItem,
-.button-link,
-.button-submit,
-.cardOverlayButton:hover,
+/* Shadows: transparent */
 .cardPadder,
-.collapseContent,
-.collapseContent .listItem:hover,
-.clearLink,
-.clearLink > .emby-button,
-.clearLink > .emby-button:hover,
-.clearLink > .emby-button:focus,
-.detailTrackSelect,
-.emby-collapsible-button,
-.emby-button.block,
-.listItem-border,
-.listItem-largeImage,
-.listItemBodyText,
-.listItemIcon,
-.listTextButton-autohide,
-.material-icons,
-.navMenuOption,
-.navMenuOption:hover,
-.overview-expand,
-.raised,
-.sliderBubble,
-.skip-button,
-.upNextDialog-button {
-    background: #0000 !important;
+.mainDrawer {
+    box-shadow: none !important;
 }
 
-/* Light Dark (0.2) */
-.button-submit:hover,
-.emby-button.block:hover,
-.detail-button,
-.favorite-button
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage),
-.play-button,
-.raised:hover {
-    background: rgba(0, 0, 0, 0.2) !important;
+/* Shadows: --cardshadow */
+.libraryPage .cardBox:has(.cardFooter),
+.libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable,
+.layout-tv .detailImageContainer .card,
+.layout-desktop .detailImageContainer .card {
+    box-shadow: var(--cardshadow) !important;
 }
 
-/* Medium Dark (0.4) */
-.button-submit:focus,
-.checkboxOutline,
-.detailButton:hover,
-.emby-button.block:focus,
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor,
-.itemProgressBar,
-.itemsViewSettingsContainer,
-.listItem-border:hover,
-.pageTabContent > .focuscontainer-x,
-.raised:focus,
-.selectionCommandsPanel,
-.upNextDialog-button:hover,
-#loginPage .padded-left.padded-right.padded-bottom-page {
-    background: rgba(0, 0, 0, 0.4) !important;
+/* Shadows: --cardglow */
+.layout-tv .itemsContainer > .bannerCard:hover > .cardBox,
+.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-tv .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
+.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-tv .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
+.layout-tv .overflowBackdropCard:hover .cardScalable,
+.layout-tv .overflowPortraitCard:hover .cardScalable,
+.layout-desktop .itemsContainer > .bannerCard:hover > .cardBox,
+.layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
+.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
+.layout-desktop .overflowBackdropCard:hover .cardScalable,
+.layout-desktop .overflowPortraitCard:hover .cardScalable,
+.toast {
+    box-shadow: var(--cardglow) !important;
 }
 
-/* Dark (0.6) */
-.checkboxOutline:not(:disabled):hover,
-.detailButton:focus,
-.emby-input:not(:disabled):hover,
-.emby-select-withcolor:not(:disabled):hover,
-.emby-textarea:not(:disabled):hover,
-.listItem-focusscale:hover,
+/* Shadows: --buttonglow */
+.layout-tv .detailButton:focus,
+.layout-tv .favorite-button:focus,
+.layout-tv .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
+.layout-tv .listItem-largeImage:focus,
+.layout-tv .play-button:focus,
+.layout-desktop .detailButton:focus,
+.layout-desktop .favorite-button:focus,
+.layout-desktop .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
+.layout-desktop .listItem-largeImage:focus,
+.layout-desktop .play-button:focus,
+.upNextContainer,
 .upNextDialog-button:focus {
-    background: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: var(--buttonglow) !important;
 }
 
-/* Very Dark (0.8) */
-.checkboxOutline:focus
-.detail-button:hover,
-.detail-button:focus,
-.emby-input:focus,
-.emby-select option,
-.emby-select-withcolor:focus,
-.emby-textarea:focus,
-.favorite-button:hover,
-.favorite-button:focus,
-.listItem-focusscale:focus
-.play-button:hover,
-.play-button:focus {
-    background: rgba(0, 0, 0, 0.8) !important;
+/* Inset Shadows on cardImages */
+.libraryPage .cardImageContainer {
+    box-shadow: var(--insettop), var(--insetbottom);
 }
 
 /*
@@ -254,26 +571,18 @@
     font-size: 110% !important;
 }
 
-/* Dialogs */
-.dialog,
-.formDialogHeader,
-.formDialogFooter {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Toasts */
+/* Toasts
 .toast {
     box-shadow: var(--cardglow) !important;
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
+} */
 
-/* Loading Spinner */
+/* Loading Spinner
 .mdl-spinner__layer-1,
 .mdl-spinner__layer-2,
 .mdl-spinner__layer-3,
 .mdl-spinner__layer-4 {
     border-color: var(--accent100) !important;
-}
+} */
 
 /* Progress Ring */
 .progressring {
@@ -283,7 +592,7 @@
     display: none;
 }
 .progressring-spiner {
-    border-color: var(--accent100);
+    /* border-color: var(--accent100); */
     border-width: .35em;
 }
 
@@ -296,8 +605,7 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
-    box-shadow: none !important;
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    /* box-shadow: none !important; */
 }
 
 /* Main Drawer: Hide HeaderTabs when open (Mobile) */
@@ -308,16 +616,15 @@
 /* Main Drawer: Options */
 .navMenuOption {
     margin-left: -.2em !important;
-
     border: solid 1px #0000;
     margin-right: -.2em !important;
 }
 .navMenuOption:hover {
-    color: var(--accent100) !important;
+    /* color: var(--accent100) !important; */
     border: solid 1px var(--accent80);
 }
 .navMenuOption-selected {
-    color: var(--accent100) !important;
+    /* color: var(--accent100) !important; */
     border: solid 1px #0000;
 }
 .navMenuOptionText {
@@ -336,10 +643,10 @@
     padding-bottom: 0em;
 }
 
-/* Action Sheet: Checked Icon Color */
+/* Action Sheet: Checked Icon Color
 .actionSheetContent .listItemIcon.check {
     color: var(--accent100) !important;
-}
+} */
 
 /* Action Sheet: Item size */
 .actionSheetContent .listItem {
@@ -357,21 +664,21 @@
     scrollbar-width: thin;
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
 }
-
+/* 
 ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, var(--headeropacity));
-}
+} */
 
 ::-webkit-scrollbar-thumb {
-    background: var(--accent80) !important;
+    /* background: var(--accent80) !important; */
     border-radius: 4px;
     border: 1px solid transparent;
     background-clip: content-box;
 }
-
+/*
 ::-webkit-scrollbar-corner {
     background: var(--accent80) !important;
-}
+}*/
 
 /* Scrollbar: Hide (TV) */
 .layout-tv ::-webkit-scrollbar {
@@ -401,11 +708,6 @@
     padding-top: 0.55em;
     padding-bottom: 0.55em;
     height: 2.9em;
-}
-
-/* Header: Opacity */
-.skinHeader-withBackground {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Header: Size & Alignment */
@@ -466,10 +768,11 @@
 .raised {
     border: 2px solid rgba(255, 255, 255, 0.2);
     margin: 0.5em 0;
-    border-color: rgba(255, 255, 255, 0.2) !important;
+    /* border-color: rgba(255, 255, 255, 0.2) !important; */
     -webkit-transform: none !important;
     transform: none !important;
 }
+/*
 .emby-button.block:hover,
 .button-submit:hover,
 .raised:hover {
@@ -481,19 +784,21 @@
 .raised:focus {
     color: var(--accent100) !important;
     border-color: var(--accent80) !important;
-}
+} */
 
 /* Buttons: Header, Menus, Filter & OSD
 --------------------------------------------------------------------------*/
 
+/*
 .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
     color: var(--accent100);
     background-color: var(--accent20);
-}
+} */
+/*
 .paper-icon-button-light:not(.alphaPickerButton):focus,
 .paper-icon-button-light:not(.alphaPickerButton):active {
     color: var(--accent100);
-}
+} */
 
 /* Buttons: Header-Tab
 --------------------------------------------------------------------------*/
@@ -501,11 +806,12 @@
 .emby-tab-button {
     padding: .6em 1.25em .8em 1.25em !important;
 }
+/*
 .emby-tab-button:hover {
     color: var(--accent100) !important;
-}
+} */
 .emby-tab-button:focus {
-    color: var(--accent100) !important;
+    /* color: var(--accent100) !important; */
     -webkit-transform: scale(1.1)!important;
     transform: scale(1.1)!important;
 }
@@ -526,13 +832,14 @@
     padding-left: .5em !important;
     padding-right: .5em !important;
 }
+/* 
 .actionSheetMenuItem:hover {
     color: var(--accent80) !important;
     border-color: var(--accent40) !important;
 }
 .actionSheetMenuItem:focus {
     color: var(--accent100) !important;
-}
+} */
 
 /* Buttons: List Menu Items
 --------------------------------------------------------------------------*/
@@ -545,13 +852,14 @@
     padding: .75em !important;
     margin: .2em !important;
 }
+/*
 .listTextButton-autohide:hover {
     color: var(--accent80) !important;
     border-color: var(--accent40) !important;
 }
 .listTextButton-autohide:focus {
     color: var(--accent100) !important;
-}
+} */
 
 /* Buttons: Collapsible
 --------------------------------------------------------------------------*/
@@ -562,13 +870,14 @@
     -webkit-transform: none !important;
     transform: none !important;
 }
+/*
 .emby-collapsible-button:hover {
     color: var(--accent80) !important;
     border-color: var(--accent40) !important;
 }
 .emby-collapsible-button:focus {
     color: var(--accent100) !important;
-}
+} */
 
 /* Collapsible Menu: Button Text */
 .emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
@@ -582,7 +891,7 @@
 /* List Item Border */
 .listItem-border {
     border: solid 2px #0000;
-    border-color: #0000 !important;
+    /* border-color: #0000 !important; */
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -590,13 +899,15 @@
     padding-left: .5em !important;
     padding-right: .5em !important;
 }
+/*
 .listItem-border:hover {
     color: var(--accent100) !important;
     border-color: var(--accent60) !important;
 }
 .listItem-border:focus {
     color: var(--accent100) !important;
-}
+} */
+
 .listItemBodyText {
     text-shadow: var(--textshadow) !important;
 }
@@ -612,18 +923,20 @@
 .detailButton {
     border: var(--buttonborder) !important;
 }
+/*
 .detailButton:hover {
     color: var(--accent100) !important;
     border-color: var(--accent40) !important;
 }
 .detailButton:focus {
     border-color: var(--accent80) !important;
-}
+}*/
 
+/*
 .layout-tv .detailButton:focus,
 .layout-desktop .detailButton:focus {
     box-shadow: var(--buttonglow) !important;
-}
+} */
 
 .layout-tv .mainDetailButtons .detailButton {
     font-size: 120% !important;
@@ -655,19 +968,21 @@
     width: 3.5em;
     margin-right: 1em !important;
 }
+/*
 .play-button:hover,
 .detail-button:hover,
 .favorite-button:hover {
     color: var(--accent100) !important;
     border-color: var(--accent40) !important;
-}
+}*/
 .play-button:focus,
 .detail-button:focus,
 .favorite-button:focus {
-    border-color: var(--accent80) !important;
+    /* border-color: var(--accent80) !important; */
     -webkit-transform: scale(1.2) !important;
     transform: scale(1.2) !important;
 }
+/*
 .layout-tv .play-button:focus,
 .layout-tv .detail-button:focus,
 .layout-tv .favorite-button:focus,
@@ -675,11 +990,11 @@
 .layout-desktop .detail-button:focus,
 .layout-desktop .favorite-button:focus {
     box-shadow: var(--buttonglow) !important;
-}
-
+} */
+/*
 .favorite-button.favorited {
     color: var(--accent100) !important;
-}
+} */
 
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
@@ -693,12 +1008,12 @@
 }
 .button-link:hover,
 .overview-expand:hover {
-    color: var(--accent80) !important;
+    /* color: var(--accent80) !important; */
     text-decoration: none;
 }
 .button-link:focus,
 .overview-expand:focus {
-    color: var(--accent100) !important;
+    /* color: var(--accent100) !important; */
     text-decoration: none;
 }
 
@@ -724,11 +1039,12 @@
     font-size: 1.5em;
     font-weight: 400;
 }
+/*
 .clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus {
     border-color: #0000 !important;
     color: var(--accent100) !important;
-}
+} */
 
 /*
 ============================================================================
@@ -769,12 +1085,13 @@
 }
 
 /* Select: Option Colors */
+/*
 .emby-select option:hover {
     background: var(--accent40) !important;
 }
 .emby-select option:focus {
     background: var(--accent80) !important;
-}
+}*/
 
 /* Inputs: Accent */
 .emby-input,
@@ -805,10 +1122,11 @@
 }
 .emby-checkbox:checked + span + .checkboxOutline {
     border: 2px solid var(--accent20) !important;
-    background: var(--accent80) !important;
+    /* background: var(--accent80) !important; */
 }
 
 /* Radio Buttons */
+/*
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
@@ -821,11 +1139,12 @@
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle {
     color: var(--accent100) !important;
 }
-.mdl-radio__focus-circle {
+/*.mdl-radio__focus-circle {
     background: var(--accent100) !important;
-}
+} */
 
 /* Labels */
+/*
 .emby-textarea:hover + .textareaLabel,
 .emby-checkbox:hover + .checkboxLabel {
     color: var(--accent80) !important;
@@ -835,7 +1154,7 @@
 .selectLabelFocused,
 .emby-checkbox:focus + .checkboxLabel {
     color: var(--accent100) !important;
-}
+} */
 .selectLabel {
     align-self: center;
 }
@@ -866,7 +1185,6 @@
 .cardFooter:not(.visualCardBox-cardFooter) {
     border-bottom-left-radius: var(--rounding-media) !important;
     border-bottom-right-radius: var(--rounding-media) !important;
-    background: rgba(0, 0, 0, var(--itemopacity)) !important;
     text-align: center;
 }
 
@@ -876,20 +1194,7 @@
 ===========================================================================
 */
 
-/* Shadow for cards with footer */
-.libraryPage .cardBox:has(.cardFooter) {
-    box-shadow: var(--cardshadow);
-}
 
-/* Shadow for cards without footer */
-.libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable {
-    box-shadow: var(--cardshadow);
-}
-
-/* Smoothen card images with inset shadows */
-.libraryPage .cardImageContainer {
-    box-shadow: var(--insettop), var(--insetbottom);
-}
 
 /*
 ===========================================================================
@@ -897,10 +1202,10 @@
 ===========================================================================
 */
 
-/* Card Text Container */
+/* Card Text Container
 .cardPadder {
     box-shadow: none !important;
-}
+} */
 
 /* Card Text: Shadow (only without footer) */
 :not(.cardFooter) > .cardText.cardText-first {
@@ -924,15 +1229,15 @@
     color: white;
 }
 
-/* Card Hover-Buttons: Play */
+/* Card Hover-Buttons: Play
 .cardOverlayButton:hover {
     color: var(--accent100) !important;
     background-color: #0000 !important;
-}
+} */
 
 /* Links / Action-Text in card footer */
 .layout-desktop .card .textActionButton:hover {
-    color: var(--accent100);
+    /* color: var(--accent100); */
     text-decoration: none;
 }
 
@@ -948,25 +1253,25 @@
     transform: scale(1.1);
 }
 
-/* Cards: Text Color on Focus (TV) */
+/* Cards: Text Color on Focus (TV)
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
     color: var(--accent100) !important;
-}
+} */
 
-/* Cards: Glow Images on overflow Cards */
+/* Cards: Glow Images on overflow Cards
 .layout-tv .overflowBackdropCard:hover .cardScalable,
 .layout-tv .overflowPortraitCard:hover .cardScalable,
 .layout-desktop .overflowBackdropCard:hover .cardScalable,
 .layout-desktop .overflowPortraitCard:hover .cardScalable {
     box-shadow: var(--cardglow) !important;
-}
+} */
 
 /* More space for glow animation */
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox {
     margin-left: .5em !important;
-    background-color: #0000;
+    /* background-color: #0000; */
 }
 
 /*
@@ -984,7 +1289,7 @@
 
 /* Card Indicators: Count & Played */
 .playedIndicator {
-    color: var(--accent100) !important;
+    /* color: var(--accent100) !important; */
     background: rgba(0, 0, 0, 1);
     border: none;
 }
@@ -993,13 +1298,14 @@
     font-weight: 600;
     font-size: 89%;
     color: rgba(0, 0, 0, 1);
-    background: var(--accent100) !important;
+    /* background: var(--accent100) !important; */
     border: none;
 }
+/* 
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating {
     color: var(--accent100) !important;
-}
+} */
 
 /* Card Indicators: Missing & Unaired */
 .missingIndicator,
@@ -1017,10 +1323,10 @@
     border-bottom-left-radius: var(--rounding-system) !important;
 }
 
-/* Card Indicators: Multiselect selected */
+/* Card Indicators: Multiselect selected
 .Mui-selected {
     color: var(--accent80) !important;
-}
+} */
 
 /*
 ===========================================================================
@@ -1046,22 +1352,7 @@
 ===========================================================================
 */
 
-/* Background color for Cards without Pictures */
-.defaultCardBackground1 {
-    background: hsl(var(--accent-h), var(--accent-s), 17%);
-}
-.defaultCardBackground2 {
-    background: hsl(var(--accent-h), var(--accent-s), 16%);
-}
-.defaultCardBackground3 {
-    background: hsl(var(--accent-h), var(--accent-s), 15%);
-}
-.defaultCardBackground4 {
-    background: hsl(var(--accent-h), var(--accent-s), 14%);
-}
-.defaultCardBackground5 {
-    background: hsl(var(--accent-h), var(--accent-s), 13%);
-}
+
 
 /*
 ===========================================================================
@@ -1105,10 +1396,10 @@
     width: 33%;
     margin: 1em !important;
 }
+/*
 #loginPage .cardImage {
     color: var(--accent100) !important;
-    background: rgba(255, 255, 255, 0.2) !important;
-}
+} */
 
 /*
 ============================================================================
@@ -1184,11 +1475,11 @@
     height: 1.6em;
 }
 .alphaPickerButton:hover {
-    background: var(--accent60) !important;
+    /* background: var(--accent60) !important; */
     color: inherit !important;
 }
 .alphaPickerButton:focus {
-    background: var(--accent80) !important;
+    /* background: var(--accent80) !important; */
     -webkit-transform: none !important;
     transform: none !important;
     transition: none !important;
@@ -1199,11 +1490,6 @@
    Library Pages: Section Titles
 ===========================================================================
 */
-
-.verticalSection > .sectionTitleContainer-cards,
-.verticalSection > .sectionTitle-cards {
-    background: hsl(0deg 0% 100% / 10%);
-}
 
 /* Section Titles: TV */
 .layout-tv .verticalSection > .sectionTitle-cards,
@@ -1362,7 +1648,6 @@
 
 /* Filter Indicator */
 .filterIndicator {
-    background: var(--accent100) !important;
     color: black;
 }
 
@@ -1410,10 +1695,11 @@
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
 }
+/*
 .layout-tv .itemsContainer > .bannerCard:hover > .cardBox,
 .layout-desktop .itemsContainer > .bannerCard:hover > .cardBox {
     box-shadow: var(--cardglow) !important;
-}
+} */
 
 /* View: List
 --------------------------------------------------------------------------*/
@@ -1434,10 +1720,11 @@
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
     border: solid 2px var(--accent80) !important;
 }
+/*
 .layout-tv .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
 .layout-desktop .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
     box-shadow: var(--buttonglow) !important;
-}
+} */
 
 /* List Item Cards: Hide Poster on small screens (Mobile) */
 @media (max-width: 40em) {
@@ -1460,61 +1747,56 @@
     width: 11em;
 }
 
-/* Hide Alphapicker > steals focus with remote */
+/* Hide Alphapicker > steals focus with remote
 .layout-tv .itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
     display: none !important;
-}
-.layout-tv #moviesPage:has(.listItem-focusscale) .alphaPicker {
-    display: none !important;
+} */
+
+.layout-tv .listItem-focusscale ~ .alphaPicker {
+    display: none;
 }
 
 /* View: Poster
 --------------------------------------------------------------------------*/
 
-.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)) {
+.layout-tv .itemsContainer > .backdropCard,
+.layout-tv .itemsContainer > .portraitCard {
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
 }
+/*
 .layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
-.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable{
+.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
     box-shadow: var(--cardglow) !important;
-}
+} */
 
 /* View: Poster Card
 --------------------------------------------------------------------------*/
 
-.layout-tv .itemsContainer > .portraitCard:has(.cardFooter) {
-    padding-bottom: 1.5vh !important;
-    padding-right: 1vw !important;
-}
+
+/*
 .layout-tv .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
 .layout-desktop .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox {
     box-shadow: var(--cardglow) !important;
-}
+} */
 
 /* View: Thumb
 --------------------------------------------------------------------------*/
 
-.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)) {
-    padding-bottom: 1.5vh !important;
-    padding-right: 1vw !important;
-}
+/*
 .layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
 .layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable {
     box-shadow: var(--cardglow) !important;
-}
+} */
 
 /* View: Thumb Card
 --------------------------------------------------------------------------*/
 
-.layout-tv .itemsContainer > .backdropCard:has(.cardFooter) {
-    padding-bottom: 1.5vh !important;
-    padding-right: 1vw !important;
-}
+/*
 .layout-tv .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
 .layout-desktop .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox {
     box-shadow: var(--cardglow) !important;
-}
+} */
 
 /*
 ===========================================================================
@@ -1552,7 +1834,7 @@
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     left: 3% !important;
-    box-shadow: var(--cardshadow) !important;
+    /* box-shadow: var(--cardshadow) !important; */
     max-width: 26vw;
 }
 
@@ -1576,13 +1858,11 @@
 .layout-desktop .detailRibbon {
     height: 9em !important;
     margin-top: -9em !important;
-    background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
 /* Detail-Ribbon (Mobile) */
 .layout-mobile .detailRibbon {
     margin-top: -1em !important;
-    background: rgba(0, 0, 0, var(--itemopacity)) !important;
     padding-bottom: 1.25em;
     padding-right: 5% !important;
     padding-left: 5%;
@@ -1707,10 +1987,11 @@ p.itemGenres {
 .listItem-largeImage:focus {
     border: solid 2px var(--accent80) !important;
 }
+/* 
 .layout-tv .listItem-largeImage:focus,
-.layout-desktop .listItem-largeImage:focus{
+.layout-desktop .listItem-largeImage:focus {
     box-shadow: var(--buttonglow) !important;
-}
+} */
 
 /* Large List Items: Align Body */
 .listItem-largeImage .listItemBody {
@@ -1719,10 +2000,10 @@ p.itemGenres {
     padding-left: .5em;
 }
 
-/* Large List Items: Title Accent */
+/* Large List Items: Title Accent
 .listItem-button:focus .listItemBodyText:not(.secondary) {
     color: var(--accent100) !important;
-}
+} */
 
 /* Large List Items: Text */
 .listItem-largeImage .listItem-overview {
@@ -1792,12 +2073,13 @@ p.itemGenres {
     color: #fff;
     border: none !important;
 }
+/*
 .skip-button:hover {
     color: var(--accent80) !important;
 }
 .skip-button:focus {
     color: var(--accent100) !important;
-}
+} */
 
 /*
 ===========================================================================
@@ -1813,7 +2095,6 @@ p.itemGenres {
 
 /* OSD Footer: Full Layout */
 .videoOsdBottom {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: .5em;
     padding-bottom: .5em;
 }
@@ -1821,7 +2102,7 @@ p.itemGenres {
 /* OSD Footer: Small Box-Layout */
 @media all and (min-width: 105em) {
     .videoOsdBottom {
-        background: rgba(0, 0, 0, var(--headeropacity)) !important;
+        /* background: rgba(0, 0, 0, var(--headeropacity)) !important; */
         padding-top: .5em;
         padding-bottom: 1em;
         margin-bottom: 2em;
@@ -1842,7 +2123,7 @@ p.itemGenres {
 ===========================================================================
 */
 
-/* Player OSD: Play Progress & Volume */
+/* Player OSD: Play Progress & Volume
 .mdl-slider {
     color: var(--accent100) !important;
 }
@@ -1853,31 +2134,20 @@ p.itemGenres {
 .mdl-slider::-moz-range-thumb {
     background: var(--accent100) !important;
     color: var(--accent100) !important;
-}
+} */
+
+/* 
 .mdl-slider::-webkit-scrollbar-corner {
     background: #0000 !important;
 }
 .mdl-slider::-webkit-scrollbar-track-piece {
     background: #0000 !important;
-}
-
-.mdl-slider-background-lower {
-    background: var(--accent100) !important;
-}
+} */
 
 /* Player OSD: Progressbar Vertical Marker */
 .sliderMarker {
     width: 3px;
     border-radius: 2px;
-}
-.sliderMarker.watched {
-    background: var(--accent100) !important;
-}
-
-/* Player OSD: Progressbar Background */
-.iconOsdProgressInner {
-    background: var(--accent100) !important;
-    color: var(--accent100) !important;
 }
 
 /*
@@ -1922,13 +2192,13 @@ p.itemGenres {
 .upNextContainer {
     padding-left: 1.25em;
     padding-right: 1.25em;
-    box-shadow: var(--buttonglow) !important;
+    /* box-shadow: var(--buttonglow) !important; */
 }
 
-/* UpNext: Countdown */
+/* UpNext: Countdown
 .upNextDialog-countdownText {
     color: var(--accent100) !important;
-}
+} */
 
 /* UpNext: Buttons */
 .upNextDialog-button {
@@ -1937,15 +2207,17 @@ p.itemGenres {
     -webkit-transform: none !important;
     transform: none !important;
 }
+/*
 .upNextDialog-button:hover {
     color: var(--accent100) !important;
     border-color: var(--accent40) !important;
-}
+} */
+ /* 
 .upNextDialog-button:focus {
     color: var(--accent100) !important;
     border-color: var(--accent80) !important;
     box-shadow: var(--cardglow) !important;
-}
+} */
 
 /*
 ===========================================================================
@@ -1962,7 +2234,6 @@ p.itemGenres {
 /* Settings: Titles */
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle {
-    background: hsl(0deg 0% 100% / 10%);
     padding-top: .3em;
     padding-bottom: .3em;
     margin-left: -.5em;
@@ -2033,13 +2304,7 @@ p.itemGenres {
     padding-left: 0em;
     margin-top: .5em;
     margin-bottom: .5em;
-    background: hsl(0deg 0% 100% / 10%);
     text-align: center;
-}
-
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus) {
-    background: hsl(0deg 0% 100% / 10%);
 }
 
 /*
@@ -2094,31 +2359,7 @@ h2.username {
 ===========================================================================
 */
 
-/* Misc: paperList
-.paperList {
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: var(--rounding-system) !important;
-} */
-
-/* Misc: MDL-Switch
-.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
-    background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5);
-} */
-
-/* Misc: Item Selection Panel 
-.itemSelectionPanel {
-    border: 0.01em solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5) !important;
-    border-radius: var(--rounding-media) !important;
-} */
-
-/* Misc: Fab-Button
-.fab {
-    border-radius: var(--rounding-system) !important;
-    transition: all 0.2s !important;
-    background: rgba(0, 0, 0, 0.4) !important;
-} */
-
-/* Misc: SyncPlay */
+/* Misc: SyncPlay
 .syncPlayIconCircle {
     color: var(--accent100) !important;
-}
+} */
