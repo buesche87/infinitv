@@ -514,29 +514,55 @@
 
 /* Shadows: --cardshadow */
 .libraryPage .cardBox:has(.cardFooter),
-.libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable,
+.libraryPage .cardBox .cardScalable,
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     box-shadow: var(--cardshadow) !important;
 }
 
-/* Shadows: --cardglow */
+
+
+
+/* Shadows: --cardglow - OLD */
 .layout-tv .itemsContainer > .bannerCard:hover > .cardBox,
-.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+/* .layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable, */
 .layout-tv .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
-.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+/* .layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable, */
 .layout-tv .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
-.layout-tv .overflowBackdropCard:hover .cardScalable,
-.layout-tv .overflowPortraitCard:hover .cardScalable,
+/* .layout-tv .overflowBackdropCard:hover .cardScalable, */
+/* .layout-tv .overflowPortraitCard:hover .cardScalable, */
 .layout-desktop .itemsContainer > .bannerCard:hover > .cardBox,
-.layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+/* .layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable, */
 .layout-desktop .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
-.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+/* .layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable, */
 .layout-desktop .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
-.layout-desktop .overflowBackdropCard:hover .cardScalable,
-.layout-desktop .overflowPortraitCard:hover .cardScalable,
+/* .layout-desktop .overflowBackdropCard:hover .cardScalable, */
+/* .layout-desktop .overflowPortraitCard:hover .cardScalable, */
 .toast {
     box-shadow: var(--cardglow) !important;
+}
+
+/* Shadows: --cardglow */
+@media (hover: hover) and (pointer: fine) {
+    .cardScalable {
+        position: relative;
+        transition: transform 120ms ease;
+    }
+
+    .cardScalable::after {
+        content: "";
+        position: absolute;
+        inset: -6px;
+        border-radius: inherit;
+        background: radial-gradient(circle, var(--accent80), transparent 70%);
+        opacity: 0;
+        transition: opacity 120ms ease;
+        pointer-events: none;
+    }
+
+    .portraitCard:hover .cardScalable::after {
+        opacity: 1;
+    }
 }
 
 /* Shadows: --buttonglow */
