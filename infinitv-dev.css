@@ -85,6 +85,12 @@
 --------------------------------------------------------------------------*/
 
 /* Colors: accent 80 % */
+#loginPage .cardImage,
+.Mui-selected,
+.navMenuOption-selected {
+    color: var(--accent80) !important;
+}
+
 .actionSheetMenuItem:hover,
 .button-link:hover,
 .detailButton:focus,
@@ -98,15 +104,28 @@
 .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label,
-.Mui-selected,
 .navMenuOption:hover,
-.navMenuOption-selected,
 .overview-expand:hover {
     color: var(--accent80) !important;
 }
 
 /* Colors: accent 100 % */
 .actionSheetContent .listItemIcon.check,
+.upNextDialog-countdownText,
+.inputLabelFocused,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-slider,
+.playedIndicator,
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating,
+.selectLabelFocused,
+.syncPlayIconCircle,
+.textareaLabelFocused,
+.upNextDialog-countdownText {
+    color: var(--accent100) !important;
+}
+
 .actionSheetMenuItem:focus,
 .button-link:focus,
 .button-submit:hover,
@@ -122,39 +141,32 @@
 .emby-collapsible-button:focus,
 .emby-tab-button:hover,
 .emby-tab-button:focus,
-.favorite-button:hover,
-.inputLabelFocused,
+.favorite-button:hover
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary,
 .listItem-border:hover,
 .listItem-border:focus,
 .listItem-button:focus .listItemBodyText:not(.secondary),
 .listTextButton-autohide:focus,
-#loginPage .cardImage,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-slider,
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-webkit-slider-thumb,
 .overview-expand:focus,
 .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover,
 .paper-icon-button-light:not(.alphaPickerButton):focus,
 .paper-icon-button-light:not(.alphaPickerButton):active,
 .play-button:hover,
-.playedIndicator,
-.playstatebutton-icon-played,
 .raised:focus,
 .raised:hover,
-.ratingbutton-icon-withrating,
-.selectLabelFocused,
 .skip-button:hover,
 .skip-button:focus,
-.syncPlayIconCircle,
 .textActionButton:hover,
-.textareaLabelFocused,
 .upNextDialog-button:hover,
-.upNextDialog-button:focus,
-.upNextDialog-countdownText {
+.upNextDialog-button:focus {
+    color: var(--accent100) !important;
+}
+
+.mdl-slider::-moz-range-thumb {
+    color: var(--accent100) !important;
+}
+.mdl-slider::-webkit-slider-thumb {
     color: var(--accent100) !important;
 }
 
@@ -182,11 +194,14 @@
 }
 
 /* border color: accent 80% */ 
+.favorite-button.favorited {
+    border-color: var(--accent80) !important;
+}
+
 .button-submit:focus,
 .detail-button:focus,
 .emby-button.block:focus,
 .favorite-button:focus,
-.favorite-button.favorited,
 .play-button:focus,
 .raised:focus,
 .upNextDialog-button:focus {
@@ -207,6 +222,7 @@
 /* border color: transparent */ 
 .clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus,
+.detailButton:focus,
 .listItem-border {
     border-color: #0000 !important;
 }
@@ -252,29 +268,37 @@
 .button-submit,
 .cardPadder,
 .collapseContent,
-.collapseContent .listItem:hover,
 .clearLink,
 .clearLink > .emby-button,
-.clearLink > .emby-button:hover,
-.clearLink > .emby-button:focus,
 .detailTrackSelect,
 .emby-collapsible-button,
 .emby-button.block,
+.listItem,
 .listItem-border,
 .listItem-largeImage,
 .listItemBodyText,
 .listItemIcon,
 .listTextButton-autohide,
 .material-icons,
-.mdl-slider::-webkit-scrollbar-corner,
-.mdl-slider::-webkit-scrollbar-track-piece,
 .navMenuOption,
-.navMenuOption:hover,
 .overview-expand,
 .raised,
 .sliderBubble,
 .skip-button,
 .upNextDialog-button {
+    background: #0000 !important;
+}
+
+.collapseContent .listItem:hover,
+.clearLink > .emby-button:hover,
+.clearLink > .emby-button:focus,
+.navMenuOption:hover {
+    background: #0000 !important;
+}
+
+
+.mdl-slider::-webkit-scrollbar-corner,
+.mdl-slider::-webkit-scrollbar-track-piece {
     background: #0000 !important;
 }
 
@@ -333,6 +357,7 @@
 .emby-select-withcolor:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
 .listItem-focusscale:hover,
+.listItem-largeImage:focus,
 .upNextDialog-button:focus {
     background: rgba(0, 0, 0, 0.6) !important;
 }
@@ -367,6 +392,7 @@
 }
 
 /* Backgrounds: accent 80% */
+.countIndicator,
 .alphaPickerButton:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-select option:focus,
@@ -376,15 +402,20 @@
 }
 
 /* Backgrounds: accent 100% */
-.countIndicator,
 .filterIndicator,
 .iconOsdProgressInner,
 .mediaSourceIndicator,
 .mdl-radio__focus-circle,
-.mdl-slider::-webkit-slider-thumb,
-.mdl-slider::-moz-range-thumb,
 .mdl-slider-background-lower,
 .sliderMarker.watched {
+    background: var(--accent100) !important;
+}
+
+.mdl-slider::-webkit-slider-thumb  {
+    background: var(--accent100) !important;
+}
+
+.mdl-slider::-moz-range-thumb  {
     background: var(--accent100) !important;
 }
 
@@ -520,49 +551,17 @@
     box-shadow: var(--cardshadow) !important;
 }
 
-
-
-
-/* Shadows: --cardglow - OLD */
-.layout-tv .itemsContainer > .bannerCard:hover > .cardBox,
-/* .layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable, */
-.layout-tv .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
-/* .layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable, */
-.layout-tv .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
-/* .layout-tv .overflowBackdropCard:hover .cardScalable, */
-/* .layout-tv .overflowPortraitCard:hover .cardScalable, */
-.layout-desktop .itemsContainer > .bannerCard:hover > .cardBox,
-/* .layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable, */
-.layout-desktop .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
-/* .layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable, */
-.layout-desktop .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
-/* .layout-desktop .overflowBackdropCard:hover .cardScalable, */
-/* .layout-desktop .overflowPortraitCard:hover .cardScalable, */
+/* Shadows: --cardglow */
+.layout-tv .bannerCard:hover > .cardBox,
+.layout-tv .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable,
+.layout-tv .itemsContainer > .card:has(.cardFooter):hover .cardBox,
+.layout-tv .itemsContainer > .card:hover .cardScalable,
+.layout-desktop .bannerCard:hover > .cardBox,
+.layout-desktop .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer > .card:has(.cardFooter):hover .cardBox,
+.layout-desktop .itemsContainer > .card:hover .cardScalable
 .toast {
     box-shadow: var(--cardglow) !important;
-}
-
-/* Shadows: --cardglow */
-@media (hover: hover) and (pointer: fine) {
-    .cardScalable {
-        position: relative;
-        transition: transform 120ms ease;
-    }
-
-    .cardScalable::after {
-        content: "";
-        position: absolute;
-        inset: -6px;
-        border-radius: inherit;
-        background: radial-gradient(circle, var(--accent80), transparent 70%);
-        opacity: 0;
-        transition: opacity 120ms ease;
-        pointer-events: none;
-    }
-
-    .portraitCard:hover .cardScalable::after {
-        opacity: 1;
-    }
 }
 
 /* Shadows: --buttonglow */
