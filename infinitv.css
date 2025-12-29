@@ -1392,7 +1392,7 @@
     padding-right: 1vw !important;
 }
 .layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
-.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable{
+.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
     box-shadow: var(--cardglow) !important;
 }
 

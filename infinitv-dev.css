@@ -518,8 +518,7 @@
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-input:focus,
 .emby-textarea:focus,
-.emby-select-withcolor:focus,
-.listItem-focusscale:focus {
+.emby-select-withcolor:focus {
     border: 2px solid var(--accent80) !important;
 }
 
@@ -530,7 +529,8 @@
 
 /* Borders: transparent 1px */
 .navMenuOption,
-.navMenuOption-selected {
+.navMenuOption-selected,
+.layout-tv .itemsContainer > .listItem-focusscale:focus {
     border: solid 1px #0000 !important;
 }
 
@@ -586,8 +586,6 @@
 .listItem-largeImage,
 .paper-icon-button-light,
 .play-button,
-.detailPagePrimaryContainer .sectionTitle,
-.layout-mobile .detailPageSecondaryContainer .sectionTitle,
 .upNextContainer,
 .upNextDialog-poster-img,
 .visualCardBox,
@@ -609,6 +607,7 @@
 .emby-textarea,
 .formDialogHeader,
 .formDialogFooter,
+.itemsViewSettingsContainer,
 .listItem-border,
 .listItemButton,
 .listItemImageButton,
@@ -617,8 +616,8 @@
 .mediaSourceIndicator,
 .playedIndicator,
 .raised,
-.settingsContainer .sectionTitle,
-.homeScreenSettingsContainer .sectionTitle,
+.sectionTitle,
+.sectionTitleContainer-cards,
 .skip-button,
 .subtitleappearance-preview,
 .toast,
@@ -626,6 +625,12 @@
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
     border-radius: var(--rounding-system) !important;
+}
+
+
+/* No border radius */
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
+    border-radius: 0 !important;
 }
 
 /*
@@ -642,10 +647,9 @@
 
 /* Shadows: --cardshadow (not on mobile > performance) */
 @media (pointer: fine) {
-    .libraryPage .cardBox:has(.cardFooter),
-    .libraryPage .cardBox .cardScalable,
-    .layout-tv .detailImageContainer .card,
-    .layout-desktop .detailImageContainer .card {
+    .libraryPage .card:has(.cardFooter) .cardBox,
+    .libraryPage .card:not(:has(.cardFooter)) .cardScalable,
+    .detailImageContainer .card {
         box-shadow: var(--cardshadow) !important;
     } 
 }
@@ -657,9 +661,8 @@
 
 @media (hover: hover) and (pointer: fine) {
     .bannerCard:hover > .cardBox,
-    .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable,
     .itemsContainer > .card:has(.cardFooter):hover .cardBox,
-    .itemsContainer > .card:hover .cardScalable {
+    .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable {
         box-shadow: var(--cardglow) !important;
     }
 }
@@ -1254,12 +1257,6 @@
     top: 0;
 }
 
-/* Scroller Alignment */
-.layout-tv #indexPage .homeSectionsContainer .emby-scroller,
-.layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
-    padding-left: 1em;
-}
-
 /* Slides */
 .slide .genre,
 .slide .info-container,
@@ -1316,22 +1313,20 @@
 
 /*
 ===========================================================================
-   Library Pages: Section Titles
+   Library Pages: Sections
 ===========================================================================
 */
 
-/* Section Titles: TV */
+/* Sections: Title */
 .layout-tv .verticalSection > .sectionTitle-cards,
 .layout-tv .verticalSection > .sectionTitleContainer-cards {
     text-align: center;
     padding-left: 0%;
     padding-top: .5%;
     padding-bottom: .5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    /* margin-top: 1.5%; */
+    margin-bottom: 1.5%;
 }
-
-/* Section Titles: Desktop */
 .layout-desktop .verticalSection > .sectionTitle-cards,
 .layout-desktop .verticalSection > .sectionTitleContainer-cards {
     padding-left: 3.8%;
@@ -1340,17 +1335,6 @@
     margin-top: .25em;
     margin-bottom: .5em;
 }
-.layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards,
-.layout-desktop .sectionTitleTextButton > .material-icons {
-    margin-top: 0em;
-    margin-bottom: 0em;
-}
-.layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: .2%;
-    padding-bottom: 0em;
-}
-
-/* Section Titles: Mobile */
 .layout-mobile .verticalSection > .sectionTitle-cards,
 .layout-mobile .verticalSection > .sectionTitleContainer-cards {
     text-align: center;
@@ -1360,38 +1344,63 @@
     margin-top: .25em;
     margin-bottom: .25em;
 }
+.layout-tv #indexPage .sectionTitleContainer-cards,
+.layout-tv #resumableSection .sectionTitleContainer-cards,
+.layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 
-/* Section Title inside link-button (Mobile) */
+
+/* Sections: Scroller Alignment */
+.layout-tv #indexPage .homeSectionsContainer .emby-scroller,
+.layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
+    padding-left: 1em;
+}
+
+/* Media Page Sections: Title */
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitle {
+    display: block;
+    font-weight: 600;
+}
+.layout-tv .detailPagePrimaryContainer .sectionTitle {
+    text-align: left;
+    padding-left: 2%;
+}
+.layout-desktop .detailPagePrimaryContainer .sectionTitle {
+    padding-left: 1.5% !important;
+}
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
+    text-align: center;
+    margin-bottom: 1%;
+}
+.layout-desktop .detailPageSecondaryContainer .sectionTitle {
+    padding-left: 3.5% !important;
+}
+.layout-tv #guestCastHeader,
+.layout-tv #peopleHeader {
+    margin-bottom: .5%;
+}
+
+/* Sections: Scroll Buttons */
+.layout-desktop .verticalSection > .emby-scrollbuttons {
+    padding-top: .2%;
+    padding-bottom: 0em;
+}
+.layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards,
+.layout-desktop .sectionTitleTextButton > .material-icons {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+/* Sections: Link Buttons (Mobile) */
 .layout-mobile :not(.sectionTitleContainer-cards) .sectionTitleTextButton .sectionTitle-cards {
     padding-left: 0em;
     padding-top: 0em;
 }
 .layout-mobile .sectionTitleTextButton > .material-icons {
     padding-top: 0em;
-}
-
-/* Media Page Section Titles */
-.detailPagePrimaryContainer .sectionTitle,
-.detailPageSecondaryContainer .sectionTitle {
-    display: block;
-    font-weight: 600;
-}
-
-/* Media Page Section Titles: TV */
-.layout-tv .detailPagePrimaryContainer .sectionTitle {
-    text-align: left;
-    padding-left: 3%;
-}
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
-    text-align: center;
-}
-
-/* Media Page Section Titles: Desktop */
-.layout-desktop .detailPagePrimaryContainer .sectionTitle {
-    padding-left: 1.5% !important;
-}
-.layout-desktop .detailPageSecondaryContainer .sectionTitle {
-    padding-left: 3.5% !important;
 }
 
 /*
@@ -1415,10 +1424,27 @@
     padding-left: 3%;
 }
 
+/* Media Scroller: Alignment (TV) */
+#moviesPage #resumableItems {
+    padding-bottom: 1em;
+}
+
+
+
 /* Media Scroller: Card Spacing (TV) */
-.layout-tv .itemsContainer-tv > .overflowBackdropCard {
+.layout-tv .itemsContainer-tv > .overflowBackdropCard  {
     margin-left: 1%;
 }
+.layout-tv .itemsContainer-tv > .overflowPortraitCard {
+    margin-left: .5%;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+.layout-tv .itemsContainer-tv > .personCard {
+    margin-left: 0%;
+}
+
+
 
 /* Media Scroller: Card Size (Mobile) */
 .layout-mobile .overflowBackdropCard {
@@ -1692,7 +1718,7 @@
 /* Media Description: Secondary Content */
 .layout-tv .detailPageSecondaryContainer,
 .layout-desktop .detailPageSecondaryContainer{
-    padding-top: 1em !important;
+    padding-top: 2em !important;
 }
 .layout-mobile .detailPageSecondaryContainer {
     padding-top: 0em !important;
@@ -1724,7 +1750,7 @@
 
 /* Section Scroller: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
-    margin-bottom: 0em !important;
+    margin-bottom: 1em !important;
 }
 
 /* Cards: Large List Items */
