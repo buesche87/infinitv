@@ -162,12 +162,7 @@
     color: var(--accent100) !important;
 }
 
-.mdl-slider::-moz-range-thumb {
-    color: var(--accent100) !important;
-}
-.mdl-slider::-webkit-slider-thumb {
-    color: var(--accent100) !important;
-}
+
 
 /* Colors: Borders
 --------------------------------------------------------------------------*/
@@ -216,19 +211,14 @@
     border-color: var(--accent100) !important;
 }
 
-/* border color: transparent */ 
+/* border color: transparent */
+.actionSheetMenuItem,
 .clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus,
 .detailButton:focus,
-.listItem-border {
+.listItem-border,
+.listTextButton-autohide {
     border-color: #0000 !important;
-}
-
-/* border color: grey */ 
-.emby-button.block,
-.button-submit,
-.raised {
-    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /*
@@ -247,8 +237,7 @@
 .mainDrawer,
 .skinHeader-withBackground,
 .toast,
-.videoOsdBottom,
-::-webkit-scrollbar-track {
+.videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
@@ -294,10 +283,7 @@
 }
 
 
-.mdl-slider::-webkit-scrollbar-corner,
-.mdl-slider::-webkit-scrollbar-track-piece {
-    background: #0000 !important;
-}
+
 
 /* Backgrounds: Light
 --------------------------------------------------------------------------*/
@@ -392,9 +378,7 @@
 .countIndicator,
 .alphaPickerButton:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
-.emby-select option:focus,
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-thumb {
+.emby-select option:focus {
     background: var(--accent80) !important;
 }
 
@@ -408,13 +392,6 @@
     background: var(--accent100) !important;
 }
 
-.mdl-slider::-webkit-slider-thumb  {
-    background: var(--accent100) !important;
-}
-
-.mdl-slider::-moz-range-thumb  {
-    background: var(--accent100) !important;
-}
 
 /* Backgrounds: background-color
 --------------------------------------------------------------------------*/
@@ -458,6 +435,77 @@
 ============================================================================
 */
 
+/* Borders: transparent 1px */
+.navMenuOption,
+.navMenuOption-selected {
+    border: solid 1px #0000;
+}
+
+/* Borders: transparent 2px */
+.actionSheetMenuItem,
+.emby-collapsible-button,
+.listItem-border,
+.listTextButton-autohide {
+    border: solid 2px #0000;
+}
+
+/* Borders: grey 2px */
+.button-submit,
+.checkboxOutline,
+.detail-button,
+.detailButton,
+.emby-button.block,
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.favorite-button,
+.imagePlaceHolder,
+.listItem-focusscale,
+.play-button,
+.raised,
+.upNextDialog-button {
+    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+}
+
+/* Borders: accent 20% 2px */
+.emby-checkbox:checked + span + .checkboxOutline {
+    border: 2px solid var(--accent20) !important;
+}
+
+/* Borders: accent 40% 2px */
+.checkboxOutline:not(:disabled):hover,
+.emby-checkbox:hover + span + .checkboxOutline,
+.emby-input:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.imagePlaceHolder:hover,
+.listItem-focusscale:hover {
+    border: 2px solid var(--accent40) !important;
+}
+
+/* Borders: accent 80% 2px */
+.checkboxOutline:focus,
+.emby-checkbox:focus + span + .checkboxOutline,
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.listItem-focusscale:focus {
+    border: 2px solid var(--accent80) !important;
+}
+
+/* Borders: accent 80% 1px */
+.navMenuOption:hover {
+    border: solid 1px var(--accent80);
+}
+
+/* No borders */
+.countIndicator,
+.mediaSourceIndicator,
+.osdPoster img,
+.playedIndicator,
+.skip-button {
+    border: none !important;
+}
 
 /*
 ============================================================================
@@ -548,13 +596,13 @@
     box-shadow: none !important;
 }
 
-/* Shadows: --cardshadow
+/* Shadows: --cardshadow */
 .libraryPage .cardBox:has(.cardFooter),
 .libraryPage .cardBox .cardScalable,
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     box-shadow: var(--cardshadow) !important;
-} */
+}
 
 /* Shadows: --cardglow */
 .layout-tv .bannerCard:hover > .cardBox,
@@ -631,15 +679,16 @@
 /* Main Drawer: Options */
 .navMenuOption {
     margin-left: -.2em !important;
-    border: solid 1px #0000;
+    /* border: solid 1px #0000; */
     margin-right: -.2em !important;
 }
+/*
 .navMenuOption:hover {
     border: solid 1px var(--accent80);
 }
 .navMenuOption-selected {
     border: solid 1px #0000;
-}
+}*/
 .navMenuOptionText {
     margin-top: 0;
 }
@@ -673,10 +722,17 @@
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
 ::-webkit-scrollbar-thumb {
+    background: var(--accent80) !important;
     border-radius: 4px;
     border: 1px solid transparent;
     background-clip: content-box;
+}
+::-webkit-scrollbar-corner  {
+    background: var(--accent80) !important;
 }
 
 /* Scrollbar: Hide (TV) */
@@ -765,7 +821,7 @@
 .emby-button.block,
 .button-submit,
 .raised {
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    /* border: 2px solid rgba(255, 255, 255, 0.2); */
     margin: 0.5em 0;
     -webkit-transform: none !important;
     transform: none !important;
@@ -790,8 +846,8 @@
 --------------------------------------------------------------------------*/
 
 .actionSheetMenuItem {
-    border: solid 2px #0000;
-    border-color: #0000 !important;
+    /* border: solid 2px #0000; */
+    /* border-color: #0000 !important; */
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -804,8 +860,8 @@
 --------------------------------------------------------------------------*/
 
 .listTextButton-autohide {
-    border: solid 2px #0000;
-    border-color: #0000 !important;
+    /* border: solid 2px #0000; */
+    /* border-color: #0000 !important; */
     -webkit-transform: none !important;
     transform: none !important;
     padding: .75em !important;
@@ -816,7 +872,7 @@
 --------------------------------------------------------------------------*/
 
 .emby-collapsible-button {
-    border: solid 2px #0000;
+    /* border: solid 2px #0000; */
     padding: .75em !important;
     -webkit-transform: none !important;
     transform: none !important;
@@ -833,7 +889,7 @@
 
 /* List Item Border */
 .listItem-border {
-    border: solid 2px #0000;
+    /* border: solid 2px #0000; */
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -853,10 +909,10 @@
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
-
+/*
 .detailButton {
     border: var(--buttonborder) !important;
-}
+} */
 
 .layout-tv .mainDetailButtons .detailButton {
     font-size: 120% !important;
@@ -879,7 +935,7 @@
     font-size: 120% !important;
     margin-right: .2em !important;
     color: inherit;
-    border: var(--buttonborder) !important;
+    /* border: var(--buttonborder) !important; */
     height: 3.5em;
     margin-right: 1em !important;
 }
@@ -976,26 +1032,29 @@
 }
 
 /* Inputs: Accent */
+/*
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
 .checkboxOutline {
     border: var(--buttonborder) !important;
-}
+}*/
+/*
 .emby-input:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .checkboxOutline:not(:disabled):hover {
     border: 2px solid var(--accent40) !important;
-}
+}*/
+/*
 .emby-input:focus,
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .checkboxOutline:focus {
     border: 2px solid var(--accent80) !important;
-}
+} */
 
-/* Checkbox: Outline */
+/* Checkbox: Outline
 .emby-checkbox:hover + span + .checkboxOutline {
     border: 2px solid var(--accent40) !important;
 }
@@ -1004,7 +1063,7 @@
 }
 .emby-checkbox:checked + span + .checkboxOutline {
     border: 2px solid var(--accent20) !important;
-}
+} */
 
 .selectLabel {
     align-self: center;
@@ -1106,14 +1165,14 @@
 /* Card Indicators: Count & Played */
 .playedIndicator {
     background: rgba(0, 0, 0, 1);
-    border: none;
+    /* border: none; */
 }
 .countIndicator,
 .mediaSourceIndicator {
     font-weight: 600;
     font-size: 89%;
     color: rgba(0, 0, 0, 1);
-    border: none;
+    /* border: none; */
 }
 
 /* Card Indicators: Missing & Unaired */
@@ -1491,7 +1550,7 @@
 
 /* List Item Cards */
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage) {
-    border: var(--buttonborder) !important;
+    /* border: var(--buttonborder) !important; */
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
@@ -1499,12 +1558,13 @@
     padding-left: 0em;
     height: 5em;
 }
+/*
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):hover {
     border: solid 2px var(--accent40) !important;
 }
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
     border: solid 2px var(--accent80) !important;
-}
+} */
 
 /* List Item Cards: Hide Poster on small screens (Mobile) */
 @media (max-width: 40em) {
@@ -1713,7 +1773,7 @@
 
 /* Cards: Large List Items */
 .listItem-largeImage {
-    border: var(--buttonborder) !important;
+    /* border: var(--buttonborder) !important; */
     margin-bottom: 1em;
     padding: 0em;
     border-color: hsl(0deg 0% 100% / 20%) !important;
@@ -1722,12 +1782,13 @@
     height: 15em;
     margin-right: .5em;
 }
+/*
 .listItem-largeImage:hover {
     border: solid 2px var(--accent40) !important;
 }
 .listItem-largeImage:focus {
     border: solid 2px var(--accent80) !important;
-}
+} */
 
 /* Large List Items: Align Body */
 .listItem-largeImage .listItemBody {
@@ -1776,9 +1837,10 @@
     display: block;
     text-align: center;
 }
+/*
 .osdPoster img {
     border: none;
-}
+} */
 .osdTextContainer {
     margin: 0 !important;
     margin-top: 0.2em !important;
@@ -1802,7 +1864,23 @@
 /* Player OSD: Skip-Button */
 .skip-button {
     color: #fff;
-    border: none !important;
+    /* border: none !important; */
+}
+
+/* Progressbar & Volume */
+.mdl-slider::-moz-range-thumb {
+    color: var(--accent100) !important;
+    background: var(--accent100) !important;
+}
+.mdl-slider::-webkit-slider-thumb {
+    color: var(--accent100) !important;
+    background: var(--accent100) !important;
+}
+.mdl-slider::-webkit-scrollbar-corner {
+    background: #0000 !important;
+}
+.mdl-slider::-webkit-scrollbar-track-piece {
+    background: #0000 !important;
 }
 
 /*
@@ -1900,7 +1978,7 @@
 /* UpNext: Buttons */
 .upNextDialog-button {
     margin-left: .5em;
-    border: var(--buttonborder) !important;
+    /* border: var(--buttonborder) !important; */
     -webkit-transform: none !important;
     transform: none !important;
 }
@@ -2024,13 +2102,13 @@
     margin-top: 2em;
 }
 
-/* User Profile: Image */
+/* User Profile: Image
 .imagePlaceHolder {
     border: var(--buttonborder) !important;
 }
 .imagePlaceHolder:hover {
     border: solid 2px var(--accent40) !important;
-}
+} */
 
 /* User Profile: Username bold */
 h2.username {
