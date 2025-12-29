@@ -295,14 +295,13 @@
     }
 }
 
-
 /* Backgrounds: Light
 --------------------------------------------------------------------------*/
 
 /* Backgrounds: white 10% */
 #loginPage .cardImage,
-.homeScreenSettingsContainer .sectionTitle,
 #searchPage .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle,
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus),
 .settingsContainer .sectionTitle,
@@ -410,7 +409,6 @@
 }
 
 /* Backgrounds: accent 80% */
-.countIndicator,
 .alphaPickerButton:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-select option:focus {
@@ -418,6 +416,7 @@
 }
 
 /* Backgrounds: accent 100% */
+.countIndicator,
 .filterIndicator,
 .iconOsdProgressInner,
 .mediaSourceIndicator,
@@ -440,7 +439,8 @@
 
 /* Background Colors: transparent */
 .layout-tv .itemsContainer .card .cardBox,
-.layout-desktop .itemsContainer .card .cardBox {
+.layout-desktop .itemsContainer .card .cardBox,
+.paper-icon-button-light:not(.alphaPickerButton):active {
     background-color: #0000 !important;
 }
 
@@ -473,7 +473,7 @@
 
 /*
 ============================================================================
-   Borders (TODO)
+   Borders
 ============================================================================
 */
 
@@ -640,13 +640,13 @@
     box-shadow: none !important;
 }
 
-/* Shadows: --cardshadow */
+/* Shadows: --cardshadow
 .libraryPage .cardBox:has(.cardFooter),
 .libraryPage .cardBox .cardScalable,
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     box-shadow: var(--cardshadow) !important;
-}
+} */
 
 /* Shadows: --cardglow */
 .toast {
@@ -1141,16 +1141,21 @@
 ===========================================================================
 */
 
+/* Text Shadow (not on mobile > performance) */
+@media (pointer: fine) {
+    .cardText {
+        text-shadow: var(--textshadow) !important;
+    }
+}
+
 /* Card Text: Shadow (only without footer) */
 :not(.cardFooter) > .cardText.cardText-first {
     padding-top: .5em !important;
-    text-shadow: var(--textshadow) !important;
 }
 
 /* Card Text: Secondary Text */
 .cardText.cardText-secondary {
     font-size: 75% !important;
-    text-shadow: var(--textshadow) !important;
 }
 
 /* Card Action-Button (Mobile) */
@@ -1159,7 +1164,7 @@
     margin-right: .25em !important;
 }
 .layout-mobile .itemAction > .material-icons {
-    text-shadow: 0 0 3px rgba(0,0,0,0.8);
+    /* text-shadow: 0 0 3px rgba(0,0,0,0.8); */
     color: white;
 }
 
@@ -1180,10 +1185,11 @@
     transform: scale(1.1);
 }
 
-/* More space for glow animation */
-.layout-tv .itemsContainer .card .cardBox,
-.layout-desktop .itemsContainer .card .cardBox {
-    margin-left: .5em !important;
+/* More space for animations */
+@media (pointer: fine) {
+    .itemsContainer .cardBox {
+        margin-left: .5em !important;
+    }
 }
 
 /*
@@ -1312,15 +1318,9 @@
 }
 
 /* Slides */
+.slide .genre,
+.slide .info-container,
 .slide .plot-container {
-    font-size: 120%;
-}
-
-.slide .info-container {
-    font-size: 120%;
-}
-
-.slide .genre {
     font-size: 120%;
 }
 
@@ -1384,8 +1384,8 @@
     padding-left: 0%;
     padding-top: .5%;
     padding-bottom: .5%;
-    margin-top: .25em;
-    margin-bottom: .25em;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 /* Section Titles: Desktop */
@@ -1473,20 +1473,23 @@
 }
 
 /* Media Scroller: Card Spacing (TV) */
-.layout-tv .itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
+.layout-tv .itemsContainer-tv > .overflowBackdropCard {
     margin-left: 1%;
-    margin-top: .5%;
-    margin-bottom: .5%;
+    /* margin-top: .5%;
+    margin-bottom: .5%; */
 }
-.layout-tv .itemsContainer-tv > .overflowPortraitCard:not(.personCard) {
+/*
+.layout-tv .itemsContainer-tv > .overflowPortraitCard {
     margin-left: .75%;
     margin-top: 1%;
     margin-bottom: 1%;
-}
+}*/
+/*
 .layout-tv .itemsContainer-tv > .personCard {
+    margin-left: 0%;
     margin-top: .25%;
     margin-bottom: .25%;
-}
+}*/
 
 /* Media Scroller: Card Spacing (Desktop)
 .layout-desktop .itemsContainer > .overflowBackdropCard ,
