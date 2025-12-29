@@ -477,20 +477,6 @@
 ============================================================================
 */
 
-/* Borders: transparent 1px */
-.navMenuOption,
-.navMenuOption-selected {
-    border: solid 1px #0000;
-}
-
-/* Borders: transparent 2px */
-.actionSheetMenuItem,
-.emby-collapsible-button,
-.listItem-border,
-.listTextButton-autohide {
-    border: solid 2px #0000;
-}
-
 /* Borders: grey 2px */
 .button-submit,
 .checkboxOutline,
@@ -539,7 +525,21 @@
 
 /* Borders: accent 80% 1px */
 .navMenuOption:hover {
-    border: solid 1px var(--accent80);
+    border: solid 1px var(--accent80) !important;
+}
+
+/* Borders: transparent 1px */
+.navMenuOption,
+.navMenuOption-selected {
+    border: solid 1px #0000 !important;
+}
+
+/* Borders: transparent 2px */
+.actionSheetMenuItem,
+.emby-collapsible-button,
+.listItem-border,
+.listTextButton-autohide {
+    border: solid 2px #0000 !important;
 }
 
 /* No borders */
@@ -640,13 +640,15 @@
     box-shadow: none !important;
 }
 
-/* Shadows: --cardshadow
-.libraryPage .cardBox:has(.cardFooter),
-.libraryPage .cardBox .cardScalable,
-.layout-tv .detailImageContainer .card,
-.layout-desktop .detailImageContainer .card {
-    box-shadow: var(--cardshadow) !important;
-} */
+/* Shadows: --cardshadow (not on mobile > performance) */
+@media (pointer: fine) {
+    .libraryPage .cardBox:has(.cardFooter),
+    .libraryPage .cardBox .cardScalable,
+    .layout-tv .detailImageContainer .card,
+    .layout-desktop .detailImageContainer .card {
+        box-shadow: var(--cardshadow) !important;
+    } 
+}
 
 /* Shadows: --cardglow */
 .toast {
