@@ -86,26 +86,29 @@
 /* Colors: accent 80 % */
 #loginPage .cardImage,
 .Mui-selected,
-.navMenuOption-selected {
+.navMenuOption-selected,
+.detailButton:focus,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label {
     color: var(--accent80) !important;
 }
 
-.actionSheetMenuItem:hover,
-.button-link:hover,
-.detailButton:focus,
-.emby-collapsible-button:hover,
-.emby-textarea:hover + .textareaLabel,
-.emby-checkbox:hover + .checkboxLabel,
-.listTextButton-autohide:hover,
-.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label,
-.navMenuOption:hover,
-.overview-expand:hover {
-    color: var(--accent80) !important;
+@media (hover: hover) and (pointer: fine) {
+    .actionSheetMenuItem:hover,
+    .button-link:hover,
+    .emby-collapsible-button:hover,
+    .emby-textarea:hover + .textareaLabel,
+    .emby-checkbox:hover + .checkboxLabel,
+    .favorite-button:hover,
+    .listTextButton-autohide:hover,
+    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+    .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+    .navMenuOption:hover,
+    .overview-expand:hover {
+        color: var(--accent80) !important;
+    }
 }
 
 /* Colors: accent 100 % */
@@ -121,77 +124,80 @@
 .selectLabelFocused,
 .syncPlayIconCircle,
 .textareaLabelFocused,
-.upNextDialog-countdownText {
-    color: var(--accent100) !important;
-}
-
+.upNextDialog-countdownText,
 .actionSheetMenuItem:focus,
 .button-link:focus,
-.button-submit:hover,
 .button-submit:focus,
-.cardOverlayButton:hover,
-.clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus,
-.detail-button:hover,
 .detailButton:hover,
-.emby-button.block:hover,
 .emby-button.block:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .emby-collapsible-button:focus,
-.emby-tab-button:hover,
 .emby-tab-button:focus,
-.favorite-button:hover
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary,
-.listItem-border:hover,
 .listItem-border:focus,
 .listItem-button:focus .listItemBodyText:not(.secondary),
 .listTextButton-autohide:focus,
 .overview-expand:focus,
-.paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover,
 .paper-icon-button-light:not(.alphaPickerButton):focus,
 .paper-icon-button-light:not(.alphaPickerButton):active,
-.play-button:hover,
 .raised:focus,
 .raised:hover,
-.skip-button:hover,
 .skip-button:focus,
-.textActionButton:hover,
-.upNextDialog-button:hover,
 .upNextDialog-button:focus {
     color: var(--accent100) !important;
 }
 
-
+@media (hover: hover) and (pointer: fine) {
+    .button-submit:hover,
+    .cardOverlayButton:hover,
+    .clearLink > .emby-button:hover,
+    .detail-button:hover,
+    .detailButton:hover,
+    .emby-button.block:hover,
+    .emby-tab-button:hover,
+    .favorite-button:hover,
+    .listItem-border:hover,
+    .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover,
+    .play-button:hover,
+    .raised:hover,
+    .skip-button:hover,
+    .textActionButton:hover,
+    .upNextDialog-button:hover {
+        color: var(--accent100) !important;
+    }
+}
 
 /* Colors: Borders
 --------------------------------------------------------------------------*/
 
 /* border color: accent 40% */ 
-.actionSheetMenuItem:hover,
-.button-submit:hover,
-.detail-button:hover,
-.detailButton:hover,
-.emby-button.block:hover,
-.emby-collapsible-button:hover,
-.favorite-button:hover,
-.listTextButton-autohide:hover,
-.play-button:hover,
-.raised:hover,
-.upNextDialog-button:hover {
-    border-color: var(--accent40) !important;
+@media (hover: hover) and (pointer: fine) {
+    .actionSheetMenuItem:hover,
+    .button-submit:hover,
+    .detail-button:hover,
+    .detailButton:hover,
+    .emby-button.block:hover,
+    .emby-collapsible-button:hover,
+    .favorite-button:hover,
+    .listTextButton-autohide:hover,
+    .play-button:hover,
+    .raised:hover,
+    .upNextDialog-button:hover {
+        border-color: var(--accent40) !important;
+    }
 }
 
 /* border color: accent 60% */ 
-.listItem-border:hover {
-    border-color: var(--accent60) !important;
+@media (hover: hover) and (pointer: fine) {
+    .listItem-border:hover {
+        border-color: var(--accent60) !important;
+    }
 }
 
 /* border color: accent 80% */ 
-.favorite-button.favorited {
-    border-color: var(--accent80) !important;
-}
-
+.favorite-button.favorited,
 .button-submit:focus,
 .detail-button:focus,
 .emby-button.block:focus,
@@ -213,12 +219,17 @@
 
 /* border color: transparent */
 .actionSheetMenuItem,
-.clearLink > .emby-button:hover,
 .clearLink > .emby-button:focus,
 .detailButton:focus,
 .listItem-border,
 .listTextButton-autohide {
     border-color: #0000 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .clearLink > .emby-button:hover {
+        border-color: #0000 !important;
+    }
 }
 
 /*
@@ -271,18 +282,18 @@
 .raised,
 .sliderBubble,
 .skip-button,
-.upNextDialog-button {
+.upNextDialog-button,
+.clearLink > .emby-button:focus {
     background: #0000 !important;
 }
 
-.collapseContent .listItem:hover,
-.clearLink > .emby-button:hover,
-.clearLink > .emby-button:focus,
-.navMenuOption:hover {
-    background: #0000 !important;
+@media (hover: hover) and (pointer: fine) {
+    .collapseContent .listItem:hover,
+    .clearLink > .emby-button:hover,
+    .navMenuOption:hover {
+        background: #0000 !important;
+    }
 }
-
-
 
 
 /* Backgrounds: Light
@@ -304,74 +315,98 @@
 --------------------------------------------------------------------------*/
 
 /* Backgrounds: black 20% */
-.button-submit:hover,
-.emby-button.block:hover,
 .detail-button,
 .favorite-button,
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage),
-.play-button,
-.raised:hover {
+.play-button {
     background: rgba(0, 0, 0, 0.2) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .button-submit:hover,
+    .emby-button.block:hover,
+    .raised:hover {
+        background: rgba(0, 0, 0, 0.2) !important;
+    }
 }
 
 /* Backgrounds: black 40% */
 .button-submit:focus,
 .checkboxOutline,
-.detailButton:hover,
 .emby-button.block:focus,
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
 .itemProgressBar,
 .itemsViewSettingsContainer,
-.listItem-border:hover,
 .pageTabContent > .focuscontainer-x,
 .raised:focus,
 .selectionCommandsPanel,
-.upNextDialog-button:hover,
 #loginPage .padded-left.padded-right.padded-bottom-page {
     background: rgba(0, 0, 0, 0.4) !important;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .detailButton:hover,
+    .listItem-border:hover,
+    .upNextDialog-button:hover {
+        background: rgba(0, 0, 0, 0.4) !important;
+    }
+}
+
 /* Backgrounds: black 60% */
-.checkboxOutline:not(:disabled):hover,
 .detailButton:focus,
-.emby-input:not(:disabled):hover,
-.emby-select-withcolor:not(:disabled):hover,
-.emby-textarea:not(:disabled):hover,
-.listItem-focusscale:hover,
 .listItem-largeImage:focus,
 .upNextDialog-button:focus {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .checkboxOutline:not(:disabled):hover,
+    .emby-input:not(:disabled):hover,
+    .emby-select-withcolor:not(:disabled):hover,
+    .emby-textarea:not(:disabled):hover,
+    .listItem-focusscale:hover {
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+}
+
 /* Backgrounds: black 80% */
 .checkboxOutline:focus
-.detail-button:hover,
 .detail-button:focus,
 .emby-input:focus,
 .emby-select option,
 .emby-select-withcolor:focus,
 .emby-textarea:focus,
-.favorite-button:hover,
 .favorite-button:focus,
 .listItem-focusscale:focus
-.play-button:hover,
 .play-button:focus {
     background: rgba(0, 0, 0, 0.8) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .detail-button:hover,
+    .favorite-button:hover,
+    .play-button:hover {
+        background: rgba(0, 0, 0, 0.8) !important;
+    }
 }
 
 /* Backgrounds: Accent
 --------------------------------------------------------------------------*/
 
 /* Backgrounds: accent 40% */
-.emby-select option:hover {
-    background: var(--accent40) !important;
+@media (hover: hover) and (pointer: fine) {
+    .emby-select option:hover {
+        background: var(--accent40) !important;
+    }
 }
 
 /* Backgrounds: accent 60% */
-.alphaPickerButton:hover {
-    background: var(--accent60) !important;
+@media (hover: hover) and (pointer: fine) {
+    .alphaPickerButton:hover {
+        background: var(--accent60) !important;
+    }
 }
 
 /* Backgrounds: accent 80% */
@@ -397,15 +432,22 @@
 --------------------------------------------------------------------------*/
 
 /* Background Colors: accent 20% */
-.paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
-    background-color: var(--accent20);
+@media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
+        background-color: var(--accent20);
+    }
 }
 
 /* Background Colors: transparent */
-.cardOverlayButton:hover,
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox {
     background-color: #0000 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cardOverlayButton:hover {
+        background-color: #0000 !important;
+    }
 }
 
 /* Backgrounds: Card defaults
@@ -473,14 +515,16 @@
 }
 
 /* Borders: accent 40% 2px */
-.checkboxOutline:not(:disabled):hover,
-.emby-checkbox:hover + span + .checkboxOutline,
-.emby-input:not(:disabled):hover,
-.emby-textarea:not(:disabled):hover,
-.emby-select-withcolor:not(:disabled):hover,
-.imagePlaceHolder:hover,
-.listItem-focusscale:hover {
-    border: 2px solid var(--accent40) !important;
+@media (hover: hover) and (pointer: fine) {
+    .checkboxOutline:not(:disabled):hover,
+    .emby-checkbox:hover + span + .checkboxOutline,
+    .emby-input:not(:disabled):hover,
+    .emby-textarea:not(:disabled):hover,
+    .emby-select-withcolor:not(:disabled):hover,
+    .imagePlaceHolder:hover,
+    .listItem-focusscale:hover {
+        border: 2px solid var(--accent40) !important;
+    }
 }
 
 /* Borders: accent 80% 2px */
@@ -605,16 +649,17 @@
 }
 
 /* Shadows: --cardglow */
-.layout-tv .bannerCard:hover > .cardBox,
-.layout-tv .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable,
-.layout-tv .itemsContainer > .card:has(.cardFooter):hover .cardBox,
-.layout-tv .itemsContainer > .card:hover .cardScalable,
-.layout-desktop .bannerCard:hover > .cardBox,
-.layout-desktop .itemsContainer-tv > .card:not(:has(.cardFooter)):hover .cardScalable,
-.layout-desktop .itemsContainer-tv > .card:has(.cardFooter):hover .cardBox,
-.layout-desktop .itemsContainer-tv > .card:hover .cardScalable
 .toast {
     box-shadow: var(--cardglow) !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .bannerCard:hover > .cardBox,
+    .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable,
+    .itemsContainer > .card:has(.cardFooter):hover .cardBox,
+    .itemsContainer > .card:hover .cardScalable {
+        box-shadow: var(--cardglow) !important;
+    }
 }
 
 /* Shadows: --buttonglow */
@@ -959,15 +1004,7 @@
     color: inherit !important;
     -webkit-transform: none !important;
     transform: none !important;
-    text-decoration: none;
-}
-.button-link:hover,
-.overview-expand:hover {
-    text-decoration: none;
-}
-.button-link:focus,
-.overview-expand:focus {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* ClearLinks: Buttons with Link-Buttons inside (why...?)
@@ -1127,8 +1164,8 @@
 }
 
 /* Links / Action-Text in card footer */
-.layout-desktop .card .textActionButton:hover {
-    text-decoration: none;
+.textActionButton {
+    text-decoration: none !important;
 }
 
 /*
@@ -1357,7 +1394,8 @@
     padding-left: 3.8%;
     padding-top: .5%;
     padding-bottom: .5%;
-    margin-bottom: .25em;
+    margin-top: .25em;
+    margin-bottom: .5em;
 }
 .layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards,
 .layout-desktop .sectionTitleTextButton > .material-icons {
@@ -1450,12 +1488,12 @@
     margin-bottom: .25%;
 }
 
-/* Media Scroller: Card Spacing (Desktop) */
+/* Media Scroller: Card Spacing (Desktop)
 .layout-desktop .itemsContainer > .overflowBackdropCard ,
 .layout-desktop .itemsContainer > .overflowPortraitCard {
     margin-top: .25%;
     margin-bottom: .25%;
-}
+} */
 
 /* Media Scroller: Card Size (Mobile) */
 .layout-mobile .overflowBackdropCard {
