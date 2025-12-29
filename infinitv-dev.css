@@ -49,7 +49,6 @@
     /* TODO: Header accent color (keep it dark) */
     --haccent-h: 310;
     --headeraccent: hsla(var(--haccent-h), 100%, 20%, var(--headeropacity));
-
 }
 
 /*
@@ -208,7 +207,6 @@
     border-color: var(--accent80) !important;
 }
 
-
 /* border color: accent 100% */ 
 .mdl-spinner__layer-1,
 .mdl-spinner__layer-2,
@@ -217,7 +215,6 @@
 .progressring-spiner {
     border-color: var(--accent100) !important;
 }
-
 
 /* border color: transparent */ 
 .clearLink > .emby-button:hover,
@@ -454,6 +451,14 @@
     background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
 
+
+/*
+============================================================================
+   Borders (TODO)
+============================================================================
+*/
+
+
 /*
 ============================================================================
    Roundings
@@ -543,13 +548,13 @@
     box-shadow: none !important;
 }
 
-/* Shadows: --cardshadow */
+/* Shadows: --cardshadow
 .libraryPage .cardBox:has(.cardFooter),
 .libraryPage .cardBox .cardScalable,
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     box-shadow: var(--cardshadow) !important;
-}
+} */
 
 /* Shadows: --cardglow */
 .layout-tv .bannerCard:hover > .cardBox,
@@ -557,9 +562,9 @@
 .layout-tv .itemsContainer > .card:has(.cardFooter):hover .cardBox,
 .layout-tv .itemsContainer > .card:hover .cardScalable,
 .layout-desktop .bannerCard:hover > .cardBox,
-.layout-desktop .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable,
-.layout-desktop .itemsContainer > .card:has(.cardFooter):hover .cardBox,
-.layout-desktop .itemsContainer > .card:hover .cardScalable
+.layout-desktop .itemsContainer-tv > .card:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer-tv > .card:has(.cardFooter):hover .cardBox,
+.layout-desktop .itemsContainer-tv > .card:hover .cardScalable
 .toast {
     box-shadow: var(--cardglow) !important;
 }
@@ -596,19 +601,6 @@
     font-size: 110% !important;
 }
 
-/* Toasts
-.toast {
-    box-shadow: var(--cardglow) !important;
-} */
-
-/* Loading Spinner
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4 {
-    border-color: var(--accent100) !important;
-} */
-
 /* Progress Ring */
 .progressring {
     margin: .4em;
@@ -617,7 +609,6 @@
     display: none;
 }
 .progressring-spiner {
-    /* border-color: var(--accent100); */
     border-width: .35em;
 }
 
@@ -630,7 +621,6 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
-    /* box-shadow: none !important; */
 }
 
 /* Main Drawer: Hide HeaderTabs when open (Mobile) */
@@ -645,11 +635,9 @@
     margin-right: -.2em !important;
 }
 .navMenuOption:hover {
-    /* color: var(--accent100) !important; */
     border: solid 1px var(--accent80);
 }
 .navMenuOption-selected {
-    /* color: var(--accent100) !important; */
     border: solid 1px #0000;
 }
 .navMenuOptionText {
@@ -668,11 +656,6 @@
     padding-bottom: 0em;
 }
 
-/* Action Sheet: Checked Icon Color
-.actionSheetContent .listItemIcon.check {
-    color: var(--accent100) !important;
-} */
-
 /* Action Sheet: Item size */
 .actionSheetContent .listItem {
     padding: .5em;
@@ -689,21 +672,12 @@
     scrollbar-width: thin;
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
 }
-/* 
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, var(--headeropacity));
-} */
 
 ::-webkit-scrollbar-thumb {
-    /* background: var(--accent80) !important; */
     border-radius: 4px;
     border: 1px solid transparent;
     background-clip: content-box;
 }
-/*
-::-webkit-scrollbar-corner {
-    background: var(--accent80) !important;
-}*/
 
 /* Scrollbar: Hide (TV) */
 .layout-tv ::-webkit-scrollbar {
@@ -793,37 +767,9 @@
 .raised {
     border: 2px solid rgba(255, 255, 255, 0.2);
     margin: 0.5em 0;
-    /* border-color: rgba(255, 255, 255, 0.2) !important; */
     -webkit-transform: none !important;
     transform: none !important;
 }
-/*
-.emby-button.block:hover,
-.button-submit:hover,
-.raised:hover {
-    color: var(--accent100) !important;
-    border-color: var(--accent40) !important;
-}
-.emby-button.block:focus,
-.button-submit:focus,
-.raised:focus {
-    color: var(--accent100) !important;
-    border-color: var(--accent80) !important;
-} */
-
-/* Buttons: Header, Menus, Filter & OSD
---------------------------------------------------------------------------*/
-
-/*
-.paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
-    color: var(--accent100);
-    background-color: var(--accent20);
-} */
-/*
-.paper-icon-button-light:not(.alphaPickerButton):focus,
-.paper-icon-button-light:not(.alphaPickerButton):active {
-    color: var(--accent100);
-} */
 
 /* Buttons: Header-Tab
 --------------------------------------------------------------------------*/
@@ -831,12 +777,8 @@
 .emby-tab-button {
     padding: .6em 1.25em .8em 1.25em !important;
 }
-/*
-.emby-tab-button:hover {
-    color: var(--accent100) !important;
-} */
+
 .emby-tab-button:focus {
-    /* color: var(--accent100) !important; */
     -webkit-transform: scale(1.1)!important;
     transform: scale(1.1)!important;
 }
@@ -857,14 +799,6 @@
     padding-left: .5em !important;
     padding-right: .5em !important;
 }
-/* 
-.actionSheetMenuItem:hover {
-    color: var(--accent80) !important;
-    border-color: var(--accent40) !important;
-}
-.actionSheetMenuItem:focus {
-    color: var(--accent100) !important;
-} */
 
 /* Buttons: List Menu Items
 --------------------------------------------------------------------------*/
@@ -877,14 +811,6 @@
     padding: .75em !important;
     margin: .2em !important;
 }
-/*
-.listTextButton-autohide:hover {
-    color: var(--accent80) !important;
-    border-color: var(--accent40) !important;
-}
-.listTextButton-autohide:focus {
-    color: var(--accent100) !important;
-} */
 
 /* Buttons: Collapsible
 --------------------------------------------------------------------------*/
@@ -895,14 +821,6 @@
     -webkit-transform: none !important;
     transform: none !important;
 }
-/*
-.emby-collapsible-button:hover {
-    color: var(--accent80) !important;
-    border-color: var(--accent40) !important;
-}
-.emby-collapsible-button:focus {
-    color: var(--accent100) !important;
-} */
 
 /* Collapsible Menu: Button Text */
 .emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
@@ -916,7 +834,6 @@
 /* List Item Border */
 .listItem-border {
     border: solid 2px #0000;
-    /* border-color: #0000 !important; */
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -924,14 +841,6 @@
     padding-left: .5em !important;
     padding-right: .5em !important;
 }
-/*
-.listItem-border:hover {
-    color: var(--accent100) !important;
-    border-color: var(--accent60) !important;
-}
-.listItem-border:focus {
-    color: var(--accent100) !important;
-} */
 
 .listItemBodyText {
     text-shadow: var(--textshadow) !important;
@@ -948,20 +857,6 @@
 .detailButton {
     border: var(--buttonborder) !important;
 }
-/*
-.detailButton:hover {
-    color: var(--accent100) !important;
-    border-color: var(--accent40) !important;
-}
-.detailButton:focus {
-    border-color: var(--accent80) !important;
-}*/
-
-/*
-.layout-tv .detailButton:focus,
-.layout-desktop .detailButton:focus {
-    box-shadow: var(--buttonglow) !important;
-} */
 
 .layout-tv .mainDetailButtons .detailButton {
     font-size: 120% !important;
@@ -993,33 +888,12 @@
     width: 3.5em;
     margin-right: 1em !important;
 }
-/*
-.play-button:hover,
-.detail-button:hover,
-.favorite-button:hover {
-    color: var(--accent100) !important;
-    border-color: var(--accent40) !important;
-}*/
 .play-button:focus,
 .detail-button:focus,
 .favorite-button:focus {
-    /* border-color: var(--accent80) !important; */
     -webkit-transform: scale(1.2) !important;
     transform: scale(1.2) !important;
 }
-/*
-.layout-tv .play-button:focus,
-.layout-tv .detail-button:focus,
-.layout-tv .favorite-button:focus,
-.layout-desktop .play-button:focus,
-.layout-desktop .detail-button:focus,
-.layout-desktop .favorite-button:focus {
-    box-shadow: var(--buttonglow) !important;
-} */
-/*
-.favorite-button.favorited {
-    color: var(--accent100) !important;
-} */
 
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
@@ -1033,12 +907,10 @@
 }
 .button-link:hover,
 .overview-expand:hover {
-    /* color: var(--accent80) !important; */
     text-decoration: none;
 }
 .button-link:focus,
 .overview-expand:focus {
-    /* color: var(--accent100) !important; */
     text-decoration: none;
 }
 
@@ -1064,12 +936,6 @@
     font-size: 1.5em;
     font-weight: 400;
 }
-/*
-.clearLink > .emby-button:hover,
-.clearLink > .emby-button:focus {
-    border-color: #0000 !important;
-    color: var(--accent100) !important;
-} */
 
 /*
 ============================================================================
@@ -1109,15 +975,6 @@
     margin-top: .1em !important;
 }
 
-/* Select: Option Colors */
-/*
-.emby-select option:hover {
-    background: var(--accent40) !important;
-}
-.emby-select option:focus {
-    background: var(--accent80) !important;
-}*/
-
 /* Inputs: Accent */
 .emby-input,
 .emby-textarea,
@@ -1147,39 +1004,8 @@
 }
 .emby-checkbox:checked + span + .checkboxOutline {
     border: 2px solid var(--accent20) !important;
-    /* background: var(--accent80) !important; */
 }
 
-/* Radio Buttons */
-/*
-.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label {
-    color: var(--accent80) !important;
-}
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle {
-    color: var(--accent100) !important;
-}
-/*.mdl-radio__focus-circle {
-    background: var(--accent100) !important;
-} */
-
-/* Labels */
-/*
-.emby-textarea:hover + .textareaLabel,
-.emby-checkbox:hover + .checkboxLabel {
-    color: var(--accent80) !important;
-}
-.inputLabelFocused,
-.textareaLabelFocused,
-.selectLabelFocused,
-.emby-checkbox:focus + .checkboxLabel {
-    color: var(--accent100) !important;
-} */
 .selectLabel {
     align-self: center;
 }
@@ -1215,22 +1041,9 @@
 
 /*
 ===========================================================================
-   Cards: Shadows
-===========================================================================
-*/
-
-
-
-/*
-===========================================================================
    Cards: Text & Buttons
 ===========================================================================
 */
-
-/* Card Text Container
-.cardPadder {
-    box-shadow: none !important;
-} */
 
 /* Card Text: Shadow (only without footer) */
 :not(.cardFooter) > .cardText.cardText-first {
@@ -1254,15 +1067,8 @@
     color: white;
 }
 
-/* Card Hover-Buttons: Play
-.cardOverlayButton:hover {
-    color: var(--accent100) !important;
-    background-color: #0000 !important;
-} */
-
 /* Links / Action-Text in card footer */
 .layout-desktop .card .textActionButton:hover {
-    /* color: var(--accent100); */
     text-decoration: none;
 }
 
@@ -1278,25 +1084,10 @@
     transform: scale(1.1);
 }
 
-/* Cards: Text Color on Focus (TV)
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary {
-    color: var(--accent100) !important;
-} */
-
-/* Cards: Glow Images on overflow Cards
-.layout-tv .overflowBackdropCard:hover .cardScalable,
-.layout-tv .overflowPortraitCard:hover .cardScalable,
-.layout-desktop .overflowBackdropCard:hover .cardScalable,
-.layout-desktop .overflowPortraitCard:hover .cardScalable {
-    box-shadow: var(--cardglow) !important;
-} */
-
 /* More space for glow animation */
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox {
     margin-left: .5em !important;
-    /* background-color: #0000; */
 }
 
 /*
@@ -1314,7 +1105,6 @@
 
 /* Card Indicators: Count & Played */
 .playedIndicator {
-    /* color: var(--accent100) !important; */
     background: rgba(0, 0, 0, 1);
     border: none;
 }
@@ -1323,14 +1113,8 @@
     font-weight: 600;
     font-size: 89%;
     color: rgba(0, 0, 0, 1);
-    /* background: var(--accent100) !important; */
     border: none;
 }
-/* 
-.playstatebutton-icon-played,
-.ratingbutton-icon-withrating {
-    color: var(--accent100) !important;
-} */
 
 /* Card Indicators: Missing & Unaired */
 .missingIndicator,
@@ -1347,11 +1131,6 @@
     border-bottom-right-radius: var(--rounding-system) !important;
     border-bottom-left-radius: var(--rounding-system) !important;
 }
-
-/* Card Indicators: Multiselect selected
-.Mui-selected {
-    color: var(--accent80) !important;
-} */
 
 /*
 ===========================================================================
@@ -1370,14 +1149,6 @@
 .itemProgressBarForeground {
     background-color: var(--accent100) !important;
 }
-
-/*
-===========================================================================
-   Cards: Default Backgrounds
-===========================================================================
-*/
-
-
 
 /*
 ===========================================================================
@@ -1421,10 +1192,6 @@
     width: 33%;
     margin: 1em !important;
 }
-/*
-#loginPage .cardImage {
-    color: var(--accent100) !important;
-} */
 
 /*
 ============================================================================
@@ -1500,11 +1267,9 @@
     height: 1.6em;
 }
 .alphaPickerButton:hover {
-    /* background: var(--accent60) !important; */
     color: inherit !important;
 }
 .alphaPickerButton:focus {
-    /* background: var(--accent80) !important; */
     -webkit-transform: none !important;
     transform: none !important;
     transition: none !important;
@@ -1720,11 +1485,6 @@
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
 }
-/*
-.layout-tv .itemsContainer > .bannerCard:hover > .cardBox,
-.layout-desktop .itemsContainer > .bannerCard:hover > .cardBox {
-    box-shadow: var(--cardglow) !important;
-} */
 
 /* View: List
 --------------------------------------------------------------------------*/
@@ -1745,11 +1505,6 @@
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
     border: solid 2px var(--accent80) !important;
 }
-/*
-.layout-tv .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
-.layout-desktop .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
-    box-shadow: var(--buttonglow) !important;
-} */
 
 /* List Item Cards: Hide Poster on small screens (Mobile) */
 @media (max-width: 40em) {
@@ -1772,10 +1527,10 @@
     width: 11em;
 }
 
-/* Hide Alphapicker > steals focus with remote
+/* Hide Alphapicker > steals focus with remote */
 .layout-tv .itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
     display: none !important;
-} */
+}
 
 .layout-tv .listItem-focusscale ~ .alphaPicker {
     display: none;
@@ -1789,39 +1544,6 @@
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
 }
-/*
-.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
-.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
-    box-shadow: var(--cardglow) !important;
-} */
-
-/* View: Poster Card
---------------------------------------------------------------------------*/
-
-
-/*
-.layout-tv .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
-.layout-desktop .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox {
-    box-shadow: var(--cardglow) !important;
-} */
-
-/* View: Thumb
---------------------------------------------------------------------------*/
-
-/*
-.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
-.layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable {
-    box-shadow: var(--cardglow) !important;
-} */
-
-/* View: Thumb Card
---------------------------------------------------------------------------*/
-
-/*
-.layout-tv .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
-.layout-desktop .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox {
-    box-shadow: var(--cardglow) !important;
-} */
 
 /*
 ===========================================================================
@@ -1859,7 +1581,6 @@
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     left: 3% !important;
-    /* box-shadow: var(--cardshadow) !important; */
     max-width: 26vw;
 }
 
@@ -1932,11 +1653,6 @@
 .layout-mobile .detailPagePrimaryContent .detailSection .trackSelections {
     padding-top: 1em;
 }
-
-/* Media Details: Hide Genres
-p.itemGenres {
-    display: none;
-} */
 
 /* Media Details: Tracks & Subtitles */
 .leyout-tv .trackSelections {
@@ -2012,11 +1728,6 @@ p.itemGenres {
 .listItem-largeImage:focus {
     border: solid 2px var(--accent80) !important;
 }
-/* 
-.layout-tv .listItem-largeImage:focus,
-.layout-desktop .listItem-largeImage:focus {
-    box-shadow: var(--buttonglow) !important;
-} */
 
 /* Large List Items: Align Body */
 .listItem-largeImage .listItemBody {
@@ -2024,11 +1735,6 @@ p.itemGenres {
     padding-top: .5em;
     padding-left: .5em;
 }
-
-/* Large List Items: Title Accent
-.listItem-button:focus .listItemBodyText:not(.secondary) {
-    color: var(--accent100) !important;
-} */
 
 /* Large List Items: Text */
 .listItem-largeImage .listItem-overview {
@@ -2098,13 +1804,6 @@ p.itemGenres {
     color: #fff;
     border: none !important;
 }
-/*
-.skip-button:hover {
-    color: var(--accent80) !important;
-}
-.skip-button:focus {
-    color: var(--accent100) !important;
-} */
 
 /*
 ===========================================================================
@@ -2147,27 +1846,6 @@ p.itemGenres {
    Player OSD: Progressbar & Volume
 ===========================================================================
 */
-
-/* Player OSD: Play Progress & Volume
-.mdl-slider {
-    color: var(--accent100) !important;
-}
-.mdl-slider::-webkit-slider-thumb {
-    background: var(--accent100) !important;
-    color: var(--accent100) !important;
-}
-.mdl-slider::-moz-range-thumb {
-    background: var(--accent100) !important;
-    color: var(--accent100) !important;
-} */
-
-/* 
-.mdl-slider::-webkit-scrollbar-corner {
-    background: #0000 !important;
-}
-.mdl-slider::-webkit-scrollbar-track-piece {
-    background: #0000 !important;
-} */
 
 /* Player OSD: Progressbar Vertical Marker */
 .sliderMarker {
@@ -2217,13 +1895,7 @@ p.itemGenres {
 .upNextContainer {
     padding-left: 1.25em;
     padding-right: 1.25em;
-    /* box-shadow: var(--buttonglow) !important; */
 }
-
-/* UpNext: Countdown
-.upNextDialog-countdownText {
-    color: var(--accent100) !important;
-} */
 
 /* UpNext: Buttons */
 .upNextDialog-button {
@@ -2232,17 +1904,6 @@ p.itemGenres {
     -webkit-transform: none !important;
     transform: none !important;
 }
-/*
-.upNextDialog-button:hover {
-    color: var(--accent100) !important;
-    border-color: var(--accent40) !important;
-} */
- /* 
-.upNextDialog-button:focus {
-    color: var(--accent100) !important;
-    border-color: var(--accent80) !important;
-    box-shadow: var(--cardglow) !important;
-} */
 
 /*
 ===========================================================================
@@ -2377,14 +2038,3 @@ h2.username {
     font-weight: 600;
     color: #fff;
 }
-
-/*
-===========================================================================
-   Misc & Unknown (aka TODOs)
-===========================================================================
-*/
-
-/* Misc: SyncPlay
-.syncPlayIconCircle {
-    color: var(--accent100) !important;
-} */
