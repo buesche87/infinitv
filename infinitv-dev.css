@@ -726,16 +726,8 @@
 /* Main Drawer: Options */
 .navMenuOption {
     margin-left: -.2em !important;
-    /* border: solid 1px #0000; */
     margin-right: -.2em !important;
 }
-/*
-.navMenuOption:hover {
-    border: solid 1px var(--accent80);
-}
-.navMenuOption-selected {
-    border: solid 1px #0000;
-}*/
 .navMenuOptionText {
     margin-top: 0;
 }
@@ -868,7 +860,6 @@
 .emby-button.block,
 .button-submit,
 .raised {
-    /* border: 2px solid rgba(255, 255, 255, 0.2); */
     margin: 0.5em 0;
     -webkit-transform: none !important;
     transform: none !important;
@@ -880,7 +871,6 @@
 .emby-tab-button {
     padding: .6em 1.25em .8em 1.25em !important;
 }
-
 .emby-tab-button:focus {
     -webkit-transform: scale(1.1)!important;
     transform: scale(1.1)!important;
@@ -893,8 +883,6 @@
 --------------------------------------------------------------------------*/
 
 .actionSheetMenuItem {
-    /* border: solid 2px #0000; */
-    /* border-color: #0000 !important; */
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -907,8 +895,6 @@
 --------------------------------------------------------------------------*/
 
 .listTextButton-autohide {
-    /* border: solid 2px #0000; */
-    /* border-color: #0000 !important; */
     -webkit-transform: none !important;
     transform: none !important;
     padding: .75em !important;
@@ -919,7 +905,6 @@
 --------------------------------------------------------------------------*/
 
 .emby-collapsible-button {
-    /* border: solid 2px #0000; */
     padding: .75em !important;
     -webkit-transform: none !important;
     transform: none !important;
@@ -936,7 +921,6 @@
 
 /* List Item Border */
 .listItem-border {
-    /* border: solid 2px #0000; */
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -956,10 +940,6 @@
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
-/*
-.detailButton {
-    border: var(--buttonborder) !important;
-} */
 
 .layout-tv .mainDetailButtons .detailButton {
     font-size: 120% !important;
@@ -982,7 +962,6 @@
     font-size: 120% !important;
     margin-right: .2em !important;
     color: inherit;
-    /* border: var(--buttonborder) !important; */
     height: 3.5em;
     margin-right: 1em !important;
 }
@@ -1069,41 +1048,6 @@
 .selectArrow {
     margin-top: .1em !important;
 }
-
-/* Inputs: Accent */
-/*
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor,
-.checkboxOutline {
-    border: var(--buttonborder) !important;
-}*/
-/*
-.emby-input:not(:disabled):hover,
-.emby-textarea:not(:disabled):hover,
-.emby-select-withcolor:not(:disabled):hover,
-.checkboxOutline:not(:disabled):hover {
-    border: 2px solid var(--accent40) !important;
-}*/
-/*
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus,
-.checkboxOutline:focus {
-    border: 2px solid var(--accent80) !important;
-} */
-
-/* Checkbox: Outline
-.emby-checkbox:hover + span + .checkboxOutline {
-    border: 2px solid var(--accent40) !important;
-}
-.emby-checkbox:focus + span + .checkboxOutline {
-    border: 2px solid var(--accent80) !important;
-}
-.emby-checkbox:checked + span + .checkboxOutline {
-    border: 2px solid var(--accent20) !important;
-} */
-
 .selectLabel {
     align-self: center;
 }
@@ -1166,7 +1110,6 @@
     margin-right: .25em !important;
 }
 .layout-mobile .itemAction > .material-icons {
-    /* text-shadow: 0 0 3px rgba(0,0,0,0.8); */
     color: white;
 }
 
@@ -1210,14 +1153,12 @@
 /* Card Indicators: Count & Played */
 .playedIndicator {
     background: rgba(0, 0, 0, 1);
-    /* border: none; */
 }
 .countIndicator,
 .mediaSourceIndicator {
     font-weight: 600;
     font-size: 89%;
     color: rgba(0, 0, 0, 1);
-    /* border: none; */
 }
 
 /* Card Indicators: Missing & Unaired */
@@ -1459,46 +1400,25 @@
 ===========================================================================
 */
 
-/* Media Scroller: Position (TV) */
-.layout-tv .verticalSection .emby-scroller {
-    padding-left: 2%;
-}
-
-/* Media Scroller: Position (TV) */
-.layout-desktop .verticalSection .emby-scroller {
-    padding-left: 3%;
-}
-
 /* Media Scroller: Max card width */
 .itemsContainer-tv > .overflowBackdropCard {
     max-width: 30em;
 }
 
+/* Media Scroller: Position (TV) */
+.layout-tv .verticalSection .emby-scroller {
+    padding-left: 2%;
+}
+
+/* Media Scroller: Position (Desktop) */
+.layout-desktop .verticalSection .emby-scroller {
+    padding-left: 3%;
+}
+
 /* Media Scroller: Card Spacing (TV) */
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
     margin-left: 1%;
-    /* margin-top: .5%;
-    margin-bottom: .5%; */
 }
-/*
-.layout-tv .itemsContainer-tv > .overflowPortraitCard {
-    margin-left: .75%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}*/
-/*
-.layout-tv .itemsContainer-tv > .personCard {
-    margin-left: 0%;
-    margin-top: .25%;
-    margin-bottom: .25%;
-}*/
-
-/* Media Scroller: Card Spacing (Desktop)
-.layout-desktop .itemsContainer > .overflowBackdropCard ,
-.layout-desktop .itemsContainer > .overflowPortraitCard {
-    margin-top: .25%;
-    margin-bottom: .25%;
-} */
 
 /* Media Scroller: Card Size (Mobile) */
 .layout-mobile .overflowBackdropCard {
@@ -1601,13 +1521,6 @@
     padding-left: 0em;
     height: 5em;
 }
-/*
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):hover {
-    border: solid 2px var(--accent40) !important;
-}
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
-    border: solid 2px var(--accent80) !important;
-} */
 
 /* List Item Cards: Hide Poster on small screens (Mobile) */
 @media (max-width: 40em) {
@@ -1825,13 +1738,6 @@
     height: 15em;
     margin-right: .5em;
 }
-/*
-.listItem-largeImage:hover {
-    border: solid 2px var(--accent40) !important;
-}
-.listItem-largeImage:focus {
-    border: solid 2px var(--accent80) !important;
-} */
 
 /* Large List Items: Align Body */
 .listItem-largeImage .listItemBody {
@@ -1880,10 +1786,6 @@
     display: block;
     text-align: center;
 }
-/*
-.osdPoster img {
-    border: none;
-} */
 .osdTextContainer {
     margin: 0 !important;
     margin-top: 0.2em !important;
@@ -1907,7 +1809,6 @@
 /* Player OSD: Skip-Button */
 .skip-button {
     color: #fff;
-    /* border: none !important; */
 }
 
 /* Progressbar & Volume */
@@ -2021,7 +1922,6 @@
 /* UpNext: Buttons */
 .upNextDialog-button {
     margin-left: .5em;
-    /* border: var(--buttonborder) !important; */
     -webkit-transform: none !important;
     transform: none !important;
 }
@@ -2144,14 +2044,6 @@
 .updatePasswordForm .emby-button.block {
     margin-top: 2em;
 }
-
-/* User Profile: Image
-.imagePlaceHolder {
-    border: var(--buttonborder) !important;
-}
-.imagePlaceHolder:hover {
-    border: solid 2px var(--accent40) !important;
-} */
 
 /* User Profile: Username bold */
 h2.username {
