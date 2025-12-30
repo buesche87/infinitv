@@ -58,12 +58,22 @@
 }
 
 /* Library Pages: Move up */
-.layout-mobile .libraryPage {
+.layout-mobile .libraryPage,
+.layout-mobile #displayPreferencesPage,
+.layout-mobile #homeScreenPreferencesPage,
+.layout-mobile #languagePreferencesPage {
     padding-top: 1em !important;
 }
 
 .layout-mobile #itemDetailPage {
     padding-top: 0em !important;
+}
+
+.layout-mobile #userProfilePage,
+.layout-mobile #myPreferencesMenuPage,
+.layout-mobile #quickConnectPreferencesPage,
+.layout-mobile #searchPage {
+    padding-top: 2em !important;
 }
 
 /* Media Details: Move image up */

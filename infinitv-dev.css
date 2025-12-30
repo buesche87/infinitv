@@ -349,6 +349,7 @@
 .emby-select-withcolor,
 .itemProgressBar,
 .itemsViewSettingsContainer,
+.paperList,
 .pageTabContent > .focuscontainer-x,
 .raised:focus,
 .selectionCommandsPanel,
@@ -389,7 +390,7 @@
 .emby-select-withcolor:focus,
 .emby-textarea:focus,
 .favorite-button:focus,
-.listItem-focusscale:focus
+.listItem-focusscale:focus,
 .play-button:focus {
     background: rgba(0, 0, 0, 0.8) !important;
 }
@@ -626,6 +627,7 @@
 .listItemIcon,
 .listTextButton-autohide,
 .mediaSourceIndicator,
+.paperList,
 .playedIndicator,
 .raised,
 .sectionTitle,
@@ -1804,15 +1806,15 @@
     top: 0.5em;
 }
 
-.layout-mobile .listItem-bottomoverview {
+.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
     margin: .5em;
 }
 
-.layout-mobile .listItem-content {
+.layout-mobile .detailPageWrapperContainer .listItem-content {
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
 }
 
-.layout-mobile .listItemBody {
+.layout-mobile .detailPageWrapperContainer .listItemBody {
     text-align: center;
 }
 
