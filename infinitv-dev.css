@@ -58,7 +58,21 @@
 */
 
 /* Background Image: If Backdrops disabled */
-.backgroundContainer:not(.withBackdrop),
+.backgroundContainer {
+    background:
+        linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
+        var(--bgImage) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Darken Background with Backdrops enables */
+.backgroundContainer.withBackdrop {
+    background: rgba(0, 0, 0, var(--bgdarkness)) !important;
+}
+
+/* Background Image on Homepage */
 .backgroundContainer.withBackdrop:has(~ .mainAnimatedPages > .homePage:not(.hide)) {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -66,16 +80,11 @@
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    /* background-attachment: fixed !important; */
 }
 
+/* Transparent Background */
 .backgroundContainer-transparent {
     background: #0000 !important;
-}
-
-/* Darken Background with Backdrops enables */
-.backgroundContainer.withBackdrop {
-    background-color: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
 /*
