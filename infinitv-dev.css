@@ -58,15 +58,19 @@
 */
 
 /* Background Image: If Backdrops disabled */
-.backgroundContainer:not(.withBackdrop):not(.backgroundContainer-transparent),
-.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
+.backgroundContainer:not(.withBackdrop),
+.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages > .homePage:not(.hide)) {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
         var(--bgImage) !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+    /* background-attachment: fixed !important; */
+}
+
+.backgroundContainer-transparent {
+    background: #0000 !important;
 }
 
 /* Darken Background with Backdrops enables */
@@ -1067,12 +1071,12 @@
 }
 
 /* Cards: Rounding Top, Flat Bottom */
+/* .visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
 .visualCardBox:has(.cardFooter) .cardImage,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
-.visualCardBox:has(.cardFooter) .cardOverlayContainer,
-.visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent {
+.visualCardBox:has(.cardFooter) .cardOverlayContainer {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
@@ -1098,8 +1102,11 @@
 }
 
 /* Card Text: Shadow (only without footer) */
-:not(.cardFooter) > .cardText.cardText-first {
+.cardText-first {
     padding-top: .5em !important;
+}
+.cardFooter > .cardText.cardText-first {
+    padding-top: .25em !important;
 }
 
 /* Card Text: Secondary Text */
