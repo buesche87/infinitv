@@ -1,0 +1,178 @@
+
+/*
+===========================================================================
+   Library Pages: Sections
+===========================================================================
+*/
+
+/* Sections: Title */
+.layout-tv .verticalSection > .sectionTitle-cards,
+.layout-tv .verticalSection > .sectionTitleContainer-cards {
+    text-align: center;
+    padding-left: 0%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    /* margin-top: 1.5%; */
+    margin-bottom: 1.5%;
+}
+.layout-desktop .verticalSection > .sectionTitle-cards,
+.layout-desktop .verticalSection > .sectionTitleContainer-cards {
+    padding-left: 2.5%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    margin-top: .25em;
+    margin-bottom: .5em;
+}
+.layout-mobile .verticalSection > .sectionTitle-cards,
+.layout-mobile .verticalSection > .sectionTitleContainer-cards {
+    text-align: center;
+    padding-left: 0em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+.layout-tv #indexPage .sectionTitleContainer-cards,
+.layout-tv #resumableSection .sectionTitleContainer-cards,
+.layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+/* Sections: Scroller Alignment */
+.layout-tv #indexPage .homeSectionsContainer .emby-scroller,
+.layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
+    padding-left: 1em;
+}
+
+/* Media Page Sections: Title */
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitle {
+    display: block;
+    font-weight: 600;
+}
+.layout-tv .detailPagePrimaryContainer .sectionTitle {
+    text-align: left;
+    padding-left: 2%;
+}
+.layout-desktop .detailPagePrimaryContainer .sectionTitle {
+    padding-left: 1.5% !important;
+}
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
+    text-align: center;
+    margin-bottom: 1%;
+}
+.layout-desktop .detailPageSecondaryContainer .sectionTitle {
+    padding-left: 3.5% !important;
+}
+.layout-tv #guestCastHeader,
+.layout-tv #peopleHeader {
+    margin-bottom: .5%;
+}
+
+
+.sectionTitleTextButton > .sectionTitle,
+.sectionTitleTextButton > .material-icons {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+
+/* Library Page: Collections */
+.layout-tv .collectionEditorPage .sectionTitleContainer {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.layout-tv .collectionEditorPage #resumableItems,
+.layout-tv .collectionEditorPage #recentlyAddedItems,
+.layout-tv .collectionEditorPage #genresTab .itemsContainer-tv {
+    padding-left: 2.5%;
+}
+
+.layout-tv .padded-bottom-focusscale {
+    padding-bottom: 1.5em;
+}
+
+.layout-tv #tvRecommendedPage .itemsContainer-tv {
+    padding-top: 1em;
+}
+
+.layout-tv .collectionEditorPage .padded-bottom-focusscale {
+    padding-bottom: 2em;
+}
+
+
+/* Sections: Scroll Buttons */
+.layout-desktop .verticalSection > .emby-scrollbuttons {
+    padding-top: .4%;
+    padding-bottom: 0em;
+}
+
+/* Sections: Action Buttons */
+.sectionTitleTextButton > .sectionTitle,
+.sectionTitleTextButton > .material-icons {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+/* Sections: Link Buttons (Mobile) */
+.layout-mobile :not(.sectionTitleContainer-cards) .sectionTitleTextButton .sectionTitle-cards {
+    padding-left: 0em;
+    padding-top: 0em;
+}
+.layout-mobile .sectionTitleTextButton > .material-icons {
+    padding-top: 0em;
+}
+
+/*
+===========================================================================
+   Library Pages: Media Scroller
+===========================================================================
+*/
+
+/* Media Scroller: Max card width */
+.itemsContainer-tv > .overflowBackdropCard {
+    max-width: 30em;
+}
+
+/* Media Scroller: Position (TV) */
+.layout-tv .verticalSection .emby-scroller {
+    padding-left: 2.5%;
+}
+
+/* Media Scroller: Position (Desktop) */
+.layout-desktop .verticalSection .emby-scroller {
+    padding-left: 2%;
+}
+
+/* Media Scroller: Alignment (TV) */
+#moviesPage #resumableItems {
+    padding-bottom: 1.5em;
+}
+
+
+
+/* Media Scroller: Card Spacing (TV) */
+.layout-tv .itemsContainer-tv > .overflowBackdropCard  {
+    margin-left: 1%;
+}
+.layout-tv .itemsContainer-tv > .overflowPortraitCard {
+    margin-left: .5%;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+.layout-tv .itemsContainer-tv > .personCard {
+    margin-left: 0%;
+}
+
+
+
+/* Media Scroller: Card Size (Mobile) */
+.layout-mobile .overflowBackdropCard {
+    width: 52%;
+}
+.layout-mobile .overflowPortraitCard {
+    width: 25%;
+}

@@ -83,6 +83,8 @@
 }
 
 /* Transparent Background */
+.noBackdropTransparency .detailPagePrimaryContainer, 
+.noBackdropTransparency .detailPageSecondaryContainer,
 .backgroundContainer-transparent {
     background: #0000 !important;
 }
@@ -118,7 +120,6 @@
     .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
     .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
     .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
-    .navMenuOption:hover,
     .overview-expand:hover {
         color: var(--accent80) !important;
     }
@@ -170,6 +171,7 @@
     .emby-tab-button:hover,
     .favorite-button:hover,
     .listItem-border:hover,
+    .navMenuOption:hover,
     .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover,
     .play-button:hover,
     .raised:hover,
@@ -180,7 +182,7 @@
     }
 }
 
-/* Colors: Borders
+/* Border-Colors
 --------------------------------------------------------------------------*/
 
 /* border color: accent 40% */ 
@@ -193,6 +195,7 @@
     .emby-collapsible-button:hover,
     .favorite-button:hover,
     .listTextButton-autohide:hover,
+    .listItem-largeImage:hover,
     .play-button:hover,
     .raised:hover,
     .upNextDialog-button:hover {
@@ -291,6 +294,7 @@
 .navMenuOption,
 .overview-expand,
 .raised,
+.sectionTitleTextButton:focus,
 .sliderBubble,
 .skip-button,
 .upNextDialog-button,
@@ -457,7 +461,8 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .cardOverlayButton:hover {
+    .cardOverlayButton:hover,
+    .listItemImageButton:hover {
         background-color: #0000 !important;
     }
 }
@@ -481,7 +486,6 @@
 .defaultCardBackground5 {
     background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
-
 
 /*
 ============================================================================
@@ -536,8 +540,10 @@
 }
 
 /* Borders: accent 80% 1px */
-.navMenuOption:hover {
-    border: solid 1px var(--accent80) !important;
+@media (hover: hover) and (pointer: fine) {
+    .navMenuOption:hover {
+        border: solid 1px var(--accent80) !important;
+    }
 }
 
 /* Borders: transparent 1px */
@@ -586,7 +592,7 @@
 .chapterThumbContainer,
 .chapterThumbTextContainer,
 .detailButton,
-.detailImageContainer .card,
+/* .detailImageContainer .card, */
 .detail-button,
 .favorite-button,
 .imagePlaceHolder,
@@ -623,7 +629,6 @@
 .itemsViewSettingsContainer,
 .listItem-border,
 .listItemButton,
-.listItemImageButton,
 .listItemIcon,
 .listTextButton-autohide,
 .mediaSourceIndicator,
@@ -643,7 +648,9 @@
 
 /* No border radius */
 .layout-tv .detailPageSecondaryContainer .sectionTitle,
-.layout-mobile .homePage .sectionTitleContainer-cards {
+.layout-tv .homePage .sectionTitle,
+.homePage .sectionTitleContainer-cards,
+.homePage .sectionTitle-cards {
     border-radius: 0 !important;
 }
 
@@ -684,7 +691,7 @@
 /* Shadows: --buttonglow */
 .layout-tv .detailButton:focus,
 .layout-tv .favorite-button:focus,
-.layout-tv .listItem-focusscale:focus,
+/* .layout-tv .listItem-focusscale:focus, */
 .layout-tv .listItem-largeImage:focus,
 .layout-tv .play-button:focus,
 .layout-desktop .detailButton:focus,
@@ -841,12 +848,6 @@
     font-weight: bold;
 }
 
-/* Header Buttons: no Zoom */
-.headerButton:focus {
-    -webkit-transform: none !important;
-    transform: none !important;
-}
-
 /* Header Section Tabs: Stay in Header with invisible scroll */
 .layout-tv .headerTabs.sectionTabs,
 .layout-desktop .headerTabs.sectionTabs {
@@ -878,6 +879,14 @@
 .button-submit,
 .raised {
     margin: 0.5em 0;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* Buttons: Header Buttons
+--------------------------------------------------------------------------*/
+
+.headerButton:focus {
     -webkit-transform: none !important;
     transform: none !important;
 }
@@ -927,7 +936,7 @@
     transform: none !important;
 }
 
-/* Collapsible Menu: Button Text */
+/* Collapsible Button: Text */
 .emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
     margin-left: 0.5em;
 }
@@ -950,11 +959,6 @@
     text-shadow: var(--textshadow) !important;
 }
 
-.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
-    width: 100%;
-    text-align: center;
-}
-
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
 
@@ -971,7 +975,7 @@
     transform: scale(1.2) !important;
 }
 
-/* Buttons: Buttons on Slides (Desktop & Mobile)
+/* Buttons: Slide Buttons (Desktop & Mobile)
 --------------------------------------------------------------------------*/
 .play-button,
 .detail-button,
@@ -1008,7 +1012,7 @@
 /* ClearLinks: Buttons with Link-Buttons inside (why...?)
 --------------------------------------------------------------------------*/
 
-/* Clearlinks: Won't focus with remote > hide (TV) */
+/* Clearlinks: Won't focus with remote > hide in TV layout */
 .layout-tv .sectionTitleContainer > .clearLink {
     display: none;
 }
@@ -1065,9 +1069,12 @@
 .selectArrow {
     margin-top: .1em !important;
 }
+
+/* Select Container: Label */
 .selectLabel {
     align-self: center;
 }
+
 
 /*
 ===========================================================================
@@ -1111,7 +1118,7 @@
     }
 }
 
-/* Card Text: Shadow (only without footer) */
+/* Card Text First: Spacing with and without card footer */
 .cardText-first {
     padding-top: .5em !important;
 }
@@ -1119,7 +1126,7 @@
     padding-top: .25em !important;
 }
 
-/* Card Text: Secondary Text */
+/* Card Text Secondary: Font size */
 .cardText.cardText-secondary {
     font-size: 75% !important;
 }
@@ -1150,7 +1157,7 @@
     transform: scale(1.1);
 }
 
-/* More space for animations */
+/* More space for zoom & glow animations */
 @media (pointer: fine) {
     .itemsContainer .cardBox {
         margin-left: .5em !important;
@@ -1264,25 +1271,24 @@
 ============================================================================
 */
 
-/* Disable Slides (TV - they don't work well with a remote) */
+/* Home Sections Container: alignment */
+.layout-tv .homeSectionsContainer {
+    top: 0;
+}
+.layout-mobile .homeSectionsContainer {
+    top: 78vh;
+}
+
+/* Slides: Disable in TV layout (they don't work well with a remote) */
 .layout-tv #slides-container {
     display: none !important;
 }
 
-/* Use freed up Space (TV) */
-.layout-tv .homeSectionsContainer {
-    top: 0;
-}
-
-/* Slides */
+/* Slides: Font Size */
 .slide .genre,
 .slide .info-container,
 .slide .plot-container {
     font-size: 120%;
-}
-
-.layout-mobile .homeSectionsContainer {
-    top: 78vh;
 }
 
 /*
@@ -1291,7 +1297,7 @@
 ===========================================================================
 */
 
-/* Library Pages: Move up */
+/* Library Pages: Alignment */
 .layout-tv .libraryPage {
     padding-top: 5em !important;
 }
@@ -1302,8 +1308,6 @@
     padding-left: 3vw !important;
     padding-right: 3vw !important;
 }
-
-/* Library Pages: Center Content */
 .layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
 .layout-mobile .libraryPage .padded-right-withalphapicker {
     padding-left: 3vw !important;
@@ -1313,19 +1317,6 @@
 /* Library Pages: Item backdrop alignment (Mobile) */
 .layout-mobile .itemBackdrop {
     margin-top: 3.9rem;
-}
-
-.verticalSection[data-type="Episode"] .sectionTitleContainer-cards {
-    background: #0000 !important;
-}
-.verticalSection[data-type="Episode"] .sectionTitle {
-    background: hsl(0deg 0% 100% / 10%);
-    text-align: center;
-    padding-left: 0em;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: .25em;
-    margin-bottom: .25em;
 }
 
 /* Library Pages: Alphabet Picker */
@@ -1343,94 +1334,96 @@
 
 /*
 ===========================================================================
-   Library Pages: Sections
+   Library Pages: Section Titles
 ===========================================================================
 */
 
-/* Sections: Title */
-.layout-tv .verticalSection > .sectionTitle-cards,
-.layout-tv .verticalSection > .sectionTitleContainer-cards {
-    text-align: center;
-    padding-left: 0%;
-    padding-top: .5%;
-    padding-bottom: .5%;
-    /* margin-top: 1.5%; */
-    margin-bottom: 1.5%;
+/* Section Titles */
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitl {
+    font-weight: 600;
 }
-.layout-desktop .verticalSection > .sectionTitle-cards,
-.layout-desktop .verticalSection > .sectionTitleContainer-cards {
-    padding-left: 3.8%;
-    padding-top: .5%;
-    padding-bottom: .5%;
-    margin-top: .25em;
-    margin-bottom: .5em;
+
+/*
+.verticalSection[data-type="Episode"] .sectionTitleContainer-cards {
+    background: #0000 !important;
 }
-.layout-mobile .verticalSection > .sectionTitle-cards,
-.layout-mobile .verticalSection > .sectionTitleContainer-cards {
+.verticalSection[data-type="Episode"] .sectionTitle {
+    background: hsl(0deg 0% 100% / 10%);
     text-align: center;
     padding-left: 0em;
     padding-top: 1%;
     padding-bottom: 1%;
     margin-top: .25em;
     margin-bottom: .25em;
-}
-.layout-tv #indexPage .sectionTitleContainer-cards,
-.layout-tv #resumableSection .sectionTitleContainer-cards,
-.layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
+} */
 
 
-/* Sections: Scroller Alignment */
-.layout-tv #indexPage .homeSectionsContainer .emby-scroller,
-.layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
-    padding-left: 1em;
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+/* Section Title Container */
+.layout-tv .sectionTitleContainer-cards,
+.layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    text-align: center;
+    padding-bottom: .5%;
+    padding-top: .5%;
 }
 
-/* Media Page Sections: Title */
-.detailPagePrimaryContainer .sectionTitle,
-.detailPageSecondaryContainer .sectionTitle {
-    display: block;
-    font-weight: 600;
-}
+/* Section Titles */
 .layout-tv .detailPagePrimaryContainer .sectionTitle {
     text-align: left;
     padding-left: 2%;
 }
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
+    text-align: center;
+}
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* Section Title Container */
+.layout-desktop .sectionTitleContainer-cards,
+.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    padding-left: 2.5%;
+    padding-bottom: .5%;
+    padding-top: .5%;
+}
+
+/* Section Titles */
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
     padding-left: 1.5% !important;
 }
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
-    text-align: center;
-    margin-bottom: 1%;
-}
-.layout-desktop .detailPageSecondaryContainer .sectionTitle {
-    padding-left: 3.5% !important;
-}
-.layout-tv #guestCastHeader,
-.layout-tv #peopleHeader {
-    margin-bottom: .5%;
+
+/* Section Title: Text & Icon */
+.sectionTitleTextButton>.sectionTitle,
+.sectionTitleTextButton>.material-icons {
+    padding: 0;
+    margin: 0;
 }
 
-/* Sections: Scroll Buttons */
+/* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: .2%;
+    padding-top: .25%;
     padding-bottom: 0em;
 }
-.layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards,
-.layout-desktop .sectionTitleTextButton > .material-icons {
-    margin-top: 0em;
-    margin-bottom: 0em;
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+/* Section Title Container */
+.layout-mobile .sectionTitleContainer-cards,
+.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+    text-align: center;
+    padding-bottom: .5%;
+    padding-top: .5%;
 }
 
-/* Sections: Link Buttons (Mobile) */
-.layout-mobile :not(.sectionTitleContainer-cards) .sectionTitleTextButton .sectionTitle-cards {
-    padding-left: 0em;
-    padding-top: 0em;
-}
-.layout-mobile .sectionTitleTextButton > .material-icons {
-    padding-top: 0em;
+/* Section Title: Text & Icon */
+.layout-mobile .sectionTitle>.material-icons,
+.layout-mobile .sectionTitleTextButton>.material-icons {
+    padding: 0;
+    margin: 0;
 }
 
 /*
@@ -1439,89 +1432,87 @@
 ===========================================================================
 */
 
-/* Media Scroller: Max card width */
-.itemsContainer-tv > .overflowBackdropCard {
-    max-width: 30em;
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+/* Scroller Default Alignment */
+.layout-tv .emby-scroller {
+    padding-left: 2.5%;
+}
+.layout-tv .padded-bottom-focusscale,
+.layout-tv .detailPagePrimaryContainer .itemsContainer {
+    margin-bottom: -0.5em;
+    padding-bottom: 1.5em;
+}
+.layout-tv .padded-top-focusscale,
+.layout-tv .detailPagePrimaryContainer .itemsContainer {
+    margin-top: -0.5em;
+    padding-top: 1.5em;
 }
 
-/* Media Scroller: Position (TV) */
-.layout-tv .verticalSection .emby-scroller {
-    padding-left: 2%;
+/* Scroller: detailPage scroller in primary container */
+.layout-tv .detailPagePrimaryContainer .itemsContainer {
+    padding-right: 0em;
 }
 
-/* Media Scroller: Position (Desktop) */
-.layout-desktop .verticalSection .emby-scroller {
-    padding-left: 3%;
+/* scroller: detailPage last scroller on page (more like this) */
+.layout-tv .verticalSection-extrabottompadding .emby-scroller {
+    padding-top: 2em;
 }
 
-/* Media Scroller: Alignment (TV) */
-#moviesPage #resumableItems {
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* scroller: default alignment */
+.layout-desktop .emby-scroller {
+    padding-left: 2.5%;
+}
+.layout-desktop .padded-bottom-focusscale,
+.layout-desktop .detailPagePrimaryContainer .itemsContainer {
+    margin-bottom: -0.5em;
     padding-bottom: 1em;
 }
-
-
-
-/* Media Scroller: Card Spacing (TV) */
-.layout-tv .itemsContainer-tv > .overflowBackdropCard  {
-    margin-left: 1%;
-}
-.layout-tv .itemsContainer-tv > .overflowPortraitCard {
-    margin-left: .5%;
-    margin-bottom: .5em;
-    margin-top: .5em;
-}
-.layout-tv .itemsContainer-tv > .personCard {
-    margin-left: 0%;
+.layout-desktop .padded-top-focusscale,
+.layout-desktop .detailPagePrimaryContainer .itemsContainer {
+    margin-top: -0.5em;
+    padding-top: 1em;
 }
 
+/* Layout Mobile
+--------------------------------------------------------------------------*/
 
-
-/* Media Scroller: Card Size (Mobile) */
-.layout-mobile .overflowBackdropCard {
-    width: 52%;
+.layout-mobile .padded-bottom-focusscale,
+.layout-mobile .detailPagePrimaryContainer .itemsContainer {
+    margin-bottom: -0.5em;
+    padding-bottom: .75em;
 }
-.layout-mobile .overflowPortraitCard {
-    width: 25%;
+.layout-mobile .padded-top-focusscale,
+.layout-mobile .detailPagePrimaryContainer .itemsContainer {
+    margin-top: -0.5em;
+    padding-top: .75em;
 }
 
 /*
 ===========================================================================
-   Library Pages: Sorting & Filter
+   Library Pages: Media Scroller Cards
 ===========================================================================
 */
 
-/* Filter & Sorting Header */
-.pageTabContent > .focuscontainer-x,
-.itemsViewSettingsContainer {
-    margin-bottom: 1.5em;
-    padding: 0.25em;
+/* Media Scroller Cards: Spacing & Alignment (TV) */
+.layout-tv .overflowBackdropCard  {
+    margin-right: .9%;
+}
+.layout-tv .overflowPortraitCard {
+    margin-right: .6%;
+    margin-bottom: .6em;
 }
 
-/* Filter & Sorting Header: Buttons */
-.pageTabContent .focuscontainer-x .paper-icon-button-light {
-    -webkit-transform: none !important;
-    transform: none !important;
+/* Media Scroller Cards: Size (Mobile) */
+.layout-mobile .overflowBackdropCard {
+    width: 52%;
 }
-
-/* Filter & Sorting Header: Buttons */
-.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
-    margin: 0 .2em;
-}
-
-/* Filter & Sorting Header: Item Count */
-.listPaging > span {
-    margin-left: .5em;
-    margin-right: .5em;
-}
-
-/* Filter Indicator */
-.filterIndicator {
-    color: black;
-}
-
-/* Sorting Menu: Radio Button spacing */
-.radio-label-block {
-    margin: 1em !important;
+.layout-mobile .overflowPortraitCard {
+    width: 33%;
 }
 
 /*
@@ -1567,8 +1558,8 @@
 /* View: List
 --------------------------------------------------------------------------*/
 
-/* List Item Cards */
-.itemsContainer > .listItem-focusscale {
+/* Card (TV) */
+.layout-tv .itemsContainer > .listItem-focusscale {
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
@@ -1576,8 +1567,44 @@
     padding-left: 0em;
     height: 5em;
 }
+.layout-tv .itemsContainer > .listItem-focusscale .listItemImage {
+    height: 5em;
+    width: 10em;
+}
+.layout-tv .itemsContainer > .listItem-focusscale:focus .listItemImage {
+    width: 11em;
+}
 
-/* List Item Cards: Hide Poster on small screens (Mobile) */
+/* Hide Alphapicker > steals focus with remote */
+.layout-tv .listItem-focusscale ~ .alphaPicker {
+    display: none !important;
+}
+
+/* Card (Desktop) */
+.layout-desktop .itemsContainer > .listItem-border {
+    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    border-radius: var(--rounding-media) !important;
+    padding-top: .5em !important;
+    padding-bottom: .5em !important;
+    padding-right: 0 !important;
+    margin-bottom: .25em !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover {
+    border: 2px solid var(--accent40) !important;
+}
+
+/* Card Content */
+.layout-desktop .itemsContainer > .listItem-border .listItemImage {
+    transform: scale(1.3)
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBody {
+    padding-left: 2%;
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBodyText {
+    font-weight: 600;
+}
+
+/* Hide Image on small screens (Mobile) */
 @media (max-width: 40em) {
     [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
         display: flex;
@@ -1589,24 +1616,6 @@
     }
 }
 
-/* List Item Cards: Picture Size */
-.itemsContainer > .listItem-focusscale .listItemImage {
-    height: 5em;
-    width: 10em;
-}
-.itemsContainer > .listItem-focusscale:focus .listItemImage {
-    width: 11em;
-}
-
-/* Hide Alphapicker > steals focus with remote */
-.layout-tv .itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
-    display: none !important;
-}
-
-.layout-tv .listItem-focusscale ~ .alphaPicker {
-    display: none;
-}
-
 /* View: Poster
 --------------------------------------------------------------------------*/
 
@@ -1614,6 +1623,44 @@
 .layout-tv .itemsContainer > .portraitCard {
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
+}
+
+/*
+===========================================================================
+   Library Pages: Sorting & Filter
+===========================================================================
+*/
+
+/* Filter & Sorting Header */
+.pageTabContent>.focuscontainer-x,
+.itemsViewSettingsContainer {
+    margin-bottom: 1.5em;
+    padding: 0.25em;
+}
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
+    margin: 0 .2em;
+}
+
+/* Filter & Sorting Header: Item Count */
+.listPaging > span {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/* Filter Indicator */
+.filterIndicator {
+    color: black;
+}
+
+/* Sorting Menu: Radio Button spacing */
+.radio-label-block {
+    margin: 1em !important;
 }
 
 /*
@@ -1640,7 +1687,7 @@
 
 /* Media Pages: Increase Season Title Text */
 .layout-tv .selfBackdropPage .itemName,
-.layout-desktop .selfBackdropPage .itemName{
+.layout-desktop .selfBackdropPage .itemName {
     font-size: 150%;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -1687,8 +1734,11 @@
 }
 
 /* Detail-Ribbon: Info Container */
-.infoWrapper {
+.layout-mobile .infoWrapper {
     padding-bottom: 0.15em;
+}
+.layout-desktop .infoWrapper {
+    padding-top: .25em;
 }
 
 /* Detail-Ribbon: Media Infos */
@@ -1722,16 +1772,15 @@
     padding-bottom: 1em;
 }
 
-.layout-mobile .detailPagePrimaryContent .detailSection .trackSelections {
-    padding-top: 1em;
-}
-
 /* Media Details: Tracks & Subtitles */
 .leyout-tv .trackSelections {
     max-width: 100%;
     width: 60%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+.layout-mobile .trackSelections {
+    padding-top: 1em;
 }
 
 /* Media Details: Track Select */
@@ -1745,7 +1794,7 @@
 ===========================================================================
 */
 
-/* Media Description: Secondary Content */
+/* Media Description: Container */
 .layout-tv .detailPageSecondaryContainer,
 .layout-desktop .detailPageSecondaryContainer{
     padding-top: 2em !important;
@@ -1754,6 +1803,7 @@
     padding-top: 0em !important;
 }
 
+/* Media Pages: Content */
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-desktop .detailPageSecondaryContainer .detailPageContent {
     padding-left: 0;
@@ -1774,31 +1824,30 @@
 
 /*
 ===========================================================================
-   Media Pages: Section Scroller
+   Media Pages: Sections
 ===========================================================================
 */
 
-/* Section Scroller: Space between Sections (TV) */
+/* Sections: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
-    margin-bottom: 1em !important;
+    margin-bottom: 0em !important;
 }
 
 /* Cards: Large List Items */
 .listItem.listItem-largeImage {
-    /* border: var(--buttonborder) !important; */
     margin-bottom: 1em;
     padding: 0em;
-    border-color: hsl(0deg 0% 100% / 20%) !important;
+    border-color: hsl(0deg 0% 100% / 20%);
     -webkit-transform: none !important;
     transform: none !important;
     margin-right: .5em;
 }
-
 .layout-tv .listItem.listItem-largeImage,
 .layout-desktop .listItem.listItem-largeImage {
-    height: 15em;
     max-height: 15em;
-    left: -.5em;
+}
+.layout-tv .listItem.listItem-largeImage {
+     height: 15em;
 }
 
 /* Large List Items: Align Body */
@@ -1813,21 +1862,19 @@
     max-height: 8.5em;
 }
 
-
-/* Section Scroller: Large Episode Indicator */
+/* List Items: Indicator */
 .listItemIndicators {
     left: 0.5em;
     top: 0.5em;
 }
 
+
 .layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
     margin: .5em;
 }
-
 .layout-mobile .detailPageWrapperContainer .listItem-content {
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
 }
-
 .layout-mobile .detailPageWrapperContainer .listItemBody {
     text-align: center;
 }
@@ -1896,6 +1943,12 @@
     background: #0000 !important;
 }
 
+/* Progressbar & Volume: Marker */
+.sliderMarker {
+    width: 3px;
+    border-radius: 2px;
+}
+
 /*
 ===========================================================================
    Player OSD: Header & Footer
@@ -1917,7 +1970,6 @@
 /* OSD Footer: Small Box-Layout */
 @media all and (min-width: 105em) {
     .videoOsdBottom {
-        /* background: rgba(0, 0, 0, var(--headeropacity)) !important; */
         padding-top: .5em;
         padding-bottom: 1em;
         margin-bottom: 2em;
@@ -1930,18 +1982,6 @@
 /* OSD Footer: Lift Progressbar */
 .buttons.focuscontainer-x {
     padding-top: .5em;
-}
-
-/*
-===========================================================================
-   Player OSD: Progressbar & Volume
-===========================================================================
-*/
-
-/* Player OSD: Progressbar Vertical Marker */
-.sliderMarker {
-    width: 3px;
-    border-radius: 2px;
 }
 
 /*
@@ -2028,6 +2068,12 @@
     background: linear-gradient(140deg,var(--accent100),#111) !important;
 }
 
+/*
+===========================================================================
+   Settings: Individual Sites
+===========================================================================
+*/
+
 /* Settings Pages: Center content and Text */
 #userProfilePage,
 #quickConnectPreferencesPage {
@@ -2044,6 +2090,10 @@
 #languagePreferencesPage,
 #searchPage {
     padding-top: 5em !important;
+}
+.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
+    width: 100%;
+    text-align: center;
 }
 
 /* Preferences Pages */
