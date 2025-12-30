@@ -1315,6 +1315,19 @@
     margin-top: 3.9rem;
 }
 
+.verticalSection[data-type="Episode"] .sectionTitleContainer-cards {
+    background: #0000 !important;
+}
+.verticalSection[data-type="Episode"] .sectionTitle {
+    background: hsl(0deg 0% 100% / 10%);
+    text-align: center;
+    padding-left: 0em;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
 /* Library Pages: Alphabet Picker */
 .alphaPickerButton {
     height: 1.6em;
@@ -1645,6 +1658,7 @@
 /* Media Pages: Center Content (Mobile) */
 .layout-mobile .verticalSection .itemsContainer.vertical-wrap {
     justify-content: center;
+    padding-right: 0em;
 }
 
 /*
