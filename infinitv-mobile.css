@@ -58,7 +58,11 @@
 }
 
 /* Library Pages: Move up */
-.layout-mobile .libraryPage:not(#indexPage) {
+.layout-mobile .libraryPage {
+    padding-top: 1em !important;
+}
+
+.layout-mobile #itemDetailPage {
     padding-top: 0em !important;
 }
 
@@ -74,5 +78,5 @@
 
 /* Media Lists: Filter Bar */
 .layout-mobile .pageTabContent > .focuscontainer-x {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }

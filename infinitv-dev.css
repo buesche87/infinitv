@@ -125,40 +125,38 @@
 }
 
 /* Colors: accent 100 % */
-.actionSheetContent .listItemIcon.check,
-.upNextDialog-countdownText,
-.inputLabelFocused,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-slider,
-.playedIndicator,
-.playstatebutton-icon-played,
-.ratingbutton-icon-withrating,
-.selectLabelFocused,
-.syncPlayIconCircle,
-.textareaLabelFocused,
-.upNextDialog-countdownText,
 .actionSheetMenuItem:focus,
 .button-link:focus,
 .button-submit:focus,
 .clearLink > .emby-button:focus,
-.detailButton:hover,
 .emby-button.block:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .emby-collapsible-button:focus,
 .emby-tab-button:focus,
+.headerButton:active,
+.inputLabelFocused,
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary,
 .listItem-border:focus,
 .listItem-button:focus .listItemBodyText:not(.secondary),
 .listTextButton-autohide:focus,
+.listItemIcon.check,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-slider,
 .overview-expand:focus,
 .paper-icon-button-light:not(.alphaPickerButton):focus,
 .paper-icon-button-light:not(.alphaPickerButton):active,
+.playedIndicator,
+.playstatebutton-icon-played,
 .raised:focus,
-.raised:hover,
+.ratingbutton-icon-withrating,
+.selectLabelFocused,
 .skip-button:focus,
-.upNextDialog-button:focus {
+.syncPlayIconCircle,
+.textareaLabelFocused,
+.upNextDialog-button:focus,
+.upNextDialog-countdownText {
     color: var(--accent100) !important;
 }
 
@@ -502,6 +500,7 @@
 .favorite-button,
 .imagePlaceHolder,
 .listItem-focusscale,
+.listItem-largeImage,
 .play-button,
 .raised,
 .upNextDialog-button {
@@ -640,9 +639,9 @@
     border-radius: var(--rounding-system) !important;
 }
 
-
 /* No border radius */
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
+.layout-tv .detailPageSecondaryContainer .sectionTitle,
+.layout-mobile .homePage .sectionTitleContainer-cards {
     border-radius: 0 !important;
 }
 
@@ -683,12 +682,12 @@
 /* Shadows: --buttonglow */
 .layout-tv .detailButton:focus,
 .layout-tv .favorite-button:focus,
-.layout-tv .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
+.layout-tv .listItem-focusscale:focus,
 .layout-tv .listItem-largeImage:focus,
 .layout-tv .play-button:focus,
 .layout-desktop .detailButton:focus,
 .layout-desktop .favorite-button:focus,
-.layout-desktop .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
+.layout-desktop .listItem-focusscale:focus,
 .layout-desktop .listItem-largeImage:focus,
 .layout-desktop .play-button:focus,
 .upNextContainer,
@@ -892,7 +891,7 @@
     transform: scale(1.1)!important;
 }
 .emby-tab-button-active {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Buttons: Action Sheet Menu Items
@@ -1281,7 +1280,7 @@
 }
 
 .layout-mobile .homeSectionsContainer {
-    top: 67vh;
+    top: 78vh;
 }
 
 /*
@@ -1467,7 +1466,7 @@
     width: 52%;
 }
 .layout-mobile .overflowPortraitCard {
-    width: 26%;
+    width: 25%;
 }
 
 /*
@@ -1554,8 +1553,7 @@
 --------------------------------------------------------------------------*/
 
 /* List Item Cards */
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage) {
-    /* border: var(--buttonborder) !important; */
+.itemsContainer > .listItem-focusscale {
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
@@ -1577,11 +1575,11 @@
 }
 
 /* List Item Cards: Picture Size */
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage) .listItemImage {
+.itemsContainer > .listItem-focusscale .listItemImage {
     height: 5em;
     width: 10em;
 }
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus .listItemImage {
+.itemsContainer > .listItem-focusscale:focus .listItemImage {
     width: 11em;
 }
 
@@ -1770,15 +1768,21 @@
 }
 
 /* Cards: Large List Items */
-.listItem-largeImage {
+.listItem.listItem-largeImage {
     /* border: var(--buttonborder) !important; */
     margin-bottom: 1em;
     padding: 0em;
     border-color: hsl(0deg 0% 100% / 20%) !important;
     -webkit-transform: none !important;
     transform: none !important;
-    height: 15em;
     margin-right: .5em;
+}
+
+.layout-tv .listItem.listItem-largeImage,
+.layout-desktop .listItem.listItem-largeImage {
+    height: 15em;
+    max-height: 15em;
+    left: -.5em;
 }
 
 /* Large List Items: Align Body */
@@ -1793,16 +1797,23 @@
     max-height: 8.5em;
 }
 
-/* Section Scroller: Large Episodes in Season Overview */
-.listItemImage-large {
-    max-height: 15em;
-    left: -.5em;
-}
 
 /* Section Scroller: Large Episode Indicator */
 .listItemIndicators {
     left: 0.5em;
     top: 0.5em;
+}
+
+.layout-mobile .listItem-bottomoverview {
+    margin: .5em;
+}
+
+.layout-mobile .listItem-content {
+    border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
+}
+
+.layout-mobile .listItemBody {
+    text-align: center;
 }
 
 /*
