@@ -1075,7 +1075,6 @@
     align-self: center;
 }
 
-
 /*
 ===========================================================================
    Cards
@@ -1868,6 +1867,12 @@
     top: 0.5em;
 }
 
+/* Play Button Color on Hover */
+.layout-desktop .listItem-largeImage:hover .listItemImageButton {
+    color: var(--accent80) !important;
+}
+
+
 
 .layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
     margin: .5em;
@@ -2170,3 +2175,5 @@ h2.username {
     font-weight: 600;
     color: #fff;
 }
+
+

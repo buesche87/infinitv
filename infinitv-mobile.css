@@ -24,7 +24,7 @@
     order: 1;
 }
 
-/* Header: Switch Buttons */
+/* Header: Switch Button placement */
 .layout-mobile .headerLeft {
     order: 2;
     justify-content: flex-end;
@@ -57,6 +57,14 @@
     padding-bottom: 1vh;
 }
 
+/* Toast center */
+.layout-mobile .toastContainer {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    bottom: 4em;
+}
+
 /* Library Pages: Move up */
 .layout-mobile .libraryPage,
 .layout-mobile #displayPreferencesPage,
@@ -64,11 +72,9 @@
 .layout-mobile #languagePreferencesPage {
     padding-top: 1em !important;
 }
-
 .layout-mobile #itemDetailPage {
     padding-top: 0em !important;
 }
-
 .layout-mobile #userProfilePage,
 .layout-mobile #myPreferencesMenuPage,
 .layout-mobile #quickConnectPreferencesPage,
