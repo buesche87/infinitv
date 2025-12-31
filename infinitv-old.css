@@ -13,8 +13,6 @@
 
 *                                                                          */
 
-/* == Dev / Test File == */
-
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -46,667 +44,29 @@
     /* Border */
     --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
 
-    /* TODO: Header accent color (keep it dark) */
-    --haccent-h: 310;
-    --headeraccent: hsla(var(--haccent-h), 100%, 20%, var(--headeropacity));
 }
 
 /*
 ============================================================================
-   Background Image & Font
+    Background & Font
 ============================================================================
 */
 
 /* Background Image: If Backdrops disabled */
-.backgroundContainer {
+.backgroundContainer:not(.withBackdrop):not(.backgroundContainer-transparent),
+.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages .homePage:not(.hide)) {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
         var(--bgImage) !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
 }
 
 /* Darken Background with Backdrops enables */
 .backgroundContainer.withBackdrop {
-    background: rgba(0, 0, 0, var(--bgdarkness)) !important;
-}
-
-/* Background Image on Homepage */
-.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages > .homePage:not(.hide)) {
-    background:
-        linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
-        var(--bgImage) !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-
-/* Transparent Background */
-.noBackdropTransparency .detailPagePrimaryContainer, 
-.noBackdropTransparency .detailPageSecondaryContainer,
-.backgroundContainer-transparent {
-    background: #0000 !important;
-}
-
-/*
-============================================================================
-   Colors
-============================================================================
-*/
-
-/* Colors: Text
---------------------------------------------------------------------------*/
-
-/* Colors: accent 80 % */
-#loginPage .cardImage,
-.Mui-selected,
-.navMenuOption-selected,
-.detailButton:focus,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label {
-    color: var(--accent80) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .actionSheetMenuItem:hover,
-    .button-link:hover,
-    .emby-collapsible-button:hover,
-    .emby-textarea:hover + .textareaLabel,
-    .emby-checkbox:hover + .checkboxLabel,
-    .favorite-button:hover,
-    .listTextButton-autohide:hover,
-    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
-    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
-    .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
-    .overview-expand:hover {
-        color: var(--accent80) !important;
-    }
-}
-
-/* Colors: accent 100 % */
-.actionSheetMenuItem:focus,
-.button-link:focus,
-.button-submit:focus,
-.clearLink > .emby-button:focus,
-.emby-button.block:focus,
-.emby-checkbox:focus + .checkboxLabel,
-.emby-collapsible-button:focus,
-.emby-tab-button:focus,
-.headerButton:active,
-.inputLabelFocused,
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary,
-.listItem-border:focus,
-.listItem-button:focus .listItemBodyText:not(.secondary),
-.listTextButton-autohide:focus,
-.listItemIcon.check,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-slider,
-.overview-expand:focus,
-.paper-icon-button-light:not(.alphaPickerButton):focus,
-.paper-icon-button-light:not(.alphaPickerButton):active,
-.playedIndicator,
-.playstatebutton-icon-played,
-.raised:focus,
-.ratingbutton-icon-withrating,
-.selectLabelFocused,
-.skip-button:focus,
-.syncPlayIconCircle,
-.textareaLabelFocused,
-.upNextDialog-button:focus,
-.upNextDialog-countdownText {
-    color: var(--accent100) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .button-submit:hover,
-    .cardOverlayButton:hover,
-    .clearLink > .emby-button:hover,
-    .detail-button:hover,
-    .detailButton:hover,
-    .emby-button.block:hover,
-    .emby-tab-button:hover,
-    .favorite-button:hover,
-    .listItem-border:hover,
-    .navMenuOption:hover,
-    .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover,
-    .play-button:hover,
-    .raised:hover,
-    .skip-button:hover,
-    .textActionButton:hover,
-    .upNextDialog-button:hover {
-        color: var(--accent100) !important;
-    }
-}
-
-/* Border-Colors
---------------------------------------------------------------------------*/
-
-/* border color: accent 40% */ 
-@media (hover: hover) and (pointer: fine) {
-    .actionSheetMenuItem:hover,
-    .button-submit:hover,
-    .detail-button:hover,
-    .detailButton:hover,
-    .emby-button.block:hover,
-    .emby-collapsible-button:hover,
-    .favorite-button:hover,
-    .listTextButton-autohide:hover,
-    .listItem-largeImage:hover,
-    .play-button:hover,
-    .raised:hover,
-    .upNextDialog-button:hover {
-        border-color: var(--accent40) !important;
-    }
-}
-
-/* border color: accent 60% */ 
-@media (hover: hover) and (pointer: fine) {
-    .listItem-border:hover {
-        border-color: var(--accent60) !important;
-    }
-}
-
-/* border color: accent 80% */ 
-.favorite-button.favorited,
-.button-submit:focus,
-.detail-button:focus,
-.emby-button.block:focus,
-.favorite-button:focus,
-.play-button:focus,
-.raised:focus,
-.upNextDialog-button:focus {
-    border-color: var(--accent80) !important;
-}
-
-/* border color: accent 100% */ 
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4,
-.progressring-spiner {
-    border-color: var(--accent100) !important;
-}
-
-/* border color: transparent */
-.actionSheetMenuItem,
-.clearLink > .emby-button:focus,
-.detailButton:focus,
-.listItem-border,
-.listTextButton-autohide {
-    border-color: #0000 !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .clearLink > .emby-button:hover {
-        border-color: #0000 !important;
-    }
-}
-
-/*
-============================================================================
-   Backgrounds
-============================================================================
-*/
-
-/* Backgrounds: Transparency
---------------------------------------------------------------------------*/
-
-/* Backgrounds: --headeropacity */
-.dialog,
-.formDialogHeader,
-.formDialogFooter,
-.mainDrawer,
-.skinHeader-withBackground,
-.toast,
-.videoOsdBottom {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-
-/* Backgrounds: --itemopacity */
-.cardFooter:not(.visualCardBox-cardFooter),
-.layout-desktop .detailRibbon,
-.layout-mobile .detailRibbon {
-    background: rgba(0, 0, 0, var(--itemopacity)) !important;
-}
-
-/* Backgrounds: transparent*/
-.actionSheetMenuItem,
-.button-link,
-.button-submit,
-.cardPadder,
-.collapseContent,
-.clearLink,
-.clearLink > .emby-button,
-.detailTrackSelect,
-.emby-collapsible-button,
-.emby-button.block,
-.listItem,
-.listItem-border,
-.listItem-largeImage,
-.listItemBodyText,
-.listItemIcon,
-.listTextButton-autohide,
-.material-icons,
-.navMenuOption,
-.overview-expand,
-.raised,
-.sectionTitleTextButton:focus,
-.sliderBubble,
-.skip-button,
-.upNextDialog-button,
-.clearLink > .emby-button:focus {
-    background: #0000 !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .collapseContent .listItem:hover,
-    .clearLink > .emby-button:hover,
-    .navMenuOption:hover {
-        background: #0000 !important;
-    }
-}
-
-/* Backgrounds: Light
---------------------------------------------------------------------------*/
-
-/* Backgrounds: white 10% */
-#loginPage .cardImage,
-#searchPage .sectionTitle,
-.homeScreenSettingsContainer .sectionTitle,
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus),
-.settingsContainer .sectionTitle,
-.verticalSection > .sectionTitle-cards,
-.verticalSection > .sectionTitleContainer-cards {
-    background: hsl(0deg 0% 100% / 10%);
-}
-
-/* Backgrounds: Dark
---------------------------------------------------------------------------*/
-
-/* Backgrounds: black 20% */
-.detail-button,
-.favorite-button,
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage),
-.play-button {
-    background: rgba(0, 0, 0, 0.2) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .button-submit:hover,
-    .emby-button.block:hover,
-    .raised:hover {
-        background: rgba(0, 0, 0, 0.2) !important;
-    }
-}
-
-/* Backgrounds: black 40% */
-.button-submit:focus,
-.checkboxOutline,
-.emby-button.block:focus,
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor,
-.itemProgressBar,
-.itemsViewSettingsContainer,
-.paperList,
-.pageTabContent > .focuscontainer-x,
-.raised:focus,
-.selectionCommandsPanel,
-#loginPage .padded-left.padded-right.padded-bottom-page {
-    background: rgba(0, 0, 0, 0.4) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .detailButton:hover,
-    .listItem-border:hover,
-    .upNextDialog-button:hover {
-        background: rgba(0, 0, 0, 0.4) !important;
-    }
-}
-
-/* Backgrounds: black 60% */
-.detailButton:focus,
-.listItem-largeImage:focus,
-.upNextDialog-button:focus {
-    background: rgba(0, 0, 0, 0.6) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .checkboxOutline:not(:disabled):hover,
-    .emby-input:not(:disabled):hover,
-    .emby-select-withcolor:not(:disabled):hover,
-    .emby-textarea:not(:disabled):hover,
-    .listItem-focusscale:hover {
-        background: rgba(0, 0, 0, 0.6) !important;
-    }
-}
-
-/* Backgrounds: black 80% */
-.checkboxOutline:focus
-.detail-button:focus,
-.emby-input:focus,
-.emby-select option,
-.emby-select-withcolor:focus,
-.emby-textarea:focus,
-.favorite-button:focus,
-.listItem-focusscale:focus,
-.play-button:focus {
-    background: rgba(0, 0, 0, 0.8) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .detail-button:hover,
-    .favorite-button:hover,
-    .play-button:hover {
-        background: rgba(0, 0, 0, 0.8) !important;
-    }
-}
-
-/* Backgrounds: Accent
---------------------------------------------------------------------------*/
-
-/* Backgrounds: accent 40% */
-@media (hover: hover) and (pointer: fine) {
-    .emby-select option:hover {
-        background: var(--accent40) !important;
-    }
-}
-
-/* Backgrounds: accent 60% */
-@media (hover: hover) and (pointer: fine) {
-    .alphaPickerButton:hover {
-        background: var(--accent60) !important;
-    }
-}
-
-/* Backgrounds: accent 80% */
-.alphaPickerButton:focus,
-.emby-checkbox:checked + span + .checkboxOutline,
-.emby-select option:focus {
-    background: var(--accent80) !important;
-}
-
-/* Backgrounds: accent 100% */
-.countIndicator,
-.filterIndicator,
-.iconOsdProgressInner,
-.mediaSourceIndicator,
-.mdl-radio__focus-circle,
-.mdl-slider-background-lower,
-.sliderMarker.watched {
-    background: var(--accent100) !important;
-}
-
-
-/* Backgrounds: background-color
---------------------------------------------------------------------------*/
-
-/* Background Colors: accent 20% */
-@media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
-        background-color: var(--accent20);
-    }
-}
-
-/* Background Colors: transparent */
-.layout-tv .itemsContainer .card .cardBox,
-.layout-desktop .itemsContainer .card .cardBox,
-.paper-icon-button-light:not(.alphaPickerButton):active {
-    background-color: #0000 !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .cardOverlayButton:hover,
-    .listItemImageButton:hover {
-        background-color: #0000 !important;
-    }
-}
-
-/* Backgrounds: Card defaults
---------------------------------------------------------------------------*/
-
-/* Backgrounds: default for empty cards */
-.defaultCardBackground1 {
-    background: hsl(var(--accent-h), var(--accent-s), 17%);
-}
-.defaultCardBackground2 {
-    background: hsl(var(--accent-h), var(--accent-s), 16%);
-}
-.defaultCardBackground3 {
-    background: hsl(var(--accent-h), var(--accent-s), 15%);
-}
-.defaultCardBackground4 {
-    background: hsl(var(--accent-h), var(--accent-s), 14%);
-}
-.defaultCardBackground5 {
-    background: hsl(var(--accent-h), var(--accent-s), 13%);
-}
-
-/*
-============================================================================
-   Borders
-============================================================================
-*/
-
-/* Borders: grey 2px */
-.button-submit,
-.checkboxOutline,
-.detail-button,
-.detailButton,
-.emby-button.block,
-.emby-input,
-.emby-textarea,
-.emby-select-withcolor,
-.favorite-button,
-.imagePlaceHolder,
-.listItem-focusscale,
-.listItem-largeImage,
-.play-button,
-.raised,
-.upNextDialog-button {
-    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
-}
-
-/* Borders: accent 20% 2px */
-.emby-checkbox:checked + span + .checkboxOutline {
-    border: 2px solid var(--accent20) !important;
-}
-
-/* Borders: accent 40% 2px */
-@media (hover: hover) and (pointer: fine) {
-    .checkboxOutline:not(:disabled):hover,
-    .emby-checkbox:hover + span + .checkboxOutline,
-    .emby-input:not(:disabled):hover,
-    .emby-textarea:not(:disabled):hover,
-    .emby-select-withcolor:not(:disabled):hover,
-    .imagePlaceHolder:hover,
-    .listItem-focusscale:hover {
-        border: 2px solid var(--accent40) !important;
-    }
-}
-
-/* Borders: accent 80% 2px */
-.checkboxOutline:focus,
-.emby-checkbox:focus + span + .checkboxOutline,
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus {
-    border: 2px solid var(--accent80) !important;
-}
-
-/* Borders: accent 80% 1px */
-@media (hover: hover) and (pointer: fine) {
-    .navMenuOption:hover {
-        border: solid 1px var(--accent80) !important;
-    }
-}
-
-/* Borders: transparent 1px */
-.navMenuOption,
-.navMenuOption-selected,
-.layout-tv .itemsContainer > .listItem-focusscale:focus {
-    border: solid 1px #0000 !important;
-}
-
-/* Borders: transparent 2px */
-.actionSheetMenuItem,
-.emby-collapsible-button,
-.listItem-border,
-.listTextButton-autohide {
-    border: solid 2px #0000 !important;
-}
-
-/* No borders */
-.countIndicator,
-.mediaSourceIndicator,
-.osdPoster img,
-.playedIndicator,
-.skip-button {
-    border: none !important;
-}
-
-/*
-============================================================================
-   Roundings
-============================================================================
-*/
-
-/* Rounding Media */
-.blurhash-canvas,
-.cardBox,
-.cardContent,
-.cardOverlayContainer,
-.cardContent-button,
-.cardContent-shadow,
-.cardImage,
-.cardImageContainer,
-.cardOverlayButtonIcon,
-.cardPadder,
-.cardScalable,
-.chapterThumb,
-.chapterThumbContainer,
-.chapterThumbTextContainer,
-.detailButton,
-/* .detailImageContainer .card, */
-.detail-button,
-.favorite-button,
-.imagePlaceHolder,
-.primaryImageWrapper > img,
-.osdPoster img,
-.itemDetailImage,
-.itemProgressBar,
-.itemProgressBarForeground,
-.listItem-focusscale,
-.listItem-largeImage,
-.paper-icon-button-light,
-.play-button,
-.upNextContainer,
-.upNextDialog-poster-img,
-.visualCardBox,
-#loginPage .padded-left.padded-right.padded-bottom-page {
-    border-radius: var(--rounding-media) !important;
-}
-
-/* Rounding System */
-.actionSheetMenuItem,
-.button-submit,
-.checkboxOutline,
-.countIndicator,
-.dialog,
-.emby-button.block,
-.emby-collapsible-button,
-.emby-input,
-.emby-select,
-.emby-select-withcolor,
-.emby-textarea,
-.formDialogHeader,
-.formDialogFooter,
-.itemsViewSettingsContainer,
-.listItem-border,
-.listItemButton,
-.listItemIcon,
-.listTextButton-autohide,
-.mediaSourceIndicator,
-.paperList,
-.playedIndicator,
-.raised,
-.sectionTitle,
-.sectionTitleContainer-cards,
-.skip-button,
-.subtitleappearance-preview,
-.toast,
-.upNextDialog-button,
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus) {
-    border-radius: var(--rounding-system) !important;
-}
-
-/* No border radius */
-.layout-tv .detailPageSecondaryContainer .sectionTitle,
-.layout-tv .homePage .sectionTitle,
-.homePage .sectionTitleContainer-cards,
-.homePage .sectionTitle-cards {
-    border-radius: 0 !important;
-}
-
-/*
-============================================================================
-   Box Shadows
-============================================================================
-*/
-
-/* Shadows: transparent */
-.cardPadder,
-.mainDrawer {
-    box-shadow: none !important;
-}
-
-/* Shadows: --cardshadow (not on mobile > performance) */
-@media (pointer: fine) {
-    .libraryPage .card:has(.cardFooter) .cardBox,
-    .libraryPage .card:not(:has(.cardFooter)) .cardScalable,
-    .detailImageContainer .card {
-        box-shadow: var(--cardshadow) !important;
-    } 
-}
-
-/* Shadows: --cardglow */
-.toast {
-    box-shadow: var(--cardglow) !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .bannerCard:hover > .cardBox,
-    .itemsContainer > .card:has(.cardFooter):hover .cardBox,
-    .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable {
-        box-shadow: var(--cardglow) !important;
-    }
-}
-
-/* Shadows: --buttonglow */
-.layout-tv .detailButton:focus,
-.layout-tv .favorite-button:focus,
-/* .layout-tv .listItem-focusscale:focus, */
-.layout-tv .listItem-largeImage:focus,
-.layout-tv .play-button:focus,
-.layout-desktop .detailButton:focus,
-.layout-desktop .favorite-button:focus,
-.layout-desktop .listItem-focusscale:focus,
-.layout-desktop .listItem-largeImage:focus,
-.layout-desktop .play-button:focus,
-.upNextContainer,
-.upNextDialog-button:focus {
-    box-shadow: var(--buttonglow) !important;
-}
-
-/* Inset Shadows on cardImages */
-.libraryPage .cardImageContainer {
-    box-shadow: var(--insettop), var(--insetbottom);
+    background-color: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
 /*
@@ -720,6 +80,29 @@
     font-size: 110% !important;
 }
 
+/* Dialogs */
+.dialog,
+.formDialogHeader,
+.formDialogFooter {
+    border-radius: var(--rounding-system) !important;
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Toasts */
+.toast {
+    box-shadow: var(--cardglow) !important;
+    border-radius: var(--rounding-system) !important;
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Loading Spinner */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4 {
+    border-color: var(--accent100) !important;
+}
+
 /* Progress Ring */
 .progressring {
     margin: .4em;
@@ -728,6 +111,7 @@
     display: none;
 }
 .progressring-spiner {
+    border-color: var(--accent100);
     border-width: .35em;
 }
 
@@ -740,6 +124,8 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
+    box-shadow: none !important;
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Main Drawer: Hide HeaderTabs when open (Mobile) */
@@ -750,7 +136,18 @@
 /* Main Drawer: Options */
 .navMenuOption {
     margin-left: -.2em !important;
+    background: none !important;
+    border: solid 1px #0000;
     margin-right: -.2em !important;
+}
+.navMenuOption:hover {
+    background: none !important;
+    color: var(--accent100) !important;
+    border: solid 1px var(--accent80);
+}
+.navMenuOption-selected {
+    color: var(--accent100) !important;
+    border: solid 1px #0000;
 }
 .navMenuOptionText {
     margin-top: 0;
@@ -764,8 +161,19 @@
 
 /* Collapsible Menu */
 .collapseContent {
+    background: #0000 !important;
     padding-top: 0em;
     padding-bottom: 0em;
+}
+
+/* Collapsible Menu Items: No Background on Hover */
+.listItem:hover {
+    background: #0000 !important;
+}
+
+/* Action Sheet: Checked Icon Color */
+.actionSheetContent .listItemIcon.check {
+    color: var(--accent100) !important;
 }
 
 /* Action Sheet: Item size */
@@ -786,15 +194,17 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    background: rgba(0, 0, 0, var(--headeropacity));
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--accent80) !important;
     border-radius: 4px;
     border: 1px solid transparent;
     background-clip: content-box;
 }
-::-webkit-scrollbar-corner  {
+
+::-webkit-scrollbar-corner {
     background: var(--accent80) !important;
 }
 
@@ -828,6 +238,11 @@
     height: 2.9em;
 }
 
+/* Header: Opacity */
+.skinHeader-withBackground {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
 /* Header: Size & Alignment */
 .layout-tv .skinHeader,
 .layout-desktop .skinHeader {
@@ -846,6 +261,12 @@
 .currentTimeText {
     font-size: 110% !important;
     font-weight: bold;
+}
+
+/* Header Buttons: no Zoom */
+.headerButton:focus {
+    -webkit-transform: none !important;
+    transform: none !important;
 }
 
 /* Header Section Tabs: Stay in Header with invisible scroll */
@@ -878,17 +299,42 @@
 .emby-button.block,
 .button-submit,
 .raised {
+    border-radius: var(--rounding-system);
+    border: 2px solid rgba(255, 255, 255, 0.2);
     margin: 0.5em 0;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    background: #0000 !important;
     -webkit-transform: none !important;
     transform: none !important;
 }
+.emby-button.block:hover,
+.button-submit:hover,
+.raised:hover {
+    color: var(--accent100) !important;
+    border-color: var(--accent40) !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+.emby-button.block:focus,
+.button-submit:focus,
+.raised:focus {
+    color: var(--accent100) !important;
+    border-color: var(--accent80) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+}
 
-/* Buttons: Header Buttons
+/* Buttons: Header, Menus, Filter & OSD
 --------------------------------------------------------------------------*/
 
-.headerButton:focus {
-    -webkit-transform: none !important;
-    transform: none !important;
+.paper-icon-button-light:not(.alphaPickerButton) {
+    border-radius: var(--rounding-media);
+}
+.paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
+    color: var(--accent100);
+    background-color: var(--accent20);
+}
+.paper-icon-button-light:not(.alphaPickerButton):focus,
+.paper-icon-button-light:not(.alphaPickerButton):active {
+    color: var(--accent100);
 }
 
 /* Buttons: Header-Tab
@@ -897,18 +343,26 @@
 .emby-tab-button {
     padding: .6em 1.25em .8em 1.25em !important;
 }
+.emby-tab-button:hover {
+    color: var(--accent100) !important;
+}
 .emby-tab-button:focus {
+    color: var(--accent100) !important;
     -webkit-transform: scale(1.1)!important;
     transform: scale(1.1)!important;
 }
 .emby-tab-button-active {
-    color: #fff !important;
+    color: #fff;
 }
 
 /* Buttons: Action Sheet Menu Items
 --------------------------------------------------------------------------*/
 
 .actionSheetMenuItem {
+    border-radius: var(--rounding-system);
+    border: solid 2px #0000;
+    border-color: #0000 !important;
+    background: #0000 !important;
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -916,27 +370,55 @@
     padding-left: .5em !important;
     padding-right: .5em !important;
 }
+.actionSheetMenuItem:hover {
+    color: var(--accent80) !important;
+    border-color: var(--accent40) !important;
+}
+.actionSheetMenuItem:focus {
+    color: var(--accent100) !important;
+}
 
 /* Buttons: List Menu Items
 --------------------------------------------------------------------------*/
 
 .listTextButton-autohide {
+    border-radius: var(--rounding-system);
+    border: solid 2px #0000;
+    border-color: #0000 !important;
+    background: #0000 !important;
     -webkit-transform: none !important;
     transform: none !important;
     padding: .75em !important;
     margin: .2em !important;
+}
+.listTextButton-autohide:hover {
+    color: var(--accent80) !important;
+    border-color: var(--accent40) !important;
+}
+.listTextButton-autohide:focus {
+    color: var(--accent100) !important;
 }
 
 /* Buttons: Collapsible
 --------------------------------------------------------------------------*/
 
 .emby-collapsible-button {
+    border-radius: var(--rounding-system);
+    background: #0000 !important;
+    border: solid 2px #0000;
     padding: .75em !important;
     -webkit-transform: none !important;
     transform: none !important;
 }
+.emby-collapsible-button:hover {
+    color: var(--accent80) !important;
+    border-color: var(--accent40) !important;
+}
+.emby-collapsible-button:focus {
+    color: var(--accent100) !important;
+}
 
-/* Collapsible Button: Text */
+/* Collapsible Menu: Button Text */
 .emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
     margin-left: 0.5em;
 }
@@ -947,6 +429,10 @@
 
 /* List Item Border */
 .listItem-border {
+    border-radius: var(--rounding-system);
+    border: solid 2px #0000;
+    border-color: #0000 !important;
+    background: #0000 !important;
     -webkit-transform: none !important;
     transform: none !important;
     margin-top: .2em !important;
@@ -954,13 +440,44 @@
     padding-left: .5em !important;
     padding-right: .5em !important;
 }
-
+.listItem-border:hover {
+    color: var(--accent100) !important;
+    border-color: var(--accent60) !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+}
+.listItem-border:focus {
+    color: var(--accent100) !important;
+}
 .listItemBodyText {
     text-shadow: var(--textshadow) !important;
 }
 
+.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
+    width: 100%;
+    text-align: center;
+}
+
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
+
+.detailButton {
+    border-radius: var(--rounding-media) !important;
+    border: var(--buttonborder) !important;
+}
+.detailButton:hover {
+    color: var(--accent100) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-color: var(--accent40) !important;
+}
+.detailButton:focus {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: var(--accent80) !important;
+}
+
+.layout-tv .detailButton:focus,
+.layout-desktop .detailButton:focus {
+    box-shadow: var(--buttonglow) !important;
+}
 
 .layout-tv .mainDetailButtons .detailButton {
     font-size: 120% !important;
@@ -975,14 +492,17 @@
     transform: scale(1.2) !important;
 }
 
-/* Buttons: Slide Buttons (Desktop & Mobile)
+/* Buttons: Buttons on Slides (Desktop & Mobile)
 --------------------------------------------------------------------------*/
 .play-button,
 .detail-button,
 .favorite-button {
     font-size: 120% !important;
     margin-right: .2em !important;
+    background: rgba(0, 0, 0, 0.2) !important;
     color: inherit;
+    border-radius: var(--rounding-media) !important;
+    border: var(--buttonborder) !important;
     height: 3.5em;
     margin-right: 1em !important;
 }
@@ -991,11 +511,32 @@
     width: 3.5em;
     margin-right: 1em !important;
 }
+.play-button:hover,
+.detail-button:hover,
+.favorite-button:hover {
+    color: var(--accent100) !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-color: var(--accent40) !important;
+}
 .play-button:focus,
 .detail-button:focus,
 .favorite-button:focus {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: var(--accent80) !important;
     -webkit-transform: scale(1.2) !important;
     transform: scale(1.2) !important;
+}
+.layout-tv .play-button:focus,
+.layout-tv .detail-button:focus,
+.layout-tv .favorite-button:focus,
+.layout-desktop .play-button:focus,
+.layout-desktop .detail-button:focus,
+.layout-desktop .favorite-button:focus {
+    box-shadow: var(--buttonglow) !important;
+}
+
+.favorite-button.favorited {
+    color: var(--accent100) !important;
 }
 
 /* Buttons: Links acting as Buttons
@@ -1004,15 +545,26 @@
 .button-link,
 .overview-expand {
     color: inherit !important;
+    background: #0000 !important;
     -webkit-transform: none !important;
     transform: none !important;
-    text-decoration: none !important;
+    text-decoration: none;
+}
+.button-link:hover,
+.overview-expand:hover {
+    color: var(--accent80) !important;
+    text-decoration: none;
+}
+.button-link:focus,
+.overview-expand:focus {
+    color: var(--accent100) !important;
+    text-decoration: none;
 }
 
 /* ClearLinks: Buttons with Link-Buttons inside (why...?)
 --------------------------------------------------------------------------*/
 
-/* Clearlinks: Won't focus with remote > hide in TV layout */
+/* Clearlinks: Won't focus with remote > hide (TV) */
 .layout-tv .sectionTitleContainer > .clearLink {
     display: none;
 }
@@ -1020,6 +572,7 @@
 /* Clearlink Container */
 .clearLink {
     padding: .2em 1em !important;
+    background: #0000 !important;
     -webkit-transform: none !important;
     transform: none !important;
     margin-left: 0px !important;
@@ -1028,8 +581,15 @@
 /* Clearlink: Buttons inside */
 .clearLink > .emby-button {
     padding: .2em 1em !important;
+    background: #0000 !important;
     font-size: 1.5em;
     font-weight: 400;
+}
+.clearLink > .emby-button:hover,
+.clearLink > .emby-button:focus {
+    background: #0000 !important;
+    border-color: #0000 !important;
+    color: var(--accent100) !important;
 }
 
 /*
@@ -1054,6 +614,9 @@
 }
 
 /* Select Container */
+.emby-select {
+    border-radius: var(--rounding-system) !important;
+}
 .emby-select-focusscale:focus {
     -webkit-transform: none !important;
     transform: none !important;
@@ -1070,9 +633,88 @@
     margin-top: .1em !important;
 }
 
-/* Select Container: Label */
+/* Select: Option Colors */
+.emby-select option {
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+.emby-select option:hover {
+    background: var(--accent40) !important;
+}
+.emby-select option:focus {
+    background: var(--accent80) !important;
+}
+
+/* Inputs: Accent */
+.emby-input,
+.emby-textarea,
+.emby-select-withcolor,
+.checkboxOutline {
+    border: var(--buttonborder) !important;
+    border-radius: var(--rounding-system) !important;
+    background: rgba(0, 0, 0, 0.4);
+}
+.emby-input:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.checkboxOutline:not(:disabled):hover {
+    border: 2px solid var(--accent40) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.checkboxOutline:focus {
+    border: 2px solid var(--accent80) !important;
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Checkbox: Outline */
+.emby-checkbox:hover + span + .checkboxOutline {
+    border: 2px solid var(--accent40) !important;
+}
+.emby-checkbox:focus + span + .checkboxOutline {
+    border: 2px solid var(--accent80) !important;
+}
+.emby-checkbox:checked + span + .checkboxOutline {
+    border: 2px solid var(--accent20) !important;
+    background: var(--accent80) !important;
+}
+
+/* Radio Buttons */
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label {
+    color: var(--accent80) !important;
+}
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle {
+    color: var(--accent100) !important;
+}
+.mdl-radio__focus-circle {
+    background: var(--accent100) !important;
+}
+
+/* Labels */
+.emby-textarea:hover + .textareaLabel,
+.emby-checkbox:hover + .checkboxLabel {
+    color: var(--accent80) !important;
+}
+.inputLabelFocused,
+.textareaLabelFocused,
+.selectLabelFocused,
+.emby-checkbox:focus + .checkboxLabel {
+    color: var(--accent100) !important;
+}
 .selectLabel {
     align-self: center;
+}
+
+/* Misc (TODO) */
+.selectionCommandsPanel {
+    background: rgba(0, 0, 0, 0.4) !important;
 }
 
 /*
@@ -1086,13 +728,31 @@
     margin-bottom: 0.5em !important;
 }
 
+/* Cards: Full Rounding */
+.blurhash-canvas,
+.cardBox,
+.cardContent,
+.cardOverlayContainer,
+.cardContent-button,
+.cardContent-shadow,
+.cardImage,
+.cardImageContainer,
+.cardOverlayButtonIcon,
+.cardScalable,
+.itemDetailImage,
+.primaryImageWrapper > img,
+.visualCardBox,
+.cardBox:not(.visualCardBox) .cardPadder {
+    border-radius: var(--rounding-media);
+}
+
 /* Cards: Rounding Top, Flat Bottom */
-/* .visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
 .visualCardBox:has(.cardFooter) .cardImage,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
-.visualCardBox:has(.cardFooter) .cardOverlayContainer {
+.visualCardBox:has(.cardFooter) .cardOverlayContainer,
+.visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
@@ -1101,7 +761,29 @@
 .cardFooter:not(.visualCardBox-cardFooter) {
     border-bottom-left-radius: var(--rounding-media) !important;
     border-bottom-right-radius: var(--rounding-media) !important;
+    background: rgba(0, 0, 0, var(--itemopacity)) !important;
     text-align: center;
+}
+
+/*
+===========================================================================
+   Cards: Shadows
+===========================================================================
+*/
+
+/* Shadow for cards with footer */
+.libraryPage .cardBox:has(.cardFooter) {
+    box-shadow: var(--cardshadow);
+}
+
+/* Shadow for cards without footer */
+.libraryPage .cardBox:not(:has(.cardFooter)) .cardScalable {
+    box-shadow: var(--cardshadow);
+}
+
+/* Smoothen card images with inset shadows */
+.libraryPage .cardImageContainer {
+    box-shadow: var(--insettop), var(--insetbottom);
 }
 
 /*
@@ -1110,24 +792,22 @@
 ===========================================================================
 */
 
-/* Text Shadow (not on mobile > performance) */
-@media (pointer: fine) {
-    .cardText {
-        text-shadow: var(--textshadow) !important;
-    }
+/* Card Text Container */
+.cardPadder {
+    background-color: #0000 !important;
+    box-shadow: none !important;
 }
 
-/* Card Text First: Spacing with and without card footer */
-.cardText-first {
+/* Card Text: Shadow (only without footer) */
+:not(.cardFooter) > .cardText.cardText-first {
     padding-top: .5em !important;
-}
-.cardFooter > .cardText.cardText-first {
-    padding-top: .25em !important;
+    text-shadow: var(--textshadow) !important;
 }
 
-/* Card Text Secondary: Font size */
+/* Card Text: Secondary Text */
 .cardText.cardText-secondary {
     font-size: 75% !important;
+    text-shadow: var(--textshadow) !important;
 }
 
 /* Card Action-Button (Mobile) */
@@ -1136,12 +816,21 @@
     margin-right: .25em !important;
 }
 .layout-mobile .itemAction > .material-icons {
+    background: #0000 !important;
+    text-shadow: 0 0 3px rgba(0,0,0,0.8);
     color: white;
 }
 
+/* Card Hover-Buttons: Play */
+.cardOverlayButton:hover {
+    color: var(--accent100) !important;
+    background-color: #0000 !important;
+}
+
 /* Links / Action-Text in card footer */
-.textActionButton {
-    text-decoration: none !important;
+.layout-desktop .card .textActionButton:hover {
+    color: var(--accent100);
+    text-decoration: none;
 }
 
 /*
@@ -1156,11 +845,25 @@
     transform: scale(1.1);
 }
 
-/* More space for zoom & glow animations */
-@media (pointer: fine) {
-    .itemsContainer .cardBox {
-        margin-left: .5em !important;
-    }
+/* Cards: Text Color on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary {
+    color: var(--accent100) !important;
+}
+
+/* Cards: Glow Images on overflow Cards */
+.layout-tv .overflowBackdropCard:hover .cardScalable,
+.layout-tv .overflowPortraitCard:hover .cardScalable,
+.layout-desktop .overflowBackdropCard:hover .cardScalable,
+.layout-desktop .overflowPortraitCard:hover .cardScalable {
+    box-shadow: var(--cardglow) !important;
+}
+
+/* More space for glow animation */
+.layout-tv .itemsContainer .card .cardBox,
+.layout-desktop .itemsContainer .card .cardBox {
+    margin-left: .5em !important;
+    background-color: #0000;
 }
 
 /*
@@ -1178,13 +881,23 @@
 
 /* Card Indicators: Count & Played */
 .playedIndicator {
+    color: var(--accent100) !important;
     background: rgba(0, 0, 0, 1);
+    border-radius: var(--rounding-system) !important;
+    border: none;
 }
 .countIndicator,
 .mediaSourceIndicator {
     font-weight: 600;
     font-size: 89%;
     color: rgba(0, 0, 0, 1);
+    background: var(--accent100) !important;
+    border-radius: var(--rounding-system) !important;
+    border: none;
+}
+.playstatebutton-icon-played,
+.ratingbutton-icon-withrating {
+    color: var(--accent100) !important;
 }
 
 /* Card Indicators: Missing & Unaired */
@@ -1203,6 +916,11 @@
     border-bottom-left-radius: var(--rounding-system) !important;
 }
 
+/* Card Indicators: Multiselect selected */
+.Mui-selected {
+    color: var(--accent80) !important;
+}
+
 /*
 ===========================================================================
    Cards: Progressbar
@@ -1211,6 +929,8 @@
 
 /* Card Progressbar: Background */
 .itemProgressBar {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: var(--rounding-media) !important;
     height: .4em !important;
     margin: .5em .8em !important;
     backdrop-filter: blur(6px);
@@ -1219,6 +939,30 @@
 /* Card Progressbar: Progress */
 .itemProgressBarForeground {
     background-color: var(--accent100) !important;
+    border-radius: var(--rounding-media) !important;
+}
+
+/*
+===========================================================================
+   Cards: Default Backgrounds
+===========================================================================
+*/
+
+/* Background color for Cards without Pictures */
+.defaultCardBackground1 {
+    background: hsl(var(--accent-h), var(--accent-s), 17%);
+}
+.defaultCardBackground2 {
+    background: hsl(var(--accent-h), var(--accent-s), 16%);
+}
+.defaultCardBackground3 {
+    background: hsl(var(--accent-h), var(--accent-s), 15%);
+}
+.defaultCardBackground4 {
+    background: hsl(var(--accent-h), var(--accent-s), 14%);
+}
+.defaultCardBackground5 {
+    background: hsl(var(--accent-h), var(--accent-s), 13%);
 }
 
 /*
@@ -1240,7 +984,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
+    background: rgba(0, 0, 0, 0.4) !important;
     width: 24em;
+    border-radius: var(--rounding-media);
     padding-bottom: 2em !important;
 }
 
@@ -1263,6 +1009,10 @@
     width: 33%;
     margin: 1em !important;
 }
+#loginPage .cardImage {
+    color: var(--accent100) !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+}
 
 /*
 ============================================================================
@@ -1270,24 +1020,37 @@
 ============================================================================
 */
 
-/* Home Sections Container: alignment */
-.layout-tv .homeSectionsContainer {
-    top: 0;
-}
-.layout-mobile .homeSectionsContainer {
-    top: 78vh;
-}
-
-/* Slides: Disable in TV layout (they don't work well with a remote) */
+/* Disable Slides (TV - they don't work well with a remote) */
 .layout-tv #slides-container {
     display: none !important;
 }
 
-/* Slides: Font Size */
-.slide .genre,
-.slide .info-container,
+/* Use freed up Space (TV) */
+.layout-tv .homeSectionsContainer {
+    top: 0;
+}
+
+/* Scroller Alignment */
+.layout-tv #indexPage .homeSectionsContainer .emby-scroller,
+.layout-tv #tvRecommendedPage .verticalSection .itemsContainer-tv {
+    padding-left: 1em;
+}
+
+/* Slides */
 .slide .plot-container {
     font-size: 120%;
+}
+
+.slide .info-container {
+    font-size: 120%;
+}
+
+.slide .genre {
+    font-size: 120%;
+}
+
+.layout-mobile .homeSectionsContainer {
+    top: 67vh;
 }
 
 /*
@@ -1296,7 +1059,7 @@
 ===========================================================================
 */
 
-/* Library Pages: Alignment */
+/* Library Pages: Move up */
 .layout-tv .libraryPage {
     padding-top: 5em !important;
 }
@@ -1307,6 +1070,8 @@
     padding-left: 3vw !important;
     padding-right: 3vw !important;
 }
+
+/* Library Pages: Center Content */
 .layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
 .layout-mobile .libraryPage .padded-right-withalphapicker {
     padding-left: 3vw !important;
@@ -1323,9 +1088,11 @@
     height: 1.6em;
 }
 .alphaPickerButton:hover {
+    background: var(--accent60) !important;
     color: inherit !important;
 }
 .alphaPickerButton:focus {
+    background: var(--accent80) !important;
     -webkit-transform: none !important;
     transform: none !important;
     transition: none !important;
@@ -1337,92 +1104,89 @@
 ===========================================================================
 */
 
-/* Section Titles */
-.detailPagePrimaryContainer .sectionTitle,
-.detailPageSecondaryContainer .sectionTitl {
-    font-weight: 600;
+.verticalSection > .sectionTitleContainer-cards,
+.verticalSection > .sectionTitle-cards {
+    background: hsl(0deg 0% 100% / 10%);
 }
 
-/*
-.verticalSection[data-type="Episode"] .sectionTitleContainer-cards {
-    background: #0000 !important;
+/* Section Titles: TV */
+.layout-tv .verticalSection > .sectionTitle-cards,
+.layout-tv .verticalSection > .sectionTitleContainer-cards {
+    text-align: center;
+    padding-left: 0%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    margin-top: .25em;
+    margin-bottom: .25em;
 }
-.verticalSection[data-type="Episode"] .sectionTitle {
-    background: hsl(0deg 0% 100% / 10%);
+
+/* Section Titles: Desktop */
+.layout-desktop .verticalSection > .sectionTitle-cards,
+.layout-desktop .verticalSection > .sectionTitleContainer-cards {
+    padding-left: 3.8%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    margin-bottom: .25em;
+}
+.layout-desktop .verticalSection .sectionTitleTextButton .sectionTitle-cards,
+.layout-desktop .sectionTitleTextButton > .material-icons {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.layout-desktop .verticalSection > .emby-scrollbuttons {
+    padding-top: .2%;
+    padding-bottom: 0em;
+}
+
+/* Section Titles: Mobile */
+.layout-mobile .verticalSection > .sectionTitle-cards,
+.layout-mobile .verticalSection > .sectionTitleContainer-cards {
     text-align: center;
     padding-left: 0em;
     padding-top: 1%;
     padding-bottom: 1%;
     margin-top: .25em;
     margin-bottom: .25em;
-} */
-
-
-/* Layout TV
---------------------------------------------------------------------------*/
-
-/* Section Title Container */
-.layout-tv .sectionTitleContainer-cards,
-.layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    text-align: center;
-    padding-bottom: .5%;
-    padding-top: .5%;
 }
 
-/* Section Titles */
+/* Section Title inside link-button (Mobile) */
+.layout-mobile :not(.sectionTitleContainer-cards) .sectionTitleTextButton .sectionTitle-cards {
+    padding-left: 0em;
+    padding-top: 0em;
+}
+.layout-mobile .sectionTitleTextButton > .material-icons {
+    padding-top: 0em;
+}
+
+/* Media Page Section Titles */
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitle {
+    display: block;
+    font-weight: 600;
+}
+
+/* Media Page Section Titles: TV */
 .layout-tv .detailPagePrimaryContainer .sectionTitle {
     text-align: left;
-    padding-left: 2%;
+    padding-left: 3%;
+    border-radius: var(--rounding-system);
 }
 .layout-tv .detailPageSecondaryContainer .sectionTitle {
     text-align: center;
 }
 
-/* Layout Desktop
---------------------------------------------------------------------------*/
-
-/* Section Title Container */
-.layout-desktop .sectionTitleContainer-cards,
-.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    padding-left: 2.5%;
-    padding-bottom: .5%;
-    padding-top: .5%;
-}
-
-/* Section Titles */
+/* Media Page Section Titles: Desktop */
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
     padding-left: 1.5% !important;
+    border-radius: var(--rounding-system);
+}
+.layout-desktop .detailPageSecondaryContainer .sectionTitle {
+    padding-left: 3.5% !important;
 }
 
-/* Section Title: Text & Icon */
-.sectionTitleTextButton>.sectionTitle,
-.sectionTitleTextButton>.material-icons {
-    padding: 0;
-    margin: 0;
-}
-
-/* Scroll Buttons */
-.layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: .25%;
-    padding-bottom: 0em;
-}
-
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-/* Section Title Container */
-.layout-mobile .sectionTitleContainer-cards,
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
-    text-align: center;
-    padding-bottom: .5%;
-    padding-top: .5%;
-}
-
-/* Section Title: Text & Icon */
-.layout-mobile .sectionTitle>.material-icons,
-.layout-mobile .sectionTitleTextButton>.material-icons {
-    padding: 0;
-    margin: 0;
+/* Media Page Section Titles: Mobile */
+.layout-mobile .detailPageWrapperContainer .sectionTitle {
+    border-radius: var(--rounding-system);
 }
 
 /*
@@ -1431,87 +1195,92 @@
 ===========================================================================
 */
 
-/* Layout TV
---------------------------------------------------------------------------*/
-
-/* Scroller Default Alignment */
-.layout-tv .emby-scroller {
-    padding-left: 2.5%;
-}
-.layout-tv .padded-bottom-focusscale,
-.layout-tv .detailPagePrimaryContainer .itemsContainer {
-    margin-bottom: -0.5em;
-    padding-bottom: 1.5em;
-}
-.layout-tv .padded-top-focusscale,
-.layout-tv .detailPagePrimaryContainer .itemsContainer {
-    margin-top: -0.5em;
-    padding-top: 1.5em;
+/* Media Scroller: Position (TV) */
+.layout-tv .verticalSection .emby-scroller {
+    padding-left: 2%;
 }
 
-/* Scroller: detailPage scroller in primary container */
-.layout-tv .detailPagePrimaryContainer .itemsContainer {
-    padding-right: 0em;
+/* Media Scroller: Position (TV) */
+.layout-desktop .verticalSection .emby-scroller {
+    padding-left: 3%;
 }
 
-/* scroller: detailPage last scroller on page (more like this) */
-.layout-tv .verticalSection-extrabottompadding .emby-scroller {
-    padding-top: 2em;
+/* Media Scroller: Max card width */
+.itemsContainer-tv > .overflowBackdropCard {
+    max-width: 30em;
 }
 
-/* Layout Desktop
---------------------------------------------------------------------------*/
-
-/* scroller: default alignment */
-.layout-desktop .emby-scroller {
-    padding-left: 2.5%;
+/* Media Scroller: Card Spacing (TV) */
+.layout-tv .itemsContainer-tv > .overflowBackdropCard:not(.personCard) {
+    margin-left: 1%;
+    margin-top: .5%;
+    margin-bottom: .5%;
 }
-.layout-desktop .padded-bottom-focusscale,
-.layout-desktop .detailPagePrimaryContainer .itemsContainer {
-    margin-bottom: -0.5em;
-    padding-bottom: 1em;
+.layout-tv .itemsContainer-tv > .overflowPortraitCard:not(.personCard) {
+    margin-left: .75%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
-.layout-desktop .padded-top-focusscale,
-.layout-desktop .detailPagePrimaryContainer .itemsContainer {
-    margin-top: -0.5em;
-    padding-top: 1em;
+.layout-tv .itemsContainer-tv > .personCard {
+    margin-top: .25%;
+    margin-bottom: .25%;
 }
 
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-.layout-mobile .padded-bottom-focusscale,
-.layout-mobile .detailPagePrimaryContainer .itemsContainer {
-    margin-bottom: -0.5em;
-    padding-bottom: .75em;
-}
-.layout-mobile .padded-top-focusscale,
-.layout-mobile .detailPagePrimaryContainer .itemsContainer {
-    margin-top: -0.5em;
-    padding-top: .75em;
+/* Media Scroller: Card Spacing (Desktop) */
+.layout-desktop .itemsContainer > .overflowBackdropCard ,
+.layout-desktop .itemsContainer > .overflowPortraitCard {
+    margin-top: .25%;
+    margin-bottom: .25%;
 }
 
-/*
-===========================================================================
-   Library Pages: Media Scroller Cards
-===========================================================================
-*/
-
-/* Media Scroller Cards: Spacing & Alignment (TV) */
-.layout-tv .overflowBackdropCard  {
-    margin-right: .9%;
-}
-.layout-tv .overflowPortraitCard {
-    margin-right: .6%;
-    margin-bottom: .6em;
-}
-
-/* Media Scroller Cards: Size (Mobile) */
+/* Media Scroller: Card Size (Mobile) */
 .layout-mobile .overflowBackdropCard {
     width: 52%;
 }
 .layout-mobile .overflowPortraitCard {
-    width: 33%;
+    width: 26%;
+}
+
+/*
+===========================================================================
+   Library Pages: Sorting & Filter
+===========================================================================
+*/
+
+/* Filter & Sorting Header */
+.pageTabContent > .focuscontainer-x,
+.itemsViewSettingsContainer {
+    background: rgba(0, 0, 0, 0.4);
+    margin-bottom: 1.5em;
+    padding: 0.25em;
+}
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* Filter & Sorting Header: Buttons */
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
+    margin: 0 .2em;
+}
+
+/* Filter & Sorting Header: Item Count */
+.listPaging > span {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/* Filter Indicator */
+.filterIndicator {
+    background: var(--accent100) !important;
+    color: black;
+}
+
+/* Sorting Menu: Radio Button spacing */
+.radio-label-block {
+    margin: 1em !important;
 }
 
 /*
@@ -1553,12 +1322,19 @@
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
 }
+.layout-tv .itemsContainer > .bannerCard:hover > .cardBox,
+.layout-desktop .itemsContainer > .bannerCard:hover > .cardBox {
+    box-shadow: var(--cardglow) !important;
+}
 
 /* View: List
 --------------------------------------------------------------------------*/
 
-/* Card (TV) */
-.layout-tv .itemsContainer > .listItem-focusscale {
+/* List Item Cards */
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage) {
+    border: var(--buttonborder) !important;
+    border-radius: var(--rounding-media);
+    background: rgba(0, 0, 0, 0.2) !important;
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
@@ -1566,44 +1342,20 @@
     padding-left: 0em;
     height: 5em;
 }
-.layout-tv .itemsContainer > .listItem-focusscale .listItemImage {
-    height: 5em;
-    width: 10em;
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):hover {
+    border: solid 2px var(--accent40) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
-.layout-tv .itemsContainer > .listItem-focusscale:focus .listItemImage {
-    width: 11em;
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
+    border: solid 2px var(--accent80) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
-
-/* Hide Alphapicker > steals focus with remote */
-.layout-tv .listItem-focusscale ~ .alphaPicker {
-    display: none !important;
-}
-
-/* Card (Desktop) */
-.layout-desktop .itemsContainer > .listItem-border {
-    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
-    border-radius: var(--rounding-media) !important;
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
-    padding-right: 0 !important;
-    margin-bottom: .25em !important;
-}
-.layout-desktop .itemsContainer > .listItem-border:hover {
-    border: 2px solid var(--accent40) !important;
+.layout-tv .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus,
+.layout-desktop .itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus {
+    box-shadow: var(--buttonglow) !important;
 }
 
-/* Card Content */
-.layout-desktop .itemsContainer > .listItem-border .listItemImage {
-    transform: scale(1.3)
-}
-.layout-desktop .itemsContainer > .listItem-border .listItemBody {
-    padding-left: 2%;
-}
-.layout-desktop .itemsContainer > .listItem-border .listItemBodyText {
-    font-weight: 600;
-}
-
-/* Hide Image on small screens (Mobile) */
+/* List Item Cards: Hide Poster on small screens (Mobile) */
 @media (max-width: 40em) {
     [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
         display: flex;
@@ -1615,51 +1367,69 @@
     }
 }
 
+/* List Item Cards: Picture Size */
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage) .listItemImage {
+    height: 5em;
+    width: 10em;
+}
+.itemsContainer > .listItem-focusscale:not(.listItem-largeImage):focus .listItemImage {
+    width: 11em;
+}
+
+/* Hide Alphapicker > steals focus with remote */
+.layout-tv .itemsContainer:has(.listItem-focusscale) ~ .alphaPicker {
+    display: none !important;
+}
+.layout-tv #moviesPage:has(.listItem-focusscale) .alphaPicker {
+    display: none !important;
+}
+
 /* View: Poster
 --------------------------------------------------------------------------*/
 
-.layout-tv .itemsContainer > .backdropCard,
-.layout-tv .itemsContainer > .portraitCard {
+.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)) {
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
 }
-
-/*
-===========================================================================
-   Library Pages: Sorting & Filter
-===========================================================================
-*/
-
-/* Filter & Sorting Header */
-.pageTabContent>.focuscontainer-x,
-.itemsViewSettingsContainer {
-    margin-bottom: 1.5em;
-    padding: 0.25em;
+.layout-tv .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer > .portraitCard:not(:has(.cardFooter)):hover .cardScalable {
+    box-shadow: var(--cardglow) !important;
 }
 
-/* Filter & Sorting Header: Buttons */
-.pageTabContent .focuscontainer-x .paper-icon-button-light {
-    -webkit-transform: none !important;
-    transform: none !important;
+/* View: Poster Card
+--------------------------------------------------------------------------*/
+
+.layout-tv .itemsContainer > .portraitCard:has(.cardFooter) {
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
 }
-.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
-    margin: 0 .2em;
+.layout-tv .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox,
+.layout-desktop .itemsContainer > .portraitCard:has(.cardFooter):hover .cardBox {
+    box-shadow: var(--cardglow) !important;
 }
 
-/* Filter & Sorting Header: Item Count */
-.listPaging > span {
-    margin-left: .5em;
-    margin-right: .5em;
+/* View: Thumb
+--------------------------------------------------------------------------*/
+
+.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)) {
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
+}
+.layout-tv .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable,
+.layout-desktop .itemsContainer > .backdropCard:not(:has(.cardFooter)):hover .cardScalable {
+    box-shadow: var(--cardglow) !important;
 }
 
-/* Filter Indicator */
-.filterIndicator {
-    color: black;
-}
+/* View: Thumb Card
+--------------------------------------------------------------------------*/
 
-/* Sorting Menu: Radio Button spacing */
-.radio-label-block {
-    margin: 1em !important;
+.layout-tv .itemsContainer > .backdropCard:has(.cardFooter) {
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
+}
+.layout-tv .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox,
+.layout-desktop .itemsContainer > .backdropCard:has(.cardFooter):hover .cardBox {
+    box-shadow: var(--cardglow) !important;
 }
 
 /*
@@ -1686,7 +1456,7 @@
 
 /* Media Pages: Increase Season Title Text */
 .layout-tv .selfBackdropPage .itemName,
-.layout-desktop .selfBackdropPage .itemName {
+.layout-desktop .selfBackdropPage .itemName{
     font-size: 150%;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -1698,13 +1468,14 @@
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     left: 3% !important;
+    border-radius: var(--rounding-media);
+    box-shadow: var(--cardshadow) !important;
     max-width: 26vw;
 }
 
 /* Media Pages: Center Content (Mobile) */
 .layout-mobile .verticalSection .itemsContainer.vertical-wrap {
     justify-content: center;
-    padding-right: 0em;
 }
 
 /*
@@ -1722,22 +1493,21 @@
 .layout-desktop .detailRibbon {
     height: 9em !important;
     margin-top: -9em !important;
+    background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
 /* Detail-Ribbon (Mobile) */
 .layout-mobile .detailRibbon {
     margin-top: -1em !important;
+    background: rgba(0, 0, 0, var(--itemopacity)) !important;
     padding-bottom: 1.25em;
     padding-right: 5% !important;
     padding-left: 5%;
 }
 
 /* Detail-Ribbon: Info Container */
-.layout-mobile .infoWrapper {
+.infoWrapper {
     padding-bottom: 0.15em;
-}
-.layout-desktop .infoWrapper {
-    padding-top: .25em;
 }
 
 /* Detail-Ribbon: Media Infos */
@@ -1771,6 +1541,15 @@
     padding-bottom: 1em;
 }
 
+.layout-mobile .detailPagePrimaryContent .detailSection .trackSelections {
+    padding-top: 1em;
+}
+
+/* Media Details: Hide Genres
+p.itemGenres {
+    display: none;
+} */
+
 /* Media Details: Tracks & Subtitles */
 .leyout-tv .trackSelections {
     max-width: 100%;
@@ -1778,12 +1557,10 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-.layout-mobile .trackSelections {
-    padding-top: 1em;
-}
 
 /* Media Details: Track Select */
 .detailTrackSelect {
+    background: #0000 !important;
     padding: .35em 1.9em .35em .35em !important;
 }
 
@@ -1793,16 +1570,15 @@
 ===========================================================================
 */
 
-/* Media Description: Container */
+/* Media Description: Secondary Content */
 .layout-tv .detailPageSecondaryContainer,
 .layout-desktop .detailPageSecondaryContainer{
-    padding-top: 2em !important;
+    padding-top: 1em !important;
 }
 .layout-mobile .detailPageSecondaryContainer {
     padding-top: 0em !important;
 }
 
-/* Media Pages: Content */
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-desktop .detailPageSecondaryContainer .detailPageContent {
     padding-left: 0;
@@ -1823,30 +1599,39 @@
 
 /*
 ===========================================================================
-   Media Pages: Sections
+   Media Pages: Section Scroller
 ===========================================================================
 */
 
-/* Sections: Space between Sections (TV) */
+/* Section Scroller: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
     margin-bottom: 0em !important;
 }
 
 /* Cards: Large List Items */
-.listItem.listItem-largeImage {
+.listItem-largeImage {
+    border: var(--buttonborder) !important;
+    border-radius: var(--rounding-media) !important;
     margin-bottom: 1em;
     padding: 0em;
-    border-color: hsl(0deg 0% 100% / 20%);
+    border-color: hsl(0deg 0% 100% / 20%) !important;
+    background: #0000 !important;
     -webkit-transform: none !important;
     transform: none !important;
+    height: 15em;
     margin-right: .5em;
 }
-.layout-tv .listItem.listItem-largeImage,
-.layout-desktop .listItem.listItem-largeImage {
-    max-height: 15em;
+.listItem-largeImage:hover {
+    border: solid 2px var(--accent40) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
-.layout-tv .listItem.listItem-largeImage {
-     height: 15em;
+.listItem-largeImage:focus {
+    border: solid 2px var(--accent80) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+.layout-tv .listItem-largeImage:focus,
+.layout-desktop .listItem-largeImage:focus{
+    box-shadow: var(--buttonglow) !important;
 }
 
 /* Large List Items: Align Body */
@@ -1856,32 +1641,27 @@
     padding-left: .5em;
 }
 
+/* Large List Items: Title Accent */
+.listItem-button:focus .listItemBodyText:not(.secondary) {
+    color: var(--accent100) !important;
+    background: #0000 !important;
+}
+
 /* Large List Items: Text */
 .listItem-largeImage .listItem-overview {
     max-height: 8.5em;
 }
 
-/* List Items: Indicator */
+/* Section Scroller: Large Episodes in Season Overview */
+.listItemImage-large {
+    max-height: 15em;
+    left: -.5em;
+}
+
+/* Section Scroller: Large Episode Indicator */
 .listItemIndicators {
     left: 0.5em;
     top: 0.5em;
-}
-
-/* Play Button Color on Hover */
-.layout-desktop .listItem-largeImage:hover .listItemImageButton {
-    color: var(--accent80) !important;
-}
-
-
-
-.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
-    margin: .5em;
-}
-.layout-mobile .detailPageWrapperContainer .listItem-content {
-    border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
-}
-.layout-mobile .detailPageWrapperContainer .listItemBody {
-    text-align: center;
 }
 
 /*
@@ -1907,6 +1687,10 @@
     display: block;
     text-align: center;
 }
+.osdPoster img {
+    border-radius: var(--rounding-media);
+    border: none;
+}
 .osdTextContainer {
     margin: 0 !important;
     margin-top: 0.2em !important;
@@ -1929,29 +1713,16 @@
 
 /* Player OSD: Skip-Button */
 .skip-button {
+    border-radius: var(--rounding-system);
     color: #fff;
-}
-
-/* Progressbar & Volume */
-.mdl-slider::-moz-range-thumb {
-    color: var(--accent100) !important;
-    background: var(--accent100) !important;
-}
-.mdl-slider::-webkit-slider-thumb {
-    color: var(--accent100) !important;
-    background: var(--accent100) !important;
-}
-.mdl-slider::-webkit-scrollbar-corner {
     background: #0000 !important;
+    border: none !important;
 }
-.mdl-slider::-webkit-scrollbar-track-piece {
-    background: #0000 !important;
+.skip-button:hover {
+    color: var(--accent80) !important;
 }
-
-/* Progressbar & Volume: Marker */
-.sliderMarker {
-    width: 3px;
-    border-radius: 2px;
+.skip-button:focus {
+    color: var(--accent100) !important;
 }
 
 /*
@@ -1968,6 +1739,7 @@
 
 /* OSD Footer: Full Layout */
 .videoOsdBottom {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: .5em;
     padding-bottom: .5em;
 }
@@ -1975,6 +1747,7 @@
 /* OSD Footer: Small Box-Layout */
 @media all and (min-width: 105em) {
     .videoOsdBottom {
+        background: rgba(0, 0, 0, var(--headeropacity)) !important;
         padding-top: .5em;
         padding-bottom: 1em;
         margin-bottom: 2em;
@@ -1991,6 +1764,50 @@
 
 /*
 ===========================================================================
+   Player OSD: Progressbar & Volume
+===========================================================================
+*/
+
+/* Player OSD: Play Progress & Volume */
+.mdl-slider {
+    color: var(--accent100) !important;
+}
+.mdl-slider::-webkit-slider-thumb {
+    background: var(--accent100) !important;
+    color: var(--accent100) !important;
+}
+.mdl-slider::-moz-range-thumb {
+    background: var(--accent100) !important;
+    color: var(--accent100) !important;
+}
+.mdl-slider::-webkit-scrollbar-corner {
+    background: #0000 !important;
+}
+.mdl-slider::-webkit-scrollbar-track-piece {
+    background: #0000 !important;
+}
+
+.mdl-slider-background-lower {
+    background: var(--accent100) !important;
+}
+
+/* Player OSD: Progressbar Vertical Marker */
+.sliderMarker {
+    width: 3px;
+    border-radius: 2px;
+}
+.sliderMarker.watched {
+    background: var(--accent100) !important;
+}
+
+/* Player OSD: Progressbar Background */
+.iconOsdProgressInner {
+    background: var(--accent100) !important;
+    color: var(--accent100) !important;
+}
+
+/*
+===========================================================================
    Player OSD: Chapter Thumbnails
 ===========================================================================
 * > ultrachromic / 
@@ -1998,15 +1815,18 @@
 /* Chapter Thumbnails */
 .chapterThumbContainer {
     box-shadow: 0 0 1.9vh #000;
+    border-radius: var(--rounding-media) !important;
 }
 .chapterThumb {
     height: 14vh;
     min-width: 14vh;
 	box-shadow: 0 0 1.9vh #000;
+    border-radius: var(--rounding-media) !important;
 }
 
 /* Chapter Thumbnails: Slider Bubble */
 .sliderBubble {
+    background: #0000;
     -webkit-transform: translate3d(-50%,-108%,0);
     transform: translate3d(-50%,-108%,0);
 }
@@ -2016,6 +1836,7 @@
     right: auto;
 	bottom: 4px;
 	padding: .25em 0.7em;
+    border-radius: var(--rounding-media) !important;
 }
 .chapterThumbText {
     font-size: 1em;
@@ -2031,13 +1852,39 @@
 .upNextContainer {
     padding-left: 1.25em;
     padding-right: 1.25em;
+    border-radius: var(--rounding-media) !important;
+    box-shadow: var(--buttonglow) !important;
+}
+
+/* UpNext: Poster */
+.upNextDialog-poster-img {
+    border-radius: var(--rounding-media) !important;
+}
+
+/* UpNext: Countdown */
+.upNextDialog-countdownText {
+    color: var(--accent100) !important;
 }
 
 /* UpNext: Buttons */
 .upNextDialog-button {
     margin-left: .5em;
+    background: #0000;
+    border-radius: var(--rounding-system) !important;
+    border: var(--buttonborder) !important;
     -webkit-transform: none !important;
     transform: none !important;
+}
+.upNextDialog-button:hover {
+    color: var(--accent100) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    border-color: var(--accent40) !important;
+}
+.upNextDialog-button:focus {
+    color: var(--accent100) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: var(--accent80) !important;
+    box-shadow: var(--cardglow) !important;
 }
 
 /*
@@ -2055,11 +1902,25 @@
 /* Settings: Titles */
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle {
+    background: hsl(0deg 0% 100% / 10%);
+    border-radius: var(--rounding-system) !important;
     padding-top: .3em;
     padding-bottom: .3em;
     margin-left: -.5em;
     padding-left: .5em;
     margin-right: -.5em;
+}
+
+/* Menu Items: Additional content */
+.listItemButton,
+.listItemImageButton {
+    border-radius: var(--rounding-system) !important;
+}
+
+/* Menu Items: Remove background on some icons */
+.listItemIcon {
+    background: #0000 !important;
+    border-radius: var(--rounding-system) !important;
 }
 
 /* Center Settings Items (Mobile) */
@@ -2071,13 +1932,8 @@
 /* Subtitles: Preview-Box */
 .subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
+    border-radius: var(--rounding-system) !important;
 }
-
-/*
-===========================================================================
-   Settings: Individual Sites
-===========================================================================
-*/
 
 /* Settings Pages: Center content and Text */
 #userProfilePage,
@@ -2095,10 +1951,6 @@
 #languagePreferencesPage,
 #searchPage {
     padding-top: 5em !important;
-}
-.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
-    width: 100%;
-    text-align: center;
 }
 
 /* Preferences Pages */
@@ -2135,7 +1987,14 @@
     padding-left: 0em;
     margin-top: .5em;
     margin-bottom: .5em;
+    background: hsl(0deg 0% 100% / 10%);
     text-align: center;
+}
+
+.searchSuggestionsList > div:hover,
+.searchSuggestionsList > div:has(.emby-button:focus) {
+    background: hsl(0deg 0% 100% / 10%);
+    border-radius: var(--rounding-system);
 }
 
 /*
@@ -2169,6 +2028,15 @@
     margin-top: 2em;
 }
 
+/* User Profile: Image */
+.imagePlaceHolder {
+    border: var(--buttonborder) !important;
+    border-radius: var(--rounding-media);
+}
+.imagePlaceHolder:hover {
+    border: solid 2px var(--accent40) !important;
+}
+
 /* User Profile: Username bold */
 h2.username {
     margin-top: 0px;
@@ -2176,4 +2044,37 @@ h2.username {
     color: #fff;
 }
 
+/*
+===========================================================================
+   Misc & Unknown (aka TODOs)
+===========================================================================
+*/
 
+/* Misc: paperList
+.paperList {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: var(--rounding-system) !important;
+} */
+
+/* Misc: MDL-Switch
+.mdl-switch__input:checked + .mdl-switch__label + .mdl-switch__trackContainer > .mdl-switch__track {
+    background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5);
+} */
+
+/* Misc: Item Selection Panel 
+.itemSelectionPanel {
+    border: 0.01em solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.5) !important;
+    border-radius: var(--rounding-media) !important;
+} */
+
+/* Misc: Fab-Button
+.fab {
+    border-radius: var(--rounding-system) !important;
+    transition: all 0.2s !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+} */
+
+/* Misc: SyncPlay */
+.syncPlayIconCircle {
+    color: var(--accent100) !important;
+}
