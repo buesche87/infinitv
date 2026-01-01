@@ -22,12 +22,22 @@
 
 :root {
 
-    /* Accent predefinition */
+    /* Accents */
     --accent100: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
     --accent80: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
     --accent60: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
     --accent40: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
     --accent20: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
+
+    /* Backgrounds */
+    --bgwhite10: hsl(0deg 0% 100% / 10%);
+    --bgdark20: rgba(0, 0, 0, 0.2);
+    --bgdark40: rgba(0, 0, 0, 0.4);
+    --bgdark60: rgba(0, 0, 0, 0.6);
+    --bgdark80: rgba(0, 0, 0, 0.8);
+
+    /* Border */
+    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
 
     /* Card Shadow */
     --cardshadow: 4px 4px 10px 3px rgb(0 0 0 / 40%);
@@ -43,8 +53,7 @@
     /* Text Shadow */
     --textshadow: 2px 2px 4px black;
 
-    /* Border */
-    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
+
 
     /* TODO: Header accent color (keep it dark) */
     --haccent-h: 310;
@@ -91,14 +100,11 @@
 
 /*
 ============================================================================
-   Colors
+   Text Colors
 ============================================================================
 */
 
-/* Colors: Text
---------------------------------------------------------------------------*/
-
-/* Colors: accent 80 % */
+/* Text Colors: Accent 80% */
 #loginPage .cardImage,
 .Mui-selected,
 .navMenuOption-selected,
@@ -125,7 +131,7 @@
     }
 }
 
-/* Colors: accent 100 % */
+/* Text Colors: Accent 100% */
 .actionSheetMenuItem:focus,
 .button-link:focus,
 .button-submit:focus,
@@ -182,10 +188,41 @@
     }
 }
 
-/* Border-Colors
---------------------------------------------------------------------------*/
+/*
+============================================================================
+   Border Colors
+============================================================================
+*/
 
-/* border color: accent 40% */ 
+/* Border Colors: Accent 100% */ 
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4,
+.progressring-spiner {
+    border-color: var(--accent100) !important;
+}
+
+/* Border Colors: Accent 80% */ 
+.favorite-button.favorited,
+.button-submit:focus,
+.detail-button:focus,
+.emby-button.block:focus,
+.favorite-button:focus,
+.play-button:focus,
+.raised:focus,
+.upNextDialog-button:focus {
+    border-color: var(--accent80) !important;
+}
+
+/* Border Colors: Accent 60% */ 
+@media (hover: hover) and (pointer: fine) {
+    .listItem-border:hover {
+        border-color: var(--accent60) !important;
+    }
+}
+
+/* Border Colors: Accent 40% */ 
 @media (hover: hover) and (pointer: fine) {
     .actionSheetMenuItem:hover,
     .button-submit:hover,
@@ -203,35 +240,7 @@
     }
 }
 
-/* border color: accent 60% */ 
-@media (hover: hover) and (pointer: fine) {
-    .listItem-border:hover {
-        border-color: var(--accent60) !important;
-    }
-}
-
-/* border color: accent 80% */ 
-.favorite-button.favorited,
-.button-submit:focus,
-.detail-button:focus,
-.emby-button.block:focus,
-.favorite-button:focus,
-.play-button:focus,
-.raised:focus,
-.upNextDialog-button:focus {
-    border-color: var(--accent80) !important;
-}
-
-/* border color: accent 100% */ 
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4,
-.progressring-spiner {
-    border-color: var(--accent100) !important;
-}
-
-/* border color: transparent */
+/* Border Colors: Transparent*/ 
 .actionSheetMenuItem,
 .clearLink > .emby-button:focus,
 .detailButton:focus,
@@ -273,7 +282,7 @@
     background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
-/* Backgrounds: transparent*/
+/* Backgrounds: Transparent */
 .actionSheetMenuItem,
 .button-link,
 .button-submit,
@@ -313,7 +322,7 @@
 /* Backgrounds: Light
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: white 10% */
+/* Backgrounds: Light 10% */
 #loginPage .cardImage,
 #searchPage .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
@@ -322,29 +331,29 @@
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
 .verticalSection > .sectionTitleContainer-cards {
-    background: hsl(0deg 0% 100% / 10%);
+    background: var(--bgwhite10);
 }
 
 /* Backgrounds: Dark
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: black 20% */
+/* Backgrounds: Dark 20% */
 .detail-button,
 .favorite-button,
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage),
 .play-button {
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: var(--bgdark20) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .button-submit:hover,
     .emby-button.block:hover,
     .raised:hover {
-        background: rgba(0, 0, 0, 0.2) !important;
+        background: var(--bgdark20) !important;
     }
 }
 
-/* Backgrounds: black 40% */
+/* Backgrounds: Dark 40% */
 .button-submit:focus,
 .checkboxOutline,
 .emby-button.block:focus,
@@ -358,18 +367,18 @@
 .raised:focus,
 .selectionCommandsPanel,
 #loginPage .padded-left.padded-right.padded-bottom-page {
-    background: rgba(0, 0, 0, 0.4) !important;
+    background: var(--bgdark40) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .detailButton:hover,
     .listItem-border:hover,
     .upNextDialog-button:hover {
-        background: rgba(0, 0, 0, 0.4) !important;
+        background: var(--bgdark40) !important;
     }
 }
 
-/* Backgrounds: black 60% */
+/* Backgrounds: Dark 60% */
 .detailButton:focus,
 .listItem-largeImage:focus,
 .upNextDialog-button:focus {
@@ -382,11 +391,11 @@
     .emby-select-withcolor:not(:disabled):hover,
     .emby-textarea:not(:disabled):hover,
     .listItem-focusscale:hover {
-        background: rgba(0, 0, 0, 0.6) !important;
+        background: var(--bgdark60) !important;
     }
 }
 
-/* Backgrounds: black 80% */
+/* Backgrounds: Dark 80% */
 .checkboxOutline:focus
 .detail-button:focus,
 .emby-input:focus,
@@ -396,42 +405,42 @@
 .favorite-button:focus,
 .listItem-focusscale:focus,
 .play-button:focus {
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: var(--bgdark80) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .detail-button:hover,
     .favorite-button:hover,
     .play-button:hover {
-        background: rgba(0, 0, 0, 0.8) !important;
+        background: var(--bgdark80) !important;
     }
 }
 
 /* Backgrounds: Accent
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: accent 40% */
+/* Backgrounds: Accent 40% */
 @media (hover: hover) and (pointer: fine) {
     .emby-select option:hover {
         background: var(--accent40) !important;
     }
 }
 
-/* Backgrounds: accent 60% */
+/* Backgrounds: Accent 60% */
 @media (hover: hover) and (pointer: fine) {
     .alphaPickerButton:hover {
         background: var(--accent60) !important;
     }
 }
 
-/* Backgrounds: accent 80% */
+/* Backgrounds: Accent 80% */
 .alphaPickerButton:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-select option:focus {
     background: var(--accent80) !important;
 }
 
-/* Backgrounds: accent 100% */
+/* Backgrounds: Accent 100% */
 .countIndicator,
 .filterIndicator,
 .iconOsdProgressInner,
@@ -443,17 +452,17 @@
 }
 
 
-/* Backgrounds: background-color
+/* Backgrounds Colors
 --------------------------------------------------------------------------*/
 
-/* Background Colors: accent 20% */
+/* Background Colors: Accent 20% */
 @media (hover: hover) and (pointer: fine) {
     .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
         background-color: var(--accent20);
     }
 }
 
-/* Background Colors: transparent */
+/* Background Colors: Transparent */
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
 .paper-icon-button-light:not(.alphaPickerButton):active {
@@ -470,7 +479,7 @@
 /* Backgrounds: Card defaults
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: default for empty cards */
+/* Backgrounds: Defaults for empty cards */
 .defaultCardBackground1 {
     background: hsl(var(--accent-h), var(--accent-s), 17%);
 }
@@ -493,7 +502,7 @@
 ============================================================================
 */
 
-/* Borders: grey 2px */
+/* Borders: Grey */
 .button-submit,
 .checkboxOutline,
 .detail-button,
@@ -509,15 +518,15 @@
 .play-button,
 .raised,
 .upNextDialog-button {
-    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    border: var(--buttonborder) !important;
 }
 
-/* Borders: accent 20% 2px */
+/* Borders: Accent 20% */
 .emby-checkbox:checked + span + .checkboxOutline {
     border: 2px solid var(--accent20) !important;
 }
 
-/* Borders: accent 40% 2px */
+/* Borders: Accent 40% */
 @media (hover: hover) and (pointer: fine) {
     .checkboxOutline:not(:disabled):hover,
     .emby-checkbox:hover + span + .checkboxOutline,
@@ -530,7 +539,7 @@
     }
 }
 
-/* Borders: accent 80% 2px */
+/* Borders: Accent 80% */
 .checkboxOutline:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-input:focus,
@@ -539,21 +548,7 @@
     border: 2px solid var(--accent80) !important;
 }
 
-/* Borders: accent 80% 1px */
-@media (hover: hover) and (pointer: fine) {
-    .navMenuOption:hover {
-        border: solid 1px var(--accent80) !important;
-    }
-}
-
-/* Borders: transparent 1px */
-.navMenuOption,
-.navMenuOption-selected,
-.layout-tv .itemsContainer > .listItem-focusscale:focus {
-    border: solid 1px #0000 !important;
-}
-
-/* Borders: transparent 2px */
+/* Borders: Transparent 2px */
 .actionSheetMenuItem,
 .emby-collapsible-button,
 .listItem-border,
@@ -561,7 +556,22 @@
     border: solid 2px #0000 !important;
 }
 
-/* No borders */
+
+/* Borders: 1px - Accent 80% */
+@media (hover: hover) and (pointer: fine) {
+    .navMenuOption:hover {
+        border: solid 1px var(--accent80) !important;
+    }
+}
+
+/* Borders: 1px - Transparent */
+.navMenuOption,
+.navMenuOption-selected,
+.layout-tv .itemsContainer > .listItem-focusscale:focus {
+    border: solid 1px #0000 !important;
+}
+
+/* No Borders */
 .countIndicator,
 .mediaSourceIndicator,
 .osdPoster img,
@@ -646,7 +656,7 @@
     border-radius: var(--rounding-system) !important;
 }
 
-/* No border radius */
+/* No Border Radius */
 .layout-tv .detailPageSecondaryContainer .sectionTitle,
 .layout-tv .homePage .sectionTitle,
 .homePage .sectionTitleContainer-cards,
@@ -660,7 +670,7 @@
 ============================================================================
 */
 
-/* Shadows: transparent */
+/* Shadows: Transparent */
 .cardPadder,
 .mainDrawer {
     box-shadow: none !important;
