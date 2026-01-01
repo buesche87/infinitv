@@ -666,35 +666,53 @@
 
 /*
 ============================================================================
-   Box Shadows
+   Box Shadows & Glow
 ============================================================================
 */
 
 /* Shadows: Transparent */
 .cardPadder,
+.cardBox,
+.cardScalable,
 .mainDrawer {
     box-shadow: none !important;
 }
 
-/* Shadows: --cardshadow (not on mobile > performance) */
+/* Not on mobile */
 @media (pointer: fine) {
-    .libraryPage .card:has(.cardFooter) .cardBox,
-    .libraryPage .card:not(:has(.cardFooter)) .cardScalable,
-    .detailImageContainer .card {
+    
+    /* Card Shadow */
+    .detailImageContainer .card,
+    .itemsContainer > .card .cardScalable,
+    .itemsContainer > .card:has(.cardFooter) .cardBox {
         box-shadow: var(--cardshadow) !important;
     } 
+
+    /* No Shadow */
+    .itemsContainer > .card:has(.cardFooter) .cardScalable {
+        box-shadow: none !important;
+    }
 }
 
-/* Shadows: --cardglow */
+/* Glow */
 .toast {
     box-shadow: var(--cardglow) !important;
 }
 
+/* Not on mobile */
 @media (hover: hover) and (pointer: fine) {
+
+    /* Glow */
     .bannerCard:hover > .cardBox,
-    .itemsContainer > .card:has(.cardFooter):hover .cardBox,
-    .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable {
+    .itemsContainer > .card:hover .cardScalable,
+    .itemsContainer > .card:hover:has(.cardFooter) .cardBox {
         box-shadow: var(--cardglow) !important;
+    }
+
+    /* Don't Glow*/
+    .detailImageContainer .card:hover,
+    .itemsContainer > .card:hover:has(.cardFooter) .cardScalable {
+        box-shadow: none !important;
     }
 }
 
