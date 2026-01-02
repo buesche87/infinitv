@@ -560,7 +560,7 @@
 /* Borders: 1px - Accent 80% */
 @media (hover: hover) and (pointer: fine) {
     .navMenuOption:hover {
-        border: solid 1px var(--accent80) !important;
+        border: solid 1px var(--accent60) !important;
     }
 }
 
@@ -572,10 +572,10 @@
 }
 
 /* No Borders */
-.countIndicator,
-.mediaSourceIndicator,
-.osdPoster img,
-.playedIndicator,
+/* .countIndicator, */
+.indicator,
+/* .osdPoster img, */
+/* .playedIndicator, */
 .skip-button {
     border: none !important;
 }
@@ -590,12 +590,12 @@
 .blurhash-canvas,
 .cardBox,
 .cardContent,
-.cardOverlayContainer,
 .cardContent-button,
 .cardContent-shadow,
 .cardImage,
 .cardImageContainer,
 .cardOverlayButtonIcon,
+.cardOverlayContainer,
 .cardPadder,
 .cardScalable,
 .chapterThumb,
@@ -603,57 +603,60 @@
 .chapterThumbTextContainer,
 .detailButton,
 /* .detailImageContainer .card, */
-.detail-button,
+/* .detail-button, */
 .favorite-button,
 .imagePlaceHolder,
-.primaryImageWrapper > img,
-.osdPoster img,
+/* .primaryImageWrapper > img, */
+/* .osdPoster img, */
 .itemDetailImage,
 .itemProgressBar,
 .itemProgressBarForeground,
 .listItem-focusscale,
 .listItem-largeImage,
 .paper-icon-button-light,
-.play-button,
+/* .play-button, */
 .upNextContainer,
 .upNextDialog-poster-img,
-.visualCardBox,
+/* .visualCardBox, */
 #loginPage .padded-left.padded-right.padded-bottom-page {
     border-radius: var(--rounding-media) !important;
 }
 
 /* Rounding System */
 .actionSheetMenuItem,
-.button-submit,
+/* .button-submit, */
 .checkboxOutline,
-.countIndicator,
+/* .countIndicator, */
 .dialog,
-.emby-button.block,
-.emby-collapsible-button,
+.emby-button,
+/* .emby-button.block, */
+/* .emby-collapsible-button, */
 .emby-input,
 .emby-select,
-.emby-select-withcolor,
+/* .emby-select-withcolor, */
 .emby-textarea,
 .formDialogHeader,
 .formDialogFooter,
+.indicator,
 .itemsViewSettingsContainer,
-.listItem-border,
-.listItemButton,
+.listItem,
+/* .listItem-border, */
+/* .listItemButton, */
 .listItemIcon,
 .listTextButton-autohide,
-.mediaSourceIndicator,
+/* .mediaSourceIndicator, */
 .paperList,
-.playedIndicator,
-.raised,
+/* playedIndicator, */
+/* .raised, */
 .sectionTitle,
 .sectionTitleContainer-cards,
-.skip-button,
+/* .skip-button, */
 .subtitleappearance-preview,
 .toast,
-.upNextDialog-button,
+/* .upNextDialog-button, */
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
-    border-radius: var(--rounding-system) !important;
+    border-radius: var(--rounding-system);
 }
 
 /* No Border Radius */
@@ -719,14 +722,14 @@
 /* Shadows: --buttonglow */
 .layout-tv .detailButton:focus,
 .layout-tv .favorite-button:focus,
-/* .layout-tv .listItem-focusscale:focus, */
-.layout-tv .listItem-largeImage:focus,
-.layout-tv .play-button:focus,
+.layout-tv .libraryPage .listItem-focusscale:focus,
+.layout-tv .libraryPage .listItem-largeImage:focus,
+/* .layout-tv .play-button:focus, */
 .layout-desktop .detailButton:focus,
 .layout-desktop .favorite-button:focus,
-.layout-desktop .listItem-focusscale:focus,
-.layout-desktop .listItem-largeImage:focus,
-.layout-desktop .play-button:focus,
+/* .layout-desktop .listItem-focusscale:focus, */
+/* .layout-desktop .listItem-largeImage:focus, */
+/* .layout-desktop .play-button:focus, */
 .upNextContainer,
 .upNextDialog-button:focus {
     box-shadow: var(--buttonglow) !important;
@@ -1869,29 +1872,27 @@
     transform: none !important;
     margin-right: .5em;
 }
-.layout-tv .listItem.listItem-largeImage {
+.layout-tv .listItem-largeImage {
     height: 15em;
 }
 
 /* Large List Items: Align Body */
-.listItem-largeImage .listItemBody {
+.listItem.listItem-largeImage .listItemBody {
     align-self: normal;
     padding-top: .5em;
     padding-left: .5em;
 }
 
 /* Large List Items: Text */
-.listItem-largeImage .listItem-overview {
+.listItem.listItem-largeImage .listItem-overview {
     max-height: 8.5em;
 }
 
 /* List Items: Indicator */
-.layout-tv .listItemIndicators,
-.layout-desktop .listItemIndicators {
+.layout-tv .listItemIndicators {
     left: 0.75em;
     top: 1.75em;
 }
-
 .layout-desktop .listItemIndicators {
     left: 0.75em;
     top: 0.75em;
@@ -1902,6 +1903,9 @@
     color: var(--accent80) !important;
 }
 
+.layout-mobile .listItem-largeImage .listItemImageButton {
+    border-radius: var(--rounding-system) !important;
+}
 
 .layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
     margin: .5em;
@@ -2204,5 +2208,3 @@ h2.username {
     font-weight: 600;
     color: #fff;
 }
-
-
