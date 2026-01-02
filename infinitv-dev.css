@@ -615,7 +615,7 @@
 .chapterThumbContainer,
 .chapterThumbTextContainer,
 .detailButton,
-/* .detailImageContainer .card, */
+.detailImageContainer .card,
 /* .detail-button, */
 .favorite-button,
 .imagePlaceHolder,
@@ -742,7 +742,6 @@
 }
 
 /* Don't Glow*/
-.detailImageContainer .card:hover,
 .card:hover .cardBox.withMultiSelect,
 .card:hover .cardBox.withMultiSelect .cardScalable,
 .itemsContainer > .card:has(.cardFooter) .cardScalable,
@@ -1751,7 +1750,7 @@
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     left: 3% !important;
-    max-width: 26vw;
+    /* max-width: 26vw; */
 }
 
 /* Media Pages: Center Content (Mobile) */
