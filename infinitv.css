@@ -20,12 +20,22 @@
 
 :root {
 
-    /* Accent predefinition */
+    /* Accents */
     --accent100: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
     --accent80: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
     --accent60: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
     --accent40: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
     --accent20: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
+
+    /* Backgrounds */
+    --bgwhite10: hsl(0deg 0% 100% / 10%);
+    --bgdark20: rgba(0, 0, 0, 0.2);
+    --bgdark40: rgba(0, 0, 0, 0.4);
+    --bgdark60: rgba(0, 0, 0, 0.6);
+    --bgdark80: rgba(0, 0, 0, 0.8);
+
+    /* Border */
+    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
 
     /* Card Shadow */
     --cardshadow: 4px 4px 10px 3px rgb(0 0 0 / 40%);
@@ -41,8 +51,7 @@
     /* Text Shadow */
     --textshadow: 2px 2px 4px black;
 
-    /* Border */
-    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
+
 
     /* TODO: Header accent color (keep it dark) */
     --haccent-h: 310;
@@ -82,21 +91,18 @@
 
 /* Transparent Background */
 .noBackdropTransparency .detailPagePrimaryContainer, 
-.noBackdropTransparency .detailPageSecondaryContainer,
-.backgroundContainer-transparent {
-    background: #0000 !important;
+.noBackdropTransparency .detailPageSecondaryContainer {
+    /* background: #0000 !important; */
+    background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
 /*
 ============================================================================
-   Colors
+   Text Colors
 ============================================================================
 */
 
-/* Colors: Text
---------------------------------------------------------------------------*/
-
-/* Colors: accent 80 % */
+/* Text Colors: Accent 80% */
 #loginPage .cardImage,
 .Mui-selected,
 .navMenuOption-selected,
@@ -123,7 +129,7 @@
     }
 }
 
-/* Colors: accent 100 % */
+/* Text Colors: Accent 100% */
 .actionSheetMenuItem:focus,
 .button-link:focus,
 .button-submit:focus,
@@ -180,10 +186,41 @@
     }
 }
 
-/* Border-Colors
---------------------------------------------------------------------------*/
+/*
+============================================================================
+   Border Colors
+============================================================================
+*/
 
-/* border color: accent 40% */ 
+/* Border Colors: Accent 100% */ 
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4,
+.progressring-spiner {
+    border-color: var(--accent100) !important;
+}
+
+/* Border Colors: Accent 80% */ 
+.favorite-button.favorited,
+.button-submit:focus,
+.detail-button:focus,
+.emby-button.block:focus,
+.favorite-button:focus,
+.play-button:focus,
+.raised:focus,
+.upNextDialog-button:focus {
+    border-color: var(--accent80) !important;
+}
+
+/* Border Colors: Accent 60% */ 
+@media (hover: hover) and (pointer: fine) {
+    .listItem-border:hover {
+        border-color: var(--accent60) !important;
+    }
+}
+
+/* Border Colors: Accent 40% */ 
 @media (hover: hover) and (pointer: fine) {
     .actionSheetMenuItem:hover,
     .button-submit:hover,
@@ -201,35 +238,7 @@
     }
 }
 
-/* border color: accent 60% */ 
-@media (hover: hover) and (pointer: fine) {
-    .listItem-border:hover {
-        border-color: var(--accent60) !important;
-    }
-}
-
-/* border color: accent 80% */ 
-.favorite-button.favorited,
-.button-submit:focus,
-.detail-button:focus,
-.emby-button.block:focus,
-.favorite-button:focus,
-.play-button:focus,
-.raised:focus,
-.upNextDialog-button:focus {
-    border-color: var(--accent80) !important;
-}
-
-/* border color: accent 100% */ 
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4,
-.progressring-spiner {
-    border-color: var(--accent100) !important;
-}
-
-/* border color: transparent */
+/* Border Colors: Transparent*/ 
 .actionSheetMenuItem,
 .clearLink > .emby-button:focus,
 .detailButton:focus,
@@ -271,7 +280,7 @@
     background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
-/* Backgrounds: transparent*/
+/* Backgrounds: Transparent */
 .actionSheetMenuItem,
 .button-link,
 .button-submit,
@@ -283,8 +292,8 @@
 .emby-collapsible-button,
 .emby-button.block,
 .listItem,
-.listItem-border,
-.listItem-largeImage,
+/* .listItem-border, */
+/* .listItem-largeImage, */
 .listItemBodyText,
 .listItemIcon,
 .listTextButton-autohide,
@@ -311,7 +320,7 @@
 /* Backgrounds: Light
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: white 10% */
+/* Backgrounds: Light 10% */
 #loginPage .cardImage,
 #searchPage .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
@@ -320,29 +329,29 @@
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
 .verticalSection > .sectionTitleContainer-cards {
-    background: hsl(0deg 0% 100% / 10%);
+    background: var(--bgwhite10);
 }
 
 /* Backgrounds: Dark
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: black 20% */
+/* Backgrounds: Dark 20% */
 .detail-button,
 .favorite-button,
 .itemsContainer > .listItem-focusscale:not(.listItem-largeImage),
 .play-button {
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: var(--bgdark20) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .button-submit:hover,
     .emby-button.block:hover,
     .raised:hover {
-        background: rgba(0, 0, 0, 0.2) !important;
+        background: var(--bgdark20) !important;
     }
 }
 
-/* Backgrounds: black 40% */
+/* Backgrounds: Dark 40% */
 .button-submit:focus,
 .checkboxOutline,
 .emby-button.block:focus,
@@ -356,18 +365,19 @@
 .raised:focus,
 .selectionCommandsPanel,
 #loginPage .padded-left.padded-right.padded-bottom-page {
-    background: rgba(0, 0, 0, 0.4) !important;
+    background: var(--bgdark40) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .detailButton:hover,
     .listItem-border:hover,
+    .listItem-largeImage:hover,
     .upNextDialog-button:hover {
-        background: rgba(0, 0, 0, 0.4) !important;
+        background: var(--bgdark40) !important;
     }
 }
 
-/* Backgrounds: black 60% */
+/* Backgrounds: Dark 60% */
 .detailButton:focus,
 .listItem-largeImage:focus,
 .upNextDialog-button:focus {
@@ -380,11 +390,11 @@
     .emby-select-withcolor:not(:disabled):hover,
     .emby-textarea:not(:disabled):hover,
     .listItem-focusscale:hover {
-        background: rgba(0, 0, 0, 0.6) !important;
+        background: var(--bgdark60) !important;
     }
 }
 
-/* Backgrounds: black 80% */
+/* Backgrounds: Dark 80% */
 .checkboxOutline:focus
 .detail-button:focus,
 .emby-input:focus,
@@ -394,42 +404,42 @@
 .favorite-button:focus,
 .listItem-focusscale:focus,
 .play-button:focus {
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: var(--bgdark80) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .detail-button:hover,
     .favorite-button:hover,
     .play-button:hover {
-        background: rgba(0, 0, 0, 0.8) !important;
+        background: var(--bgdark80) !important;
     }
 }
 
 /* Backgrounds: Accent
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: accent 40% */
+/* Backgrounds: Accent 40% */
 @media (hover: hover) and (pointer: fine) {
     .emby-select option:hover {
         background: var(--accent40) !important;
     }
 }
 
-/* Backgrounds: accent 60% */
+/* Backgrounds: Accent 60% */
 @media (hover: hover) and (pointer: fine) {
     .alphaPickerButton:hover {
         background: var(--accent60) !important;
     }
 }
 
-/* Backgrounds: accent 80% */
+/* Backgrounds: Accent 80% */
 .alphaPickerButton:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-select option:focus {
     background: var(--accent80) !important;
 }
 
-/* Backgrounds: accent 100% */
+/* Backgrounds: Accent 100% */
 .countIndicator,
 .filterIndicator,
 .iconOsdProgressInner,
@@ -441,17 +451,18 @@
 }
 
 
-/* Backgrounds: background-color
+/* Backgrounds Colors
 --------------------------------------------------------------------------*/
 
-/* Background Colors: accent 20% */
+/* Background Colors: Accent 20% */
 @media (hover: hover) and (pointer: fine) {
     .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
         background-color: var(--accent20);
     }
 }
 
-/* Background Colors: transparent */
+/* Background Colors: Transparent */
+.actionSheetMenuItem:focus,
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
 .paper-icon-button-light:not(.alphaPickerButton):active {
@@ -468,7 +479,7 @@
 /* Backgrounds: Card defaults
 --------------------------------------------------------------------------*/
 
-/* Backgrounds: default for empty cards */
+/* Backgrounds: Defaults for empty cards */
 .defaultCardBackground1 {
     background: hsl(var(--accent-h), var(--accent-s), 17%);
 }
@@ -491,11 +502,12 @@
 ============================================================================
 */
 
-/* Borders: grey 2px */
+/* Borders: Grey */
 .button-submit,
 .checkboxOutline,
-.detail-button,
+/* .detail-button, */
 .detailButton,
+.emby-button,
 .emby-button.block,
 .emby-input,
 .emby-textarea,
@@ -504,18 +516,18 @@
 .imagePlaceHolder,
 .listItem-focusscale,
 .listItem-largeImage,
-.play-button,
+/* .play-button, */
 .raised,
 .upNextDialog-button {
-    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    border: var(--buttonborder);
 }
 
-/* Borders: accent 20% 2px */
+/* Borders: Accent 20% */
 .emby-checkbox:checked + span + .checkboxOutline {
     border: 2px solid var(--accent20) !important;
 }
 
-/* Borders: accent 40% 2px */
+/* Borders: Accent 40% */
 @media (hover: hover) and (pointer: fine) {
     .checkboxOutline:not(:disabled):hover,
     .emby-checkbox:hover + span + .checkboxOutline,
@@ -528,7 +540,7 @@
     }
 }
 
-/* Borders: accent 80% 2px */
+/* Borders: Accent 80% */
 .checkboxOutline:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
 .emby-input:focus,
@@ -537,21 +549,7 @@
     border: 2px solid var(--accent80) !important;
 }
 
-/* Borders: accent 80% 1px */
-@media (hover: hover) and (pointer: fine) {
-    .navMenuOption:hover {
-        border: solid 1px var(--accent80) !important;
-    }
-}
-
-/* Borders: transparent 1px */
-.navMenuOption,
-.navMenuOption-selected,
-.layout-tv .itemsContainer > .listItem-focusscale:focus {
-    border: solid 1px #0000 !important;
-}
-
-/* Borders: transparent 2px */
+/* Borders: Transparent 2px */
 .actionSheetMenuItem,
 .emby-collapsible-button,
 .listItem-border,
@@ -559,11 +557,28 @@
     border: solid 2px #0000 !important;
 }
 
-/* No borders */
-.countIndicator,
-.mediaSourceIndicator,
-.osdPoster img,
-.playedIndicator,
+
+/* Borders: 1px - Accent 80% */
+@media (hover: hover) and (pointer: fine) {
+    .navMenuOption:hover {
+        border: solid 1px var(--accent60) !important;
+    }
+}
+
+/* Borders: 1px - Transparent */
+.navMenuOption,
+.navMenuOption-selected,
+.layout-tv .itemsContainer > .listItem-focusscale:focus {
+    border: solid 1px #0000 !important;
+}
+
+/* No Borders */
+/* .countIndicator, */
+.button-link,
+.emby-tab-button,
+.indicator,
+/* .osdPoster img, */
+/* .playedIndicator, */
 .skip-button {
     border: none !important;
 }
@@ -578,12 +593,12 @@
 .blurhash-canvas,
 .cardBox,
 .cardContent,
-.cardOverlayContainer,
 .cardContent-button,
 .cardContent-shadow,
 .cardImage,
 .cardImageContainer,
 .cardOverlayButtonIcon,
+.cardOverlayContainer,
 .cardPadder,
 .cardScalable,
 .chapterThumb,
@@ -591,60 +606,63 @@
 .chapterThumbTextContainer,
 .detailButton,
 /* .detailImageContainer .card, */
-.detail-button,
+/* .detail-button, */
 .favorite-button,
 .imagePlaceHolder,
-.primaryImageWrapper > img,
-.osdPoster img,
+/* .primaryImageWrapper > img, */
+/* .osdPoster img, */
 .itemDetailImage,
 .itemProgressBar,
 .itemProgressBarForeground,
 .listItem-focusscale,
 .listItem-largeImage,
 .paper-icon-button-light,
-.play-button,
+/* .play-button, */
 .upNextContainer,
 .upNextDialog-poster-img,
-.visualCardBox,
+/* .visualCardBox, */
 #loginPage .padded-left.padded-right.padded-bottom-page {
     border-radius: var(--rounding-media) !important;
 }
 
 /* Rounding System */
 .actionSheetMenuItem,
-.button-submit,
+/* .button-submit, */
 .checkboxOutline,
-.countIndicator,
+/* .countIndicator, */
 .dialog,
-.emby-button.block,
-.emby-collapsible-button,
+.emby-button,
+/* .emby-button.block, */
+/* .emby-collapsible-button, */
 .emby-input,
 .emby-select,
-.emby-select-withcolor,
+/* .emby-select-withcolor, */
 .emby-textarea,
 .formDialogHeader,
 .formDialogFooter,
+.indicator,
 .itemsViewSettingsContainer,
-.listItem-border,
-.listItemButton,
+.listItem,
+/* .listItem-border, */
+/* .listItemButton, */
 .listItemIcon,
 .listTextButton-autohide,
-.mediaSourceIndicator,
+/* .mediaSourceIndicator, */
 .paperList,
-.playedIndicator,
-.raised,
+/* playedIndicator, */
+/* .raised, */
 .sectionTitle,
 .sectionTitleContainer-cards,
-.skip-button,
+/* .skip-button, */
 .subtitleappearance-preview,
 .toast,
-.upNextDialog-button,
+/* .upNextDialog-button, */
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
-    border-radius: var(--rounding-system) !important;
+    border-radius: var(--rounding-system);
 }
 
-/* No border radius */
+/* No Border Radius */
 .layout-tv .detailPageSecondaryContainer .sectionTitle,
 .layout-tv .homePage .sectionTitle,
 .homePage .sectionTitleContainer-cards,
@@ -654,49 +672,67 @@
 
 /*
 ============================================================================
-   Box Shadows
+   Box Shadows & Glow
 ============================================================================
 */
 
-/* Shadows: transparent */
+/* Shadows: Transparent */
 .cardPadder,
+.cardBox,
+.cardScalable,
 .mainDrawer {
     box-shadow: none !important;
 }
 
-/* Shadows: --cardshadow (not on mobile > performance) */
+/* Not on mobile */
 @media (pointer: fine) {
-    .libraryPage .card:has(.cardFooter) .cardBox,
-    .libraryPage .card:not(:has(.cardFooter)) .cardScalable,
-    .detailImageContainer .card {
+    
+    /* Card Shadow */
+    .detailImageContainer .card,
+    .itemsContainer > .card .cardScalable,
+    .itemsContainer > .card:has(.cardFooter) .cardBox {
         box-shadow: var(--cardshadow) !important;
     } 
+
+    /* No Shadow */
+    .itemsContainer > .card:has(.cardFooter) .cardScalable {
+        box-shadow: none !important;
+    }
 }
 
-/* Shadows: --cardglow */
+/* Glow */
 .toast {
     box-shadow: var(--cardglow) !important;
 }
 
+/* Not on mobile */
 @media (hover: hover) and (pointer: fine) {
+
+    /* Glow */
     .bannerCard:hover > .cardBox,
-    .itemsContainer > .card:has(.cardFooter):hover .cardBox,
-    .itemsContainer > .card:not(:has(.cardFooter)):hover .cardScalable {
+    .itemsContainer > .card:hover .cardScalable,
+    .itemsContainer > .card:hover:has(.cardFooter) .cardBox {
         box-shadow: var(--cardglow) !important;
+    }
+
+    /* Don't Glow*/
+    .detailImageContainer .card:hover,
+    .itemsContainer > .card:hover:has(.cardFooter) .cardScalable {
+        box-shadow: none !important;
     }
 }
 
 /* Shadows: --buttonglow */
 .layout-tv .detailButton:focus,
 .layout-tv .favorite-button:focus,
-/* .layout-tv .listItem-focusscale:focus, */
-.layout-tv .listItem-largeImage:focus,
-.layout-tv .play-button:focus,
+.layout-tv .libraryPage .listItem-focusscale:focus,
+.layout-tv .libraryPage .listItem-largeImage:focus,
+/* .layout-tv .play-button:focus, */
 .layout-desktop .detailButton:focus,
 .layout-desktop .favorite-button:focus,
-.layout-desktop .listItem-focusscale:focus,
-.layout-desktop .listItem-largeImage:focus,
-.layout-desktop .play-button:focus,
+/* .layout-desktop .listItem-focusscale:focus, */
+/* .layout-desktop .listItem-largeImage:focus, */
+/* .layout-desktop .play-button:focus, */
 .upNextContainer,
 .upNextDialog-button:focus {
     box-shadow: var(--buttonglow) !important;
@@ -1262,6 +1298,18 @@
     margin: 1em !important;
 }
 
+#loginPage .cardBox {
+    box-shadow: none !important;
+}
+
+#loginPage .cardScalable {
+    box-shadow: var(--cardshadow) !important;
+}
+
+#loginPage .card:hover .cardScalable {
+    box-shadow: var(--cardglow) !important;
+}
+
 /*
 ============================================================================
    Home Page
@@ -1300,13 +1348,8 @@
 }
 
 /* Library Pages: Center Content */
-.layout-tv .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
-.layout-tv .libraryPage .padded-right-withalphapicker {
-    padding-left: 3vw !important;
-    padding-right: 3vw !important;
-}
-.layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
-.layout-mobile .libraryPage .padded-right-withalphapicker {
+.libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+.libraryPage .padded-right-withalphapicker {
     padding-left: 3vw !important;
     padding-right: 4vw !important;
 }
@@ -1363,8 +1406,7 @@
 .layout-tv .sectionTitleContainer-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     text-align: center;
-    padding-bottom: .5%;
-    padding-top: .5%;
+    padding: .5% 0 .5% 0;
 }
 
 /* Section Titles */
@@ -1412,8 +1454,7 @@
 .layout-mobile .sectionTitleContainer-cards,
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
     text-align: center;
-    padding-bottom: .5%;
-    padding-top: .5%;
+    padding: .5% 0 .5% 0;
 }
 
 /* Section Title: Text & Icon */
@@ -1556,7 +1597,7 @@
 --------------------------------------------------------------------------*/
 
 /* Card (TV) */
-.layout-tv .itemsContainer > .listItem-focusscale {
+.layout-tv .libraryPage .listItem-button {
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
@@ -1564,18 +1605,18 @@
     padding-left: 0em;
     height: 5em;
 }
-.layout-tv .itemsContainer > .listItem-focusscale .listItemImage {
+.layout-tv .libraryPage .listItem-button .listItemImage {
     height: 5em;
     width: 10em;
 }
-.layout-tv .itemsContainer > .listItem-focusscale:focus .listItemImage {
+.layout-tv .libraryPage .listItem-button:focus .listItemImage {
     width: 11em;
 }
 
-/* Hide Alphapicker > steals focus with remote */
+/* Hide Alphapicker > steals focus with remote
 .layout-tv .listItem-focusscale ~ .alphaPicker {
     display: none !important;
-}
+} */
 
 /* Card (Desktop) */
 .layout-desktop .itemsContainer > .listItem-border {
@@ -1839,30 +1880,30 @@
     transform: none !important;
     margin-right: .5em;
 }
-.layout-tv .listItem.listItem-largeImage,
-.layout-desktop .listItem.listItem-largeImage {
-    max-height: 15em;
-}
 .layout-tv .listItem.listItem-largeImage {
-     height: 15em;
+    height: 15em;
 }
 
 /* Large List Items: Align Body */
-.listItem-largeImage .listItemBody {
+.listItem.listItem-largeImage .listItemBody {
     align-self: normal;
     padding-top: .5em;
     padding-left: .5em;
 }
 
 /* Large List Items: Text */
-.listItem-largeImage .listItem-overview {
+.listItem.listItem-largeImage .listItem-overview {
     max-height: 8.5em;
 }
 
 /* List Items: Indicator */
-.listItemIndicators {
-    left: 0.5em;
-    top: 0.5em;
+.layout-tv .listItemIndicators {
+    left: 0.75em;
+    top: 1.75em;
+}
+.layout-desktop .listItemIndicators {
+    left: 0.75em;
+    top: 0.75em;
 }
 
 /* Play Button Color on Hover */
@@ -1870,7 +1911,9 @@
     color: var(--accent80) !important;
 }
 
-
+.layout-mobile .listItem-largeImage .listItemImageButton {
+    border-radius: var(--rounding-system) !important;
+}
 
 .layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
     margin: .5em;
@@ -2131,9 +2174,11 @@
     padding-top: .3em;
     padding-bottom: .3em;
     padding-left: 0em;
+    padding-right: 0em;
     margin-top: .5em;
     margin-bottom: .5em;
     text-align: center;
+    font-weight: 600;
 }
 
 /*
@@ -2173,5 +2218,3 @@ h2.username {
     font-weight: 600;
     color: #fff;
 }
-
-
