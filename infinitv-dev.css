@@ -280,43 +280,6 @@
     background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
-/* Backgrounds: Transparent */
-/* .actionSheetMenuItem, */
-/* .button-link, */
-/* .button-submit, */
-.cardPadder,
-.collapseContent,
-.clearLink,
-/* .clearLink > .emby-button, */
-.detailTrackSelect,
-/* .emby-collapsible-button, */
-.emby-button,
-.listItem,
-/* .listItem-border, */
-/* .listItem-largeImage, */
-.listItemBodyText,
-.listItemIcon,
-.listTextButton-autohide,
-.material-icons,
-/* .navMenuOption, */
-.overview-expand,
-/* .raised, */
-.sectionTitleTextButton:focus,
-.sliderBubble
-/* .skip-button, */
-/* .upNextDialog-button, */
-/* .clearLink > .emby-button:focus */ {
-    background: #0000 !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .collapseContent .listItem:hover,
-    .clearLink > .emby-button:hover,
-    .navMenuOption:hover {
-        background: #0000 !important;
-    }
-}
-
 /* Backgrounds: Light
 --------------------------------------------------------------------------*/
 
@@ -443,6 +406,46 @@
     background: var(--accent100) !important;
 }
 
+/* Backgrounds: Transparent
+--------------------------------------------------------------------------*/
+
+/* Backgrounds: Transparent */
+/* .actionSheetMenuItem, */
+.button-link:focus,
+/* .button-submit, */
+.cardPadder,
+.collapseContent,
+.clearLink,
+/* .clearLink > .emby-button, */
+.detailTrackSelect,
+/* .emby-collapsible-button, */
+.emby-button,
+.listItem,
+/* .listItem-border, */
+/* .listItem-largeImage, */
+.listItemBodyText,
+.listItemIcon,
+.listTextButton-autohide,
+.material-icons,
+/* .navMenuOption, */
+.overview-expand,
+/* .raised, */
+.sectionTitleTextButton:focus,
+.sliderBubble
+/* .skip-button, */
+/* .upNextDialog-button, */
+/* .clearLink > .emby-button:focus */ {
+    background: #0000 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .collapseContent .listItem:hover,
+    .clearLink > .emby-button:hover,
+    .navMenuOption:hover {
+        background: #0000 !important;
+    }
+}
+
 
 /* Backgrounds Colors
 --------------------------------------------------------------------------*/
@@ -468,6 +471,9 @@
         background-color: #0000 !important;
     }
 }
+
+
+
 
 /* Backgrounds: Card defaults
 --------------------------------------------------------------------------*/
