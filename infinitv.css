@@ -299,8 +299,8 @@
 /* Backgrounds: Dark 20% */
 .detail-button,
 .favorite-button,
-.itemsContainer > .listItem-focusscale
-/* .play-button */ {
+.itemsContainer > .listItem-focusscale,
+.play-button {
     background: var(--bgdark20) !important;
 }
 
