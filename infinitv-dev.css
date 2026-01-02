@@ -581,6 +581,7 @@
 .indicator,
 /* .osdPoster img, */
 /* .playedIndicator, */
+.sectionTitleTextButton,
 .skip-button {
     border: none !important;
 }
@@ -616,8 +617,8 @@
 .itemDetailImage,
 .itemProgressBar,
 .itemProgressBarForeground,
-.listItem-focusscale,
-.listItem-largeImage,
+.libraryPage .listItem-focusscale,
+.libraryPage .listItem-largeImage,
 .paper-icon-button-light,
 /* .play-button, */
 .upNextContainer,
