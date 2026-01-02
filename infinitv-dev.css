@@ -1927,15 +1927,15 @@
 
 /* List Items: Indicator */
 .layout-tv .listItemIndicators {
+    position: fixed;
     left: 0.75em;
     top: 1.75em;
 }
 .layout-desktop .listItemIndicators {
+    position: fixed;
     left: 0.75em;
     top: 0.75em;
 }
-
-
 
 /* Play Button Color on Hover */
 .layout-desktop .listItem-largeImage:hover .listItemImageButton {
