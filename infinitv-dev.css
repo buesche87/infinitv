@@ -93,9 +93,9 @@
 
 /* Transparent Background */
 .noBackdropTransparency .detailPagePrimaryContainer, 
-.noBackdropTransparency .detailPageSecondaryContainer,
-.backgroundContainer-transparent {
-    background: #0000 !important;
+.noBackdropTransparency .detailPageSecondaryContainer {
+    /* background: #0000 !important; */
+    background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
 /*
