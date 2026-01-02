@@ -1869,12 +1869,8 @@
     transform: none !important;
     margin-right: .5em;
 }
-.layout-tv .listItem.listItem-largeImage,
-.layout-desktop .listItem.listItem-largeImage {
-    max-height: 15em;
-}
 .layout-tv .listItem.listItem-largeImage {
-     height: 15em;
+    height: 15em;
 }
 
 /* Large List Items: Align Body */
@@ -1890,16 +1886,21 @@
 }
 
 /* List Items: Indicator */
-.listItemIndicators {
-    left: 0.5em;
-    top: 0.5em;
+.layout-tv .listItemIndicators,
+.layout-desktop .listItemIndicators {
+    left: 0.75em;
+    top: 1.75em;
+}
+
+.layout-desktop .listItemIndicators {
+    left: 0.75em;
+    top: 0.75em;
 }
 
 /* Play Button Color on Hover */
 .layout-desktop .listItem-largeImage:hover .listItemImageButton {
     color: var(--accent80) !important;
 }
-
 
 
 .layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
