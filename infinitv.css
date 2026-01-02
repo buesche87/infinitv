@@ -138,6 +138,7 @@
 .emby-checkbox:focus + .checkboxLabel,
 .emby-collapsible-button:focus,
 .emby-tab-button:focus,
+.favorite-button.favorited,
 .headerButton:active,
 .inputLabelFocused,
 .layout-tv .card.show-animation:focus .cardText-first,
@@ -202,7 +203,6 @@
 }
 
 /* Border Colors: Accent 80% */ 
-.favorite-button.favorited,
 .button-submit:focus,
 .detail-button:focus,
 .emby-button.block:focus,
@@ -267,6 +267,7 @@
 .formDialogHeader,
 .formDialogFooter,
 .mainDrawer,
+.selectionCommandsPanel,
 .skinHeader-withBackground,
 .toast,
 .videoOsdBottom {
@@ -363,7 +364,6 @@
 .paperList,
 .pageTabContent > .focuscontainer-x,
 .raised:focus,
-.selectionCommandsPanel,
 #loginPage .padded-left.padded-right.padded-bottom-page {
     background: var(--bgdark40) !important;
 }
@@ -514,10 +514,12 @@
 .emby-select-withcolor,
 .favorite-button,
 .imagePlaceHolder,
+.itemSelectionPanel,
 .listItem-focusscale,
 .listItem-largeImage,
 /* .play-button, */
 .raised,
+.selectionCommandsPanel,
 .upNextDialog-button {
     border: var(--buttonborder);
 }
@@ -540,6 +542,11 @@
     }
 }
 
+/* Borders: Accent 60% 
+.itemSelectionPanel {
+    border: 2px solid var(--accent60) !important;
+}*/
+
 /* Borders: Accent 80% */
 .checkboxOutline:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
@@ -556,7 +563,6 @@
 .listTextButton-autohide {
     border: solid 2px #0000 !important;
 }
-
 
 /* Borders: 1px - Accent 80% */
 @media (hover: hover) and (pointer: fine) {
@@ -615,6 +621,7 @@
 .itemDetailImage,
 .itemProgressBar,
 .itemProgressBarForeground,
+.itemSelectionPanel,
 .libraryPage .listItem-focusscale,
 .libraryPage .listItem-largeImage,
 .paper-icon-button-light,
@@ -694,11 +701,6 @@
     .itemsContainer > .card:has(.cardFooter) .cardBox {
         box-shadow: var(--cardshadow) !important;
     } 
-
-    /* No Shadow */
-    .itemsContainer > .card:has(.cardFooter) .cardScalable {
-        box-shadow: none !important;
-    }
 }
 
 /* Glow */
@@ -708,18 +710,10 @@
 
 /* Not on mobile */
 @media (hover: hover) and (pointer: fine) {
-
-    /* Glow */
     .bannerCard:hover > .cardBox,
     .itemsContainer > .card:hover .cardScalable,
     .itemsContainer > .card:hover:has(.cardFooter) .cardBox {
         box-shadow: var(--cardglow) !important;
-    }
-
-    /* Don't Glow*/
-    .detailImageContainer .card:hover,
-    .itemsContainer > .card:hover:has(.cardFooter) .cardScalable {
-        box-shadow: none !important;
     }
 }
 
@@ -742,6 +736,15 @@
 /* Inset Shadows on cardImages */
 .libraryPage .cardImageContainer {
     box-shadow: var(--insettop), var(--insetbottom);
+}
+
+/* Don't Glow*/
+.detailImageContainer .card:hover,
+.card:hover .cardBox.withMultiSelect,
+.card:hover .cardBox.withMultiSelect .cardScalable,
+.itemsContainer > .card:has(.cardFooter) .cardScalable,
+.itemsContainer > .card:hover:has(.cardFooter) .cardScalable {
+    box-shadow: none !important;
 }
 
 /*
@@ -1236,7 +1239,16 @@
     border-top-right-radius: var(--rounding-system) !important;
     border-bottom-right-radius: var(--rounding-system) !important;
     border-bottom-left-radius: var(--rounding-system) !important;
+    margin-left: -.15em;
+    margin-top: -.15em;
 }
+
+/* Multi-Select panel */
+.selectionCommandsPanel {
+    top: 3.9em;
+    padding: .5em;
+}
+
 
 /*
 ===========================================================================
@@ -1381,7 +1393,7 @@
 
 /* Section Titles */
 .detailPagePrimaryContainer .sectionTitle,
-.detailPageSecondaryContainer .sectionTitl {
+.detailPageSecondaryContainer .sectionTitle {
     font-weight: 600;
 }
 
