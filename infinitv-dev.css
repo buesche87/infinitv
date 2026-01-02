@@ -53,8 +53,6 @@
     /* Text Shadow */
     --textshadow: 2px 2px 4px black;
 
-
-
     /* TODO: Header accent color (keep it dark) */
     --haccent-h: 310;
     --headeraccent: hsla(var(--haccent-h), 100%, 20%, var(--headeropacity));
@@ -132,59 +130,63 @@
 }
 
 /* Text Colors: Accent 100% */
-.actionSheetMenuItem:focus,
-.button-link:focus,
-.button-submit:focus,
-.clearLink > .emby-button:focus,
-.emby-button.block:focus,
+
+/* .actionSheetMenuItem:focus, */
+/* .button-link:focus, */
+/* .button-submit:focus, */
+/* .clearLink > .emby-button:focus, */
+/* .emby-collapsible-button:focus, */
+/* .emby-tab-button:focus, */
+/* .raised:focus, */
+/* .skip-button:focus, */
+/* .upNextDialog-button:focus, */
+
+.emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
-.emby-collapsible-button:focus,
-.emby-tab-button:focus,
-.favorite-button.favorited,
 .headerButton:active,
-.inputLabelFocused,
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary,
 .listItem-border:focus,
-.listItem-button:focus .listItemBodyText:not(.secondary),
-.listTextButton-autohide:focus,
 .listItemIcon.check,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-slider,
+.paper-icon-button-light:focus,
+.paper-icon-button-light:active,
+.syncPlayIconCircle,
 .overview-expand:focus,
-.paper-icon-button-light:not(.alphaPickerButton):focus,
-.paper-icon-button-light:not(.alphaPickerButton):active,
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused,
+.favorite-button.favorited,
 .playedIndicator,
 .playstatebutton-icon-played,
-.raised:focus,
 .ratingbutton-icon-withrating,
-.selectLabelFocused,
-.skip-button:focus,
-.syncPlayIconCircle,
-.textareaLabelFocused,
-.upNextDialog-button:focus,
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary,
+.listItem-button:focus h2.listItemBodyText,
+.listTextButton-autohide:focus,
 .upNextDialog-countdownText {
     color: var(--accent100) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
-    .button-submit:hover,
+    /* .button-submit:hover, */
+    /* .play-button:hover, */
+    /* .raised:hover, */
+    /* .skip-button:hover, */
+    /* .textActionButton:hover, */
+    /* .upNextDialog-button:hover. */
+    /* .clearLink > .emby-button:hover, */
+    /* .detail-button:hover, */
+    /* .emby-tab-button:hover,*/
+    /* .navMenuOption:hover, */
+
     .cardOverlayButton:hover,
-    .clearLink > .emby-button:hover,
-    .detail-button:hover,
     .detailButton:hover,
-    .emby-button.block:hover,
-    .emby-tab-button:hover,
+    /* .emby-button.block:hover, */
+    .emby-button:hover,
     .favorite-button:hover,
     .listItem-border:hover,
-    .navMenuOption:hover,
-    .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover,
-    .play-button:hover,
-    .raised:hover,
-    .skip-button:hover,
-    .textActionButton:hover,
-    .upNextDialog-button:hover {
+    .paper-icon-button-light:not(:disabled):hover {
         color: var(--accent100) !important;
     }
 }
@@ -195,23 +197,17 @@
 ============================================================================
 */
 
-/* Border Colors: Accent 100% */ 
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4,
-.progressring-spiner {
-    border-color: var(--accent100) !important;
-}
-
 /* Border Colors: Accent 80% */ 
-.button-submit:focus,
+
+
+/* .button-submit:focus, */
 .detail-button:focus,
-.emby-button.block:focus,
-.favorite-button:focus,
-.play-button:focus,
-.raised:focus,
-.upNextDialog-button:focus {
+/* .emby-button.block:focus, */
+.emby-button:focus,
+.favorite-button:focus
+/* .play-button:focus, */
+/* .raised:focus, */
+/* .upNextDialog-button:focus*/ {
     border-color: var(--accent80) !important;
 }
 
@@ -224,18 +220,19 @@
 
 /* Border Colors: Accent 40% */ 
 @media (hover: hover) and (pointer: fine) {
-    .actionSheetMenuItem:hover,
-    .button-submit:hover,
-    .detail-button:hover,
+    /* .actionSheetMenuItem:hover, */
+    /* .button-submit:hover, */
+    /* .detail-button:hover, */
     .detailButton:hover,
-    .emby-button.block:hover,
-    .emby-collapsible-button:hover,
+    /* .emby-button.block:hover, */
+    .emby-button:hover,
+    /* .emby-collapsible-button:hover, */
     .favorite-button:hover,
     .listTextButton-autohide:hover,
-    .listItem-largeImage:hover,
-    .play-button:hover,
-    .raised:hover,
-    .upNextDialog-button:hover {
+    .listItem-largeImage:hover
+    /* .play-button:hover, */
+    /* .raised:hover, */
+    /* .upNextDialog-button:hover */ {
         border-color: var(--accent40) !important;
     }
 }
@@ -284,15 +281,15 @@
 }
 
 /* Backgrounds: Transparent */
-.actionSheetMenuItem,
-.button-link,
-.button-submit,
+/* .actionSheetMenuItem, */
+/* .button-link, */
+/* .button-submit, */
 .cardPadder,
 .collapseContent,
 .clearLink,
-.clearLink > .emby-button,
+/* .clearLink > .emby-button, */
 .detailTrackSelect,
-.emby-collapsible-button,
+/* .emby-collapsible-button, */
 .emby-button,
 .listItem,
 /* .listItem-border, */
@@ -301,14 +298,14 @@
 .listItemIcon,
 .listTextButton-autohide,
 .material-icons,
-.navMenuOption,
+/* .navMenuOption, */
 .overview-expand,
-.raised,
+/* .raised, */
 .sectionTitleTextButton:focus,
-.sliderBubble,
-.skip-button,
-.upNextDialog-button,
-.clearLink > .emby-button:focus {
+.sliderBubble
+/* .skip-button, */
+/* .upNextDialog-button, */
+/* .clearLink > .emby-button:focus */ {
     background: #0000 !important;
 }
 
@@ -341,8 +338,8 @@
 /* Backgrounds: Dark 20% */
 .detail-button,
 .favorite-button,
-.itemsContainer > .listItem-focusscale:not(.listItem-largeImage),
-.play-button {
+.itemsContainer > .listItem-focusscale
+/* .play-button */ {
     background: var(--bgdark20) !important;
 }
 
@@ -355,9 +352,10 @@
 }
 
 /* Backgrounds: Dark 40% */
-.button-submit:focus,
+/* .button-submit:focus, */
 .checkboxOutline,
-.emby-button.block:focus,
+/* .emby-button.block:focus, */
+.emby-button:focus,
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
@@ -365,7 +363,7 @@
 .itemsViewSettingsContainer,
 .paperList,
 .pageTabContent > .focuscontainer-x,
-.raised:focus,
+/* .raised:focus, */
 #loginPage .padded-left.padded-right.padded-bottom-page {
     background: var(--bgdark40) !important;
 }
@@ -401,18 +399,18 @@
 .detail-button:focus,
 .emby-input:focus,
 .emby-select option,
-.emby-select-withcolor:focus,
+/* .emby-select-withcolor:focus, */
 .emby-textarea:focus,
 .favorite-button:focus,
-.listItem-focusscale:focus,
-.play-button:focus {
+.listItem-focusscale:focus
+/* .play-button:focus */ {
     background: var(--bgdark80) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .detail-button:hover,
-    .favorite-button:hover,
-    .play-button:hover {
+    .favorite-button:hover
+    /* .play-button:hover */ {
         background: var(--bgdark80) !important;
     }
 }
@@ -424,13 +422,6 @@
 @media (hover: hover) and (pointer: fine) {
     .emby-select option:hover {
         background: var(--accent40) !important;
-    }
-}
-
-/* Backgrounds: Accent 60% */
-@media (hover: hover) and (pointer: fine) {
-    .alphaPickerButton:hover {
-        background: var(--accent60) !important;
     }
 }
 
@@ -769,6 +760,15 @@
 }
 .progressring-spiner {
     border-width: .35em;
+}
+
+/* Spinner Color */ 
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4,
+.progressring-spiner {
+    border-color: var(--accent100) !important;
 }
 
 /*
@@ -1373,17 +1373,31 @@
 }
 
 /* Library Pages: Alphabet Picker */
+
+/* Backgrounds: Accent 60% */
+
 .alphaPickerButton {
     height: 1.6em;
 }
+@media (hover: hover) {
+    .alphaPickerButton:hover {
+        background: var(--accent60) !important;
+        color: white !important;
+    }
+}
+/*
 .alphaPickerButton:hover {
     color: inherit !important;
-}
+} */
 .alphaPickerButton:focus {
     -webkit-transform: none !important;
     transform: none !important;
     transition: none !important;
+    background: var(--accent80) !important;
+    color: white !important;
+    font-weight: 600;
 }
+
 
 /*
 ===========================================================================
