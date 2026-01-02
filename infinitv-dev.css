@@ -1408,8 +1408,7 @@
 .layout-tv .sectionTitleContainer-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     text-align: center;
-    padding-bottom: .5%;
-    padding-top: .5%;
+    padding: .5% 0 .5% 0;
 }
 
 /* Section Titles */
@@ -1457,8 +1456,7 @@
 .layout-mobile .sectionTitleContainer-cards,
 .layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
     text-align: center;
-    padding-bottom: .5%;
-    padding-top: .5%;
+    padding: .5% 0 .5% 0;
 }
 
 /* Section Title: Text & Icon */
