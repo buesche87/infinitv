@@ -1422,8 +1422,8 @@
 
 /* Section Titles */
 .layout-tv .detailPagePrimaryContainer .sectionTitle {
-    text-align: left;
-    padding-left: 2%;
+    text-align: left !important;
+    padding-left: 2% !important;
 }
 .layout-tv .detailPageSecondaryContainer .sectionTitle {
     text-align: center;
@@ -1502,6 +1502,7 @@
 /* Scroller: detailPage scroller in primary container */
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     padding-right: 0em;
+    padding-left: 1em;
 }
 
 /* scroller: detailPage last scroller on page (more like this) */
@@ -1554,6 +1555,9 @@
 .layout-tv .overflowPortraitCard {
     margin-right: .6%;
     margin-bottom: .6em;
+}
+.layout-tv .detailPagePrimaryContainer .overflowPortraitCard {
+    margin-right: 0;
 }
 
 /* Media Scroller Cards: Size (Mobile) */
