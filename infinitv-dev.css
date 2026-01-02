@@ -140,6 +140,7 @@
 .emby-checkbox:focus + .checkboxLabel,
 .emby-collapsible-button:focus,
 .emby-tab-button:focus,
+.favorite-button.favorited,
 .headerButton:active,
 .inputLabelFocused,
 .layout-tv .card.show-animation:focus .cardText-first,
@@ -204,7 +205,6 @@
 }
 
 /* Border Colors: Accent 80% */ 
-.favorite-button.favorited,
 .button-submit:focus,
 .detail-button:focus,
 .emby-button.block:focus,
