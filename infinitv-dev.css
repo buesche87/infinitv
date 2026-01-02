@@ -464,6 +464,7 @@
 }
 
 /* Background Colors: Transparent */
+.actionSheetMenuItem:focus,
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
 .paper-icon-button-light:not(.alphaPickerButton):active {
@@ -575,6 +576,8 @@
 
 /* No Borders */
 /* .countIndicator, */
+.button-link,
+.emby-tab-button,
 .indicator,
 /* .osdPoster img, */
 /* .playedIndicator, */
@@ -1347,13 +1350,8 @@
 }
 
 /* Library Pages: Center Content */
-.layout-tv .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
-.layout-tv .libraryPage .padded-right-withalphapicker {
-    padding-left: 3vw !important;
-    padding-right: 3vw !important;
-}
-.layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
-.layout-mobile .libraryPage .padded-right-withalphapicker {
+.libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+.libraryPage .padded-right-withalphapicker {
     padding-left: 3vw !important;
     padding-right: 4vw !important;
 }
@@ -1603,7 +1601,7 @@
 --------------------------------------------------------------------------*/
 
 /* Card (TV) */
-.layout-tv .itemsContainer > .listItem-focusscale {
+.layout-tv .libraryPage .listItem-button {
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
@@ -1611,18 +1609,18 @@
     padding-left: 0em;
     height: 5em;
 }
-.layout-tv .itemsContainer > .listItem-focusscale .listItemImage {
+.layout-tv .libraryPage .listItem-button .listItemImage {
     height: 5em;
     width: 10em;
 }
-.layout-tv .itemsContainer > .listItem-focusscale:focus .listItemImage {
+.layout-tv .libraryPage .listItem-button:focus .listItemImage {
     width: 11em;
 }
 
-/* Hide Alphapicker > steals focus with remote */
+/* Hide Alphapicker > steals focus with remote
 .layout-tv .listItem-focusscale ~ .alphaPicker {
     display: none !important;
-}
+} */
 
 /* Card (Desktop) */
 .layout-desktop .itemsContainer > .listItem-border {
@@ -1886,7 +1884,7 @@
     transform: none !important;
     margin-right: .5em;
 }
-.layout-tv .listItem-largeImage {
+.layout-tv .listItem.listItem-largeImage {
     height: 15em;
 }
 
@@ -2180,9 +2178,11 @@
     padding-top: .3em;
     padding-bottom: .3em;
     padding-left: 0em;
+    padding-right: 0em;
     margin-top: .5em;
     margin-bottom: .5em;
     text-align: center;
+    font-weight: 600;
 }
 
 /*
