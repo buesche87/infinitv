@@ -1239,8 +1239,6 @@
     border-top-right-radius: var(--rounding-system) !important;
     border-bottom-right-radius: var(--rounding-system) !important;
     border-bottom-left-radius: var(--rounding-system) !important;
-    margin-left: -.15em;
-    margin-top: -.15em;
 }
 
 /* Multi-Select panel */
