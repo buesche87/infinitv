@@ -93,9 +93,9 @@
 
 /* Transparent Background */
 .noBackdropTransparency .detailPagePrimaryContainer, 
-.noBackdropTransparency .detailPageSecondaryContainer,
-.backgroundContainer-transparent {
-    background: #0000 !important;
+.noBackdropTransparency .detailPageSecondaryContainer {
+    /* background: #0000 !important; */
+    background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
 /*
@@ -294,8 +294,8 @@
 .emby-collapsible-button,
 .emby-button.block,
 .listItem,
-.listItem-border,
-.listItem-largeImage,
+/* .listItem-border, */
+/* .listItem-largeImage, */
 .listItemBodyText,
 .listItemIcon,
 .listTextButton-autohide,
@@ -373,6 +373,7 @@
 @media (hover: hover) and (pointer: fine) {
     .detailButton:hover,
     .listItem-border:hover,
+    .listItem-largeImage:hover,
     .upNextDialog-button:hover {
         background: var(--bgdark40) !important;
     }
@@ -505,8 +506,9 @@
 /* Borders: Grey */
 .button-submit,
 .checkboxOutline,
-.detail-button,
+/* .detail-button, */
 .detailButton,
+.emby-button,
 .emby-button.block,
 .emby-input,
 .emby-textarea,
@@ -515,10 +517,10 @@
 .imagePlaceHolder,
 .listItem-focusscale,
 .listItem-largeImage,
-.play-button,
+/* .play-button, */
 .raised,
 .upNextDialog-button {
-    border: var(--buttonborder) !important;
+    border: var(--buttonborder);
 }
 
 /* Borders: Accent 20% */
@@ -1293,6 +1295,18 @@
 #loginPage .squareCard {
     width: 33%;
     margin: 1em !important;
+}
+
+#loginPage .cardBox {
+    box-shadow: none !important;
+}
+
+#loginPage .cardScalable {
+    box-shadow: var(--cardshadow) !important;
+}
+
+#loginPage .card:hover .cardScalable {
+    box-shadow: var(--cardglow) !important;
 }
 
 /*
