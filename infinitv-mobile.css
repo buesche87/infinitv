@@ -109,3 +109,7 @@
 .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
     bottom: 4em;
 }
+
+.layout-mobile .nowPlayingInfoControls {
+    padding-bottom: 2em;
+}
