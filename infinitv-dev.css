@@ -580,6 +580,7 @@
 }
 
 /* No Border Radius */
+.backdrop-overlay,
 .layout-tv .detailPageSecondaryContainer .sectionTitle,
 .layout-tv .homePage .sectionTitle,
 .homePage .sectionTitleContainer-cards,

@@ -106,3 +106,7 @@
     top: 0;
     bottom: auto;
 }
+
+.layout-mobile .appfooter:has(.nowPlayingBar.hide) {
+    display: none;
+}
