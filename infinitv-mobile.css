@@ -102,11 +102,10 @@
     margin-top: 1em;
 }
 
-.layout-mobile .appfooter {
-    top: 0;
-    bottom: auto;
+.layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
+    bottom: 6.5em;
 }
 
-.layout-mobile .appfooter:has(.nowPlayingBar.hide) {
-    display: none;
+.layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
+    bottom: 4em;
 }
