@@ -1,0 +1,111 @@
+
+@media(min-width: 25em) {
+    .overflowPortraitCard {
+        width: 29.5vw;
+    }
+    .overflowSquareCard {
+        width:31.2vw
+    }
+    
+    .overflowBackdropCard {
+        width: 44.5vw;
+    }
+}
+
+@media(min-width: 35em) {
+    .overflowSquareCard {
+        width:31.2vw
+    }
+
+    .overflowBackdropCard {
+        width: 30vw;
+    }
+
+    .overflowSmallBackdropCard {
+        width: 30vw
+    }
+}
+
+@media(min-width: 43.75em) {
+    .overflowPortraitCard,.overflowSquareCard {
+        width: 22.1vw;
+    }
+}
+
+@media(min-width: 48.125em) {
+    .overflowBackdropCard,.overflowSmallBackdropCard {
+        width: 29.8vw;
+    }
+}
+
+@media(orientation: landscape) {
+    .overflowBackdropCard,.overflowSmallBackdropCard {
+        width:30vw
+    }
+
+    .overflowPortraitCard,.overflowSquareCard {
+        width: 23.1vw
+    }
+}
+
+@media(orientation: landscape)and (min-width:48.125em) {
+    .overflowBackdropCard,.overflowSmallBackdropCard {
+        width:23.1vw
+    }
+}
+
+@media(orientation: landscape)and (min-width:50em) {
+    .overflowSmallBackdropCard {
+        width:15.5vw
+    }
+}
+
+@media(min-width: 50em) {
+    .overflowPortraitCard,.overflowSquareCard {
+        width: 17.8vw;
+    }
+}
+
+@media(min-width: 75em) {
+    .overflowBackdropCard,.overflowSmallBackdropCard {
+        width: 22.4vw;
+    }
+
+    .overflowPortraitCard,.overflowSquareCard {
+        width: 14.8vw;
+    }
+}
+
+@media(min-width: 87.5em) {
+    .overflowPortraitCard,.overflowSquareCard {
+        width: 12.7vw;
+    }
+}
+
+@media(min-width: 100em) {
+    .overflowBackdropCard,.overflowSmallBackdropCard {
+        width: 18vw;
+    }
+
+    .overflowPortraitCard,.overflowSquareCard {
+        width: 10.8vw;
+    }
+}
+
+@media(min-width: 120em) {
+    .overflowPortraitCard,.overflowSquareCard {
+        width:10.41vw
+    }
+}
+
+@media(min-width: 131.25em) {
+    .overflowPortraitCard,.overflowSquareCard {
+        width:9.3vw
+    }
+}
+
+@media(min-width: 156.25em) {
+    .overflowBackdropCard,.overflowSmallBackdropCard {
+        width: 15vw;
+    }
+}
