@@ -127,7 +127,7 @@
 /* Text Colors: Accent 100% */
 .emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
-.headerButton:active,
+.header-right .headerButton:active,
 .listItem-border:focus,
 .listItemIcon.check,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
@@ -2062,6 +2062,48 @@
 .layout-tv .playlistSectionButton .paper-icon-button-light {
     -webkit-transform: none !important;
     transform: none !important;
+}
+
+.layout-desktop .listViewUserDataButtons .listItemButton {
+    margin-right: .1em;
+    margin-left: .1em;
+}
+
+.layout-desktop .appfooter {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    border: var(--buttonborder);
+    border-radius: var(--rounding-system);
+    padding-top: 1em;
+    padding-bottom: .25em;
+}
+
+.layout-desktop .nowPlayingBarTop {
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+.layout-desktop .nowPlayingBarUserDataButtons .mediaButton {
+    border: none !important;
+}
+
+
+
+.layout-mobile .appfooter {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    padding-top: 1em;
+    padding-bottom: .25em;
+}
+
+.layout-mobile .nowPlayingBarTop {
+    padding-top: .5em;
+}
+
+.layout-mobile .vertical-list .listItem-border {
+    border: var(--buttonborder) !important;
+}
+
+.layout-mobile .nowPlayingPageUserDataButtonsTitle .paper-icon-button-light  {
+    border: none !important;
 }
 
 /*

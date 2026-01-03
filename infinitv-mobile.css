@@ -101,3 +101,8 @@
 .layout-mobile .pageTabContent > .focuscontainer-x {
     margin-top: 1em;
 }
+
+.layout-mobile .appfooter {
+    top: 0;
+    bottom: auto;
+}
