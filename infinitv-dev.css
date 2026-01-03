@@ -75,7 +75,9 @@
 }
 
 /* Darken Background with Backdrops enables */
-.backgroundContainer.withBackdrop {
+.backgroundContainer.withBackdrop,
+.noBackdropTransparency .detailPagePrimaryContainer, 
+.noBackdropTransparency .detailPageSecondaryContainer {
     background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
@@ -87,13 +89,6 @@
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-}
-
-/* Transparent Background */
-.noBackdropTransparency .detailPagePrimaryContainer, 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    /* background: #0000 !important; */
-    background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
 /*
