@@ -196,7 +196,6 @@
 
 /* Border Colors: Transparent*/ 
 .actionSheetMenuItem,
-.clearLink > .emby-button:focus,
 .navMenuOption:focus,
 .mediaDetailButtons .detailButton:focus,
 .listItem-border,
@@ -205,11 +204,12 @@
     border-color: #0000 !important;
 }
 
+/*
 @media (hover: hover) and (pointer: fine) {
     .clearLink > .emby-button:hover {
         border-color: #0000 !important;
     }
-}
+} */
 
 /*
 ============================================================================
@@ -357,36 +357,6 @@
     background: var(--accent100) !important;
 }
 
-/* Backgrounds: Transparent
---------------------------------------------------------------------------*/
-
-/* Backgrounds: Transparent */
-.button-link:focus,
-.cardPadder,
-.collapseContent,
-.clearLink,
-.detailTrackSelect,
-.emby-button,
-.listItem,
-.listItemBodyText,
-.listItemIcon,
-.listTextButton-autohide,
-.material-icons,
-.overview-expand,
-.sectionTitleTextButton:focus,
-.sliderBubble,
-.layout-mobile .userPreferencesPage .listItem-border {
-    background: #0000 !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .collapseContent .listItem:hover,
-    .clearLink > .emby-button:hover,
-    .navMenuOption:hover {
-        background: #0000 !important;
-    }
-}
-
 /* Backgrounds Colors
 --------------------------------------------------------------------------*/
 
@@ -409,6 +379,37 @@
     .cardOverlayButton:hover,
     .listItemImageButton:hover {
         background-color: #0000 !important;
+    }
+}
+
+/* Backgrounds: Transparent
+--------------------------------------------------------------------------*/
+
+/* Backgrounds: Transparent */
+.button-link:focus,
+.cardPadder,
+.collapseContent,
+.clearLink,
+.clearLink > .emby-button,
+.detailTrackSelect,
+.emby-button,
+.listItem,
+.listItemBodyText,
+.listItemIcon,
+.listTextButton-autohide,
+.material-icons,
+.overview-expand,
+.sectionTitleTextButton:focus,
+.sliderBubble,
+.layout-mobile .userPreferencesPage .listItem-border {
+    background: #0000 !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .collapseContent .listItem:hover,
+    .clearLink > .emby-button:hover,
+    .navMenuOption:hover {
+        background: #0000 !important;
     }
 }
 
@@ -506,6 +507,7 @@
 
 /* No Borders */
 .button-link,
+.clearLink,
 .cardOverlayButton,
 .emby-tab-button,
 .indicator,
@@ -971,7 +973,7 @@
 
 /* Clearlink Container */
 .clearLink {
-    padding: .2em 1em !important;
+    padding: 0em 1em !important;
     -webkit-transform: none !important;
     transform: none !important;
     margin-left: 0px !important;
@@ -979,9 +981,10 @@
 
 /* Clearlink: Buttons inside */
 .clearLink > .emby-button {
-    padding: .2em 1em !important;
-    font-size: 1.5em;
+    padding: 0em 1em !important;
+    font-size: 1.2em;
     font-weight: 400;
+    margin: 0;
 }
 
 /*
@@ -1382,6 +1385,10 @@
 }
 .layout-mobile .overflowPortraitCard {
     width: 33%;
+
+}
+.layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
+    margin-right: .75em !important;
 }
 
 /*
@@ -1874,6 +1881,12 @@
 }
 .layout-mobile .detailPageWrapperContainer .listItemBody {
     text-align: center;
+}
+
+/* Cast > More */
+.clearLink,
+.clearLink > .emby-button {
+    margin: 0;
 }
 
 /*

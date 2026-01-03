@@ -117,3 +117,7 @@
 .layout-mobile .nowPlayingInfoControls {
     padding-bottom: 2em;
 }
+
+.layout-mobile .selectionCommandsPanel {
+    top: 0em;
+}
