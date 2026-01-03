@@ -483,6 +483,7 @@
 
 /* Borders: Transparent 2px */
 .actionSheetMenuItem,
+.actionSheetMenuItem:focus,
 .emby-collapsible-button,
 .listItem-border,
 .listTextButton-autohide {
@@ -544,6 +545,7 @@
 .itemSelectionPanel,
 .libraryPage .listItem-focusscale,
 .libraryPage .listItem-largeImage,
+.nowPlayingPageImage,
 .paper-icon-button-light,
 .upNextContainer,
 .upNextDialog-poster-img,
@@ -553,6 +555,7 @@
 
 /* Rounding System */
 .actionSheetMenuItem,
+.actionSheetMenuItem:focus,
 .checkboxOutline,
 .dialog,
 .emby-button,
@@ -1594,6 +1597,12 @@
     padding-right: 1vw !important;
 }
 
+.layout-tv .itemsContainer > .squareCard {
+    padding-bottom: .5vh !important;
+    padding-right: .25vw !important;
+}
+
+
 /*
 ===========================================================================
    Sorting & Filter
@@ -1690,8 +1699,8 @@
 
 /* Detail-Ribbon (Desktop) */
 .layout-desktop .detailRibbon {
-    height: 9em !important;
-    margin-top: -9em !important;
+    height: 9em;
+    margin-top: -9em;
 }
 
 /* Detail-Ribbon (Mobile) */
@@ -1708,6 +1717,9 @@
 }
 .layout-desktop .infoWrapper {
     padding-top: .25em;
+}
+.layout-desktop .mainDetailButtons {
+    margin-left: 1em;
 }
 
 /* Detail-Ribbon: Media Infos */
@@ -2015,6 +2027,39 @@
 /* UpNext: Buttons */
 .upNextDialog-button {
     margin-left: .5em;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/*
+===========================================================================
+   Music Player
+===========================================================================
+*/
+
+.layout-tv .nowPlayingPageImageContainer {
+    margin-right: 1.5em;
+}
+
+.layout-tv .nowPlayingButtonsContainer {
+    margin-top: .5em;
+}
+
+.layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
+    border: none !important;
+    background: #0000 !important;
+}
+
+.layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+.layout-tv .playlistSectionButton {
+    margin-bottom: .5em;
+}
+
+.layout-tv .playlistSectionButton .paper-icon-button-light {
     -webkit-transform: none !important;
     transform: none !important;
 }
