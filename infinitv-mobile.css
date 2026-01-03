@@ -57,12 +57,17 @@
     padding-bottom: 1vh;
 }
 
-/* Toast center */
+/* Toast: Center */
 .layout-mobile .toastContainer {
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%);
     bottom: 4em;
+}
+
+/* Slides: Pause Button */
+.layout-mobile .pause-button {
+    top: 47rem;
 }
 
 /* Library Pages: Move up */
