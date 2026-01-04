@@ -1396,6 +1396,11 @@
     margin-right: 0;
 }
 
+.layout-tv #listChildrenCollapsible .overflowBackdropCard {
+    width: 20.8vw;
+    margin-right: 0;
+}
+
 .layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
     margin-right: 0em !important;
     margin-left: 0em !important;
@@ -1560,7 +1565,7 @@
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     padding-left: 0em;
     height: 5em;
 }
@@ -1866,7 +1871,7 @@
 .layout-tv .listItemIndicators {
     position: fixed;
     left: 0.75em;
-    top: 1.75em;
+    top: 0.75em;
 }
 .layout-desktop .listItemIndicators {
     position: fixed;
