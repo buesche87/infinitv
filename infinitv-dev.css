@@ -1115,11 +1115,12 @@
 */
 
 /* Home Sections Container: alignment */
+
+.homeSectionsContainer {
+    top: 69vh;
+}
 .layout-tv .homeSectionsContainer {
     top: 0;
-}
-.layout-mobile .homeSectionsContainer {
-    top: 69vh;
 }
 
 /* Slides: Disable in TV layout (they don't work well with a remote) */
@@ -1242,8 +1243,8 @@
 .layout-desktop .sectionTitleContainer-cards,
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding-left: 2.5%;
-    padding-bottom: .5%;
-    padding-top: .5%;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 /* Section Titles */
@@ -1260,7 +1261,7 @@
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: .25%;
+    padding-top: .25em;
     padding-bottom: 0em;
 }
 
