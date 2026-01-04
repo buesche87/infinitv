@@ -870,7 +870,8 @@
 /* Buttons: Header-Tab
 --------------------------------------------------------------------------*/
 
-.emby-tab-button {
+.layout-tv .emby-tab-button,
+.layout-desktop .emby-tab-button {
     padding: .6em 1.25em .8em 1.25em !important;
 }
 .emby-tab-button:focus {
@@ -2182,12 +2183,6 @@
     margin-left: -.5em;
     padding-left: .5em;
     margin-right: -.5em;
-}
-
-/* Center Settings Items (Mobile) */
-.layout-mobile #myPreferencesMenuPage .listItemIcon {
-    padding-left: 25vw;
-    text-align: right;
 }
 
 /* Subtitles: Preview-Box */
