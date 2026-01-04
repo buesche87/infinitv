@@ -1115,9 +1115,11 @@
 */
 
 /* Home Sections Container: alignment */
-
-.homeSectionsContainer {
+.layout-desktop .homeSectionsContainer {
     top: 69vh;
+}
+.layout-mobile .homeSectionsContainer {
+    top: 78vh;
 }
 .layout-tv .homeSectionsContainer {
     top: 0;
