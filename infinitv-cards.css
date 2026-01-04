@@ -16,7 +16,7 @@
 
     .overflowSmallBackdropCard {
         width: 30vw
-    }    
+    }
 }
 
 @media(min-width: 43.75em) {
@@ -45,14 +45,14 @@
     }
 }
 
-@media(orientation: landscape) and (min-width:48.125em) {
+@media(orientation: landscape)and (min-width:48.125em) {
     .overflowBackdropCard,
     .overflowSmallBackdropCard {
         width:23.1vw
     }
 }
 
-@media(orientation: landscape) and (min-width:50em) {
+@media(orientation: landscape)and (min-width:50em) {
     .overflowSmallBackdropCard {
         width:15.5vw
     }
