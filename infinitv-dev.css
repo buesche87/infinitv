@@ -701,11 +701,6 @@
     margin-top: 3.9em;
 }
 
-/* Main Drawer: Hide HeaderTabs when open (Mobile) */
-.layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
-    display: none !important;
-}
-
 /* Main Drawer: Options */
 .navMenuOption {
     margin-left: -.2em !important;
@@ -2147,7 +2142,7 @@
 .layout-mobile .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: 1em;
-    padding-bottom: .25em;
+    /* padding-bottom: .25em; */
 }
 
 .layout-mobile .nowPlayingBarTop {

@@ -37,8 +37,8 @@
 /* Header & Footer Position */
 @media (max-width: 100em) {
     .layout-mobile .headerTop {
-        padding-top: 0.55em;
-        padding-bottom: 0.55em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
         height: 2.9em;
     }
 
@@ -50,7 +50,7 @@
     }
     
     .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
-        bottom: 6.5em;
+        bottom: 5.8em;
     }
     
     .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
@@ -65,6 +65,21 @@
     .nowPlayingBarInfoContainer {
         margin-left: .2em;
     }
+
+    .layout-mobile .mainDrawer {
+        margin-bottom: 3.4em;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
+        display: none;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+        display: none !important;
+    }
+    
 }
 
 @media (min-width: 100em) {
@@ -111,6 +126,10 @@
     .nowPlayingBarInfoContainer {
         margin-left: .8em;
     }
+
+    .layout-mobile .mainDrawer {
+        margin-bottom: 4.6em;
+    }
     
 }
 
@@ -124,7 +143,6 @@
 /* Main Drawer: Alignment */
 .layout-mobile .mainDrawer {
     margin-top: 0em;
-    margin-bottom: 4em;
     align-items: flex-end;
 }
 
@@ -148,7 +166,7 @@
 
 /* Slides: Pause Button */
 .layout-mobile .pause-button {
-    top: 47rem;
+    top: 74vh;
 }
 
 /* Library Pages: Move up */
@@ -186,6 +204,8 @@
 .layout-mobile .appfooter {
     background: #0000 !important;
 }
+
+
 
 .layout-mobile .nowPlayingInfoControls {
     padding-bottom: 2em;
