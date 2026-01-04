@@ -225,7 +225,6 @@
 .mainDrawer,
 .selectionCommandsPanel,
 .skinHeader-withBackground,
-.toast,
 .videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
@@ -398,7 +397,7 @@
 .material-icons,
 .overview-expand,
 .sectionTitleTextButton:focus,
-.skip-button,
+.emby-button.skip-button,
 .sliderBubble,
 .layout-mobile .userPreferencesPage .listItem-border {
     background: #0000 !important;
@@ -618,11 +617,6 @@
     } 
 }
 
-/* Glow */
-.toast {
-    box-shadow: var(--cardglow) !important;
-}
-
 /* Not on mobile */
 @media (hover: hover) and (pointer: fine) {
     .bannerCard:hover > .cardBox,
@@ -677,6 +671,12 @@
 }
 .progressring-spiner {
     border-width: .35em;
+}
+
+/* Toast */
+.toast {
+    background-color: #000 !important;
+    box-shadow: var(--cardglow) !important;
 }
 
 /* Spinner Color */ 
@@ -1848,6 +1848,7 @@
     -webkit-transform: none !important;
     transform: none !important;
     margin-right: .5em;
+    background: var(--bgdark40) !important;
 }
 .layout-tv .listItem.listItem-largeImage {
     height: 15em;
