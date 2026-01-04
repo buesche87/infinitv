@@ -2163,6 +2163,58 @@
     border: none !important;
 }
 
+
+/* Footer */
+@media (max-width: 100em) {
+
+    .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+
+    .nowPlayingBarInfoContainer {
+        margin-left: .2em;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
+        display: none;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+        display: none !important;
+    }
+}
+@media (min-width: 100em) {
+
+    .layout-mobile .appfooter {
+        background: #0000;
+    }
+
+    .layout-mobile .nowPlayingBar {
+        margin-bottom: .5em;
+        margin-left: 33vw;
+        margin-right: 33vw;
+        border-radius: var(--rounding-media);
+    }
+
+    .layout-mobile .nowPlayingBarRight {
+        margin: 0 1em 0 auto;
+    }
+
+    .layout-mobile .nowPlayingBarPositionContainer {
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    .layout-mobile .nowPlayingBarInfoContainer {
+        margin-left: .8em;
+    }
+}
+
 /*
 ===========================================================================
    Settings
