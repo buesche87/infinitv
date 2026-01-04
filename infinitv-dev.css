@@ -677,7 +677,7 @@
 
 /* Toast */
 .toast {
-    background-color: #000;
+    background-color: #000 !important;
     box-shadow: var(--cardglow) !important;
 }
 
