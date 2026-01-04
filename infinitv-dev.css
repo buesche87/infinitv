@@ -1412,6 +1412,14 @@
     margin-right: 0;
 }
 
+/* Media Scroller Cards: Size (Mobile) */
+.layout-mobile .overflowBackdropCard {
+    /* width: 12.5vw; */
+}
+.layout-mobile .overflowPortraitCard {
+    /* width: 27%; */
+}
+
 .layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
     margin-right: 0em !important;
     margin-left: 0em !important;
@@ -2129,6 +2137,15 @@
 .layout-desktop .nowPlayingBarTop {
     padding-top: .5em;
     padding-bottom: .2em;
+}
+
+.layout-desktop .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+}
+
+.layout-desktop .nowPlayingBarInfoContainer {
+    margin-left: .6em;
 }
 
 .layout-desktop .nowPlayingBarUserDataButtons .mediaButton {
