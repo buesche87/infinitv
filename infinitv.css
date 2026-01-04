@@ -73,7 +73,9 @@
 }
 
 /* Darken Background with Backdrops enables */
-.backgroundContainer.withBackdrop {
+.backgroundContainer.withBackdrop,
+.noBackdropTransparency .detailPagePrimaryContainer, 
+.noBackdropTransparency .detailPageSecondaryContainer {
     background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
@@ -85,13 +87,6 @@
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-}
-
-/* Transparent Background */
-.noBackdropTransparency .detailPagePrimaryContainer, 
-.noBackdropTransparency .detailPageSecondaryContainer {
-    /* background: #0000 !important; */
-    background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
 /*
@@ -128,20 +123,9 @@
 }
 
 /* Text Colors: Accent 100% */
-
-/* .actionSheetMenuItem:focus, */
-/* .button-link:focus, */
-/* .button-submit:focus, */
-/* .clearLink > .emby-button:focus, */
-/* .emby-collapsible-button:focus, */
-/* .emby-tab-button:focus, */
-/* .raised:focus, */
-/* .skip-button:focus, */
-/* .upNextDialog-button:focus, */
-
 .emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
-.headerButton:active,
+.header-right .headerButton:active,
 .listItem-border:focus,
 .listItemIcon.check,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
@@ -167,20 +151,8 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-    /* .button-submit:hover, */
-    /* .play-button:hover, */
-    /* .raised:hover, */
-    /* .skip-button:hover, */
-    /* .textActionButton:hover, */
-    /* .upNextDialog-button:hover. */
-    /* .clearLink > .emby-button:hover, */
-    /* .detail-button:hover, */
-    /* .emby-tab-button:hover,*/
-    /* .navMenuOption:hover, */
-
     .cardOverlayButton:hover,
     .detailButton:hover,
-    /* .emby-button.block:hover, */
     .emby-button:hover,
     .favorite-button:hover,
     .listItem-border:hover,
@@ -196,16 +168,9 @@
 */
 
 /* Border Colors: Accent 80% */ 
-
-
-/* .button-submit:focus, */
 .detail-button:focus,
-/* .emby-button.block:focus, */
 .emby-button:focus,
-.favorite-button:focus
-/* .play-button:focus, */
-/* .raised:focus, */
-/* .upNextDialog-button:focus*/ {
+.favorite-button:focus {
     border-color: var(--accent80) !important;
 }
 
@@ -218,37 +183,31 @@
 
 /* Border Colors: Accent 40% */ 
 @media (hover: hover) and (pointer: fine) {
-    /* .actionSheetMenuItem:hover, */
-    /* .button-submit:hover, */
-    /* .detail-button:hover, */
     .detailButton:hover,
-    /* .emby-button.block:hover, */
     .emby-button:hover,
-    /* .emby-collapsible-button:hover, */
     .favorite-button:hover,
     .listTextButton-autohide:hover,
-    .listItem-largeImage:hover
-    /* .play-button:hover, */
-    /* .raised:hover, */
-    /* .upNextDialog-button:hover */ {
+    .listItem-largeImage:hover {
         border-color: var(--accent40) !important;
     }
 }
 
 /* Border Colors: Transparent*/ 
 .actionSheetMenuItem,
-.clearLink > .emby-button:focus,
-.detailButton:focus,
+.navMenuOption:focus,
+.mediaDetailButtons .detailButton:focus,
 .listItem-border,
-.listTextButton-autohide {
+.listTextButton-autohide,
+.layout-mobile .userPreferencesPage .listItem-border {
     border-color: #0000 !important;
 }
 
+/*
 @media (hover: hover) and (pointer: fine) {
     .clearLink > .emby-button:hover {
         border-color: #0000 !important;
     }
-}
+} */
 
 /*
 ============================================================================
@@ -313,9 +272,7 @@
 }
 
 /* Backgrounds: Dark 40% */
-/* .button-submit:focus, */
 .checkboxOutline,
-/* .emby-button.block:focus, */
 .emby-button:focus,
 .emby-input,
 .emby-textarea,
@@ -324,7 +281,6 @@
 .itemsViewSettingsContainer,
 .paperList,
 .pageTabContent > .focuscontainer-x,
-/* .raised:focus, */
 #loginPage .padded-left.padded-right.padded-bottom-page {
     background: var(--bgdark40) !important;
 }
@@ -339,7 +295,7 @@
 }
 
 /* Backgrounds: Dark 60% */
-.detailButton:focus,
+.mediaDetailButtons .detailButton:focus,
 .listItem-largeImage:focus,
 .upNextDialog-button:focus {
     background: rgba(0, 0, 0, 0.6) !important;
@@ -356,22 +312,17 @@
 }
 
 /* Backgrounds: Dark 80% */
-.checkboxOutline:focus
-.detail-button:focus,
+.checkboxOutline:focus,
 .emby-input:focus,
 .emby-select option,
-/* .emby-select-withcolor:focus, */
 .emby-textarea:focus,
-.favorite-button:focus,
-.listItem-focusscale:focus
-/* .play-button:focus */ {
+.listItem-focusscale:focus {
     background: var(--bgdark80) !important;
 }
 
 @media (hover: hover) and (pointer: fine) {
     .detail-button:hover,
-    .favorite-button:hover
-    /* .play-button:hover */ {
+    .favorite-button:hover {
         background: var(--bgdark80) !important;
     }
 }
@@ -404,47 +355,6 @@
     background: var(--accent100) !important;
 }
 
-/* Backgrounds: Transparent
---------------------------------------------------------------------------*/
-
-/* Backgrounds: Transparent */
-/* .actionSheetMenuItem, */
-.button-link:focus,
-/* .button-submit, */
-.cardPadder,
-.collapseContent,
-.clearLink,
-/* .clearLink > .emby-button, */
-.detailTrackSelect,
-/* .emby-collapsible-button, */
-.emby-button,
-.listItem,
-/* .listItem-border, */
-/* .listItem-largeImage, */
-.listItemBodyText,
-.listItemIcon,
-.listTextButton-autohide,
-.material-icons,
-/* .navMenuOption, */
-.overview-expand,
-/* .raised, */
-.sectionTitleTextButton:focus,
-.sliderBubble
-/* .skip-button, */
-/* .upNextDialog-button, */
-/* .clearLink > .emby-button:focus */ {
-    background: #0000 !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .collapseContent .listItem:hover,
-    .clearLink > .emby-button:hover,
-    .navMenuOption:hover {
-        background: #0000 !important;
-    }
-}
-
-
 /* Backgrounds Colors
 --------------------------------------------------------------------------*/
 
@@ -470,8 +380,37 @@
     }
 }
 
+/* Backgrounds: Transparent
+--------------------------------------------------------------------------*/
 
+/* Backgrounds: Transparent */
+.button-link:focus,
+.cardPadder,
+.collapseContent,
+.clearLink,
+.clearLink > .emby-button,
+.detailTrackSelect,
+.emby-button,
+.listItem,
+.listItemBodyText,
+.listItemIcon,
+.listTextButton-autohide,
+.material-icons,
+.overview-expand,
+.sectionTitleTextButton:focus,
+.skip-button,
+.sliderBubble,
+.layout-mobile .userPreferencesPage .listItem-border {
+    background: #0000 !important;
+}
 
+@media (hover: hover) and (pointer: fine) {
+    .collapseContent .listItem:hover,
+    .clearLink > .emby-button:hover,
+    .navMenuOption:hover {
+        background: #0000 !important;
+    }
+}
 
 /* Backgrounds: Card defaults
 --------------------------------------------------------------------------*/
@@ -500,12 +439,9 @@
 */
 
 /* Borders: Grey */
-.button-submit,
 .checkboxOutline,
-/* .detail-button, */
 .detailButton,
 .emby-button,
-.emby-button.block,
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
@@ -514,10 +450,7 @@
 .itemSelectionPanel,
 .listItem-focusscale,
 .listItem-largeImage,
-/* .play-button, */
-.raised,
-.selectionCommandsPanel,
-.upNextDialog-button {
+.selectionCommandsPanel {
     border: var(--buttonborder);
 }
 
@@ -539,11 +472,6 @@
     }
 }
 
-/* Borders: Accent 60% 
-.itemSelectionPanel {
-    border: 2px solid var(--accent60) !important;
-}*/
-
 /* Borders: Accent 80% */
 .checkboxOutline:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
@@ -555,6 +483,7 @@
 
 /* Borders: Transparent 2px */
 .actionSheetMenuItem,
+.actionSheetMenuItem:focus,
 .emby-collapsible-button,
 .listItem-border,
 .listTextButton-autohide {
@@ -576,15 +505,17 @@
 }
 
 /* No Borders */
-/* .countIndicator, */
 .button-link,
+.clearLink,
 .cardOverlayButton,
 .emby-tab-button,
 .indicator,
-/* .osdPoster img, */
-/* .playedIndicator, */
 .sectionTitleTextButton,
 .skip-button {
+    border: none !important;
+}
+
+.layout-mobile .listItemButton {
     border: none !important;
 }
 
@@ -611,64 +542,50 @@
 .chapterThumbTextContainer,
 .detailButton,
 .detailImageContainer .card,
-/* .detail-button, */
 .favorite-button,
 .imagePlaceHolder,
-/* .primaryImageWrapper > img, */
-/* .osdPoster img, */
 .itemDetailImage,
 .itemProgressBar,
 .itemProgressBarForeground,
 .itemSelectionPanel,
 .libraryPage .listItem-focusscale,
 .libraryPage .listItem-largeImage,
+.nowPlayingPageImage,
 .paper-icon-button-light,
-/* .play-button, */
 .upNextContainer,
 .upNextDialog-poster-img,
-/* .visualCardBox, */
 #loginPage .padded-left.padded-right.padded-bottom-page {
     border-radius: var(--rounding-media) !important;
 }
 
 /* Rounding System */
 .actionSheetMenuItem,
-/* .button-submit, */
+.actionSheetMenuItem:focus,
 .checkboxOutline,
-/* .countIndicator, */
 .dialog,
 .emby-button,
-/* .emby-button.block, */
-/* .emby-collapsible-button, */
 .emby-input,
 .emby-select,
-/* .emby-select-withcolor, */
 .emby-textarea,
 .formDialogHeader,
 .formDialogFooter,
 .indicator,
 .itemsViewSettingsContainer,
 .listItem,
-/* .listItem-border, */
-/* .listItemButton, */
 .listItemIcon,
 .listTextButton-autohide,
-/* .mediaSourceIndicator, */
 .paperList,
-/* playedIndicator, */
-/* .raised, */
 .sectionTitle,
 .sectionTitleContainer-cards,
-/* .skip-button, */
 .subtitleappearance-preview,
 .toast,
-/* .upNextDialog-button, */
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
     border-radius: var(--rounding-system);
 }
 
 /* No Border Radius */
+.backdrop-overlay,
 .layout-tv .detailPageSecondaryContainer .sectionTitle,
 .layout-tv .homePage .sectionTitle,
 .homePage .sectionTitleContainer-cards,
@@ -720,12 +637,8 @@
 .layout-tv .favorite-button:focus,
 .layout-tv .libraryPage .listItem-focusscale:focus,
 .layout-tv .libraryPage .listItem-largeImage:focus,
-/* .layout-tv .play-button:focus, */
 .layout-desktop .detailButton:focus,
 .layout-desktop .favorite-button:focus,
-/* .layout-desktop .listItem-focusscale:focus, */
-/* .layout-desktop .listItem-largeImage:focus, */
-/* .layout-desktop .play-button:focus, */
 .upNextContainer,
 .upNextDialog-button:focus {
     box-shadow: var(--buttonglow) !important;
@@ -784,11 +697,6 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
-}
-
-/* Main Drawer: Hide HeaderTabs when open (Mobile) */
-.layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
-    display: none !important;
 }
 
 /* Main Drawer: Options */
@@ -866,10 +774,32 @@
 }
 
 /* Header: Fixed size (Mobile) */
-.layout-mobile .headerTop {
-    padding-top: 0.55em;
-    padding-bottom: 0.55em;
-    height: 2.9em;
+@media (max-width: 100em) {
+    .layout-mobile .headerTop {
+        padding-top: 0.55em;
+        padding-bottom: 0.55em;
+        height: 2.9em;
+    }
+
+    .sectionTabs {
+        font-size: 83.5%
+    }
+
+    .layout-tv .sectionTabs {
+        width: 100%
+    }
+}
+
+@media (min-width: 100em) {
+    .headerTop {
+        padding-top: .8em;
+        padding-bottom: .8em;
+    }
+
+    .sectionTabs {
+        margin-top: -3.4em;
+        padding-bottom: .7em;
+    }
 }
 
 /* Header: Size & Alignment */
@@ -938,7 +868,8 @@
 /* Buttons: Header-Tab
 --------------------------------------------------------------------------*/
 
-.emby-tab-button {
+.layout-tv .emby-tab-button,
+.layout-desktop .emby-tab-button {
     padding: .6em 1.25em .8em 1.25em !important;
 }
 .emby-tab-button:focus {
@@ -1063,7 +994,7 @@
 
 /* Clearlink Container */
 .clearLink {
-    padding: .2em 1em !important;
+    padding: 0em 1em !important;
     -webkit-transform: none !important;
     transform: none !important;
     margin-left: 0px !important;
@@ -1071,9 +1002,10 @@
 
 /* Clearlink: Buttons inside */
 .clearLink > .emby-button {
-    padding: .2em 1em !important;
-    font-size: 1.5em;
+    padding: 0em 1em !important;
+    font-size: 1.2em;
     font-weight: 400;
+    margin: 0;
 }
 
 /*
@@ -1181,11 +1113,14 @@
 */
 
 /* Home Sections Container: alignment */
-.layout-tv .homeSectionsContainer {
-    top: 0;
+.layout-desktop .homeSectionsContainer {
+    top: 69vh;
 }
 .layout-mobile .homeSectionsContainer {
     top: 78vh;
+}
+.layout-tv .homeSectionsContainer {
+    top: 0;
 }
 
 /* Slides: Disable in TV layout (they don't work well with a remote) */
@@ -1198,6 +1133,12 @@
 .slide .info-container,
 .slide .plot-container {
     font-size: 120%;
+}
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .homeSectionsContainer {
+        top: 61vh;
+    }
 }
 
 /*
@@ -1224,9 +1165,6 @@
 }
 
 /* Library Pages: Alphabet Picker */
-
-/* Backgrounds: Accent 60% */
-
 .alphaPickerButton {
     height: 1.6em;
 }
@@ -1236,10 +1174,6 @@
         color: white !important;
     }
 }
-/*
-.alphaPickerButton:hover {
-    color: inherit !important;
-} */
 .alphaPickerButton:focus {
     -webkit-transform: none !important;
     transform: none !important;
@@ -1256,25 +1190,9 @@
 */
 
 /* Section Titles */
-.detailPagePrimaryContainer .sectionTitle,
-.detailPageSecondaryContainer .sectionTitle {
+.detailPagePrimaryContainer .sectionTitle {
     font-weight: 600;
 }
-
-/*
-.verticalSection[data-type="Episode"] .sectionTitleContainer-cards {
-    background: #0000 !important;
-}
-.verticalSection[data-type="Episode"] .sectionTitle {
-    background: hsl(0deg 0% 100% / 10%);
-    text-align: center;
-    padding-left: 0em;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: .25em;
-    margin-bottom: .25em;
-} */
-
 
 /* Layout TV
 --------------------------------------------------------------------------*/
@@ -1283,7 +1201,7 @@
 .layout-tv .sectionTitleContainer-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     text-align: center;
-    padding: .5% 0 .5% 0;
+    padding: 8px 0 8px 0;
 }
 
 /* Section Titles */
@@ -1302,13 +1220,16 @@
 .layout-desktop .sectionTitleContainer-cards,
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding-left: 2.5%;
-    padding-bottom: .5%;
-    padding-top: .5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Section Titles */
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
     padding-left: 1.5% !important;
+}
+.layout-desktop .detailPageSecondaryContainer .sectionTitle {
+    border-radius: 0;
 }
 
 /* Section Title: Text & Icon */
@@ -1320,7 +1241,7 @@
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: .25%;
+    padding-top: 5px;
     padding-bottom: 0em;
 }
 
@@ -1408,6 +1329,11 @@
     padding-top: .75em;
 }
 
+.layout-mobile #castContent,
+.layout-mobile #guestCastContent {
+    padding-left: .5em;
+}
+
 /*
 ===========================================================================
    Cards: CardBox
@@ -1468,12 +1394,21 @@
     margin-right: 0;
 }
 
-/* Media Scroller Cards: Size (Mobile) */
-.layout-mobile .overflowBackdropCard {
-    width: 52%;
+.layout-tv #listChildrenCollapsible .overflowBackdropCard {
+    width: 20.8vw;
+    margin-right: 0;
 }
-.layout-mobile .overflowPortraitCard {
-    width: 33%;
+
+.layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
+    margin-right: 0em !important;
+    margin-left: 0em !important;
+}
+.layout-mobile .detailVerticalSection .similarContent .card {
+    width: 34%;
+}
+.layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) > .cardBox {
+    margin-right: .7em !important;
+    margin-left: .7em !important;
 }
 
 /*
@@ -1628,7 +1563,7 @@
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     padding-left: 0em;
     height: 5em;
 }
@@ -1639,11 +1574,6 @@
 .layout-tv .libraryPage .listItem-button:focus .listItemImage {
     width: 11em;
 }
-
-/* Hide Alphapicker > steals focus with remote
-.layout-tv .listItem-focusscale ~ .alphaPicker {
-    display: none !important;
-} */
 
 /* Card (Desktop) */
 .layout-desktop .itemsContainer > .listItem-border {
@@ -1688,6 +1618,11 @@
 .layout-tv .itemsContainer > .portraitCard {
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
+}
+
+.layout-tv .itemsContainer > .squareCard {
+    padding-bottom: .5vh !important;
+    padding-right: .25vw !important;
 }
 
 /*
@@ -1764,7 +1699,6 @@
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     left: 3% !important;
-    /* max-width: 26vw; */
 }
 
 /* Media Pages: Center Content (Mobile) */
@@ -1786,8 +1720,8 @@
 
 /* Detail-Ribbon (Desktop) */
 .layout-desktop .detailRibbon {
-    height: 9em !important;
-    margin-top: -9em !important;
+    height: 9em;
+    margin-top: -9em;
 }
 
 /* Detail-Ribbon (Mobile) */
@@ -1805,6 +1739,9 @@
 .layout-desktop .infoWrapper {
     padding-top: .25em;
 }
+.layout-desktop .mainDetailButtons {
+    margin-left: 1em;
+}
 
 /* Detail-Ribbon: Media Infos */
 .layout-tv .itemMiscInfo,
@@ -1812,6 +1749,11 @@
     font-size: 125%;
     margin-top: 0.25em;
     margin-bottom: 0.6em;
+}
+
+/* Detail Buttons (TV) */
+.layout-tv .mainDetailButtons {
+    margin-top: 1.5em;
 }
 
 /* Detail-Ribbon: Media Buttons */
@@ -1927,7 +1869,7 @@
 .layout-tv .listItemIndicators {
     position: fixed;
     left: 0.75em;
-    top: 1.75em;
+    top: 0.75em;
 }
 .layout-desktop .listItemIndicators {
     position: fixed;
@@ -1952,6 +1894,12 @@
 }
 .layout-mobile .detailPageWrapperContainer .listItemBody {
     text-align: center;
+}
+
+/* Cast > More */
+.clearLink,
+.clearLink > .emby-button {
+    margin: 0;
 }
 
 /*
@@ -2112,6 +2060,142 @@
 
 /*
 ===========================================================================
+   Music Player
+===========================================================================
+*/
+
+.layout-tv .nowPlayingPageImageContainer {
+    margin-right: 1.5em;
+}
+
+.layout-tv .nowPlayingButtonsContainer {
+    margin-top: .5em;
+}
+
+.layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
+    border: none !important;
+    background: #0000 !important;
+}
+
+.layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+.layout-tv .playlistSectionButton {
+    margin-bottom: .5em;
+}
+
+.layout-tv .playlistSectionButton .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+.layout-desktop .listViewUserDataButtons .listItemButton {
+    margin-right: .1em;
+    margin-left: .1em;
+}
+
+.layout-desktop .nowPlayingBar {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    border: var(--buttonborder);
+    border-radius: var(--rounding-system);
+    padding-top: 1em;
+    padding-bottom: .25em;
+}
+
+.layout-desktop .nowPlayingBarTop {
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+.layout-desktop .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+}
+
+.layout-desktop .nowPlayingBarInfoContainer {
+    margin-left: .6em;
+}
+
+.layout-desktop .nowPlayingBarUserDataButtons .mediaButton {
+    border: none !important;
+}
+
+
+
+.layout-mobile .nowPlayingBar {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    padding-top: 1em;
+    /* padding-bottom: .25em; */
+}
+
+.layout-mobile .nowPlayingBarTop {
+    padding-top: .5em;
+}
+
+.layout-mobile .vertical-list .listItem-border {
+    border: var(--buttonborder) !important;
+}
+
+.layout-mobile .nowPlayingPageUserDataButtonsTitle .paper-icon-button-light  {
+    border: none !important;
+}
+
+
+/* Footer */
+@media (max-width: 100em) {
+
+    .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+
+    .nowPlayingBarInfoContainer {
+        margin-left: .2em;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
+        display: none;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+        display: none !important;
+    }
+}
+@media (min-width: 100em) {
+
+    .layout-mobile .appfooter {
+        background: #0000;
+    }
+
+    .layout-mobile .nowPlayingBar {
+        margin-bottom: .5em;
+        margin-left: 33vw;
+        margin-right: 33vw;
+        border-radius: var(--rounding-media);
+    }
+
+    .layout-mobile .nowPlayingBarRight {
+        margin: 0 1em 0 auto;
+    }
+
+    .layout-mobile .nowPlayingBarPositionContainer {
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    .layout-mobile .nowPlayingBarInfoContainer {
+        margin-left: .8em;
+    }
+}
+
+/*
+===========================================================================
    Settings
 ===========================================================================
 */
@@ -2130,12 +2214,6 @@
     margin-left: -.5em;
     padding-left: .5em;
     margin-right: -.5em;
-}
-
-/* Center Settings Items (Mobile) */
-.layout-mobile #myPreferencesMenuPage .listItemIcon {
-    padding-left: 25vw;
-    text-align: right;
 }
 
 /* Subtitles: Preview-Box */
@@ -2247,3 +2325,4 @@ h2.username {
     font-weight: 600;
     color: #fff;
 }
+
