@@ -1243,8 +1243,8 @@
 .layout-desktop .sectionTitleContainer-cards,
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding-left: 2.5%;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Section Titles */
@@ -1264,7 +1264,7 @@
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: .25em;
+    padding-top: 5px;
     padding-bottom: 0em;
 }
 
