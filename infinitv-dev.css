@@ -1425,15 +1425,6 @@
     margin-left: .7em !important;
 }
 
-@media(min-width: 25em) {
-    .layout-mobile .overflowPortraitCard {
-        width: 29.5vw;
-    }
-    .layout-mobile .overflowBackdropCard {
-        width: 42.5vw;
-    }
-}
-
 /*
 ===========================================================================
    Cards: Recent & NextUp Sections
