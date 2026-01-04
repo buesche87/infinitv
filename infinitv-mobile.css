@@ -1,21 +1,18 @@
 /*
 ============================================================================
-   Mobile Layout: Bottom alignment 
+   infinitv - Custom Mobile Layout
 ============================================================================
 */
 
-/* Mobile: Header at Bottom */
+/* Header
+--------------------------------------------------------------------------*/
+
+/* Show Header at Bottom */
 .layout-mobile .skinHeader {
     top: auto;
     bottom: 0;
     flex-direction: column;
     background: rgba(0, 0, 0, 1) !important;
-}
-.layout-mobile .skinHeader.headroom--unpinned {
-    transform: translateY(100%);
-}
-.layout-mobile .skinHeader.headroom--pinned {
-    transform: translateY(0);
 }
 .layout-mobile .headerTop {
     order: 2;
@@ -23,13 +20,19 @@
 .layout-mobile .sectionTabs {
     order: 1;
 }
+.layout-mobile .skinHeader.headroom--unpinned {
+    transform: translateY(100%);
+}
+.layout-mobile .skinHeader.headroom--pinned {
+    transform: translateY(0);
+}
 
 /* Header: Remove Logo */
 .layout-mobile .pageTitle {
     display: none;
 }
 
-/* Header: Switch Button placement */
+/* Header: Rearrange Buttons */
 .layout-mobile .headerLeft {
     order: 2;
     justify-content: flex-end;
@@ -38,22 +41,19 @@
     order: 1;
 }
 
-
-/* Header & Footer Position */
+/* Header: Responsiveness */
 @media (max-width: 100em) {
     .layout-mobile .headerTop {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
         height: 2.9em;
     }
-
     .layout-mobile .headerLeft {
         margin-right: .5em;
     }
     .layout-mobile .headerRight {
         margin-left: .5em;
     }
-
     .layout-mobile .emby-tab-button {
         padding: 1.25em 1.25em .25em 1.25em !important;
     }
@@ -63,85 +63,87 @@
         padding-top: .8em;
         padding-bottom: .8em;
     }
-
     .layout-mobile .headerLeft {
         margin-right: .2em;
     }
     .layout-mobile .headerRight {
         margin-left: .2em;
     }
-    
     .layout-mobile .sectionTabs {
         margin-top: 0em;
         margin-bottom: -4.2em;
         padding-top: .5em;
         padding-bottom: .5em;
     }
-
     .layout-mobile .emby-tab-button {
         padding: 1em 1.25em 1em 1.25em !important;
     }
 }
 
+/* Footer
+--------------------------------------------------------------------------*/
 
-/* Footer */
+.layout-mobile .appfooter {
+    background: #0000 !important;
+}
+
 @media (max-width: 100em) {
+    /* Footer: Placement depending on Header visibility */
     .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
         bottom: 5.8em;
     }
-    
     .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
         bottom: 3.9em;
     }
 
-    .nowPlayingBarPositionContainer {
+    /* Now Playing Bar */
+    .layout-mobile .nowPlayingBarPositionContainer {
         margin-right: .8em;
         margin-left: .8em;
     }
-
-    .nowPlayingBarInfoContainer {
+    .layout-mobile .nowPlayingBarInfoContainer {
         margin-left: .2em;
     }
 
-    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
-    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
-        display: none;
-    }
-
-    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    /* Hide HeaderTabs & Footer when drawer opens */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs,
     .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
         display: none !important;
     }
 }
 @media (min-width: 100em) {
+
+    /* Footer: Place above (Bottom-) Header */
     .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
         bottom: 4.5em;
     }
 
+    /* Now Playing Bar */
     .layout-mobile .nowPlayingBar {
         margin-bottom: .5em;
         margin-left: 33vw;
         margin-right: 33vw;
         border-radius: var(--rounding-media);
     }
-
-    .layout-mobile .nowPlayingBarRight {
-        margin: 0 1em 0 auto;
-    }
-
     .layout-mobile .nowPlayingBarPositionContainer {
         margin-right: 1em;
         margin-left: 1em;
         margin-top: .5em;
         margin-bottom: .5em;
     }
-
+    .layout-mobile .nowPlayingBarRight {
+        margin: 0 1em 0 auto;
+    }
     .layout-mobile .nowPlayingBarInfoContainer {
         margin-left: .8em;
     }
 }
 
-/* Main Drawer: Alignment */
+
+/* Main Drawer
+--------------------------------------------------------------------------*/
+
+/* Main Drawer: Align */
 .layout-mobile .mainDrawer {
     margin-top: 0em;
     align-items: flex-end;
@@ -163,6 +165,9 @@
     }
 }
 
+/* Main Drawer
+--------------------------------------------------------------------------*/
+
 /* Toast: Center */
 .layout-mobile .toastContainer {
     left: 50% !important;
@@ -171,7 +176,7 @@
     bottom: 4em;
 }
 
-/* Slides: Pause Button */
+/* Slides: Pause Button Placement */
 .layout-mobile .pause-button {
     top: 74vh;
     right: 4vw;
@@ -194,26 +199,20 @@
     padding-top: 2em !important;
 }
 
-/* Media Details: Move image up */
+/* Media Details: Move up */
 .layout-mobile .itemBackdrop {
     margin-top: 0rem;
 }
 
-/* Media Lists: Alphabet Picker */
+/* Alphabet Picker: Stretch */
 .layout-mobile .alphaPicker {
     bottom: 10em;
 }
 
-/* Media Lists: Filter Bar */
+/* Filter Bar */
 .layout-mobile .pageTabContent > .focuscontainer-x {
     margin-top: 1em;
 }
-
-.layout-mobile .appfooter {
-    background: #0000 !important;
-}
-
-
 
 .layout-mobile .nowPlayingInfoControls {
     padding-bottom: 2em;
