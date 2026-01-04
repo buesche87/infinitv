@@ -25,7 +25,16 @@
 }
 
 
-/* Header: Fixed size (Mobile) */
+/* Header: Switch Button placement */
+.layout-mobile .headerLeft {
+    order: 2;
+    justify-content: flex-end;
+}
+.layout-mobile .headerRight {
+    order: 1;
+}
+
+/* Header & Footer Position */
 @media (max-width: 100em) {
     .layout-mobile .headerTop {
         padding-top: 0.55em;
@@ -33,38 +42,79 @@
         height: 2.9em;
     }
 
-    .sectionTabs {
-        font-size: 83.5%
+    .layout-mobile .headerLeft {
+        margin-right: .5em;
+    }
+    .layout-mobile .headerRight {
+        margin-left: .5em;
+    }
+    
+    .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
+        bottom: 6.5em;
+    }
+    
+    .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
+        bottom: 3.8em;
     }
 
-    .layout-tv .sectionTabs {
-        width: 100%
+    .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+
+    .nowPlayingBarInfoContainer {
+        margin-left: .2em;
     }
 }
 
 @media (min-width: 100em) {
-    .headerTop {
+    .layout-mobile .headerTop {
         padding-top: .8em;
         padding-bottom: .8em;
     }
 
+    .layout-mobile .headerLeft {
+        margin-right: .2em;
+    }
+    .layout-mobile .headerRight {
+        margin-left: .2em;
+    }
+    
     .sectionTabs {
         margin-top: 0em;
         margin-bottom: -4em;
         padding-top: .5em;
     }
+
+    .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
+        bottom: 4.5em;
+    }
+
+    .nowPlayingBar {
+        margin-bottom: .5em;
+        margin-left: 33vw;
+        margin-right: 33vw;
+        border-radius: var(--rounding-media);
+    }
+
+    [dir=ltr] .nowPlayingBarRight {
+        margin: 0 1em 0 auto;
+    }
+
+    .nowPlayingBarPositionContainer {
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    .nowPlayingBarInfoContainer {
+        margin-left: .8em;
+    }
+    
 }
 
-/* Header: Switch Button placement */
-.layout-mobile .headerLeft {
-    order: 2;
-    justify-content: flex-end;
-    padding-right: 1em;
-}
-.layout-mobile .headerRight {
-    order: 1;
-    padding-left: 1em;
-}
+
 
 /* Header: Remove Logo */
 .layout-mobile .pageTitle {
@@ -135,14 +185,6 @@
 
 .layout-mobile .appfooter {
     background: #0000 !important;
-}
-
-.layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
-    bottom: 6.2em;
-}
-
-.layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
-    bottom: 3.8em;
 }
 
 .layout-mobile .nowPlayingInfoControls {
