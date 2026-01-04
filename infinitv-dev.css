@@ -1251,6 +1251,9 @@
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
     padding-left: 1.5% !important;
 }
+.layout-desktop .detailPageSecondaryContainer .sectionTitle {
+    border-radius: 0;
+}
 
 /* Section Title: Text & Icon */
 .sectionTitleTextButton>.sectionTitle,
