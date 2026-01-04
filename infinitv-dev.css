@@ -1190,8 +1190,7 @@
 */
 
 /* Section Titles */
-.detailPagePrimaryContainer .sectionTitle,
-.detailPageSecondaryContainer .sectionTitle {
+.detailPagePrimaryContainer .sectionTitle {
     font-weight: 600;
 }
 
