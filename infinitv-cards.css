@@ -9,7 +9,13 @@
         width: 29.5vw;
     }
     .layout-mobile .overflowBackdropCard {
-        width: 31.5vw;
+        width: 41.5vw;
+    }
+}
+
+@media(min-width: 30em) {
+    .layout-mobile .overflowBackdropCard {
+        width: 32.5vw;
     }
 }
 
