@@ -2097,7 +2097,7 @@
     margin-left: .1em;
 }
 
-.layout-desktop .appfooter {
+.layout-desktop .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     border: var(--buttonborder);
     border-radius: var(--rounding-system);
