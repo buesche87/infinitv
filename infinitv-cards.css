@@ -10,6 +10,11 @@
     .overflowBackdropCard {
         width: 44.5vw;
     }
+    
+    .homePage .overflowBackdropCard {
+        width: 48.4vw;
+    }
+    
 }
 
 @media(min-width: 35em) {
@@ -24,32 +29,42 @@
     .overflowSmallBackdropCard {
         width: 30vw
     }
+
+    .homePage .overflowBackdropCard {
+        width: 23vw;
+    }
+    
 }
 
 @media(min-width: 43.75em) {
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width: 22.1vw;
     }
 }
 
 @media(min-width: 48.125em) {
-    .overflowBackdropCard,.overflowSmallBackdropCard {
+    .overflowBackdropCard,
+    .overflowSmallBackdropCard {
         width: 29.8vw;
     }
 }
 
 @media(orientation: landscape) {
-    .overflowBackdropCard,.overflowSmallBackdropCard {
+    .overflowBackdropCard,
+    .overflowSmallBackdropCard {
         width:30vw
     }
 
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width: 23.1vw
     }
 }
 
 @media(orientation: landscape)and (min-width:48.125em) {
-    .overflowBackdropCard,.overflowSmallBackdropCard {
+    .overflowBackdropCard,
+    .overflowSmallBackdropCard {
         width:23.1vw
     }
 }
@@ -61,51 +76,60 @@
 }
 
 @media(min-width: 50em) {
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width: 17.8vw;
     }
 }
 
 @media(min-width: 75em) {
-    .overflowBackdropCard,.overflowSmallBackdropCard {
+    .overflowBackdropCard,
+    .overflowSmallBackdropCard {
         width: 22.4vw;
     }
 
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width: 14.8vw;
     }
 }
 
 @media(min-width: 87.5em) {
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width: 12.7vw;
     }
 }
 
 @media(min-width: 100em) {
-    .overflowBackdropCard,.overflowSmallBackdropCard {
+    .overflowBackdropCard,
+    .overflowSmallBackdropCard {
         width: 18vw;
     }
 
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width: 10.8vw;
     }
 }
 
 @media(min-width: 120em) {
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width:10.41vw
     }
 }
 
 @media(min-width: 131.25em) {
-    .overflowPortraitCard,.overflowSquareCard {
+    .overflowPortraitCard,
+    .overflowSquareCard {
         width:9.3vw
     }
 }
 
 @media(min-width: 156.25em) {
-    .overflowBackdropCard,.overflowSmallBackdropCard {
+    .overflowBackdropCard,
+    .overflowSmallBackdropCard {
         width: 15vw;
     }
 }
