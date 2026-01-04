@@ -1850,6 +1850,7 @@
     -webkit-transform: none !important;
     transform: none !important;
     margin-right: .5em;
+    background: var(--bgdark40) !important;
 }
 .layout-tv .listItem.listItem-largeImage {
     height: 15em;
