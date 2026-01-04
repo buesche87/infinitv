@@ -781,10 +781,32 @@
 }
 
 /* Header: Fixed size (Mobile) */
-.layout-mobile .headerTop {
-    padding-top: 0.55em;
-    padding-bottom: 0.55em;
-    height: 2.9em;
+@media (max-width: 100em) {
+    .layout-mobile .headerTop {
+        padding-top: 0.55em;
+        padding-bottom: 0.55em;
+        height: 2.9em;
+    }
+
+    .sectionTabs {
+        font-size: 83.5%
+    }
+
+    .layout-tv .sectionTabs {
+        width: 100%
+    }
+}
+
+@media (min-width: 100em) {
+    .headerTop {
+        padding-top: .8em;
+        padding-bottom: .8em;
+    }
+
+    .sectionTabs {
+        margin-top: -3.4em;
+        padding-bottom: .7em;
+    }
 }
 
 /* Header: Size & Alignment */

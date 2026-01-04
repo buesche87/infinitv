@@ -24,6 +24,37 @@
     order: 1;
 }
 
+
+/* Header: Fixed size (Mobile) */
+@media (max-width: 100em) {
+    .layout-mobile .headerTop {
+        padding-top: 0.55em;
+        padding-bottom: 0.55em;
+        height: 2.9em;
+    }
+
+    .sectionTabs {
+        font-size: 83.5%
+    }
+
+    .layout-tv .sectionTabs {
+        width: 100%
+    }
+}
+
+@media (min-width: 100em) {
+    .headerTop {
+        padding-top: .8em;
+        padding-bottom: .8em;
+    }
+
+    .sectionTabs {
+        margin-top: 0em;
+        margin-bottom: -4em;
+        padding-top: .5em;
+    }
+}
+
 /* Header: Switch Button placement */
 .layout-mobile .headerLeft {
     order: 2;
