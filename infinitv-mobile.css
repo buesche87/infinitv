@@ -167,6 +167,7 @@
 /* Slides: Pause Button */
 .layout-mobile .pause-button {
     top: 74vh;
+    right: 4vw;
 }
 
 /* Library Pages: Move up */
