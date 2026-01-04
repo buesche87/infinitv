@@ -118,30 +118,27 @@
         bottom: 4.5em;
     }
 
-    .nowPlayingBar {
+    .layout-mobile .nowPlayingBar {
         margin-bottom: .5em;
         margin-left: 33vw;
         margin-right: 33vw;
         border-radius: var(--rounding-media);
     }
 
-    [dir=ltr] .nowPlayingBarRight {
+    .layout-mobile .nowPlayingBarRight {
         margin: 0 1em 0 auto;
     }
 
-    .nowPlayingBarPositionContainer {
+    .layout-mobile .nowPlayingBarPositionContainer {
         margin-right: 1em;
         margin-left: 1em;
         margin-top: .5em;
         margin-bottom: .5em;
     }
 
-    .nowPlayingBarInfoContainer {
+    .layout-mobile .nowPlayingBarInfoContainer {
         margin-left: .8em;
     }
-
-
-    
 }
 
 /* Main Drawer: Alignment */
