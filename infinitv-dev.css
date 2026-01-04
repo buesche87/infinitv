@@ -1133,6 +1133,12 @@
     font-size: 120%;
 }
 
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .homeSectionsContainer {
+        top: 61vh;
+    }
+}
+
 /*
 ===========================================================================
    Library Pages
@@ -1404,14 +1410,6 @@
 }
 .layout-tv .detailPagePrimaryContainer .overflowPortraitCard {
     margin-right: 0;
-}
-
-/* Media Scroller Cards: Size (Mobile) */
-.layout-mobile .overflowBackdropCard {
-    /* width: 12.5vw; */
-}
-.layout-mobile .overflowPortraitCard {
-    /* width: 27%; */
 }
 
 .layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
