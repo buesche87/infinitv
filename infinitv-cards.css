@@ -9,7 +9,7 @@
         width: 29.5vw;
     }
     .layout-mobile .overflowBackdropCard {
-        width: 32.5vw;
+        width: 31.5vw;
     }
 }
 
@@ -19,7 +19,7 @@
     }
 
     .layout-mobile .overflowBackdropCard {
-        width: 32.5vw;
+        width: 29.5vw;
     }
 
     .layout-mobile .overflowSmallBackdropCard {
@@ -37,7 +37,7 @@
 @media(min-width: 48.125em) {
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 24.2vw;
+        width: 28.2vw;
     }
 }
 
@@ -56,7 +56,7 @@
 @media(orientation: landscape)and (min-width:48.125em) {
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 19.4vw;
+        width: 22.4vw;
     }
 }
 
@@ -76,7 +76,7 @@
 @media(min-width: 75em) {
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 19.4vw;
+        width: 22.4vw;
     }
 
     .layout-mobile .overflowPortraitCard,
@@ -101,7 +101,7 @@
     
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 16.4vw;
+        width: 18.4vw;
     }
 
     .layout-mobile .overflowPortraitCard,
@@ -131,6 +131,6 @@
     
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 14.2vw;
+        width: 15.6vw;
     }
 }
