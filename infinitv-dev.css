@@ -1165,9 +1165,6 @@
 }
 
 /* Library Pages: Alphabet Picker */
-
-/* Backgrounds: Accent 60% */
-
 .alphaPickerButton {
     height: 1.6em;
 }
@@ -1177,10 +1174,6 @@
         color: white !important;
     }
 }
-/*
-.alphaPickerButton:hover {
-    color: inherit !important;
-} */
 .alphaPickerButton:focus {
     -webkit-transform: none !important;
     transform: none !important;
@@ -1202,21 +1195,6 @@
     font-weight: 600;
 }
 
-/*
-.verticalSection[data-type="Episode"] .sectionTitleContainer-cards {
-    background: #0000 !important;
-}
-.verticalSection[data-type="Episode"] .sectionTitle {
-    background: hsl(0deg 0% 100% / 10%);
-    text-align: center;
-    padding-left: 0em;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: .25em;
-    margin-bottom: .25em;
-} */
-
-
 /* Layout TV
 --------------------------------------------------------------------------*/
 
@@ -1224,7 +1202,7 @@
 .layout-tv .sectionTitleContainer-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     text-align: center;
-    padding: .5% 0 .5% 0;
+    padding: 8px 0 8px 0;
 }
 
 /* Section Titles */
@@ -1593,11 +1571,6 @@
     width: 11em;
 }
 
-/* Hide Alphapicker > steals focus with remote
-.layout-tv .listItem-focusscale ~ .alphaPicker {
-    display: none !important;
-} */
-
 /* Card (Desktop) */
 .layout-desktop .itemsContainer > .listItem-border {
     border: solid 2px hsl(0deg 0% 100% / 20%) !important;
@@ -1647,7 +1620,6 @@
     padding-bottom: .5vh !important;
     padding-right: .25vw !important;
 }
-
 
 /*
 ===========================================================================
@@ -1723,7 +1695,6 @@
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
     left: 3% !important;
-    /* max-width: 26vw; */
 }
 
 /* Media Pages: Center Content (Mobile) */
