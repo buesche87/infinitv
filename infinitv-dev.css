@@ -1412,18 +1412,9 @@
     margin-right: 0;
 }
 
-/* Media Scroller Cards: Size (Mobile) */
-.layout-mobile .overflowBackdropCard {
-    /* width: 12.5vw; */
-}
-.layout-mobile .overflowPortraitCard {
-    /* width: 27%; */
-}
-
 .layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
     margin-right: 0em !important;
     margin-left: 0em !important;
-    /* width: 33%; */
 }
 .layout-mobile .detailVerticalSection .similarContent .card {
     width: 34%;
@@ -1432,7 +1423,6 @@
     margin-right: .7em !important;
     margin-left: .7em !important;
 }
-
 
 /*
 ===========================================================================

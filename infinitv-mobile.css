@@ -24,6 +24,10 @@
     order: 1;
 }
 
+/* Header: Remove Logo */
+.layout-mobile .pageTitle {
+    display: none;
+}
 
 /* Header: Switch Button placement */
 .layout-mobile .headerLeft {
@@ -34,11 +38,12 @@
     order: 1;
 }
 
+
 /* Header & Footer Position */
 @media (max-width: 100em) {
     .layout-mobile .headerTop {
-        padding-top: 0.25em;
-        padding-bottom: 0.25em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         height: 2.9em;
     }
 
@@ -48,40 +53,11 @@
     .layout-mobile .headerRight {
         margin-left: .5em;
     }
-    
-    .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
-        bottom: 5.8em;
-    }
-    
-    .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
-        bottom: 3.8em;
-    }
 
-    .nowPlayingBarPositionContainer {
-        margin-right: .8em;
-        margin-left: .8em;
+    .layout-mobile .emby-tab-button {
+        padding: 1.25em 1.25em .25em 1.25em !important;
     }
-
-    .nowPlayingBarInfoContainer {
-        margin-left: .2em;
-    }
-
-    .layout-mobile .mainDrawer {
-        margin-bottom: 3.4em;
-    }
-
-    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
-    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
-        display: none;
-    }
-
-    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
-    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
-        display: none !important;
-    }
-    
 }
-
 @media (min-width: 100em) {
     .layout-mobile .headerTop {
         padding-top: .8em;
@@ -97,10 +73,47 @@
     
     .layout-mobile .sectionTabs {
         margin-top: 0em;
-        margin-bottom: -4em;
+        margin-bottom: -4.2em;
         padding-top: .5em;
+        padding-bottom: .5em;
     }
 
+    .layout-mobile .emby-tab-button {
+        padding: 1em 1.25em 1em 1.25em !important;
+    }
+}
+
+
+/* Footer */
+@media (max-width: 100em) {
+    .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
+        bottom: 5.8em;
+    }
+    
+    .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
+        bottom: 3.9em;
+    }
+
+    .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+
+    .nowPlayingBarInfoContainer {
+        margin-left: .2em;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
+        display: none;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+        display: none !important;
+    }
+}
+@media (min-width: 100em) {
     .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
         bottom: 4.5em;
     }
@@ -127,17 +140,8 @@
         margin-left: .8em;
     }
 
-    .layout-mobile .mainDrawer {
-        margin-bottom: 4.6em;
-    }
+
     
-}
-
-
-
-/* Header: Remove Logo */
-.layout-mobile .pageTitle {
-    display: none;
 }
 
 /* Main Drawer: Alignment */
@@ -146,14 +150,20 @@
     align-items: flex-end;
 }
 
-/* Header Tabs: Alignment */
-.layout-mobile .emby-tab-button {
-    padding: 1.25em 1.25em .5em 1.25em !important;
-}
-
 /* Drawer: Move options to bottom */
 .layout-mobile .mainDrawer-scrollContainer {
     padding-bottom: 1vh;
+}
+
+@media (max-width: 100em) {
+    .layout-mobile .mainDrawer {
+        margin-bottom: 3.9em;
+    }
+}
+@media (min-width: 100em) {
+    .layout-mobile .mainDrawer {
+        margin-bottom: 4.6em;
+    }
 }
 
 /* Toast: Center */
