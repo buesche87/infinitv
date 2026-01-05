@@ -136,7 +136,6 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active,
 .syncPlayIconCircle,
-.overview-expand:focus,
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused,
@@ -161,6 +160,10 @@
     .paper-icon-button-light:not(:disabled):hover {
         color: var(--accent100) !important;
     }
+}
+
+.layout-mobile .overview-expand:focus {
+    color: white !important;
 }
 
 /*
@@ -199,8 +202,7 @@
 .navMenuOption:focus,
 .mediaDetailButtons .detailButton:focus,
 .listItem-border,
-.listTextButton-autohide,
-.layout-mobile .userPreferencesPage .listItem-border {
+.listTextButton-autohide {
     border-color: #0000 !important;
 }
 
@@ -277,7 +279,7 @@
 .emby-button:focus,
 .emby-input,
 .emby-textarea,
-.emby-select-withcolor,
+.emby-select,
 .itemProgressBar,
 .itemsViewSettingsContainer,
 .paperList,
@@ -390,18 +392,17 @@
 .collapseContent,
 .clearLink,
 .clearLink > .emby-button,
-.detailTrackSelect,
+/* .detailTrackSelect, */
 .emby-button,
 .listItem,
 .listItemBodyText,
 .listItemIcon,
 .listTextButton-autohide,
 .material-icons,
-.overview-expand,
+.overview-expand:focus,
 .sectionTitleTextButton:focus,
 .emby-button.skip-button,
-.sliderBubble,
-.layout-mobile .userPreferencesPage .listItem-border {
+.sliderBubble {
     background: #0000 !important;
 }
 
@@ -511,6 +512,7 @@
 .cardOverlayButton,
 .emby-tab-button,
 .indicator,
+.overview-expand,
 .sectionTitleTextButton,
 .skip-button {
     border: none !important;
@@ -932,8 +934,42 @@
     padding-right: .5em !important;
 }
 
+
+.layout-mobile .userPreferencesPage .listItem {
+    padding-right: 1.5em !important;
+} 
+
+.layout-mobile .userPreferencesPage .listItem-border {
+    border: var(--buttonborder) !important;
+    margin-bottom: .6em !important;
+    background: var(--bgdark20) !important;
+    
+}
+
+.layout-mobile .userPreferencesPage .listItemBody {
+    padding-top: .5em !important;
+    padding-bottom: .5em !important;
+    /* padding-right: 3%; */
+    /* font-weight: 600; */
+    /* width: 40% !important; */
+    text-align: left;
+    flex: auto;
+}
+
+.layout-mobile .userPreferencesPage .listItemIcon {
+    /* font-size: 143%; */
+    /* height: 1em!important; */
+    width: 2% !important;
+    text-align: left;
+    /* padding-left: 30%; */
+    /* padding-right: 3%; */
+    flex: auto;
+}
+
+
 .listItemBodyText {
     text-shadow: var(--textshadow) !important;
+    /* vertical-align: middle; */
 }
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
@@ -1858,9 +1894,11 @@
 
 /* Large List Items: Align Body */
 .listItem.listItem-largeImage .listItemBody {
-    align-self: normal;
-    padding-top: .5em;
-    padding-left: .5em;
+    align-self: auto;
+    padding: .5em;
+    /* padding-top: .5em; */
+    /* padding-bottom: .5em; */
+    /* padding-left: .5em; */
 }
 
 /* Large List Items: Text */
@@ -1879,6 +1917,12 @@
     left: 0.75em;
     top: 0.75em;
 }
+.layout-mobile .listItemIndicators {
+    position: fixed;
+    left: 0.5em;
+    top: 0.5em;
+    font-size: .75em !important
+}
 
 /* Play Button Color on Hover */
 .layout-desktop .listItem-largeImage:hover .listItemImageButton {
@@ -1894,6 +1938,9 @@
 }
 .layout-mobile .detailPageWrapperContainer .listItem-content {
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    background: var(--bgdark40) !important;
+    align-content:center;
+    /* flex-direction: column; */
 }
 .layout-mobile .detailPageWrapperContainer .listItemBody {
     text-align: center;
