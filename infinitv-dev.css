@@ -934,43 +934,42 @@
     padding-right: .5em !important;
 }
 
-
-.layout-mobile .userPreferencesPage .listItem {
-    padding-right: 1.5em !important;
-} 
+.layout-mobile .userPreferencesPage .settingsContainer {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
 
 .layout-mobile .userPreferencesPage .listItem-border {
     border: var(--buttonborder) !important;
     margin-bottom: .6em !important;
     background: var(--bgdark20) !important;
-    
 }
-
-.layout-mobile .userPreferencesPage .listItemBody {
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
-    /* padding-right: 3%; */
-    /* font-weight: 600; */
-    /* width: 40% !important; */
-    text-align: left;
-    flex: auto;
-}
-
+.layout-mobile #myPreferencesMenuPage .sectionTitle {
+    padding-left: 0em !important;
+    font-weight: 600;
+} 
+.layout-mobile .userPreferencesPage .listItem {
+    padding-right: 1.5em !important;
+} 
 .layout-mobile .userPreferencesPage .listItemIcon {
-    /* font-size: 143%; */
-    /* height: 1em!important; */
     width: 2% !important;
     text-align: left;
-    /* padding-left: 30%; */
-    /* padding-right: 3%; */
+    margin-right: 0;
     flex: auto;
+    padding-right: .5em;
+}
+.layout-mobile .userPreferencesPage .listItemBody {
+    flex: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    text-align: left;
 }
 
-
+/*
 .listItemBodyText {
     text-shadow: var(--textshadow) !important;
-    /* vertical-align: middle; */
-}
+} */
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
@@ -2261,9 +2260,11 @@
 .homeScreenSettingsContainer .sectionTitle {
     padding-top: .3em;
     padding-bottom: .3em;
-    margin-left: -.5em;
-    padding-left: .5em;
-    margin-right: -.5em;
+    margin-left: -1.5em;
+    padding-left: 1.4em;
+    margin-right: -1.5em;
+    /* text-align: center; */
+    /* font-weight: 600; */
 }
 
 /* Subtitles: Preview-Box */
