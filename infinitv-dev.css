@@ -1623,6 +1623,10 @@
 }
 .layout-desktop .itemsContainer > .listItem-border:hover {
     border: 2px solid var(--accent40) !important;
+    color: inherit !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) {
+    color: var(--accent100) !important;
 }
 
 /* Card Content */
@@ -2143,7 +2147,18 @@
 .layout-desktop .listViewUserDataButtons .listItemButton {
     margin-right: .1em;
     margin-left: .1em;
+    border: none !important;
 }
+
+.layout-desktop .listViewUserDataButtons {
+    margin-right: .5em;
+}
+
+.layout-desktop .listViewUserDataButtons .listItemButton:hover {
+    background-color: var(--accent20) !important;
+}
+
+
 
 .layout-desktop .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
