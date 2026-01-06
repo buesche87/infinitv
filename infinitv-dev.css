@@ -1620,6 +1620,7 @@
     /* padding-bottom: 0.5em !important; */
     padding-right: 0 !important;
     margin-bottom: .5em !important;
+    background: var(--bgdark20) !important;
 }
 .layout-desktop .itemsContainer > .listItem-border:hover {
     border: 2px solid var(--accent40) !important;
