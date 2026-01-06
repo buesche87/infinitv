@@ -226,7 +226,6 @@
 .dialog,
 .formDialogHeader,
 .formDialogFooter,
-.mainDrawer,
 .selectionCommandsPanel,
 .skinHeader-withBackground,
 .videoOsdBottom {
@@ -701,6 +700,7 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 /* Main Drawer: Options */
