@@ -1616,10 +1616,10 @@
 .layout-desktop .itemsContainer > .listItem-border {
     border: solid 2px hsl(0deg 0% 100% / 20%) !important;
     border-radius: var(--rounding-media) !important;
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
+    /* padding-top: .5em !important; */
+    /* padding-bottom: 0.5em !important; */
     padding-right: 0 !important;
-    margin-bottom: .25em !important;
+    margin-bottom: .5em !important;
 }
 .layout-desktop .itemsContainer > .listItem-border:hover {
     border: 2px solid var(--accent40) !important;
