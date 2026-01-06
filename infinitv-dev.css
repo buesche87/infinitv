@@ -193,7 +193,7 @@
     .favorite-button:hover,
     .listTextButton-autohide:hover,
     .listItem-largeImage:hover {
-        border-color: var(--accent40) !important;
+        /* border-color: var(--accent40) !important; */
     }
 }
 
@@ -583,7 +583,7 @@
 .toast,
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
-    border-radius: var(--rounding-system);
+    border-radius: var(--rounding-system) !important;
 }
 
 /* No Border Radius */
@@ -591,7 +591,8 @@
 .layout-tv .detailPageSecondaryContainer .sectionTitle,
 .layout-tv .homePage .sectionTitle,
 .homePage .sectionTitleContainer-cards,
-.homePage .sectionTitle-cards {
+.homePage .sectionTitle-cards,
+.navMenuOption {
     border-radius: 0 !important;
 }
 
@@ -703,11 +704,11 @@
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Main Drawer: Options */
+/* Main Drawer: Options
 .navMenuOption {
     margin-left: -.2em !important;
     margin-right: -.2em !important;
-}
+} */
 .navMenuOptionText {
     margin-top: 0;
 }
