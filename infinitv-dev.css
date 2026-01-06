@@ -930,8 +930,13 @@
     transform: none !important;
     margin-top: .2em !important;
     margin-bottom: .2em !important;
-    padding-left: .5em !important;
-    padding-right: .5em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+.layout-desktop .userPreferencesPage .listItem-border {
+    padding-left: 2.5em !important;
+    padding-right: 2.5em !important;
 }
 
 .layout-mobile .userPreferencesPage .settingsContainer {
