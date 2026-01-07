@@ -527,6 +527,33 @@
 ============================================================================
 */
 
+/* Rounding System */
+.actionSheetMenuItem,
+.actionSheetMenuItem:focus,
+.checkboxOutline,
+.dialog,
+.emby-button,
+.emby-input,
+.emby-select,
+.emby-textarea,
+.formDialogHeader,
+.formDialogFooter,
+.indicator,
+.itemsViewSettingsContainer,
+.listItem,
+.listItemIcon,
+.listTextButton-autohide,
+.paperList,
+.sectionTitle,
+.sectionTitleContainer-cards,
+.subtitleappearance-preview,
+.toast,
+.searchSuggestionsList > div:hover,
+.searchSuggestionsList > div:has(.emby-button:focus) {
+    border-radius: var(--rounding-system) !important;
+}
+
+
 /* Rounding Media */
 .blurhash-canvas,
 .cardBox,
@@ -560,31 +587,6 @@
     border-radius: var(--rounding-media) !important;
 }
 
-/* Rounding System */
-.actionSheetMenuItem,
-.actionSheetMenuItem:focus,
-.checkboxOutline,
-.dialog,
-.emby-button,
-.emby-input,
-.emby-select,
-.emby-textarea,
-.formDialogHeader,
-.formDialogFooter,
-.indicator,
-.itemsViewSettingsContainer,
-.listItem,
-.listItemIcon,
-.listTextButton-autohide,
-.paperList,
-.sectionTitle,
-.sectionTitleContainer-cards,
-.subtitleappearance-preview,
-.toast,
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus) {
-    border-radius: var(--rounding-system) !important;
-}
 
 /* No Border Radius */
 .backdrop-overlay,
