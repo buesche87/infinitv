@@ -1453,6 +1453,12 @@
     margin-right: 0;
 }
 
+.layout-tv #similarCollapsible .overflowPortraitCard {
+    width: 15.4vw;
+    margin-right: 0;
+}
+
+
 .layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
     margin-right: 0em !important;
     margin-left: 0em !important;
