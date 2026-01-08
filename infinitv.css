@@ -134,7 +134,6 @@
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active,
 .syncPlayIconCircle,
-.overview-expand:focus,
 .inputLabelFocused,
 .selectLabelFocused,
 .textareaLabelFocused,
@@ -159,6 +158,10 @@
     .paper-icon-button-light:not(:disabled):hover {
         color: var(--accent100) !important;
     }
+}
+
+.layout-mobile .overview-expand:focus {
+    color: white !important;
 }
 
 /*
@@ -188,7 +191,7 @@
     .favorite-button:hover,
     .listTextButton-autohide:hover,
     .listItem-largeImage:hover {
-        border-color: var(--accent40) !important;
+        /* border-color: var(--accent40) !important; */
     }
 }
 
@@ -197,8 +200,7 @@
 .navMenuOption:focus,
 .mediaDetailButtons .detailButton:focus,
 .listItem-border,
-.listTextButton-autohide,
-.layout-mobile .userPreferencesPage .listItem-border {
+.listTextButton-autohide {
     border-color: #0000 !important;
 }
 
@@ -222,7 +224,6 @@
 .dialog,
 .formDialogHeader,
 .formDialogFooter,
-.mainDrawer,
 .selectionCommandsPanel,
 .skinHeader-withBackground,
 .videoOsdBottom {
@@ -275,7 +276,7 @@
 .emby-button:focus,
 .emby-input,
 .emby-textarea,
-.emby-select-withcolor,
+.emby-select,
 .itemProgressBar,
 .itemsViewSettingsContainer,
 .paperList,
@@ -388,18 +389,17 @@
 .collapseContent,
 .clearLink,
 .clearLink > .emby-button,
-.detailTrackSelect,
+/* .detailTrackSelect, */
 .emby-button,
 .listItem,
 .listItemBodyText,
 .listItemIcon,
 .listTextButton-autohide,
 .material-icons,
-.overview-expand,
+.overview-expand:focus,
 .sectionTitleTextButton:focus,
 .emby-button.skip-button,
-.sliderBubble,
-.layout-mobile .userPreferencesPage .listItem-border {
+.sliderBubble {
     background: #0000 !important;
 }
 
@@ -509,6 +509,7 @@
 .cardOverlayButton,
 .emby-tab-button,
 .indicator,
+.overview-expand,
 .sectionTitleTextButton,
 .skip-button {
     border: none !important;
@@ -523,6 +524,33 @@
    Roundings
 ============================================================================
 */
+
+/* Rounding System */
+.actionSheetMenuItem,
+.actionSheetMenuItem:focus,
+.checkboxOutline,
+.dialog,
+.emby-button,
+.emby-input,
+.emby-select,
+.emby-textarea,
+.formDialogHeader,
+.formDialogFooter,
+.indicator,
+.itemsViewSettingsContainer,
+.listItem,
+.listItemIcon,
+.listTextButton-autohide,
+.paperList,
+.sectionTitle,
+.sectionTitleContainer-cards,
+.subtitleappearance-preview,
+.toast,
+.searchSuggestionsList > div:hover,
+.searchSuggestionsList > div:has(.emby-button:focus) {
+    border-radius: var(--rounding-system) !important;
+}
+
 
 /* Rounding Media */
 .blurhash-canvas,
@@ -557,38 +585,14 @@
     border-radius: var(--rounding-media) !important;
 }
 
-/* Rounding System */
-.actionSheetMenuItem,
-.actionSheetMenuItem:focus,
-.checkboxOutline,
-.dialog,
-.emby-button,
-.emby-input,
-.emby-select,
-.emby-textarea,
-.formDialogHeader,
-.formDialogFooter,
-.indicator,
-.itemsViewSettingsContainer,
-.listItem,
-.listItemIcon,
-.listTextButton-autohide,
-.paperList,
-.sectionTitle,
-.sectionTitleContainer-cards,
-.subtitleappearance-preview,
-.toast,
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus) {
-    border-radius: var(--rounding-system);
-}
 
 /* No Border Radius */
 .backdrop-overlay,
 .layout-tv .detailPageSecondaryContainer .sectionTitle,
 .layout-tv .homePage .sectionTitle,
 .homePage .sectionTitleContainer-cards,
-.homePage .sectionTitle-cards {
+.homePage .sectionTitle-cards,
+.navMenuOption {
     border-radius: 0 !important;
 }
 
@@ -697,13 +701,14 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Main Drawer: Options */
+/* Main Drawer: Options
 .navMenuOption {
     margin-left: -.2em !important;
     margin-right: -.2em !important;
-}
+} */
 .navMenuOptionText {
     margin-top: 0;
 }
@@ -926,13 +931,51 @@
     transform: none !important;
     margin-top: .2em !important;
     margin-bottom: .2em !important;
-    padding-left: .5em !important;
-    padding-right: .5em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
 }
 
+.layout-desktop .userPreferencesPage .listItem-border {
+    padding-left: 2.5em !important;
+    padding-right: 2.5em !important;
+}
+
+.layout-mobile .userPreferencesPage .settingsContainer {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+.layout-mobile .userPreferencesPage .listItem-border {
+    border: var(--buttonborder) !important;
+    margin-bottom: .6em !important;
+    background: var(--bgdark20) !important;
+}
+.layout-mobile #myPreferencesMenuPage .sectionTitle {
+    padding-left: 0em !important;
+    font-weight: 600;
+} 
+.layout-mobile .userPreferencesPage .listItem {
+    padding-right: 1.5em !important;
+} 
+.layout-mobile .userPreferencesPage .listItemIcon {
+    width: 2% !important;
+    text-align: left;
+    margin-right: 0;
+    flex: auto;
+    padding-right: .5em;
+}
+.layout-mobile .userPreferencesPage .listItemBody {
+    flex: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    text-align: left;
+}
+
+/*
 .listItemBodyText {
     text-shadow: var(--textshadow) !important;
-}
+} */
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
@@ -1126,6 +1169,11 @@
 /* Slides: Disable in TV layout (they don't work well with a remote) */
 .layout-tv #slides-container {
     display: none !important;
+}
+
+.layout-desktop .pause-button {
+    top: 7vh;
+    right: 2vw;
 }
 
 /* Slides: Font Size */
@@ -1579,13 +1627,18 @@
 .layout-desktop .itemsContainer > .listItem-border {
     border: solid 2px hsl(0deg 0% 100% / 20%) !important;
     border-radius: var(--rounding-media) !important;
-    padding-top: .5em !important;
-    padding-bottom: .5em !important;
+    /* padding-top: .5em !important; */
+    /* padding-bottom: 0.5em !important; */
     padding-right: 0 !important;
-    margin-bottom: .25em !important;
+    margin-bottom: .5em !important;
+    background: var(--bgdark20) !important;
 }
 .layout-desktop .itemsContainer > .listItem-border:hover {
     border: 2px solid var(--accent40) !important;
+    color: inherit !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) {
+    color: var(--accent100) !important;
 }
 
 /* Card Content */
@@ -1856,9 +1909,11 @@
 
 /* Large List Items: Align Body */
 .listItem.listItem-largeImage .listItemBody {
-    align-self: normal;
-    padding-top: .5em;
-    padding-left: .5em;
+    align-self: auto;
+    padding: .5em;
+    /* padding-top: .5em; */
+    /* padding-bottom: .5em; */
+    /* padding-left: .5em; */
 }
 
 /* Large List Items: Text */
@@ -1877,6 +1932,12 @@
     left: 0.75em;
     top: 0.75em;
 }
+.layout-mobile .listItemIndicators {
+    position: fixed;
+    left: 0.5em;
+    top: 0.5em;
+    font-size: .75em !important
+}
 
 /* Play Button Color on Hover */
 .layout-desktop .listItem-largeImage:hover .listItemImageButton {
@@ -1892,6 +1953,9 @@
 }
 .layout-mobile .detailPageWrapperContainer .listItem-content {
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    background: var(--bgdark40) !important;
+    align-content:center;
+    /* flex-direction: column; */
 }
 .layout-mobile .detailPageWrapperContainer .listItemBody {
     text-align: center;
@@ -2095,7 +2159,18 @@
 .layout-desktop .listViewUserDataButtons .listItemButton {
     margin-right: .1em;
     margin-left: .1em;
+    border: none !important;
 }
+
+.layout-desktop .listViewUserDataButtons {
+    margin-right: .5em;
+}
+
+.layout-desktop .listViewUserDataButtons .listItemButton:hover {
+    background-color: var(--accent20) !important;
+}
+
+
 
 .layout-desktop .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
@@ -2212,9 +2287,11 @@
 .homeScreenSettingsContainer .sectionTitle {
     padding-top: .3em;
     padding-bottom: .3em;
-    margin-left: -.5em;
-    padding-left: .5em;
-    margin-right: -.5em;
+    margin-left: -1.5em;
+    padding-left: 1.4em;
+    margin-right: -1.5em;
+    /* text-align: center; */
+    /* font-weight: 600; */
 }
 
 /* Subtitles: Preview-Box */
