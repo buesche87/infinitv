@@ -590,7 +590,6 @@
 
 /* No Border Radius */
 .backdrop-overlay,
-.layout-tv .detailPageSecondaryContainer .sectionTitle,
 .layout-tv .homePage .sectionTitle,
 .homePage .sectionTitleContainer-cards,
 .homePage .sectionTitle-cards,
@@ -1240,7 +1239,8 @@
 */
 
 /* Section Titles */
-.detailPagePrimaryContainer .sectionTitle {
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitle {
     font-weight: 600;
 }
 
@@ -1333,7 +1333,7 @@
 .layout-tv .padded-top-focusscale,
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
-    padding-top: 1.5em;
+    padding-top: 2em;
 }
 
 /* Scroller: detailPage scroller in primary container */
@@ -1343,6 +1343,10 @@
 }
 
 /* scroller: detailPage last scroller on page (more like this) */
+.layout-tv #castCollapsible .emby-scroller,
+.layout-tv #similarCollapsible .emby-scroller {
+    padding-left: 1em;
+}
 .layout-tv .verticalSection-extrabottompadding .emby-scroller {
     padding-top: 2em;
 }
@@ -1753,7 +1757,7 @@
 /* Media Pages: Poster Image */
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
-    left: 3% !important;
+    left: 3vw !important;
 }
 
 /* Media Pages: Center Content (Mobile) */
@@ -1828,6 +1832,8 @@
 .layout-mobile .detailPagePrimaryContent {
     padding-top: 0em;
     padding-bottom: 0em;
+    padding-right: 3vw;
+    padding-left: 31vw;
 }
 .layout-desktop .detailPagePrimaryContent {
     padding-top: 1em;
@@ -1856,6 +1862,10 @@
 ===========================================================================
 */
 
+.layout-desktop [dir=ltr] .detailRibbon, .layout-tv [dir=ltr] .detailRibbon {
+    padding-left: 31vw;
+}
+
 /* Media Description: Container */
 .layout-tv .detailPageSecondaryContainer,
 .layout-desktop .detailPageSecondaryContainer{
@@ -1863,13 +1873,15 @@
 }
 .layout-mobile .detailPageSecondaryContainer {
     padding-top: 0em !important;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 /* Media Pages: Content */
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-desktop .detailPageSecondaryContainer .detailPageContent {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 /* Media Description: Text */
@@ -1894,6 +1906,19 @@
 .layout-tv .detailVerticalSection {
     margin-bottom: 0em !important;
 }
+
+.layout-tv #listChildrenCollapsible {
+    margin-left: -28vw;
+    margin-bottom: -2.5em !important;
+}
+.layout-tv #listChildrenCollapsible .sectionTitle {
+    text-align: center !important;
+    /* margin-left: -2vw; */
+    padding-left: 0 !important;
+}
+
+
+
 
 /* Cards: Large List Items */
 .listItem.listItem-largeImage {

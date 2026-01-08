@@ -36,11 +36,17 @@
   }
 }
 @media all and (min-width: 100em) and (max-width: 120em){
+  
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
     width: 9vw !important; 
     font-size: 90% !important;
   }
+
+  .layout-tv #castContent .card.overflowPortraitCard {
+    width: 8.7vw !important;
+  }
+  
 }
 @media all and (min-width: 87.5em) and (max-width: 100em){
   #guestCastContent .card.overflowPortraitCard,
