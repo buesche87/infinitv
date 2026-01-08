@@ -51,35 +51,35 @@
 @media all and (min-width: 87.5em) and (max-width: 100em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 10vw !important; 
+    width: 9.8vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 75em) and (max-width: 87.5em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 12.8vw !important; 
+    width: 12.7vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 50em) and (max-width: 75em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 15vw !important;
+    width: 14.8vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 43.75em) and (max-width: 50em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 17.8vw !important; 
+    width: 17.7vw !important;
     font-size: 90% !important;
   }
 }
 @media all and (min-width: 25em) and (max-width: 43.75em){
   #guestCastContent .card.overflowPortraitCard,
   #castContent .card.overflowPortraitCard {
-    width: 22.3vw !important; 
+    width: 22vw !important;
     font-size: 90% !important;
   }
 }
