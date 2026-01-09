@@ -201,6 +201,7 @@
 .actionSheetMenuItem,
 .navMenuOption:focus,
 .mediaDetailButtons .detailButton:focus,
+.userPreferencesPage .listItem-border:focus,
 .listItem-border,
 .listTextButton-autohide {
     border-color: #0000 !important;
@@ -396,6 +397,7 @@
 .listItemBodyText,
 .listItemIcon,
 .listTextButton-autohide,
+.userPreferencesPage .listItem-border:focus,
 .material-icons,
 .overview-expand:focus,
 .sectionTitleTextButton:focus,
