@@ -609,6 +609,7 @@
 .cardScalable,
 .mainDrawer {
     box-shadow: none !important;
+    /* max-height: 43em; */
 }
 
 /* Not on mobile */
@@ -646,6 +647,7 @@
 /* Inset Shadows on cardImages */
 .libraryPage .cardImageContainer {
     box-shadow: var(--insettop), var(--insetbottom);
+    /* max-height: 72vh; */
 }
 
 /* Don't Glow*/
@@ -1332,7 +1334,7 @@
 
 /* Scroller Default Alignment */
 .layout-tv .emby-scroller {
-    padding-left: 2.5%;
+    padding-left: 1em;
 }
 
 .layout-tv .homePage .emby-scroller {
@@ -1350,6 +1352,11 @@
     margin-top: -0.5em;
     padding-top: 2em;
 }
+
+.layout-tv .detailPageSecondaryContainer .itemsContainer {
+    align-items: flex-start;
+}
+
 
 /* Scroller: detailPage scroller in primary container */
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
@@ -1370,6 +1377,7 @@
 .layout-tv #castCollapsible .emby-scroller,
 .layout-tv #similarCollapsible .emby-scroller {
     padding-left: 1em;
+    margin-right: 1em;
 }
 .layout-tv .verticalSection-extrabottompadding .emby-scroller {
     padding-top: 2em;
@@ -1477,6 +1485,11 @@
 .layout-tv .detailPagePrimaryContainer .overflowPortraitCard,
 .layout-tv .detailPageSecondaryContainer .overflowPortraitCard {
     width: 15.4vw;
+    margin-right: 0;
+}
+.layout-tv .detailPagePrimaryContainer .overflowBackdropCard,
+.layout-tv .detailPageSecondaryContainer .overflowBackdropCard {
+    width: 18.6vw;
     margin-right: 0;
 }
 
@@ -1787,10 +1800,23 @@
 }
 
 /* Media Pages: Poster Image */
-.layout-tv .detailImageContainer .card,
+
+.layout-tv .detailImageContainer .portraitCard {
+    left: 1vw;
+    max-width: 38vh;
+}
+.layout-tv .detailImageContainer .backdropCard {
+    left: 1vw;
+    max-width: 38vh;
+}
+
+
 .layout-desktop .detailImageContainer .card {
     left: 0 !important;
 }
+
+
+
 
 /* Media Pages: Center Content (Mobile) */
 .layout-mobile .verticalSection .itemsContainer.vertical-wrap {
@@ -1867,6 +1893,12 @@
     padding-right: 0;
     padding-left: 28vw;
 }
+
+
+.layout-tv [dir=ltr] .detailRibbon {
+    padding-left: 28vw;
+}
+
 .layout-desktop .detailPagePrimaryContent {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -1894,9 +1926,7 @@
 ===========================================================================
 */
 
-.layout-desktop [dir=ltr] .detailRibbon, .layout-tv [dir=ltr] .detailRibbon {
-    padding-left: 31vw;
-}
+
 
 /* Media Description: Container */
 .layout-tv .detailPageSecondaryContainer,
