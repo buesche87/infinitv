@@ -1203,6 +1203,11 @@
     padding-right: 3vw;
 }
 
+.layout-tv .homePage {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
 /* Library Pages: Center Content */
 .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
 .libraryPage .padded-right-withalphapicker {
@@ -1252,17 +1257,19 @@
 /* Section Title Container */
 .layout-tv .sectionTitleContainer-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    text-align: center;
-    padding: 8px 0 8px 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 /* Section Titles */
-.layout-tv .detailPagePrimaryContainer .sectionTitle {
-    text-align: left !important;
+.layout-tv .sectionTitle {
     padding-left: 2% !important;
 }
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
+
+.layout-tv .homePage .sectionTitleContainer-cards,
+.layout-tv .homePage .sectionTitle {
     text-align: center;
+    padding-left: 0 !important;
 }
 
 /* Layout Desktop
@@ -1330,7 +1337,7 @@
 
 .layout-tv .homePage .emby-scroller {
     padding-left: 1em;
-    margin-right: 1em;
+    /* margin-right: 1em; */
 }
 
 .layout-tv .padded-bottom-focusscale,
@@ -1460,7 +1467,7 @@
 
 .layout-tv .homePage .overflowBackdropCard  {
     margin-right: .9%;
-    width: 22.2vw;
+    width: 23vw;
 }
 
 .layout-tv .overflowPortraitCard {
@@ -1937,9 +1944,9 @@
     margin-bottom: -2.5em !important;
 }
 .layout-tv #listChildrenCollapsible .sectionTitle {
-    text-align: center !important;
+    /* text-align: center !important; */
     /* margin-left: -2vw; */
-    padding-left: 0 !important;
+    /* padding-left: 0 !important; */
 }
 
 

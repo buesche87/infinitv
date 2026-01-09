@@ -1,8 +1,172 @@
+/*  
+  ==================================
+  Smaller Cast & Guests
+  ==================================
+
+  infinitv - HTPC Theme for Jellyin
+
+*/
+
+/* Center Card Images */
+.personCard > .cardBox {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+/* Media Scroller: Card Spacing */
+.itemsContainer-tv > .personCard > .cardBox {
+  margin-right: .5em !important;
+  margin-left: .5em !important;
+}
 
 .layout-mobile .overflowBackdropCard, 
 .layout-mobile .overflowSmallBackdropCard {
     width: 49vw;
 }
+
+
+/*
+===========================================================================
+   Cast & Guests
+===========================================================================
+*/
+
+
+/* Shrink and square (or round) cast thumbnails */
+@media all and (min-width: 131.25em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 7.3vw !important;
+    font-size: 90% !important;
+  }
+
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width: calc(6.3vw - 1.75em) !important;
+    height: calc(6.3vw) !important;
+  }
+
+}
+@media all and (min-width: 120em) and (max-width: 131.25em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 6.4vw !important;
+    font-size: 90% !important;
+  }
+
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width: calc(6.4vw - 1.75em) !important;
+    height: calc(6.4vw) !important;
+  }
+}
+@media all and (min-width: 100em) and (max-width: 120em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 9vw !important; 
+    font-size: 90% !important;
+  }
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width:  calc(9vw - 1.75em) !important;
+    height: calc(9vw) !important;
+  }
+
+  .layout-tv #castContent .card.overflowPortraitCard {
+    width: 8.7vw !important;
+  }
+  
+}
+@media all and (min-width: 87.5em) and (max-width: 100em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 9.8vw !important;
+    font-size: 90% !important;
+  }
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width:  calc(10vw - 1.75em) !important;
+    height: calc(10vw) !important;
+  }
+}
+@media all and (min-width: 75em) and (max-width: 87.5em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 12.7vw !important;
+    font-size: 90% !important;
+  }
+  .layout-tv #guestCastContent .card.overflowPortraitCard,
+  .layout-tv #castContent .card.overflowPortraitCard {
+    width: 11.5vw !important;
+    font-size: 90% !important;
+  }
+  
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width:  calc(12.8vw - 1.75em) !important;
+    height: calc(12.8vw) !important;
+  }
+  .layout-tv #guestCastContent .cardScalable, 
+  .layout-tv #castContent .cardScalable {
+    width:  calc(11.5vw - 1.75em) !important;
+    height: calc(11.5w) !important;
+  }
+}
+@media all and (min-width: 50em) and (max-width: 75em) {
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 14.8vw !important;
+    font-size: 90% !important;
+  }
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width:  calc(15vw - 1.75em) !important;
+    height: calc(15vw) !important;
+  }
+}
+@media all and (min-width: 43.75em) and (max-width: 50em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 17.7vw !important;
+    font-size: 90% !important;
+  }
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width:  calc(17.8vw  - 1.75em) !important;
+    height: calc(17.8vw) !important;
+  }
+}
+@media all and (min-width: 25em) and (max-width: 43.75em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 22vw !important;
+    font-size: 90% !important;
+  }
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width:  calc(22.3vw - 1.75em) !important;
+    height: calc(22.3vw) !important;
+  }
+}
+@media all and (max-width: 25em){
+  #guestCastContent .card.overflowPortraitCard,
+  #castContent .card.overflowPortraitCard {
+    width: 22.3vw !important; 
+    font-size: 90% !important;
+  }
+  #guestCastContent .cardScalable, 
+  #castContent .cardScalable {
+    width:  calc(22.3vw - 1.75em) !important;
+    height: calc(22.3vw) !important;
+  }
+}
+
+/*
+===========================================================================
+   Layout Mobile: Dynamic Card Sizes
+===========================================================================
+*/
+
 
 @media(min-width: 25em) {
     .layout-mobile .overflowPortraitCard {
