@@ -246,8 +246,6 @@
 #loginPage .cardImage,
 #searchPage .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus),
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
 .verticalSection > .sectionTitleContainer-cards {
@@ -281,6 +279,8 @@
 .emby-select,
 .itemProgressBar,
 .itemsViewSettingsContainer,
+.searchSuggestionsList > div:hover,
+.searchSuggestionsList > div:has(.emby-button:focus),
 .paperList,
 .pageTabContent > .focuscontainer-x,
 #loginPage .padded-left.padded-right.padded-bottom-page {
