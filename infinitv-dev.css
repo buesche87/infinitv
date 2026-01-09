@@ -590,9 +590,9 @@
 
 /* No Border Radius */
 .backdrop-overlay,
-.layout-tv .homePage .sectionTitle,
-.homePage .sectionTitleContainer-cards,
-.homePage .sectionTitle-cards,
+/* .layout-tv .homePage .sectionTitle, */
+.layout-desktop .homePage .sectionTitleContainer-cards,
+.layout-desktop .homePage .sectionTitle-cards,
 .navMenuOption {
     border-radius: 0 !important;
 }
@@ -1199,6 +1199,8 @@
 /* Library Pages: Alignment */
 .layout-tv .libraryPage {
     padding-top: 5em !important;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 /* Library Pages: Center Content */
@@ -1325,6 +1327,12 @@
 .layout-tv .emby-scroller {
     padding-left: 2.5%;
 }
+
+.layout-tv .homePage .emby-scroller {
+    padding-left: 1em;
+    margin-right: 1em;
+}
+
 .layout-tv .padded-bottom-focusscale,
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     margin-bottom: -0.5em;
@@ -1334,6 +1342,11 @@
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
     padding-top: 2em;
+}
+
+/* Scroller: detailPage scroller in primary container */
+.layout-tv .detailPagePrimaryContainer .itemsContainer {
+    padding-left: 2.5%;
 }
 
 /* Scroller: detailPage scroller in primary container */
@@ -1444,11 +1457,19 @@
 .layout-tv .overflowBackdropCard  {
     margin-right: .9%;
 }
+
+.layout-tv .homePage .overflowBackdropCard  {
+    margin-right: .9%;
+    width: 22.2vw;
+}
+
 .layout-tv .overflowPortraitCard {
     margin-right: .6%;
     margin-bottom: .6em;
 }
-.layout-tv .detailPagePrimaryContainer .overflowPortraitCard {
+.layout-tv .detailPagePrimaryContainer .overflowPortraitCard,
+.layout-tv .detailPageSecondaryContainer .overflowPortraitCard {
+    width: 15.4vw;
     margin-right: 0;
 }
 
@@ -1456,12 +1477,6 @@
     width: 20.8vw;
     margin-right: 0;
 }
-
-.layout-tv #similarCollapsible .overflowPortraitCard {
-    width: 15.4vw;
-    margin-right: 0;
-}
-
 
 .layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
     margin-right: 0em !important;
