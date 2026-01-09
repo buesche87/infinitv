@@ -1197,8 +1197,8 @@
 /* Library Pages: Center Content */
 .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
 .libraryPage .padded-right-withalphapicker {
-    padding-left: 3vw !important;
-    padding-right: 4vw !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
 }
 
 /* Library Pages: Item backdrop alignment (Mobile) */
@@ -1319,11 +1319,11 @@
 /* Scroller Default Alignment */
 .layout-tv .emby-scroller {
     padding-left: 1em;
+    margin-right: 1em;
 }
 
 .layout-tv .homePage .emby-scroller {
     padding-left: 1em;
-    /* margin-right: 1em; */
 }
 
 .layout-tv .padded-bottom-focusscale,
@@ -1357,12 +1357,6 @@
     margin-left: 27vw;
 }
 
-/* scroller: detailPage last scroller on page (more like this) */
-.layout-tv #castCollapsible .emby-scroller,
-.layout-tv #similarCollapsible .emby-scroller {
-    padding-left: 1em;
-    margin-right: 1em;
-}
 .layout-tv .verticalSection-extrabottompadding .emby-scroller {
     padding-top: 2em;
 }
@@ -1410,11 +1404,6 @@
 ===========================================================================
 */
 
-/* Cards: Narrow margins */
-.cardBox-bottompadded {
-    margin-bottom: 0.5em !important;
-}
-
 /* Cards: Rounding Top, Flat Bottom */
 /* .visualCardBox:has(.cardFooter) .sessionNowPlayingInnerContent */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
@@ -1448,57 +1437,16 @@
 
 /*
 ===========================================================================
-   Cards in Media Scroller
-===========================================================================
-*/
-
-/* Media Scroller Cards: Spacing & Alignment (TV) */
-.layout-tv .overflowBackdropCard  {
-    margin-right: .9%;
-}
-
-.layout-tv .homePage .overflowBackdropCard  {
-    margin-right: .9%;
-    width: 23vw;
-}
-
-.layout-tv .overflowPortraitCard {
-    margin-right: .6%;
-    margin-bottom: .6em;
-}
-.layout-tv .detailPagePrimaryContainer .overflowPortraitCard,
-.layout-tv .detailPageSecondaryContainer .overflowPortraitCard {
-    width: 15.4vw;
-    margin-right: 0;
-}
-.layout-tv .detailPagePrimaryContainer .overflowBackdropCard,
-.layout-tv .detailPageSecondaryContainer .overflowBackdropCard {
-    width: 18.6vw;
-    margin-right: 0;
-}
-
-.layout-tv #listChildrenCollapsible .overflowBackdropCard {
-    width: 20.8vw;
-    margin-right: 0;
-}
-
-.layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
-    margin-right: 0em !important;
-    margin-left: 0em !important;
-}
-.layout-mobile .detailVerticalSection .similarContent .card {
-    width: 34%;
-}
-.layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) > .cardBox {
-    margin-right: .7em !important;
-    margin-left: .7em !important;
-}
-
-/*
-===========================================================================
-   Cards: Recent & NextUp Sections
+   Cards: Text & Buttons
 ===========================================================================
 * > needs the plugin "home section containers" / 
+
+/* Text Shadow (not on mobile > performance) */
+@media (pointer: fine) {
+    .cardText {
+        text-shadow: var(--textshadow) !important;
+    }
+}
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
@@ -1518,19 +1466,6 @@
 .ContinueWatching .card[data-type="Movie"] .cardText-secondary,
 .NextUp .card[data-type="Movie"] .cardText-secondary {
     display: none;
-}
-
-/*
-===========================================================================
-   Cards: Text & Buttons
-===========================================================================
-*/
-
-/* Text Shadow (not on mobile > performance) */
-@media (pointer: fine) {
-    .cardText {
-        text-shadow: var(--textshadow) !important;
-    }
 }
 
 /* Card Text First: Spacing with and without card footer */
@@ -1702,16 +1637,7 @@
 /* View: Poster
 --------------------------------------------------------------------------*/
 
-.layout-tv .itemsContainer > .backdropCard,
-.layout-tv .itemsContainer > .portraitCard {
-    padding-bottom: 1.5vh !important;
-    padding-right: 1vw !important;
-}
 
-.layout-tv .itemsContainer > .squareCard {
-    padding-bottom: .5vh !important;
-    padding-right: .25vw !important;
-}
 
 /*
 ===========================================================================
@@ -1792,6 +1718,7 @@
 .layout-tv .detailImageContainer .backdropCard {
     left: 1vw;
     max-width: 38vh;
+    /* padding-right: 1em; */
 }
 
 
@@ -1915,7 +1842,7 @@
 /* Media Description: Container */
 .layout-tv .detailPageSecondaryContainer,
 .layout-desktop .detailPageSecondaryContainer{
-    padding-top: 2em !important;
+    /* padding-top: 37.5vh !important; */
 }
 .layout-mobile .detailPageSecondaryContainer {
     padding-top: 0em !important;
@@ -1956,6 +1883,7 @@
 .layout-tv #listChildrenCollapsible {
     margin-left: -28vw;
     margin-bottom: -2.5em !important;
+    padding-top: 42vh;
 }
 .layout-tv #listChildrenCollapsible .sectionTitle {
     /* text-align: center !important; */
