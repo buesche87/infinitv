@@ -186,16 +186,16 @@
     }
 }
 
-/* Border Colors: Accent 40% */ 
+/* Border Colors: Accent 40%
 @media (hover: hover) and (pointer: fine) {
     .detailButton:hover,
     .emby-button:hover,
     .favorite-button:hover,
     .listTextButton-autohide:hover,
     .listItem-largeImage:hover {
-        /* border-color: var(--accent40) !important; */
+        border-color: var(--accent40) !important;
     }
-}
+} */ 
 
 /* Border Colors: Transparent*/ 
 .actionSheetMenuItem,
@@ -391,7 +391,6 @@
 .collapseContent,
 .clearLink,
 .clearLink > .emby-button,
-/* .detailTrackSelect, */
 .emby-button,
 .listItem,
 .listItemBodyText,
@@ -590,7 +589,6 @@
 
 /* No Border Radius */
 .backdrop-overlay,
-/* .layout-tv .homePage .sectionTitle, */
 .layout-desktop .homePage .sectionTitleContainer-cards,
 .layout-desktop .homePage .sectionTitle-cards,
 .navMenuOption {
@@ -609,7 +607,6 @@
 .cardScalable,
 .mainDrawer {
     box-shadow: none !important;
-    /* max-height: 43em; */
 }
 
 /* Not on mobile */
@@ -647,7 +644,6 @@
 /* Inset Shadows on cardImages */
 .libraryPage .cardImageContainer {
     box-shadow: var(--insettop), var(--insetbottom);
-    /* max-height: 72vh; */
 }
 
 /* Don't Glow*/
@@ -706,12 +702,6 @@
     margin-top: 3.9em;
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
-
-/* Main Drawer: Options
-.navMenuOption {
-    margin-left: -.2em !important;
-    margin-right: -.2em !important;
-} */
 .navMenuOptionText {
     margin-top: 0;
 }
@@ -788,11 +778,9 @@
         padding-bottom: 0.55em;
         height: 2.9em;
     }
-
     .sectionTabs {
         font-size: 83.5%
     }
-
     .layout-tv .sectionTabs {
         width: 100%
     }
@@ -803,7 +791,6 @@
         padding-top: .8em;
         padding-bottom: .8em;
     }
-
     .sectionTabs {
         margin-top: -3.4em;
         padding-bottom: .7em;
@@ -974,11 +961,6 @@
     padding-left: .5em;
     text-align: left;
 }
-
-/*
-.listItemBodyText {
-    text-shadow: var(--textshadow) !important;
-} */
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
 --------------------------------------------------------------------------*/
