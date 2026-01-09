@@ -1883,16 +1883,7 @@
 .layout-tv #listChildrenCollapsible {
     margin-left: -28vw;
     margin-bottom: -2.5em !important;
-    padding-top: 42vh;
 }
-.layout-tv #listChildrenCollapsible .sectionTitle {
-    /* text-align: center !important; */
-    /* margin-left: -2vw; */
-    /* padding-left: 0 !important; */
-}
-
-
-
 
 /* Cards: Large List Items */
 .listItem.listItem-largeImage {
@@ -1904,8 +1895,6 @@
     margin-right: .5em;
     background: var(--bgdark40) !important;
 }
-
-
 
 .layout-tv .listItem.listItem-largeImage {
     height: 20vw;
@@ -1938,25 +1927,13 @@
     align-self: auto;
     margin: .5em;
     padding: 0;
-    /* padding-top: .5em; */
-    /* padding-bottom: .5em; */
-    /* padding-left: .5em; */
     height: 18vw;
-}
-.layout-tv .listItem.listItem-largeImage .listItemBody {
-    /* align-self: auto; */
-    /* padding: .5em; */
-    /* height: 18vw; */
 }
 
 /* Large List Items: Text */
-.listItem.listItem-largeImage .listItem-overview {
-    /* max-height: 8.5em; */
-}
 .layout-tv .listItem.listItem-largeImage .listItem-overview {
     max-height: 12vw;
 }
-
 
 /* List Items: Indicator */
 .layout-tv .listItemIndicators {
@@ -1992,7 +1969,6 @@
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
     background: var(--bgdark40) !important;
     align-content:center;
-    /* flex-direction: column; */
 }
 .layout-mobile .detailPageWrapperContainer .listItemBody {
     text-align: center;
