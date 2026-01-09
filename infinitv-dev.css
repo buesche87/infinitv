@@ -1196,14 +1196,9 @@
 ===========================================================================
 */
 
-/* TODO: libraryPage statt homePage mit Padding */
-
 /* Library Pages: Alignment */
 .layout-tv .libraryPage {
     padding-top: 5em !important;
-}
-
-.layout-tv .homepage {
     padding-left: 3vw;
     padding-right: 3vw;
 }
@@ -1257,9 +1252,8 @@
 /* Section Title Container */
 .layout-tv .sectionTitleContainer-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    /* text-align: center; */
+    text-align: center;
     padding: 8px 0 8px 0;
-    padding-left: 2% !important;
 }
 
 /* Section Titles */
@@ -1268,7 +1262,7 @@
     padding-left: 2% !important;
 }
 .layout-tv .detailPageSecondaryContainer .sectionTitle {
-    /* text-align: center; */
+    text-align: center;
 }
 
 /* Layout Desktop
@@ -1788,7 +1782,7 @@
 /* Media Pages: Poster Image */
 .layout-tv .detailImageContainer .card,
 .layout-desktop .detailImageContainer .card {
-    left: 3vw !important;
+    left: 0 !important;
 }
 
 /* Media Pages: Center Content (Mobile) */
@@ -1863,8 +1857,8 @@
 .layout-mobile .detailPagePrimaryContent {
     padding-top: 0em;
     padding-bottom: 0em;
-    padding-right: 3vw;
-    padding-left: 31vw;
+    padding-right: 0;
+    padding-left: 28vw;
 }
 .layout-desktop .detailPagePrimaryContent {
     padding-top: 1em;
@@ -1911,8 +1905,8 @@
 /* Media Pages: Content */
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-desktop .detailPageSecondaryContainer .detailPageContent {
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Media Description: Text */
@@ -1943,9 +1937,9 @@
     margin-bottom: -2.5em !important;
 }
 .layout-tv #listChildrenCollapsible .sectionTitle {
-    /* text-align: center !important; */
+    text-align: center !important;
     /* margin-left: -2vw; */
-    /* padding-left: 0 !important; */
+    padding-left: 0 !important;
 }
 
 
