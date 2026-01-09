@@ -1342,6 +1342,10 @@
     padding-left: 1em;
 }
 
+.layout-tv .detailPagePrimaryContent  .itemsContainer-tv.vertical-list {
+    margin-left: 26.5vw;
+}
+
 /* scroller: detailPage last scroller on page (more like this) */
 .layout-tv #castCollapsible .emby-scroller,
 .layout-tv #similarCollapsible .emby-scroller {
@@ -1936,23 +1940,59 @@
     margin-right: .5em;
     background: var(--bgdark40) !important;
 }
+
+
+
 .layout-tv .listItem.listItem-largeImage {
-    height: 15em;
+    height: 20vw;
+}
+
+@media (max-width: 64em) {
+    .layout-tv .listItemImage-large {
+        height:16vw;
+        margin-right: .5em !important;
+        width: 22vw
+    }
+
+    .layout-tv .listItemImageButton,
+    .layout-tv .listItemIndicators {
+        font-size: .6em !important;
+    }
+
+    .layout-tv .listItemBody {
+        padding-left: .5em;
+    }
+
+    .layout-tv h2.listItemBodyText {
+        font-size: 1.2em !important;
+    }
+    
 }
 
 /* Large List Items: Align Body */
 .listItem.listItem-largeImage .listItemBody {
     align-self: auto;
-    padding: .5em;
+    margin: .5em;
+    padding: 0;
     /* padding-top: .5em; */
     /* padding-bottom: .5em; */
     /* padding-left: .5em; */
+    height: 18vw;
+}
+.layout-tv .listItem.listItem-largeImage .listItemBody {
+    /* align-self: auto; */
+    /* padding: .5em; */
+    /* height: 18vw; */
 }
 
 /* Large List Items: Text */
 .listItem.listItem-largeImage .listItem-overview {
-    max-height: 8.5em;
+    /* max-height: 8.5em; */
 }
+.layout-tv .listItem.listItem-largeImage .listItem-overview {
+    max-height: 12vw;
+}
+
 
 /* List Items: Indicator */
 .layout-tv .listItemIndicators {
