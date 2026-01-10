@@ -1313,23 +1313,39 @@
 ===========================================================================
 */
 
+/* scroller: default alignment */
+.emby-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.emby-scroller::-webkit-scrollbar {
+    display: none;
+}
+
 /* Layout TV
 --------------------------------------------------------------------------*/
 
-/* Scroller Default Alignment */
+/* scroller: default alignment */
 .layout-tv .emby-scroller {
     padding-left: 1em;
-    margin-right: 1em;
+    padding-right: 0;
+    margin-right: 1.2em;
 }
+
+
 .layout-tv .padded-bottom-focusscale,
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     margin-bottom: -0.5em;
     padding-bottom: 1.5em;
 }
-.layout-tv .padded-top-focusscale,
+.layout-tv .padded-top-focusscale {
+    margin-top: -0.5em;
+    padding-top: 1.5em;
+}
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 .layout-tv .detailPageSecondaryContainer .itemsContainer {
@@ -1365,26 +1381,11 @@
     padding-right: 0;
     margin-right: 1vw;
     margin-left: 1vw;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;      /* Firefox */
 }
-
 .layout-desktop .homePage .emby-scroller {
     margin-right: 2vw;
     margin-left: 2vw;
 }
-
-
-.layout-desktop .emby-scroller::-webkit-scrollbar {
-    display: none;              /* Chrome / Edge / Safari */
-}
-
-/*
-.layout-desktop .homePage .itemsContainer {
-    padding-left: 2vw;
-    margin-right: 1vw;
-} */
 
 
     
@@ -1736,24 +1737,18 @@
 }
 
 /* Media Pages: Poster Image */
-
 .layout-tv .detailImageContainer .portraitCard {
     left: 1vw;
+    /* right: 1vw; */
     max-width: 30em;
+    /* padding-left: 1vw; */
+    /* padding-right: 1vw; */
 }
 .layout-tv .detailImageContainer .backdropCard {
     left: 1vw;
     max-width: 38vh;
     /* padding-right: 1em; */
 }
-
-
-.layout-desktop .detailImageContainer .card {
-    /* left: 0 !important; */
-}
-
-
-
 
 /* Media Pages: Center Content (Mobile) */
 .layout-mobile .verticalSection .itemsContainer.vertical-wrap {
