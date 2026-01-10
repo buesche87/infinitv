@@ -1120,7 +1120,7 @@
 
 /* Login Card: User */
 #loginPage .squareCard {
-    width: 33%;
+    width: 33% !important;
     margin: 1em !important;
 }
 
