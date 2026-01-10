@@ -510,13 +510,12 @@
         margin-top: 2vw !important;
         margin-left: -19vw;
     }
-    .layout-tv [dir=ltr] .detailRibbon {
+    .layout-tv [dir=ltr] .detailRibbon,
+    .layout-tv .detailPagePrimaryContent,
+    .layout-tv .detailPagePrimaryContent  .itemsContainer-tv:has(.listItem-largeImage) {
         padding-left: 19vw;
     }
-    .layout-tv .detailPagePrimaryContent {
-        padding-left: 19vw;
-    }
-    
+
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -559,13 +558,12 @@
         margin-top: 3.5vw !important;
         margin-left: -21vw;
     }
-    .layout-tv [dir=ltr] .detailRibbon {
+    .layout-tv [dir=ltr] .detailRibbon,
+    .layout-tv .detailPagePrimaryContent,
+    .layout-tv .detailPagePrimaryContent  .itemsContainer-tv:has(.listItem-largeImage) {
         padding-left: 21vw;
     }
-    .layout-tv .detailPagePrimaryContent {
-        padding-left: 21vw;
-    }
-    
+
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -608,13 +606,12 @@
         margin-top: 4vw !important;
         margin-left: -24vw;
     }
-    .layout-tv [dir=ltr] .detailRibbon {
+    .layout-tv [dir=ltr] .detailRibbon,
+    .layout-tv .detailPagePrimaryContent,
+    .layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
         padding-left: 24vw;
     }
-    .layout-tv .detailPagePrimaryContent {
-        padding-left: 24vw;
-    }
-    
+        
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -656,7 +653,7 @@
     .layout-tv #listChildrenCollapsible {
         margin-top: 5vw !important;
     }
-    
+   
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -1007,6 +1004,11 @@
         height: calc(22vw) !important;
     }
 }
+
+.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
+    margin-top: 0 !important;
+}
+
 
 /*
 ===========================================================================

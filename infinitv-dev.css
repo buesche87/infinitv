@@ -488,7 +488,8 @@
 .actionSheetMenuItem:focus,
 .emby-collapsible-button,
 .listItem-border,
-.listTextButton-autohide {
+.listTextButton-autohide,
+.layout-tv .itemsContainer > .listItem-focusscale:focus {
     border: solid 2px #0000 !important;
 }
 
@@ -501,8 +502,7 @@
 
 /* Borders: 1px - Transparent */
 .navMenuOption,
-.navMenuOption-selected,
-.layout-tv .itemsContainer > .listItem-focusscale:focus {
+.navMenuOption-selected {
     border: solid 1px #0000 !important;
 }
 
@@ -1363,9 +1363,9 @@
     padding-right: 0em;
     padding-left: 1em;
 }
-
-.layout-tv .detailPagePrimaryContent  .itemsContainer-tv.vertical-list {
-    margin-left: 27vw;
+.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
+    padding-right: 0em;
+    padding-left: 0em;
 }
 
 .layout-tv .verticalSection-extrabottompadding .emby-scroller {
@@ -1602,9 +1602,8 @@
 
 /* View: List
 --------------------------------------------------------------------------*/
-
 /* Card (TV) */
-.layout-tv .libraryPage .listItem-button {
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
     padding-top: 1.5vh !important;
     padding-bottom: 1.5vh !important;
     padding-right: 1vw !important;
@@ -1612,11 +1611,11 @@
     padding-left: 0em;
     height: 5em;
 }
-.layout-tv .libraryPage .listItem-button .listItemImage {
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
     height: 5em;
     width: 10em;
 }
-.layout-tv .libraryPage .listItem-button:focus .listItemImage {
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
     width: 11em;
 }
 
@@ -1823,11 +1822,11 @@
     padding-top: 0em;
     padding-bottom: 0em;
     padding-right: 0;
-    padding-left: 28vw;
 }
 
-
-.layout-tv [dir=ltr] .detailRibbon {
+.layout-tv [dir=ltr] .detailRibbon,
+.layout-tv .detailPagePrimaryContent,
+.layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
     padding-left: 28vw;
 }
 
@@ -1903,6 +1902,11 @@
     margin-bottom: -2.5em !important;
 }
 
+.layout-tv .listItemImage-large-tv {
+    max-height: 20em !important;
+    max-width: 30em !important;
+}
+
 /* Cards: Large List Items */
 .listItem.listItem-largeImage {
     margin-bottom: 1em;
@@ -1912,10 +1916,7 @@
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
-}
-
-.layout-tv .listItem.listItem-largeImage {
-    height: 20vw;
+    /* align-items: flex-start; */
 }
 
 @media (max-width: 64em) {
@@ -1937,7 +1938,6 @@
     .layout-tv h2.listItemBodyText {
         font-size: 1.2em !important;
     }
-    
 }
 
 /* Large List Items: Align Body */
@@ -1945,7 +1945,7 @@
     align-self: auto;
     margin: .5em;
     padding: 0;
-    height: 18vw;
+    /* height: 18vw; */
 }
 
 /* Large List Items: Text */
