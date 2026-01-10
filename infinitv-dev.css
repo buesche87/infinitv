@@ -1305,9 +1305,9 @@
     padding: 0;
 }
 
-.layout-mobile .libraryPage {
-    /* padding-left: 3%; */
-    /* padding-right: 3%; */
+.layout-mobile .homePage {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 /* Section Title: Text & Icon */
@@ -1418,19 +1418,22 @@
 --------------------------------------------------------------------------*/
 
 .layout-mobile .detailPageContent {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 /* scroller: default alignment */
 .layout-mobile .emby-scroller {
     padding-left: 1vw;
 }
+
 .layout-mobile .detailPageContent .emby-scroller {
     padding-left: 0;
     margin-left: 1vw;
     margin-right: 1vw;
 }
+
+
 
 .layout-mobile .padded-bottom-focusscale,
 .layout-mobile .detailPagePrimaryContainer .itemsContainer {
@@ -1445,7 +1448,7 @@
 
 .layout-mobile #castContent,
 .layout-mobile #guestCastContent {
-    /* padding-left: .5em; */
+    padding-left: .5em;
 }
 
 /*
@@ -1669,6 +1672,16 @@
 }
 .layout-desktop .itemsContainer > .listItem-border .listItemBodyText {
     font-weight: 600;
+}
+
+.layout-mobile .itemsContainer .listItemBodyText {
+    justify-content: center;
+}
+.layout-mobile .itemsContainer .listItem-overview {
+    padding-top: 0;
+}
+.layout-mobile .itemsContainer .listItem-overview p {
+    margin-top: .5em;
 }
 
 /* Hide Image on small screens (Mobile) */
