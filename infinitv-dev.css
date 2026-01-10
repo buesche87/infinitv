@@ -1773,19 +1773,33 @@
     margin-left: 1em;
 }
 
+/* Fix narrow Desktop layout */
+
+.layout-desktop .detailPageWrapperContainer {
+    position: static !important;
+}
+.layout-desktop .detailPageWrapperContainer {
+    margin-top: 0 !important;
+}
 @media all and (max-width: 75em) {
+
+    .layout-desktop .detailLogo {
+        display: block;
+    }
 
     .layout-desktop .detailImageContainer {
         display: flex;
-        position: absolute;
-        left: 3%;
-        bottom: 32vh;
+        position: relative;
+        left: 0%;
+        bottom: 37%;
+        top: -28%;
     }
 
-    .layout-desktop .detailImageContainer .card {
+    .layout-desktop .detailImageContainer {
         box-shadow: none !important;
+        flex-shrink: 0;
     }
-
+    
     .layout-desktop .detailRibbon {
         flex-direction: column;
         height: 14em;
