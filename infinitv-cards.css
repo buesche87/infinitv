@@ -87,25 +87,25 @@
         width: 11.7vw !important;
     }
     
-    .itemsContainer-tv > .portraitCard, 
-    .itemsContainer-tv > .squareCard {
+    .itemsContainer > .portraitCard, 
+    .itemsContainer > .squareCard {
         width: 10.4vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 13.2vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.3vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 9.75vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 7.3vw !important;
     }
     
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 8.2vw !important;
     }
-    .itemsContainer-tv > .personCard .cardScalable {
+    .itemsContainer > .personCard .cardScalable {
         width:  calc(8.2vw - 1.75em) !important;
         height: calc(8.2vw) !important;
     }
@@ -158,16 +158,16 @@
         width: 11.7vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 13.2vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.3vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 10.85vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 7.3vw !important;
     }
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 9vw !important;
     }
 
@@ -228,20 +228,20 @@
         width: 13.4vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 13.2vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.3vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 12.2vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 7.3vw !important;
     }
     
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 8.9vw !important;
     }
-    .itemsContainer-tv > .personCard .cardScalable {
+    .itemsContainer > .personCard .cardScalable {
         width:  calc(8.9vw - 1.75em) !important;
         height: calc(8.9vw) !important;
     }
@@ -294,20 +294,20 @@
         width: 13.4vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 15.2vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.2vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 13.9vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 9.2vw !important;
     }
     
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 8.9vw  !important;
     }
-   .itemsContainer-tv > .personCard .cardScalable {
+    .itemsContainer > .personCard .cardScalable {
         width:  calc(8.9vw - 1.75em) !important;
         height: calc(8.9vw) !important;
     }
@@ -363,20 +363,20 @@
         width: 15.6vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 15.3vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 22.6vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 16.1vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 9.2vw !important;
     }
     
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 9.8vw  !important;
     }
-    .itemsContainer-tv > .personCard .cardScalable {
+    .itemsContainer > .personCard .cardScalable {
         width:  calc(9.8vw - 1.75em) !important;
         height: calc(9.8vw) !important;
     }
@@ -428,19 +428,19 @@
         width: 15.6vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 15.2vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 22.6vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 19.3vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 9.8vw !important;
     }
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 9.7vw !important;
     }
-    .itemsContainer-tv > .personCard .cardScalable {
+    .itemsContainer > .personCard .cardScalable {
         width:  calc(9.7vw - 1.75em) !important;
         height: calc(9.7vw) !important;
     }
@@ -496,19 +496,19 @@
         width: 18.7vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 18.2vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 22.6vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 24.2vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 11.5vw !important;
     }
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 10.8vw !important;
     }
-    .itemsContainer-tv > .personCard .cardScalable {
+    .itemsContainer > .personCard .cardScalable {
         width:  calc(10.8vw - 1.75em) !important;
         height: calc(10.8vw) !important;
     }
@@ -559,19 +559,19 @@
         width: 23.5vw !important;
     }
     
-    .itemsContainer-tv > .overflowPortraitCard {
+    .itemsContainer > .overflowPortraitCard {
         width: 22.5vw !important;
     }
-    .itemsContainer-tv > .overflowBackdropCard {
-        width: 30vw !important;
+    .itemsContainer > .overflowBackdropCard {
+        width: 32.1vw !important;
     }
-    .itemsContainer-tv > .overflowSquareCard {
+    .itemsContainer > .overflowSquareCard {
         width: 14.8vw !important;
     }
-    .itemsContainer-tv > .personCard {
+    .itemsContainer > .personCard {
         width: 17.4vw !important;
     }
-    .itemsContainer-tv > .personCard .cardScalable {
+    .itemsContainer > .personCard .cardScalable {
         width:  calc(17.4vw - 1.75em) !important;
         height: calc(17.4vw) !important;
     }
