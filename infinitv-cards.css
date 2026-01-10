@@ -605,7 +605,7 @@
 @media all and (min-width: 150em) and (max-width: 175em) {
 
     .layout-tv #listChildrenCollapsible {
-        margin-top: 5vw !important;
+        margin-top: 4vw !important;
         margin-left: -24vw;
     }
     .layout-tv [dir=ltr] .detailRibbon {
@@ -639,7 +639,7 @@
         width: 9.35vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 15.5vw !important;
+        width: 18.7vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -697,7 +697,7 @@
 @media all and (min-width: 120em) and (max-width: 135em) {
 
     .layout-tv #listChildrenCollapsible {
-        margin-top: 2.5vw !important;
+        margin-top: 2vw !important;
     }
     
     /* Layout TV: Cards */
