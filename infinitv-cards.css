@@ -82,10 +82,10 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 8.85vw !important;
+        width: 8.9vw !important;
     }
     .itemsContainer > .backdropCard {
-        width: 12.2vw !important;
+        width: 12.25vw !important;
     }
 
     /* Overflow Cards */
@@ -121,7 +121,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 9.7vw !important;
+        width: 9.75vw !important;
     }
     .itemsContainer > .backdropCard {
         width: 13.9vw !important;
@@ -159,7 +159,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 10.7vw !important;
+        width: 10.8vw !important;
     }
     .itemsContainer > .backdropCard {
         width: 16.2vw !important;
@@ -197,7 +197,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 12vw !important;
+        width: 12.1vw !important;
     }
     .itemsContainer > .backdropCard {
         width: 16.1vw !important;
@@ -235,10 +235,10 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 13.7vw !important;
+        width: 13.8vw !important;
     }
     .itemsContainer > .backdropCard {
-        width: 19.2vw !important;
+        width: 19.3vw !important;
     }
 
     /* Overflow Cards */
@@ -273,7 +273,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 15.9vw !important;
+        width: 16vw !important;
     }
     .itemsContainer > .backdropCard {
         width: 19.1vw !important;
