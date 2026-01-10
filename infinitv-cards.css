@@ -504,11 +504,59 @@
    Layout TV
 ===========================================================================
 */
-
-@media all and (min-width: 175em) {
+@media all and (min-width: 200em) {
 
     .layout-tv #listChildrenCollapsible {
-        margin-top: 5vw !important;
+        margin-top: 2vw !important;
+        margin-left: -19vw;
+    }
+    .layout-tv [dir=ltr] .detailRibbon {
+        padding-left: 19vw;
+    }
+    .layout-tv .detailPagePrimaryContent {
+        padding-left: 19vw;
+    }
+    
+    /* Layout TV: Cards */
+    .layout-tv .itemsContainer > .portraitCard, 
+    .layout-tv .itemsContainer > .squareCard {
+        width: 11.7vw !important;
+    }
+    .layout-tv > .itemsContainer > .backdropCard {
+        width: 25% !important;
+    }
+
+    /* Layout-TV: Overflow Cards */
+    .layout-tv .itemsContainer-tv > .overflowPortraitCard,
+    .layout-tv .itemsContainer-tv > .overflowSquareCard {
+        width: 13.2vw !important;
+    }
+    .layout-tv .itemsContainer-tv > .overflowBackdropCard {
+        width: 11.875vw !important;
+    }
+
+    /* Layout-TV: Overflow Cards on Media Pages */
+    .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
+    .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
+        width: 8.3vw !important;
+    }
+    .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
+        width: 15.6vw !important;
+    }
+
+    /* Layout-TV: Person Cards */
+    .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
+        width: 7.15vw !important;
+    }
+    .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
+        width:  calc(7.15vw - 1.75em) !important;
+        height: calc(7.15vw) !important;
+    }
+}
+@media all and (min-width: 175em) and (max-width: 200em) {
+
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 3.5vw !important;
         margin-left: -21vw;
     }
     .layout-tv [dir=ltr] .detailRibbon {
@@ -542,7 +590,7 @@
         width: 8.3vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 13.3vw !important;
+        width: 15.6vw !important;
     }
 
     /* Layout-TV: Person Cards */
