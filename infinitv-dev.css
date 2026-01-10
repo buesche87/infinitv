@@ -1950,7 +1950,12 @@
 
 /* Large List Items: Text */
 .layout-tv .listItem.listItem-largeImage .listItem-overview {
-    max-height: 12vw;
+    max-height: 10vw;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 4; */
+    /* -webkit-box-orient: vertical; */
 }
 
 /* List Items: Indicator */
