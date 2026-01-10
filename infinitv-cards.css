@@ -214,7 +214,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 13.8vw !important;
+        width: 15.3vw !important;
     }
     .itemsContainer > .backdropCard {
         width: 19.3vw !important;
@@ -732,7 +732,7 @@
         width: 15.3vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.9vw !important;
+        width: 19vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
