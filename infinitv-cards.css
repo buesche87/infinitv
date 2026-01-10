@@ -24,11 +24,12 @@
     font-size: 90% !important;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard {
-    margin-bottom: 1em !important;
+    margin-bottom: 1.5vw;
+    margin-right: 1vw;
 }
 
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-    padding-right: .75em;
+    padding-right: .5vw;
 }
 
 /* Layout Mobile: Card spacing
@@ -506,6 +507,17 @@
 
 @media all and (min-width: 175em) {
 
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 5vw !important;
+        margin-left: -21vw;
+    }
+    .layout-tv [dir=ltr] .detailRibbon {
+        padding-left: 21vw;
+    }
+    .layout-tv .detailPagePrimaryContent {
+        padding-left: 21vw;
+    }
+    
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -521,16 +533,16 @@
         width: 13.2vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 11.9vw !important;
+        width: 11.875vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width: 15.3vw !important;
+        width: 8.3vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 11.7vw !important;
+        width: 13.3vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -544,6 +556,17 @@
 }
 @media all and (min-width: 150em) and (max-width: 175em) {
 
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 5vw !important;
+        margin-left: -24vw;
+    }
+    .layout-tv [dir=ltr] .detailRibbon {
+        padding-left: 24vw;
+    }
+    .layout-tv .detailPagePrimaryContent {
+        padding-left: 24vw;
+    }
+    
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -559,16 +582,16 @@
         width: 13.2vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 13.6vw !important;
+        width: 13.55vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width: 15.3vw !important;
+        width: 9.35vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 13.4vw !important;
+        width: 15.5vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -582,6 +605,10 @@
 }
 @media all and (min-width: 135em) and (max-width: 150em) {
 
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 5vw !important;
+    }
+    
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -603,10 +630,10 @@
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width: 15.3vw !important;
+        width: 10.65vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 15.6vw !important;
+        width: 18.5vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -621,6 +648,10 @@
 
 @media all and (min-width: 120em) and (max-width: 135em) {
 
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 2.5vw !important;
+    }
+    
     /* Layout TV: Cards */
     .layout-tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -636,16 +667,16 @@
         width: 15.2vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 19vw !important;
+        width: 15.7vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width: 15.3vw !important;
+        width: 12.2vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.7vw !important;
+        width: 23.1vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -659,6 +690,10 @@
 }
 @media all and (min-width: 100em) and (max-width: 120em) {
 
+    .layout-tv #listChildrenCollapsible {
+        margin-top: .5em !important;
+    }
+    
     /* Layout TV: Cards */
     .layout.tv .itemsContainer > .portraitCard, 
     .layout-tv .itemsContainer > .squareCard {
@@ -674,16 +709,16 @@
         width: 15.3vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 19vw !important;
+        width: 18.9vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width: 15.3vw !important;
+        width: 14.45vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.7vw !important;
+        width: 23vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -719,10 +754,10 @@
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width:  15.3vw !important;
+        width: 14.45vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width:  23.2vw !important;
+        width: 30.6vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -751,16 +786,16 @@
         width:  18.2vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width:  23.6vw !important;
+        width: 23.5vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width:  15.3vw !important;
+        width: 17.5vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width:  23.2vw !important;
+        width: 30.6vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -795,10 +830,10 @@
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width:  15.3vw !important;
+        width: 21.9vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width:  30.8vw !important;
+        width: 30.8vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -827,16 +862,16 @@
         width:  29.7vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width:  47.2vw !important;
+        width: 46vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width:  15.3vw !important;
+        width: 29.5vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width:  46vw !important;
+        width: 45vw !important;
     }
 
     /* Layout-TV: Person Cards */
@@ -865,16 +900,16 @@
         width:  43.3vw !important;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width:  47.2vw !important;
+        width: 46vw !important;
     }
 
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        width:  15.3vw !important;
+        /* width:  15.3vw !important; */
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width:  46vw !important;
+        width: 45vw !important;
     }
 
     /* Layout-TV: Person Cards */
