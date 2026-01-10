@@ -930,7 +930,7 @@
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-        /* width:  15.3vw !important; */
+       width: 29.5vw !important;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
         width: 45vw !important;
@@ -1087,6 +1087,7 @@
     }
     .layout-mobile .listItem-overview {
         display: -webkit-box;
+        line-clamp: 3;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
     }
@@ -1094,6 +1095,7 @@
 @media(min-width: 60em)  {
     .layout-mobile .listItem-overview {
         display: -webkit-box;
+        line-clamp: 4;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
     }
@@ -1115,6 +1117,7 @@
     }
     .layout-mobile .listItem-overview {
         display: -webkit-box;
+        line-clamp: 5;
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
     }
@@ -1130,6 +1133,7 @@
     }
     .layout-mobile .listItem-overview {
         display: -webkit-box;
+        line-clamp: 6;
         -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
     }
@@ -1141,6 +1145,7 @@
     }
     .layout-mobile .listItem-overview {
         display: -webkit-box;
+        line-clamp: 7;
         -webkit-line-clamp: 7;
         -webkit-box-orient: vertical;
     }
