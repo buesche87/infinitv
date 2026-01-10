@@ -1935,7 +1935,9 @@
 
 .layout-tv .listItemImage-large-tv {
     max-height: 20em !important;
+    min-height: 14em;
     max-width: 30em !important;
+    height: 15vw !important;
 }
 
 /* Cards: Large List Items */
@@ -1974,12 +1976,14 @@
 .listItem.listItem-largeImage .listItemBody {
     align-self: auto;
     margin: .5em;
+    margin-right: 1.25em;
     padding: 0;
 }
 
 /* Large List Items: Text */
 .layout-tv .listItem.listItem-largeImage .listItem-overview {
-    max-height: 10vw;
+    max-height: 7.9vw;
+    /* margin-right: 0.5em; */
 }
 
 /* List Items: Indicator */

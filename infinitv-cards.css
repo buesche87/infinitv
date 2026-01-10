@@ -714,7 +714,7 @@
 @media all and (min-width: 100em) and (max-width: 120em) {
 
     .layout-tv #listChildrenCollapsible {
-        margin-top: .5em !important;
+        margin-top: 1.5vw !important;
     }
     
     /* Layout TV: Cards */
