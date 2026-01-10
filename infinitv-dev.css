@@ -1295,14 +1295,24 @@
 
 /* Section Title Container */
 .layout-mobile .sectionTitleContainer-cards,
-.layout-mobile :not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+.layout-mobile :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     text-align: center;
-    padding: .5% 0 .5% 0;
+    padding: 4px 0 4px 0;
+}
+
+.layout-mobile .sectionTitleTextButton .sectionTitle-cards {
+    text-align: center;
+    padding: 0;
+}
+
+.layout-mobile .libraryPage {
+    /* padding-left: 3%; */
+    /* padding-right: 3%; */
 }
 
 /* Section Title: Text & Icon */
-.layout-mobile .sectionTitle>.material-icons,
-.layout-mobile .sectionTitleTextButton>.material-icons {
+.layout-mobile .sectionTitle > .material-icons,
+.layout-mobile .sectionTitleTextButton > .material-icons {
     padding: 0;
     margin: 0;
 }
@@ -1387,8 +1397,6 @@
     margin-left: 2vw;
 }
 
-
-    
 .layout-desktop .padded-bottom-focusscale,
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
     margin-bottom: -0.5em;
@@ -1409,6 +1417,21 @@
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
+.layout-mobile .detailPageContent {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* scroller: default alignment */
+.layout-mobile .emby-scroller {
+    padding-left: 1vw;
+}
+.layout-mobile .detailPageContent .emby-scroller {
+    padding-left: 0;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
 .layout-mobile .padded-bottom-focusscale,
 .layout-mobile .detailPagePrimaryContainer .itemsContainer {
     margin-bottom: -0.5em;
@@ -1422,7 +1445,7 @@
 
 .layout-mobile #castContent,
 .layout-mobile #guestCastContent {
-    padding-left: .5em;
+    /* padding-left: .5em; */
 }
 
 /*
