@@ -20,7 +20,7 @@
     padding-right: .25vw;
 }
 .layout-tv .itemsContainer-tv > .personCard {
-    padding-right: .5vw;
+    margin-right: .5vw !important;
     font-size: 90% !important;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard {
