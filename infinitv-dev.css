@@ -1209,6 +1209,8 @@
 /* Section Title Container */
 .layout-tv .sectionTitleContainer-cards,
 .layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    padding-left: 0 !important;
+    text-align: center;
     padding-top: 8px;
     padding-bottom: 8px;
 }
@@ -1829,6 +1831,7 @@
 /* Detail Buttons (TV) */
 .layout-tv .mainDetailButtons {
     margin-top: 1.5em;
+    margin-left: .5em;
 }
 
 /* Detail-Ribbon: Media Buttons */
@@ -1854,8 +1857,10 @@
 .layout-tv [dir=ltr] .detailRibbon,
 .layout-tv .detailPagePrimaryContent,
 .layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
-    padding-left: 28vw;
+    padding-left: 29vw;
 }
+
+
 
 .layout-desktop .detailPagePrimaryContent {
     padding-top: 1em;
@@ -1924,7 +1929,7 @@
 }
 
 .layout-tv #listChildrenCollapsible {
-    margin-left: -28vw;
+    margin-left: -29vw;
     margin-bottom: -2.5em !important;
 }
 
