@@ -32,27 +32,6 @@
     padding-right: .5vw;
 }
 
-/* Layout Mobile: Card spacing
---------------------------------------------------------------------------*/
-
-/*
-.layout-mobile .overflowBackdropCard, 
-.layout-mobile .overflowSmallBackdropCard {
-    width: 49vw;
-}
-.layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) {
-    margin-right: 0em !important;
-    margin-left: 0em !important;
-}
-.layout-mobile .detailVerticalSection .similarContent .card {
-    width: 34%;
-}
-.layout-mobile .detailVerticalSection .overflowPortraitCard:not(.personCard) > .cardBox {
-    margin-right: .7em !important;
-    margin-left: .7em !important;
-} */
-
-
 /* CardBoxes 
 --------------------------------------------------------------------------*/
 
@@ -83,10 +62,10 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 8.9vw !important;
+        width: 8.9vw;
     }
     .itemsContainer > .backdropCard {
-        width: 12.25vw !important;
+        width: 12.25vw;
     }
 
     /* Overflow Cards */
@@ -101,19 +80,19 @@
     /* Overflow Cards on Media Pages */
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 8.35vw !important;
+        width: 8.35vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 9.2vw !important;
+        width: 9.2vw;
     }
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 6.14vw !important;
+        width: 6.14vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(6.14vw - 1.75em) !important;
-        height: calc(6.14vw) !important;
+        width:  calc(6.14vw - 1.75em);
+        height: calc(6.14vw);
     }
 }
 
@@ -122,10 +101,10 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 9.75vw !important;
+        width: 9.75vw;
     }
     .itemsContainer > .backdropCard {
-        width: 13.9vw !important;
+        width: 13.9vw;
     }
     
     /* Overflow Cards */
@@ -140,19 +119,19 @@
     /* Overflow Cards on Media Pages */
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 9.2vw !important;
+        width: 9.2vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 10.2vw !important;
+        width: 10.2vw;
     }
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 6.55vw !important;
+        width: 6.55vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(6.55vw - 1.75em) !important;
-        height: calc(6.55vw) !important;
+        width:  calc(6.55vw - 1.75em);
+        height: calc(6.55vw);
     }
 }
 @media all and (min-width: 135em) and (max-width: 150em) {
@@ -160,10 +139,10 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 10.8vw !important;
+        width: 10.8vw;
     }
     .itemsContainer > .backdropCard {
-        width: 16.2vw !important;
+        width: 16.2vw;
     }
 
     /* Overflow Cards */
@@ -178,19 +157,19 @@
     /* Overflow Cards on Media Pages */
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 10.2vw !important;
+        width: 10.2vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 11.5vw !important;
+        width: 11.5vw;
     }
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 7.05vw !important;
+        width: 7.05vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(7.05vw - 1.75em) !important;
-        height: calc(7.05vw) !important;
+        width:  calc(7.05vw - 1.75em);
+        height: calc(7.05vw);
     }
 }
 @media all and (min-width: 120em) and (max-width: 135em) {

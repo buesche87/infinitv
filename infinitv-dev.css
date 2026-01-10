@@ -1821,11 +1821,46 @@
     padding-bottom: 0.15em;
 }
 .layout-desktop .infoWrapper {
-    padding-top: .25em;
+    padding-top: 0.25em;
 }
 .layout-desktop .mainDetailButtons {
     margin-left: 1em;
 }
+
+
+@media all and (max-width: 75em) {
+
+    .layout-desktop .detailImageContainer {
+        display: flex;
+        position: absolute;
+        left: 3%;
+        bottom: 32vh;
+    }
+
+    .layout-desktop .detailImageContainer .card {
+        box-shadow: none !important;
+    }
+
+    .layout-desktop .detailRibbon {
+        flex-direction: column;
+        height: 14em;
+        padding-left: 30vw !important;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        left: 0em;
+    }
+
+    .layout-desktop .infoWrapper {
+        margin-top: .5em;
+    }
+
+    .layout-desktop .mainDetailButtons {
+        /* padding-left: 1.6vw; */
+        margin-left: 2vw;
+    }
+    
+}
+
 
 /* Detail-Ribbon: Media Infos */
 .layout-tv .itemMiscInfo,
