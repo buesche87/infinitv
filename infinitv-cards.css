@@ -495,7 +495,7 @@
         width: 15.3vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 30.8vw;
+        width: 46vw;
     }
     
     /* Person Cards */
@@ -961,7 +961,7 @@
     /* Layout-TV: Overflow Cards on Media Pages */
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowSquareCard {
-       width: 29.5vw;
+       width: 29.4vw;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
         width: 45vw;
@@ -1033,19 +1033,14 @@
 }
 
 @media (max-width: 25em) {
-
+    
+    .layout-mobile .libraryPage {
+        padding-left: 0;
+        padding-right: 0;
+    }  
     .layout-mobile .homePage {
         padding-left: 0;
         padding-right: 0;
-    }
-    
-    /* Cards */
-    .layout-mobile .itemsContainer > .portraitCard, 
-    .layout-mobile .itemsContainer > .squareCard {
-        width: 42.5vw;
-    }
-    .layout-mobile .itemsContainer > .backdropCard {
-        width: 12.25vw;
     }
 
     .layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
@@ -1058,10 +1053,16 @@
     .layout-mobile .homePage :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
         border-radius: 0 !important;
     }
-    .layout-mobile .libraryPage {
-        padding-left: 0;
-        padding-right: 0;
-    }    
+    
+    /* Cards */
+    .layout-mobile .itemsContainer > .portraitCard, 
+    .layout-mobile .itemsContainer > .squareCard {
+        width: 42.5vw;
+    }
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 43vw;
+    }
+
 }
 @media(max-width: 50em)  {
     .layout-mobile .detailPageWrapperContainer .listItem-content {
@@ -1108,16 +1109,6 @@
     .layout-mobile .overflowBackdropCard {
         width: 48.7vw;
     }
-
-    /* Overflow Cards on Media Pages */
-    .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
-    .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 30vw;
-    }
-    .layout-mobile .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 46vw;
-    }
-    
 }
 @media(min-width: 30em) {
     .layout-mobile .overflowBackdropCard {
