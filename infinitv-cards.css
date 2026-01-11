@@ -1,11 +1,169 @@
-/*  
-  ==================================
-  Dynamic Cards
-  ==================================
 
-  infinitv - HTPC Theme for Jellyin
-
+/*
+===========================================================================
+   Cards: CardBox
+===========================================================================
 */
+
+/* Cards: Rounding Top, Flat Bottom */
+.visualCardBox:has(.cardFooter) .blurhash-canvas,
+.visualCardBox:has(.cardFooter) .cardImage,
+.visualCardBox:has(.cardFooter) .coveredImage,
+.visualCardBox:has(.cardFooter) .cardImageContainer,
+.visualCardBox:has(.cardFooter) .cardOverlayContainer {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Card Footer: Flat Top, Rounding Bottom */
+.cardFooter:not(.visualCardBox-cardFooter) {
+    border-bottom-left-radius: var(--rounding-media) !important;
+    border-bottom-right-radius: var(--rounding-media) !important;
+    text-align: center;
+}
+
+.layout-tv .itemsContainer .overflowBackdropCard .cardBox {
+    padding-right: 1vw !important;
+    margin-right: 1em !important;
+}
+
+/* Cards: Zoom on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardBox {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* More space for zoom & glow animations */
+@media (pointer: fine) {
+    .itemsContainer .cardBox {
+        margin-left: .5em !important;
+    }
+}
+
+/*
+===========================================================================
+   Cards: Text & Buttons
+===========================================================================
+* > needs the plugin "home section containers" / 
+
+/* Text Shadow (not on mobile > performance) */
+@media (pointer: fine) {
+    .cardText {
+        text-shadow: var(--textshadow) !important;
+    }
+}
+
+/* Recent & NextUp: Hide Series Title */
+.ContinueWatching .card[data-type="Episode"] .cardText-first,
+.NextUp .card[data-type="Episode"] .cardText-first {
+    display: none;
+}
+
+/* Recent & NextUp: Inflate Episode Name */
+.ContinueWatching .card[data-type="Episode"] .cardText-secondary,
+.NextUp .card[data-type="Episode"] .cardText-secondary {
+    font-size: 100% !important;
+    padding-top: .5em !important;
+    color: inherit;
+}
+
+/* Recent & NextUp: Hide Movie Year */
+.ContinueWatching .card[data-type="Movie"] .cardText-secondary,
+.NextUp .card[data-type="Movie"] .cardText-secondary {
+    display: none;
+}
+
+/* Card Text First: Spacing with and without card footer */
+.cardText-first {
+    padding-top: .5em !important;
+}
+.cardFooter > .cardText.cardText-first {
+    padding-top: .25em !important;
+}
+
+/* Card Text Secondary: Font size */
+.cardText.cardText-secondary {
+    font-size: 75% !important;
+}
+
+/* Card Action-Button (Mobile) */
+.layout-mobile .cardFooter .itemAction {
+    margin-bottom: 4.4em !important;
+    margin-right: .25em !important;
+}
+.layout-mobile .itemAction > .material-icons {
+    color: white;
+}
+
+/* Links / Action-Text in card footer */
+.textActionButton {
+    text-decoration: none !important;
+}
+
+/*
+===========================================================================
+   Cards: Indicators
+===========================================================================
+*/
+
+/* Card Indicators: Alignment */
+.cardContent .cardIndicators,
+.mediaSourceIndicator {
+    right: 0.5em !important;
+    top: 0.5em !important;
+}
+
+/* Card Indicators: Count & Played */
+.playedIndicator {
+    background: rgba(0, 0, 0, 1);
+}
+.countIndicator,
+.mediaSourceIndicator {
+    font-weight: 600;
+    font-size: 89%;
+    color: rgba(0, 0, 0, 1);
+}
+
+/* Card Indicators: Missing & Unaired */
+.missingIndicator,
+.unairedIndicator {
+    color: #fff;
+    background: #ae3030eb;
+    padding: .3em .6em;
+}
+
+/* Card Indicators: Multi Select Checkboxes */
+.multiSelectCheckboxOutline {
+    border-top-left-radius: var(--rounding-media) !important;
+    border-top-right-radius: var(--rounding-system) !important;
+    border-bottom-right-radius: var(--rounding-system) !important;
+    border-bottom-left-radius: var(--rounding-system) !important;
+}
+
+/* Multi-Select panel */
+.selectionCommandsPanel {
+    top: 3.9em;
+    padding: .5em;
+}
+
+/*
+===========================================================================
+   Cards: Progressbar
+===========================================================================
+*/
+
+/* Card Progressbar: Background */
+.itemProgressBar {
+    height: .4em !important;
+    margin: .5em .8em !important;
+    backdrop-filter: blur(6px);
+}
+
+/* Card Progressbar: Progress */
+.itemProgressBarForeground {
+    background-color: var(--accent100) !important;
+}
+
 
 /* Layout TV: Card spacing
 --------------------------------------------------------------------------*/
@@ -49,13 +207,9 @@
 
 /*
 ===========================================================================
-   Card Size 
+   Layout Desktop: Dynamic Card Sizes
 ===========================================================================
 */
-
-/* Very wide Screens 
---------------------------------------------------------------------------*/
-
 @media all and (min-width: 175em) {
 
     /* Cards */
@@ -507,11 +661,9 @@
         height: calc(23.2vw);
     }
 }
-
-
 /*
 ===========================================================================
-   Layout TV
+   Layout TV: Dynamic Card Sizes
 ===========================================================================
 */
 @media all and (min-width: 200em) {

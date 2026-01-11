@@ -1,0 +1,337 @@
+
+/*
+===========================================================================
+   Sections: Media Pages
+===========================================================================
+*/
+
+/* Sections: Space between Sections (TV) */
+.layout-tv .detailVerticalSection {
+    margin-bottom: 0em !important;
+}
+
+.layout-tv #listChildrenCollapsible {
+    margin-left: -29vw;
+    margin-bottom: -2.5em !important;
+}
+
+.layout-tv .listItemImage-large-tv {
+    max-height: 20em !important;
+    min-height: 14em;
+    max-width: 30em !important;
+    height: 15vw !important;
+}
+
+/* Cards: Large List Items */
+.listItem.listItem-largeImage {
+    margin-bottom: 1em;
+    padding: 0em;
+    border-color: hsl(0deg 0% 100% / 20%);
+    -webkit-transform: none !important;
+    transform: none !important;
+    margin-right: .5em;
+    background: var(--bgdark40) !important;
+}
+
+@media (max-width: 64em) {
+    .layout-tv .listItemImage-large {
+        height:16vw;
+        margin-right: .5em !important;
+        width: 22vw
+    }
+
+    .layout-tv .listItemImageButton,
+    .layout-tv .listItemIndicators {
+        font-size: .6em !important;
+    }
+
+    .layout-tv .listItemBody {
+        padding-left: .5em;
+    }
+
+    .layout-tv h2.listItemBodyText {
+        font-size: 1.2em !important;
+    }
+}
+
+/* Large List Items: Align Body */
+.listItem.listItem-largeImage .listItemBody {
+    align-self: auto;
+    margin: .5em;
+    margin-right: 1.25em;
+    padding: 0;
+}
+
+/* Large List Items: Text */
+.layout-tv .listItem.listItem-largeImage .listItem-overview {
+    max-height: 7.9vw;
+    /* margin-right: 0.5em; */
+}
+
+/* List Items: Indicator */
+.layout-tv .listItemIndicators {
+    position: fixed;
+    left: 0.75em;
+    top: 0.75em;
+}
+.layout-desktop .listItemIndicators {
+    position: fixed;
+    left: 0.75em;
+    top: 0.75em;
+}
+.layout-mobile .listItemIndicators {
+    position: fixed;
+    left: 0.5em;
+    top: 0.5em;
+    font-size: .75em !important
+}
+
+/* Play Button Color on Hover */
+.layout-mobile .listItem-largeImage .listItemImageButton {
+    border-radius: var(--rounding-system) !important;
+}
+.layout-desktop .listItem-largeImage:hover .listItemImageButton {
+    color: var(--accent80) !important;
+}
+
+.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
+    margin: .5em;
+}
+.layout-mobile .detailPageWrapperContainer .listItem-content {
+    border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    background: var(--bgdark40) !important;
+    align-content:center;
+}
+.layout-mobile .detailPageWrapperContainer .listItemBody {
+    text-align: center;
+}
+
+/* Cast > More */
+.clearLink,
+.clearLink > .emby-button {
+    margin: 0;
+}
+
+/*
+===========================================================================
+   Sections: Titles
+===========================================================================
+*/
+
+/* Section Titles: Bold */
+.detailPagePrimaryContainer .sectionTitle,
+.detailPageSecondaryContainer .sectionTitle {
+    font-weight: 600;
+}
+
+/* Section Titles: Layout TV
+--------------------------------------------------------------------------*/
+
+/* Container */
+.layout-tv .sectionTitleContainer-cards,
+.layout-tv div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    padding-left: 0 !important;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Titles */
+.layout-tv .sectionTitle {
+    padding-left: 2% !important;
+}
+.layout-tv .homePage .sectionTitleContainer-cards,
+.layout-tv .homePage .sectionTitle {
+    text-align: center;
+    padding-left: 0 !important;
+}
+
+/* Section Titles: Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* Container */
+.layout-desktop .sectionTitleContainer-cards,
+.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Titles */
+.layout-desktop .detailPagePrimaryContainer .sectionTitle {
+    padding-left: 1.5% !important;
+}
+.layout-desktop .detailPageSecondaryContainer .sectionTitle {
+    border-radius: 0;
+}
+
+/* Text & Icon */
+.sectionTitleTextButton > .sectionTitle,
+.sectionTitleTextButton > .material-icons {
+    padding: 0;
+    margin: 0;
+}
+
+/* Scroll Buttons */
+.layout-desktop .verticalSection > .emby-scrollbuttons {
+    padding-top: 5px;
+    padding-bottom: 0em;
+}
+
+/* Section Titles: Layout Mobile
+--------------------------------------------------------------------------*/
+
+/* Container */
+.layout-mobile .sectionTitleContainer-cards,
+.layout-mobile :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    text-align: center;
+    padding: 4px 0 4px 0;
+}
+
+/* Titles */
+.layout-mobile .sectionTitleTextButton .sectionTitle-cards {
+    text-align: center;
+    padding: 0;
+}
+
+/* Text & Icon */
+.layout-mobile .sectionTitle > .material-icons,
+.layout-mobile .sectionTitleTextButton > .material-icons {
+    padding: 0;
+    margin: 0;
+}
+
+/*
+===========================================================================
+   Media Scroller
+===========================================================================
+*/
+
+/* Default Alignment */
+.emby-scroller {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.emby-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+/* Media Scroller: Layout TV
+--------------------------------------------------------------------------*/
+
+/* Alignment */
+.layout-tv .emby-scroller {
+    padding-left: 1em;
+    padding-right: 0;
+    margin-right: 1vw;
+}
+.layout-tv #castCollapsible .emby-scroller,
+.layout-tv #guestCastCollapsible .emby-scroller {
+    padding-left: .75em;
+}
+.layout-tv .verticalSection-extrabottompadding .emby-scroller {
+    padding-top: 2em;
+}
+
+
+.layout-tv .padded-top-focusscale {
+    margin-top: -0.5em;
+    padding-top: 1.5em;
+}
+.layout-tv .padded-bottom-focusscale {
+    margin-bottom: -0.5em;
+    padding-bottom: 1.5em;
+}
+
+
+.layout-tv .detailPagePrimaryContainer .itemsContainer {
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-right: 0em;
+    padding-left: 1em;
+}
+.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
+    padding-right: 0em;
+    padding-left: 0em;
+}
+
+.layout-tv .detailPageSecondaryContainer .itemsContainer {
+    align-items: flex-start;
+}
+
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* scroller: default alignment */
+.layout-desktop .emby-scroller {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.layout-desktop .homePage .emby-scroller {
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.layout-desktop .padded-top-focusscale {
+    margin-top: -0.5em;
+    padding-top: 1em;
+}
+.layout-desktop .padded-bottom-focusscale {
+    margin-bottom: -0.5em;
+    padding-bottom: 1em;
+}
+.layout-desktop .detailPagePrimaryContainer .itemsContainer {
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: .5vw;
+    padding-left: .5vw;
+}
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+.layout-mobile .detailPageContent {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+/* scroller: default alignment */
+.layout-mobile .emby-scroller {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.layout-mobile .detailPageContent .emby-scroller {
+    /* padding-left: 0; */
+    /* margin-left: 1vw; */
+    /* margin-right: 1vw; */
+}
+
+.layout-mobile .padded-top-focusscale {
+    margin-top: -0.5em;
+    padding-top: .75em;
+}
+.layout-mobile .padded-bottom-focusscale {
+    margin-bottom: -0.5em;
+    padding-bottom: .75em;
+}
+.layout-mobile .detailPagePrimaryContainer .itemsContainer {
+    margin-top: -0.5em;
+    margin-bottom: -0.5em;
+    padding-top: .75em;
+    padding-bottom: .75em;
+}
+
+.layout-mobile #castContent,
+.layout-mobile #guestCastContent {
+    padding-left: .5em;
+}

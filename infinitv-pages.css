@@ -1,0 +1,673 @@
+
+/*
+===========================================================================
+   Login Page
+===========================================================================
+*/
+
+/* Hide some elements */
+#loginPage .btnForgotPassword,
+#loginPage .loginDisclaimerContainer {
+    display: none;
+}
+
+/* Login Form: Dimensions & Colors */
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 24em;
+    padding-bottom: 2em !important;
+}
+
+/* Manual Login Form */
+#loginPage .readOnlyContent,
+#loginPage form {
+    max-width: 22em;
+}
+
+/* Login Card: "please sign in" */
+#loginPage .visualLoginForm {
+    padding-top: 1em;
+}
+#loginPage .manualLoginForm {
+    padding-top: 2em;
+}
+
+/* Login Card: User */
+#loginPage .squareCard {
+    width: 33% !important;
+    margin: 1em !important;
+}
+
+#loginPage .cardBox {
+    box-shadow: none !important;
+}
+
+#loginPage .cardScalable {
+    box-shadow: var(--cardshadow) !important;
+}
+
+#loginPage .card:hover .cardScalable {
+    box-shadow: var(--cardglow) !important;
+}
+
+/*
+============================================================================
+   Home Page
+============================================================================
+*/
+
+.layout-mobile .homePage {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* Home Sections Container: alignment */
+.layout-tv .homeSectionsContainer {
+    top: 0;
+}
+.layout-desktop .homeSectionsContainer {
+    top: 69vh;
+}
+.layout-mobile .homeSectionsContainer {
+    top: 78vh;
+}
+
+/* Slides: Disable in TV layout (they don't work well with a remote) */
+.layout-tv #slides-container {
+    display: none !important;
+}
+
+/* Slides: Pause Button alignment */
+.layout-desktop .pause-button {
+    top: 7vh;
+    right: 2vw;
+}
+
+/* Slides: Font Size */
+.slide .genre,
+.slide .info-container,
+.slide .plot-container {
+    font-size: 120%;
+}
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .homeSectionsContainer {
+        top: 61vh;
+    }
+}
+
+/*
+===========================================================================
+   Library Pages
+===========================================================================
+*/
+
+/* Library Pages: Alignment */
+.layout-tv .libraryPage {
+    padding-top: 5em !important;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.layout-tv .homePage {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+/* Library Pages: Center Content */
+.libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+.libraryPage .padded-right-withalphapicker {
+    padding-left: 2vw !important;
+    padding-right: 3vw !important;
+}
+
+.layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+.layout-mobile .libraryPage .padded-right-withalphapicker {
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+}
+
+/* Library Pages: Item backdrop alignment (Mobile) */
+.layout-mobile .itemBackdrop {
+    margin-top: 3.9rem;
+}
+
+/* Library Pages: Alphabet Picker */
+.alphaPickerButton {
+    height: 1.6em;
+}
+@media (hover: hover) {
+    .alphaPickerButton:hover {
+        background: var(--accent60) !important;
+        color: white !important;
+    }
+}
+.alphaPickerButton:focus {
+    -webkit-transform: none !important;
+    transform: none !important;
+    transition: none !important;
+    background: var(--accent80) !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+/*
+===========================================================================
+   Library Page Views
+===========================================================================
+*/
+
+/* View: Banner
+--------------------------------------------------------------------------*/
+
+.layout-tv .itemsContainer > .bannerCard {
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
+}
+
+/* View: List
+--------------------------------------------------------------------------*/
+/* Card (TV) */
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
+    padding-top: 1.5vh !important;
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
+    margin-bottom: 1em;
+    padding-left: 0em;
+    height: 5em;
+}
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
+    height: 5em;
+    width: 10em;
+}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
+    width: 11em;
+}
+
+/* Card (Desktop) */
+.layout-desktop .itemsContainer > .listItem-border {
+    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    border-radius: var(--rounding-media) !important;
+    padding-right: 0 !important;
+    margin-bottom: .5em !important;
+    background: var(--bgdark20) !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover {
+    border: 2px solid var(--accent40) !important;
+    color: inherit !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) {
+    color: var(--accent100) !important;
+}
+
+/* Card Content (Desktop) */
+.layout-desktop .itemsContainer > .listItem-border .listItemImage {
+    transform: scale(1.3)
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBody {
+    padding-left: 2%;
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBodyText {
+    font-weight: 600;
+}
+
+/* Card Content (Mobile) */
+.layout-mobile .itemsContainer .listItemBodyText {
+    justify-content: center;
+}
+.layout-mobile .itemsContainer .listItem-overview {
+    padding-top: 0;
+}
+.layout-mobile .itemsContainer .listItem-overview p {
+    margin-top: .5em;
+}
+
+/* Hide Image on small screens (Mobile) */
+@media (max-width: 40em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: flex;
+    }
+}
+@media (max-width: 30em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: none;
+    }
+}
+
+
+/*
+===========================================================================
+   Library Pages: Sorting & Filter
+===========================================================================
+*/
+
+/* Filter & Sorting Header */
+.pageTabContent>.focuscontainer-x,
+.itemsViewSettingsContainer {
+    margin-bottom: 1.5em;
+    padding: 0.25em;
+}
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
+    margin: 0 .2em;
+}
+
+/* Filter & Sorting Header: Item Count */
+.listPaging > span {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/* Filter Indicator */
+.filterIndicator {
+    color: black;
+}
+
+/* Sorting Menu: Radio Button spacing */
+.radio-label-block {
+    margin: 1em !important;
+}
+
+
+
+/*
+===========================================================================
+   Media Pages
+===========================================================================
+*/
+
+/* Media Pages: Hide some Elements (TV) */
+.layout-tv .itemExternalLinks,
+.layout-tv .detailsGroupItem.directorsGroup,
+.layout-tv .detailsGroupItem.writersGroup,
+.layout-tv .detailsGroupItem.studiosGroup,
+.layout-tv .hide+.detailPageWrapperContainer .itemName,
+.layout-tv .endsAt,
+.layout-tv .itemTags {
+    display: none !important;
+}
+
+/* Media Pages: Move Content up (TV) */
+.detailPageWrapperContainer {
+    padding-top: 1em;
+}
+
+/* Media Pages: Increase Season Title Text */
+.layout-tv .selfBackdropPage .itemName,
+.layout-desktop .selfBackdropPage .itemName {
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+.selfBackdropPage h1.parentName.focuscontainer-x {
+    font-size: 150%;
+}
+
+/* Media Pages: Poster Image */
+.layout-tv .detailImageContainer .portraitCard {
+    left: 1vw;
+    max-width: 30em;
+}
+.layout-tv .detailImageContainer .backdropCard {
+    left: 1vw;
+    max-width: 30em;
+}
+
+/* Media Pages: Center Content (Mobile) */
+.layout-mobile .verticalSection .itemsContainer.vertical-wrap {
+    justify-content: center;
+    padding-right: 0em;
+}
+
+/*
+===========================================================================
+   Media Pages: Detail-Ribbon
+===========================================================================
+*/
+
+/* Detail-Ribbon */
+.detailRibbon {
+    padding-right: 2% !important;
+}
+
+/* Detail-Ribbon (Desktop) */
+.layout-desktop .detailRibbon {
+    height: 9em;
+    margin-top: -9em;
+}
+
+/* Detail-Ribbon (Mobile) */
+.layout-mobile .detailRibbon {
+    margin-top: -1em !important;
+    padding-bottom: 1.25em;
+    padding-right: 5% !important;
+    padding-left: 5%;
+}
+
+/* Detail-Ribbon: Info Container */
+.layout-mobile .infoWrapper {
+    padding-bottom: 0.15em;
+}
+.layout-desktop .infoWrapper {
+    padding-top: 0.25em;
+}
+.layout-desktop .mainDetailButtons {
+    margin-left: 1em;
+}
+
+/* Fix narrow Desktop layout */
+
+.layout-desktop .detailPageWrapperContainer {
+    position: static !important;
+}
+.layout-desktop .detailPageWrapperContainer {
+    margin-top: 0 !important;
+}
+@media all and (max-width: 75em) {
+
+    .layout-desktop .detailLogo {
+        display: block;
+    }
+
+    .layout-desktop .detailImageContainer {
+        display: flex;
+        position: relative;
+        left: 0%;
+        bottom: 37%;
+        top: -28%;
+    }
+
+    .layout-desktop .detailImageContainer {
+        box-shadow: none !important;
+        flex-shrink: 0;
+    }
+    
+    .layout-desktop .detailRibbon {
+        flex-direction: column;
+        height: 14em;
+        padding-left: 30vw !important;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        left: 0em;
+    }
+
+    .layout-desktop .infoWrapper {
+        margin-top: .5em;
+    }
+
+    .layout-desktop .mainDetailButtons {
+        margin-left: 2vw;
+    }
+}
+
+/* Detail-Ribbon: Media Infos */
+.layout-tv .itemMiscInfo,
+.layout-desktop .itemMiscInfo{
+    font-size: 125%;
+    margin-top: 0.25em;
+    margin-bottom: 0.6em;
+}
+
+/* Detail Buttons (TV) */
+.layout-tv .mainDetailButtons {
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+/* Detail-Ribbon: Media Buttons */
+.layout-mobile .mainDetailButtons .detailButton {
+    margin-right: .5em !important;
+    margin-left: .5em !important;
+}
+
+/*
+===========================================================================
+   Media Pages: Media Details
+===========================================================================
+*/
+
+/* Media Details: Primary Content */
+.layout-tv .detailPagePrimaryContent,
+.layout-mobile .detailPagePrimaryContent {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-right: 0;
+}
+
+.layout-tv [dir=ltr] .detailRibbon,
+.layout-tv .detailPagePrimaryContent,
+.layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
+    padding-left: 29vw;
+}
+
+
+
+.layout-desktop .detailPagePrimaryContent {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* Media Details: Tracks & Subtitles */
+.leyout-tv .trackSelections {
+    max-width: 100%;
+    width: 60%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.layout-mobile .trackSelections {
+    padding-top: 1em;
+}
+
+/* Media Details: Track Select */
+.detailTrackSelect {
+    padding: .35em 1.9em .35em .35em !important;
+}
+
+/*
+===========================================================================
+   Media Pages: Media Description
+===========================================================================
+*/
+
+/* Media Description: Container */
+.layout-desktop .detailPageSecondaryContainer {
+    padding-left: 3vw !important;
+    padding-right: 3vw !important;
+}
+.layout-mobile .detailPageSecondaryContainer {
+    padding-top: 0em !important;
+}
+
+/* Media Pages: Content */
+.layout-tv .detailPageSecondaryContainer .detailPageContent,
+.layout-desktop .detailPageSecondaryContainer .detailPageContent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Media Description: Text */
+.overview.detail-clamp-text {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Media Description: Director & Studio */
+.itemDetailsGroup {
+    margin-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+
+
+/*
+===========================================================================
+   Settings
+===========================================================================
+*/
+
+/* Settings: Center content */
+#myPreferencesMenuPage {
+    justify-content: center;
+    display: flex;
+}
+
+/* Settings: Titles */
+.settingsContainer .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle {
+    padding-top: .3em;
+    padding-bottom: .3em;
+    margin-left: -1.5em;
+    padding-left: 1.4em;
+    margin-right: -1.5em;
+}
+
+/* Subtitles: Preview-Box */
+.subtitleappearance-preview {
+    background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+
+.layout-mobile .userPreferencesPage .settingsContainer {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+.layout-mobile .userPreferencesPage .listItem-border {
+    border: var(--buttonborder) !important;
+    margin-bottom: .6em !important;
+    background: var(--bgdark20) !important;
+}
+.layout-mobile #myPreferencesMenuPage .sectionTitle {
+    padding-left: 0em !important;
+    font-weight: 600;
+} 
+.layout-mobile .userPreferencesPage .listItem {
+    padding-right: 1.5em !important;
+} 
+.layout-mobile .userPreferencesPage .listItemIcon {
+    width: 2% !important;
+    text-align: left;
+    margin-right: 0;
+    flex: auto;
+    padding-right: .5em;
+}
+.layout-mobile .userPreferencesPage .listItemBody {
+    flex: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    text-align: left;
+}
+
+/*
+===========================================================================
+   Settings: Individual Sites
+===========================================================================
+*/
+
+/* Settings Pages: Center content and Text */
+#userProfilePage,
+#quickConnectPreferencesPage {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+/* Settings Pages: Move content up */
+#myPreferencesMenuPage,
+#quickConnectPreferencesPage,
+#displayPreferencesPage,
+#homeScreenPreferencesPage,
+#languagePreferencesPage,
+#searchPage {
+    padding-top: 5em !important;
+}
+.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
+    width: 100%;
+    text-align: center;
+}
+
+/* Preferences Pages */
+#homeScreenPreferencesPage .verticalSection-extrabottompadding,
+#languagePreferencesPage .verticalSection-extrabottompadding {
+    margin-bottom: 0em;
+}
+#languagePreferencesPage .selectContainer,
+#displayPreferencesPage .inputContainer {
+    margin-bottom: 1em;
+}
+#displayPreferencesPage .checkboxContainer,
+#displayPreferencesPage .selectContainer, 
+#homeScreenPreferencesPage .selectContainer,
+#homeScreenPreferencesPage .checkboxContainer,
+#homeScreenPreferencesPage .checkboxListContainer,
+#languagePreferencesPage .checkboxContainer {
+    margin-bottom: 1.25em;
+}
+#displayPreferencesPage .btnSave,
+#homeScreenPreferencesPage .btnSave,
+#languagePreferencesPage .btnSave {
+    margin-top: 2em;
+}
+
+#searchPage .searchFieldsInner {
+    padding-bottom: 1em;
+}
+
+/* Section Titles */
+#searchPage .sectionTitle {
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*
+===========================================================================
+   Settings: User Profile
+===========================================================================
+*/
+
+/* User Profile: Improve Alignments */
+.formDialogHeaderTitle {
+    margin-left: 1em;
+}
+.formDialogContent {
+    margin-bottom: 6.2em;
+}
+.dialogContentInner {
+    padding: .5em 1em 1em;
+}
+.listItem-indexnumberleft {
+    margin: 1em;
+}
+
+/* User Profile: Form Alignment */
+.updatePasswordForm br {
+    display: none;
+}
+.updatePasswordForm .inputContainer {
+    margin-bottom: 1em;
+}
+.updatePasswordForm .emby-button.block {
+    margin-top: 2em;
+}
+
+/* User Profile: Username bold */
+h2.username {
+    margin-top: 0px;
+    font-weight: 600;
+    color: #fff;
+}
