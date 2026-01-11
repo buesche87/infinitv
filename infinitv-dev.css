@@ -1167,6 +1167,12 @@
     padding-right: 1em !important;
 }
 
+.layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+.layout-mobile .libraryPage .padded-right-withalphapicker {
+    padding-left: .75em !important;
+    padding-right: 1.5em !important;
+}
+
 /* Library Pages: Item backdrop alignment (Mobile) */
 .layout-mobile .itemBackdrop {
     margin-top: 3.9rem;
