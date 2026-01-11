@@ -422,7 +422,7 @@
     /* Overflow Cards on Media Pages */
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 15.3vw !important;
+        width: 30vw !important;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
         width: 46vw !important;
