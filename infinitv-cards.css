@@ -5,6 +5,19 @@
 ===========================================================================
 */
 
+/* Cards: Narrow margins */
+.cardBox-bottompadded {
+    margin-bottom: 0.5em !important;
+}
+
+/* Person Cards: Center Content */
+.itemsContainer-tv > .personCard > .cardBox {
+    text-align: center;
+    text-align: -webkit-center;
+    margin-right: .5em !important;
+    margin-left: .5em !important;
+}
+
 /* Cards: Rounding Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
 .visualCardBox:has(.cardFooter) .cardImage,
@@ -38,6 +51,12 @@
     .itemsContainer .cardBox {
         margin-left: .5em !important;
     }
+}
+
+/* Layout Mobile */
+.layout-mobile .itemsContainer > .card > .cardBox {
+    margin-left: 0.6em;
+    margin-right: .6em;
 }
 
 /*
@@ -164,6 +183,11 @@
     background-color: var(--accent100) !important;
 }
 
+/*
+===========================================================================
+   Cards: Spacing
+===========================================================================
+*/
 
 /* Layout TV: Card spacing
 --------------------------------------------------------------------------*/
@@ -189,25 +213,9 @@
     font-size: 90% !important;
 }
 
-/* CardBoxes 
---------------------------------------------------------------------------*/
-
-/* Cards: Narrow margins */
-.cardBox-bottompadded {
-    margin-bottom: 0.5em !important;
-}
-
-/* Person Cards: Center Content */
-.itemsContainer-tv > .personCard > .cardBox {
-    text-align: center;
-    text-align: -webkit-center;
-    margin-right: .5em !important;
-    margin-left: .5em !important;
-}
-
 /*
 ===========================================================================
-   Layout Desktop: Dynamic Card Sizes
+   Cards: Dynamic Size - Layout Desktop
 ===========================================================================
 */
 @media all and (min-width: 175em) {
@@ -248,7 +256,6 @@
         height: calc(6.14vw);
     }
 }
-
 @media all and (min-width: 150em) and (max-width: 175em) {
 
     /* Cards */
@@ -401,13 +408,13 @@
         height: calc(8.35vw);
     }
 
+    /* Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 6;
         -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
     }
-    
 }
 @media all and (min-width: 87.5em) and (max-width: 100em) {
 
@@ -447,13 +454,13 @@
         height: calc(9.15vw);
     }
 
+    /* Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 5;
         -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
     }
-    
 }
 @media all and (min-width: 75em) and (max-width: 87.5em) {
 
@@ -493,6 +500,7 @@
         height: calc(13.05vw);
     }
 
+    /* Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 4;
@@ -539,6 +547,7 @@
         height: calc(15.2vw);
     }
 
+    /* Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 3;
@@ -663,11 +672,12 @@
 }
 /*
 ===========================================================================
-   Layout TV: Dynamic Card Sizes
+   Cards: Dynamic Size - Layout TV
 ===========================================================================
 */
 @media all and (min-width: 200em) {
 
+    /* Section alignment */
     .layout-tv #listChildrenCollapsible {
         margin-top: 2vw !important;
         margin-left: -19vw;
@@ -716,6 +726,7 @@
 }
 @media all and (min-width: 175em) and (max-width: 200em) {
 
+    /* Section alignment */
     .layout-tv #listChildrenCollapsible {
         margin-top: 3.5vw !important;
         margin-left: -21vw;
@@ -764,6 +775,7 @@
 }
 @media all and (min-width: 150em) and (max-width: 175em) {
 
+    /* Section alignment */
     .layout-tv #listChildrenCollapsible {
         margin-top: 4vw;
         margin-left: -24vw;
@@ -812,6 +824,7 @@
 }
 @media all and (min-width: 135em) and (max-width: 150em) {
 
+    /* Section alignment */
     .layout-tv #listChildrenCollapsible {
         margin-top: 5vw;
     }
@@ -855,6 +868,7 @@
 
 @media all and (min-width: 120em) and (max-width: 135em) {
 
+    /* Section alignment */
     .layout-tv #listChildrenCollapsible {
         margin-top: 2vw !important;
     }
@@ -897,6 +911,7 @@
 }
 @media all and (min-width: 100em) and (max-width: 120em) {
 
+    /* Section alignment */
     .layout-tv #listChildrenCollapsible {
         margin-top: 1.5vw;
     }
@@ -1170,20 +1185,11 @@
 .layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
     margin-top: -3vh !important;
 }
-
-
 /*
 ===========================================================================
-   Layout Mobile: Dynamic Card Sizes
+   Cards: Dynamic Size - Layout Mobile
 ===========================================================================
 */
-
-/* Layout Mobile */
-.layout-mobile .itemsContainer > .card > .cardBox {
-    margin-left: 0.6em;
-    margin-right: .6em;
-}
-
 @media (max-width: 25em) {
     
     .layout-mobile .libraryPage {
@@ -1221,8 +1227,6 @@
         border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
     }
 }
-
-
 @media(min-width: 25em) and (max-width: 48.125em) {
 
     .layout-mobile .homePage {
@@ -1249,12 +1253,6 @@
     .layout-mobile .itemsContainer > .backdropCard {
         width: 30vw;
     }
-    /*
-    .layout-mobile .emby-scroller {
-        margin-right: 1vw;
-    }*/
-    
-    
     .layout-mobile .overflowPortraitCard {
         width: 29.4vw;
     }
@@ -1403,4 +1401,3 @@
         width: 9.4vw;
     }
 }
-

@@ -155,13 +155,42 @@
     font-weight: 600;
 }
 
-/*
-===========================================================================
-   Library Page Views
-===========================================================================
-*/
+/* Page View: Sorting & Filter
+--------------------------------------------------------------------------*/
 
-/* View: Banner
+/* Filter & Sorting Header */
+.pageTabContent>.focuscontainer-x,
+.itemsViewSettingsContainer {
+    margin-bottom: 1.5em;
+    padding: 0.25em;
+}
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
+    margin: 0 .2em;
+}
+
+/* Filter & Sorting Header: Item Count */
+.listPaging > span {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/* Filter Indicator */
+.filterIndicator {
+    color: black;
+}
+
+/* Sorting Menu: Radio Button spacing */
+.radio-label-block {
+    margin: 1em !important;
+}
+
+/* Page View: Banner
 --------------------------------------------------------------------------*/
 
 .layout-tv .itemsContainer > .bannerCard {
@@ -169,8 +198,9 @@
     padding-right: 1vw !important;
 }
 
-/* View: List
+/* Page View: List
 --------------------------------------------------------------------------*/
+
 /* Card (TV) */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
     padding-top: 1.5vh !important;
@@ -238,47 +268,6 @@
     }
 }
 
-
-/*
-===========================================================================
-   Library Pages: Sorting & Filter
-===========================================================================
-*/
-
-/* Filter & Sorting Header */
-.pageTabContent>.focuscontainer-x,
-.itemsViewSettingsContainer {
-    margin-bottom: 1.5em;
-    padding: 0.25em;
-}
-
-/* Filter & Sorting Header: Buttons */
-.pageTabContent .focuscontainer-x .paper-icon-button-light {
-    -webkit-transform: none !important;
-    transform: none !important;
-}
-.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
-    margin: 0 .2em;
-}
-
-/* Filter & Sorting Header: Item Count */
-.listPaging > span {
-    margin-left: .5em;
-    margin-right: .5em;
-}
-
-/* Filter Indicator */
-.filterIndicator {
-    color: black;
-}
-
-/* Sorting Menu: Radio Button spacing */
-.radio-label-block {
-    margin: 1em !important;
-}
-
-
-
 /*
 ===========================================================================
    Media Pages
@@ -327,24 +316,17 @@
     padding-right: 0em;
 }
 
-/*
-===========================================================================
-   Media Pages: Detail-Ribbon
-===========================================================================
-*/
+/* Media Pages: Detail-Ribbon
+--------------------------------------------------------------------------*/
 
 /* Detail-Ribbon */
 .detailRibbon {
     padding-right: 2% !important;
 }
-
-/* Detail-Ribbon (Desktop) */
 .layout-desktop .detailRibbon {
     height: 9em;
     margin-top: -9em;
 }
-
-/* Detail-Ribbon (Mobile) */
 .layout-mobile .detailRibbon {
     margin-top: -1em !important;
     padding-bottom: 1.25em;
@@ -363,51 +345,6 @@
     margin-left: 1em;
 }
 
-/* Fix narrow Desktop layout */
-
-.layout-desktop .detailPageWrapperContainer {
-    position: static !important;
-}
-.layout-desktop .detailPageWrapperContainer {
-    margin-top: 0 !important;
-}
-@media all and (max-width: 75em) {
-
-    .layout-desktop .detailLogo {
-        display: block;
-    }
-
-    .layout-desktop .detailImageContainer {
-        display: flex;
-        position: relative;
-        left: 0%;
-        bottom: 37%;
-        top: -28%;
-    }
-
-    .layout-desktop .detailImageContainer {
-        box-shadow: none !important;
-        flex-shrink: 0;
-    }
-    
-    .layout-desktop .detailRibbon {
-        flex-direction: column;
-        height: 14em;
-        padding-left: 30vw !important;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        left: 0em;
-    }
-
-    .layout-desktop .infoWrapper {
-        margin-top: .5em;
-    }
-
-    .layout-desktop .mainDetailButtons {
-        margin-left: 2vw;
-    }
-}
-
 /* Detail-Ribbon: Media Infos */
 .layout-tv .itemMiscInfo,
 .layout-desktop .itemMiscInfo{
@@ -416,23 +353,54 @@
     margin-bottom: 0.6em;
 }
 
-/* Detail Buttons (TV) */
+/* Detail-Ribbon: Buttons */
 .layout-tv .mainDetailButtons {
     margin-top: 1.5em;
     margin-left: .5em;
 }
-
-/* Detail-Ribbon: Media Buttons */
 .layout-mobile .mainDetailButtons .detailButton {
     margin-right: .5em !important;
     margin-left: .5em !important;
 }
 
-/*
-===========================================================================
-   Media Pages: Media Details
-===========================================================================
-*/
+/* Detail-Ribbon: Fix narrow Desktop layout */
+.layout-desktop .detailPageWrapperContainer {
+    position: static !important;
+}
+.layout-desktop .detailPageWrapperContainer {
+    margin-top: 0 !important;
+}
+@media all and (max-width: 75em) {
+    .layout-desktop .detailLogo {
+        display: block;
+    }
+    .layout-desktop .detailImageContainer {
+        display: flex;
+        position: relative;
+        left: 0%;
+        bottom: 37%;
+        top: -28%;
+        box-shadow: none !important;
+        flex-shrink: 0;
+    }
+    .layout-desktop .detailRibbon {
+        flex-direction: column;
+        height: 14em;
+        padding-left: 30vw !important;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        left: 0em;
+    }
+    .layout-desktop .infoWrapper {
+        margin-top: .5em;
+    }
+    .layout-desktop .mainDetailButtons {
+        margin-left: 2vw;
+    }
+}
+
+/* Media Pages: Media Details
+--------------------------------------------------------------------------*/
 
 /* Media Details: Primary Content */
 .layout-tv .detailPagePrimaryContent,
@@ -447,8 +415,6 @@
 .layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
     padding-left: 29vw;
 }
-
-
 
 .layout-desktop .detailPagePrimaryContent {
     padding-top: 1em;
@@ -471,11 +437,8 @@
     padding: .35em 1.9em .35em .35em !important;
 }
 
-/*
-===========================================================================
-   Media Pages: Media Description
-===========================================================================
-*/
+/* Media Pages: Media Description
+--------------------------------------------------------------------------*/
 
 /* Media Description: Container */
 .layout-desktop .detailPageSecondaryContainer {
@@ -505,11 +468,9 @@
     padding-bottom: 1em;
 }
 
-
-
 /*
 ===========================================================================
-   Settings
+   Settings Page
 ===========================================================================
 */
 
@@ -567,11 +528,8 @@
     text-align: left;
 }
 
-/*
-===========================================================================
-   Settings: Individual Sites
-===========================================================================
-*/
+/* Settings Pages: Individual Sites
+--------------------------------------------------------------------------*/
 
 /* Settings Pages: Center content and Text */
 #userProfilePage,
@@ -634,11 +592,8 @@
     font-weight: 600;
 }
 
-/*
-===========================================================================
-   Settings: User Profile
-===========================================================================
-*/
+/* Settings Pages: User Profile
+--------------------------------------------------------------------------*/
 
 /* User Profile: Improve Alignments */
 .formDialogHeaderTitle {
