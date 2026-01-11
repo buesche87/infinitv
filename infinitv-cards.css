@@ -1063,20 +1063,21 @@
     .layout-mobile .itemsContainer > .backdropCard {
         width: 30vw !important;
     }
-    
+    /*
     .layout-mobile .emby-scroller {
         margin-right: 1vw;
-    }
+    }*/
+    
     .layout-mobile .overflowPortraitCard {
         width: 29.4vw;
     }
     .layout-mobile .overflowBackdropCard {
-        width: 45.6vw;
+        width: 48.7vw;
     }
 }
 @media(min-width: 30em) {
     .layout-mobile .overflowBackdropCard {
-        width: 30.5vw;
+        width: 32.7vw;
     }
 }
 @media(min-width: 35em) {
@@ -1084,7 +1085,7 @@
         width: 31.2vw;
     }
     .layout-mobile .overflowBackdropCard {
-        width: 30.6vw;
+        width: 32.7vw;
     }
     .layout-mobile .overflowSmallBackdropCard {
         width: 30vw;
@@ -1116,7 +1117,7 @@
 @media(orientation: landscape) and (min-width: 48.125em) {
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 18.3vw;
+        width: 18.4vw;
     }
 }
 @media(orientation: landscape) and (min-width: 50em)  {
@@ -1146,9 +1147,13 @@
     }
 }
 @media(min-width: 75em)  {
+    .layout-mobile .homePage {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 18.3vw;
+        width: 18.8vw;
     }
     .layout-mobile .overflowPortraitCard,
     .layout-mobile .overflowSquareCard {
@@ -1200,12 +1205,8 @@
     .layout-mobile .overflowSquareCard {
         width: 8.9vw;
     }
-
 }
 @media(min-width: 156.25em) {
-    .layout-mobile .emby-scroller {
-        padding-left: 1%;
-    }
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
         width: 9.4vw;
