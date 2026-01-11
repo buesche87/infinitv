@@ -15,11 +15,6 @@
 
 /* == Dev / Test File == */
 
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
 /* Load Stylesheets */
 @import url('https://buesche87.github.io/infinitv/infinitv-base.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-system.css');
@@ -28,3 +23,8 @@
 @import url('https://buesche87.github.io/infinitv/infinitv-cards.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-player.css');
 @import url('https://buesche87.github.io/infinitv/infinitv-mobile.css');
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
+ font-family: 'Plus Jakarta Sans', sans-serif;
+}
