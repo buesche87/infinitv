@@ -442,7 +442,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 7.3vw !important;
+        width: 7.3vw;
     }
     .itemsContainer > .backdropCard {
         width: 25% !important;
@@ -996,11 +996,26 @@
 
 /* Layout Mobile */
 .layout-mobile .itemsContainer > .card > .cardBox {
-    margin-left: .6em;
+    margin-left: 0.6em;
     margin-right: .6em;
 }
 
 @media (max-width: 25em) {
+    /* Cards */
+    .layout-mobile .itemsContainer > .portraitCard, 
+    .layout-mobile .itemsContainer > .squareCard {
+        width: 42.5vw;
+    }
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 12.25vw;
+    }
+
+    .layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+    .layout-mobile .libraryPage .padded-right-withalphapicker {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+        
     .layout-mobile .homePage .sectionTitleContainer-cards,
     .layout-mobile .homePage :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
         border-radius: 0 !important;
@@ -1017,7 +1032,22 @@
 }
 
 
-@media(min-width: 25em) {
+@media(min-width: 25em) and (max-width: 48.125em) {
+    .layout-mobile .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
+    .layout-mobile .libraryPage .padded-right-withalphapicker {
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+    
+    /* Cards */
+    .layout-mobile .itemsContainer > .portraitCard, 
+    .itemsContainer > .squareCard {
+        width: 30vw !important;
+    }
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 30vw !important;
+    }
+    
     .layout-mobile .emby-scroller {
         margin-right: 1vw;
     }
