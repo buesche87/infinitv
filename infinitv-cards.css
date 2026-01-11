@@ -1188,7 +1188,7 @@
     }
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 18.8vw;
+        width: 15.7vw;
     }
     .layout-mobile .overflowPortraitCard,
     .layout-mobile .overflowSquareCard {
@@ -1210,7 +1210,7 @@
 @media(min-width: 100em) {
     .layout-mobile .overflowBackdropCard,
     .layout-mobile .overflowSmallBackdropCard {
-        width: 11.75vw;
+        width: 13.4vw;
     }
     .layout-mobile .overflowPortraitCard,
     .layout-mobile .overflowSquareCard {
@@ -1224,6 +1224,10 @@
     }
 }
 @media(min-width: 120em) {
+    .layout-mobile .overflowBackdropCard,
+    .layout-mobile .overflowSmallBackdropCard {
+        width: 11.75vw;
+    }
     .layout-mobile .overflowPortraitCard,
     .layout-mobile .overflowSquareCard {
         width:10.41vw;
