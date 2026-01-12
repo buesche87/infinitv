@@ -688,11 +688,6 @@
         margin-top: 2vw !important;
         margin-left: -19vw;
     }
-    .layout-tv [dir=ltr] .detailRibbon,
-    .layout-tv .detailPagePrimaryContent,
-    .layout-tv .detailPagePrimaryContent  .itemsContainer-tv:has(.listItem-largeImage) {
-        padding-left: 19vw;
-    }
 
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
@@ -718,7 +713,7 @@
         width: 8.3vw;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 15.6vw;
+        width: 11.7vw;
     }
 
     /* Layout-TV: Person Cards */
@@ -728,6 +723,14 @@
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
         width:  calc(7.25vw - 1.75em);
         height: calc(7.25vw);
+    }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 10;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
     }
 }
 @media all and (min-width: 175em) and (max-width: 200em) {
@@ -743,11 +746,6 @@
         margin-top: 3.5vw !important;
         margin-left: -21vw;
     }
-    .layout-tv [dir=ltr] .detailRibbon,
-    .layout-tv .detailPagePrimaryContent,
-    .layout-tv .detailPagePrimaryContent  .itemsContainer-tv:has(.listItem-largeImage) {
-        padding-left: 21vw;
-    }
 
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
@@ -773,7 +771,7 @@
         width: 8.3vw;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 15.6vw;
+        width: 13.4vw;
     }
 
     /* Layout-TV: Person Cards */
@@ -783,6 +781,14 @@
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
         width:  calc(7.25vw - 1.75em);
         height: calc(7.25vw);
+    }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 9;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
     }
 }
 @media all and (min-width: 150em) and (max-width: 175em) {
@@ -798,12 +804,7 @@
         margin-top: 4vw;
         margin-left: -24vw;
     }
-    .layout-tv [dir=ltr] .detailRibbon,
-    .layout-tv .detailPagePrimaryContent,
-    .layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
-        padding-left: 24vw;
-    }
-        
+
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
@@ -828,7 +829,7 @@
         width: 9.35vw;
     }
     .layout-tv .detailPageWrapperContainer .itemsContainer-tv > .overflowBackdropCard {
-        width: 18.7vw;
+        width: 15.6vw;
     }
 
     /* Layout-TV: Person Cards */
@@ -838,6 +839,14 @@
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
         width:  calc(7.95vw - 1.75em);
         height: calc(7.95vw);
+    }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 8;
+        -webkit-line-clamp: 8;
+        -webkit-box-orient: vertical;
     }
 }
 @media all and (min-width: 135em) and (max-width: 150em) {
@@ -887,6 +896,14 @@
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
         width:  calc(8.7vw - 1.75em);
         height: calc(8.7vw);
+    }
+    
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 7;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
     }
 }
 
@@ -938,6 +955,14 @@
         width:  calc(8.7vw - 1.75em);
         height: calc(8.7vw);
     }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 7;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
 }
 @media all and (min-width: 100em) and (max-width: 120em) {
 
@@ -987,6 +1012,14 @@
         width:  calc(9.7vw - 1.75em);
         height: calc(9.7vw);
     }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 6;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
 }
 
 @media all and (min-width: 87.5em) and (max-width: 100em) {
@@ -1026,6 +1059,14 @@
         width:  calc(9.7vw - 1.75em);
         height: calc(9.7vw);
     }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 6;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
 }
 @media all and (min-width: 75em) and (max-width: 87.5em) {
 
@@ -1064,6 +1105,14 @@
         width:  calc(12.7vw - 1.75em);
         height: calc(12.7vw);
     }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 6;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+    }
 }
 @media all and (min-width: 50em) and (max-width: 75em) {
     
@@ -1101,6 +1150,14 @@
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
         width:  calc(17.7vw - 1.75em);
         height: calc(17.7vw);
+    }
+
+    /* ListItem Overview  Text */
+    .layout-tv .listItem-overview {
+        display: -webkit-box;
+        line-clamp: 5;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
     }
 }
 @media (min-width: 43.75em) and (max-width: 50em) {
