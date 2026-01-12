@@ -366,7 +366,7 @@
         height: calc(15.2vw);
     }
 
-    /* Card Text */
+    /* List Item Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 3;
@@ -413,7 +413,7 @@
         height: calc(13.05vw);
     }
 
-    /* Card Text */
+    /* List Item Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 4;
@@ -459,7 +459,7 @@
         height: calc(9.15vw);
     }
 
-    /* Card Text */
+    /* List Item Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 5;
@@ -505,7 +505,7 @@
         height: calc(8.35vw);
     }
 
-    /* Card Text */
+    /* List Item Card Text */
     .layout-desktop .listItem-overview {
         display: -webkit-box;
         line-clamp: 6;
