@@ -25,6 +25,11 @@
     background-color: #000 !important;
     box-shadow: var(--cardglow) !important;
 }
+.layout-tv .toastContainer {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+}
 
 /* Spinner Color */ 
 .mdl-spinner__layer-1,
