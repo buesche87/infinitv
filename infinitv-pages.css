@@ -163,6 +163,8 @@
 .itemsViewSettingsContainer {
     margin-bottom: 1.5em;
     padding: 0.25em;
+    margin-left: -1vw;
+    margin-right: -.5vw;
 }
 
 /* Filter & Sorting Header: Buttons */

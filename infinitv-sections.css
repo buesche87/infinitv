@@ -68,7 +68,7 @@
 
 /* Large List Items: Text */
 .layout-tv .listItem.listItem-largeImage .listItem-overview {
-    max-height: 7.9vw;
+    /* max-height: 7.9vw; */
     /* margin-right: 0.5em; */
 }
 
