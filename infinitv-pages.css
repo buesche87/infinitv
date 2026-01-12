@@ -345,8 +345,8 @@
     max-width: 30em;
 }
 .layout-tv .detailImageContainer .backdropCard {
-    left: 1vw;
-    max-width: 30em;
+    left: 1em;
+    /* max-width: 50em; */
 }
 
 /* Media Pages: Center Content (Mobile) */
