@@ -15,6 +15,10 @@
     margin-bottom: -2.5em !important;
 }
 
+.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {
+    margin-left: 0;
+}
+
 .layout-tv .listItemImage-large-tv {
     max-height: 20em !important;
     min-height: 14em;
