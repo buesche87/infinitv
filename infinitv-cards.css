@@ -216,45 +216,43 @@
 ===========================================================================
 */
 
-@media all and (max-width: 25em) {
-
-    /* Cards */
-    .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard {
-        width: 7.3vw;
-    }
-    .itemsContainer > .backdropCard {
-        width: 23.5vw;
-    }
-
-    /* Overflow Cards */
-    .itemsContainer > .overflowPortraitCard,
-    .itemsContainer > .overflowSquareCard {
-        width: 30vw;
-    }
-    .itemsContainer > .overflowBackdropCard {
-        width: 49vw;
-    }
-
-    /* Overflow Cards on Media Pages */
-    .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
-    .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 15.3vw;
-    }
-    .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 46vw;
-    }
-    
-    /* Person Cards */
-    .itemsContainer > .overflowPortraitCard.personCard {
-        width: 23.2vw;
-    }
-    .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(23.2vw - 1.75em);
-        height: calc(23.2vw);
-    }
+/* Cards */
+.itemsContainer > .portraitCard, 
+.itemsContainer > .squareCard {
+    width: 7.3vw;
 }
-@media all and (min-width: 25em) and (max-width: 43.75em) {
+.itemsContainer > .backdropCard {
+    width: 23.5vw;
+}
+
+/* Overflow Cards */
+.itemsContainer > .overflowPortraitCard,
+.itemsContainer > .overflowSquareCard {
+    width: 30vw;
+}
+.itemsContainer > .overflowBackdropCard {
+    width: 49vw;
+}
+
+/* Overflow Cards on Media Pages */
+.detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
+.detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
+    width: 15.3vw;
+}
+.detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
+    width: 46vw;
+}
+
+/* Person Cards */
+.itemsContainer > .overflowPortraitCard.personCard {
+    width: 23.2vw;
+}
+.itemsContainer > .overflowPortraitCard.personCard .cardScalable {
+    width:  calc(23.2vw - 1.75em);
+    height: calc(23.2vw);
+}
+
+@media(min-width: 25em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -292,7 +290,7 @@
         height: calc(22.6vw);
     }
 }
-@media (min-width: 43.75em) and (max-width: 50em) {
+@media(min-width: 43.75em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -330,7 +328,7 @@
         height: calc(18.2vw);
     }   
 }
-@media all and (min-width: 50em) and (max-width: 75em) {
+@media(min-width: 50em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -377,7 +375,7 @@
     }
     
 }
-@media all and (min-width: 75em) and (max-width: 87.5em) {
+@media(min-width: 75em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -423,7 +421,7 @@
         -webkit-box-orient: vertical;
     }
 }
-@media all and (min-width: 87.5em) and (max-width: 100em) {
+@media(min-width: 87.5em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -469,7 +467,7 @@
         -webkit-box-orient: vertical;
     }
 }
-@media all and (min-width: 100em) and (max-width: 120em) {
+@media(min-width: 100em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -515,7 +513,7 @@
         -webkit-box-orient: vertical;
     }
 }
-@media all and (min-width: 120em) and (max-width: 135em) {
+@media(min-width: 120em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -553,7 +551,7 @@
         height: calc(7.65vw);
     }
 }
-@media all and (min-width: 135em) and (max-width: 150em) {
+@media(min-width: 135em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -591,7 +589,7 @@
         height: calc(7.05vw);
     }
 }
-@media all and (min-width: 150em) and (max-width: 175em) {
+@media(min-width: 150em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -629,7 +627,7 @@
         height: calc(6.55vw);
     }
 }
-@media all and (min-width: 175em) {
+@media(min-width: 175em) {
 
     /* Cards */
     .itemsContainer > .portraitCard, 
@@ -1254,7 +1252,6 @@
 .layout-mobile .itemsContainer > .backdropCard {
     width: 43vw;
 }
-
 
 @media(min-width: 25em) and (max-width: 48.125em) {
 
