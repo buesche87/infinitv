@@ -10,7 +10,7 @@
 .layout-tv:has(.detailSection > .trackSelections.hide)
 .detailImageContainer > .portraitCard {
     max-width: 18em;
-    left: 1vw;
+    left: 3vw;
 }
 
 .layout-tv:has(.detailSection > .trackSelections.hide)
@@ -381,43 +381,6 @@
 .layout-mobile #guestCastContent {
     padding-left: .5em;
 }
-
-
-/* Dynamic Section alignment */
-@media (min-width: 100em) {
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 1.5vw;
-    }
-}
-@media(min-width: 120em) {
-    .layout-tv #listChildrenCollapsible{
-        margin-top: 2vw;
-    }
-}
-@media(min-width: 135em) {
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 5vw;
-    }
-} 
-@media(min-width: 150em) {
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 4vw;
-        margin-left: -29vw;
-    }
-}
-@media(min-width: 175em) {
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 3.5vw;
-        margin-left: -29vw;
-    }
-}
-@media(min-width: 200em) {
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 2vw;
-        margin-left: -29vw;
-    }
-}
-
 
 .layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
     margin-top: -3vh;
