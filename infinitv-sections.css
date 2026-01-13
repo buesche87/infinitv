@@ -10,7 +10,7 @@
 .layout-tv:has(.detailSection > .trackSelections.hide)
 .detailImageContainer > .portraitCard {
     max-width: 18em;
-    left: 2%;
+    left: 1vw;
 }
 
 .layout-tv:has(.detailSection > .trackSelections.hide)
@@ -402,19 +402,19 @@
 @media(min-width: 150em) {
     .layout-tv #listChildrenCollapsible {
         margin-top: 4vw;
-        margin-left: -24vw;
+        margin-left: -29vw;
     }
 }
 @media(min-width: 175em) {
     .layout-tv #listChildrenCollapsible {
         margin-top: 3.5vw;
-        margin-left: -21vw;
+        margin-left: -29vw;
     }
 }
 @media(min-width: 200em) {
     .layout-tv #listChildrenCollapsible {
         margin-top: 2vw;
-        margin-left: -19vw;
+        margin-left: -29vw;
     }
 }
 
