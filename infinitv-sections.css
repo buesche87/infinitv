@@ -10,6 +10,10 @@
     margin-bottom: 0em !important;
 }
 
+.layout-tv #castCollapsible {
+    margin-top: 1em;
+}
+
 .layout-tv #listChildrenCollapsible {
     margin-left: -29vw;
     margin-bottom: -2.5em !important;
@@ -260,7 +264,7 @@
     padding-bottom: 1.5em;
 }
 
-
+/* TODO */
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
     margin-bottom: -0.5em;
