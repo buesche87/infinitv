@@ -5,6 +5,35 @@
 ===========================================================================
 */
 
+
+
+.layout-tv:has(.detailSection > .trackSelections.hide)
+.detailImageContainer > .portraitCard {
+    max-width: 12em;
+    left: 1vw;
+}
+
+.layout-tv:has(.detailSection > .trackSelections.hide)
+#listChildrenCollapsible  {
+    margin-top: 10vw;
+}
+
+
+.layout-tv:has(.detailSection > .trackSelections.hide ~ #listChildrenCollapsible .listItem-largeImage)
+.detailImageContainer > .portraitCard {
+    max-width: 30em;
+}
+
+.layout-tv:has(.detailSection > .trackSelections.hide ~ #listChildrenCollapsible .listItem-largeImage)
+#listChildrenCollapsible  {
+    margin-top: -3vw;
+}
+
+
+
+
+
+
 /* Sections: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
     margin-bottom: 0em !important;
@@ -35,10 +64,6 @@
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
-}
-
-.layout-mobile .listItem.listItem-largeImage {
-    margin-right: 0em;
 }
 
 @media (max-width: 64em) {
@@ -132,11 +157,11 @@
 ===========================================================================
 */
 
-/* Section Titles: Bold */
+/* Section Titles: Bold 
 .detailPagePrimaryContainer .sectionTitle,
 .detailPageSecondaryContainer .sectionTitle {
     font-weight: 600;
-}
+}*/
 
 /* Section Titles: Layout TV
 --------------------------------------------------------------------------*/
@@ -278,6 +303,11 @@
     padding-left: 0em;
 }
 
+
+
+
+
+
 .layout-tv .detailPageSecondaryContainer .itemsContainer {
     align-items: flex-start;
 }
@@ -348,4 +378,45 @@
 .layout-mobile #castContent,
 .layout-mobile #guestCastContent {
     padding-left: .5em;
+}
+
+
+/* Dynamic Section alignment */
+@media (min-width: 100em) {
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 1.5vw;
+    }
+}
+@media(min-width: 120em) {
+    .layout-tv #listChildrenCollapsible{
+        margin-top: 2vw;
+    }
+}
+@media(min-width: 135em) {
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 5vw;
+    }
+} 
+@media(min-width: 150em) {
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 4vw;
+        margin-left: -24vw;
+    }
+}
+@media(min-width: 175em) {
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 3.5vw;
+        margin-left: -21vw;
+    }
+}
+@media(min-width: 200em) {
+    .layout-tv #listChildrenCollapsible {
+        margin-top: 2vw;
+        margin-left: -19vw;
+    }
+}
+
+
+.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
+    margin-top: -3vh;
 }

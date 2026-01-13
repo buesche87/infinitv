@@ -208,7 +208,6 @@
 .layout-tv .itemsContainer-tv > .personCard {
     margin-right: .25vw;
     margin-left: .25vw;
-    margin-bottom: .25vw;
     font-size: 90% !important;
 }
 
@@ -927,11 +926,6 @@
 }
 @media (min-width: 100em) {
 
-    /* Section alignment */
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 1.5vw;
-    }
-
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
@@ -977,11 +971,6 @@
     }
 }
 @media(min-width: 120em) {
-
-    /* Section alignment */
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 2vw !important;
-    }
     
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
@@ -1029,11 +1018,6 @@
 }
 @media(min-width: 135em) {
 
-    /* Section alignment */
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 5vw;
-    }
-   
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
@@ -1079,12 +1063,6 @@
     }
 }
 @media(min-width: 150em) {
-
-    /* Section alignment */
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 4vw;
-        margin-left: -24vw;
-    }
 
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
@@ -1132,12 +1110,6 @@
 }
 @media(min-width: 175em) {
 
-    /* Section alignment */
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 3.5vw !important;
-        margin-left: -21vw;
-    }
-
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
@@ -1183,12 +1155,6 @@
     }
 }
 @media(min-width: 200em) {
-
-    /* Section alignment */
-    .layout-tv #listChildrenCollapsible {
-        margin-top: 2vw !important;
-        margin-left: -19vw;
-    }
 
     /* Layout TV: Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
@@ -1236,9 +1202,6 @@
 }
 
 
-.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
-    margin-top: -3vh !important;
-}
 
 
 /*
