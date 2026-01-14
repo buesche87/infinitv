@@ -920,8 +920,8 @@
     /* ListItem Overview  Text */
     .layout-tv .listItem-overview {
         display: -webkit-box;
-        line-clamp: 6;
-        -webkit-line-clamp: 6;
+        line-clamp: 5;
+        -webkit-line-clamp: 5;
         -webkit-box-orient: vertical;
     }
 }

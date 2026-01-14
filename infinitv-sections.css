@@ -17,6 +17,12 @@
     margin-top: 3em;
 }
 
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
+.detailImageContainer > .portraitCard {
+    max-width: 30em !important;
+    left: 1% !important;
+}
+
 .layout-tv .detailSection:has(.listItem-largeImage)
 #listChildrenCollapsible {
     margin-top: 0em !important;
@@ -288,6 +294,7 @@
     padding-right: 0em;
     padding-left: 1em;
 }
+
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
     padding-left: 0em;
@@ -296,7 +303,9 @@
 
 
 
-
+.layout-tv .detailPageSecondaryContainer {
+    padding-top: 2em;
+}
 
 
 .layout-tv .detailPageSecondaryContainer .itemsContainer {
