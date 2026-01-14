@@ -20,16 +20,21 @@
 
 
 .layout-tv:has(.detailSection > .trackSelections.hide ~ #listChildrenCollapsible .listItem-largeImage)
+.detailImageContainer > .portraitCard,
+.layout-tv:has(.detailSection > .trackSelections.hide ~ .nextUpSection)
 .detailImageContainer > .portraitCard {
     max-width: 30em;
     left: 1%;
-    /* right: auto; */
 }
 
 .layout-tv:has(.detailSection > .trackSelections.hide ~ #listChildrenCollapsible .listItem-largeImage)
-#listChildrenCollapsible  {
+#listChildrenCollapsible,
+.layout-tv:has(.detailSection > .trackSelections.hide ~ .nextUpSection)
+#listChildrenCollapsible {
     margin-top: 0vw;
 }
+
+
 
 
 
@@ -301,6 +306,7 @@
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
     padding-left: 0em;
+    margin-top: -2em;
 }
 
 
