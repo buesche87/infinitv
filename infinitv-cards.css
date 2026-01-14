@@ -208,6 +208,7 @@
 .layout-tv .itemsContainer-tv > .personCard {
     margin-right: .25vw;
     margin-left: .25vw;
+    margin-bottom: 0vw;
     font-size: 90% !important;
 }
 

@@ -6,36 +6,16 @@
 */
 
 
-
-.layout-tv:has(.detailSection > .trackSelections.hide)
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide ~ .nextUpSection.hide)
 .detailImageContainer > .portraitCard {
-    max-width: 18em;
+    max-width: 15em;
     left: 3vw;
 }
 
-.layout-tv:has(.detailSection > .trackSelections.hide)
-#listChildrenCollapsible  {
-    margin-top: 10em;
-}
-
-
-.layout-tv:has(.detailSection > .trackSelections.hide ~ #listChildrenCollapsible .listItem-largeImage)
-.detailImageContainer > .portraitCard,
-.layout-tv:has(.detailSection > .trackSelections.hide ~ .nextUpSection)
-.detailImageContainer > .portraitCard {
-    max-width: 30em;
-    left: 1%;
-}
-
-.layout-tv:has(.detailSection > .trackSelections.hide ~ #listChildrenCollapsible .listItem-largeImage)
-#listChildrenCollapsible,
-.layout-tv:has(.detailSection > .trackSelections.hide ~ .nextUpSection)
+.layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide)
 #listChildrenCollapsible {
-    margin-top: 0vw;
+    margin-top: 3em;
 }
-
-
-
 
 
 
