@@ -34,8 +34,6 @@
 
 
 
-
-
 /* Sections: Space between Sections (TV) */
 .layout-tv .detailVerticalSection {
     margin-bottom: 0em !important;
@@ -269,9 +267,9 @@
 
 /* Alignment */
 .layout-tv .emby-scroller {
-    padding-left: 1em;
+    padding-left: 1.5em;
     padding-right: 0;
-    margin-right: 1vw;
+    margin-right: 1em;
 }
 .layout-tv #castCollapsible .emby-scroller,
 .layout-tv #guestCastCollapsible .emby-scroller {

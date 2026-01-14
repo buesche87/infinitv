@@ -29,6 +29,7 @@
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%);
+    text-align: center;
 }
 
 /* Spinner Color */ 
