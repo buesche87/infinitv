@@ -17,6 +17,11 @@
     margin-top: 3em;
 }
 
+.layout-tv .detailSection:has(.listItem-largeImage)
+#listChildrenCollapsible {
+    margin-top: 0em !important;
+}
+
 
 
 /* Sections: Space between Sections (TV) */
