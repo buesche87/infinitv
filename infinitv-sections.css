@@ -277,7 +277,7 @@
 
 
 .layout-tv .padded-top-focusscale {
-    margin-top: -0.5em;
+    margin-top: 0.0em;
     padding-top: 1.5em;
 }
 .layout-tv .padded-bottom-focusscale {
@@ -285,6 +285,9 @@
     padding-bottom: 1.5em;
 }
 
+.layout-tv .homePage .padded-bottom-focusscale {
+    margin-bottom: 0em;
+}
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     /* margin-top: -0.5em; */
@@ -294,6 +297,13 @@
     padding-right: 0em;
     padding-left: 1em;
 }
+
+.layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
+    padding-left: 1.5em;
+}
+
+
+
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
