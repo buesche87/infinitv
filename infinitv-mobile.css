@@ -174,6 +174,7 @@
     right: auto !important;
     transform: translateX(-50%);
     bottom: 4em;
+    text-align: center;
 }
 
 /* Slides: Pause Button Placement */
