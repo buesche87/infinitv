@@ -191,6 +191,11 @@
 .itemsViewSettingsContainer {
     margin-bottom: 1.5em;
     padding: 0.25em;
+}
+
+
+.layout-tv .pageTabContent>.focuscontainer-x,
+.layout-tv .itemsViewSettingsContainer {
     margin-left: -1vw;
     margin-right: -.5vw;
 }
@@ -516,12 +521,21 @@
 
 /* Settings: Titles */
 .settingsContainer .sectionTitle,
-.homeScreenSettingsContainer .sectionTitle {
+.homeScreenSettingsContainer .sectionTitle,
+#controlsPreferencesPage .sectionTitle {
     padding-top: .3em;
     padding-bottom: .3em;
-    margin-left: -1.5em;
     padding-left: 1.4em;
+    margin-left: -1.5em;
     margin-right: -1.5em;
+}
+
+.layout-mobile .settingsContainer .sectionTitle,
+.layout-mobile .homeScreenSettingsContainer .sectionTitle,
+.layout-mobile #controlsPreferencesPage .sectionTitle {
+    margin-left: -.5em;
+    margin-right: -.5em;
+    padding-left: .5em;
 }
 
 /* Subtitles: Preview-Box */
@@ -530,10 +544,16 @@
 }
 
 
-.layout-mobile .userPreferencesPage .settingsContainer {
+
+.layout-mobile .userPreferencesPage .settingsContainer,
+.layout-mobile .homeScreenSettingsContainer,
+.layout-mobile #controlsPreferencesPage .padded-left {
     padding-left: 5% !important;
     padding-right: 5% !important;
 }
+
+
+
 
 .layout-mobile .userPreferencesPage .listItem-border {
     border: var(--buttonborder) !important;
