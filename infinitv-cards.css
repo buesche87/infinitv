@@ -268,7 +268,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 30.5vw;
+        width: 33.33%;
     }
     .itemsContainer > .backdropCard {
         width: 30.5vw;
@@ -306,7 +306,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 31vw;
+        width: 33.33%;
     }
     .itemsContainer > .backdropCard {
         width: 31vw;
@@ -344,7 +344,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 23.4vw;
+        width: 25%;
     }
     .itemsContainer > .backdropCard {
         width: 23.4vw;
@@ -391,7 +391,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 18.8vw;
+        width: 20%;
     }
     .itemsContainer > .backdropCard {
         width: 23.5vw;
@@ -437,7 +437,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 15.7vw;
+        width: 16.66%;
     }
     .itemsContainer > .backdropCard {
         width: 18.8vw;
@@ -483,7 +483,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 15.3vw;
+        width: 16.66%;
     }
     .itemsContainer > .backdropCard {
         width: 18.8vw;
@@ -529,7 +529,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 11.8vw;
+        width: 14.25%;
     }
     .itemsContainer > .backdropCard {
         width: 15.7vw;
@@ -567,7 +567,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 10.5vw;
+        width: 12.5%;
     }
     .itemsContainer > .backdropCard {
         width: 15.7vw;
@@ -605,7 +605,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 9.45vw;
+        width: 11.1%;
     }
     .itemsContainer > .backdropCard {
         width: 13.5vw;
@@ -643,7 +643,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 8.6vw;
+        width: 10%;
     }
     .itemsContainer > .backdropCard {
         width: 11.8vw;
