@@ -83,6 +83,10 @@
     }
 }
 
+.layout-mobile .listItem.listItem-largeImage {
+    margin-right: 0em;
+}
+
 /* Large List Items: Align Body */
 .listItem.listItem-largeImage .listItemBody {
     align-self: auto;
