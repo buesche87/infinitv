@@ -152,36 +152,6 @@
 
 /*
 ============================================================================
-   Border Colors
-============================================================================
-*/
-
-/* Border Colors: Accent 80% */ 
-.detail-button:focus,
-.emby-button:focus,
-.favorite-button:focus {
-    border-color: var(--accent80) !important;
-}
-
-/* Border Colors: Accent 60% */ 
-@media (hover: hover) and (pointer: fine) {
-    .listItem-border:hover {
-        border-color: var(--accent60) !important;
-    }
-}
-
-/* Border Colors: Transparent*/ 
-.actionSheetMenuItem,
-.navMenuOption:focus,
-.mediaDetailButtons .detailButton:focus,
-.userPreferencesPage .listItem-border:focus,
-.listItem-border,
-.listTextButton-autohide {
-    border-color: #0000 !important;
-}
-
-/*
-============================================================================
    Backgrounds
 ============================================================================
 */
@@ -250,6 +220,7 @@
     background: var(--bgdark40) !important;
 }
 @media (hover: hover) and (pointer: fine) {
+    .cardOverlayButton.cardOverlayFab-primary:hover,
     .detailButton:hover,
     .listItem-border:hover,
     .listItem-largeImage:hover,
@@ -269,7 +240,8 @@
     .emby-input:not(:disabled):hover,
     .emby-select-withcolor:not(:disabled):hover,
     .emby-textarea:not(:disabled):hover,
-    .listItem-focusscale:hover {
+    .listItem-focusscale:hover,
+    .listItemImageButton:hover {
         background: var(--bgdark60) !important;
     }
 }
@@ -353,24 +325,19 @@
 
 /* Background Colors: Accent 20% */
 @media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:not(.alphaPickerButton):not(:disabled):hover {
-        background-color: var(--accent20);
+    .headerButton:hover {
+        background-color: var(--accent20) !important;
     }
 }
 
 /* Background Colors: Transparent */
+.cardOverlayButton,
 .actionSheetMenuItem:focus,
+.cardOverlayButton:hover,
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
 .paper-icon-button-light:not(.alphaPickerButton):active {
     background-color: #0000 !important;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .cardOverlayButton:hover,
-    .listItemImageButton:hover {
-        background-color: #0000 !important;
-    }
 }
 
 /* Backgrounds: Card defaults
@@ -481,13 +448,7 @@
     border: none !important;
 }
 
-/*
-============================================================================
-   Box Shadows & Glow
-============================================================================
-*/
-
-/* Shadow */
+/* Box Shadows */
 @media (pointer: fine) {
     .detailImageContainer .card,
     .itemsContainer > .card .cardScalable,
@@ -496,9 +457,35 @@
     } 
 }
 
-/* Inset Shadow */
-.libraryPage .cardImageContainer {
-    box-shadow: var(--insettop), var(--insetbottom);
+/*
+============================================================================
+   Border Color & Glow
+============================================================================
+*/
+
+/* Border Colors: Accent 80% */ 
+.detail-button:focus,
+.emby-button:focus,
+.favorite-button:focus {
+    border-color: var(--accent80) !important;
+}
+
+/* Border Colors: Accent 60% */ 
+@media (hover: hover) and (pointer: fine) {
+    .listItem-border:hover,
+    .listItem-largeImage:hover {
+        border-color: var(--accent60) !important;
+    }
+}
+
+/* Border Colors: Transparent*/ 
+.actionSheetMenuItem,
+.navMenuOption:focus,
+.mediaDetailButtons .detailButton:focus,
+.userPreferencesPage .listItem-border:focus,
+.listItem-border,
+.listTextButton-autohide {
+    border-color: #0000 !important;
 }
 
 /* Glow: Card-Glow */
