@@ -338,7 +338,7 @@
 /* Media Pages: Poster Image */
 .layout-tv .detailImageContainer .portraitCard {
     left: 1vw;
-    max-width: 30em;
+    max-width: 28em;
 }
 .layout-tv .detailImageContainer .backdropCard {
     left: 1em;

@@ -61,7 +61,7 @@
     width: 46vw;
 }
 .layout-tv .detailPagePrimaryContent .nextUpSection .overflowBackdropCard {
-    width: 40%;
+    width: 40% !important;
 }
 
 /* Layout-TV: Overflow Cards on Media Pages */
