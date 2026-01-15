@@ -242,7 +242,7 @@
     width: 30vw;
 }
 .itemsContainer > .overflowBackdropCard {
-    width: 49vw;
+    width: 50%;
 }
 
 /* Overflow Cards on Media Pages */
@@ -280,7 +280,7 @@
         width: 30vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 48vw;
+        width: 50%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -289,7 +289,7 @@
         width: 30vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 46vw;
+        width: 50%;
     }
 
     /* Person Cards */
@@ -318,7 +318,7 @@
         width: 29.7vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 31.6vw;
+        width: 33.33%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -327,7 +327,7 @@
         width: 23vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 30.8vw;
+        width: 33.33%;
     }
 
     /* Person Cards */
@@ -356,7 +356,7 @@
         width: 31vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 24vw;
+        width: 25%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -365,7 +365,7 @@
         width: 18.4vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 30.7vw;
+        width: 33.33%;
     }
 
     /* Person Cards */
@@ -403,7 +403,7 @@
         width: 20.7vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 24vw;
+        width: 25%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -412,7 +412,7 @@
         width: 15.3vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 23vw;
+        width: 25%;
     }
 
     /* Person Cards */
@@ -449,7 +449,7 @@
         width: 15.6vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 19.2vw;
+        width: 20%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -458,7 +458,7 @@
         width: 15.3vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 18.4vw;
+        width: 25%;
     }
 
     /* Person Cards */
@@ -495,7 +495,7 @@
         width: 12.5vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 16vw;
+        width: 20%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -504,7 +504,7 @@
         width: 13.1vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 15.3vw;
+        width: 20%;
     }
 
     /* Person Cards */
@@ -541,7 +541,7 @@
         width: 12.5vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 13.7vw;
+        width: 16.66%;
     }
     
     /* Overflow Cards on Media Pages */
@@ -550,7 +550,7 @@
         width: 11.5vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 13.1vw;
+        width: 16.66%;
     }
 
     /* Person Cards */
@@ -579,7 +579,7 @@
         width: 10.4vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 12vw;
+        width: 14.25%;
     }
     
     /* Overflow Cards on Media Pages */
@@ -588,7 +588,7 @@
         width: 10.2vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 11.5vw;
+        width: 14.25%;
     }
 
     /* Person Cards */
@@ -617,7 +617,7 @@
         width: 10.45vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 10.65vw;
+        width: 12.5%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -626,7 +626,7 @@
         width: 9.2vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 10.2vw;
+        width: 12.5%;
     }
 
     /* Person Cards */
@@ -655,7 +655,7 @@
         width: 8.95vw;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 9.6vw;
+        width: 11.15%;
     }
     
     /* Overflow Cards on Media Pages */
@@ -664,7 +664,7 @@
         width: 8.35vw;
     }
     .detailPageWrapperContainer .itemsContainer > .overflowBackdropCard {
-        width: 9.2vw;
+        width: 11.15%;
     }
 
     /* Person Cards */
