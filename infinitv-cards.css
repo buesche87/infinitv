@@ -271,11 +271,15 @@
 
 @media (hover: hover) and (pointer: fine) {
     .layout-desktop .bannerCard:hover > .cardText,
-    .layout-desktop .itemsContainer > .card:hover .cardText,
-    .layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
+    .layout-desktop .itemsContainer > .card:hover .cardText {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
-        transition: filter 0.2s;
+        /* transition:  0.1s linear; */
+    }
+
+    .layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
 }
 

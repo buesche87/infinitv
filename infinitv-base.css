@@ -267,6 +267,9 @@
 
 /* Backgrounds: Accent 40% */
 @media (hover: hover) and (pointer: fine) {
+    .paper-icon-button-light:not(:disabled):hover {
+        background: var(--accent20);
+    }
     .emby-select option:hover {
         background: var(--accent40) !important;
     }
@@ -475,7 +478,7 @@
 @media (hover: hover) and (pointer: fine) {
     .listItem-border:hover,
     .listItem-largeImage:hover {
-        border-color: var(--accent60) !important;
+        border-color: var(--accent20) !important;
     }
 }
 
