@@ -102,6 +102,9 @@
 .layout-mobile .overflowBackdropCard {
     width: 50%;
 }
+.layout-mobile .detailPagePrimaryContent .nextUpSection .overflowBackdropCard {
+    width: 75% !important;
+}
 
 /* Overflow Cards
 .layout-mobile .overflowPortraitCard, 
