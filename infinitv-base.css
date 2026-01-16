@@ -32,6 +32,7 @@
 
     /* Glow */
     --cardglow: 0px 0px 10px 3px var(--accent80) !important;
+    --deskcardglow: 0px 0px 10px 3px var(--accent80) !important;
     --buttonglow: 0px 0px 10px 1px var(--accent100) !important;
 
     /* Text Shadow */
@@ -493,9 +494,13 @@
     .bannerCard:hover > .cardBox,
     .itemsContainer > .card:hover .cardScalable,
     .itemsContainer > .card:hover:has(.cardFooter) .cardBox {
-        box-shadow: var(--cardglow) !important;
+        box-shadow: var(--deskcardglow) !important;
     }
 }
+
+
+
+
 
 /* Glow: Button-Glow */
 .layout-tv .detailButton:focus,
