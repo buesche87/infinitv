@@ -530,6 +530,15 @@
     margin-right: -1.5em;
 }
 
+/* Subtitles: Preview-Box */
+.subtitleappearance-preview {
+    background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
 .layout-mobile .settingsContainer .sectionTitle,
 .layout-mobile .homeScreenSettingsContainer .sectionTitle,
 .layout-mobile #controlsPreferencesPage .sectionTitle {
@@ -538,23 +547,12 @@
     padding-left: .5em;
 }
 
-/* Subtitles: Preview-Box */
-.subtitleappearance-preview {
-    background: linear-gradient(140deg,var(--accent100),#111) !important;
-}
-
-
-
 .layout-mobile .userPreferencesPage .settingsContainer,
 .layout-mobile .homeScreenSettingsContainer,
 .layout-mobile #controlsPreferencesPage .padded-left {
     padding-left: 5% !important;
     padding-right: 5% !important;
 }
-
-
-
-
 .layout-mobile .userPreferencesPage .listItem-border {
     border: var(--buttonborder) !important;
     margin-bottom: .6em !important;
@@ -582,6 +580,12 @@
     text-align: left;
 }
 
+.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
+    width: 100%;
+    text-align: center;
+}
+
+
 /* Settings Pages: Individual Sites
 --------------------------------------------------------------------------*/
 
@@ -601,10 +605,6 @@
 #languagePreferencesPage,
 #searchPage {
     padding-top: 5em !important;
-}
-.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
-    width: 100%;
-    text-align: center;
 }
 
 /* Preferences Pages */
@@ -644,6 +644,10 @@
     margin-bottom: .5em;
     text-align: center;
     font-weight: 600;
+}
+
+#myPreferencesMenuPage .sectionTitle {
+    padding-left: 3em !important;
 }
 
 /* Settings Pages: User Profile
