@@ -531,13 +531,25 @@
     /* Layout TV
     --------------------------------------------------------------------------*/
 
-    /* Overflow Cards on Media Pages */
-    .layout-tv .detailPageSecondaryContainer .itemsContainer-tv > .overflowPortraitCard,
-    .layout-tv .detailPageSecondaryContainer .itemsContainer-tv > .overflowSquareCard {
-        width: 33.33%
-    }
+    /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
         width: 50%;
+    }
+
+    /* Overflow Cards on Media Pages */
+    .layout-tv .detailPagePrimaryContainer .itemsContainer-tv > .overflowPortraitCard,
+    .layout-tv .detailPagePrimaryContainer .itemsContainer-tv > .overflowSquareCard {
+        width: 18.5%;
+    }
+    .layout-tv .detailPagePrimaryContainer .itemsContainer-tv > .overflowBackdropCard {
+        width: 25%;
+    }
+    .layout-tv .detailPageSecondaryContainer .itemsContainer-tv > .overflowPortraitCard,
+    .layout-tv .detailPageSecondaryContainer .itemsContainer-tv > .overflowSquareCard {
+        width: 18.5%;
+    }
+    .layout-tv .detailPageSecondaryContainer .itemsContainer-tv > .overflowBackdropCard {
+        width: 25%;
     }
 
     /* Person Cards */
