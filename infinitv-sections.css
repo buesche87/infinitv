@@ -5,22 +5,9 @@
 ===========================================================================
 */
 
-
-.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide ~ .nextUpSection.hide)
-.detailImageContainer > .portraitCard {
-    max-width: 15em;
-    left: 3vw;
-}
-
 .layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide)
 #listChildrenCollapsible {
     margin-top: 3em;
-}
-
-.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-.detailImageContainer > .portraitCard {
-    max-width: 30em !important;
-    left: 1% !important;
 }
 
 .layout-tv .detailSection:has(.listItem-largeImage)
@@ -219,6 +206,7 @@
 
 .layout-tv .detailPageSecondaryContainer .itemsContainer {
     align-items: flex-start;
+    margin-right: -.5em;
 }
 
 
