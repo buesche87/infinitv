@@ -58,7 +58,7 @@
     width:  43.3vw;
 }
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-    width: 46vw;
+    width: 50%;
 }
 
 /* NextUp Card */
@@ -966,7 +966,10 @@
     /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
-        width: 15.3vw;
+        width:  15.2vw;
+    }
+    .layout-tv .itemsContainer-tv > .overflowBackdropCard {
+        width: 20%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -1067,7 +1070,10 @@
     /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
-        width: 15.2vw;
+        width:  15.2vw;
+    }
+    .layout-tv .itemsContainer-tv > .overflowBackdropCard {
+        width: 20%;
     }
 
     /* Overflow Cards on Media Pages */
