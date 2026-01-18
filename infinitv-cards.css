@@ -587,12 +587,7 @@
         height: calc(17.7vw);
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
+
 
 
     /* Layout Mobile
@@ -734,12 +729,7 @@
         -webkit-line-clamp: 5;
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
+
 
 
     /* Layout Mobile
@@ -857,12 +847,7 @@
         -webkit-line-clamp: 5;
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
+
 
 
     /* Layout Mobile
@@ -974,12 +959,6 @@
         height: calc(10vw);
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
 
 
     /* Layout Mobile
@@ -1082,12 +1061,7 @@
         height: calc(10vw);
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
+
 
 
     /* Layout Mobile
@@ -1203,12 +1177,7 @@
         height: calc(9vw);
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
+
 
 
     /* Layout Mobile
@@ -1340,12 +1309,7 @@
         -webkit-line-clamp: 7;
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
+
 
 }
 @media(min-width: 150em) {
@@ -1438,12 +1402,7 @@
         -webkit-line-clamp: 8;
     }
     
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
-    }
+
 
 }
 @media(min-width: 156.25em) {
@@ -1559,8 +1518,8 @@
     /* Poster Cards */
     .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
     .detailImageContainer > .portraitCard {
-        width: 38em;
-        left: 4%;
+        width: 37em;
+        left: 3%;
     }
 
 }
