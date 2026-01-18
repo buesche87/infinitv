@@ -531,6 +531,15 @@
     /* Layout TV
     --------------------------------------------------------------------------*/
 
+    /* Cards */
+    .layout-tv .itemsContainer-tv > .portraitCard,
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 33.33%;
+    }  
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 25%;
+    }
+    
     /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
         width: 50%;
@@ -651,6 +660,15 @@
     /* Layout TV
     --------------------------------------------------------------------------*/
 
+    /* Cards */
+    .layout-tv .itemsContainer-tv > .portraitCard,
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 25%;
+    }  
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 25%;
+    }
+    
     /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
@@ -760,6 +778,15 @@
     /* Layout TV
     --------------------------------------------------------------------------*/ 
 
+    /* Cards */
+    .layout-tv .itemsContainer-tv > .portraitCard,
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 20%;
+    }  
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 25%;
+    }
+    
     /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
@@ -963,6 +990,15 @@
     /* Layout TV
     --------------------------------------------------------------------------*/ 
 
+    /* Cards */
+    .layout-tv .itemsContainer-tv > .portraitCard,
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 16.66%;
+    }  
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 25%;
+    }
+    
     /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
@@ -1067,6 +1103,15 @@
     /* Layout TV
     --------------------------------------------------------------------------*/ 
 
+    /* Cards */
+    .layout-tv .itemsContainer-tv > .portraitCard,
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 14.25%;
+    }  
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 25%;
+    }
+    
     /* Overflow Cards */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
@@ -1181,6 +1226,15 @@
     /* Layout TV
     --------------------------------------------------------------------------*/ 
 
+    /* Cards */
+    .layout-tv .itemsContainer-tv > .portraitCard,
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 12.5%;
+    }  
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 25%;
+    }
+    
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
@@ -1262,6 +1316,15 @@
     /* Layout TV
     --------------------------------------------------------------------------*/ 
 
+    /* Cards */
+    .layout-tv .itemsContainer-tv > .portraitCard,
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 11.1%;
+    }  
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 25%;
+    }
+    
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
