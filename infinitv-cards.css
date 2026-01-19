@@ -807,7 +807,7 @@
 
 
     /* Person Cards */
-    .itemsContainer > .overflowPortraitCard.personCard, {
+    .itemsContainer > .overflowPortraitCard.personCard {
         width: 9.15vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
