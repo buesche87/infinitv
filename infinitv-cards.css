@@ -106,7 +106,7 @@
 .layout-mobile .itemsContainer > .portraitCard, 
 .layout-mobile .itemsContainer > .squareCard,
 .layout-mobile .itemsContainer > .backdropCard {
-    width: 50%;
+    width: 33.33%;
 }
 
 /* Layout Mobile: Overflow Cards on Media Pages */
@@ -488,8 +488,7 @@
    Dynamic Card Size
 ===========================================================================
 */
-
-@media(min-width: 35em) {
+@media(min-width: 25em) {
 
     /* Layout Mobile
     --------------------------------------------------------------------------*/

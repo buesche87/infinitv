@@ -245,9 +245,16 @@
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
+.layout-mobile .detailPagePrimaryContent,
 .layout-mobile .detailPageContent {
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 3vw !important;
+    padding-right: 3vw !important;
+}
+
+.layout-mobile .detailPagePrimaryContent .detailSectionContent,
+.layout-mobile .detailPagePrimaryContent .itemDetailsGroup {
+    padding-left: 3vw !important;
+    padding-right: 3vw !important;
 }
 
 /* scroller: default alignment */

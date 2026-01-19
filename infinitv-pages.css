@@ -68,7 +68,12 @@
     top: 69vh;
 }
 .layout-mobile .homeSectionsContainer {
-    top: 78vh;
+    /* top: 78vh; */
+}
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile .homeSectionsContainer {
+        top: 84vh;
+    }
 }
 
 /* Slides: Disable in TV layout (they don't work well with a remote) */
@@ -166,8 +171,10 @@
 }
 
 /* Library Pages: Item backdrop alignment (Mobile) */
-.layout-mobile .itemBackdrop {
-    margin-top: 3.9rem;
+@media (min-width: 50em) {
+    .layout-mobile .itemBackdrop {
+        margin-top: 3.9rem;
+    }
 }
 
 /* Library Pages: Alphabet Picker */
