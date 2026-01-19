@@ -20,27 +20,18 @@
     border-width: .35em;
 }
 
-/* Toast */
+/* Toast: Center */
 .toast {
     background-color: #000 !important;
     box-shadow: var(--cardglow) !important;
 }
-.layout-tv .toastContainer {
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-/* Toast: Center */
+.layout-tv .toastContainer,
 .layout-mobile .toastContainer {
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%);
     text-align: center;
 }
-
-
 
 /* Spinner Color */ 
 .mdl-spinner__layer-1,
@@ -330,12 +321,6 @@
     transform: scale(1.2) !important;
 }
 
-/* Slides: Pause Button Placement */
-.layout-mobile .pause-button {
-    top: 74vh;
-    right: 4vw;
-}
-
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
 
@@ -478,6 +463,7 @@
     .layout-mobile .mainDrawer {
         margin-top: 0em;
         align-items: flex-end;
+        margin-bottom: 3.9em;
     }
 
     /* Drawer: Move options to bottom */
@@ -488,6 +474,13 @@
     /* Toast */
     .layout-tv .toastContainer {
         bottom: 4em;
+    }
+
+
+    /* Slides: Pause Button Placement */
+    .layout-mobile .pause-button {
+        top: 74vh;
+        right: 4vw;
     }
 
     /* Library Pages: Move up */
@@ -511,6 +504,8 @@
     .layout-mobile .itemBackdrop {
         margin-top: 0rem;
     }
+
+
 
     /* Filter Bar */
     .layout-mobile .pageTabContent > .focuscontainer-x {
@@ -546,8 +541,5 @@
         display: none !important;
     }
 
-    /* Main Drawer */
-    .layout-mobile .mainDrawer {
-        margin-bottom: 3.9em;
-    }
+
 }
