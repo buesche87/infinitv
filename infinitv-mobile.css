@@ -41,7 +41,26 @@
     order: 1;
 }
 
-/* Header: Responsiveness */
+/* Footer */
+.layout-mobile .appfooter {
+    background: #0000 !important;
+}
+
+/* Main Drawer: Align */
+.layout-mobile .mainDrawer {
+    margin-top: 0em;
+    align-items: flex-end;
+}
+
+/* Drawer: Move options to bottom */
+.layout-mobile .mainDrawer-scrollContainer {
+    padding-bottom: 1vh;
+}
+
+/* Responsivenes
+--------------------------------------------------------------------------*/
+
+/* Header: Responsivenes */
 @media (max-width: 100em) {
     .layout-mobile .headerTop {
         padding-top: 0.5em;
@@ -57,37 +76,7 @@
     .layout-mobile .emby-tab-button {
         padding: 1.25em 1.25em .25em 1.25em !important;
     }
-}
-@media (min-width: 100em) {
-    .layout-mobile .headerTop {
-        padding-top: .8em;
-        padding-bottom: .8em;
-    }
-    .layout-mobile .headerLeft {
-        margin-right: .2em;
-    }
-    .layout-mobile .headerRight {
-        margin-left: .2em;
-    }
-    .layout-mobile .sectionTabs {
-        margin-top: 0em;
-        margin-bottom: -4.2em;
-        padding-top: .5em;
-        padding-bottom: .5em;
-    }
-    .layout-mobile .emby-tab-button {
-        padding: 1em 1.25em 1em 1.25em !important;
-    }
-}
 
-/* Footer
---------------------------------------------------------------------------*/
-
-.layout-mobile .appfooter {
-    background: #0000 !important;
-}
-
-@media (max-width: 100em) {
     /* Footer: Placement depending on Header visibility */
     .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
         bottom: 5.8em;
@@ -110,8 +99,33 @@
     .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
         display: none !important;
     }
+
+    /* Main Drawer */
+    .layout-mobile .mainDrawer {
+        margin-bottom: 3.9em;
+    }
 }
 @media (min-width: 100em) {
+
+    .layout-mobile .headerTop {
+        padding-top: .8em;
+        padding-bottom: .8em;
+    }
+    .layout-mobile .headerLeft {
+        margin-right: .2em;
+    }
+    .layout-mobile .headerRight {
+        margin-left: .2em;
+    }
+    .layout-mobile .sectionTabs {
+        margin-top: 0em;
+        margin-bottom: -4.2em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+    .layout-mobile .emby-tab-button {
+        padding: 1em 1.25em 1em 1.25em !important;
+    }
 
     /* Footer: Place above (Bottom-) Header */
     .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
@@ -137,29 +151,8 @@
     .layout-mobile .nowPlayingBarInfoContainer {
         margin-left: .8em;
     }
-}
 
-
-/* Main Drawer
---------------------------------------------------------------------------*/
-
-/* Main Drawer: Align */
-.layout-mobile .mainDrawer {
-    margin-top: 0em;
-    align-items: flex-end;
-}
-
-/* Drawer: Move options to bottom */
-.layout-mobile .mainDrawer-scrollContainer {
-    padding-bottom: 1vh;
-}
-
-@media (max-width: 100em) {
-    .layout-mobile .mainDrawer {
-        margin-bottom: 3.9em;
-    }
-}
-@media (min-width: 100em) {
+    /* Main Drawer */
     .layout-mobile .mainDrawer {
         margin-bottom: 4.6em;
     }
