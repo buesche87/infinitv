@@ -148,6 +148,12 @@
     }
 }
 
+
+/* Alphabet Picker: Stretch */
+.layout-mobile .alphaPicker {
+    bottom: 10em;
+}
+
 .layout-mobile .libraryPage .padded-right-withalphapicker {
     padding-left: 2vw;
     padding-right: 2em;

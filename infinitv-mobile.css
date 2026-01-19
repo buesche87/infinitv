@@ -57,6 +57,70 @@
     padding-bottom: 1vh;
 }
 
+/* Toast */
+.layout-tv .toastContainer {
+    bottom: 4em;
+}
+
+/* Library Pages: Move up */
+.layout-mobile .libraryPage,
+.layout-mobile #displayPreferencesPage,
+.layout-mobile #homeScreenPreferencesPage,
+.layout-mobile #languagePreferencesPage {
+    padding-top: 1em !important;
+}
+.layout-mobile #itemDetailPage {
+    padding-top: 0em !important;
+}
+.layout-mobile #userProfilePage,
+.layout-mobile #myPreferencesMenuPage,
+.layout-mobile #quickConnectPreferencesPage,
+.layout-mobile #searchPage {
+    padding-top: 2em !important;
+}
+
+/* Media Details: Move up */
+.layout-mobile .itemBackdrop {
+    margin-top: 0rem;
+}
+
+/* Filter Bar */
+.layout-mobile .pageTabContent > .focuscontainer-x {
+    margin-top: 1em;
+}
+.layout-mobile .nowPlayingInfoControls {
+    padding-bottom: 2em;
+}
+.layout-mobile .selectionCommandsPanel {
+    top: 0em;
+}
+
+
+
+
+/* Toast */
+.layout-tv .toastContainer {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    bottom: 4em;
+    text-align: center;
+}
+
+/* Slides: Pause Button Placement */
+.layout-mobile .pause-button {
+    top: 74vh;
+    right: 4vw;
+}
+
+
+/* Alphabet Picker: Stretch */
+.layout-mobile .alphaPicker {
+    bottom: 10em;
+}
+
+
+
 /* Responsivenes
 --------------------------------------------------------------------------*/
 
@@ -156,62 +220,4 @@
     .layout-mobile .mainDrawer {
         margin-bottom: 4.6em;
     }
-}
-
-/* Main Drawer
---------------------------------------------------------------------------*/
-
-/* Toast: Center */
-.layout-mobile .toastContainer {
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%);
-    bottom: 4em;
-    text-align: center;
-}
-
-/* Slides: Pause Button Placement */
-.layout-mobile .pause-button {
-    top: 74vh;
-    right: 4vw;
-}
-
-/* Library Pages: Move up */
-.layout-mobile .libraryPage,
-.layout-mobile #displayPreferencesPage,
-.layout-mobile #homeScreenPreferencesPage,
-.layout-mobile #languagePreferencesPage {
-    padding-top: 1em !important;
-}
-.layout-mobile #itemDetailPage {
-    padding-top: 0em !important;
-}
-.layout-mobile #userProfilePage,
-.layout-mobile #myPreferencesMenuPage,
-.layout-mobile #quickConnectPreferencesPage,
-.layout-mobile #searchPage {
-    padding-top: 2em !important;
-}
-
-/* Media Details: Move up */
-.layout-mobile .itemBackdrop {
-    margin-top: 0rem;
-}
-
-/* Alphabet Picker: Stretch */
-.layout-mobile .alphaPicker {
-    bottom: 10em;
-}
-
-/* Filter Bar */
-.layout-mobile .pageTabContent > .focuscontainer-x {
-    margin-top: 1em;
-}
-
-.layout-mobile .nowPlayingInfoControls {
-    padding-bottom: 2em;
-}
-
-.layout-mobile .selectionCommandsPanel {
-    top: 0em;
 }

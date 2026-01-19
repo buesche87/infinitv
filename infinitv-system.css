@@ -32,6 +32,16 @@
     text-align: center;
 }
 
+/* Toast: Center */
+.layout-mobile .toastContainer {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+
 /* Spinner Color */ 
 .mdl-spinner__layer-1,
 .mdl-spinner__layer-2,
@@ -320,6 +330,12 @@
     transform: scale(1.2) !important;
 }
 
+/* Slides: Pause Button Placement */
+.layout-mobile .pause-button {
+    top: 74vh;
+    right: 4vw;
+}
+
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
 
@@ -396,4 +412,102 @@
 /* Select Container: Label */
 .selectLabel {
     align-self: center;
+}
+
+
+/*
+============================================================================
+   Layout Mobile - Portrait Mode
+============================================================================
+*/
+
+@media (max-width: 50em) {
+
+    /* Show Header at Bottom */
+    .layout-mobile .skinHeader {
+        top: auto;
+        bottom: 0;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 1) !important;
+    }
+    .layout-mobile .headerTop {
+        order: 2;
+    }
+    .layout-mobile .sectionTabs {
+        order: 1;
+    }
+    .layout-mobile .skinHeader.headroom--unpinned {
+        transform: translateY(100%);
+    }
+    .layout-mobile .skinHeader.headroom--pinned {
+        transform: translateY(0);
+    }
+
+    /* Header: Remove Logo */
+    .layout-mobile .pageTitle {
+        display: none;
+    }
+
+    /* Header: Rearrange Buttons */
+    .layout-mobile .headerLeft {
+        order: 2;
+        justify-content: flex-end;
+    }
+    .layout-mobile .headerRight {
+        order: 1;
+    }
+
+    /* Footer */
+    .layout-mobile .appfooter {
+        background: #0000 !important;
+    }
+
+    /* Main Drawer: Align */
+    .layout-mobile .mainDrawer {
+        margin-top: 0em;
+        align-items: flex-end;
+    }
+
+    /* Drawer: Move options to bottom */
+    .layout-mobile .mainDrawer-scrollContainer {
+        padding-bottom: 1vh;
+    }
+
+    /* Toast */
+    .layout-tv .toastContainer {
+        bottom: 4em;
+    }
+
+    /* Library Pages: Move up */
+    .layout-mobile .libraryPage,
+    .layout-mobile #displayPreferencesPage,
+    .layout-mobile #homeScreenPreferencesPage,
+    .layout-mobile #languagePreferencesPage {
+        padding-top: 1em !important;
+    }
+    .layout-mobile #itemDetailPage {
+        padding-top: 0em !important;
+    }
+    .layout-mobile #userProfilePage,
+    .layout-mobile #myPreferencesMenuPage,
+    .layout-mobile #quickConnectPreferencesPage,
+    .layout-mobile #searchPage {
+        padding-top: 2em !important;
+    }
+
+    /* Media Details: Move up */
+    .layout-mobile .itemBackdrop {
+        margin-top: 0rem;
+    }
+
+    /* Filter Bar */
+    .layout-mobile .pageTabContent > .focuscontainer-x {
+        margin-top: 1em;
+    }
+    .layout-mobile .nowPlayingInfoControls {
+        padding-bottom: 2em;
+    }
+    .layout-mobile .selectionCommandsPanel {
+        top: 0em;
+    }
 }
