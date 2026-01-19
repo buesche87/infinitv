@@ -281,7 +281,7 @@
 
 .layout-mobile #castContent,
 .layout-mobile #guestCastContent {
-    padding-left: .5em;
+    padding-left: 0em;
 }
 
 .layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
