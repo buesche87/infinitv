@@ -432,9 +432,21 @@
     }
     .layout-mobile .headerTop {
         order: 2;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        height: 2.9em;
+    }
+    .layout-mobile .headerLeft {
+        margin-right: .5em;
+    }
+    .layout-mobile .headerRight {
+        margin-left: .5em;
     }
     .layout-mobile .sectionTabs {
         order: 1;
+    }
+    .layout-mobile .emby-tab-button {
+        padding: 1.25em 1.25em .25em 1.25em !important;
     }
     .layout-mobile .skinHeader.headroom--unpinned {
         transform: translateY(100%);
@@ -509,5 +521,33 @@
     }
     .layout-mobile .selectionCommandsPanel {
         top: 0em;
+    }
+
+    /* Footer: Placement depending on Header visibility */
+    .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
+        bottom: 5.8em;
+    }
+    .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
+        bottom: 3.9em;
+    }
+
+    /* Now Playing Bar */
+    .layout-mobile .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+    .layout-mobile .nowPlayingBarInfoContainer {
+        margin-left: .2em;
+    }
+
+    /* Hide HeaderTabs & Footer when drawer opens */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs,
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+        display: none !important;
+    }
+
+    /* Main Drawer */
+    .layout-mobile .mainDrawer {
+        margin-bottom: 3.9em;
     }
 }
