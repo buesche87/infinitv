@@ -478,7 +478,7 @@
 @media (hover: hover) and (pointer: fine) {
     .listItem-border:hover,
     .listItem-largeImage:hover {
-        border-color: var(--accent20) !important;
+        border-color: var(--accent40) !important;
     }
 }
 
