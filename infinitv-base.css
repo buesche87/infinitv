@@ -484,6 +484,7 @@
 
 /* Border Colors: Transparent*/ 
 .actionSheetMenuItem,
+.actionSheetMenuItem:focus,
 .navMenuOption:focus,
 .mediaDetailButtons .detailButton:focus,
 .userPreferencesPage .listItem-border:focus,

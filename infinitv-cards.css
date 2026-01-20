@@ -32,7 +32,7 @@
 .layout-tv .itemsContainer-tv > .overflowPortraitCard,
 .layout-tv .itemsContainer-tv > .overflowSquareCard,
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-    width:  50%;
+    width: 50%;
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard, 
 .layout-mobile .itemsContainer > .overflowSquareCard,
