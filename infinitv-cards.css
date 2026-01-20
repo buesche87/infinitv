@@ -24,9 +24,9 @@
 }
 
 /* Overflow Cards */
-.itemsContainer .itemsContainer > .overflowPortraitCard,
-.itemsContainer .itemsContainer > .overflowSquareCard,
-.itemsContainer .itemsContainer > .overflowBackdropCard {
+.itemsContainer > .overflowPortraitCard,
+.itemsContainer > .overflowSquareCard,
+.itemsContainer > .overflowBackdropCard {
     width: 50%;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard,
@@ -511,7 +511,7 @@
         width: 50%;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 33.33%;
+        width: 50%;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
         width: 50%;
@@ -719,7 +719,7 @@
         width: 20%;
     }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 25%;
+        width: 33.33%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
@@ -811,11 +811,11 @@
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 9.15vw;
+        width: 11.4vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(9.15vw - 1.75em);
-        height: calc(9.15vw);
+        width:  calc(11.4vw - 1.75em);
+        height: calc(11.4vw);
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
         width: 10vw;
@@ -880,7 +880,7 @@
         width: 14.25%;
     }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 20%;
+        width: 25%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
@@ -898,11 +898,11 @@
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 8.35vw;
+        width: 10.2vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(8.35vw - 1.75em);
-        height: calc(8.35vw);
+        width:  calc(10.2vw - 1.75em);
+        height: calc(10.2vw);
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
         width: 8.35vw;
@@ -939,6 +939,10 @@
     }
 
     /* Overflow Cards */
+    .itemsContainer > .overflowPortraitCard,
+    .itemsContainer > .overflowSquareCard {
+        width: 16.66%;
+    }
     .itemsContainer > .overflowBackdropCard {
         width: 16.66%;
     }
@@ -957,16 +961,17 @@
         width: 12.5%;
     }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 16.66%;
+        width: 20%;
     }
+    
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 7.65vw;
+        width: 9.15vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(7.65vw - 1.75em);
-        height: calc(7.65vw);
+        width:  calc(9.15vw - 1.75em);
+        height: calc(9.15vw);
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
         width: 9vw;
@@ -1037,7 +1042,7 @@
         width: 11.15%;
     }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 14.25%;
+        width: 20%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
@@ -1050,11 +1055,11 @@
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 7.05vw;
+        width: 8.35vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(7.05vw - 1.75em);
-        height: calc(7.05vw);
+        width:  calc(8.35vw - 1.75em);
+        height: calc(8.35vw);
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
         width: 8.1vw;
@@ -1101,7 +1106,7 @@
         width: 10%;
     }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 12.5%;
+        width: 16.66%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
@@ -1113,11 +1118,11 @@
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 6.55vw;
+        width: 7.05vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(6.55vw - 1.75em);
-        height: calc(6.55vw);
+        width:  calc(7.05vw - 1.75em);
+        height: calc(7.05vw);
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
         width: 7.4vw;
@@ -1176,10 +1181,10 @@
     /* Overflow Cards on Media Pages */
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 9.15%;
+        width: 9.1%;
     }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 11.15%;
+        width: 16.66%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
