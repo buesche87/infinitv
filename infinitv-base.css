@@ -165,7 +165,10 @@
 /* Backgrounds: User defined
 --------------------------------------------------------------------------*/
 
-.dialog,
+.dialog  {
+    background: rgba(0, 0, 0, .85) !important;
+}
+
 .formDialogHeader,
 .formDialogFooter,
 .selectionCommandsPanel,
