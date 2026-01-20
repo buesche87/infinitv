@@ -157,6 +157,7 @@
 .layout-tv #castCollapsible .emby-scroller,
 .layout-tv #guestCastCollapsible .emby-scroller {
     padding-left: .75em;
+    padding-bottom: .25em;
 }
 .layout-tv .verticalSection-extrabottompadding .emby-scroller {
     padding-top: 2em;
