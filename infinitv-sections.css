@@ -65,13 +65,21 @@
 
 /* Titles */
 .layout-tv .sectionTitle {
-    padding-left: 2% !important;
+    /* padding-left: 2% !important; */
 }
 .layout-tv .homePage .sectionTitleContainer-cards,
 .layout-tv .homePage .sectionTitle {
     text-align: center;
     padding-left: 0 !important;
 }
+
+
+.emby-button.sectionTitleTextButton.show-focus:focus {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    color: var(--accent100);
+}
+
 
 /* Section Titles: Layout Desktop
 --------------------------------------------------------------------------*/
