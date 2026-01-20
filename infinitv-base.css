@@ -110,7 +110,7 @@
 }
 
 /* Text Colors: Accent 100% */
-.emby-button:focus,
+.emby-button.block:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .header-right .headerButton:active,
 .listItem-border:focus,
@@ -128,12 +128,17 @@
 .playedIndicator,
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating,
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary,
+/* .layout-tv .card.show-animation:focus .cardText-first, */
+/* .layout-tv .card.show-animation:focus .cardText-secondary, */
 .listItem-button:focus h2.listItemBodyText,
 .listTextButton-autohide:focus,
 .upNextDialog-countdownText {
     color: var(--accent100) !important;
+}
+
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary {
+    font-weight: 500;
 }
 
 @media (hover: hover) and (pointer: fine) {
