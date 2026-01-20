@@ -110,7 +110,7 @@
 }
 
 /* Text Colors: Accent 100% */
-.emby-button.block:focus,
+.emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .header-right .headerButton:active,
 .listItem-border:focus,
@@ -477,7 +477,7 @@
 
 /* Border Colors: Accent 80% */ 
 .detail-button:focus,
-.emby-button:focus,
+/* .emby-button:focus, */
 .favorite-button:focus {
     border-color: var(--accent80) !important;
 }
