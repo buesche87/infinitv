@@ -528,6 +528,9 @@
     .layout-mobile .itemsContainer > .overflowSquareCard {
         width: 25%;
     }
+    .layout-mobile .itemsContainer > .overflowBackdropCard {
+        width: 33.33%;
+    }
 
     /* Overflow Cards on Media Pages */
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
@@ -618,6 +621,10 @@
     .layout-mobile .itemsContainer > .overflowPortraitCard,
     .layout-mobile .itemsContainer > .overflowSquareCard {
         width: 20%;
+    }
+    .layout-mobile .itemsContainer > .overflowBackdropCard,
+    .layout-mobile .itemsContainer > .overflowSmallBackdropCard {
+        width: 25%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -732,7 +739,7 @@
         width: 20%;
     }
     .layout-mobile .itemsContainer > .overflowBackdropCard,
-    .layout-mobile .overflowSmallBackdropCard {
+    .layout-mobile .itemsContainer > .overflowSmallBackdropCard {
         width: 20%;
     }
 
