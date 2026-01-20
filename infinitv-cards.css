@@ -536,7 +536,7 @@
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
-        width: 32%;
+        width: 31.9%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowBackdropCard {
         width: 25%;
@@ -627,6 +627,14 @@
     }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 33.33%;
+    }
+    .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
+    .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
+        width: 23.9%;
+    }
+    .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
+    .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
+        width: 24%;
     }
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
@@ -738,11 +746,11 @@
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
-        width: 23.5%;
+        width: 18.9%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 24%;
+        width: 19%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 33.33%;
@@ -915,11 +923,11 @@
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
-        width: 18.5%;
+        width: 15.5%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 19%;
+        width: 15.75%;
     }
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
