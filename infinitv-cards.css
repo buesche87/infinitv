@@ -87,8 +87,8 @@
 }
 
 /* Poster Cards */
-.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-.detailImageContainer > .itemsContainer > .portraitCard {
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) 
+.detailImageContainer .portraitCard {
     max-width: 38em !important;
     left: 1%;
 }
@@ -1253,7 +1253,7 @@
     
     /* Poster Cards */
     .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .itemsContainer > .portraitCard {
+    .detailImageContainer .portraitCard {
         width: 37em;
         left: 3%;
     }
@@ -1306,7 +1306,7 @@
     
     /* Poster Cards */
     .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .detailImageContainer > .itemsContainer > .portraitCard {
+    .detailImageContainer .portraitCard {
         width: 38em;
         left: 4%;
     }
