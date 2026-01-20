@@ -465,11 +465,14 @@
 
     /* Cards */
     .layout-mobile .itemsContainer > .portraitCard, 
-    .layout-mobile .itemsContainer > .squareCard,
-    .layout-mobile .itemsContainer > .backdropCard {
+    .layout-mobile .itemsContainer > .squareCard {
         width: 33.33%;
     }
 
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 50%;
+    }
+    
     /* Overflow Cards */
     .layout-mobile .itemsContainer > .overflowPortraitCard, 
     .layout-mobile .itemsContainer > .overflowSquareCard,
