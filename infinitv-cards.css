@@ -493,10 +493,13 @@
 
     /* Cards */
     .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard,
     .itemsContainer > .backdropCard {
         width: 33.33%;
     }
+    .itemsContainer > .squareCard{
+        width: 25%;
+    }
+    
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
         width: 33.33%;
@@ -571,9 +574,11 @@
 @media(min-width: 50em) {
 
     /* Cards */
-    .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard {
+    .itemsContainer > .portraitCard {
         width: 25%;
+    }
+    .itemsContainer > .squareCard {
+        width: 20%;
     }
     .itemsContainer > .backdropCard {
         width: 25%;
@@ -676,9 +681,11 @@
 @media(min-width: 75em) {
 
     /* Cards */
-    .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard {
+    .itemsContainer > .portraitCard {
         width: 20%;
+    } 
+    .itemsContainer > .squareCard {
+        width: 16.66%;
     }
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
@@ -770,9 +777,11 @@
 @media(min-width: 87.5em) {
 
     /* Cards */
-    .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard {
+    .itemsContainer > .portraitCard {
         width: 16.66%;
+    } 
+    .itemsContainer > .squareCard {
+        width: 14.25%;
     }
     .itemsContainer > .backdropCard {
         width: 20%;
@@ -840,6 +849,11 @@
 }
 @media(min-width: 100em) {
 
+    /* Cards */
+    .itemsContainer > .squareCard {
+        width: 12.5%;
+    }
+    
     /* Cards */
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
@@ -922,9 +936,11 @@
 @media(min-width: 120em) {
 
     /* Cards */
-    .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard {
+    .itemsContainer > .portraitCard {
         width: 14.25%;
+    }
+    .itemsContainer > .squareCard {
+        width: 12.5%;
     }
     .itemsContainer > .backdropCard {
         width: 16.66%;
@@ -1010,7 +1026,7 @@
     /* Cards */
     .itemsContainer > .portraitCard, 
     .itemsContainer > .squareCard {
-        width: 12.5%;
+        width: 11.1%;
     }
     .layout-tv .itemsContainer-tv > .portraitCard,
     .layout-tv .itemsContainer-tv > .squareCard {
@@ -1021,7 +1037,9 @@
     }
 
     /* Overflow Cards */
-    .itemsContainer > .overflowPortraitCard,
+    .itemsContainer > .overflowPortraitCard {
+        width: 20%;
+    }
     .itemsContainer > .overflowSquareCard {
         width: 16.66%;
     }
@@ -1078,9 +1096,11 @@
 @media(min-width: 150em) {
 
     /* Cards */
-    .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard {
+    .itemsContainer > .portraitCard {
         width: 11.1%;
+    } 
+    .itemsContainer > .squareCard {
+        width: 10%;
     }
     .itemsContainer > .backdropCard {
         width: 14.25%;
@@ -1158,9 +1178,11 @@
 @media(min-width: 175em) {
 
     /* Cards */
-    .itemsContainer > .portraitCard, 
-    .itemsContainer > .squareCard {
+    .itemsContainer > .portraitCard {
         width: 10%;
+    }
+    .itemsContainer > .squareCard {
+        width: 9%;
     }
     .itemsContainer > .backdropCard {
         width: 12.5%;
@@ -1227,9 +1249,11 @@
 @media(min-width: 200em) {
 
     /* Cards - TV  */
-    .layout-tv .itemsContainer-tv > .portraitCard,
-    .layout-tv .itemsContainer-tv > .squareCard {
+    .layout-tv .itemsContainer-tv > .portraitCard {
         width: 10%;
+    }
+    .layout-tv .itemsContainer-tv > .squareCard {
+        width: 9%;
     }
     .layout-tv .itemsContainer-tv > .backdropCard {
         width: 16.66%;
