@@ -58,6 +58,11 @@
     padding-bottom: 8px;
 }
 
+.layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
 /* Titles */
 .layout-tv .sectionTitle {
     padding-left: 2% !important;
