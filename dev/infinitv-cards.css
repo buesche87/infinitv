@@ -293,6 +293,11 @@
     }
 }
 
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary {
+    font-weight: 600;
+}
+
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
