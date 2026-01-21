@@ -216,18 +216,6 @@
     margin-right: -.5em;
 } */
 
-
-/* NEW */
-
-.layout-tv .homePage .emby-scroller,
-.layout-tv .detailPageWrapperContainer .emby-scroller {
-    padding: 1.5em 0em 1.5em 1.5em;
-    margin: -.5em 1em -.5em 0;
-}
-.layout-tv .detailPageWrapperContainer .emby-scroller {
-    padding-left: 1em;
-    margin-right: 1em;
-}
 /* NEW */
 
 .layout-tv .homePage .emby-scroller,
