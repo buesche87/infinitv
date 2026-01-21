@@ -427,8 +427,7 @@
 .actionSheetMenuItem:focus,
 .emby-collapsible-button,
 .listItem-border,
-.listTextButton-autohide,
-.layout-tv .itemsContainer > .listItem-focusscale:focus {
+.listTextButton-autohide {
     border: solid 2px #0000 !important;
 }
 
@@ -478,8 +477,6 @@
 
 /* Border Colors: Accent 80% */ 
 .detail-button:focus,
-/* .emby-button:focus, */
-
 .favorite-button:focus {
     border-color: var(--accent80) !important;
 }
@@ -492,7 +489,8 @@
     }
 }
 
-.mainDetailButtons  .detailButton:focus {
+.mainDetailButtons .detailButton:focus,
+.layout-tv .itemsContainer > .listItem-largeImage:focus {
     border-color: var(--accent60) !important;
 }
 

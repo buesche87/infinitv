@@ -174,16 +174,36 @@
     /* margin-left: .5em; */
     /* margin-right: .5em; */
 }
-.layout-tv .detailPageWrapperContainer .emby-scroller {
+
+
+
+
+/* More from Season */
+.layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller {
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: 0em;
-    padding-right: 1em;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 2em;
+    margin: 0;
+    /* margin-bottom: 0; */
+    /* margin-left: 0; */
+    /* margin-right: 0; */
 }
+
+/* Cast & Crew */
+.layout-tv .detailPageSecondaryContainer .emby-scroller {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: .5em;
+    padding-right: 1em;
+    margin: 0;
+    /* margin-bottom: 0; */
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+
+
 
 .layout-tv .recommendations .emby-scroller {
     padding-top: 1.5em;
@@ -225,18 +245,27 @@
     padding-bottom: 1em;
 }
 
+.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
+    padding-right: 0em;
+    padding-left: 0em;
+    margin-top: -1em;
+}
 
+/* noch in gebrauch? */
 .layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
     padding-left: 1em;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     padding-right: 1em;
 }
-.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
-    padding-right: 0em;
-    padding-left: 0em;
-    margin-top: -1em;
+
+.layout-tv #listChildrenCollapsible .itemsContainer.vertical-wrap {
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-right: 1em;
 }
+
 
 /*
 .layout-tv #listChildrenCollapsible .itemsContainer {
