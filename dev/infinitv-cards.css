@@ -448,16 +448,7 @@
 
 /* Cards */
 .layout-tv .itemsContainer-tv > .backdropCard  {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-right: .3em;
-    margin-left: .3em;
-}
-.layout-tv #moviesPage .itemsContainer-tv > .backdropCard {
-    margin-top: .5em;
-    margin-bottom: .5em;
-    margin-right: .3em;
-    margin-left: .3em;
+    margin: 1em .3em;
 }
 .layout-tv .itemsContainer-tv > .portraitCard {
     padding: .5em;
@@ -766,7 +757,7 @@
         width: 20%;
     } 
     .layout-tv .itemsContainer-tv > .backdropCard {
-        width: 23.3vw;
+        width: 23vw;
     }
     .layout-mobile .itemsContainer > .portraitCard, 
     .layout-mobile .itemsContainer > .squareCard {
