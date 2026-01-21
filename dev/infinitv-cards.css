@@ -450,7 +450,7 @@
 /* Cards */
 .layout-tv .itemsContainer-tv > .backdropCard,
 .layout-tv .itemsContainer-tv > .portraitCard {
-    padding-bottom: .5em;
+    padding-bottom: 1em;
     padding-right: .5em;
 }
 .layout-tv .itemsContainer-tv > .squareCard {
