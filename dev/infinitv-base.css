@@ -32,7 +32,7 @@
 
     /* Glow */
     --cardglow: 0px 0px 10px 3px var(--accent80) !important;
-    --deskcardglow: 0px 0px 10px 3px var(--accent80) !important;
+    --deskcardglow: 0px 0px 10px 2px var(--accent80) !important;
     --buttonglow: 0px 0px 10px 1px var(--accent100) !important;
 
     /* Text Shadow */
