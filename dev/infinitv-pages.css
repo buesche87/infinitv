@@ -130,8 +130,8 @@
 @media(min-width: 50em) {
     .layout-tv .libraryPage:not(#indexPage) > .pageTabContent > .itemsContainer,
     .layout-tv .libraryPage .padded-right-withalphapicker {
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
