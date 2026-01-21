@@ -161,7 +161,6 @@
 /* Media Scroller: Layout TV
 --------------------------------------------------------------------------*/
 
-/* Alignment */
 .layout-tv .emby-scroller {
     padding-left: 1.5em;
     padding-right: 0;
@@ -175,8 +174,6 @@
 .layout-tv .verticalSection-extrabottompadding .emby-scroller {
     padding-top: 2em;
 }
-
-
 .layout-tv .padded-top-focusscale {
     margin-top: 0.0em;
     padding-top: 1.5em;
@@ -188,19 +185,13 @@
 .layout-tv .homePage .padded-bottom-focusscale {
     margin-top: -.5em;
 }
-
-
 .layout-tv #tvRecommendedPage .itemsContainer {
     padding-top: 1.5em;
     padding-bottom: .5em;
 } 
-
 .layout-tv #moviesPage #recentlyAddedItems {
     padding-left: 1.5em;
 }
-
-
-
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     /* margin-top: -0.5em; */
     /* margin-bottom: -0.5em; */
@@ -213,26 +204,24 @@
 .layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
     padding-left: 2%;
 }
-
-
-
-
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
     padding-left: 0em;
     margin-top: -2em;
 }
-
-
-
 .layout-tv .detailPageSecondaryContainer {
     padding-top: 2em;
 }
-
-
 .layout-tv .detailPageSecondaryContainer .itemsContainer {
     align-items: flex-start;
     margin-right: -.5em;
+}
+
+/* NEW */
+
+.layout-tv .homePage .emby-scroller {
+    padding: 1.5em 1.5em 1.5em 1.5em;
+    margin: -.5em 0em -.5em 0;
 }
 
 
