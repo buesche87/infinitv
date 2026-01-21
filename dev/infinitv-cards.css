@@ -443,7 +443,12 @@
 --------------------------------------------------------------------------*/
 
 /* Cards */
-.layout-tv .itemsContainer-tv > .backdropCard,
+.layout-tv .itemsContainer-tv > .backdropCard  {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: .3em;
+    margin-left: .3em;
+}
 .layout-tv .itemsContainer-tv > .portraitCard {
     padding-bottom: 1em;
     padding-right: .5em;
@@ -470,13 +475,16 @@
     padding-top: .5em;
 }
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-    margin-bottom: 0;
-    margin-right: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: .3em;
+    margin-left: .3em;
 }
+/*
 .layout-tv #tvRecommendedPage .overflowPortraitCard {
     margin-top: 2vw;
     margin-bottom: 2.5vw;
-}
+}*/
 
 
 /* Person Cards */
@@ -852,7 +860,7 @@
         width: 18.8vw;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 23vw;
+        width: 22.9vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard,
     .layout-mobile .itemsContainer > .overflowSquareCard {

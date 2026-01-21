@@ -165,13 +165,13 @@
 
 /* emby-scroller */
 .layout-tv .homePage .emby-scroller {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0em;
+    padding-bottom: 0em;
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: .5em;
+    margin-left: 0;
     margin-right: .5em;
 }
 
@@ -180,8 +180,8 @@
 
 /* More from Season */
 .layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0em;
+    padding-bottom: 0em;
     padding-left: 1em;
     padding-right: 2em;
     margin: 0;
@@ -224,8 +224,20 @@
 }
 
 
-/* ItemsContainer */
-.layout-tv #suggestionsTab .verticalSection > .itemsContainer {
+
+
+/* TV Shows - Suggestions */
+.layout-tv #suggestionsTab .itemsContainer {
+    /* padding-top: 1.5em; */
+    /* padding-bottom: 1em; */
+    padding-left: 1em;
+    padding-right: 0em;
+    margin: 0;
+    margin-right: 1em;
+}
+
+/* TV Shows - Upcoming */
+.layout-tv #upcomingItems .itemsContainer  {
     padding-top: 1.5em;
     padding-bottom: 1em;
     padding-left: 1em;
@@ -234,16 +246,27 @@
     margin-right: 1em;
 }
 
-.layout-tv #suggestionsTab #nextUpItems,
-.layout-tv #suggestionsTab #latestEpisodesItems {
-    padding-top: 1em;
-    padding-bottom: .5em;
+/* TV Show - Genres */
+.layout-tv #items .itemsContainer {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 0em;
+    margin: 0;
+    margin-right: 1em;
 }
 
-.layout-tv #suggestionsTab #resumableItems {
-    padding-top: 1em;
-    padding-bottom: 1em;
+
+
+
+.layout-tv #suggestionsTab #resumableItems,
+.layout-tv #suggestionsTab #nextUpItems,
+.layout-tv #suggestionsTab #latestEpisodesItems {
+    /* padding-top: 1.5em; */
+    /* padding-bottom: .5em; */
 }
+
+
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
