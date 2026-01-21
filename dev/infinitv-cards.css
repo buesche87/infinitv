@@ -447,33 +447,40 @@
 /* Layout TV
 --------------------------------------------------------------------------*/
 
+/* Cards */
 .layout-tv .itemsContainer-tv > .backdropCard,
 .layout-tv .itemsContainer-tv > .portraitCard {
     padding-bottom: 2vh;
     padding-right: .5vw;
 }
-
 .layout-tv .itemsContainer-tv > .squareCard {
     padding-bottom: .5vh;
     padding-right: .25vw;
 }
-.layout-tv .itemsContainer-tv > .overflowPortraitCard {
-    margin-bottom: 1.5vw;
-    margin-right: 1vw;
-}
-.layout-tv .itemsContainer-tv > .overflowPortraitCard {
-    margin-bottom: 1.5vw;
-    margin-right: 1vw;
-}
-.layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-    margin-bottom: 0;
+.layout-tv #tvRecommendedPage .itemsContainer-tv > .backdropCard {
+    padding-bottom: 0;
+    padding-right: .5vw;
 }
 
+/* Overflow Cards */
+.layout-tv .itemsContainer-tv > .overflowPortraitCard {
+    margin-bottom: 1.5vw;
+    margin-right: 1vw;
+}
+.layout-tv .itemsContainer-tv > .overflowBackdropCard {
+    margin-bottom: 0;
+    margin-right: 1vw;
+}
+
+/* Person Cards */
 .layout-tv .personCard {
     margin-right: .25vw;
     margin-left: .25vw;
     margin-bottom: 0vw;
     font-size: 90% !important;
+}
+.layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
+    margin-bottom: 0;
 }
 
 /*
