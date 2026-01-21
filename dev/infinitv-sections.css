@@ -172,16 +172,23 @@
 
 /* emby-scroller */
 .layout-tv .emby-scroller {
-    padding: .5em;
+    padding: 0 .5em;
     margin: 0;
-    margin-right: .5em;
+    /* margin-right: .5em; */
 }
 
-/* More from Season */
-.layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller {
+.layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
+    padding-top: 1.25em;
+    padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 2em;
 }
+.layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowBackdropCard) {
+    padding-left: 1em;
+    padding-right: 2em;
+}
+
+
 
 /* More Like This */
 .layout-tv #similarCollapsible .emby-scroller {

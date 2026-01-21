@@ -274,10 +274,12 @@
 .layout-tv  .itemsContainer > .card > .cardBox {
     justify-content: center;
     margin: .5em;
+    padding: 0 5em;
 }
 
 .layout-tv .itemsContainer > .overflowBackdropCard .cardBox {
-    padding-right: 1vw !important;
+    padding-left: .5vw !important;
+    padding-right: .5vw !important;
 }
 
 
@@ -594,7 +596,7 @@
         width: 31.9%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 22.7vw;
+        width: 20.9vw;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
