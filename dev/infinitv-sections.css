@@ -172,8 +172,8 @@
 
 /* emby-scroller */
 .layout-tv .emby-scroller {
-    padding: 0 .5em;
-    margin: 0;
+    padding: 0;
+    margin: 0 .5em;
     /* margin-right: .5em; */
 }
 
@@ -184,10 +184,9 @@
     padding-right: 2em;
 }
 .layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowBackdropCard) {
-    padding-left: 1em;
-    padding-right: 2em;
+    /* padding-left: 1em; */
+    /* padding-right: 2em; */
 }
-
 
 
 /* More Like This */
@@ -210,34 +209,15 @@
 
 
 
-
-/* TV Shows - Suggestions */
-.layout-tv #suggestionsTab .itemsContainer {
-    padding-left: 1em;
-    padding-right: 0em;
-    margin: 0;
-    margin-right: 0em;
+.layout-tv .itemsContainer {
+    padding: 0;
 }
 
-/* TV Shows - Upcoming */
-.layout-tv #upcomingItems .itemsContainer  {
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 0em;
-    margin: 0;
-    margin-right: 1em;
+.layout-tv verticalSection .itemsContainer {
+    padding: 0;
 }
 
-/* TV Show - Genres */
-.layout-tv #items .itemsContainer {
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 0em;
-    margin: 0;
-    margin-right: 1em;
-}
+
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;

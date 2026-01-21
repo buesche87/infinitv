@@ -477,7 +477,7 @@
     margin-left: .3em;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard {
-    padding: .5em;
+    padding: 1.5em .8em;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
     padding: 1em .8em;
@@ -877,7 +877,7 @@
         width: 18.8vw;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 23.2vw;
+        width: 23vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard,
     .layout-mobile .itemsContainer > .overflowSquareCard {
@@ -890,7 +890,7 @@
         width: 16.66%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 25%;
+        width: 23vw;
     }
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
