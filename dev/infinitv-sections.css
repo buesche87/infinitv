@@ -166,13 +166,15 @@
 /* emby-scroller */
 .layout-tv .homePage .emby-scroller,
 .layout-tv .detailPageWrapperContainer .emby-scroller {
-    padding: 1.5em 0em 1.5em 1.5em;
-    margin: -.5em 1em -.5em 0;
-}
-.layout-tv .detailPageWrapperContainer .emby-scroller {
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 1em;
-    margin-right: 1em;
+    padding-right: 2em;
+    margin: 0;
+    margin-left: .5em;
+    margin-right: .5em;
 }
+
 .layout-tv #similarCollapsible .emby-scroller {
     padding-top: 2em;
 }
