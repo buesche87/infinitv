@@ -343,9 +343,10 @@
 }
 
 /* Background Colors: Transparent */
-.cardOverlayButton,
 .actionSheetMenuItem:focus,
+.cardOverlayButton,
 .cardOverlayButton:hover,
+.emby-collapsible-button:focus,
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
 .paper-icon-button-light:not(.alphaPickerButton):active {
