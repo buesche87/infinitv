@@ -16,12 +16,12 @@
 /* == Dev / Test File == */
 
 /* Load Stylesheets */
-@import url('https://buesche87.github.io/infinitv/infinitv-base.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-system.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-pages.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-sections.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-cards.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-player.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-base.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-system.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-pages.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-sections.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-cards.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-player.css');
 /* @import url('https://buesche87.github.io/infinitv/infinitv-mobile.css'); */
 
 /* Font */
