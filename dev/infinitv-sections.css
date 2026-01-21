@@ -179,7 +179,6 @@
 
 
 /* ItemsContainer */
-
 .layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
     padding-left: 2%;
     padding-top: 1.5em;
@@ -193,16 +192,8 @@
 .layout-tv #listChildrenCollapsible .itemsContainer {
     padding-bottom: 0em;
 }
-
-
-.layout-tv #suggestionsTab .itemsContainer {
+.layout-tv #tvRecommendedPage .itemsContainer {
     padding: .5em .5em .5em 1em;
-}
-
-.layout-tv #genresTab .itemsContainer {
-    padding-bottom: 0;
-    padding-left: 1em;
-    margin: 0em 1em 0em 0em;
 }
 
 
