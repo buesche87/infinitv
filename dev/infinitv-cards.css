@@ -460,6 +460,10 @@
     margin-bottom: 1.5vw;
     margin-right: 1vw;
 }
+.layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
+    margin-bottom: 0;
+}
+
 .layout-tv .personCard {
     margin-right: .25vw;
     margin-left: .25vw;

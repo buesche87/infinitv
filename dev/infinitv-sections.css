@@ -161,61 +161,6 @@
 /* Media Scroller: Layout TV
 --------------------------------------------------------------------------*/
 
-/* OLD
-.layout-tv .emby-scroller {
-    padding-left: 1.5em;
-    padding-right: 0;
-    margin-right: 1em;
-}
-.layout-tv #castCollapsible .emby-scroller,
-.layout-tv #guestCastCollapsible .emby-scroller {
-    padding-left: .75em;
-    padding-bottom: .25em;
-}
-.layout-tv .verticalSection-extrabottompadding .emby-scroller {
-    padding-top: 2em;
-}
-.layout-tv .padded-top-focusscale {
-    margin-top: 0.0em;
-    padding-top: 1.5em;
-}
-.layout-tv .padded-bottom-focusscale {
-    margin-bottom: -0.5em;
-    padding-bottom: 1.5em;
-}
-.layout-tv .homePage .padded-bottom-focusscale {
-    margin-top: -.5em;
-}
-.layout-tv #tvRecommendedPage .itemsContainer {
-    padding-top: 1.5em;
-    padding-bottom: .5em;
-} 
-.layout-tv #moviesPage #recentlyAddedItems {
-    padding-left: 1.5em;
-}
-.layout-tv .detailPagePrimaryContainer .itemsContainer {
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
-    padding-right: 0em;
-    padding-left: 1em;
-}
-
-.layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
-    padding-left: 2%;
-}
-.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
-    padding-right: 0em;
-    padding-left: 0em;
-    margin-top: -2em;
-}
-.layout-tv .detailPageSecondaryContainer {
-    padding-top: 2em;
-}
-.layout-tv .detailPageSecondaryContainer .itemsContainer {
-    align-items: flex-start;
-    margin-right: -.5em;
-} */
-
 /* NEW */
 
 .layout-tv .homePage .emby-scroller,
@@ -227,17 +172,22 @@
     padding-left: 1em;
     margin-right: 1em;
 }
+.layout-tv #similarCollapsible .emby-scroller {
+    padding-top: 2em;
+}
+
+
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
     padding-left: 2%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
     padding-left: 0em;
     margin-top: -1em;
 }
-
-
 
 
 /* Layout Desktop
