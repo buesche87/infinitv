@@ -4,11 +4,6 @@
 ===========================================================================
 */
 
-
-.layout-tv #childrenContent .itemsContainer-tv.vertical-wrap .card {
-    padding-bottom: .5em;
-}
-
 /* Cards */
 .itemsContainer > .portraitCard, 
 .itemsContainer > .squareCard {
