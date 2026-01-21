@@ -186,8 +186,8 @@
     padding-right: 2em;
     margin: 0;
     /* margin-bottom: 0; */
-    /* margin-left: 0; */
-    /* margin-right: 0; */
+    margin-left: .5em;
+    margin-right: .5em;
 }
 
 /* Cast & Crew */

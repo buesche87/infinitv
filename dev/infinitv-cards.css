@@ -472,6 +472,7 @@
 .layout-tv .itemsContainer-tv > .overflowPortraitCard {
     padding-bottom: .5em;
     padding-right: .5em;
+    padding-top: .5em;
 }
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
     margin-bottom: 0;
