@@ -161,6 +161,7 @@
 /* Media Scroller: Layout TV
 --------------------------------------------------------------------------*/
 
+/* OLD
 .layout-tv .emby-scroller {
     padding-left: 1.5em;
     padding-right: 0;
@@ -193,8 +194,6 @@
     padding-left: 1.5em;
 }
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
-    /* margin-top: -0.5em; */
-    /* margin-bottom: -0.5em; */
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     padding-right: 0em;
@@ -215,7 +214,7 @@
 .layout-tv .detailPageSecondaryContainer .itemsContainer {
     align-items: flex-start;
     margin-right: -.5em;
-}
+} */
 
 /* NEW */
 
@@ -223,6 +222,10 @@
 .layout-tv .detailPageWrapperContainer .emby-scroller {
     padding: 1.5em 1.5em 1.5em 1.5em;
     margin: -.5em 0em -.5em 0;
+}
+
+.layout-tv .homePage .itemsContainer {
+    margin-right: -1em;
 }
 
 
