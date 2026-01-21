@@ -239,7 +239,7 @@
 }
 
 /* Backgrounds: Dark 60% */
-.mediaDetailButtons .detailButton:focus,
+.mainDetailButtons .detailButton:focus,
 .listItem-largeImage:focus,
 .upNextDialog-button:focus {
     background: rgba(0, 0, 0, 0.6) !important;
@@ -478,6 +478,7 @@
 /* Border Colors: Accent 80% */ 
 .detail-button:focus,
 /* .emby-button:focus, */
+
 .favorite-button:focus {
     border-color: var(--accent80) !important;
 }
@@ -490,11 +491,14 @@
     }
 }
 
+.mainDetailButtons  .detailButton:focus {
+    border-color: var(--accent60) !important;
+}
+
 /* Border Colors: Transparent*/ 
 .actionSheetMenuItem,
 .actionSheetMenuItem:focus,
 .navMenuOption:focus,
-.mediaDetailButtons .detailButton:focus,
 .userPreferencesPage .listItem-border:focus,
 .listItem-border,
 .listTextButton-autohide {
