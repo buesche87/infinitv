@@ -189,6 +189,18 @@
     margin-top: -.5em;
 }
 
+
+.layout-tv #tvRecommendedPage .itemsContainer {
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+} 
+.layout-tv #moviesPage .emby-scroller {
+    padding-top: 1em;
+    padding-bottom: 0em;
+} 
+
+
+
 .layout-tv .detailPagePrimaryContainer .itemsContainer {
     /* margin-top: -0.5em; */
     /* margin-bottom: -0.5em; */
