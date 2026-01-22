@@ -520,6 +520,11 @@
     padding-bottom: 1em;
 }
 
+
+.layout-tv .detailPageSecondaryContainer {
+    padding-top: 2em
+}
+
 /*
 ===========================================================================
    Settings Page
