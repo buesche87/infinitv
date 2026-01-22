@@ -16,9 +16,10 @@
 .itemsContainer > .backdropCard {
     width: 50%;
 }
+/*
 .layout-mobile .itemsContainer > .backdropCard {
     width: 33.33%;
-}
+}*/
 /*
 .layout-tv .itemsContainer-tv > .portraitCard {
     width: 33.33%;
@@ -458,6 +459,7 @@
 @media(min-width: 25em) {
 
     /* Cards */
+    /*
     .layout-mobile .itemsContainer > .portraitCard {
         width: 33.33%;
     } 
@@ -466,9 +468,9 @@
     }
     .layout-mobile .itemsContainer > .backdropCard {
         width: 50%;
-    }
+    }*/
     
-    /* Overflow Cards */
+    /* Overflow Cards
     .layout-mobile .itemsContainer > .overflowPortraitCard {
         width: 50%;
     } 
@@ -477,7 +479,7 @@
     }
     .layout-mobile .itemsContainer > .overflowBackdropCard {
         width: 50%;
-    }
+    } */
 
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowBackdropCard {
         width: 50%;
@@ -498,22 +500,23 @@
     .itemsContainer > .portraitCard {
         width: 33.33%;
     } 
-    .itemsContainer > .backdropCard {
-        width: 33.33%;
-    }
     .itemsContainer > .squareCard{
         width: 25%;
     }
-    
+    .itemsContainer > .backdropCard {
+        width: 33.33%;
+    }
+    .layout-tv .itemsContainer-tv > .backdropCard {
+        width: 50%;
+    }
+
+    /*
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 33.33%;
     } 
     .layout-tv .itemsContainer-tv > .squareCard {
         width: 25%;
-    }  
-    .layout-tv .itemsContainer-tv > .backdropCard {
-        width: 50%;
-    }
+    }*/
 
     /* Overflow Cards */
     .itemsContainer > .overflowPortraitCard {
