@@ -50,7 +50,7 @@
     width: 43vw;
 }
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-    width: 43vw;
+    width: 46vw;
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard {
     width: 50%;
@@ -302,14 +302,14 @@
 
 
 .layout-tv  .itemsContainer > .card > .cardBox {
-    justify-content: center;
-    margin: .5em;
-    padding: 0 5em;
+    /* justify-content: center; */
+    margin: 0 .6em !important;
+    padding: 0 .6em !important;
 }
 
 .layout-tv .itemsContainer > .overflowBackdropCard .cardBox {
-    padding-left: .5vw !important;
-    padding-right: .5vw !important;
+    /* padding-left: .5vw !important; */
+    /* padding-right: .5vw !important; */
 }
 
 
@@ -489,7 +489,8 @@
 
 /* Overflow Cards */
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-    margin: 1em .3em;
+    margin: 1.5em .5em;
+    padding: 0em;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard {
     margin: 1.5em .8em;

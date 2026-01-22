@@ -173,7 +173,7 @@
 /* emby-scroller */
 .layout-tv .emby-scroller {
     padding: 0;
-    margin: 0 .5em;
+    margin: 0 1vw;
     /* margin-right: .5em; */
 }
 
