@@ -846,7 +846,7 @@
         width: 18.9vw;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 30.85vw;
+        width: 33.33%;
     }
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard {
         width: 16.66%;
@@ -931,7 +931,7 @@
         width: 16.66%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 23vw;
+        width: 33.33%;
     }
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard {
         width: 14.25%;
@@ -1048,6 +1048,10 @@
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard {
         width: 16.66%;
     }
+    .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+    
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
         width: 15.75%;
     }
@@ -1057,6 +1061,7 @@
     .layout-mobile .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
         width: 12.5%;
     }
+    
 
 
     /* Person Cards */
@@ -1151,7 +1156,7 @@
         width: 14.29%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 20%;
+        /* width: 20%; */
     }
 
     /* Person Cards */
@@ -1245,6 +1250,10 @@
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard {
         width: 15.5%;
     }
+    .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
+        width: 20%;
+    }
+
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
         width: 15.5%;
     }
@@ -1330,7 +1339,7 @@
         width: 13.4%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 16.3%;
+        width: 20%;
     }
 
     /* Person Cards */
@@ -1425,6 +1434,10 @@
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
         width: 11.5%;
     }
+    .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
+        width: 16.66%;
+    }
+
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
