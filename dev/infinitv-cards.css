@@ -1481,7 +1481,7 @@
 
     /* Overflow Cards on Media Pages */
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard {
-        width: 10.1%;
+        width: 10%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
         width: 10.1%;
