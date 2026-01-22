@@ -447,9 +447,7 @@
 --------------------------------------------------------------------------*/
 
 /* Cards */
-.layout-tv .itemsContainer-tv > .backdropCard  {
-    margin: 1em .3em;
-}
+.layout-tv .itemsContainer-tv > .backdropCard,
 .layout-tv .itemsContainer-tv > .portraitCard {
     padding: .5em;
 }
@@ -457,8 +455,6 @@
     padding-bottom: .5em;
     padding-right: .5em;
 }
-
-
 
 /* Overflow Cards */
 .layout-tv .itemsContainer-tv > .overflowBackdropCard {
@@ -479,7 +475,6 @@
 .layout-tv #moviesPage .itemsContainer-tv > .overflowPortraitCard {
     margin-top: .5em;
     margin-bottom: .5em;
-
 }
 .layout-tv #moviesPage .itemsContainer-tv > .overflowBackdropCard {
     margin-top: .5em;
@@ -757,7 +752,7 @@
         width: 20%;
     } 
     .layout-tv .itemsContainer-tv > .backdropCard {
-        width: 23vw;
+        width: 23.7vw;
     }
     .layout-mobile .itemsContainer > .portraitCard, 
     .layout-mobile .itemsContainer > .squareCard {

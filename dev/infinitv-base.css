@@ -128,14 +128,16 @@
 .playedIndicator,
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating,
-/* .layout-tv .card.show-animation:focus .cardText-first, */
-/* .layout-tv .card.show-animation:focus .cardText-secondary, */
 .listItem-button:focus h2.listItemBodyText,
 .listTextButton-autohide:focus,
 .upNextDialog-countdownText {
     color: var(--accent100) !important;
 }
 
+.emby-checkbox:focus + .checkboxLabel,
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused,
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
     font-weight: 500;
