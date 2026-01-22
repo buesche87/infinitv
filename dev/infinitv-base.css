@@ -491,7 +491,8 @@
     }
 }
 
-.mainDetailButtons .detailButton:focus,
+.layout-tv .itemsContainer-tv .listItem:focus,
+.layout-tv .mainDetailButtons .detailButton:focus,
 .layout-tv .itemsContainer > .listItem-largeImage:focus {
     border-color: var(--accent60) !important;
 }
@@ -526,6 +527,11 @@
 .upNextDialog-button:focus {
     box-shadow: var(--buttonglow) !important;
 }
+
+/*
+.layout-tv .itemsContainer-tv .listItem-focusscale:focus {
+    box-shadow: var(--deskcardglow) !important;
+} */
 
 /* No Shadows*/
 .cardPadder,

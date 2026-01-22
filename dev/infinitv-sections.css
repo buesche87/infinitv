@@ -212,6 +212,11 @@
 .layout-tv .itemsContainer {
     padding: 0;
 }
+.layout-tv #items .itemsContainer {
+    margin: 0;
+}
+
+
 
 .layout-tv verticalSection .itemsContainer {
     padding: 0;
