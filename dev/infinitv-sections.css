@@ -240,13 +240,9 @@
     padding-right: 2em;
 }
 
+
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
-    margin-top: -0.5em;
-    margin-bottom: -0.5em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-right: .5vw;
-    padding-left: .5vw;
+    padding: 1em;
 }
 
 /* Layout Mobile
