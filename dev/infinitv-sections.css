@@ -29,7 +29,8 @@
 }*/
 
 /* Stretch Seasons Scroller */
-.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
+.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
+.layout-desktop .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
     margin-left: -29vw;
     margin-bottom: -1.5em !important;
 }

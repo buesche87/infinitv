@@ -292,12 +292,14 @@
     }
 }
 
+
+
 /* Card Boxes */
-.layout-desktop .itemsContainer > .portraitCard > .cardBox,
-.layout-desktop .itemsContainer > .backdropCard > .cardBox,
-.layout-desktop .itemsContainer > .overflowBackdropCard > .cardBox,
-.layout-desktop .itemsContainer > .overflowPortraitCard > .cardBox {
+.layout-desktop .itemsContainer > .card > .cardBox {
     margin: 1em !important;
+}
+.layout-desktop .itemsContainer > .bannerCard > .cardBox {
+    margin: .5em 1em !important;
 }
 .layout-desktop .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
     margin: 2em 1.2em !important;
