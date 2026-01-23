@@ -1019,7 +1019,7 @@
 
     /* Overflow Cards in Primary Container */
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowPortraitCard {
-        width: 25%;
+        width: 16.66%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowSquareCard {
         width: 15.5%;
