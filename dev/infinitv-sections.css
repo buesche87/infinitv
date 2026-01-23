@@ -299,12 +299,12 @@
     margin-left: 1vw;
 }
 .layout-mobile .padded-top-focusscale {
-    margin-top: -0.5em;
-    padding-top: .75em;
+    /* margin-top: -0.5em; */
+    /* padding-top: .75em; */
 }
 .layout-mobile .padded-bottom-focusscale {
-    margin-bottom: -0.5em;
-    padding-bottom: .75em;
+    /* margin-bottom: -0.5em; */
+    /* padding-bottom: .75em; */
 }
 .layout-mobile .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;

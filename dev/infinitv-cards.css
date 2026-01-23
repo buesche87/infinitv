@@ -17,7 +17,7 @@
     width: 50%;
 }
 .layout-mobile .itemsContainer > .backdropCard {
-    width: 33.33%;
+    /* width: 33.33%; */
 }
 /*
 .layout-tv .itemsContainer-tv > .portraitCard {
@@ -497,11 +497,44 @@
         height: calc(23vw);
     }
 }
+
+@media(min-width: 35em) {
+
+    /* Cards */
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 33.33%;
+    }
+    
+    /* Overflow Cards */
+    .layout-mobile .itemsContainer > .overflowPortraitCard {
+        /* width: 33%; */
+    } 
+    .layout-mobile .itemsContainer > .overflowSquareCard {
+        width: 50%;
+    }
+    .layout-mobile .itemsContainer > .overflowBackdropCard {
+        /* width: 50%; */
+    }
+
+    .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowBackdropCard {
+        width: 50%;
+    }
+
+    /* Person Cards */
+    .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
+        width: 23vw;
+    }
+    .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
+        width:  calc(23vw - 1.75em);
+        height: calc(23vw);
+    }
+}
+
 @media(min-width: 43.75em) {
 
     /* Cards */
     .itemsContainer > .portraitCard {
-        width: 33.33%;
+        width: 25%;
     } 
     .itemsContainer > .backdropCard {
         width: 33.33%;
@@ -509,6 +542,10 @@
     .itemsContainer > .squareCard{
         width: 25%;
     }
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 25%;
+    }
+    
     
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 33.33%;
@@ -625,6 +662,7 @@
     .layout-mobile .itemsContainer > .squareCard {
         width: 20%;
     }
+
 
 
     /* Overflow Cards */
@@ -760,7 +798,7 @@
         width: 16.66%;
     }
     .layout-mobile .itemsContainer > .backdropCard {
-        width: 25%;
+        width: 20%;
     }
 
     /* Overflow Cards */
@@ -967,7 +1005,7 @@
         width: 14.25%;
     }
     .layout-mobile .itemsContainer > .backdropCard {
-        width: 20%;
+        width: 16.66%;
     }
 
     /* Overflow Cards */
@@ -1166,27 +1204,6 @@
         -webkit-line-clamp: 7;
     }
 }
-@media(min-width: 131.25em) {
-
-    /* Cards */
-    .layout-mobile .itemsContainer > .portraitCard {
-        width: 11.1%;
-    } 
-    .layout-mobile .itemsContainer > .squareCard {
-        width: 11.1%;
-    }
-    .layout-mobile .itemsContainer > .backdropCard {
-        width: 16.66%;
-    }
-    
-    /* Overflow Cards */
-    .layout-mobile .itemsContainer > .overflowPortraitCard {
-        width: 12.5%;
-    }
-    .layout-mobile .itemsContainer > .overflowSquareCard {
-        width: 12.5%;
-    }
-}
 @media(min-width: 135em) {
 
     /* Cards */
@@ -1201,7 +1218,16 @@
     }  
     .layout-tv .itemsContainer-tv > .squareCard {
         width: 12.5%;
-    }  
+    } 
+    .layout-mobile .itemsContainer > .portraitCard {
+        width: 11.1%;
+    } 
+    .layout-mobile .itemsContainer > .squareCard {
+        width: 11.1%;
+    }
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 14.25%;
+    }
 
     /* Overflow Cards */
     .itemsContainer > .overflowPortraitCard {
@@ -1219,7 +1245,12 @@
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
         width: 16.66%;
     }
-
+    .layout-mobile .itemsContainer > .overflowPortraitCard {
+        width: 12.5%;
+    }
+    .layout-mobile .itemsContainer > .overflowSquareCard {
+        width: 12.5%;
+    }
 
     /* Overflow Cards on Media Pages */
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard {
@@ -1307,6 +1338,15 @@
     .layout-tv .itemsContainer-tv > .backdropCard {
         width: 16.66%;
     }
+    .layout-mobile .itemsContainer > .portraitCard {
+        width: 10%;
+    }
+    .layout-mobile .itemsContainer > .squareCard {
+        width: 10%;
+    }
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 12.5%;
+    }
 
     /* Overflow Cards */
     .itemsContainer > .overflowPortraitCard {
@@ -1323,6 +1363,12 @@
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard {
         width: 12.5%;
+    }
+    .layout-mobile .itemsContainer > .overflowBackdropCard {
+        width: 11.15%;
+    }
+    .layout-mobile .itemsContainer > .overflowSmallBackdropCard {
+        width: 11.15%;
     }
 
     /* Overflow Cards on Media Pages */
@@ -1374,27 +1420,6 @@
         -webkit-line-clamp: 8;
     }
 }
-@media(min-width: 156.25em) {
-
-    /* Cards */
-    .layout-mobile .itemsContainer > .portraitCard {
-        width: 10%;
-    }
-    .layout-mobile .itemsContainer > .squareCard {
-        width: 10%;
-    }
-    .layout-mobile .itemsContainer > .backdropCard {
-        width: 14.25%;
-    }
-
-    /* Overflow Cards */
-    .layout-mobile .itemsContainer > .overflowBackdropCard {
-        width: 11.15%;
-    }
-    .layout-mobile .itemsContainer > .overflowSmallBackdropCard {
-        width: 11.15%;
-    }
-}
 @media(min-width: 175em) {
 
     /* Cards */
@@ -1409,7 +1434,10 @@
     }
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 11.1%;
-    }  
+    } 
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 11.1%;
+    }
 
     /* Overflow Cards */
     .itemsContainer > .overflowPortraitCard {
