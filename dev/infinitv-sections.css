@@ -66,15 +66,7 @@
     padding-bottom: 8px;
 }
 
-.layout-tv #tvRecommendedPage .sectionTitleContainer-cards {
-    /* margin-top: .5em; */
-    /* margin-bottom: .5em; */
-}
-
 /* Titles */
-.layout-tv .sectionTitle {
-    /* padding-left: 2% !important; */
-}
 .layout-tv .homePage .sectionTitleContainer-cards,
 .layout-tv .homePage .sectionTitle {
     text-align: center;
@@ -95,10 +87,18 @@
 /* Container */
 .layout-desktop .sectionTitleContainer-cards,
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.layout-desktop .homePage .sectionTitleContainer-cards,
+.layout-desktop .homePage div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding-left: 2.5%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 /* Titles */
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
@@ -107,6 +107,14 @@
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
     border-radius: 0;
 }
+
+
+.layout-desktop .libraryPage:not(.homePage) .sectionTitle-cards {
+    padding-left: 2vw;
+}
+
+
+
 
 /* Text & Icon */
 .sectionTitleTextButton > .sectionTitle,
@@ -204,9 +212,6 @@
 .layout-tv #items .itemsContainer {
     margin: 0;
 }
-.layout-tv verticalSection .itemsContainer {
-    padding: 0;
-}
 
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
@@ -241,10 +246,23 @@
 }
 
 
+.layout-desktop .itemsContainer {
+    padding: 0;
+}
+.layout-desktop .libraryPage:not(.homePage) .itemsContainer {
+    padding: .5em 1.5vw;
+}
+
+
+
+.layout-desktop #items .itemsContainer {
+    margin: 0;
+}
+
+
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
     padding: 0;
     margin: 0 1vw;
-    /* padding: 0.5vw; */
 }
 
 /* Layout Mobile

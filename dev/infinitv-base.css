@@ -615,6 +615,8 @@
 .backdrop-overlay,
 .layout-desktop .homePage .sectionTitleContainer-cards,
 .layout-desktop .homePage .sectionTitle-cards,
+.layout-desktop #tvRecommendedPage .sectionTitleContainer-cards,
+.layout-desktop #tvRecommendedPage .sectionTitle-cards,
 .navMenuOption {
     border-radius: 0 !important;
 }
