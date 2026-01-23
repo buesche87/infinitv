@@ -242,7 +242,9 @@
 
 
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
-    padding: 1em;
+    padding: 0;
+    margin: 0 1vw;
+    /* padding: 0.5vw; */
 }
 
 /* Layout Mobile

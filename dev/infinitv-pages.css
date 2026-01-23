@@ -477,6 +477,7 @@
 .layout-desktop .detailPagePrimaryContent {
     padding-top: 1em;
     padding-bottom: 1em;
+    /* padding-right: 3em; */
 }
 
 /* Media Details: Tracks & Subtitles */
