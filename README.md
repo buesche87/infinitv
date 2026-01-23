@@ -1,4 +1,4 @@
-This theme was created with a focus on HTPCs running jellyfin-desktop as client.
+This theme has its focus on HTPCs running jellyfin-desktop as client.
 
 - Minimalist UI optimized for remote and keyboard use
 - Customizable accent color, transparency, and background image
@@ -8,13 +8,12 @@ This theme was created with a focus on HTPCs running jellyfin-desktop as client.
 
 
 Optimal results:
-- *infinitv will look as intended starting with `Jellyfin Desktop v2.0.0`*
+- [Jellyfin Desktop v2.0.0](https://github.com/jellyfin/jellyfin-desktop/releases)
 - Set theme to `Dark`
 - Set display mode to `TV`
-- Activate Backdrops
 
 
-Give it *your* style by changing `:root` values:
+Give it your style by changing `:root` values:
 - `accent-h: 310` > use the `H` value from an HSL-color picker
 - Set your wallpaper with `bgImage: url("https://url.to/picture.jpg")`
 - set background darkness from `0.00` to `1.00`
@@ -31,7 +30,6 @@ Add the following to your custom branding:
 ```css
 /* Add to Custom CSS in Dashboard > Branding */
 @import url('https://buesche87.github.io/infinitv/infinitv.css');
-@import url('https://buesche87.github.io/infinitv/infinitv-cast.css');
 :root {
 
   /* Accent Color */
@@ -43,29 +41,15 @@ Add the following to your custom branding:
   --bgImage: url("https://wallpaperaccess.com/download/purple-galaxy-439751");
 
   /* Darkness & Opacity */
-  --bgdarkness: 0.6;    /* Background Darkness */
+  --bgdarkness:    0.6; /* Background Darkness */
   --headeropacity: 0.7; /* Header & Drawer Opacity */
-  --itemopacity: 0.8;   /* Item Opacity (Card Footer, Detail Ribbon) */
+  --itemopacity:   0.8; /* Item Opacity (Card Footer, Detail Ribbon) */
 
   /* Roundings */
   --rounding-media: 12px;
   --rounding-system: 6px;
 }
 ```
-
-
-## Stylesheet for Android App
-There is a stylesheet available that moves the menu-bar to the bottom and rearranges its buttons
-
-Add the following line before `root:`
-
-```CSS
-@import url('https://buesche87.github.io/infinitv/infinitv-mobile.css');
-```
-
-<img width="424" height="928" alt="mobile_bottom-bar" src="https://github.com/user-attachments/assets/947c6606-a480-48c5-8a6b-c152950d179b" />
-
-
 
 # Screenshots
 <img width="1944" height="1105" alt="home_focused" src="https://github.com/user-attachments/assets/280f081f-3475-4de1-82d8-133c62b229db" />
