@@ -101,19 +101,19 @@
 
 /* Person Cards */
 .itemsContainer > .overflowPortraitCard.personCard {
-    width: 22.6vw;
+    width: 22.1vw;
     font-size: 90% !important;
 }
 .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-    width:  calc(22.6vw - 1.75em);
-    height: calc(22.6vw);
+    width:  calc(21.95vw - 1.75em);
+    height: 21.95vw;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
     width: 23.15vw;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
     width:  calc(23.15vw - 1.75em);
-    height: calc(23.15vw);
+    height: 23.15vw;
 }
 
 /* .layout-tv .overflowPortraitCard.personCard {
@@ -299,11 +299,8 @@
 .layout-desktop .itemsContainer > .overflowPortraitCard > .cardBox {
     margin: 1em !important;
 }
-
-
 .layout-desktop .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
     margin: 2em 1.2em !important;
-
 }
 .layout-desktop .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
     margin: 1.5em 0 !important;
@@ -319,19 +316,28 @@
 }
 .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
     margin: 2em 1.2em !important;
-    /* text-align: center; */
 }
 .layout-tv  .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
     margin: 1.5em 0 !important;
 }
 
+
+
 .layout-mobile .itemsContainer .card > .cardBox {
-    /* margin: 1em .75em !important; */
     margin-left: .75em;
     margin-right: .75em;
     margin-bottom: .5em !important;
     margin-top: .75em !important;
 }
+
+
+
+
+/*
+===========================================================================
+   Cards: Animations
+===========================================================================
+*/ 
 
 /* Cards: Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
@@ -339,7 +345,7 @@
     transform: scale(1.1);
 }
 
-/* Card Text: Bold on Focus */
+/* Card Text: Bold on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
     font-weight: 600;
@@ -635,11 +641,11 @@
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 18.2vw;
+        width: 17.7vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(18.2vw - 1.75em);
-        height: calc(18.2vw);
+        width:  calc(17.3vw - 1.75em);
+        height: calc(17.3vw);
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
         width: 18.5vw;
@@ -757,11 +763,11 @@
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {
-        width: 15.2vw;
+        width: 14.55vw;
     }
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(15.2vw - 1.75em);
-        height: calc(15.2vw);
+        width:  calc(14.55vw - 1.75em);
+        height: 14.55vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
         width: 15.45vw;

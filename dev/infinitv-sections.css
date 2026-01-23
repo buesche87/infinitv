@@ -195,6 +195,8 @@
     margin-right: .5em;
 }
 
+
+
 .layout-tv .itemsContainer {
     padding: 0;
 }
@@ -213,16 +215,12 @@
 }
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
-    padding-left: 1em;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 1em;
+    padding: 0 1em;
 }
 
 .layout-tv #listChildrenCollapsible .itemsContainer.vertical-wrap {
     padding: 1em;
 }
-
 
 
 /* Layout Desktop
@@ -231,11 +229,7 @@
 /* scroller: default alignment */
 .layout-desktop .emby-scroller {
     padding: 0;
-    margin: 0 1.5em;
-    /* padding-left: 0; */
-    /* padding-right: 0; */
-    /* margin-right: 1.5em; */
-    /* margin-left: 1.5em; */
+    margin: 0 2vw;
 }
 
 .layout-desktop .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
@@ -244,7 +238,6 @@
     padding-left: 1em;
     padding-right: 2em;
 }
-
 
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
