@@ -106,8 +106,6 @@
 ===========================================================================
 */
 
-
-
 /* Library Pages: Alignment */
 .layout-tv .libraryPage {
     padding-top: 5em !important;
@@ -120,7 +118,6 @@
         padding-right: 2vw;
     }
 }
-
 
 .layout-tv .libraryPage .padded-right-withalphapicker,
 .layout-desktop .libraryPage .padded-right-withalphapicker {

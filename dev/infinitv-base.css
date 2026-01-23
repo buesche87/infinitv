@@ -310,6 +310,7 @@
 .clearLink,
 .clearLink > .emby-button,
 .emby-button,
+.emby-tab-button:focus,
 .listItem,
 .listItemBodyText,
 .listItemIcon,

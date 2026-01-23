@@ -111,6 +111,9 @@
     scrollbar-width: none;
 }
 
+.libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 5.5em !important;
+}
 /*
 ============================================================================
    Header & Section Tabs
