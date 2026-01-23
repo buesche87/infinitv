@@ -249,8 +249,12 @@
 .layout-desktop .itemsContainer {
     padding: 0;
 }
-.layout-desktop .libraryPage:not(.homePage) .itemsContainer {
-    padding: .5em 1.5vw;
+.layout-desktop #tvRecommendedPage .itemsContainer {
+    padding-left: 2%;
+    padding-right: 3%;
+}
+.layout-desktop .pageTabContent .itemsContainer:has(.listItem-border) {
+    padding: .5em 8%;
 }
 
 
