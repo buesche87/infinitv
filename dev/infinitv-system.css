@@ -137,18 +137,6 @@
     }
 }
 
-/*
-@media (min-width: 100em) {
-    .headerTop {
-        padding-top: .8em;
-        padding-bottom: .8em;
-    }
-    .sectionTabs {
-        margin-top: -3.4em;
-        padding-bottom: .7em;
-    }
-}*/
-
 /* Header: Size & Alignment */
 .layout-tv .skinHeader,
 .layout-desktop .skinHeader {
@@ -339,7 +327,7 @@
     text-decoration: none !important;
 }
 
-/* ClearLinks: Buttons with Link-Buttons inside (why...?)
+/* ClearLinks: Buttons with Link-Buttons inside
 --------------------------------------------------------------------------*/
 
 /* Clearlinks: Won't focus with remote > hide in TV layout */
@@ -450,7 +438,6 @@
     .layout-mobile .homeSectionsContainer {
         top: 78vh;
     }
-
     
     /* Header: Remove Logo */
     .layout-mobile .pageTitle {
@@ -488,7 +475,6 @@
         bottom: 4em;
     }
 
-
     /* Slides: Pause Button Placement */
     .layout-mobile .pause-button {
         top: 74vh;
@@ -516,8 +502,6 @@
     .layout-mobile .itemBackdrop {
         margin-top: 0rem;
     }
-
-
 
     /* Filter Bar */
     .layout-mobile .pageTabContent > .focuscontainer-x {

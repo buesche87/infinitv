@@ -529,11 +529,6 @@
     box-shadow: var(--buttonglow) !important;
 }
 
-/*
-.layout-tv .itemsContainer-tv .listItem-focusscale:focus {
-    box-shadow: var(--deskcardglow) !important;
-} */
-
 /* No Shadows*/
 .cardPadder,
 .cardBox,

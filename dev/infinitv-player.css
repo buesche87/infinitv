@@ -201,8 +201,6 @@
     background-color: var(--accent20) !important;
 }
 
-
-
 .layout-desktop .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     border: var(--buttonborder);
@@ -229,12 +227,9 @@
     border: none !important;
 }
 
-
-
 .layout-mobile .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: 1em;
-    /* padding-bottom: .25em; */
 }
 
 .layout-mobile .nowPlayingBarTop {
@@ -249,9 +244,8 @@
     border: none !important;
 }
 
-
 /* Footer */
-@media (max-width: 100em) {
+@media (max-width: 50em) {
 
     .nowPlayingBarPositionContainer {
         margin-right: .8em;
@@ -272,7 +266,7 @@
         display: none !important;
     }
 }
-@media (min-width: 100em) {
+@media (min-width: 50em) {
 
     .layout-mobile .appfooter {
         background: #0000;
