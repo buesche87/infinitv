@@ -583,17 +583,20 @@
         width: 50%;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 50%;
+        width: 33.33%;
     }
-    .layout-tv .itemsContainer-tv > .overflowBackdropCard {
-        width: 50%;
-    }
+    
+
     .layout-mobile .itemsContainer > .overflowPortraitCard {
         width: 25%;
     } 
     .layout-mobile .itemsContainer > .overflowSquareCard {
         width: 25%;
     }
+    .layout-tv .itemsContainer-tv > .overflowBackdropCard {
+        width: 50%;
+    }
+    
     .layout-mobile .itemsContainer > .overflowBackdropCard {
         width: 33.33%;
     }
@@ -691,8 +694,9 @@
         width: 33.33%;
     }
     .itemsContainer > .overflowBackdropCard {
-        width: 25%;
+        width: 33.33%;
     }
+    
     .layout-tv .itemsContainer-tv > .overflowPortraitCard {
         width:  25%;
     }
@@ -701,7 +705,8 @@
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
         width: 33.33%;
-    }   
+    }
+    
     .layout-mobile .itemsContainer > .overflowPortraitCard {
         width: 20%;
     }

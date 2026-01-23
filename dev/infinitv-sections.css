@@ -230,10 +230,12 @@
 
 /* scroller: default alignment */
 .layout-desktop .emby-scroller {
-    padding-left: 0;
-    padding-right: 0;
-    margin-right: 2vw;
-    margin-left: 2vw;
+    padding: 0;
+    margin: 0 1.5em;
+    /* padding-left: 0; */
+    /* padding-right: 0; */
+    /* margin-right: 1.5em; */
+    /* margin-left: 1.5em; */
 }
 
 .layout-desktop .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
