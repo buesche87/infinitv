@@ -252,7 +252,10 @@
     .emby-select-withcolor:not(:disabled):hover,
     .emby-textarea:not(:disabled):hover,
     .listItem-focusscale:hover,
-    .listItemImageButton:hover {
+    .listItemImageButton:hover,
+    .detail-button:hover,
+    .favorite-button:hover,
+    .play-button:hover {
         background: var(--bgdark60) !important;
     }
 }
@@ -264,12 +267,6 @@
 .emby-textarea:focus,
 .listItem-focusscale:focus {
     background: var(--bgdark80) !important;
-}
-@media (hover: hover) and (pointer: fine) {
-    .detail-button:hover,
-    .favorite-button:hover {
-        background: var(--bgdark80) !important;
-    }
 }
 
 /* Backgrounds: Accent
@@ -486,7 +483,10 @@
 /* Border Colors: Accent 60% */ 
 @media (hover: hover) and (pointer: fine) {
     .listItem-border:hover,
-    .listItem-largeImage:hover {
+    .listItem-largeImage:hover,
+    .detail-button:hover,
+    .favorite-button:hover,
+    .play-button:hover {
         border-color: var(--accent40) !important;
     }
 }

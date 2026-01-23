@@ -174,7 +174,6 @@
 .layout-tv .emby-scroller {
     padding: 0 .2vw;
     margin: 0 .5vw;
-    /* margin-right: .5em; */
 }
 
 .layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
@@ -182,16 +181,6 @@
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 2em;
-}
-.layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowBackdropCard) {
-    /* padding-left: 1em; */
-    /* padding-right: 2em; */
-}
-
-
-/* More Like This */
-.layout-tv #similarCollapsible .emby-scroller {
-    /* padding: 1em .5em; */
 }
 
 
@@ -206,22 +195,15 @@
     margin-right: .5em;
 }
 
-
-
-
 .layout-tv .itemsContainer {
     padding: 0;
 }
 .layout-tv #items .itemsContainer {
     margin: 0;
 }
-
-
-
 .layout-tv verticalSection .itemsContainer {
     padding: 0;
 }
-
 
 
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
@@ -230,7 +212,6 @@
     margin-top: -1em;
 }
 
-/* noch in gebrauch? */
 .layout-tv .detailPagePrimaryContainer .itemsContainer.vertical-wrap {
     padding-left: 1em;
     padding-top: 0;
@@ -251,22 +232,18 @@
 .layout-desktop .emby-scroller {
     padding-left: 0;
     padding-right: 0;
-    margin-right: 1vw;
-    margin-left: 1vw;
-}
-.layout-desktop .homePage .emby-scroller {
     margin-right: 2vw;
     margin-left: 2vw;
 }
 
-.layout-desktop .padded-top-focusscale {
-    margin-top: -0.5em;
-    padding-top: 1em;
-}
-.layout-desktop .padded-bottom-focusscale {
-    margin-bottom: -0.5em;
+.layout-desktop .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
+    padding-top: 1.25em;
     padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 2em;
 }
+
+
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
     margin-bottom: -0.5em;
@@ -297,14 +274,6 @@
     padding-right: 0;
     margin-right: 1vw;
     margin-left: 1vw;
-}
-.layout-mobile .padded-top-focusscale {
-    /* margin-top: -0.5em; */
-    /* padding-top: .75em; */
-}
-.layout-mobile .padded-bottom-focusscale {
-    /* margin-bottom: -0.5em; */
-    /* padding-bottom: .75em; */
 }
 .layout-mobile .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
