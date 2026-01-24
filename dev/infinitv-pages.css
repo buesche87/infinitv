@@ -157,8 +157,8 @@
 
 /* Library Pages with Alphapicker - Mobile */
 .layout-mobile .libraryPage .padded-right-withalphapicker {
-    padding-left: 3vw;
-    padding-right: 5vw;
+    padding-left: 2vw;
+    padding-right: 6vw;
 }
 @media(min-width: 48.125em) {
     .layout-mobile .libraryPage .padded-right-withalphapicker {

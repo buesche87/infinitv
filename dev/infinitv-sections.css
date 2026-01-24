@@ -145,7 +145,13 @@
 }
 @media(max-width: 48.125em) {
     .layout-mobile .homePage .sectionTitleContainer-cards, 
-    .layout-mobile .homePage :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    .layout-mobile .homePage :not(.sectionTitleContainer-cards) > .sectionTitle-cards,
+    .layout-mobile #tvRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #tvRecommendedPage :not(.sectionTitleContainer-cards) > .sectionTitle-cards,
+    .layout-mobile #moviesPage .sectionTitleContainer-cards, 
+    .layout-mobile #moviesPage :not(.sectionTitleContainer-cards) > .sectionTitle-cards
+    .layout-mobile #musicRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #musicRecommendedPage :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
         border-radius: 0 !important;
     }
 }
@@ -293,9 +299,17 @@
 .layout-mobile .itemsContainer {
     padding: 0;
 }
+
 .layout-mobile #tvRecommendedPage .itemsContainer {
     margin: 0 2vw;
 }
+
+.layout-mobile  #seriesTab .itemsContainer,
+.layout-mobile  #moviesTab .itemsContainer,
+.layout-mobile  #albumsTab .itemsContainer{
+    margin: 0;
+}
+
 .layout-mobile .pageTabContent .itemsContainer:has(.listItem-border) {
     padding: .5em 3% !important;
 }

@@ -236,9 +236,6 @@
     padding-top: .5em;
 }
 
-.layout-mobile .vertical-list .listItem-border {
-    border: var(--buttonborder) !important;
-}
 
 .layout-mobile .nowPlayingPageUserDataButtonsTitle .paper-icon-button-light  {
     border: none !important;
