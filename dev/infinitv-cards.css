@@ -537,6 +537,16 @@
         width: 33.33%;
     }
 
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 50%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard  {
@@ -647,6 +657,17 @@
     .itemsContainer > .overflowBackdropCard {
         width: 33.33%;
     }
+
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 33.33%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+
     
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
@@ -793,7 +814,17 @@
     .itemsContainer > .overflowBackdropCard {
         width: 25%;
     }
-    
+
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 33.33%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard,
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
@@ -927,6 +958,16 @@
         width: 25%;
     }
 
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 25%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard {
         width: 16.66%;
@@ -1054,6 +1095,17 @@
         width: 20%;
     }
 
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 25%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+
+    
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard {
         width: 16.66%;
@@ -1189,6 +1241,16 @@
         width: 16.66%;
     }
 
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 20%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard {
         width: 14.25%;
@@ -1302,6 +1364,16 @@
     }
     .itemsContainer > .overflowBackdropCard {
         width: 14.25%;
+    }
+
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 20%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
     }
 
     /* Overflow Cards - TV */
@@ -1438,6 +1510,16 @@
         width: 12.5%;
     }
 
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 16.66%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
+    }
+
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard {
         width: 12.5%;
@@ -1544,6 +1626,16 @@
     }
     .itemsContainer > .overflowBackdropCard {
         width: 11.1%;
+    }
+
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 16.66%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
     }
 
     /* Overflow Cards - TV */
@@ -1664,6 +1756,16 @@
     }
     .itemsContainer > .overflowBackdropCard {
         width: 11.11%;
+    }
+
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowPortraitCard {
+        width: 14.25%;
+    }
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowSquareCard {
+        width: 20%;
+    }
+   .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard {
+        width: 25%;
     }
 
     /* Overflow Cards - TV */
