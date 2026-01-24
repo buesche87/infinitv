@@ -6,7 +6,7 @@
 
 /* Poster Cards */
 .layout-tv #itemDetailPage:has(.listItem-largeImage) .detailImageContainer {
-    position: fixed;
+    /* position: fixed; */
 }
 .layout-desktop .detailImageContainer .portraitCard {
     max-width: 36em !important;
@@ -534,7 +534,7 @@
         width: 33.33%;
     } 
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
-        width: 33.33%;
+        width: 25%;
     } 
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
         width: 50%;
@@ -641,7 +641,7 @@
         width: 25%;
     }
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
-        width: 25%;
+        width: 20%;
     }
     .layout-tv .itemsContainer-tv > .overflowBackdropCard {
         width: 33.33%;
@@ -789,7 +789,7 @@
         width: 20%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 20%;
+        width: 16.66%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 33.33%;
@@ -924,7 +924,7 @@
         width: 20%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 20%;
+        width: 14.25%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 25%;
@@ -1059,7 +1059,7 @@
         width: 16.66%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 16.66%;
+        width: 12.5%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 25%;
@@ -1195,7 +1195,7 @@
         width: 14.25%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 14.25%;
+        width: 11.11%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 25%;
@@ -1318,7 +1318,7 @@
         width: 14.25%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 14.25%;
+        width: 10%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 25%;
@@ -1453,7 +1453,7 @@
         width: 12.5%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 12.5%;
+        width: 9.09%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 20%;
@@ -1554,7 +1554,7 @@
         width: 11.1%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 11.1%;
+        width: 8.33%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 16.66%;
@@ -1670,7 +1670,7 @@
         width: 10%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-        width: 10%;
+        width: 8.33%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
         width: 14.25%;

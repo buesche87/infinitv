@@ -452,7 +452,7 @@
     }
 }
 
-/* Media Pages: Primary Content
+/* Media Pages: Content
 --------------------------------------------------------------------------*/
 
 /* Media Details: Primary Content */
@@ -472,6 +472,19 @@
 .layout-desktop .detailPagePrimaryContent {
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+.layout-mobile .detailPagePrimaryContent,
+.layout-mobile .detailPageSecondaryContainer .detailPageContent {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+
+.layout-mobile .detailPagePrimaryContent .trackSelections,
+.layout-mobile .detailPagePrimaryContent .detailSectionContent,
+.layout-mobile .detailPagePrimaryContent .itemDetailsGroup {
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
 }
 
 /* Media Details: Tracks & Subtitles */

@@ -163,44 +163,46 @@
 .layout-tv .nowPlayingPageImageContainer {
     margin-right: 1.5em;
 }
-
 .layout-tv .nowPlayingButtonsContainer {
     margin-top: .5em;
 }
 
-.layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
-    border: none !important;
-    background: #0000 !important;
+/* Fix seekbar jumping around */
+.layout-tv .nowPlayingInfoControls .positionTime {
+    width: 2em;
 }
 
-.layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
-    -webkit-transform: none !important;
-    transform: none !important;
-}
-
+/* playlist */
 .layout-tv .playlistSectionButton {
     margin-bottom: .5em;
 }
-
-.layout-tv .playlistSectionButton .paper-icon-button-light {
-    -webkit-transform: none !important;
-    transform: none !important;
-}
-
 .layout-desktop .listViewUserDataButtons .listItemButton {
     margin-right: .1em;
     margin-left: .1em;
     border: none !important;
 }
-
 .layout-desktop .listViewUserDataButtons {
     margin-right: .5em;
 }
-
 .layout-desktop .listViewUserDataButtons .listItemButton:hover {
     background-color: var(--accent20) !important;
 }
 
+/* playlist buttons: no animations */
+.layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
+    border: none !important;
+    background: #0000 !important;
+}
+.layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+.layout-tv .playlistSectionButton .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* now playing bar */
 .layout-desktop .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     border: var(--buttonborder);
@@ -208,35 +210,27 @@
     padding-top: 1em;
     padding-bottom: .25em;
 }
-
 .layout-desktop .nowPlayingBarTop {
     padding-top: .5em;
     padding-bottom: .2em;
 }
-
 .layout-desktop .nowPlayingBarPositionContainer {
         margin-right: .8em;
         margin-left: .8em;
 }
-
 .layout-desktop .nowPlayingBarInfoContainer {
     margin-left: .6em;
 }
-
 .layout-desktop .nowPlayingBarUserDataButtons .mediaButton {
     border: none !important;
 }
-
 .layout-mobile .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: 1em;
 }
-
 .layout-mobile .nowPlayingBarTop {
     padding-top: .5em;
 }
-
-
 .layout-mobile .nowPlayingPageUserDataButtonsTitle .paper-icon-button-light  {
     border: none !important;
 }

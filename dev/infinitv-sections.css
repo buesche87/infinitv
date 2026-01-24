@@ -167,52 +167,19 @@
 /* Media Scroller: Layout TV
 --------------------------------------------------------------------------*/
 
-.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
-    margin-top: -3vh;
-}
-
 /* Emby Scroller */
 .layout-tv .emby-scroller {
     padding: 0;
     margin: 0 .5vw;
 }
 
+/* More From Section with Portrait Cards
 .layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
     padding-top: 1.25em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 2em;
-}
-
-/*
-.layout-tv .recommendations .emby-scroller {
-    padding-top: 1.5em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    padding-right: 2em;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: .5em;
-    margin-right: .5em;
-}
-*/
-
-/* Items Container */
-.layout-tv .itemsContainer {
-    padding: 0;
-}
-.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
-    padding-right: 0em;
-    padding-left: 0em;
-    margin-top: -1em;
-}
-
-.layout-tv #favoritesTab .verticalSection > .itemsContainer,
-.layout-tv #tvRecommendedPage .verticalSection > .itemsContainer,
-.layout-tv #moviesPage .verticalSection > .itemsContainer,
-.layout-tv #albumsPage .verticalSection > .itemsContainer {
-    margin: .5vw 1vw;
-}
+} */
 
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
@@ -221,12 +188,33 @@
     margin: .5vw 1vw;
 }
 
-
+/* Items Container */
+.layout-tv .itemsContainer {
+    padding: 0;
+}
+.layout-tv #favoritesTab .verticalSection > .itemsContainer,
+.layout-tv #tvRecommendedPage .verticalSection > .itemsContainer,
+.layout-tv #moviesPage .verticalSection > .itemsContainer,
+.layout-tv #albumsPage .verticalSection > .itemsContainer {
+    margin: .5vw 1vw;
+}
 .layout-tv #seriesTab .itemsContainer,
 .layout-tv #moviesTab .itemsContainer,
 .layout-tv #albumsTab .itemsContainer{
     margin: 0;
 }
+
+/* Items Container with listItems */
+.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
+    padding-right: 0em;
+    padding-left: 0em;
+    margin-top: -1em;
+}
+
+.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
+    margin-top: -3vh;
+}
+
 
 
 /* Layout Desktop
@@ -237,6 +225,8 @@
     padding: 0;
     margin: .5vw 2vw;
 }
+
+/* Emby Scroller with Overflow Portrait Cards */
 .layout-desktop .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
     padding-top: 1.25em;
     padding-bottom: 1em;
@@ -248,58 +238,40 @@
 .layout-desktop .itemsContainer {
     padding: 0;
 }
-/*
-.layout-desktop #tvRecommendedPage .itemsContainer {
-    padding-left: 3vw;
-    padding-right: 3vw;
-    padding: .5vw 2vw;
-}*/
-
 .layout-desktop #favoritesTab .verticalSection > .itemsContainer,
 .layout-desktop #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-desktop #moviesPage .verticalSection > .itemsContainer,
 .layout-desktop #albumsPage .verticalSection > .itemsContainer {
     margin: .5vw 2vw;
 }
-
 .layout-desktop #favoritesTab .verticalSection > .emby-scroller,
 .layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,
 .layout-desktop #moviesPage .verticalSection > .emby-scroller,
 .layout-desktop #albumsPage .verticalSection > .emby-scroller {
     margin: .5vw 1vw;
 }
-
-.layout-desktop #studiosTab {
-    padding: 0 2vw;
-}
-
-
-.layout-desktop .pageTabContent .itemsContainer:has(.listItem-border) {
-    padding: .5em 8% !important;
-}
 .layout-desktop #items .itemsContainer {
     margin: 0;
 }
+
+/* Items Container Primary Content */
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
     padding: 0;
     margin: 0 1vw;
 }
 
+/* Items Container with listItems */
+.layout-desktop .pageTabContent .itemsContainer:has(.listItem-border) {
+    padding: .5em 8% !important;
+}
+
+/* Studios Tab workaround */
+.layout-desktop #studiosTab {
+    padding: 0 2vw;
+}
+
 /* Layout Mobile
 --------------------------------------------------------------------------*/
-
-.layout-mobile .detailPagePrimaryContent,
-.layout-mobile .detailPageSecondaryContainer .detailPageContent {
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-
-.layout-mobile .detailPagePrimaryContent .trackSelections,
-.layout-mobile .detailPagePrimaryContent .detailSectionContent,
-.layout-mobile .detailPagePrimaryContent .itemDetailsGroup {
-    padding-left: 2vw !important;
-    padding-right: 2vw !important;
-}
 
 /* Emby Scroller */
 .layout-mobile .emby-scroller {
@@ -311,20 +283,19 @@
 .layout-mobile .itemsContainer {
     padding: 0;
 }
-
 .layout-mobile #favoritesTab .itemsContainer,
 .layout-mobile #tvRecommendedPage .itemsContainer,
 .layout-mobile #moviesPage .itemsContainer,
 .layout-mobile #albumsPage .itemsContainer {
     margin: 0 2vw;
 }
-
-.layout-mobile  #seriesTab .itemsContainer,
-.layout-mobile  #moviesTab .itemsContainer,
-.layout-mobile  #albumsTab .itemsContainer{
+.layout-mobile #seriesTab .itemsContainer,
+.layout-mobile #moviesTab .itemsContainer,
+.layout-mobile #albumsTab .itemsContainer{
     margin: 0;
 }
 
+/* Items Container with listItems */
 .layout-mobile .pageTabContent .itemsContainer:has(.listItem-border) {
     padding: .5em 3% !important;
 }
