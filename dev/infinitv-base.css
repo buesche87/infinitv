@@ -84,40 +84,38 @@
 
 /* Text Colors: Accent 80% */
 #loginPage .cardImage,
-.Mui-selected,
-.navMenuOption-selected,
+.actionSheetMenuItem:hover,
+.button-link:hover,
 .detailButton:focus,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio__button:focus + .mdl-radio__circles + .mdl-radio__label {
+.emby-collapsible-button:hover,
+.emby-textarea:hover + .textareaLabel,
+.emby-checkbox:hover + .checkboxLabel,
+.favorite-button:hover,
+.listTextButton-autohide:hover,
+.navMenuOption-selected,
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+.mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+.Mui-selected,
+.overview-expand:hover {
     color: var(--accent80) !important;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .actionSheetMenuItem:hover,
-    .button-link:hover,
-    .emby-collapsible-button:hover,
-    .emby-textarea:hover + .textareaLabel,
-    .emby-checkbox:hover + .checkboxLabel,
-    .favorite-button:hover,
-    .listTextButton-autohide:hover,
-    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
-    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
-    .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
-    .overview-expand:hover {
-        color: var(--accent80) !important;
-    }
-}
-
 /* Text Colors: Accent 100% */
+.cardOverlayButton:hover,
+.detailButton:hover,
+.emby-button:hover,
 .emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
+.favorite-button:hover,
 .header-right .headerButton:active,
+.listItem-border:hover,
 .listItem-border:focus,
 .listItemIcon.check,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-slider,
+.paper-icon-button-light:not(:disabled):hover,
 .paper-icon-button-light:focus,
 .paper-icon-button-light:active,
 .syncPlayIconCircle,
@@ -134,6 +132,12 @@
     color: var(--accent100) !important;
 }
 
+/* Text Colors: White */
+.layout-mobile .overview-expand:focus {
+    color: white !important;
+}
+
+/* Text: Bold */
 .emby-checkbox:focus + .checkboxLabel,
 .inputLabelFocused,
 .selectLabelFocused,
@@ -141,21 +145,6 @@
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
     font-weight: 500;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .cardOverlayButton:hover,
-    .detailButton:hover,
-    .emby-button:hover,
-    .favorite-button:hover,
-    .listItem-border:hover,
-    .paper-icon-button-light:not(:disabled):hover {
-        color: var(--accent100) !important;
-    }
-}
-
-.layout-mobile .overview-expand:focus {
-    color: white !important;
 }
 
 /*
@@ -178,6 +167,7 @@
 .videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
+
 .cardFooter:not(.visualCardBox-cardFooter),
 .layout-desktop .detailRibbon,
 .layout-mobile .detailRibbon {
@@ -201,64 +191,54 @@
 --------------------------------------------------------------------------*/
 
 /* Backgrounds: Dark 20% */
+.button-submit:hover,
 .detail-button,
+.emby-button.block:hover,
 .favorite-button,
 .itemsContainer > .listItem-focusscale,
-.play-button {
+.play-button,
+.raised:hover  {
     background: var(--bgdark20) !important;
-}
-@media (hover: hover) and (pointer: fine) {
-    .button-submit:hover,
-    .emby-button.block:hover,
-    .raised:hover {
-        background: var(--bgdark20) !important;
-    }
 }
 
 /* Backgrounds: Dark 40% */
+.cardOverlayButton.cardOverlayFab-primary:hover,
 .checkboxOutline,
+.detailButton:hover,
 .emby-button:focus,
 .emby-input,
 .emby-textarea,
 .emby-select,
 .itemProgressBar,
 .itemsViewSettingsContainer,
+.listItem-border:hover,
+.listItem-largeImage:hover,
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus),
 .paperList,
 .pageTabContent > .focuscontainer-x,
+.upNextDialog-button:hover,
 #loginPage .padded-left.padded-right.padded-bottom-page {
     background: var(--bgdark40) !important;
 }
-@media (hover: hover) and (pointer: fine) {
-    .cardOverlayButton.cardOverlayFab-primary:hover,
-    .detailButton:hover,
-    .listItem-border:hover,
-    .listItem-largeImage:hover,
-    .upNextDialog-button:hover {
-        background: var(--bgdark40) !important;
-    }
-}
+
 
 /* Backgrounds: Dark 60% */
-.mainDetailButtons .detailButton:focus,
+.detail-button:hover,
+.checkboxOutline:not(:disabled):hover,
+.emby-input:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.favorite-button:hover,
+.listItem-focusscale:hover,
 .listItem-largeImage:focus,
+.listItemImageButton:hover,
+.mainDetailButtons .detailButton:focus,
+.play-button:hover,
 .upNextDialog-button:focus {
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: var(--bgdark60) !important;
 }
-@media (hover: hover) and (pointer: fine) {
-    .checkboxOutline:not(:disabled):hover,
-    .emby-input:not(:disabled):hover,
-    .emby-select-withcolor:not(:disabled):hover,
-    .emby-textarea:not(:disabled):hover,
-    .listItem-focusscale:hover,
-    .listItemImageButton:hover,
-    .detail-button:hover,
-    .favorite-button:hover,
-    .play-button:hover {
-        background: var(--bgdark60) !important;
-    }
-}
+
 
 /* Backgrounds: Dark 80% */
 .checkboxOutline:focus,
@@ -272,14 +252,14 @@
 /* Backgrounds: Accent
 --------------------------------------------------------------------------*/
 
+/* Backgrounds: Accent 20% */
+.paper-icon-button-light:not(:disabled):hover {
+    background: var(--accent20);
+}
+
 /* Backgrounds: Accent 40% */
-@media (hover: hover) and (pointer: fine) {
-    .paper-icon-button-light:not(:disabled):hover {
-        background: var(--accent20);
-    }
-    .emby-select option:hover {
-        background: var(--accent40) !important;
-    }
+.emby-select option:hover {
+    background: var(--accent40) !important;
 }
 
 /* Backgrounds: Accent 80% */
@@ -309,12 +289,15 @@
 .collapseContent,
 .clearLink,
 .clearLink > .emby-button,
+.clearLink > .emby-button:hover,
+.collapseContent .listItem:hover,
 .emby-button,
 .emby-tab-button:focus,
 .listItem,
 .listItemBodyText,
 .listItemIcon,
 .listTextButton-autohide,
+.navMenuOption:hover,
 .userPreferencesPage .listItem-border:focus,
 .material-icons,
 .overview-expand:focus,
@@ -324,22 +307,12 @@
     background: #0000 !important;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .collapseContent .listItem:hover,
-    .clearLink > .emby-button:hover,
-    .navMenuOption:hover {
-        background: #0000 !important;
-    }
-}
-
 /* Backgrounds Colors
 --------------------------------------------------------------------------*/
 
 /* Background Colors: Accent 20% */
-@media (hover: hover) and (pointer: fine) {
-    .headerButton:hover {
-        background-color: var(--accent20) !important;
-    }
+.headerButton:hover {
+    background-color: var(--accent20) !important;
 }
 
 /* Background Colors: Transparent */
@@ -401,16 +374,14 @@
 }
 
 /* Borders: Accent 40% */
-@media (hover: hover) and (pointer: fine) {
-    .checkboxOutline:not(:disabled):hover,
-    .emby-checkbox:hover + span + .checkboxOutline,
-    .emby-input:not(:disabled):hover,
-    .emby-textarea:not(:disabled):hover,
-    .emby-select-withcolor:not(:disabled):hover,
-    .imagePlaceHolder:hover,
-    .listItem-focusscale:hover {
-        border: 2px solid var(--accent40) !important;
-    }
+.checkboxOutline:not(:disabled):hover,
+.emby-checkbox:hover + span + .checkboxOutline,
+.emby-input:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.imagePlaceHolder:hover,
+.listItem-focusscale:hover {
+    border: 2px solid var(--accent40) !important;
 }
 
 /* Borders: Accent 80% */
@@ -432,10 +403,8 @@
 }
 
 /* Borders: 1px - Accent 80% */
-@media (hover: hover) and (pointer: fine) {
-    .navMenuOption:hover {
-        border: solid 1px var(--accent60) !important;
-    }
+.navMenuOption:hover {
+    border: solid 1px var(--accent60) !important;
 }
 
 /* Borders: 1px - Transparent */
@@ -449,14 +418,11 @@
 .clearLink,
 .cardOverlayButton,
 .emby-tab-button,
+.layout-mobile .listItemButton,
 .indicator,
 .overview-expand,
 .sectionTitleTextButton,
 .skip-button {
-    border: none !important;
-}
-
-.layout-mobile .listItemButton {
     border: none !important;
 }
 
@@ -475,27 +441,26 @@
 ============================================================================
 */
 
-/* Border Colors: Accent 80% */ 
-.detail-button:focus,
-.favorite-button:focus {
-    border-color: var(--accent80) !important;
+/* Border Colors: Accent 40% */ 
+.listItem-border:hover,
+.listItem-largeImage:hover,
+.detail-button:hover,
+.favorite-button:hover,
+.play-button:hover {
+    border-color: var(--accent40) !important;
 }
 
 /* Border Colors: Accent 60% */ 
-@media (hover: hover) and (pointer: fine) {
-    .listItem-border:hover,
-    .listItem-largeImage:hover,
-    .detail-button:hover,
-    .favorite-button:hover,
-    .play-button:hover {
-        border-color: var(--accent40) !important;
-    }
-}
-
 .layout-tv .itemsContainer-tv .listItem:focus,
 .layout-tv .mainDetailButtons .detailButton:focus,
 .layout-tv .itemsContainer > .listItem-largeImage:focus {
     border-color: var(--accent60) !important;
+}
+
+/* Border Colors: Accent 80% */ 
+.detail-button:focus,
+.favorite-button:focus {
+    border-color: var(--accent80) !important;
 }
 
 /* Border Colors: Transparent*/ 
