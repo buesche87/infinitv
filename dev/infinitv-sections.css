@@ -182,6 +182,10 @@
 /* Media Scroller: Layout TV
 --------------------------------------------------------------------------*/
 
+.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
+    margin-top: -3vh;
+}
+
 /* Emby Scroller */
 .layout-tv .emby-scroller {
     padding: 0 .2vw;
@@ -225,6 +229,7 @@
 .layout-tv #listChildrenCollapsible .itemsContainer.vertical-wrap {
     padding: 1em;
 }
+
 
 
 /* Layout Desktop
@@ -290,24 +295,23 @@
     padding: 0;
 }
 .layout-mobile #tvRecommendedPage .itemsContainer {
-    /* padding-left: 3vw; */
-    /* padding-right: 3vw; */
-    /* padding: .5vw 2vw; */
     margin: 0 2vw;
 }
+.layout-mobile .pageTabContent .itemsContainer:has(.listItem-border) {
+    padding: .5em 3% !important;
+}
 
+/*
 .layout-mobile .detailPagePrimaryContainer .itemsContainer {
     margin-top: -0.5em;
     margin-bottom: -0.5em;
     padding-top: .75em;
     padding-bottom: .75em;
-}
+} */
 
-/* Specific Elements */
+/* Specific Elements
 .layout-mobile #castContent,
 .layout-mobile #guestCastContent {
     padding-left: 0em;
-}
-.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
-    margin-top: -3vh;
-}
+} */
+
