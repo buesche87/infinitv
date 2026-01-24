@@ -5,9 +5,6 @@
 */
 
 /* Poster Cards */
-.layout-tv #itemDetailPage:has(.listItem-largeImage) .detailImageContainer {
-    /* position: fixed; */
-}
 .layout-desktop .detailImageContainer .portraitCard {
     max-width: 36em !important;
 }
@@ -259,37 +256,13 @@
 ===========================================================================
 */
 
-/* CardBox - Desktop */
+/* CardBox */
 .layout-desktop .itemsContainer > .card > .cardBox {
     margin: 1em !important;
 }
-.layout-desktop .itemsContainer > .bannerCard > .cardBox {
-    margin: .75em 1em !important;
-}
-.layout-desktop .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
-    margin: 2em 1em !important;
-}
-.layout-desktop .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
-    margin: 1.5em 0 !important;
-}
-
-/* CardBox - TV */
 .layout-tv  .itemsContainer > .card > .cardBox {
     margin: 1.5em 1.2em !important;
 }
-
-.layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
-.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox{
-    margin-top: 2em !important;
-    margin-bottom: 1em !important;
-}
-
-
-.layout-tv  .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
-    margin: 1.5em 0 !important;
-}
-
-/* CardBox - Mobile */
 .layout-mobile .itemsContainer .card > .cardBox {
     margin-left: .75em;
     margin-right: .75em;
@@ -297,10 +270,33 @@
     margin-top: .75em !important;
 }
 
-/* CardsBox: Zoom on Focus (TV) */
+/* CardBox: Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+/* CardBox: Banner Card */
+.layout-desktop .itemsContainer > .bannerCard > .cardBox {
+    margin: .75em 1em !important;
+}
+
+/* CardBox: Overflow Portrait Card */
+.layout-desktop .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
+    margin: 2em 1em !important;
+}
+.layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
+.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox{
+    margin-top: 2em !important;
+    margin-bottom: 1em !important;
+}
+
+/* CardBox: Person Card */
+.layout-desktop .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
+    margin: 1.5em 0 !important;
+}
+.layout-tv  .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
+    margin: 1.5em 0 !important;
 }
 
 /*
@@ -375,7 +371,7 @@
 
 /*
 ===========================================================================
-   Cards: Indicators
+   Cards: Indicators & Progressbar
 ===========================================================================
 */
 
@@ -419,12 +415,6 @@
     padding: .5em;
 }
 
-/*
-===========================================================================
-   Cards: Progressbar
-===========================================================================
-*/
-
 /* Card Progressbar: Background */
 .itemProgressBar {
     height: .4em !important;
@@ -455,11 +445,6 @@
     .layout-mobile .itemsContainer > .backdropCard {
         width: 33.33%;
     }
-    
-    /* Overflow Cards */
-    /* .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 50%;
-    } */
 
     /* Overflow Cards - Mobile */
     .layout-mobile .itemsContainer > .overflowPortraitCard {
@@ -1238,7 +1223,9 @@
 @media(min-width: 135em) {
 
     /* Cards */
-    .itemsContainer > .portraitCard,
+    .itemsContainer > .portraitCard {
+        width: 11.1%;
+    } 
     .itemsContainer > .squareCard {
         width: 11.1%;
     } 
