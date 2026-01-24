@@ -115,6 +115,11 @@
     }
 }
 
+
+.layout-mobile .homeSectionsContainer {
+    top: 73vh;
+}
+
 /*
 ===========================================================================
    Library Pages

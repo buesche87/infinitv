@@ -96,14 +96,12 @@
     padding-left: 3vw;
 }
 
-
 /* Text & Icon */
 .sectionTitleTextButton > .sectionTitle,
 .sectionTitleTextButton > .material-icons {
     padding: 0;
     margin: 0;
 }
-
 
 .layout-desktop h2.sectionTitle {
     font-weight: 600;
@@ -186,6 +184,7 @@
     padding-right: 2em;
 }
 
+/*
 .layout-tv .recommendations .emby-scroller {
     padding-top: 1.5em;
     padding-bottom: 1em;
@@ -196,19 +195,39 @@
     margin-left: .5em;
     margin-right: .5em;
 }
+*/
 
 /* Items Container */
 .layout-tv .itemsContainer {
     padding: 0;
-}
-.layout-tv #items .itemsContainer {
-    margin: 0;
 }
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
     padding-left: 0em;
     margin-top: -1em;
 }
+
+.layout-tv #favoritesTab .verticalSection > .itemsContainer,
+.layout-tv #tvRecommendedPage .verticalSection > .itemsContainer,
+.layout-tv #moviesPage .verticalSection > .itemsContainer,
+.layout-tv #albumsPage .verticalSection > .itemsContainer {
+    margin: .5vw 1vw;
+}
+
+.layout-tv #favoritesTab .verticalSection > .emby-scroller,
+.layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
+.layout-tv #moviesPage .verticalSection > .emby-scroller,
+.layout-tv #albumsPage .verticalSection > .emby-scroller {
+    margin: .5vw 1vw;
+}
+
+
+.layout-tv #seriesTab .itemsContainer,
+.layout-tv #moviesTab .itemsContainer,
+.layout-tv #albumsTab .itemsContainer{
+    margin: 0;
+}
+
 
 /* Layout Desktop
 --------------------------------------------------------------------------*/
@@ -229,11 +248,32 @@
 .layout-desktop .itemsContainer {
     padding: 0;
 }
+/*
 .layout-desktop #tvRecommendedPage .itemsContainer {
     padding-left: 3vw;
     padding-right: 3vw;
     padding: .5vw 2vw;
+}*/
+
+.layout-desktop #favoritesTab .verticalSection > .itemsContainer,
+.layout-desktop #tvRecommendedPage .verticalSection > .itemsContainer,
+.layout-desktop #moviesPage .verticalSection > .itemsContainer,
+.layout-desktop #albumsPage .verticalSection > .itemsContainer {
+    margin: .5vw 2vw;
 }
+
+.layout-desktop #favoritesTab .verticalSection > .emby-scroller,
+.layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,
+.layout-desktop #moviesPage .verticalSection > .emby-scroller,
+.layout-desktop #albumsPage .verticalSection > .emby-scroller {
+    margin: .5vw 1vw;
+}
+
+.layout-desktop #studiosTab {
+    padding: 0 2vw;
+}
+
+
 .layout-desktop .pageTabContent .itemsContainer:has(.listItem-border) {
     padding: .5em 8% !important;
 }
@@ -272,7 +312,10 @@
     padding: 0;
 }
 
-.layout-mobile #tvRecommendedPage .itemsContainer {
+.layout-mobile #favoritesTab .itemsContainer,
+.layout-mobile #tvRecommendedPage .itemsContainer,
+.layout-mobile #moviesPage .itemsContainer,
+.layout-mobile #albumsPage .itemsContainer {
     margin: 0 2vw;
 }
 
