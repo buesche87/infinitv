@@ -71,8 +71,8 @@
     font-size: 90% !important;
 }
 .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-    width:  calc(21.95vw - 1.75em);
-    height: 21.95vw;
+    width:  calc(22.1vw - 1.75em);
+    height: 22.1vw;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
     width: 23.15vw;
@@ -80,6 +80,14 @@
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
     width:  calc(23.15vw - 1.75em);
     height: 23.15vw;
+}
+.layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
+    width: 23vw;
+    font-size: 90% !important;
+}
+.layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
+    width:  calc(23vw - 1.75em);
+    height: 23vw;
 }
 
 /*
@@ -91,8 +99,6 @@
 .layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {
     margin-left: 0;
 }
-
-
 
 /* Cards: Large List Items */
 .listItem.listItem-largeImage {
@@ -453,14 +459,14 @@
         width: 50%;
     }
 
-    /* Person Cards */
+    /* Person Cards
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
-        width: 22.5vw;
+        width: 23vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(22.5vw - 1.75em);
-        height: 22.5vw;
-    }
+        width:  calc(23vw - 1.75em);
+        height: 23vw;
+    } */
 }
 @media(min-width: 35em) {
 
@@ -589,11 +595,11 @@
     }
 
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
-        width: 18.1vw;
+        width: 18.4vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(18.1vw - 1.75em);
-        height: 18.1vw;
+        width:  calc(18.4vw - 1.75em);
+        height: 18.4vw;
     }
 }
 @media(min-width: 50em) {
@@ -718,11 +724,11 @@
     }
 
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
-        width: 15.2vw;
+        width: 15.35vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(15.2vw - 1.75em);
-        height: calc(15.2vw);
+        width:  calc(15.35vw - 1.75em);
+        height: 15.35vw;
     }
 
     /* List Item Card Text */
@@ -864,11 +870,11 @@
     }
 
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
-        width: 13.05vw;
+        width: 13.15vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(13.05vw - 1.75em);
-        height: 13.05vw;
+        width:  calc(13.15vw - 1.75em);
+        height: 13.15vw;
     }
 
     /* List Item Card Text */
