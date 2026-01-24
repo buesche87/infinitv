@@ -5,10 +5,8 @@
 */
 
 /* Poster Cards */
-.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-.layout-tv .detailImageContainer .portraitCard {
-    max-width: 38em !important;
-    left: 1%;
+.layout-tv #itemDetailPage:has(.listItem-largeImage) .detailImageContainer {
+    position: fixed;
 }
 .layout-desktop .detailImageContainer .portraitCard {
     max-width: 36em !important;
