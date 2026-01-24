@@ -125,11 +125,16 @@
     position: fixed !important;
 }
 
+/* Header: Black (Mobile) */
+.layout-mobile .skinHeader {
+    background: rgba(0, 0, 0, 1) !important;
+}
+
 /* Header: Fixed size (Mobile) */
 @media (max-width: 100em) {
     .layout-mobile .headerTop {
-        padding-top: 0.55em;
-        padding-bottom: 0.55em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
         height: 2.9em;
     }
     .layout-mobile .emby-tab-button {
@@ -408,7 +413,6 @@
         top: auto;
         bottom: 0;
         flex-direction: column;
-        background: rgba(0, 0, 0, 1) !important;
     }
     .layout-mobile .headerTop {
         order: 2;

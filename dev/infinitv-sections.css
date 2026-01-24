@@ -287,10 +287,6 @@
 .layout-mobile .emby-scroller {
     padding: 0;
     margin: 0 1vw;
-    /* padding-left: 0; */
-    /* padding-right: 0; */
-    /* margin-right: 1vw; */
-    /* margin-left: 1vw; */
 }
 
 /* Items Container */
@@ -303,18 +299,3 @@
 .layout-mobile .pageTabContent .itemsContainer:has(.listItem-border) {
     padding: .5em 3% !important;
 }
-
-/*
-.layout-mobile .detailPagePrimaryContainer .itemsContainer {
-    margin-top: -0.5em;
-    margin-bottom: -0.5em;
-    padding-top: .75em;
-    padding-bottom: .75em;
-} */
-
-/* Specific Elements
-.layout-mobile #castContent,
-.layout-mobile #guestCastContent {
-    padding-left: 0em;
-} */
-
