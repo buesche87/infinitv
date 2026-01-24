@@ -35,9 +35,7 @@
 .layout-tv .itemsContainer-tv > .overflowSquareCard {
     width: 33.33%;
 }
-.layout-mobile .itemsContainer > .overflowBackdropCard {
-    width: 33.33%;
-}
+
 
 /* Overflow Cards on Media Pages */
 .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
@@ -439,10 +437,18 @@
 */
 
 @media(min-width: 25em) {
+
+    /* Cards */
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 33.33%;
+    }
    
     /* Overflow Cards */
     .layout-mobile .itemsContainer > .overflowSquareCard {
         width: 50%;
+    }
+    .layout-mobile .itemsContainer > .overflowBackdropCard {
+        width: 33.33%;
     }
     .layout-tv .detailPagePrimaryContainer .itemsContainer > .overflowBackdropCard {
         width: 50%;
