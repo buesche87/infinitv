@@ -24,10 +24,10 @@
 }
 
 /* Overflow Cards */
-.itemsContainer > .overflowPortraitCard {
+.itemsContainer > .overflowPortraitCard,
+.itemsContainer > .overflowSquareCard {
     width: 33.33%;
 }
-.itemsContainer > .overflowSquareCard,
 .itemsContainer > .overflowBackdropCard {
     width: 50%;
 }
@@ -35,7 +35,6 @@
 .layout-tv .itemsContainer-tv > .overflowSquareCard {
     width: 33.33%;
 }
-
 
 /* Overflow Cards on Media Pages */
 .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
@@ -456,11 +455,11 @@
 
     /* Person Cards */
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
-        width: 22.6vw;
+        width: 22.5vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(22.6vw - 1.75em);
-        height: 22.6vw;
+        width:  calc(22.5vw - 1.75em);
+        height: 22.5vw;
     }
 }
 @media(min-width: 35em) {
@@ -478,14 +477,14 @@
         width: 50%;
     }
 
-    /* Person Cards */
+    /* Person Cards
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
         width: 22.6vw;
     }
     .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
         width:  calc(22.6vw - 1.75em);
         height: 22.6vw;
-    }
+    } */
 }
 @media(min-width: 43.75em) {
 
