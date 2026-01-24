@@ -157,19 +157,13 @@
 
 /* Library Pages with Alphapicker - Mobile */
 .layout-mobile .libraryPage .padded-right-withalphapicker {
-    padding-left: .5em;
-    padding-right: 2em;
-}
-@media(min-width: 25em) and (max-width: 48.125em) {
-    .layout-mobile .libraryPage .padded-right-withalphapicker {
-        padding-left: .5em;
-        padding-right: 2em;
-    }
+    padding-left: 3vw;
+    padding-right: 5vw;
 }
 @media(min-width: 48.125em) {
     .layout-mobile .libraryPage .padded-right-withalphapicker {
-        padding-left: 1em;
-        padding-right: 3em;
+        padding-left: 2vw;
+        padding-right: 4vw;
     }
 }
 
