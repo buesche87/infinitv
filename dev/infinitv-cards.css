@@ -277,9 +277,14 @@
 .layout-tv  .itemsContainer > .card > .cardBox {
     margin: 1.5em 1.2em !important;
 }
-.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
-    margin: 2em 1.2em !important;
+
+.layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
+.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox{
+    margin-top: 2em !important;
+    margin-bottom: 1em !important;
 }
+
+
 .layout-tv  .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
     margin: 1.5em 0 !important;
 }
@@ -893,7 +898,7 @@
 
     /* Overflow Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard {
-        width: 16.66%;
+        width: 20%;
     }
     .layout-tv .itemsContainer-tv > .overflowSquareCard {
         width: 20%;
@@ -922,7 +927,7 @@
         width: 20%;
     }
     .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-        width: 33.33%;
+        width: 25%;
     }
 
     /* Overflow Cards Secondary Container - Mobile */

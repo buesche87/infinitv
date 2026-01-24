@@ -356,6 +356,15 @@
     margin: 0;
 }
 
+/* Misc Buttons
+--------------------------------------------------------------------------*/
+
+.emby-button.sectionTitleTextButton.show-focus:focus {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    color: var(--accent100);
+}
+
 /*
 ============================================================================
    Inputs and Labels
@@ -540,6 +549,4 @@
     .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
         display: none !important;
     }
-
-
 }
