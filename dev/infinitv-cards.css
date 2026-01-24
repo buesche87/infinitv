@@ -35,6 +35,9 @@
 .layout-tv .itemsContainer-tv > .overflowSquareCard {
     width: 33.33%;
 }
+.layout-mobile .itemsContainer > .overflowBackdropCard {
+    width: 33.33%;
+}
 
 /* Overflow Cards on Media Pages */
 .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
