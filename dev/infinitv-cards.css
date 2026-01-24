@@ -33,23 +33,6 @@
 .itemsContainer > .overflowBackdropCard {
     width: 50%;
 }
-/*
-.layout-tv .itemsContainer-tv > .overflowPortraitCard,
-.layout-tv .itemsContainer-tv > .overflowSquareCard {
-    width: 33.33%;
-}*/
-
-/* Overflow Cards on Media Pages */
-/*.detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard,
-.detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-    width: 33.33%;
-}*/
-/* .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard {
-    width: 50%;
-}*/
-/*.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard {
-    width: 50%;
-}*/
 
 /* NextUp Card */
 .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -277,10 +260,7 @@
 }
 
 /* CardBox - TV */
-.layout-tv  .itemsContainer > .portraitCard > .cardBox,
-.layout-tv  .itemsContainer > .backdropCard > .cardBox,
-.layout-tv  .itemsContainer > .overflowBackdropCard > .cardBox, 
-.layout-tv  .itemsContainer > .overflowPortraitCard > .cardBox {
+.layout-tv  .itemsContainer > .card > .cardBox {
     margin: 1.5em 1.2em !important;
 }
 .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
