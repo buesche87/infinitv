@@ -368,31 +368,6 @@
     border: var(--buttonborder);
 }
 
-/* Borders: Accent 20% */
-.emby-checkbox:checked + span + .checkboxOutline {
-    border: 2px solid var(--accent20) !important;
-}
-
-/* Borders: Accent 40% */
-.checkboxOutline:not(:disabled):hover,
-.emby-checkbox:hover + span + .checkboxOutline,
-.emby-input:not(:disabled):hover,
-.emby-textarea:not(:disabled):hover,
-.emby-select-withcolor:not(:disabled):hover,
-.imagePlaceHolder:hover,
-.listItem-focusscale:hover {
-    border: 2px solid var(--accent40) !important;
-}
-
-/* Borders: Accent 80% */
-.checkboxOutline:focus,
-.emby-checkbox:focus + span + .checkboxOutline,
-.emby-input:focus,
-.emby-textarea:focus,
-.emby-select-withcolor:focus {
-    border: 2px solid var(--accent80) !important;
-}
-
 /* Borders: Transparent 2px */
 .actionSheetMenuItem,
 .actionSheetMenuItem:focus,
@@ -402,15 +377,15 @@
     border: solid 2px #0000 !important;
 }
 
-/* Borders: 1px - Accent 80% */
-.navMenuOption:hover {
-    border: solid 1px var(--accent60) !important;
-}
-
 /* Borders: 1px - Transparent */
 .navMenuOption,
 .navMenuOption-selected {
     border: solid 1px #0000 !important;
+}
+
+/* Borders: 1px - Accent 80% */
+.navMenuOption:hover {
+    border: solid 1px var(--accent60) !important;
 }
 
 /* No Borders */
@@ -426,31 +401,38 @@
     border: none !important;
 }
 
-/* Box Shadows */
-@media (pointer: fine) {
-    .detailImageContainer .card,
-    .itemsContainer > .card .cardScalable,
-    .itemsContainer > .card:has(.cardFooter) .cardBox {
-        box-shadow: var(--cardshadow) !important;
-    } 
-}
-
 /*
 ============================================================================
-   Border Color & Glow
+   Shadows & Glow
 ============================================================================
 */
+
+/* Border Colors
+--------------------------------------------------------------------------*/
 
 /* Border Colors: Accent 40% */ 
 .listItem-border:hover,
 .listItem-largeImage:hover,
 .detail-button:hover,
+.emby-button.block:hover,
+.emby-checkbox:hover + span + .checkboxOutline,
+.emby-checkbox:checked + span + .checkboxOutline,
+.emby-input:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
 .favorite-button:hover,
+.imagePlaceHolder:hover,
+.listItem-focusscale:hover
 .play-button:hover {
     border-color: var(--accent40) !important;
 }
 
 /* Border Colors: Accent 60% */ 
+.emby-button.block:focus,
+.emby-input:focus,
+.emby-textarea:focus,
+.emby-select-withcolor:focus,
+.emby-checkbox:focus + span + .checkboxOutline,
 .layout-tv .itemsContainer-tv .listItem:focus,
 .layout-tv .mainDetailButtons .detailButton:focus,
 .layout-tv .itemsContainer > .listItem-largeImage:focus {
@@ -473,6 +455,9 @@
     border-color: #0000 !important;
 }
 
+/* Glow
+--------------------------------------------------------------------------*/
+
 /* Glow: Card-Glow */
 @media (hover: hover) and (pointer: fine) {
     .bannerCard:hover > .cardBox,
@@ -494,7 +479,20 @@
     box-shadow: var(--buttonglow) !important;
 }
 
-/* No Shadows*/
+
+/* Shadows
+--------------------------------------------------------------------------*/
+
+/* Box Shadows */
+@media (pointer: fine) {
+    .detailImageContainer .card,
+    .itemsContainer > .card .cardScalable,
+    .itemsContainer > .card:has(.cardFooter) .cardBox {
+        box-shadow: var(--cardshadow) !important;
+    } 
+}
+
+/* No Shadows / no Glow */
 .cardPadder,
 .cardBox,
 .cardScalable,
