@@ -291,6 +291,7 @@
 --------------------------------------------------------------------------*/
 
 /* Backgrounds: Transparent */
+.actionSheetMenuItem:hover,
 .button-link:focus,
 .cardPadder,
 .collapseContent,
@@ -418,6 +419,7 @@
 --------------------------------------------------------------------------*/
 
 /* Border Colors: Accent 40% */ 
+.actionSheetMenuItem:hover,
 .listItem-border:hover,
 .listItem-largeImage:hover,
 .detail-button:hover,
