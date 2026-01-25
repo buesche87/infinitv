@@ -122,23 +122,23 @@
     text-align: center;
     padding: 4px 0 4px 0;
 }
-@media(max-width: 48.125em) {
-    .layout-mobile .homePage .sectionTitleContainer-cards, 
-    .layout-mobile .homePage :not(.sectionTitleContainer-cards) > .sectionTitle-cards,
-    .layout-mobile #tvRecommendedPage .sectionTitleContainer-cards, 
-    .layout-mobile #tvRecommendedPage :not(.sectionTitleContainer-cards) > .sectionTitle-cards,
-    .layout-mobile #moviesPage .sectionTitleContainer-cards, 
-    .layout-mobile #moviesPage :not(.sectionTitleContainer-cards) > .sectionTitle-cards
-    .layout-mobile #musicRecommendedPage .sectionTitleContainer-cards, 
-    .layout-mobile #musicRecommendedPage :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-        border-radius: 0 !important;
-    }
-}
 
 /* Titles */
 .layout-mobile .sectionTitleTextButton .sectionTitle-cards {
     text-align: center;
     padding: 0;
+}
+@media(max-width: 48.125em) {
+    .layout-mobile .homePage .sectionTitleContainer-cards, 
+    .layout-mobile .homePage .sectionTitle-cards,
+    .layout-mobile #tvRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #tvRecommendedPage .sectionTitle-cards,
+    .layout-mobile #moviesPage .sectionTitleContainer-cards, 
+    .layout-mobile #moviesPage .sectionTitle-cards,
+    .layout-mobile #musicRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #musicRecommendedPage .sectionTitle-cards {
+        border-radius: 0 !important;
+    }
 }
 
 /* Text & Icon */

@@ -202,9 +202,11 @@
 }
 
 /* Backgrounds: Dark 40% */
+.button-submit,
 .cardOverlayButton.cardOverlayFab-primary:hover,
 .checkboxOutline,
 .detailButton:hover,
+.emby-button.block,
 .emby-button:focus,
 .emby-input,
 .emby-textarea,
@@ -217,6 +219,7 @@
 .searchSuggestionsList > div:has(.emby-button:focus),
 .paperList,
 .pageTabContent > .focuscontainer-x,
+/* .raised, */
 .upNextDialog-button:hover,
 #loginPage .padded-left.padded-right.padded-bottom-page {
     background: var(--bgdark40) !important;
@@ -254,7 +257,7 @@
 
 /* Backgrounds: Accent 20% */
 .paper-icon-button-light:not(:disabled):hover {
-    background: var(--accent20);
+    background: var(--accent20) !important;
 }
 
 /* Backgrounds: Accent 40% */
@@ -433,6 +436,7 @@
 .emby-textarea:focus,
 .emby-select-withcolor:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
+.upNextDialog-button:focus,
 .layout-tv .itemsContainer-tv .listItem:focus,
 .layout-tv .mainDetailButtons .detailButton:focus,
 .layout-tv .itemsContainer > .listItem-largeImage:focus {

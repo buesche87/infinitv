@@ -189,6 +189,7 @@
 .layout-mobile .vertical-list .listItem-border {
     border: var(--buttonborder) !important;
     border-radius: var(--rounding-media) !important;
+    background: var(--bgdark40) !important;
 }
 
 .layout-mobile .vertical-list .listItem-border .listItemImage {

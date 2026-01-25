@@ -415,6 +415,11 @@
 ============================================================================
 */
 
+/* Todo */
+.layout-mobile .homeSectionsContainer {
+    top: 73vh;
+}
+
 @media (max-width: 50em) {
 
     /* Show Header at Bottom */
