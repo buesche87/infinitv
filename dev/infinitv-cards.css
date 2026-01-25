@@ -58,11 +58,11 @@
     height: 22.1vw;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-    width: 23.15vw;
+    width: 23.2vw;
 }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-    width:  calc(23.15vw - 1.75em);
-    height: 23.15vw;
+    width:  calc(23.2vw - 1.75em);
+    height: 23.2vw;
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
     width: 23vw;
@@ -549,11 +549,11 @@
 
     /* Person Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 18.5vw;
+        width: 18.55vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(18.5vw - 1.75em);
-        height: 18.5vw;;
+        width:  calc(18.55vw - 1.75em);
+        height: 18.55vw;;
     }
 
     /* Person Cards - Mobile */
@@ -656,11 +656,11 @@
 
     /* Person Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 15.45vw;
+        width: 15.5vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(15.45vw - 1.75em);
-        height: 15.45vw;
+        width:  calc(15.5vw - 1.75em);
+        height: 15.5vw;
     }
 
     /* Person Cards - Mobile */
@@ -803,11 +803,11 @@
 
     /* Person Cards - TV*/
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 13.5vw;
+        width: 13.55vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(13.5vw - 1.75em);
-        height: 13.5vw;
+        width:  calc(13.55vw - 1.75em);
+        height: 13.55vw;
     }
 
     /* Person Cards - Mobile */
@@ -938,11 +938,11 @@
 
     /* Person Cards - TV*/
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 11.825vw;
+        width: 11.855vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(11.825vw - 1.75em);
-        height: 11.825vw;
+        width:  calc(11.855vw - 1.75em);
+        height: 11.855vw;
     }
 
     /* Person Cards - Mobile */
