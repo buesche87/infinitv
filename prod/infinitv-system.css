@@ -1,0 +1,557 @@
+/*
+============================================================================
+   System & Dialogs
+============================================================================
+*/
+
+/* Smaller TV-Layout */
+.layout-tv {
+    font-size: 110% !important;
+}
+
+/* Progress Ring */
+.progressring {
+    margin: .4em;
+}
+.progressring-bg {
+    display: none;
+}
+.progressring-spiner {
+    border-width: .35em;
+}
+
+/* Toast: Center */
+.toast {
+    background-color: #000 !important;
+    box-shadow: var(--cardglow) !important;
+}
+.layout-tv .toastContainer,
+.layout-mobile .toastContainer {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Spinner Color */ 
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4,
+.progressring-spiner {
+    border-color: var(--accent100) !important;
+}
+
+/*
+============================================================================
+   Menu Drawer
+============================================================================
+*/
+
+/* Main Drawer */
+.mainDrawer {
+    margin-top: 3.9em;
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.navMenuOptionText {
+    margin-top: 0;
+}
+
+/*
+============================================================================
+   Collapsible Menus
+============================================================================
+*/
+
+/* Collapsible Menu */
+.collapseContent {
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+/* Action Sheet: Item size */
+.actionSheetContent .listItem {
+    padding: .5em;
+}
+
+/*
+============================================================================
+   Scrollbar
+============================================================================
+*/
+
+/* Scrollbar: Style */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent80) !important;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-corner  {
+    background: var(--accent80) !important;
+}
+
+/* Scrollbar: Hide (TV) */
+.layout-tv ::-webkit-scrollbar {
+    display: none;
+}
+
+#loginPage,
+.layout-tv {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 5.5em !important;
+}
+/*
+============================================================================
+   Header & Section Tabs
+============================================================================
+*/
+
+/* Header: Don't scroll (TV) */
+.layout-tv .skinHeader {
+    position: fixed !important;
+}
+
+/* Header: Black (Mobile) */
+.layout-mobile .skinHeader {
+    background: rgba(0, 0, 0, 1) !important;
+}
+
+/* Header: Fixed size (Mobile) */
+@media (max-width: 100em) {
+    .layout-mobile .headerTop {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        height: 2.9em;
+    }
+    .layout-mobile .emby-tab-button {
+        padding-top: 0em;
+    }
+}
+
+/* Header: Size & Alignment */
+.layout-tv .skinHeader,
+.layout-desktop .skinHeader {
+    padding: .3em !important;
+    height: 3.3em;
+}
+.layout-tv .headerTop,
+.layout-desktop .headerTop {
+    padding: .3em !important;
+}
+
+/* Hader: Page Title & Time */
+.pageTitle {
+    font-weight: bold;
+}
+.currentTimeText {
+    font-size: 110% !important;
+    font-weight: bold;
+}
+
+/* Header Section Tabs: Stay in Header with invisible scroll */
+.layout-tv .headerTabs.sectionTabs,
+.layout-desktop .headerTabs.sectionTabs {
+    font-size: 110% !important;
+    margin-top: -2.7em !important;
+    width: 42vw;
+    min-width: 26vw;
+    scrollbar-width: none;
+    scroll-behavior: smooth !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    transition: filter 0.2s;
+}
+
+/*
+============================================================================
+   Buttons
+============================================================================
+*/
+
+/* Buttons: Sign In, Save, Cancel...
+--------------------------------------------------------------------------*/
+
+.emby-button.block,
+.button-submit,
+.raised {
+    margin: 0.5em 0;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* Buttons: Header Buttons
+--------------------------------------------------------------------------*/
+
+.headerButton:focus {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* Buttons: Header-Tab
+--------------------------------------------------------------------------*/
+
+.layout-tv .emby-tab-button,
+.layout-desktop .emby-tab-button {
+    padding: .6em 1.25em .8em 1.25em !important;
+}
+.emby-tab-button:focus {
+    -webkit-transform: scale(1.1)!important;
+    transform: scale(1.1)!important;
+}
+.emby-tab-button-active {
+    color: #fff !important;
+}
+
+/* Buttons: Action Sheet Menu Items
+--------------------------------------------------------------------------*/
+
+.actionSheetMenuItem {
+    -webkit-transform: none !important;
+    transform: none !important;
+    margin-top: .2em !important;
+    margin-bottom: .2em !important;
+    padding-left: .5em !important;
+    padding-right: .5em !important;
+}
+
+/* Buttons: List Menu Items
+--------------------------------------------------------------------------*/
+
+.listTextButton-autohide {
+    -webkit-transform: none !important;
+    transform: none !important;
+    padding: .75em !important;
+    margin: .2em !important;
+}
+
+/* Buttons: Collapsible
+--------------------------------------------------------------------------*/
+
+.emby-collapsible-button {
+    padding: .75em !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* Collapsible Button: Text */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title {
+    margin-left: 0.5em;
+}
+
+
+/* Buttons: Menu List Items
+--------------------------------------------------------------------------*/
+
+/* List Item Border */
+.listItem-border {
+    -webkit-transform: none !important;
+    transform: none !important;
+    margin-top: .2em !important;
+    margin-bottom: .2em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+.layout-desktop .userPreferencesPage .listItem-border,
+.layout-tv .userPreferencesPage .listItem-border {
+    padding-left: 6em !important;
+    padding-right: 6em !important;
+}
+
+/* Buttons: Media Buttons (Play, Watched, Favourite...)
+--------------------------------------------------------------------------*/
+
+.layout-tv .mainDetailButtons .detailButton {
+    font-size: 120% !important;
+    margin-right: 1.5em !important;
+}
+.layout-desktop .mainDetailButtons .detailButton {
+    font-size: 120% !important;
+    margin-right: 1em !important;
+}
+.layout-tv .detailButton:focus {
+    -webkit-transform: scale(1.2) !important;
+    transform: scale(1.2) !important;
+}
+
+/* Buttons: Slide Buttons (Desktop & Mobile)
+--------------------------------------------------------------------------*/
+.play-button,
+.detail-button,
+.favorite-button {
+    font-size: 120% !important;
+    margin-right: .2em !important;
+    color: inherit;
+    height: 3.5em;
+    margin-right: 1em !important;
+}
+.detail-button,
+.favorite-button {
+    width: 3.5em;
+    margin-right: 1em !important;
+}
+.play-button:focus,
+.detail-button:focus,
+.favorite-button:focus {
+    -webkit-transform: scale(1.2) !important;
+    transform: scale(1.2) !important;
+}
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile .button-container {
+        margin-top: 3vh;
+    }
+}
+
+/* Buttons: Links acting as Buttons
+--------------------------------------------------------------------------*/
+
+.button-link,
+.overview-expand {
+    color: inherit !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    text-decoration: none !important;
+}
+
+/* ClearLinks: Buttons with Link-Buttons inside
+--------------------------------------------------------------------------*/
+
+/* Clearlinks: Won't focus with remote > hide in TV layout */
+.layout-tv .sectionTitleContainer > .clearLink {
+    display: none;
+}
+
+/* Clearlink Container */
+.clearLink {
+    padding: 0em 1em !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    margin-left: 0px !important;
+}
+
+/* Clearlink: Buttons inside */
+.clearLink > .emby-button {
+    padding: 0em 1em !important;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Misc Buttons
+--------------------------------------------------------------------------*/
+
+.emby-button.sectionTitleTextButton.show-focus:focus {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    color: var(--accent100);
+}
+
+/*
+============================================================================
+   Inputs and Labels
+============================================================================
+*/
+
+/* Input */
+.emby-input {
+    padding: .5em .6em;
+}
+
+/* Textarea */
+.emby-textarea {
+    padding: .5em .6em;
+    resize: vertical !important;
+    font-family: monospace;
+    font-size: .9em;
+    min-height: 6em;
+    overflow-y: hidden;
+}
+
+/* Select Container */
+.emby-select-focusscale:focus {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* Select Container: Arrow */
+.selectContainer .selectArrowContainer {
+    top: 2em;
+}
+.trackSelectionFieldContainer .selectArrowContainer {
+    top: .3em;
+}
+.selectArrow {
+    margin-top: .1em !important;
+}
+
+/* Select Container: Label */
+.selectLabel {
+    align-self: center;
+}
+
+
+/*
+============================================================================
+   Layout Mobile - Portrait Mode
+============================================================================
+*/
+
+/* Todo */
+.layout-mobile .homeSectionsContainer {
+    top: 73vh;
+}
+
+@media (max-width: 50em) {
+
+    /* Show Header at Bottom */
+    .layout-mobile .skinHeader {
+        top: auto;
+        bottom: 0;
+        flex-direction: column;
+    }
+    .layout-mobile .headerTop {
+        order: 2;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        height: 2.9em;
+    }
+    .layout-mobile .headerLeft {
+        margin-right: .5em;
+    }
+    .layout-mobile .headerRight {
+        margin-left: .5em;
+    }
+    .layout-mobile .sectionTabs {
+        order: 1;
+    }
+    .layout-mobile .emby-tab-button {
+        padding: 1.25em 1.25em .25em 1.25em !important;
+    }
+    .layout-mobile .skinHeader.headroom--unpinned {
+        transform: translateY(100%);
+    }
+    .layout-mobile .skinHeader.headroom--pinned {
+        transform: translateY(0);
+    }
+
+    .layout-mobile .homeSectionsContainer {
+        top: 78vh;
+    }
+    
+    /* Header: Remove Logo */
+    .layout-mobile .pageTitle {
+        display: none;
+    }
+
+    /* Header: Rearrange Buttons */
+    .layout-mobile .headerLeft {
+        order: 2;
+        justify-content: flex-end;
+    }
+    .layout-mobile .headerRight {
+        order: 1;
+    }
+
+    /* Footer */
+    .layout-mobile .appfooter {
+        background: #0000 !important;
+    }
+
+    /* Main Drawer: Align */
+    .layout-mobile .mainDrawer {
+        margin-top: 0em;
+        align-items: flex-end;
+        margin-bottom: 3.9em;
+    }
+
+    /* Drawer: Move options to bottom */
+    .layout-mobile .mainDrawer-scrollContainer {
+        padding-bottom: 1vh;
+    }
+
+    /* Toast */
+    .layout-tv .toastContainer {
+        bottom: 4em;
+    }
+
+    /* Slides: Pause Button Placement */
+    .layout-mobile .pause-button {
+        top: 74vh;
+        right: 4vw;
+    }
+
+    /* Library Pages: Move up */
+    .layout-mobile .libraryPage,
+    .layout-mobile #displayPreferencesPage,
+    .layout-mobile #homeScreenPreferencesPage,
+    .layout-mobile #languagePreferencesPage {
+        padding-top: 1em !important;
+    }
+    .layout-mobile #itemDetailPage {
+        padding-top: 0em !important;
+    }
+    .layout-mobile #userProfilePage,
+    .layout-mobile #myPreferencesMenuPage,
+    .layout-mobile #quickConnectPreferencesPage,
+    .layout-mobile #searchPage {
+        padding-top: 2em !important;
+    }
+
+    /* Media Details: Move up */
+    .layout-mobile .itemBackdrop {
+        margin-top: 0rem;
+    }
+
+    /* Filter Bar */
+    .layout-mobile .pageTabContent > .focuscontainer-x {
+        margin-top: 1em;
+    }
+    .layout-mobile .nowPlayingInfoControls {
+        padding-bottom: 2em;
+    }
+    .layout-mobile .selectionCommandsPanel {
+        top: 0em;
+    }
+
+    /* Footer: Placement depending on Header visibility */
+    .layout-mobile #reactRoot:has(.headroom--pinned) ~ .appfooter {
+        bottom: 5.8em;
+    }
+    .layout-mobile #reactRoot:has(.headroom--pinned>.sectionTabs.hide) ~ .appfooter {
+        bottom: 3.9em;
+    }
+
+    /* Now Playing Bar */
+    .layout-mobile .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+    .layout-mobile .nowPlayingBarInfoContainer {
+        margin-left: .2em;
+    }
+
+    /* Hide HeaderTabs & Footer when drawer opens */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs,
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+        display: none !important;
+    }
+}

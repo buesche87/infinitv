@@ -1,0 +1,287 @@
+/*
+===========================================================================
+   Player OSD
+===========================================================================
+*/
+
+/* Player OSD: Hide some Elements */
+.btnFullscreen,
+.btnPip,
+.videoOsdBottom .endsAtText {
+    display: none;
+}
+
+/* Player OSD: Media Infos */
+.osdTitle {
+    margin-left: 0.5em;
+}
+.startTimeText,
+.endTimeText {
+    width: 3.4em;
+    display: block;
+    text-align: center;
+}
+.osdTextContainer {
+    margin: 0 !important;
+    margin-top: 0.2em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
+}
+
+/* Player OSD: Media-Buttons */
+.ltr > .paper-icon-button-light:focus {
+    -webkit-transform: scale(1.2) !important;
+    transform: scale(1.2) !important;
+}
+
+/* Player OSD: Volume-Button */
+.volumeButtons > .paper-icon-button-light:focus,
+.osdControls > .focuscontainer-x > .paper-icon-button-light:focus {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* Player OSD: Skip-Button */
+.skip-button {
+    color: #fff;
+}
+
+/* Progressbar & Volume */
+.mdl-slider::-moz-range-thumb {
+    color: var(--accent100) !important;
+    background: var(--accent100) !important;
+}
+.mdl-slider::-webkit-slider-thumb {
+    color: var(--accent100) !important;
+    background: var(--accent100) !important;
+}
+.mdl-slider::-webkit-scrollbar-corner {
+    background: #0000 !important;
+}
+.mdl-slider::-webkit-scrollbar-track-piece {
+    background: #0000 !important;
+}
+
+/* Progressbar & Volume: Marker */
+.sliderMarker {
+    width: 3px;
+    border-radius: 2px;
+}
+
+/*
+===========================================================================
+   Player OSD: Header & Footer
+===========================================================================
+*/
+
+/* OSD Header: Height */
+.osdHeader {
+    height: 3.3em !important;
+    --webkit-backdrop-filter: none;
+}
+
+/* OSD Footer: Full Layout */
+.videoOsdBottom {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+/* OSD Footer: Small Box-Layout */
+@media all and (min-width: 105em) {
+    .videoOsdBottom {
+        padding-top: .5em;
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+        margin-left: 24vw;
+        margin-right: 24vw;
+        border-radius: var(--rounding-media);
+    }
+}
+
+/* OSD Footer: Lift Progressbar */
+.buttons.focuscontainer-x {
+    padding-top: .5em;
+}
+
+/*
+===========================================================================
+   Player OSD: Chapter Thumbnails
+===========================================================================
+* > ultrachromic / 
+
+/* Chapter Thumbnails */
+.chapterThumbContainer {
+    box-shadow: 0 0 1.9vh #000;
+}
+.chapterThumb {
+    height: 14vh;
+    min-width: 14vh;
+	box-shadow: 0 0 1.9vh #000;
+}
+
+/* Chapter Thumbnails: Slider Bubble */
+.sliderBubble {
+    -webkit-transform: translate3d(-50%,-108%,0);
+    transform: translate3d(-50%,-108%,0);
+}
+
+/* Chapter Thumbnails: Text */
+.chapterThumbTextContainer {
+    right: auto;
+	bottom: 4px;
+	padding: .25em 0.7em;
+}
+.chapterThumbText {
+    font-size: 1em;
+}
+
+/*
+===========================================================================
+   Player OSD: UpNext Dialog
+===========================================================================
+*/
+
+/* UpNext: Dialog-Box */
+.upNextContainer {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+/* UpNext: Buttons */
+.upNextDialog-button {
+    margin-left: .5em;
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/*
+===========================================================================
+   Music Player
+===========================================================================
+*/
+
+.layout-tv .nowPlayingPageImageContainer {
+    margin-right: 1.5em;
+}
+.layout-tv .nowPlayingButtonsContainer {
+    margin-top: .5em;
+}
+
+/* Fix seekbar jumping around */
+.layout-tv .nowPlayingInfoControls .positionTime {
+    width: 2em;
+}
+
+/* playlist */
+.layout-tv .playlistSectionButton {
+    margin-bottom: .5em;
+}
+.layout-desktop .listViewUserDataButtons .listItemButton {
+    margin-right: .1em;
+    margin-left: .1em;
+    border: none !important;
+}
+.layout-desktop .listViewUserDataButtons {
+    margin-right: .5em;
+}
+.layout-desktop .listViewUserDataButtons .listItemButton:hover {
+    background-color: var(--accent20) !important;
+}
+
+/* playlist buttons: no animations */
+.layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
+    border: none !important;
+    background: #0000 !important;
+}
+.layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+.layout-tv .playlistSectionButton .paper-icon-button-light {
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+
+/* now playing bar */
+.layout-desktop .nowPlayingBar {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    border: var(--buttonborder);
+    border-radius: var(--rounding-system);
+    padding-top: 1em;
+    padding-bottom: .25em;
+}
+.layout-desktop .nowPlayingBarTop {
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+.layout-desktop .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+}
+.layout-desktop .nowPlayingBarInfoContainer {
+    margin-left: .6em;
+}
+.layout-desktop .nowPlayingBarUserDataButtons .mediaButton {
+    border: none !important;
+}
+.layout-mobile .nowPlayingBar {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    padding-top: 1em;
+}
+.layout-mobile .nowPlayingBarTop {
+    padding-top: .5em;
+}
+.layout-mobile .nowPlayingPageUserDataButtonsTitle .paper-icon-button-light  {
+    border: none !important;
+}
+
+/* Footer */
+@media (max-width: 50em) {
+
+    .nowPlayingBarPositionContainer {
+        margin-right: .8em;
+        margin-left: .8em;
+    }
+
+    .nowPlayingBarInfoContainer {
+        margin-left: .2em;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
+        display: none;
+    }
+
+    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+        display: none !important;
+    }
+}
+@media (min-width: 50em) {
+
+    .layout-mobile .appfooter {
+        background: #0000;
+    }
+
+    .layout-mobile .nowPlayingBar {
+        margin-bottom: .5em;
+        margin-left: 33vw;
+        margin-right: 33vw;
+        border-radius: var(--rounding-media);
+    }
+
+    .layout-mobile .nowPlayingBarRight {
+        margin: 0 1em 0 auto;
+    }
+
+    .layout-mobile .nowPlayingBarPositionContainer {
+        margin-right: 1em;
+        margin-left: 1em;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+
+    .layout-mobile .nowPlayingBarInfoContainer {
+        margin-left: .8em;
+    }
+}

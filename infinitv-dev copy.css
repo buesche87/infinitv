@@ -13,15 +13,13 @@
 
 *                                                                          */
 
-/* == Dev / Test File == */
-
-/* Load Stylesheets */
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-base.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-system.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-pages.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-sections.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-cards.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-player.css');
+/* Stylesheets */
+@import url('https://buesche87.github.io/infinitv/prod/infinitv-base.css');
+@import url('https://buesche87.github.io/infinitv/prod/infinitv-system.css');
+@import url('https://buesche87.github.io/infinitv/prod/infinitv-pages.css');
+@import url('https://buesche87.github.io/infinitv/prod/infinitv-sections.css');
+@import url('https://buesche87.github.io/infinitv/prod/infinitv-cards.css');
+@import url('https://buesche87.github.io/infinitv/prod/infinitv-player.css');
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
