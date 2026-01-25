@@ -227,8 +227,12 @@
 
 
 /* Backgrounds: Dark 60% */
+.button-submit:hover,
+.button-submit:focus,
 .detail-button:hover,
 .checkboxOutline:not(:disabled):hover,
+.emby-button.block:hover,
+.emby-button.block:focus,
 .emby-input:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
