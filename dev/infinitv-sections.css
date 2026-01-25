@@ -226,13 +226,13 @@
     margin: .5vw 2vw;
 }
 
-/* Emby Scroller with Overflow Portrait Cards */
+/* Emby Scroller with Overflow Portrait Cards
 .layout-desktop .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
     padding-top: 1.25em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 2em;
-}
+} */
 
 /* Items Container */
 .layout-desktop .itemsContainer {

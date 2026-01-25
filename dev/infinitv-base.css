@@ -441,9 +441,9 @@
 .emby-select-withcolor:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
 .upNextDialog-button:focus,
-.layout-tv .itemsContainer-tv .listItem:focus,
-.layout-tv .mainDetailButtons .detailButton:focus,
-.layout-tv .itemsContainer > .listItem-largeImage:focus {
+.itemsContainer > .listItem:focus,
+.mainDetailButtons .detailButton:focus,
+.itemsContainer > .listItem-largeImage:focus {
     border-color: var(--accent60) !important;
 }
 
