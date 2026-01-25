@@ -261,7 +261,7 @@
 
 /* Backgrounds: Accent 20% */
 .paper-icon-button-light:not(:disabled):hover {
-    background: var(--accent20) !important;
+    background: var(--accent20);
 }
 
 /* Backgrounds: Accent 40% */
