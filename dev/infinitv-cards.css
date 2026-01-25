@@ -287,16 +287,16 @@
     margin: 2em 1em !important;
 }
 .layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
-.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox{
+.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
     margin-top: 2em !important;
-    margin-bottom: 1em !important;
+    margin-bottom: 2em !important;
 }
 
 /* CardBox: Person Card */
 .layout-desktop .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
     margin: 1.5em 0 !important;
 }
-.layout-tv  .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
+.layout-tv .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
     margin: 1.5em 0 !important;
 }
 
