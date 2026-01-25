@@ -938,11 +938,11 @@
 
     /* Person Cards - TV*/
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 11.855vw;
+        width: 11.87vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(11.855vw - 1.75em);
-        height: 11.855vw;
+        width:  calc(11.87vw - 1.75em);
+        height: 11.87vw;
     }
 
     /* Person Cards - Mobile */
