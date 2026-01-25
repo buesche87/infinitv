@@ -1198,11 +1198,11 @@
 
     /* Person Cards - TV*/
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 9.3vw;
+        width: 9.5vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(9.3vw - 1.75em);
-        height: 9.3vw;
+        width:  calc(9.5vw - 1.75em);
+        height: 9.5vw;
     }
 
     /* Person Cards - Mobile */
@@ -1334,11 +1334,11 @@
 
     /* Person Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 8.25vw;
+        width: 8.635vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(8.25vw - 1.75em);
-        height: 8.25vw;
+        width:  calc(8.635vw - 1.75em);
+        height: 8.635vw;
     }
 
     /* Person Cards - Mobile */
@@ -1458,11 +1458,11 @@
 
     /* Person Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 7.4vw;
+        width: 7.31vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(7.4vw - 1.75em);
-        height: 7.4vw;
+        width:  calc(7.31vw - 1.75em);
+        height: 7.31vw;
     }
 
     /* Person Cards - Mobile */
@@ -1570,11 +1570,11 @@
 
     /* Person Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 6.7vw;
+        width: 6.785vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(6.7vw - 1.75em);
-        height: 6.7vw;
+        width:  calc(6.785vw - 1.75em);
+        height: 6.785vw;
     }
 
     /* Person Cards - Mobile */
@@ -1675,11 +1675,11 @@
 
     /* Person Cards - TV */
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-        width: 6.3vw;
+        width: 6.335vw;
     }
     .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-        width:  calc(6.3vw - 1.75em);
-        height: calc(6.3vw);
+        width:  calc(6.335vw - 1.75em);
+        height: calc(6.335vw);
     }
 
     /* ListItem Overview Text  */
