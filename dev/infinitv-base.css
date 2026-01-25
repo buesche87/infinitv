@@ -431,7 +431,8 @@
 .emby-textarea:not(:disabled):hover,
 .favorite-button:hover,
 .imagePlaceHolder:hover,
-.listItem-focusscale:hover
+.listItem-focusscale:hover,
+.mainDetailButtons .detailButton:hover,
 .play-button:hover {
     border-color: var(--accent40) !important;
 }
