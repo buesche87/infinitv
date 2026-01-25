@@ -172,6 +172,15 @@
     padding: 0;
     margin: 0 .5vw;
 }
+
+/* More From Section with Portrait Cards
+.layout-tv .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
+    padding-top: 1.25em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 2em;
+} */
+
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
 .layout-tv #moviesPage .verticalSection > .emby-scroller,
@@ -207,6 +216,7 @@
 }
 
 
+
 /* Layout Desktop
 --------------------------------------------------------------------------*/
 
@@ -215,6 +225,14 @@
     padding: 0;
     margin: .5vw 2vw;
 }
+
+/* Emby Scroller with Overflow Portrait Cards
+.layout-desktop .detailPageWrapperContainer .moreFromSeasonSection .emby-scroller:has(.overflowPortraitCard) {
+    padding-top: 1.25em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 2em;
+} */
 
 /* Items Container */
 .layout-desktop .itemsContainer {
@@ -239,7 +257,7 @@
 /* Items Container Primary Content */
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
     padding: 0;
-    margin: 0 1vw;
+    margin: 1vw 1vw;
 }
 
 /* Items Container with listItems */
