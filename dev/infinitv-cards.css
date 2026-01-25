@@ -73,6 +73,19 @@
     height: 23vw;
 }
 
+
+/* Cards: Animation 
+--------------------------------------------------------------------------*/
+.emby-checkbox:focus + .checkboxLabel,
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused,
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary {
+    font-weight: 500;
+}
+
+
 /*
 ===========================================================================
    List Item Cards
