@@ -55,13 +55,6 @@
 }
 
 /* Main Drawer: Menu Options */
-.navMenuOption,
-.navMenuOption-selected {
-    border: solid 1px #0000 !important;
-}
-.navMenuOption:hover {
-    border: solid 1px var(--accent60) !important;
-}
 .navMenuOptionText {
     margin-top: 0;
 }
