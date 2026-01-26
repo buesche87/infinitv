@@ -508,7 +508,7 @@
 .mainDrawer,
 .card:hover .cardBox.withMultiSelect,
 .card:hover .cardBox.withMultiSelect .cardScalable,
-.itemsContainer > .cardBox:has(.cardFooter) > .cardScalable {
+.itemsContainer .cardBox:has(.cardFooter) > .cardScalable {
     box-shadow: none !important;
 }
 
