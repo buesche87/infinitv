@@ -481,24 +481,9 @@
     box-shadow: var(--buttonglow) !important;
 }
 
-/* Glow: Card
---------------------------------------------------------------------------*/
-@media (hover: hover) and (pointer: fine) {
-    .bannerCard:hover > .cardBox,
-    .itemsContainer > .card:hover .cardBox:has(.cardFooter), 
-    .itemsContainer > .card:hover .cardScalable {
-        box-shadow: var(--deskcardglow) !important;
-    }
-}
-
-/* Shadows
---------------------------------------------------------------------------*/
-
 /* Box Shadows */
 @media (pointer: fine) {
-    .detailImageContainer .card,
-    .cardBox:has(.cardFooter),
-    .cardScalable {
+    .detailImageContainer .card {
         box-shadow: var(--cardshadow) !important;
     } 
 }
@@ -507,8 +492,7 @@
 .cardPadder,
 .mainDrawer,
 .card:hover .cardBox.withMultiSelect,
-.card:hover .cardBox.withMultiSelect .cardScalable,
-.itemsContainer .cardBox:has(.cardFooter) > .cardScalable {
+.card:hover .cardBox.withMultiSelect .cardScalable {
     box-shadow: none !important;
 }
 

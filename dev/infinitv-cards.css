@@ -81,6 +81,30 @@
     font-weight: 500;
 }
 
+/* Card Glow */
+@media (hover: hover) and (pointer: fine) {
+    .card:hover .cardScalable,
+    .card:hover .cardBox:has(> .cardFooter) {
+        box-shadow: var(--deskcardglow) !important;
+    }
+}
+
+/* Card Shadows */
+@media (pointer: fine) {
+    .cardScalable {
+        box-shadow: var(--cardshadow) !important;
+    }
+
+    /* Footer vorhanden → Shadow auf cardBox */
+    .cardBox:has(> .cardFooter) {
+        box-shadow: var(--cardshadow) !important;
+    }
+
+    /* Dann Scalable neutralisieren */
+    .cardBox:has(> .cardFooter) > .cardScalable {
+        box-shadow: none !important;
+    }
+}
 
 /*
 ===========================================================================
