@@ -515,7 +515,7 @@
 
 @media (pointer: fine) {
     .detailImageContainer .card,
-    .cardBox,
+    .cardBox:has(.cardFooter),
     .cardScalable {
         box-shadow: var(--cardshadow) !important;
     } 
