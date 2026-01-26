@@ -69,16 +69,49 @@
     height: 23vw;
 }
 
+/* Person Cards: Center Content */
+.personCard > .cardBox {
+    text-align: center;
+    text-align: -webkit-center;
+}
 
-/* Cards: Animation 
---------------------------------------------------------------------------*/
-.emby-checkbox:focus + .checkboxLabel,
-.inputLabelFocused,
-.selectLabelFocused,
-.textareaLabelFocused,
+/*
+===========================================================================
+   Cards: Animation
+===========================================================================
+*/
+
+/* CardText on Hover (Desktop) */
+@media (hover: hover) and (pointer: fine) {
+    .layout-desktop .bannerCard:hover > .cardText,
+    .layout-desktop .itemsContainer > .card:hover .cardText {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Font weight on Focus
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary {
     font-weight: 500;
+} */
+
+/* CardBox: Zoom on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardBox {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Card Text: Bold on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary,
+.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) {
+    font-weight: 600;
 }
 
 /* Card Glow */
@@ -106,15 +139,16 @@
     }
 }
 
+/* Cards: Inset Shadow (smoothening) */
+.libraryPage .cardImageContainer {
+    box-shadow: var(--insettop), var(--insetbottom);
+}
+
 /*
 ===========================================================================
    List Item Cards
 ===========================================================================
 */
-
-.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {
-    margin-left: 0;
-}
 
 /* Cards: Large List Items */
 .listItem.listItem-largeImage {
@@ -142,6 +176,8 @@
     top: 0.75em;
 }
 
+/* Layout TV
+--------------------------------------------------------------------------*/
 
 /* Large List Items */
 .layout-tv .listItemImage-large-tv {
@@ -159,7 +195,7 @@
 
 @media (max-width: 64em) {
     .layout-tv .listItemImage-large {
-        height:16vw;
+        height: 16vw;
         margin-right: .5em !important;
         width: 22vw
     }
@@ -178,7 +214,7 @@
     }
 }
 
-/* List Items: Indicator */
+/* List Item: Indicators */
 .layout-tv .listItemIndicators {
     position: fixed;
     left: 0.75em;
@@ -192,6 +228,46 @@
     margin-right: 0em;
 }
 
+.layout-mobile .vertical-list .listItem-border {
+    border: var(--buttonborder) !important;
+    border-radius: var(--rounding-media) !important;
+    background: var(--bgdark40) !important;
+}
+
+/* Center Text */
+.layout-mobile .detailPageWrapperContainer .listItemBody {
+    text-align: center;
+}
+.layout-mobile .vertical-list .listItem-border .listItemBody {
+    padding: 0 1em;
+}
+
+/* List Item Content */
+.layout-mobile .detailPageWrapperContainer .listItem-content {
+    background: var(--bgdark40) !important;
+    align-content: center;
+}
+@media(max-width: 50em) {
+    .layout-mobile .detailPageWrapperContainer .listItem-content {
+        border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    }
+}
+.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
+    margin: .5em;
+}
+
+/* List Item Image */
+.layout-mobile .vertical-list .listItem-border .listItemImage {
+    transform: scale(1.2);
+    margin-left: -.2em;
+}
+
+/* List Item Buttons */
+.layout-mobile .listItem-largeImage .listItemImageButton {
+    border-radius: var(--rounding-system) !important;
+}
+
+/* List Item: Indicators */
 .layout-mobile .listItemIndicators {
     position: fixed;
     left: 0.5em;
@@ -199,58 +275,11 @@
     font-size: .75em !important
 }
 
-.layout-mobile .listItem-largeImage .listItemImageButton {
-    border-radius: var(--rounding-system) !important;
-}
-.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
-    margin: .5em;
-}
-.layout-mobile .detailPageWrapperContainer .listItem-content {
-    background: var(--bgdark40) !important;
-    align-content:center;
-}
-@media(max-width: 50em) {
-    .layout-mobile .detailPageWrapperContainer .listItem-content {
-        border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
-    }
-}
-
-.layout-mobile .detailPageWrapperContainer .listItemBody {
-    text-align: center;
-}
-
-.layout-mobile .vertical-list .listItem-border {
-    border: var(--buttonborder) !important;
-    border-radius: var(--rounding-media) !important;
-    background: var(--bgdark40) !important;
-}
-
-.layout-mobile .vertical-list .listItem-border .listItemImage {
-    transform: scale(1.2);
-    margin-left: -.2em;
-}
-
-.layout-mobile .vertical-list .listItem-border .listItemBody {
-    padding: 0 1em;
-}
-
-
 /*
 ===========================================================================
-   Cards: CardBox
+   Cards: Border Roundings
 ===========================================================================
 */
-
-/* Cards: Inset Shadow */
-.libraryPage .cardImageContainer {
-    box-shadow: var(--insettop), var(--insetbottom);
-}
-
-/* Person Cards: Center Content */
-.personCard > .cardBox {
-    text-align: center;
-    text-align: -webkit-center;
-}
 
 /* Cards: Rounding Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
@@ -268,21 +297,6 @@
     border-bottom-right-radius: var(--rounding-media) !important;
     text-align: center;
 }
-
-/* CardText on Hover (Desktop) */
-@media (hover: hover) and (pointer: fine) {
-    .layout-desktop .bannerCard:hover > .cardText,
-    .layout-desktop .itemsContainer > .card:hover .cardText {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-
-    .layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 
 /*
 ===========================================================================
@@ -302,12 +316,6 @@
     margin-right: .75em;
     margin-bottom: .5em !important;
     margin-top: .75em !important;
-}
-
-/* CardBox: Zoom on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardBox {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
 }
 
 /* CardBox: Banner Card */
@@ -339,12 +347,6 @@
 ===========================================================================
 * > needs plugin "home section containers" */ 
 
-/* Card Text: Bold on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary,
-.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) {
-    font-weight: 600;
-}
 
 /* Text Shadow (not on mobile > performance)
 @media (pointer: fine) {
@@ -417,6 +419,8 @@
 }
 
 /* Card Indicators: Count & Played */
+.countIndicator,
+.mediaSourceIndicator,
 .playedIndicator {
     background: rgba(0, 0, 0, 1);
 }
@@ -424,7 +428,6 @@
 .mediaSourceIndicator {
     font-weight: 600;
     font-size: 89%;
-    color: rgba(0, 0, 0, 1);
 }
 
 /* Card Indicators: Missing & Unaired */

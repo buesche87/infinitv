@@ -146,6 +146,15 @@
     color: white;
 }
 
+/* Font weight (on Focus)
+--------------------------------------------------------------------------*/
+.emby-checkbox:focus + .checkboxLabel,
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+    font-weight: 500;
+}
+
 /*
 ============================================================================
    Backgrounds
