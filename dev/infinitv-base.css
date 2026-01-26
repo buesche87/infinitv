@@ -470,25 +470,6 @@
     border-color: #0000;
 }
 
-/* Glow: Card
---------------------------------------------------------------------------*/
-/*
-@media (hover: hover) and (pointer: fine) {
-    .bannerCard:hover > .cardBox,
-    .itemsContainer > .card:hover .cardScalable,
-    .itemsContainer > .card:hover:has(.cardFooter) .cardBox {
-        box-shadow: var(--deskcardglow) !important;
-    }
-} */
-
-@media (hover: hover) and (pointer: fine) {
-    .bannerCard:hover > .cardBox,
-    .itemsContainer > .card:hover .cardBox:has(.cardFooter), 
-    .itemsContainer > .card:hover .cardScalable {
-        box-shadow: var(--deskcardglow) !important;
-    }
-}
-
 /* Glow: Button
 --------------------------------------------------------------------------*/
 .upNextContainer,
@@ -500,19 +481,20 @@
     box-shadow: var(--buttonglow) !important;
 }
 
+/* Glow: Card
+--------------------------------------------------------------------------*/
+@media (hover: hover) and (pointer: fine) {
+    .bannerCard:hover > .cardBox,
+    .itemsContainer > .card:hover .cardBox:has(.cardFooter), 
+    .itemsContainer > .card:hover .cardScalable {
+        box-shadow: var(--deskcardglow) !important;
+    }
+}
+
 /* Shadows
 --------------------------------------------------------------------------*/
 
 /* Box Shadows */
-/*
-@media (pointer: fine) {
-    .detailImageContainer .card,
-    .itemsContainer > .card .cardScalable,
-    .itemsContainer > .card .cardBox:has(.cardFooter) {
-        box-shadow: var(--cardshadow) !important;
-    } 
-} */
-
 @media (pointer: fine) {
     .detailImageContainer .card,
     .cardBox:has(.cardFooter),
@@ -521,24 +503,12 @@
     } 
 }
 
-
-
 /* No Shadows / no Glow */
-/*
 .cardPadder,
 .mainDrawer,
 .card:hover .cardBox.withMultiSelect,
 .card:hover .cardBox.withMultiSelect .cardScalable,
-.itemsContainer > .card > .cardBox:has(.cardFooter) > .cardScalable,
-.itemsContainer > .card:hover > .cardBox:has(.cardFooter) > .cardScalable {
-    box-shadow: none !important;
-} */
-
-.cardPadder,
-.mainDrawer,
-.card:hover .cardBox.withMultiSelect,
-.card:hover .cardBox.withMultiSelect .cardScalable,
-.itemsContainer > .card > .cardBox:has(.cardFooter) > .cardScalable {
+.itemsContainer > .cardBox:has(.cardFooter) > .cardScalable {
     box-shadow: none !important;
 }
 
