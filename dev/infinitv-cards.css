@@ -10,20 +10,16 @@
 }
 
 /* Cards */
-.itemsContainer > .portraitCard {
-    width: 33.33%;
-} 
+.itemsContainer > .portraitCard,
 .itemsContainer > .squareCard {
     width: 33.33%;
-} 
+}
 .itemsContainer > .backdropCard {
     width: 50%;
 }
 
 /* Overflow Cards */
-.itemsContainer > .overflowPortraitCard {
-    width: 33.33%;
-}
+.itemsContainer > .overflowPortraitCard,
 .itemsContainer > .overflowSquareCard {
     width: 33.33%;
 }
@@ -66,7 +62,7 @@
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
     width: 23vw;
-    font-size: 90% !important;
+    /* font-size: 90% !important; */
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
     width:  calc(23vw - 1.75em);
@@ -326,12 +322,12 @@
     font-weight: 600;
 }
 
-/* Text Shadow (not on mobile > performance) */
+/* Text Shadow (not on mobile > performance)
 @media (pointer: fine) {
     .cardText {
         text-shadow: var(--textshadow) !important;
     }
-}
+} */
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,

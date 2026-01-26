@@ -21,7 +21,7 @@
     --bgdark80: rgba(0, 0, 0, 0.8);
 
     /* Border */
-    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%);
 
     /* Card Shadow */
     --cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
@@ -31,16 +31,12 @@
     --insetbottom: inset -3px -3px 14px 0px rgb(0 0 0 / 40%);
 
     /* Glow */
-    --cardglow: 0px 0px 10px 3px var(--accent80) !important;
-    --deskcardglow: 0px 0px 10px 2px var(--accent80) !important;
-    --buttonglow: 0px 0px 10px 1px var(--accent100) !important;
+    --cardglow: 0px 0px 10px 3px var(--accent80);
+    --deskcardglow: 0px 0px 10px 2px var(--accent80);
+    --buttonglow: 0px 0px 10px 1px var(--accent100);
 
     /* Text Shadow */
     --textshadow: 2px 2px 4px black;
-
-    /* TODO: Header accent color (keep it dark) */
-    --haccent-h: 310;
-    --headeraccent: hsla(var(--haccent-h), 100%, 20%, var(--headeropacity));
 }
 
 /*
@@ -102,7 +98,7 @@
 
 /* Focus */
 .detailButton:focus {
-    color: var(--accent80) !important;
+    color: var(--accent80);
 }
 
 /* Color: Accent 100% 
@@ -140,13 +136,14 @@
 /* Active */
 .header-right .headerButton:active,
 .paper-icon-button-light:active {
-    color: var(--accent100) !important;
+    color: var(--accent100);
 }
 
 /* Color: White
 --------------------------------------------------------------------------*/
+.emby-tab-button-active,
 .layout-mobile .overview-expand:focus {
-    color: white !important;
+    color: white;
 }
 
 /*
@@ -199,7 +196,7 @@
 /* Hover */
 .button-submit:hover,
 .emby-button.block:hover,
-.raised:hover  {
+.raised:hover {
     background: var(--bgdark20) !important;
 }
 
@@ -233,30 +230,36 @@
 
 /* Backgrounds: Dark 60%
 --------------------------------------------------------------------------*/
+
+/* Hover */
 .button-submit:hover,
-.button-submit:focus,
 .detail-button:hover,
 .checkboxOutline:not(:disabled):hover,
 .emby-button.block:hover,
-.emby-button.block:focus,
 .emby-input:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
 .favorite-button:hover,
 .listItem-focusscale:hover,
-.listItem-largeImage:focus,
 .listItemImageButton:hover,
-.mainDetailButtons .detailButton:focus,
 .play-button:hover,
+
+/* Focus */
+.button-submit:focus,
+.emby-button.block:focus,
+.listItem-largeImage:focus,
+.mainDetailButtons .detailButton:focus,
 .upNextDialog-button:focus {
     background: var(--bgdark60) !important;
 }
 
 /* Backgrounds: Dark 80%
 --------------------------------------------------------------------------*/
+.emby-select option,
+
+/* Focus */
 .checkboxOutline:focus,
 .emby-input:focus,
-.emby-select option,
 .emby-textarea:focus,
 .listItem-focusscale:focus {
     background: var(--bgdark80) !important;
@@ -335,12 +338,12 @@
 }
 
 /* Background Colors: Transparent */
-.actionSheetMenuItem:focus,
 .cardOverlayButton,
-.cardOverlayButton:hover,
-.emby-collapsible-button:focus,
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
+.cardOverlayButton:hover,
+.actionSheetMenuItem:focus,
+.emby-collapsible-button:focus,
 .paper-icon-button-light:not(.alphaPickerButton):active {
     background-color: #0000 !important;
 }
@@ -371,7 +374,8 @@
 ============================================================================
 */
 
-/* Borders: Grey */
+/* Borders: Grey
+--------------------------------------------------------------------------*/
 .checkboxOutline,
 .detailButton,
 .emby-button,
@@ -387,26 +391,21 @@
     border: var(--buttonborder);
 }
 
-/* Borders: Transparent 2px */
+/* Borders: Transparent
+--------------------------------------------------------------------------*/
 .actionSheetMenuItem,
 .emby-collapsible-button,
 .listItem-border,
 .listTextButton-autohide {
-    border: solid 2px #0000 !important;
+    border: solid 2px #0000;
 }
 
-/* Borders: 1px - Transparent */
-.navMenuOption,
-.navMenuOption-selected {
-    border: solid 1px #0000 !important;
+.navMenuOption {
+    border: solid 1px #0000;
 }
 
-/* Borders: 1px - Accent 80% */
-.navMenuOption:hover {
-    border: solid 1px var(--accent60) !important;
-}
-
-/* No Borders */
+/* No Borders
+--------------------------------------------------------------------------*/
 .button-link,
 .clearLink,
 .cardOverlayButton,
@@ -416,7 +415,7 @@
 .overview-expand,
 .sectionTitleTextButton,
 .skip-button {
-    border: none !important;
+    border: none;
 }
 
 /*
@@ -442,7 +441,7 @@
 .listItem-focusscale:hover,
 .mainDetailButtons .detailButton:hover,
 .play-button:hover {
-    border-color: var(--accent40) !important;
+    border-color: var(--accent40);
 }
 
 /* Border Color: Accent 60%
@@ -454,19 +453,21 @@
 .emby-checkbox:focus + span + .checkboxOutline,
 .detail-button:focus,
 .favorite-button:focus,
+.navMenuOption:hover,
 .upNextDialog-button:focus,
 .itemsContainer > .listItem:focus,
 .mainDetailButtons .detailButton:focus,
 .itemsContainer > .listItem-largeImage:focus {
-    border-color: var(--accent60) !important;
+    border-color: var(--accent60);
 }
 
 /* Border Color: Transparent
 --------------------------------------------------------------------------*/
 .actionSheetMenuItem:focus,
 .navMenuOption:focus,
+.navMenuOption-selected,
 .userPreferencesPage .listItem-border:focus {
-    border-color: #0000 !important;
+    border-color: #0000;
 }
 
 /* Glow: Card
@@ -481,17 +482,14 @@
 
 /* Glow: Button
 --------------------------------------------------------------------------*/
-.layout-tv .detailButton:focus,
-.layout-tv .favorite-button:focus,
-.layout-tv .libraryPage .listItem-focusscale:focus,
-.layout-tv .libraryPage .listItem-largeImage:focus,
-.layout-desktop .detailButton:focus,
-.layout-desktop .favorite-button:focus,
 .upNextContainer,
+.detailButton:focus,
+.favorite-button:focus,
+.itemsContainer > .listItem-focusscale:focus,
+.itemsContainer > .listItem-largeImage:focus,
 .upNextDialog-button:focus {
     box-shadow: var(--buttonglow) !important;
 }
-
 
 /* Shadows
 --------------------------------------------------------------------------*/
@@ -500,20 +498,20 @@
 @media (pointer: fine) {
     .detailImageContainer .card,
     .itemsContainer > .card .cardScalable,
-    .itemsContainer > .card:has(.cardFooter) .cardBox {
+    .itemsContainer > .card .cardBox:has(.cardFooter) {
         box-shadow: var(--cardshadow) !important;
     } 
 }
 
 /* No Shadows / no Glow */
 .cardPadder,
-.cardBox,
-.cardScalable,
+/* .cardBox, */
+/* .cardScalable, */
 .mainDrawer,
 .card:hover .cardBox.withMultiSelect,
 .card:hover .cardBox.withMultiSelect .cardScalable,
-.itemsContainer > .card:has(.cardFooter) .cardScalable,
-.itemsContainer > .card:hover:has(.cardFooter) .cardScalable {
+.itemsContainer > .card > .cardBox:has(.cardFooter) > .cardScalable,
+.itemsContainer > .card:hover > .cardBox:has(.cardFooter) > .cardScalable {
     box-shadow: none !important;
 }
 

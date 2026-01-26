@@ -120,6 +120,10 @@
 ===========================================================================
 */
 
+.libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 5.5em !important;
+}
+
 /* Library Pages: Alignment */
 .layout-tv .libraryPage {
     padding-top: 5em !important;

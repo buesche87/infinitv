@@ -53,6 +53,15 @@
     margin-top: 3.9em;
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
+
+/* Main Drawer: Menu Options */
+.navMenuOption,
+.navMenuOption-selected {
+    border: solid 1px #0000 !important;
+}
+.navMenuOption:hover {
+    border: solid 1px var(--accent60) !important;
+}
 .navMenuOptionText {
     margin-top: 0;
 }
@@ -111,9 +120,6 @@
     scrollbar-width: none;
 }
 
-.libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 5.5em !important;
-}
 /*
 ============================================================================
    Header & Section Tabs
@@ -213,11 +219,10 @@
     padding: .6em 1.25em .8em 1.25em !important;
 }
 .emby-tab-button:focus {
-    -webkit-transform: scale(1.1)!important;
-    transform: scale(1.1)!important;
-}
-.emby-tab-button-active {
-    color: #fff !important;
+    /* -webkit-transform: scale(1.1)!important; */
+    /* transform: scale(1.1)!important; */
+    -webkit-transform: none !important;
+    transform: none !important;
 }
 
 /* Buttons: Action Sheet Menu Items
