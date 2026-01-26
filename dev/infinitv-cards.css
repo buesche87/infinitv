@@ -8,6 +8,17 @@
 .layout-desktop .detailImageContainer .portraitCard {
     max-width: 36em !important;
 }
+.layout-tv .detailImageContainer .portraitCard {
+    left: 1vw;
+    max-width: 28em;
+}
+.layout-tv .detailImageContainer .backdropCard {
+    left: 1vw;
+}
+.layout-tv .detailImageContainer .squareCard {
+    width: 20vw;
+    max-width: 18em;
+}
 
 /* Cards */
 .itemsContainer > .portraitCard,
@@ -73,6 +84,12 @@
 .personCard > .cardBox {
     text-align: center;
     text-align: -webkit-center;
+}
+
+/* Banner Cards */
+.layout-tv .itemsContainer > .bannerCard {
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
 }
 
 /*
@@ -146,7 +163,89 @@
 
 /*
 ===========================================================================
-   List Item Cards
+   List Items
+===========================================================================
+*/
+
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+/* Card (TV) */
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
+    padding-top: 1.5vh !important;
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
+    margin-bottom: 1em;
+    padding-left: 0em;
+    height: 5em;
+}
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
+    height: 5em;
+    width: 10em;
+}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
+    width: 11em;
+}
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* Card (Desktop) */
+.layout-desktop .itemsContainer > .listItem-border {
+    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    border-radius: var(--rounding-media) !important;
+    padding-right: 0 !important;
+    margin-bottom: .5em !important;
+    background: var(--bgdark20) !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover {
+    border: 2px solid var(--accent40) !important;
+    color: inherit !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) {
+    color: var(--accent100) !important;
+}
+
+/* Card Content (Desktop) */
+.layout-desktop .itemsContainer > .listItem-border .listItemImage {
+    transform: scale(1.3)
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBody {
+    padding-left: 2%;
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBodyText {
+    font-weight: 600;
+}
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+/* Card Content (Mobile) */
+.layout-mobile .itemsContainer .listItemBodyText {
+    justify-content: center;
+}
+.layout-mobile .itemsContainer .listItem-overview {
+    padding-top: 0;
+}
+.layout-mobile .itemsContainer .listItem-overview p {
+    margin-top: .5em;
+}
+
+/* Hide Image on small screens (Mobile) */
+@media (max-width: 40em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: flex;
+    }
+}
+@media (max-width: 30em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: none;
+    }
+}
+
+/*
+===========================================================================
+   Large Image List Items
 ===========================================================================
 */
 
