@@ -73,7 +73,6 @@
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
     width: 23vw;
-    /* font-size: 90% !important; */
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
     width:  calc(23vw - 1.75em);

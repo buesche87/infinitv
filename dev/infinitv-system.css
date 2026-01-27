@@ -441,6 +441,8 @@
     .layout-mobile .sectionTabs {
         order: 1;
     }
+
+    /* Move Tabs */
     .layout-mobile .emby-tab-button {
         padding: 1.25em 1.25em .25em 1.25em !important;
     }

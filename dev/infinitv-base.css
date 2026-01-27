@@ -397,7 +397,7 @@
 .listItem-focusscale,
 .listItem-largeImage,
 .selectionCommandsPanel {
-    border: var(--buttonborder);
+    border: var(--buttonborder) !important;
 }
 
 /* Borders: Transparent
@@ -406,11 +406,11 @@
 .emby-collapsible-button,
 .listItem-border,
 .listTextButton-autohide {
-    border: solid 2px #0000;
+    border: solid 2px #0000 !important;
 }
 
 .navMenuOption {
-    border: solid 1px #0000;
+    border: solid 1px #0000 !important;
 }
 
 /* No Borders
@@ -424,7 +424,7 @@
 .overview-expand,
 .sectionTitleTextButton,
 .skip-button {
-    border: none;
+    border: none !important;
 }
 
 /*
@@ -450,7 +450,7 @@
 .listItem-focusscale:hover,
 .mainDetailButtons .detailButton:hover,
 .play-button:hover {
-    border-color: var(--accent40);
+    border-color: var(--accent40) !important;
 }
 
 /* Border Color: Accent 60%
@@ -467,7 +467,7 @@
 .itemsContainer > .listItem:focus,
 .mainDetailButtons .detailButton:focus,
 .itemsContainer > .listItem-largeImage:focus {
-    border-color: var(--accent60);
+    border-color: var(--accent60) !important;
 }
 
 /* Border Color: Transparent
@@ -476,7 +476,7 @@
 .navMenuOption:focus,
 .navMenuOption-selected,
 .userPreferencesPage .listItem-border:focus {
-    border-color: #0000;
+    border-color: #0000 !important;
 }
 
 /* Glow: Button
