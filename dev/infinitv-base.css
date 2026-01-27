@@ -142,6 +142,7 @@
 /* Color: White
 --------------------------------------------------------------------------*/
 .emby-tab-button-active,
+.emby-button.skip-button:focus,
 .layout-mobile .overview-expand:focus {
     color: white !important;
 }
