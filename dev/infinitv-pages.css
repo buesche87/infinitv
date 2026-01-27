@@ -134,7 +134,7 @@
 
 /* Library Pages: Alignment */
 .layout-tv .libraryPage {
-    padding-top: 5em !important;
+    padding-top: 5.5em !important;
     padding-left: 3vw;
     padding-right: 3vw;
 }
@@ -436,11 +436,16 @@
 }
 
 /* Tracks & Subtitles */
-.leyout-tv .trackSelections {
+.layout-tv .trackSelections {
     max-width: 100%;
-    width: 60%;
+    width: 65%;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+
+.layout-tv .trackSelections .selectLabelFocused {
+    color: #fff !important;
+    font-weight: 600 !important;
 }
 
 /* Secondary Container */
