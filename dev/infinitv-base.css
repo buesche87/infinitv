@@ -98,7 +98,7 @@
 
 /* Focus */
 .detailButton:focus {
-    color: var(--accent80);
+    color: var(--accent80) !important;
 }
 
 /* Color: Accent 100% 
@@ -136,14 +136,14 @@
 /* Active */
 .header-right .headerButton:active,
 .paper-icon-button-light:active {
-    color: var(--accent100);
+    color: var(--accent100) !important;
 }
 
 /* Color: White
 --------------------------------------------------------------------------*/
 .emby-tab-button-active,
 .layout-mobile .overview-expand:focus {
-    color: white;
+    color: white !important;
 }
 
 /* Font weight (on Focus)
