@@ -405,12 +405,14 @@
 ============================================================================
 */
 
-/* Todo */
+/* Header
+--------------------------------------------------------------------------*/
+
 .layout-mobile .homeSectionsContainer {
     top: 73vh;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 50em) and (orientation: portrait) {
 
     /* Show Header at Bottom */
     .layout-mobile .skinHeader {
@@ -446,7 +448,8 @@
     }
 
     .layout-mobile .homeSectionsContainer {
-        top: 78vh;
+        top: 52vh;
+        background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%));
     }
     
     /* Header: Remove Logo */
@@ -483,12 +486,6 @@
     /* Toast */
     .layout-tv .toastContainer {
         bottom: 4em;
-    }
-
-    /* Slides: Pause Button Placement */
-    .layout-mobile .pause-button {
-        top: 74vh;
-        right: 4vw;
     }
 
     /* Library Pages: Move up */
@@ -546,4 +543,82 @@
     .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
         display: none !important;
     }
+}
+
+/* Slides
+--------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+    #slides-container {
+        position: relative;
+        width: 100vw;
+        height: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .slide {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75%;
+    }
+
+  .plot-container {
+    display: none;
+  }
+
+  .backdrop-container {
+    width: 100%;
+  }
+
+  .dots-container {
+    top: calc(25% + 15vh);
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    background-color: #ffffff00;
+  }
+
+
+  .genre {
+    top: calc(25% + 15vh);
+    /* left: 50%; */
+    /* width: 100%; */
+    /* transform: translateX(-50%); */
+  }
+
+  .info-container {
+    top: calc(25% + 10vh);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    /* width: 95%; */
+  }
+
+  .button-container {
+    top: calc(25% + 25vh);
+  }
+
+  .logo {
+    top: 50%;
+    left: 50%;
+    max-height: 60%;
+  }
+
+  .logo-container {
+    top: 25%;
+  }
+
+
+    /* Slides: Pause Button Placement */
+    .pause-button {
+        top: calc(25% + 25vh);
+        right: 4vw;
+    }
+
+    /*
+    .backgroundContainer {
+        background: var(--bgImage) !important;
+    } */
+
 }
