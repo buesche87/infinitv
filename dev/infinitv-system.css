@@ -409,7 +409,7 @@
 --------------------------------------------------------------------------*/
 
 .layout-mobile .homeSectionsContainer {
-    top: 73vh;
+    top: 62vh;
 }
 
 @media (max-width: 50em) and (orientation: portrait) {
