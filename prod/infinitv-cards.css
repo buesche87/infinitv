@@ -8,22 +8,29 @@
 .layout-desktop .detailImageContainer .portraitCard {
     max-width: 36em !important;
 }
+.layout-tv .detailImageContainer .portraitCard {
+    left: 1vw;
+    max-width: 28em;
+}
+.layout-tv .detailImageContainer .backdropCard {
+    left: 1vw;
+}
+.layout-tv .detailImageContainer .squareCard {
+    width: 20vw;
+    max-width: 18em;
+}
 
 /* Cards */
-.itemsContainer > .portraitCard {
-    width: 33.33%;
-} 
+.itemsContainer > .portraitCard,
 .itemsContainer > .squareCard {
     width: 33.33%;
-} 
+}
 .itemsContainer > .backdropCard {
     width: 50%;
 }
 
 /* Overflow Cards */
-.itemsContainer > .overflowPortraitCard {
-    width: 33.33%;
-}
+.itemsContainer > .overflowPortraitCard,
 .itemsContainer > .overflowSquareCard {
     width: 33.33%;
 }
@@ -66,22 +73,180 @@
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
     width: 23vw;
-    font-size: 90% !important;
 }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
     width:  calc(23vw - 1.75em);
     height: 23vw;
 }
 
+/* Person Cards: Center Content */
+.personCard > .cardBox {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+/* Banner Cards */
+.layout-tv .itemsContainer > .bannerCard {
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
+}
+
 /*
 ===========================================================================
-   List Item Cards
+   Cards: Animation
 ===========================================================================
 */
 
-.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {
-    margin-left: 0;
+/* CardText on Hover (Desktop) */
+@media (hover: hover) and (pointer: fine) {
+    .layout-desktop .bannerCard:hover > .cardText,
+    .layout-desktop .itemsContainer > .card:hover .cardText {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
+
+/* Font weight on Focus
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary {
+    font-weight: 500;
+} */
+
+/* CardBox: Zoom on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardBox {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Card Text: Bold on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary,
+.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) {
+    font-weight: 600;
+}
+
+/* Card Glow */
+@media (hover: hover) and (pointer: fine) {
+    .card:hover .cardScalable,
+    .card:hover .cardBox:has(> .cardFooter) {
+        box-shadow: var(--deskcardglow) !important;
+    }
+}
+
+/* Card Shadows */
+@media (pointer: fine) {
+    .cardScalable {
+        box-shadow: var(--cardshadow) !important;
+    }
+
+    /* Footer vorhanden → Shadow auf cardBox */
+    .cardBox:has(> .cardFooter) {
+        box-shadow: var(--cardshadow) !important;
+    }
+
+    /* Dann Scalable neutralisieren */
+    .cardBox:has(> .cardFooter) > .cardScalable {
+        box-shadow: none !important;
+    }
+}
+
+/* Cards: Inset Shadow (smoothening) */
+.libraryPage .cardImageContainer {
+    box-shadow: var(--insettop), var(--insetbottom);
+}
+
+/*
+===========================================================================
+   List Items
+===========================================================================
+*/
+
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+/* Card (TV) */
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
+    padding-top: 1.5vh !important;
+    padding-bottom: 1.5vh !important;
+    padding-right: 1vw !important;
+    margin-bottom: 1em;
+    padding-left: 0em;
+    height: 5em;
+}
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
+    height: 5em;
+    width: 10em;
+}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
+    width: 11em;
+}
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* Card (Desktop) */
+.layout-desktop .itemsContainer > .listItem-border {
+    border: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    border-radius: var(--rounding-media) !important;
+    padding-right: 0 !important;
+    margin-bottom: .5em !important;
+    background: var(--bgdark20) !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover {
+    border: 2px solid var(--accent40) !important;
+    color: inherit !important;
+}
+.layout-desktop .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) {
+    color: var(--accent100) !important;
+}
+
+/* Card Content (Desktop) */
+.layout-desktop .itemsContainer > .listItem-border .listItemImage {
+    transform: scale(1.3)
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBody {
+    padding-left: 2%;
+}
+.layout-desktop .itemsContainer > .listItem-border .listItemBodyText {
+    font-weight: 600;
+}
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+/* Card Content (Mobile) */
+.layout-mobile .itemsContainer .listItemBodyText {
+    justify-content: center;
+}
+.layout-mobile .itemsContainer .listItem-overview {
+    padding-top: 0;
+}
+.layout-mobile .itemsContainer .listItem-overview p {
+    margin-top: .5em;
+}
+
+/* Hide Image on small screens (Mobile) */
+@media (max-width: 40em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: flex;
+    }
+}
+@media (max-width: 30em) {
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
+        display: none;
+    }
+}
+
+/*
+===========================================================================
+   Large Image List Items
+===========================================================================
+*/
 
 /* Cards: Large List Items */
 .listItem.listItem-largeImage {
@@ -109,6 +274,8 @@
     top: 0.75em;
 }
 
+/* Layout TV
+--------------------------------------------------------------------------*/
 
 /* Large List Items */
 .layout-tv .listItemImage-large-tv {
@@ -126,7 +293,7 @@
 
 @media (max-width: 64em) {
     .layout-tv .listItemImage-large {
-        height:16vw;
+        height: 16vw;
         margin-right: .5em !important;
         width: 22vw
     }
@@ -145,7 +312,7 @@
     }
 }
 
-/* List Items: Indicator */
+/* List Item: Indicators */
 .layout-tv .listItemIndicators {
     position: fixed;
     left: 0.75em;
@@ -159,6 +326,46 @@
     margin-right: 0em;
 }
 
+.layout-mobile .vertical-list .listItem-border {
+    border: var(--buttonborder) !important;
+    border-radius: var(--rounding-media) !important;
+    background: var(--bgdark40) !important;
+}
+
+/* Center Text */
+.layout-mobile .detailPageWrapperContainer .listItemBody {
+    text-align: center;
+}
+.layout-mobile .vertical-list .listItem-border .listItemBody {
+    padding: 0 1em;
+}
+
+/* List Item Content */
+.layout-mobile .detailPageWrapperContainer .listItem-content {
+    background: var(--bgdark40) !important;
+    align-content: center;
+}
+@media(max-width: 50em) {
+    .layout-mobile .detailPageWrapperContainer .listItem-content {
+        border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
+    }
+}
+.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
+    margin: .5em;
+}
+
+/* List Item Image */
+.layout-mobile .vertical-list .listItem-border .listItemImage {
+    transform: scale(1.2);
+    margin-left: -.2em;
+}
+
+/* List Item Buttons */
+.layout-mobile .listItem-largeImage .listItemImageButton {
+    border-radius: var(--rounding-system) !important;
+}
+
+/* List Item: Indicators */
 .layout-mobile .listItemIndicators {
     position: fixed;
     left: 0.5em;
@@ -166,58 +373,11 @@
     font-size: .75em !important
 }
 
-.layout-mobile .listItem-largeImage .listItemImageButton {
-    border-radius: var(--rounding-system) !important;
-}
-.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
-    margin: .5em;
-}
-.layout-mobile .detailPageWrapperContainer .listItem-content {
-    background: var(--bgdark40) !important;
-    align-content:center;
-}
-@media(max-width: 50em) {
-    .layout-mobile .detailPageWrapperContainer .listItem-content {
-        border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
-    }
-}
-
-.layout-mobile .detailPageWrapperContainer .listItemBody {
-    text-align: center;
-}
-
-.layout-mobile .vertical-list .listItem-border {
-    border: var(--buttonborder) !important;
-    border-radius: var(--rounding-media) !important;
-    background: var(--bgdark40) !important;
-}
-
-.layout-mobile .vertical-list .listItem-border .listItemImage {
-    transform: scale(1.2);
-    margin-left: -.2em;
-}
-
-.layout-mobile .vertical-list .listItem-border .listItemBody {
-    padding: 0 1em;
-}
-
-
 /*
 ===========================================================================
-   Cards: CardBox
+   Cards: Border Roundings
 ===========================================================================
 */
-
-/* Cards: Inset Shadow */
-.libraryPage .cardImageContainer {
-    box-shadow: var(--insettop), var(--insetbottom);
-}
-
-/* Person Cards: Center Content */
-.personCard > .cardBox {
-    text-align: center;
-    text-align: -webkit-center;
-}
 
 /* Cards: Rounding Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
@@ -235,21 +395,6 @@
     border-bottom-right-radius: var(--rounding-media) !important;
     text-align: center;
 }
-
-/* CardText on Hover (Desktop) */
-@media (hover: hover) and (pointer: fine) {
-    .layout-desktop .bannerCard:hover > .cardText,
-    .layout-desktop .itemsContainer > .card:hover .cardText {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-
-    .layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 
 /*
 ===========================================================================
@@ -269,12 +414,6 @@
     margin-right: .75em;
     margin-bottom: .5em !important;
     margin-top: .75em !important;
-}
-
-/* CardBox: Zoom on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardBox {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
 }
 
 /* CardBox: Banner Card */
@@ -306,19 +445,13 @@
 ===========================================================================
 * > needs plugin "home section containers" */ 
 
-/* Card Text: Bold on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary,
-.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) {
-    font-weight: 600;
-}
 
-/* Text Shadow (not on mobile > performance) */
+/* Text Shadow (not on mobile > performance)
 @media (pointer: fine) {
     .cardText {
         text-shadow: var(--textshadow) !important;
     }
-}
+} */
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
@@ -384,6 +517,8 @@
 }
 
 /* Card Indicators: Count & Played */
+.countIndicator,
+.mediaSourceIndicator,
 .playedIndicator {
     background: rgba(0, 0, 0, 1);
 }
@@ -391,7 +526,6 @@
 .mediaSourceIndicator {
     font-weight: 600;
     font-size: 89%;
-    color: rgba(0, 0, 0, 1);
 }
 
 /* Card Indicators: Missing & Unaired */

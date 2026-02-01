@@ -53,6 +53,8 @@
     margin-top: 3.9em;
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
+
+/* Main Drawer: Menu Options */
 .navMenuOptionText {
     margin-top: 0;
 }
@@ -111,9 +113,6 @@
     scrollbar-width: none;
 }
 
-.libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 5.5em !important;
-}
 /*
 ============================================================================
    Header & Section Tabs
@@ -200,24 +199,15 @@
 /* Buttons: Header Buttons
 --------------------------------------------------------------------------*/
 
+.emby-tab-button.show-focus:focus,
 .headerButton:focus {
     -webkit-transform: none !important;
     transform: none !important;
 }
 
-/* Buttons: Header-Tab
---------------------------------------------------------------------------*/
-
 .layout-tv .emby-tab-button,
 .layout-desktop .emby-tab-button {
     padding: .6em 1.25em .8em 1.25em !important;
-}
-.emby-tab-button:focus {
-    -webkit-transform: scale(1.1)!important;
-    transform: scale(1.1)!important;
-}
-.emby-tab-button-active {
-    color: #fff !important;
 }
 
 /* Buttons: Action Sheet Menu Items
@@ -415,12 +405,14 @@
 ============================================================================
 */
 
-/* Todo */
+/* Header
+--------------------------------------------------------------------------*/
+
 .layout-mobile .homeSectionsContainer {
-    top: 73vh;
+    top: 62vh;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 50em) and (orientation: portrait) {
 
     /* Show Header at Bottom */
     .layout-mobile .skinHeader {
@@ -443,6 +435,8 @@
     .layout-mobile .sectionTabs {
         order: 1;
     }
+
+    /* Move Tabs */
     .layout-mobile .emby-tab-button {
         padding: 1.25em 1.25em .25em 1.25em !important;
     }
@@ -454,7 +448,8 @@
     }
 
     .layout-mobile .homeSectionsContainer {
-        top: 78vh;
+        top: 52vh;
+        background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%));
     }
     
     /* Header: Remove Logo */
@@ -491,12 +486,6 @@
     /* Toast */
     .layout-tv .toastContainer {
         bottom: 4em;
-    }
-
-    /* Slides: Pause Button Placement */
-    .layout-mobile .pause-button {
-        top: 74vh;
-        right: 4vw;
     }
 
     /* Library Pages: Move up */
@@ -553,5 +542,68 @@
     .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs,
     .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
         display: none !important;
+    }
+}
+
+/* Slides
+--------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+    #slides-container {
+        position: relative;
+        width: 100vw;
+        height: 90%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+
+    .slide {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 75%;
+    }
+
+    .plot-container {
+        display: none;
+    }
+
+    .backdrop-container {
+        width: 100%;
+    }
+
+    .dots-container {
+        top: calc(25% + 15vh);
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        background-color: #ffffff00;
+    }
+
+    .genre {
+        top: calc(25% + 15vh);
+    }
+
+    .info-container {
+        top: calc(25% + 10vh);
+    }
+
+    .button-container {
+        top: calc(25% + 25vh);
+    }
+
+    .logo {
+        top: 50%;
+        left: 50%;
+        max-height: 60%;
+    }
+
+    .logo-container {
+        top: 25%;
+    }
+
+    .pause-button {
+        top: calc(25% + 25vh);
+        right: 4vw;
     }
 }

@@ -41,11 +41,6 @@
     transform: none !important;
 }
 
-/* Player OSD: Skip-Button */
-.skip-button {
-    color: #fff;
-}
-
 /* Progressbar & Volume */
 .mdl-slider::-moz-range-thumb {
     color: var(--accent100) !important;
