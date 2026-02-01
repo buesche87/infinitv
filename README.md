@@ -1,24 +1,31 @@
-This theme has its focus on HTPCs running jellyfin-desktop as client.
+This theme is designed with a strong focus on HTPC setups using jellyfin-desktop as the client, while fully supporting both desktop and mobile devices.
 
-- Minimalist UI optimized for remote and keyboard use
-- Customizable accent color, transparency, and background image
-- Compact player OSD on sufficiently wide screens
-- Custom cards with custom animations
-- Centered menus, pages, and titles where appropriate
+Key features include:
+
+- A minimalist TV-mode UI optimized for remote control and keyboard navigation
+- A redesigned mobile interface with special attention to portrait mode, placing key elements within easy thumb reach
+- Custom cards with a smoother overall appearance and custom animations
+- Consistently centered menus, pages, and titles where appropriate
+- Improved use of previously unused screen space, especially in TV mode
+- A new, compact player OSD on sufficiently wide displays
+- Full support for user-defined colors, transparency, and background images
+- Many additional small and large refinements throughout the UI
+
+Give it a try!
 
 
 Optimal results:
-- [Jellyfin Desktop v2.0.0](https://github.com/jellyfin/jellyfin-desktop/releases)
+- [Jellyfin Desktop v2.0.0](https://github.com/jellyfin/jellyfin-desktop/releases) or a modern webbrowser
 - Set theme to `Dark`
 - Set display mode to `TV`
 
 
 Give it your style by changing `:root` values:
-- `accent-h: 310` > use the `H` value from an HSL-color picker
+- Accent color: `accent-h: 310` > use the `H` value from an HSL-color picker
 - Set your wallpaper with `bgImage: url("https://url.to/picture.jpg")`
-- set background darkness from `0.00` to `1.00`
-- set opacity from `1.00` to `0.00`
-- give roundings more radius
+- Set background darkness from `0.00` to `1.00`
+- Set opacity from `1.00` to `0.00`
+- Give roundings more radius
 
 
 > *This is a hobby project to expand my basic knowledge of CSS. Therefore, it does not claim to be complete or bug-free. Ideas and problems will be addressed when free time allows.*
