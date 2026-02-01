@@ -15,7 +15,7 @@ Give it a try!
 
 
 Optimal results:
-- [Jellyfin Desktop v2.0.0](https://github.com/jellyfin/jellyfin-desktop/releases)
+- [Jellyfin Desktop v2.0.0](https://github.com/jellyfin/jellyfin-desktop/releases) or a modern webbrowser
 - Set theme to `Dark`
 - Set display mode to `TV`
 
