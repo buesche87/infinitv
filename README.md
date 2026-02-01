@@ -70,5 +70,5 @@ Add the following to your custom branding:
 
 | | |
 :-------------------------:|:-------------------------:
-![](https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/menu-mobile.png)  |  ![](https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/movies-mobile.png)
-
+![](https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/home-mobile.png)  |  ![](https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/drawer-mobile.png)
+![](https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/movies-mobile.png)  |  
