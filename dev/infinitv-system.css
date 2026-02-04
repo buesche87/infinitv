@@ -449,7 +449,7 @@
 
     .layout-mobile .homeSectionsContainer {
         top: 52vh;
-        background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%));
+        /* background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)); */
     }
     
     /* Header: Remove Logo */
