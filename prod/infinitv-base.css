@@ -311,7 +311,7 @@
 .cardPadder,
 .clearLink,
 .collapseContent,
-.emby-button,
+.emby-button:not(.cardImageContainer),
 .clearLink > .emby-button,
 .listItem,
 .listItemBodyText,

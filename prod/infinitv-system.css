@@ -348,7 +348,7 @@
 
 /* Misc Buttons
 --------------------------------------------------------------------------*/
-
+.listPaging .paper-icon-button-light,
 .emby-button.sectionTitleTextButton.show-focus:focus {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -449,7 +449,7 @@
 
     .layout-mobile .homeSectionsContainer {
         top: 52vh;
-        background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%));
+        /* background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)); */
     }
     
     /* Header: Remove Logo */

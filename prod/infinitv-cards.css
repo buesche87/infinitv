@@ -144,12 +144,12 @@
         box-shadow: var(--cardshadow) !important;
     }
 
-    /* Footer vorhanden → Shadow auf cardBox */
+    /* Shadow for cardBox if footer present */
     .cardBox:has(> .cardFooter) {
         box-shadow: var(--cardshadow) !important;
     }
 
-    /* Dann Scalable neutralisieren */
+    /* No shadow for cardScalable if footer present */
     .cardBox:has(> .cardFooter) > .cardScalable {
         box-shadow: none !important;
     }
@@ -159,6 +159,18 @@
 .libraryPage .cardImageContainer {
     box-shadow: var(--insettop), var(--insetbottom);
 }
+
+
+
+/* Cards: No Shadows */
+#imagesContainer .imageEditorCard .cardBox {
+    box-shadow: none !important;
+}
+
+#imagesContainer .imageEditorCard .cardBox .cardScalable {
+    border-radius: var(--rounding-media) !important;
+}
+
 
 /*
 ===========================================================================
@@ -381,7 +393,9 @@
 
 /* Cards: Rounding Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
+.visualCardBox:has(.cardFooter) .cardContent,
 .visualCardBox:has(.cardFooter) .cardImage,
+.visualCardBox:has(.cardFooter) .cardPadder-portrait,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
 .visualCardBox:has(.cardFooter) .cardOverlayContainer {
@@ -408,6 +422,9 @@
 }
 .layout-tv  .itemsContainer > .card > .cardBox {
     margin: 1.5em 1.2em !important;
+}
+.layout-tv .availableImagesList .portraitCard .cardBox {
+    margin: 1em .75em !important;
 }
 .layout-mobile .itemsContainer .card > .cardBox {
     margin-left: .75em;
