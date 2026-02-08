@@ -144,12 +144,12 @@
         box-shadow: var(--cardshadow) !important;
     }
 
-    /* Footer vorhanden → Shadow auf cardBox */
+    /* Shadow for cardBox if footer present */
     .cardBox:has(> .cardFooter) {
         box-shadow: var(--cardshadow) !important;
     }
 
-    /* Dann Scalable neutralisieren */
+    /* No shadow for cardScalable if footer present */
     .cardBox:has(> .cardFooter) > .cardScalable {
         box-shadow: none !important;
     }
@@ -159,6 +159,18 @@
 .libraryPage .cardImageContainer {
     box-shadow: var(--insettop), var(--insetbottom);
 }
+
+
+
+/* Cards: No Shadows */
+#imagesContainer .imageEditorCard .cardBox {
+    box-shadow: none !important;
+}
+
+#imagesContainer .imageEditorCard .cardBox .cardScalable {
+    border-radius: var(--rounding-media) !important;
+}
+
 
 /*
 ===========================================================================
