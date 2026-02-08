@@ -315,7 +315,8 @@
 
 /* Background Color: Transparent
 --------------------------------------------------------------------------*/
-.cardBox,
+.layout-tv .itemsContainer .card .cardBox,
+.layout-desktop .itemsContainer .card .cardBox,
 .cardOverlayButton,
 .cardPadder,
 .clearLink,

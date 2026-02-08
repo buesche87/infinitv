@@ -500,16 +500,20 @@
 ===========================================================================
 */
 
+/* ListItem Color on Hover */
 .paperList .listItem:hover {
     color: var(--accent100);
 }
 
-/* Image Search: Grey */
-.dialogContentInner .itemsContainer .card .cardBox {
+/* Card Backgroiund: Grey */
+.dialogContentInner .card .cardBox {
     background-color: rgb(32, 32, 32) !important;
 }
 
-
+/* Align card image */
+.dialogContentInner .portraitCard .cardContent .cardImageContainer {
+    top: -.6em;
+}
 
 /*
 ===========================================================================

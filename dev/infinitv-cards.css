@@ -976,6 +976,16 @@
         -webkit-line-clamp: 4;
     }
 }
+@media(min-width: 80em) {
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 25%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 33.33%;
+    }
+}
 @media(min-width: 87.5em) {
 
     /* Cards */
@@ -987,6 +997,15 @@
     }
     .itemsContainer > .backdropCard {
         width: 20%;
+    }
+
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 25%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 33.33%;
     }
 
     /* Cards - TV */
@@ -1123,7 +1142,16 @@
     .itemsContainer > .backdropCard {
         width: 20%;
     }
-    
+
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 20%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 25%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 16.66%;
@@ -1260,6 +1288,14 @@
         width: 16.66%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop  .dialogContentInner .portraitCard {
+        width: 20%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 25%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 14.25%;
@@ -1383,6 +1419,15 @@
     } 
     .itemsContainer > .backdropCard {
         width: 16.66%;
+    }
+
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 16.66%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 20%;
     }
 
     /* Cards - TV */
@@ -1520,6 +1565,15 @@
         width: 14.25%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 14.25%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 16.66%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 12.5%;
@@ -1644,6 +1698,15 @@
         width: 12.5%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 12.5%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 14.25%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 11.1%;
@@ -1761,6 +1824,15 @@
         width: 11.11%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 12.5%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 12.5%;
+    }
+    
     /* Cards - TV  */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 9.09%;
