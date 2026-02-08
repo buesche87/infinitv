@@ -193,7 +193,7 @@
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
 .verticalSection > .sectionTitleContainer-cards {
-    background: var(--bgwhite10);
+    background-color: var(--bgwhite10);
 }
 
 /* Backgrounds: Dark 20%
@@ -207,7 +207,7 @@
 .button-submit:hover,
 .emby-button.block:hover,
 .raised:hover {
-    background: var(--bgdark20) !important;
+    background-color: var(--bgdark20) !important;
 }
 
 /* Backgrounds: Dark 40%
@@ -235,7 +235,7 @@
 /* Focus */
 .emby-button:focus,
 .searchSuggestionsList > div:has(.emby-button:focus) {
-    background: var(--bgdark40) !important;
+    background-color: var(--bgdark40) !important;
 }
 
 /* Backgrounds: Dark 60%
@@ -260,7 +260,7 @@
 .listItem-largeImage:focus,
 .mainDetailButtons .detailButton:focus,
 .upNextDialog-button:focus {
-    background: var(--bgdark60) !important;
+    background-color: var(--bgdark60) !important;
 }
 
 /* Backgrounds: Dark 80%
@@ -272,7 +272,7 @@
 .emby-input:focus,
 .emby-textarea:focus,
 .listItem-focusscale:focus {
-    background: var(--bgdark80) !important;
+    background-color: var(--bgdark80) !important;
 }
 
 /* Backgrounds: Accent
@@ -280,19 +280,19 @@
 
 /* Accent 20% */
 .paper-icon-button-light:not(:disabled):hover {
-    background: var(--accent20);
+    background-color: var(--accent20);
 }
 
 /* Accent 40% */
 .emby-select option:hover {
-    background: var(--accent40) !important;
+    background-color: var(--accent40) !important;
 }
 
 /* Accent 80% */
 .alphaPickerButton:focus,
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-select option:focus {
-    background: var(--accent80) !important;
+    background-color: var(--accent80) !important;
 }
 
 /* Accent 100% */
@@ -303,7 +303,7 @@
 .mdl-radio__focus-circle,
 .mdl-slider-background-lower,
 .sliderMarker.watched {
-    background: var(--accent100) !important;
+    background-color: var(--accent100) !important;
 }
 
 /* Backgrounds: Transparent
@@ -311,7 +311,7 @@
 .cardPadder,
 .clearLink,
 .collapseContent,
-.emby-button:not(.cardImageContainer),
+.emby-button,
 .clearLink > .emby-button,
 .listItem,
 .listItemBodyText,
@@ -333,7 +333,7 @@
 .userPreferencesPage .listItem-border:focus,
 .overview-expand:focus,
 .sectionTitleTextButton:focus {
-    background: #0000 !important;
+    background-color: #0000 !important;
 }
 
 /*
