@@ -183,7 +183,13 @@
     background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
-/* Backgrounds: Light 10
+/*
+============================================================================
+   Background Colors
+============================================================================
+*/
+
+/* Background Color: Light 10
 --------------------------------------------------------------------------*/
 
 #loginPage .cardImage,
@@ -196,7 +202,7 @@
     background-color: var(--bgwhite10);
 }
 
-/* Backgrounds: Dark 20%
+/* Background Color: Dark 20%
 --------------------------------------------------------------------------*/
 .detail-button,
 .favorite-button,
@@ -210,7 +216,7 @@
     background-color: var(--bgdark20) !important;
 }
 
-/* Backgrounds: Dark 40%
+/* Background Color: Dark 40%
 --------------------------------------------------------------------------*/
 .button-submit,
 .checkboxOutline,
@@ -238,7 +244,7 @@
     background-color: var(--bgdark40) !important;
 }
 
-/* Backgrounds: Dark 60%
+/* Background Color: Dark 60%
 --------------------------------------------------------------------------*/
 
 /* Hover */
@@ -263,7 +269,7 @@
     background-color: var(--bgdark60) !important;
 }
 
-/* Backgrounds: Dark 80%
+/* Background Color: Dark 80%
 --------------------------------------------------------------------------*/
 .emby-select option,
 
@@ -275,10 +281,11 @@
     background-color: var(--bgdark80) !important;
 }
 
-/* Backgrounds: Accent
+/* Background Color: Accent
 --------------------------------------------------------------------------*/
 
 /* Accent 20% */
+.headerButton:hover,
 .paper-icon-button-light:not(:disabled):hover {
     background-color: var(--accent20);
 }
@@ -306,13 +313,16 @@
     background-color: var(--accent100) !important;
 }
 
-/* Backgrounds: Transparent
+/* Background Color: Transparent
 --------------------------------------------------------------------------*/
+.cardBox,
+.cardOverlayButton,
 .cardPadder,
 .clearLink,
 .collapseContent,
 .emby-button,
-.clearLink > .emby-button,
+/* .clearLink > .emby-button, */
+
 .listItem,
 .listItemBodyText,
 .listItemIcon,
@@ -323,40 +333,23 @@
 
 /* Hover */
 .actionSheetMenuItem:hover,
+.cardOverlayButton:hover,
 .clearLink > .emby-button:hover,
 .collapseContent .listItem:hover,
 .navMenuOption:hover,
 
 /* Focus */
+.actionSheetMenuItem:focus,
 .button-link:focus,
+.emby-collapsible-button:focus,
 .emby-tab-button:focus,
 .userPreferencesPage .listItem-border:focus,
 .overview-expand:focus,
-.sectionTitleTextButton:focus {
-    background-color: #0000 !important;
-}
-
-/*
-============================================================================
-   Background Colors
-============================================================================
-*/
-
-/* Background Colors: Accent 20% */
-.headerButton:hover {
-    background-color: var(--accent20) !important;
-}
-
-/* Background Colors: Transparent */
-.cardOverlayButton,
-.layout-tv .itemsContainer .card .cardBox,
-.layout-desktop .itemsContainer .card .cardBox,
-.cardOverlayButton:hover,
-.actionSheetMenuItem:focus,
-.emby-collapsible-button:focus,
+.sectionTitleTextButton:focus,
 .paper-icon-button-light:not(.alphaPickerButton):active {
     background-color: #0000 !important;
 }
+
 
 /* Backgrounds: Card defaults
 --------------------------------------------------------------------------*/

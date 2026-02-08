@@ -100,6 +100,10 @@
     top: 5em;
     right: 2vw;
 }
+.layout-desktop .volume-toggle {
+    top: 5em;
+    right: 4vw;
+}
 
 /* Slides: Font Size */
 .slide .genre,
@@ -488,6 +492,23 @@
     padding-left: 3% !important;
     padding-right: 3% !important;
 }
+
+
+/*
+===========================================================================
+   Media Pages: Image Search
+===========================================================================
+*/
+
+.paperList .listItem:hover {
+    color: var(--accent100);
+}
+
+/* Image Search: Grey */
+.dialogContentInner .itemsContainer .card .cardBox {
+    background-color: rgb(32, 32, 32) !important;
+}
+
 
 
 /*
