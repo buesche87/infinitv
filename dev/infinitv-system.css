@@ -348,7 +348,7 @@
 
 /* Misc Buttons
 --------------------------------------------------------------------------*/
-
+.listPaging .paper-icon-button-light,
 .emby-button.sectionTitleTextButton.show-focus:focus {
     -webkit-transform: scale(1);
     transform: scale(1);

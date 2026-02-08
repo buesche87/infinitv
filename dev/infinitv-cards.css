@@ -381,7 +381,9 @@
 
 /* Cards: Rounding Top, Flat Bottom */
 .visualCardBox:has(.cardFooter) .blurhash-canvas,
+.visualCardBox:has(.cardFooter) .cardContent,
 .visualCardBox:has(.cardFooter) .cardImage,
+.visualCardBox:has(.cardFooter) .cardPadder-portrait,
 .visualCardBox:has(.cardFooter) .coveredImage,
 .visualCardBox:has(.cardFooter) .cardImageContainer,
 .visualCardBox:has(.cardFooter) .cardOverlayContainer {
@@ -408,6 +410,9 @@
 }
 .layout-tv  .itemsContainer > .card > .cardBox {
     margin: 1.5em 1.2em !important;
+}
+.layout-tv .availableImagesList .portraitCard .cardBox {
+    margin: 1em .75em !important;
 }
 .layout-mobile .itemsContainer .card > .cardBox {
     margin-left: .75em;
