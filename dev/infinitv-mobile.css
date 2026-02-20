@@ -4,14 +4,11 @@
 ============================================================================
 */
 
-/* Header
---------------------------------------------------------------------------*/
-
-.layout-mobile .homeSectionsContainer {
-    top: 62vh;
-}
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+    /* Header
+    --------------------------------------------------------------------------*/
 
     /* Show Header at Bottom */
     .layout-mobile .skinHeader {
