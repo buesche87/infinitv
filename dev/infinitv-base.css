@@ -74,7 +74,7 @@
 
 /*
 ============================================================================
-   Text Colors
+   Colors
 ============================================================================
 */
 
@@ -88,13 +88,13 @@
 .actionSheetMenuItem:hover,
 .button-link:hover,
 .emby-collapsible-button:hover,
+.listTextButton-autohide:hover,
+.overview-expand:hover,
 .emby-textarea:hover + .textareaLabel,
 .emby-checkbox:hover + .checkboxLabel,
-.listTextButton-autohide:hover,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
-.overview-expand:hover,
 
 /* Focus */
 .detailButton:focus {
@@ -104,8 +104,6 @@
 /* Color: Accent 100% 
 --------------------------------------------------------------------------*/
 .listItemIcon.check,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-slider,
 .syncPlayIconCircle,
 .inputLabelFocused,
@@ -116,6 +114,8 @@
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating,
 .upNextDialog-countdownText,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
 
 /* Hover */
 .cardOverlayButton:hover,
@@ -127,11 +127,11 @@
 
 /* Focus */
 .emby-button:focus,
-.emby-checkbox:focus + .checkboxLabel,
 .listItem-border:focus,
 .paper-icon-button-light:focus,
 .listItem-button:focus h2.listItemBodyText,
 .listTextButton-autohide:focus,
+.emby-checkbox:focus + .checkboxLabel,
 
 /* Active */
 .header-right .headerButton:active,
@@ -149,10 +149,10 @@
 
 /* Font weight (on Focus)
 --------------------------------------------------------------------------*/
-.emby-checkbox:focus + .checkboxLabel,
 .inputLabelFocused,
 .selectLabelFocused,
-.textareaLabelFocused {
+.textareaLabelFocused,
+.emby-checkbox:focus + .checkboxLabel {
     font-weight: 500;
 }
 
