@@ -143,8 +143,9 @@
         box-shadow: var(--cardshadow) !important;
     }
 
-    /* No shadow for cardScalable if footer present */
-    .cardBox:has(> .cardFooter) > .cardScalable {
+    /* No shadows */
+    .cardBox:has(> .cardFooter) > .cardScalable,
+    .dialogContentInner .imageEditorCard .cardBox {
         box-shadow: none !important;
     }
 }
@@ -153,18 +154,6 @@
 .libraryPage .cardImageContainer {
     box-shadow: var(--insettop), var(--insetbottom);
 }
-
-
-
-/* Cards: No Shadows */
-#imagesContainer .imageEditorCard .cardBox {
-    box-shadow: none !important;
-}
-
-#imagesContainer .imageEditorCard .cardBox .cardScalable {
-    border-radius: var(--rounding-media) !important;
-}
-
 
 /*
 ===========================================================================
@@ -395,6 +384,13 @@
 .visualCardBox:has(.cardFooter) .cardOverlayContainer {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+}
+
+/* Not for Image Editor cards */
+#images .visualCardBox .cardContent,
+#backdrops .visualCardBox .cardContent {
+    border-bottom-left-radius: inherit !important;
+    border-bottom-right-radius: inherit !important;
 }
 
 /* Card Footer: Flat Top, Rounding Bottom */

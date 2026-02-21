@@ -42,6 +42,19 @@
     border-color: var(--accent100) !important;
 }
 
+
+/* User Profile: Improve Alignments */
+.layout-tv .formDialogContent {
+    margin-bottom: 6.2em;
+}
+.layout-tv .dialogContentInner {
+    padding: .5em 5em;
+    justify-content: center;
+}
+.layout-tv .listItem-indexnumberleft {
+    margin: 1em;
+}
+
 /*
 ============================================================================
    Menu Drawer
