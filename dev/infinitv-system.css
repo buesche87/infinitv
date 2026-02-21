@@ -59,6 +59,12 @@
     margin-top: 0;
 }
 
+/* Hide HeaderTabs & Footer when drawer opens */
+.layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs,
+.layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
+    display: none !important;
+}
+
 /*
 ============================================================================
    Collapsible Menus

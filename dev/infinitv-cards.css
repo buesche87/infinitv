@@ -456,14 +456,6 @@
 ===========================================================================
 * > needs plugin "home section containers" */ 
 
-
-/* Text Shadow (not on mobile > performance)
-@media (pointer: fine) {
-    .cardText {
-        text-shadow: var(--textshadow) !important;
-    }
-} */
-
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
 .NextUp .card[data-type="Episode"] .cardText-first {

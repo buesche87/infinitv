@@ -137,13 +137,6 @@
         margin-left: .2em;
     }
 
-    /* Hide HeaderTabs & Footer when drawer opens */
-    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs,
-    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
-        display: none !important;
-    }
-
-
     /* Slides
     --------------------------------------------------------------------------*/
 
@@ -203,5 +196,11 @@
     .pause-button {
         top: calc(25% + 25vh);
         right: 4vw;
+    }
+}
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .homeSectionsContainer {
+        top: 61vh;
     }
 }

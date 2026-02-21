@@ -59,15 +59,10 @@
 ============================================================================
 */
 
-/* Home Page - Layout Mobile */
+/* Home Page */
 .layout-mobile .homePage {
     padding-left: 0;
     padding-right: 0;
-}
-@media(max-width: 48.125em) {
-    .layout-mobile .homeSectionsContainer {
-        top: 68vh;
-    }
 }
 @media(min-width: 48.125em) {
     .layout-mobile .homePage {
@@ -82,16 +77,21 @@
     }
 }
 
-/* Home Sections Container: alignment */
+/* Home Sections Container */
 .layout-tv .homeSectionsContainer {
     top: 0;
 }
 .layout-desktop .homeSectionsContainer {
     top: 69vh;
 }
-@media only screen and (max-height: 767px) and (orientation: landscape) {
+@media(max-width: 48.125em) {
     .layout-mobile .homeSectionsContainer {
-        top: 84vh;
+        top: 68vh;
+    }
+}
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .homeSectionsContainer {
+        top: 61vh;
     }
 }
 
@@ -115,12 +115,6 @@
 .slide .info-container,
 .slide .plot-container {
     font-size: 120%;
-}
-
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .homeSectionsContainer {
-        top: 61vh;
-    }
 }
 
 /*
