@@ -2,6 +2,9 @@
 ============================================================================
    Layout Mobile - Portrait Mode
 ============================================================================
+
+   Made for phone screens
+
 */
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -70,8 +73,8 @@
     /* Main Drawer: Align */
     .layout-mobile .mainDrawer {
         margin-top: 0em;
-        align-items: flex-end;
         margin-bottom: 3.9em;
+        flex-direction: column;
     }
 
     /* Drawer: Move options to bottom */
