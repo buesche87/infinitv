@@ -311,12 +311,6 @@
     transform: scale(1.2) !important;
 }
 
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-mobile .button-container {
-        margin-top: 3vh;
-    }
-}
-
 /* Buttons: Links acting as Buttons
 --------------------------------------------------------------------------*/
 
