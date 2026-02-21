@@ -78,17 +78,14 @@
 ============================================================================
 */
 
-/* Elements
---------------------------------------------------------------------------*/
-
-/* Elements: Accent 80% */
+/* Accent 80% */
 #loginPage .cardImage,
 .navMenuOption-selected,
 .Mui-selected {
     color: var(--accent80) !important;
 }
 
-/* Elements: Accent 100% */
+/* Accent 100% */
 .listItemIcon.check,
 .mdl-slider,
 .syncPlayIconCircle,
@@ -103,13 +100,6 @@
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle {
     color: var(--accent100) !important;
-}
-
-/* Elements: White */
-.emby-tab-button-active,
-.emby-button.skip-button:focus,
-.layout-mobile .overview-expand:focus {
-    color: white !important;
 }
 
 /* Hover 
@@ -153,6 +143,7 @@
 
 /* Focus: Accent 100% */
 .emby-button:focus,
+/* .emby-button.skip-button:focus, */
 .listItem-border:focus,
 .paper-icon-button-light:focus,
 .listItem-button:focus h2.listItemBodyText,
@@ -169,6 +160,12 @@
     font-weight: 500;
 }
 
+/* Focus: White */
+.layout-mobile .overview-expand:focus {
+    color: white !important;
+}
+
+
 /* Active 
 --------------------------------------------------------------------------*/
 
@@ -177,6 +174,12 @@
 .paper-icon-button-light:active {
     color: var(--accent100) !important;
 }
+
+/* Active: White */
+.emby-tab-button-active {
+    color: white !important;
+}
+
 
 /*
 ============================================================================
@@ -394,7 +397,6 @@
 .paper-icon-button-light:not(.alphaPickerButton):active {
     background-color: #0000 !important;
 }
-
 
 /* Active
 --------------------------------------------------------------------------*/

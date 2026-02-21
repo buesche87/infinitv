@@ -111,12 +111,6 @@
     }
 }
 
-/* Font weight on Focus
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary {
-    font-weight: 500;
-} */
-
 /* CardBox: Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
     -webkit-transform: scale(1.1);
