@@ -89,21 +89,9 @@
         top: 68vh;
     }
 }
-
-/* Home Sections Container: Mobile Landscape */
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .homeSectionsContainer {
         top: 61vh;
-    }
-}
-@media only screen and (max-height: 500px) and (orientation: landscape) {
-    .button-container {
-        top: calc(50% + 18vh);
-    }
-}
-@media only screen and (min-height: 500px) and (max-height: 767px) and (orientation: landscape) {
-    .button-container {
-        top: calc(50% + 15vh);
     }
 }
 
@@ -123,10 +111,12 @@
 }
 
 /* Slides: Font Size */
-.slide .genre,
-.slide .info-container,
-.slide .plot-container {
-    font-size: 120%;
+@media(min-width: 400px) {
+    .slide .genre,
+    .slide .info-container,
+    .slide .plot-container {
+        font-size: 120%;
+    }
 }
 
 /*
