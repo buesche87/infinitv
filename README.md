@@ -77,7 +77,7 @@ In addition to the base theme, there is an extension designed for small smartpho
 
 > Or use a modern, chromium based webbrowser
 
-# Screenshots
+# TV-Mode Screenshots
 
 <table>
   <tr>
@@ -91,6 +91,20 @@ In addition to the base theme, there is an extension designed for small smartpho
   <tr>
     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/show-tv.png"></td>
     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/season-tv.png"></td>
+  </tr>
+</table>
+
+
+# Desktop Screenshots
+
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-drawer.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-tvhows"></td>
+  </tr>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-show"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-movie"></td>
   </tr>
 </table>
 
