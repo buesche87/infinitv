@@ -100,11 +100,11 @@ In addition to the base theme, there is an extension designed for small smartpho
 <table>
   <tr>
     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-drawer.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-tvhows"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-tvhows.png"></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-show"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-movie"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-show.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-movie.png"></td>
   </tr>
 </table>
 
