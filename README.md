@@ -99,12 +99,14 @@ In addition to the base theme, there is an extension designed for small smartpho
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-home.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-drawer.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-home.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-drawer.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-tvshows.png"></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-tvshows.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-show.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-show.png"></td>
+     <td></td>
+     <td></td>
   </tr>
 </table>
 
