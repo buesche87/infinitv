@@ -202,11 +202,6 @@
     margin-top: -1em;
 }
 
-/*
-.layout-tv #listChildrenCollapsible:has(.listItem-largeImage) {
-    margin-top: -3vh;
-} */
-
 .layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {
     margin-left: 0;
     margin-top: -3vh;

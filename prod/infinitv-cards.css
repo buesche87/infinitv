@@ -111,12 +111,6 @@
     }
 }
 
-/* Font weight on Focus
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary {
-    font-weight: 500;
-} */
-
 /* CardBox: Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
     -webkit-transform: scale(1.1);
@@ -149,8 +143,9 @@
         box-shadow: var(--cardshadow) !important;
     }
 
-    /* No shadow for cardScalable if footer present */
-    .cardBox:has(> .cardFooter) > .cardScalable {
+    /* No shadows */
+    .cardBox:has(> .cardFooter) > .cardScalable,
+    .dialogContentInner .imageEditorCard .cardBox {
         box-shadow: none !important;
     }
 }
@@ -159,18 +154,6 @@
 .libraryPage .cardImageContainer {
     box-shadow: var(--insettop), var(--insetbottom);
 }
-
-
-
-/* Cards: No Shadows */
-#imagesContainer .imageEditorCard .cardBox {
-    box-shadow: none !important;
-}
-
-#imagesContainer .imageEditorCard .cardBox .cardScalable {
-    border-radius: var(--rounding-media) !important;
-}
-
 
 /*
 ===========================================================================
@@ -403,6 +386,13 @@
     border-bottom-right-radius: 0 !important;
 }
 
+/* Not for Image Editor cards */
+#images .visualCardBox .cardContent,
+#backdrops .visualCardBox .cardContent {
+    border-bottom-left-radius: inherit !important;
+    border-bottom-right-radius: inherit !important;
+}
+
 /* Card Footer: Flat Top, Rounding Bottom */
 .cardFooter:not(.visualCardBox-cardFooter) {
     border-bottom-left-radius: var(--rounding-media) !important;
@@ -461,14 +451,6 @@
    Cards: Text & Buttons
 ===========================================================================
 * > needs plugin "home section containers" */ 
-
-
-/* Text Shadow (not on mobile > performance)
-@media (pointer: fine) {
-    .cardText {
-        text-shadow: var(--textshadow) !important;
-    }
-} */
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
@@ -976,6 +958,16 @@
         -webkit-line-clamp: 4;
     }
 }
+@media(min-width: 80em) {
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 25%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 33.33%;
+    }
+}
 @media(min-width: 87.5em) {
 
     /* Cards */
@@ -987,6 +979,15 @@
     }
     .itemsContainer > .backdropCard {
         width: 20%;
+    }
+
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 25%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 33.33%;
     }
 
     /* Cards - TV */
@@ -1123,7 +1124,16 @@
     .itemsContainer > .backdropCard {
         width: 20%;
     }
-    
+
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 20%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 25%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 16.66%;
@@ -1260,6 +1270,14 @@
         width: 16.66%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop  .dialogContentInner .portraitCard {
+        width: 20%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 25%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 14.25%;
@@ -1383,6 +1401,15 @@
     } 
     .itemsContainer > .backdropCard {
         width: 16.66%;
+    }
+
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 16.66%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 20%;
     }
 
     /* Cards - TV */
@@ -1520,6 +1547,15 @@
         width: 14.25%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 14.25%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 16.66%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 12.5%;
@@ -1644,6 +1680,15 @@
         width: 12.5%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 12.5%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 14.25%;
+    }
+
     /* Cards - TV */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 11.1%;
@@ -1761,6 +1806,15 @@
         width: 11.11%;
     }
 
+    /* Image Search Cards - Desktop */
+    .layout-desktop .dialogContainer .portraitCard,
+    .layout-desktop .dialogContainer .squareCard {
+        width: 12.5%;
+    }
+    .layout-desktop .dialogContainer .backdropCard {
+        width: 12.5%;
+    }
+    
     /* Cards - TV  */
     .layout-tv .itemsContainer-tv > .portraitCard {
         width: 9.09%;

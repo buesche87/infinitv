@@ -59,7 +59,7 @@
 ============================================================================
 */
 
-/* Home Page - Layout Mobile */
+/* Home Page */
 .layout-mobile .homePage {
     padding-left: 0;
     padding-right: 0;
@@ -77,16 +77,21 @@
     }
 }
 
-/* Home Sections Container: alignment */
+/* Home Sections Container */
 .layout-tv .homeSectionsContainer {
     top: 0;
 }
 .layout-desktop .homeSectionsContainer {
     top: 69vh;
 }
-@media only screen and (max-height: 767px) and (orientation: landscape) {
+@media(max-width: 48.125em) {
     .layout-mobile .homeSectionsContainer {
-        top: 84vh;
+        top: 68vh;
+    }
+}
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .homeSectionsContainer {
+        top: 61vh;
     }
 }
 
@@ -100,17 +105,17 @@
     top: 5em;
     right: 2vw;
 }
-
-/* Slides: Font Size */
-.slide .genre,
-.slide .info-container,
-.slide .plot-container {
-    font-size: 120%;
+.layout-desktop .volume-toggle {
+    top: 5em;
+    right: 4vw;
 }
 
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .homeSectionsContainer {
-        top: 61vh;
+/* Slides: Font Size */
+@media(min-width: 400px) {
+    .slide .genre,
+    .slide .info-container,
+    .slide .plot-container {
+        font-size: 120%;
     }
 }
 
@@ -492,6 +497,27 @@
 
 /*
 ===========================================================================
+   Media Pages: Image Search
+===========================================================================
+*/
+
+/* ListItem Color on Hover */
+.paperList .listItem:hover {
+    color: var(--accent100);
+}
+
+/* Card Backgroiund: Grey */
+.dialogContentInner .card .cardBox {
+    background-color: rgb(32, 32, 32) !important;
+}
+
+/* Align card image */
+.dialogContentInner .portraitCard .cardContent .cardImageContainer {
+    top: -.6em;
+}
+
+/*
+===========================================================================
    Settings Page
 ===========================================================================
 */
@@ -633,20 +659,6 @@
 
 /* Settings Pages: User Profile
 --------------------------------------------------------------------------*/
-
-/* User Profile: Improve Alignments */
-.formDialogHeaderTitle {
-    margin-left: 1em;
-}
-.formDialogContent {
-    margin-bottom: 6.2em;
-}
-.dialogContentInner {
-    padding: .5em 1em 1em;
-}
-.listItem-indexnumberleft {
-    margin: 1em;
-}
 
 /* User Profile: Form Alignment */
 .updatePasswordForm br {
