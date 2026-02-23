@@ -16,7 +16,7 @@ This theme is designed with a strong focus on htpc setups using Jellyfin Desktop
 ## Key features
 
 - A minimalist TV-mode UI optimized for remote control and keyboard navigation
-- A redesigned mobile interface with special attention to portrait mode, placing key elements within easy thumb reach
+- A redesigned mobile interface placing key elements within easy thumb reach
 - Custom cards with a smoother overall appearance and custom animations
 - Consistently centered menus, pages, and titles where appropriate
 - Improved use of previously unused screen space, especially in TV mode
