@@ -153,20 +153,19 @@
 .subtitleSync {
     top: 5em;
 }
-
 .subtitleSyncContainer {
     padding-bottom: .5em;
 }
 
+/* Subtitle Sync: seconds */
 .subtitleSyncTextField {
     padding-top: 0.2em;
 }
 
-
+/* Subtitle Sync: Slider bubble */
 .subtitleSyncSliderContainer .sliderBubble {
     top: 6em;
 }
-
 .subtitleSyncSliderContainer .sliderBubbleText {
     padding: 0.2em;
 }

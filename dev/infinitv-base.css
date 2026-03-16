@@ -197,7 +197,6 @@
 .skinHeader-withBackground,
 .subtitleSyncContainer,
 .subtitleSyncSliderContainer .sliderBubble,
-.subtitleSyncContainer,
 .videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
