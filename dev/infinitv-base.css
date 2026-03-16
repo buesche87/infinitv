@@ -96,6 +96,7 @@
 .playedIndicator,
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating,
+.subtitleSyncSliderContainer .sliderBubbleText,
 .upNextDialog-countdownText,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle {
@@ -194,6 +195,9 @@
 .formDialogFooter,
 .selectionCommandsPanel,
 .skinHeader-withBackground,
+.subtitleSyncContainer,
+.subtitleSyncSliderContainer .sliderBubble,
+.subtitleSyncContainer,
 .videoOsdBottom {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
@@ -455,6 +459,10 @@
     border: none !important;
 }
 
+:focus-visible {
+    outline-style: none;
+}
+
 /*
 ============================================================================
    Glow & Shadows
@@ -582,6 +590,8 @@
 .paperList,
 .sectionTitle,
 .sectionTitleContainer-cards,
+.subtitleSyncContainer,
+.subtitleSyncSliderContainer .sliderBubble,
 .subtitleappearance-preview,
 .toast,
 .searchSuggestionsList > div:hover,

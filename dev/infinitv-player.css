@@ -116,8 +116,8 @@
 
 /* Chapter Thumbnails: Slider Bubble */
 .sliderBubble {
-    -webkit-transform: translate3d(-50%,-108%,0);
-    transform: translate3d(-50%,-108%,0);
+    /* -webkit-transform: translate3d(-50%,-108%,0); */
+    /* transform: translate3d(-50%,-108%,0); */
 }
 
 /* Chapter Thumbnails: Text */
@@ -132,7 +132,7 @@
 
 /*
 ===========================================================================
-   Player OSD: UpNext Dialog
+   Player OSD: Dialogs
 ===========================================================================
 */
 
@@ -147,6 +147,28 @@
     margin-left: .5em;
     -webkit-transform: none !important;
     transform: none !important;
+}
+
+/* Subtitle Sync: Container */
+.subtitleSync {
+    top: 5em;
+}
+
+.subtitleSyncContainer {
+    padding-bottom: .5em;
+}
+
+.subtitleSyncTextField {
+    padding-top: 0.2em;
+}
+
+
+.subtitleSyncSliderContainer .sliderBubble {
+    top: 6em;
+}
+
+.subtitleSyncSliderContainer .sliderBubbleText {
+    padding: 0.2em;
 }
 
 /*
