@@ -114,12 +114,6 @@
 	box-shadow: 0 0 1.9vh #000;
 }
 
-/* Chapter Thumbnails: Slider Bubble */
-.sliderBubble {
-    /* -webkit-transform: translate3d(-50%,-108%,0); */
-    /* transform: translate3d(-50%,-108%,0); */
-}
-
 /* Chapter Thumbnails: Text */
 .chapterThumbTextContainer {
     right: auto;

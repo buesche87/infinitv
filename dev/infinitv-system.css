@@ -104,7 +104,6 @@
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
-    /* outline-style: none; */
 }
 
 ::-webkit-scrollbar-track {
