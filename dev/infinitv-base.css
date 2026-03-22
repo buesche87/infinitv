@@ -468,8 +468,17 @@
 ============================================================================
 */
 
-/* Button Glow*/
+/* Card Glow*/
 .upNextContainer {
+    box-shadow: var(--cardglow) !important;
+}
+
+/* Button Glow*/
+.detailButton:focus,
+.favorite-button:focus,
+.itemsContainer > .listItem-focusscale:focus,
+.itemsContainer > .listItem-largeImage:focus,
+.upNextDialog-button:focus {
     box-shadow: var(--buttonglow) !important;
 }
 
@@ -528,7 +537,6 @@
 .emby-checkbox:focus + span + .checkboxOutline,
 .detail-button:focus,
 .favorite-button:focus,
-.upNextDialog-button:focus,
 .itemsContainer > .listItem:focus,
 .mainDetailButtons .detailButton:focus,
 .itemsContainer > .listItem-largeImage:focus {
@@ -538,17 +546,9 @@
 /* Focus: Transparent*/
 .actionSheetMenuItem:focus,
 .navMenuOption:focus,
-.userPreferencesPage .listItem-border:focus {
-    border-color: #0000 !important;
-}
-
-/* Focus: Button Glow*/
-.detailButton:focus,
-.favorite-button:focus,
-.itemsContainer > .listItem-focusscale:focus,
-.itemsContainer > .listItem-largeImage:focus,
+.userPreferencesPage .listItem-border:focus,
 .upNextDialog-button:focus {
-    box-shadow: var(--buttonglow) !important;
+    border-color: #0000 !important;
 }
 
 /* Active
