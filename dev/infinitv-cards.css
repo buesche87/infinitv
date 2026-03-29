@@ -98,7 +98,7 @@
 */
 
 /* CardText on Hover (Desktop) */
-@media (hover: hover) {
+@media (pointer: fine) {
     .layout-desktop .bannerCard:hover > .cardText,
     .layout-desktop .itemsContainer > .card:hover .cardText {
         -webkit-transform: scale(1.1);
@@ -125,7 +125,7 @@
 }
 
 /* Card Glow */
-@media (hover: hover) {
+@media (pointer: fine) {
     .card:hover .cardScalable,
     .card:hover .cardBox:has(> .cardFooter) {
         box-shadow: var(--cardglow) !important;

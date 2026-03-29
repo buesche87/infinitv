@@ -195,7 +195,7 @@
 .alphaPickerButton {
     height: 1.6em;
 }
-@media (hover: hover) {
+@media (pointer: fine) {
     .alphaPickerButton:hover {
         background: var(--accent60) !important;
         color: white !important;

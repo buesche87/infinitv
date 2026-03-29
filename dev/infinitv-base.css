@@ -106,7 +106,7 @@
 --------------------------------------------------------------------------*/
 
 /* Hover: Accent 80% */
-@media (hover: hover) {
+@media (pointer: fine) {
     .actionSheetMenuItem:hover,
     .button-link:hover,
     .emby-collapsible-button:hover,
@@ -122,7 +122,7 @@
 }
 
 /* Hover: Accent 100% */
-@media (hover: hover) {
+@media (pointer: fine) {
     .cardOverlayButton:hover,
     .detailButton:hover,
     .emby-button:hover,
@@ -300,7 +300,7 @@
 /* Hover
 --------------------------------------------------------------------------*/
 
-@media (hover: hover) {
+@media (pointer: fine) {
 
     /* Hover: Dark 20% */
     .button-submit:hover,
@@ -499,7 +499,7 @@
 /* Hover
 --------------------------------------------------------------------------*/
 
-@media (hover: hover) {
+@media (pointer: fine) {
 
     /* Hover: Accent 40% */
     .actionSheetMenuItem:hover,
