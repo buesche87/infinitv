@@ -63,7 +63,7 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, .9) !important;
 }
 
 /* Main Drawer: Menu Options */
@@ -102,7 +102,7 @@
 
 /* Scrollbar: Style */
 * {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 

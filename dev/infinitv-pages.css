@@ -59,6 +59,33 @@
 ============================================================================
 */
 
+.actionSheet {
+    top: 4.7em !important;
+}
+
+.actionSheetTitle {
+    font-size: 1.6em;
+    font-weight: 600;
+    /* text-decoration-line: underline; */
+    margin-bottom: .2em !important;
+    margin-top: 0em !important;
+    cursor: default;
+    /* padding-left: .7em; */
+    border-bottom: chartreuse;
+    /* border-bottom-width: 2px; */
+    /* border: var(--buttonborder); */
+    /* padding-bottom: .7em; */
+    /* padding-top: 0.2em; */
+    /* padding-left: .7em; */
+    border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
+    padding: .7em;
+}
+
+.actionSheetContent {
+    padding: 0 !important;
+}
+
+
 /* Home Page */
 .layout-mobile .homePage {
     padding-left: 0;
