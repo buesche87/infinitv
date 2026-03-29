@@ -32,7 +32,6 @@
 
     /* Glow */
     --cardglow: 0px 0px 10px 3px var(--accent80);
-    --deskcardglow: 0px 0px 10px 2px var(--accent80);
     --buttonglow: 0px 0px 10px 1px var(--accent100);
 
     /* Text Shadow */
@@ -107,7 +106,7 @@
 --------------------------------------------------------------------------*/
 
 /* Hover: Accent 80% */
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
     .actionSheetMenuItem:hover,
     .button-link:hover,
     .emby-collapsible-button:hover,
@@ -123,7 +122,7 @@
 }
 
 /* Hover: Accent 100% */
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
     .cardOverlayButton:hover,
     .detailButton:hover,
     .emby-button:hover,
@@ -301,7 +300,7 @@
 /* Hover
 --------------------------------------------------------------------------*/
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
 
     /* Hover: Dark 20% */
     .button-submit:hover,
@@ -500,7 +499,7 @@
 /* Hover
 --------------------------------------------------------------------------*/
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) {
 
     /* Hover: Accent 40% */
     .actionSheetMenuItem:hover,

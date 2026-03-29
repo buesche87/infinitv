@@ -1,3 +1,8 @@
+# v0.2.3
+
+- Work done on subtitle-sync dialog
+- Fixed chapter thumbnail position
+
 # v0.2.2
 
 **This version introduces changes to the mobile layout.**
