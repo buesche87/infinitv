@@ -71,11 +71,9 @@ In addition to the base theme, there is an extension designed for small smartpho
 
 ## Optimal Results
 
-- [Jellyfin Desktop v2.0.0](https://github.com/jellyfin/jellyfin-desktop/releases)
+- Chromium based client (v105 and later)
 - Set `theme` to `Dark`
 - Set `display mode` to `TV`
-
-> Or use a modern, chromium based webbrowser
 
 # TV-Mode Screenshots
 
