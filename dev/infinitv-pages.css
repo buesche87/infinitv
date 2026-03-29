@@ -59,11 +59,11 @@
 ============================================================================
 */
 
-.actionSheet {
+.layout-desktop .actionSheet {
     top: 4.7em !important;
 }
 
-.actionSheetTitle {
+.layout-desktop .actionSheetTitle {
     font-size: 1.6em;
     font-weight: 600;
     /* text-decoration-line: underline; */
@@ -81,7 +81,7 @@
     padding: .7em;
 }
 
-.actionSheetContent {
+.layout-desktop .actionSheetContent {
     padding: 0 !important;
 }
 
