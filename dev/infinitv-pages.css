@@ -149,11 +149,6 @@
 ===========================================================================
 */
 
-/*
-.libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 5.5em !important;
-} */
-
 .layout-desktop .libraryPage .padded-right-withalphapicker {
     padding-left: 2vw;
     padding-right: 3vw;

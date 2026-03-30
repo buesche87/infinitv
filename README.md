@@ -50,6 +50,10 @@ Add the following to your custom branding
   /* Roundings */
   --rounding-media: 12px;
   --rounding-system: 6px;
+
+  /* Glow (uncomment to remove glow animations) */
+  /* --cardglow: none; */
+  /* --buttonglow: none; */
 }
 ```
 

@@ -59,6 +59,30 @@
 ============================================================================
 */
 
+.layout-desktop .actionSheet {
+    transform: translateY(-6em) !important;
+}
+
+/* wenn nah am oberen Rand → Gegenteil */
+.layout-desktop:has(.actionSheet[style*="top: 10px"]) .actionSheet {
+    transform: translateY(4em) !important;
+}
+
+.layout-desktop .actionSheetTitle {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: .2em !important;
+    margin-top: 0em !important;
+    cursor: default;
+    border-bottom: chartreuse;
+    border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
+    padding: .7em;
+}
+
+.layout-desktop .actionSheetContent {
+    padding: 0 !important;
+}
+
 /* Home Page */
 .layout-mobile .homePage {
     padding-left: 0;
@@ -125,11 +149,6 @@
 ===========================================================================
 */
 
-/*
-.libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 5.5em !important;
-} */
-
 .layout-desktop .libraryPage .padded-right-withalphapicker {
     padding-left: 2vw;
     padding-right: 3vw;
@@ -195,7 +214,7 @@
 .alphaPickerButton {
     height: 1.6em;
 }
-@media (hover: hover) {
+@media (pointer: fine) {
     .alphaPickerButton:hover {
         background: var(--accent60) !important;
         color: white !important;

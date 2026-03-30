@@ -98,17 +98,14 @@
 */
 
 /* CardText on Hover (Desktop) */
-@media (hover: hover) and (pointer: fine) {
-    .layout-desktop .bannerCard:hover > .cardText,
-    .layout-desktop .itemsContainer > .card:hover .cardText {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-
-    .layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+.layout-desktop .bannerCard:hover > .cardText,
+.layout-desktop .itemsContainer > .card:hover .cardText {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 /* CardBox: Zoom on Focus (TV) */
@@ -125,29 +122,25 @@
 }
 
 /* Card Glow */
-@media (hover: hover) and (pointer: fine) {
-    .card:hover .cardScalable,
-    .card:hover .cardBox:has(> .cardFooter) {
-        box-shadow: var(--deskcardglow) !important;
-    }
+.card:hover .cardScalable,
+.card:hover .cardBox:has(> .cardFooter) {
+    box-shadow: var(--cardglow) !important;
 }
 
 /* Card Shadows */
-@media (pointer: fine) {
-    .cardScalable {
-        box-shadow: var(--cardshadow) !important;
-    }
+.cardScalable {
+    box-shadow: var(--cardshadow) !important;
+}
 
-    /* Shadow for cardBox if footer present */
-    .cardBox:has(> .cardFooter) {
-        box-shadow: var(--cardshadow) !important;
-    }
+/* Shadow for cardBox if footer present */
+.cardBox:has(> .cardFooter) {
+    box-shadow: var(--cardshadow) !important;
+}
 
-    /* No shadows */
-    .cardBox:has(> .cardFooter) > .cardScalable,
-    .dialogContentInner .imageEditorCard .cardBox {
-        box-shadow: none !important;
-    }
+/* No shadows */
+.cardBox:has(> .cardFooter) > .cardScalable,
+.dialogContentInner .imageEditorCard .cardBox {
+    box-shadow: none !important;
 }
 
 /* Cards: Inset Shadow (smoothening) */

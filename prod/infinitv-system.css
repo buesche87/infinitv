@@ -21,10 +21,6 @@
 }
 
 /* Toast: Center */
-.toast {
-    background-color: #000 !important;
-    box-shadow: var(--cardglow) !important;
-}
 .layout-tv .toastContainer,
 .layout-mobile .toastContainer {
     left: 50% !important;
@@ -63,7 +59,13 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    transition: background .5s ease-in-out;
+}
+
+/* Drawer Open: Match background and transition with header */
+.mainDrawer.drawer-open {
+    background-color: rgba(0, 0, 0, .9) !important;
+    transition: transform .24s ease-out, left .26s ease-out, -webkit-transform .24s ease-out, background .3s ease-in-out;
 }
 
 /* Main Drawer: Menu Options */
@@ -102,7 +104,7 @@
 
 /* Scrollbar: Style */
 * {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
@@ -136,6 +138,16 @@
    Header & Section Tabs
 ============================================================================
 */
+
+/* Shorten transition time */
+.skinHeader {
+    transition: background .3s ease-in-out;
+}
+
+/* Match background with drawer background when opening it */
+[dir=ltr]:has(.drawer-open) .skinHeader-withBackground {
+    background-color: rgba(0, 0, 0, .9) !important;
+}
 
 /* Header: Don't scroll (TV) */
 .layout-tv .skinHeader {
@@ -409,3 +421,4 @@
 .selectLabel {
     align-self: center;
 }
+
