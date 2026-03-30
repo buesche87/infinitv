@@ -21,10 +21,6 @@
 }
 
 /* Toast: Center */
-.toast {
-    background-color: #000 !important;
-    box-shadow: var(--cardglow) !important;
-}
 .layout-tv .toastContainer,
 .layout-mobile .toastContainer {
     left: 50% !important;
