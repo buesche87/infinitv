@@ -106,7 +106,7 @@
 --------------------------------------------------------------------------*/
 
 /* Hover: Accent 80% */
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
     .actionSheetMenuItem:hover,
     .button-link:hover,
     .emby-collapsible-button:hover,
@@ -119,10 +119,10 @@
     .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label {
         color: var(--accent80) !important;
     }
-}
+
 
 /* Hover: Accent 100% */
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
     .cardOverlayButton:hover,
     .detailButton:hover,
     .emby-button:hover,
@@ -131,7 +131,7 @@
     .paper-icon-button-light:not(:disabled):hover {
         color: var(--accent100) !important;
     }
-}
+
 
 /* Focus 
 --------------------------------------------------------------------------*/
@@ -301,7 +301,7 @@
 /* Hover
 --------------------------------------------------------------------------*/
 
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
 
     /* Hover: Dark 20% */
     .button-submit:hover,
@@ -350,7 +350,7 @@
     .navMenuOption:hover {
         background-color: #0000 !important;
     }
-}
+
 
 /* Focus
 --------------------------------------------------------------------------*/
@@ -468,7 +468,7 @@
 /* Hover
 --------------------------------------------------------------------------*/
 
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
 
     /* Hover: Accent 40% */
     /* .actionSheetMenuItem:hover, */
@@ -492,7 +492,7 @@
     .navMenuOption:hover  {
         border-color: var(--accent60) !important;
     } */
-}
+
 
 /* Focus
 --------------------------------------------------------------------------*/
@@ -556,11 +556,11 @@
 }
 
 /* Box Shadows */
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
     .detailImageContainer .card {
         box-shadow: var(--cardshadow) !important;
     } 
-}
+
 
 /* No Shadows / no Glow */
 .cardPadder,

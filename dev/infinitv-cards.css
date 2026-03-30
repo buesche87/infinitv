@@ -98,7 +98,7 @@
 */
 
 /* CardText on Hover (Desktop) */
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
     .layout-desktop .bannerCard:hover > .cardText,
     .layout-desktop .itemsContainer > .card:hover .cardText {
         -webkit-transform: scale(1.1);
@@ -109,7 +109,7 @@
         -webkit-transform: scale(1);
         transform: scale(1);
     }
-}
+
 
 /* CardBox: Zoom on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardBox {
@@ -125,15 +125,15 @@
 }
 
 /* Card Glow */
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
     .card:hover .cardScalable,
     .card:hover .cardBox:has(> .cardFooter) {
         box-shadow: var(--cardglow) !important;
     }
-}
+
 
 /* Card Shadows */
-@media (pointer: fine) {
+/* @media (hover: hover) and (pointer: fine) { */
     .cardScalable {
         box-shadow: var(--cardshadow) !important;
     }
@@ -148,7 +148,7 @@
     .dialogContentInner .imageEditorCard .cardBox {
         box-shadow: none !important;
     }
-}
+
 
 /* Cards: Inset Shadow (smoothening) */
 .libraryPage .cardImageContainer {
