@@ -448,7 +448,7 @@
 */
 
 /* Card Glow*/
-.actionSheet,
+.actionsheet-not-fullscreen,
 .toast,
 .upNextContainer {
     box-shadow: var(--cardglow) !important;
@@ -547,6 +547,7 @@
 
 /* No Roundings */
 .backdrop-overlay,
+.dialog.dialog-fullscreen,
 .layout-desktop .homePage .sectionTitleContainer-cards,
 .layout-desktop .homePage .sectionTitle-cards,
 .layout-desktop #tvRecommendedPage .sectionTitleContainer-cards,
