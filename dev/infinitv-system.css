@@ -63,7 +63,13 @@
 /* Main Drawer */
 .mainDrawer {
     margin-top: 3.9em;
+    transition: background .5s ease-in-out;
+}
+
+/* Drawer Open: Match background and transition with header */
+.mainDrawer.drawer-open {
     background-color: rgba(0, 0, 0, .9) !important;
+    transition: transform .24s ease-out, left .26s ease-out, -webkit-transform .24s ease-out, background .3s ease-in-out;
 }
 
 /* Main Drawer: Menu Options */
@@ -136,6 +142,16 @@
    Header & Section Tabs
 ============================================================================
 */
+
+/* Shorten transition time */
+.skinHeader {
+    transition: background .3s ease-in-out;
+}
+
+/* Match background with drawer background when opening it */
+[dir=ltr]:has(.drawer-open) .skinHeader-withBackground {
+    background-color: rgba(0, 0, 0, .9) !important;
+}
 
 /* Header: Don't scroll (TV) */
 .layout-tv .skinHeader {
