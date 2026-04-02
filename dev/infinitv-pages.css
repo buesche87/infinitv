@@ -59,15 +59,13 @@
 ============================================================================
 */
 
+/* Action Sheet */
 .layout-desktop .actionSheet {
     transform: translateY(-6em) !important;
 }
-
-/* wenn nah am oberen Rand → Gegenteil */
 .layout-desktop:has(.actionSheet[style*="top: 10px"]) .actionSheet {
     transform: translateY(4em) !important;
 }
-
 .layout-desktop .actionSheetTitle {
     font-size: 1.6em;
     font-weight: 600;
@@ -78,7 +76,6 @@
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
     padding: .7em;
 }
-
 .layout-desktop .actionSheetContent {
     padding: 0 !important;
 }
@@ -101,12 +98,18 @@
     }
 }
 
+
+#slides-container .backdrop-container {
+    height: 90%;
+}
+
+
 /* Home Sections Container */
 .layout-tv .homeSectionsContainer {
     top: 0;
 }
 .layout-desktop .homeSectionsContainer {
-    top: 69vh;
+    top: 64.5vh;
 }
 @media(max-width: 48.125em) {
     .layout-mobile .homeSectionsContainer {
@@ -674,6 +677,12 @@
 
 #myPreferencesMenuPage .sectionTitle {
     padding-left: 3em !important;
+}
+
+#myPreferencesMenuPage .readOnlyContent {
+    background-color: var(--bgdark60);
+    padding: 1em;
+    border-radius: var(--rounding-media);
 }
 
 /* Settings Pages: User Profile

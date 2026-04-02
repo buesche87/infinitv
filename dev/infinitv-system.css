@@ -104,8 +104,16 @@
 
 /* Scrollbar: Style */
 * {
-    scrollbar-width: none;
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+.layout-desktop {
+    scrollbar-width: thin;
+}
+
+.layout-tv,
+.layout-mobile {
+    scrollbar-width: none;
 }
 
 ::-webkit-scrollbar-track {

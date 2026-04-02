@@ -37,6 +37,9 @@
 
     /* Text Shadow */
     --textshadow: 2px 2px 4px black;
+
+    /* Item Background */
+    --itembg: rgba(0, 0, 0, 0.6);
 }
 
 /*
@@ -161,7 +164,7 @@
 
 /* Background: Black 85%  */
 .dialog {
-    background: rgba(0, 0, 0, .85) !important;
+    background: rgba(0, 0, 0, .95) !important;
 }
 
 /* Background: --headeropacity */
@@ -413,7 +416,7 @@
 .emby-textarea:not(:disabled):hover,
 .favorite-button:hover,
 .imagePlaceHolder:hover,
-.listItem-focusscale:hover,
+/* .listItem-focusscale:hover, */
 .mainDetailButtons .detailButton:hover,
 .play-button:hover {
     border-color: var(--accent40) !important;
