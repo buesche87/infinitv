@@ -453,6 +453,7 @@
 
 /* Card Glow*/
 .actionsheet-not-fullscreen,
+.layout-desktop .dialogContainer .formDialog,
 .toast,
 .upNextContainer {
     box-shadow: var(--cardglow) !important;

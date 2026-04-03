@@ -59,13 +59,19 @@
 ============================================================================
 */
 
-/* Action Sheet */
-.layout-desktop .actionSheet {
-    transform: translateY(-6em) !important;
+/* Action Sheets */
+.layout-desktop:has(#videoOsdPage) .actionSheet {
+    transform: translateY(-2.5em) !important;
 }
-.layout-desktop:has(.actionSheet[style*="top: 10px"]) .actionSheet {
+
+.layout-desktop:has(#videoOsdPage) .actionSheet[style*="top: 10px"] {
     transform: translateY(4em) !important;
 }
+
+.layout-desktop:has(#tvRecommendedPage) .actionSheet {
+    top: 5em !important;
+}
+
 .layout-desktop .actionSheetTitle {
     font-size: 1.6em;
     font-weight: 600;
@@ -78,6 +84,53 @@
 }
 .layout-desktop .actionSheetContent {
     padding: 0 !important;
+}
+
+/* Actual Action Sheets */
+.layout-desktop .dialogContainer .formDialog {
+    transform: translateX(6em) !important;
+    top: 5em;
+    position: fixed;
+    padding: .5em 1em;
+}
+.layout-desktop .dialogContainer .dynamicFilterDialog {
+    transform: translateX(10em) !important;
+    bottom: unset !important;
+    /* position: fixed; */
+    top: 5em !important;
+    /* padding: 0; */
+}
+.layout-desktop .dialogContainer .dynamicFilterDialog .collapseContent {
+    max-height: 12em;
+    overflow-y: scroll;
+}
+
+/* Action Sheet: Item size */
+.layout-desktop .actionSheetContent .listItem {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    padding-left: 2em !important;
+    padding-right: 3em !important;
+}
+
+.layout-desktop .actionSheetScroller {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.layout-desktop .actionSheetItemText {
+    font-size: 1em;
+}
+
+/* Collapsible Menu */
+.collapseContent {
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+/* Action Sheet: Item size */
+.actionSheetContent .listItem {
+    padding: 1em 1em;
 }
 
 /* Home Page */
@@ -278,7 +331,9 @@
 
 /* Sorting Menu: Radio Button spacing */
 .radio-label-block {
-    margin: 1em !important;
+    margin: 0 !important;
+    padding: .5em 1em !important;
+    cursor: pointer;
 }
 
 /*

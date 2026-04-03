@@ -93,7 +93,7 @@
 
 /* Action Sheet: Item size */
 .actionSheetContent .listItem {
-    padding: .5em;
+    padding: 1em 1em;
 }
 
 /*
@@ -140,6 +140,7 @@
     overflow-x: hidden;
     scrollbar-width: none;
 }
+
 
 /*
 ============================================================================
