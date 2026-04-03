@@ -61,16 +61,17 @@
 
 /* Action Sheets */
 .layout-desktop:has(#videoOsdPage) .actionSheet {
-    transform: translateY(-2.5em) !important;
+    transform: translateY(-5em) !important;
 }
 
 .layout-desktop:has(#videoOsdPage) .actionSheet[style*="top: 10px"] {
     transform: translateY(4em) !important;
 }
 
-.layout-desktop:has(#tvRecommendedPage) .actionSheet {
-    top: 5em !important;
+.layout-desktop:has(.libraryPage) .actionSheet {
+    transform: translateY(5em) !important;
 }
+
 
 .layout-desktop .actionSheetTitle {
     font-size: 1.6em;
