@@ -107,7 +107,7 @@
 .emby-checkbox:focus + .checkboxLabel,
 .favorite-button:hover,
 .favorite-button.favorited,
-.inputLabelFocused,
+.layout-tv .inputLabelFocused,
 .listItem-border:hover,
 .listItem-border:focus,
 .listItem-button:focus h2.listItemBodyText,
