@@ -184,11 +184,15 @@
 /* Slides: Pause Button alignment */
 .layout-desktop .pause-button {
     top: 5em;
-    right: 2vw;
+    right: 2em;
 }
 .layout-desktop .volume-toggle {
     top: 5em;
-    right: 4vw;
+    right: 5em;
+}
+.pause-button i,
+.volume-toggle i {
+    font-size: 2rem !important;
 }
 
 /* Slides: Font Size */
@@ -302,6 +306,7 @@
 .itemsViewSettingsContainer {
     margin-bottom: 1.25em;
     padding: 0.25em;
+    /* top: 5em; */
 }
 
 .layout-tv .pageTabContent>.focuscontainer-x,

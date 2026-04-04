@@ -103,7 +103,7 @@
 .cardOverlayButton:hover,
 .detailButton:hover,
 .emby-button:hover,
-.emby-button:focus,
+.layout-tv .emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .favorite-button:hover,
 .favorite-button.favorited,
@@ -358,6 +358,7 @@
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
+.layout-desktop .emby-select-withcolor:focus,
 .favorite-button,
 .imagePlaceHolder,
 .itemSelectionPanel,
@@ -426,7 +427,7 @@
 .emby-button.block:focus,
 .emby-input:focus,
 .emby-textarea:focus,
-.emby-select-withcolor:focus,
+.layout-tv .emby-select-withcolor:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
 .detail-button:focus,
 .favorite-button:focus,
@@ -439,7 +440,6 @@
 /* Border Color: Transparent*/
 .actionSheetMenuItem:focus,
 .navMenuOption:focus,
-/* .navMenuOption-selected, */
 .userPreferencesPage .listItem-border:focus,
 .upNextDialog-button:focus {
     border-color: #0000 !important;
