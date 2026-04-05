@@ -82,27 +82,33 @@
 */
 
 /* Color: Accent 80% */
-
-@media (hover: hover) {
-    .actionSheetMenuItem:hover,
-    .button-link:hover,
-    .emby-collapsible-button:hover,
-    .emby-textarea:hover + .textareaLabel,
-    .emby-checkbox:hover + .checkboxLabel,
-    .listTextButton-autohide:hover,
-    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
-    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
-    .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
-    .radio-label-block_hover,
-    .overview-expand:hover {
-        color: var(--accent80) !important;
-    }
-}
-
 #loginPage .cardImage,
+.layout-desktop .actionSheetMenuItem:hover,
+.layout-tv .actionSheetMenuItem:hover,
+.layout-desktop .button-link:hover,
+.layout-tv .button-link:hover,
+.layout-desktop .emby-collapsible-button:hover,
+.layout-tv .emby-collapsible-button:hover,
+.layout-desktop .emby-textarea:hover + .textareaLabel,
+.layout-tv .emby-textarea:hover + .textareaLabel,
+.layout-desktop .emby-checkbox:hover + .checkboxLabel,
+.layout-tv .emby-checkbox:hover + .checkboxLabel,
 .detailButton:focus,
+.layout-desktop .listTextButton-autohide:hover,
+.layout-tv .listTextButton-autohide:hover,
+.layout-desktop .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+.layout-tv .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+.layout-desktop .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+.layout-tv .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+.layout-desktop .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+.layout.tv .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+.layout-desktop .radio-label-block:hover,
+.layout-tv .radio-label-block:hover,
 .Mui-selected,
-.navMenuOption-selected {
+.navMenuOption-selected,
+.radio-label-block_hover,
+.layout-desktop .overview-expand:hover,
+.layout-tv .overview-expand:hover {
     color: var(--accent80) !important;
 }
 
@@ -110,11 +116,11 @@
 .cardOverlayButton:hover,
 .detailButton:hover,
 .emby-button:hover,
-.layout-tv .emby-button:focus,
+.emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .favorite-button:hover,
 .favorite-button.favorited,
-.layout-tv .inputLabelFocused,
+.inputLabelFocused,
 .listItem-border:hover,
 .listItem-border:focus,
 .listItem-button:focus h2.listItemBodyText,
