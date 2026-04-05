@@ -430,7 +430,7 @@
 .emby-button.block:focus,
 .emby-input:focus,
 .emby-textarea:focus,
-.layout-tv .emby-select-withcolor:focus,
+.emby-select-withcolor:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
 .detail-button:focus,
 .favorite-button:focus,
@@ -457,7 +457,7 @@
 /* Card Glow*/
 .actionsheet-not-fullscreen,
 .layout-desktop .dialogContainer .formDialog,
-.layout-mobile .dialogContainer .formDialog,
+.layout-mobile .dialogContainer .formDialog .centeredDialog,
 .toast,
 .upNextContainer {
     box-shadow: var(--cardglow) !important;
