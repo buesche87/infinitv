@@ -124,9 +124,10 @@
 }
 
 .layout-mobile .dialogContainer .formDialog {
-    transform: translateY(-5em) !important;
+    transform: translateY(5em) !important;
     position: fixed;
     padding: .5em 1em;
+    top: 10px;
 }
 
 .layout-desktop .dialogContainer .dynamicFilterDialog {
