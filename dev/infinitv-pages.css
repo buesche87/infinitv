@@ -290,7 +290,8 @@
         color: white !important;
     }
 }
-.alphaPickerButton:focus {
+.alphaPickerButton:focus,
+.alphaPickerButton:active {
     -webkit-transform: none !important;
     transform: none !important;
     transition: none !important;

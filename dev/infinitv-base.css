@@ -104,8 +104,9 @@
 /* Color: Accent 100% */
 .cardOverlayButton:hover,
 .detailButton:hover,
-.emby-button:hover,
-.emby-button:focus,
+.layout-desktop .emby-button:hover,
+.layout-tv .emby-button:hover,
+.layout-tv .emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .favorite-button:hover,
 .favorite-button.favorited,
