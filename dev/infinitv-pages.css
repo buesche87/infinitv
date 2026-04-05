@@ -71,11 +71,11 @@
 .layout-mobile:has(.libraryPage) .actionSheet[style*="top: 10px"] {
     transform: translateY(5em) translateX(-50%) !important;
     left: 50% !important;
-    /* right: 50% !important; */
 }
 
 .layout-desktop:has(.libraryPage) .actionSheet {
-    transform: translateY(5em) !important;
+    transform: translateY(11em) translateX(-50%) !important;
+    left: 50% !important;
 }
 
 .layout-desktop .actionSheetTitle,
@@ -118,9 +118,8 @@
 
 /* Actual Action Sheets */
 .layout-desktop .dialogContainer .formDialog {
-    transform: translateX(6em) !important;
-    /* top: 5em; */
-    position: fixed;
+    transform: translateY(-6em) !important;
+    position: relative;
     padding: .5em 1em;
 }
 
@@ -131,7 +130,7 @@
 }
 
 .layout-desktop .dialogContainer .dynamicFilterDialog {
-    transform: translateX(10em) !important;
+    transform: translateY(4em) !important;
     bottom: unset !important;
 }
 
