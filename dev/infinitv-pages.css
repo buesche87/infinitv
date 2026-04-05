@@ -130,7 +130,8 @@
 }
 
 /* Action Sheet: Item size */
-.actionSheetContent .listItem {
+.layut-desktop .actionSheetContent .listItem,
+.layut-tv .actionSheetContent .listItem {
     padding: 1em 1em;
 }
 
@@ -740,11 +741,13 @@
     padding-left: 3em !important;
 }
 
-#myPreferencesMenuPage .readOnlyContent {
+.layout-desktop #myPreferencesMenuPage .readOnlyContent,
+.layout-tv #myPreferencesMenuPage .readOnlyContent {
     background-color: var(--bgdark60);
     padding: 1em;
     border-radius: var(--rounding-media);
 }
+
 
 /* Settings Pages: User Profile
 --------------------------------------------------------------------------*/
