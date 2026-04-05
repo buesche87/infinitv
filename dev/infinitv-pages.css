@@ -68,6 +68,12 @@
     transform: translateY(4em) !important;
 }
 
+.layout-mobile:has(.libraryPage) .actionSheet[style*="top: 10px"] {
+    transform: translateY(5em) translateX(-50%) !important;
+    left: 50% !important;
+    /* right: 50% !important; */
+}
+
 .layout-desktop:has(.libraryPage) .actionSheet {
     transform: translateY(5em) !important;
 }
@@ -110,38 +116,41 @@
     font-size: 1em;
 }
 
-
-
 /* Actual Action Sheets */
 .layout-desktop .dialogContainer .formDialog {
     transform: translateX(6em) !important;
-    top: 5em;
+    /* top: 5em; */
     position: fixed;
     padding: .5em 1em;
 }
+
+.layout-mobile .dialogContainer .formDialog {
+    transform: translateY(-5em) !important;
+    position: fixed;
+    padding: .5em 1em;
+}
+
 .layout-desktop .dialogContainer .dynamicFilterDialog {
     transform: translateX(10em) !important;
     bottom: unset !important;
-    /* position: fixed; */
-    top: 5em !important;
-    /* padding: 0; */
 }
-.layout-desktop .dialogContainer .dynamicFilterDialog .collapseContent {
+
+.layout-mobile .dialogContainer .dynamicFilterDialog {
+    transform: translateY(0em) translateX(0em) !important;
+    bottom: unset !important;
+}
+
+.layout-desktop .dialogContainer .dynamicFilterDialog .collapseContent,
+.layout-mobile .dialogContainer .dynamicFilterDialog .collapseContent{
     max-height: 12em;
     overflow-y: scroll;
 }
-
-
-
-
 
 /* Collapsible Menu */
 .collapseContent {
     padding-top: 0em;
     padding-bottom: 0em;
 }
-
-
 
 /* Home Page */
 .layout-mobile .homePage {
