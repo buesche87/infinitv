@@ -82,20 +82,26 @@
 */
 
 /* Color: Accent 80% */
+
+@media (hover: hover) {
+    .actionSheetMenuItem:hover,
+    .button-link:hover,
+    .emby-collapsible-button:hover,
+    .emby-textarea:hover + .textareaLabel,
+    .emby-checkbox:hover + .checkboxLabel,
+    .listTextButton-autohide:hover,
+    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
+    .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
+    .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+    .overview-expand:hover {
+        color: var(--accent80) !important;
+    }
+}
+
 #loginPage .cardImage,
-.actionSheetMenuItem:hover,
-.button-link:hover,
 .detailButton:focus,
-.emby-collapsible-button:hover,
-.emby-textarea:hover + .textareaLabel,
-.emby-checkbox:hover + .checkboxLabel,
-.listTextButton-autohide:hover,
-.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
-.mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
 .Mui-selected,
-.navMenuOption-selected,
-.overview-expand:hover {
+.navMenuOption-selected {
     color: var(--accent80) !important;
 }
 
