@@ -72,8 +72,8 @@
     transform: translateY(5em) !important;
 }
 
-
-.layout-desktop .actionSheetTitle {
+.layout-desktop .actionSheetTitle,
+.layout-mobile .actionSheetTitle {
     font-size: 1.6em;
     font-weight: 600;
     margin-bottom: .2em !important;
@@ -83,9 +83,34 @@
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
     padding: .7em;
 }
+
 .layout-desktop .actionSheetContent {
     padding: 0 !important;
 }
+
+/* Action Sheet: Item size */
+.layout-desktop .actionSheetContent .listItem {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    padding-left: 2em !important;
+    padding-right: 3em !important;
+}
+
+/* Action Sheet: Item size */
+.layut-tv .actionSheetContent .listItem {
+    padding: 1em 1em;
+}
+
+.layout-desktop .actionSheetScroller {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.layout-desktop .actionSheetItemText {
+    font-size: 1em;
+}
+
+
 
 /* Actual Action Sheets */
 .layout-desktop .dialogContainer .formDialog {
@@ -106,22 +131,9 @@
     overflow-y: scroll;
 }
 
-/* Action Sheet: Item size */
-.layout-desktop .actionSheetContent .listItem {
-    padding-top: 1em !important;
-    padding-bottom: 1em !important;
-    padding-left: 2em !important;
-    padding-right: 3em !important;
-}
 
-.layout-desktop .actionSheetScroller {
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
 
-.layout-desktop .actionSheetItemText {
-    font-size: 1em;
-}
+
 
 /* Collapsible Menu */
 .collapseContent {
@@ -129,11 +141,7 @@
     padding-bottom: 0em;
 }
 
-/* Action Sheet: Item size */
-.layut-desktop .actionSheetContent .listItem,
-.layut-tv .actionSheetContent .listItem {
-    padding: 1em 1em;
-}
+
 
 /* Home Page */
 .layout-mobile .homePage {
