@@ -93,6 +93,7 @@
     .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
     .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
     .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+    .radio-label-block_hover,
     .overview-expand:hover {
         color: var(--accent80) !important;
     }
