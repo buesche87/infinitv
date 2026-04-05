@@ -133,15 +133,17 @@
 .layout-desktop .dialogContainer .dynamicFilterDialog {
     transform: translateY(4em) !important;
     bottom: unset !important;
+    max-height: 75% !important;
 }
 
 .layout-mobile .dialogContainer .dynamicFilterDialog {
     transform: translateY(0em) translateX(0em) !important;
     bottom: unset !important;
+    max-height: 75% !important;
 }
 
 .layout-desktop .dialogContainer .dynamicFilterDialog .collapseContent,
-.layout-mobile .dialogContainer .dynamicFilterDialog .collapseContent{
+.layout-mobile .dialogContainer .dynamicFilterDialog .collapseContent {
     max-height: 12em;
     overflow-y: scroll;
 }
