@@ -44,31 +44,72 @@
 ============================================================================
 */
 
-/* Actual Action Sheets */
-.layout-desktop .dialogContainer .formDialog {
-    transform: translateY(-6em) !important;
-    position: relative;
-    padding: .5em 1em;
+/* Position
+--------------------------------------------------------------------------*/
+
+/* Media Filter */
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
+    transform: translateY(-4.5em) translateX(9.5em) !important;
+}
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {
+    transform: translateY(3.5em) translateX(13.5em) !important;
 }
 
-.layout-desktop .focuscontainer.dialog.dialog-fixedSize.dialog-small.formDialog.opened {
-    transform: translateY(-2em) !important;
+
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog {
+    transform: translateY(-7em) translateX(7em) !important;
 }
 
-.layout-mobile .dialogContainer .formDialog {
-    transform: translateY(5em) !important;
-    position: fixed;
-    padding: .5em 1em;
-    top: 10px;
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog {
+    transform: translateY(4em) translateX(10em) !important;
 }
 
-.layout-desktop .dialogContainer .dynamicFilterDialog {
+
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog {
+    transform: translateY(-8.5em) translateX(6em) !important;
+}
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
+    transform: translateY(3.5em) translateX(9em) !important;
+}
+
+
+
+
+
+.layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
     transform: translateY(4em) !important;
-    bottom: unset !important;
-    max-height: 75% !important;
 }
+.layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
+    transform: translateY(10em) !important;
+}
+
+
+
+
+/* Header: Library Pages
+.layout-desktop:has(#moviesPage:not(.hide)) .actionSheet[style*="top: 10px"], 
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .actionSheet[style*="top: 10px"] {
+    transform: translateY(4em) !important;
+} */
+
+
+/* OSD */
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]  {
+    transform: translateY(3em) !important;
+}
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
+    transform: translateY(-5em) !important;
+}
+
+
+
+/* Content
+--------------------------------------------------------------------------*/
+
+
+/* Content */
+.layout-desktop .dialogContainer .dynamicFilterDialog,
 .layout-mobile .dialogContainer .dynamicFilterDialog {
-    transform: translateY(0em) translateX(0em) !important;
     bottom: unset !important;
     max-height: 75% !important;
 }
@@ -103,32 +144,13 @@
 ============================================================================
 */
 
-/* Filter */
-.layout-desktop:has(.actionsheet-not-fullscreen.actionSheet.centeredDialog.opened) .actionSheet {
-    transform: translateY(11em) !important;
-}
-
-/* Header */
+/* Header
 .layout-desktop:has(.actionsheet-not-fullscreen.actionSheet.centeredDialog.opened) .actionSheet[style*="top: 10px"] {
     transform: translateY(4em) !important;
-}
-
-/* OSD: Settings */
-.layout-desktop:has(#videoOsdPage) .actionSheet {
-    transform: translateY(-5em) !important;
-}
-
-/* OSD: Header */
-.layout-desktop:has(#videoOsdPage) .actionSheet[style*="top: 10px"]  {
-    transform: translateY(3em) !important;
-}
+} */
 
 
 
-.layout-mobile:has(.libraryPage) .actionSheet[style*="top: 10px"] {
-    transform: translateY(5em) translateX(-50%) !important;
-    left: 50% !important;
-}
 
 /* Action Sheets: Title */
 .layout-desktop .actionSheetTitle,
