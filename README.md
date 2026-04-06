@@ -77,7 +77,7 @@ In addition to the base theme, there is an extension designed for small smartpho
 
 - Chromium based client (v105 and later)
 - Set `theme` to `Dark`
-- Set `display mode` to `TV`
+- Set `display mode` to `TV` (htpc only)
 
 # TV-Mode Screenshots
 
