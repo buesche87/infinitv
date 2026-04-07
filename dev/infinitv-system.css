@@ -49,19 +49,24 @@
 
 /* Media Filter */
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
-    transform: translateY(-4.5em) translateX(9.5em) !important;
+    transform: translateX(10em) !important;
+    top: 10.5em !important;
+    position: fixed;
 }
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {
-    transform: translateY(3.5em) translateX(13.5em) !important;
+    transform: translateX(13.5em) !important;
+    top: 11em !important;
 }
 
 
 .layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog {
-    transform: translateY(-7em) translateX(7em) !important;
+    transform: translateX(7em) !important;
+    top: 10.5em !important;
+    position: fixed;
 }
-
 .layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog {
-    transform: translateY(4em) translateX(10em) !important;
+    transform: translateX(10em) !important;
+    top: 10.5em !important;
 }
 
 
@@ -73,9 +78,6 @@
 }
 
 
-
-
-
 .layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
     transform: translateY(4em) !important;
 }
@@ -83,14 +85,6 @@
     transform: translateY(10em) !important;
 }
 
-
-
-
-/* Header: Library Pages
-.layout-desktop:has(#moviesPage:not(.hide)) .actionSheet[style*="top: 10px"], 
-.layout-desktop:has(#tvRecommendedPage:not(.hide)) .actionSheet[style*="top: 10px"] {
-    transform: translateY(4em) !important;
-} */
 
 
 /* OSD */
