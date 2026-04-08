@@ -40,6 +40,9 @@
 
     /* Item Background */
     --itembg: rgba(0, 0, 0, 0.6);
+
+    /* Animation Duration */
+    --anispeed: 240ms;
 }
 
 /*

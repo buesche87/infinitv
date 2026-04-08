@@ -109,11 +109,11 @@
     left: 0 !important;
     margin: 0 !important;
     top: 0 !important;
-    animation-duration: 220ms !important;
+    animation-duration: var(--anispeed) !important;
 }
 
 .layout-tv .actionSheet {
-    animation-duration: 220ms !important;
+    animation-duration: var(--anispeed) !important;
 }
 
 
