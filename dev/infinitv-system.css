@@ -44,7 +44,7 @@
 ============================================================================
 */
 
-/* Position
+/* Dialogs: Position (Desktop)
 --------------------------------------------------------------------------*/
 
 /* Media Filter */
@@ -96,9 +96,29 @@
 }
 
 
-/* Content
+/* Dialogs: Fullscreen (TV)
 --------------------------------------------------------------------------*/
+.layout-tv .formDialog {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    left: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    animation-duration: 220ms !important;
+}
 
+.layout-tv .actionSheet {
+    animation-duration: 220ms !important;
+}
+
+
+/* Dialogs: Content
+--------------------------------------------------------------------------*/
 
 /* Content */
 .layout-desktop .dialogContainer .dynamicFilterDialog,

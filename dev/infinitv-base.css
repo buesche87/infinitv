@@ -116,6 +116,8 @@
 .listItem-button:focus h2.listItemBodyText,
 .listItemIcon.check,
 .listTextButton-autohide:focus,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle, 
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle, 
 .mdl-slider,
