@@ -668,7 +668,7 @@
 
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
-    background-color: var(--bgdark60);
+    background-color: var(--itembg);
     padding: 1em;
     border-radius: var(--rounding-media);
 }

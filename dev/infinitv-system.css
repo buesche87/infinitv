@@ -566,3 +566,11 @@
     align-self: center;
 }
 
+.emby-select-withcolor:hover,
+.emby-select-withcolor:focus {
+    cursor: pointer;
+}
+
+.emby-select-withcolor > option {
+    cursor: pointer !important;   
+}
