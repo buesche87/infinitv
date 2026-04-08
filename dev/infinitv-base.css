@@ -446,6 +446,7 @@
 
 /* Border Color: Transparent*/
 .actionSheetMenuItem:focus,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable,
 .navMenuOption:focus,
 .userPreferencesPage .listItem-border:focus,
 .upNextDialog-button:focus {

@@ -291,6 +291,7 @@
     min-height: 14em;
     max-width: 30em !important;
     height: 15vw !important;
+    border-right: var(--buttonborder);
 }
 
 /* ListItem Overview Text - TV */
@@ -424,7 +425,7 @@
     margin: 1em !important;
 }
 .layout-tv  .itemsContainer > .card > .cardBox {
-    margin: 1.5em 1.2em !important;
+    margin: 1.6em !important;
 }
 .layout-tv .availableImagesList .portraitCard .cardBox {
     margin: 1em .75em !important;
