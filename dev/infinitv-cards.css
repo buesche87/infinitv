@@ -159,19 +159,39 @@
 
 /* Card (TV) */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
-    padding-top: 1.5vh !important;
-    padding-bottom: 1.5vh !important;
-    padding-right: 1vw !important;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 0;
+    padding-right: 1em;
     margin-bottom: 1em;
-    padding-left: 0em;
+    margin-left: 1%;
     height: 5em;
+    width: 98%;
 }
+
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) {
+    /* height: 6em; */
+    width: 98%;
+}
+
+
+/* Poster */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
     height: 5em;
-    width: 10em;
+    width: 14%;
+    border-right: var(--buttonborder);
 }
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
-    width: 11em;
+    width: 15%;
+}
+
+
+/* Rating */
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo {
+    width: 4%;
+}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo {
+    width: 5%;
 }
 
 /* Layout Desktop

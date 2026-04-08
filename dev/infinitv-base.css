@@ -230,7 +230,6 @@
 .detail-button,
 .emby-button.block:hover,
 .favorite-button,
-.itemsContainer > .listItem-focusscale,
 .play-button,
 .raised:hover {
     background-color: var(--bgdark20) !important;
@@ -247,6 +246,7 @@
 .emby-input,
 .emby-textarea,
 .emby-select,
+.itemsContainer > .listItem-focusscale,
 .itemProgressBar,
 .itemsViewSettingsContainer,
 .listItem-largeImage:hover,
