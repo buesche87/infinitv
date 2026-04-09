@@ -320,19 +320,14 @@
 
 /* Card Indicators: Multi Select Checkboxes */
 .multiSelectCheckboxOutline {
-    border-top-left-radius: var(--rounding-media) !important;
-    border-top-right-radius: 5px !important;
-    border-bottom-right-radius: var(--rounding-media) !important;
-    border-bottom-left-radius: 5px !important;
-    margin-left: -.1em;
-    margin-top: -.1em;
-    /* background-color: #0000 !important; */
+    margin: .5em !important;
 }
-/*
-.itemSelectionPanel:hover {
+
+.itemSelectionPanel {
     border-color: #0000 !important;
+    background-color: rgba(0, 0, 0, 0.8);
 }
-*/
+
 /*
 ===========================================================================
    Media Pages
