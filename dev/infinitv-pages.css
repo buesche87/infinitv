@@ -270,6 +270,71 @@
 
 /*
 ===========================================================================
+   Library Page: Multi-Select
+===========================================================================
+*/
+
+/* Multi-Select Dialog */
+.selectionCommandsPanel {
+    top: 3.9em;
+    padding: .5em;
+}
+.itemSelectionCount {
+    color: var(--accent100) !important;
+}
+.layout-desktop .selectionCommandsPanel {
+    top: 7.65em;
+    left:  auto;
+    right: 4.3em;
+    max-width: 10em;
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+
+/* Multi-Select Dialog Buttons */
+.layout-desktop .itemSelectionCount {
+    font-size: 140%;
+    font-weight: 600;
+    order: 1;
+    margin: 0em .5em;
+    margin-bottom: .1em;
+    min-width: 1em;
+    text-align: center;
+    cursor: default;
+}
+.layout-desktop .btnSelectionPanelOptions {
+    order: 2;
+    margin: 0em .5em;
+    min-width: 1em;
+}
+.layout-desktop .btnCloseSelectionPanel {
+    order: 3;
+    margin: 0em .5em;
+    min-width: 1em;
+}
+
+.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
+    box-shadow: var(--cardglow);
+    border-color: var(--accent60) !important;
+}
+
+/* Card Indicators: Multi Select Checkboxes */
+.multiSelectCheckboxOutline {
+    border-top-left-radius: var(--rounding-media) !important;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: var(--rounding-media) !important;
+    border-bottom-left-radius: 5px !important;
+    margin-left: -.1em;
+    margin-top: -.1em;
+    /* background-color: #0000 !important; */
+}
+/*
+.itemSelectionPanel:hover {
+    border-color: #0000 !important;
+}
+*/
+/*
+===========================================================================
    Media Pages
 ===========================================================================
 */
@@ -362,7 +427,6 @@
     margin-right: .5em !important;
     margin-left: .5em !important;
 }
-
 
 @media all and (max-width: 75em) {
     .layout-desktop .detailLogo {

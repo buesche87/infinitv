@@ -549,20 +549,6 @@
     padding: .3em .6em;
 }
 
-/* Card Indicators: Multi Select Checkboxes */
-.multiSelectCheckboxOutline {
-    border-top-left-radius: var(--rounding-media) !important;
-    border-top-right-radius: var(--rounding-system) !important;
-    border-bottom-right-radius: var(--rounding-system) !important;
-    border-bottom-left-radius: var(--rounding-system) !important;
-}
-
-/* Multi-Select panel */
-.selectionCommandsPanel {
-    top: 3.9em;
-    padding: .5em;
-}
-
 /* Card Progressbar: Background */
 .itemProgressBar {
     height: .4em !important;

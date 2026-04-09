@@ -519,6 +519,7 @@
 .subtitleSyncSliderContainer .sliderBubble,
 .subtitleappearance-preview,
 .toast,
+.selectionCommandsPanel,
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
     border-radius: var(--rounding-system) !important;
