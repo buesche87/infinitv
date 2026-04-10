@@ -3,8 +3,8 @@
 Main focus on dialogs & list view
 
 - Matched style, positioning and animation speed of different dialogs
-- More full-screen dialogs shown in TV Mode
-- New multi-select style in Desktop Mode
+- More full-screen dialogs shown in TV mode
+- New multi-select style in Desktop mode
 - Some mouse cursor adjustments
 - New episode list style (list view generally)
 - Fixed some alignment and style errors
