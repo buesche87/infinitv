@@ -54,6 +54,9 @@ Add the following to your custom branding
   /* Glow (uncomment to remove glow animations) */
   /* --cardglow: none; */
   /* --buttonglow: none; */
+
+  /* Uncomment to disable user-settings background*/
+  /* --itembg: none; */
 }
 ```
 

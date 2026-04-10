@@ -111,8 +111,16 @@
     animation-duration: var(--anispeed) !important;
 }
 
+.layout-tv .filterDialogContent {
+    min-width: 24em;
+}
+
 .layout-tv .actionSheet {
     animation-duration: var(--anispeed) !important;
+}
+
+.layout-tv .listItem:focus .secondary {
+    color: hsla(0, 0%, 100%, .8) !important;
 }
 
 /* we don't need a close button in tv-mode, there is BACK and ESC */
@@ -135,6 +143,13 @@
     max-height: 12em;
     overflow-y: scroll;
 }
+
+.layout-tv .dialogContainer .dynamicFilterDialog .collapseContent {
+    max-height: 12em;
+    overflow-y: scroll;
+}
+
+
 
 /* User Profile: Improve Alignments */
 .layout-tv .formDialogContent {
