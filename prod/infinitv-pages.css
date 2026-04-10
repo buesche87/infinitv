@@ -59,30 +59,6 @@
 ============================================================================
 */
 
-.layout-desktop .actionSheet {
-    transform: translateY(-6em) !important;
-}
-
-/* wenn nah am oberen Rand → Gegenteil */
-.layout-desktop:has(.actionSheet[style*="top: 10px"]) .actionSheet {
-    transform: translateY(4em) !important;
-}
-
-.layout-desktop .actionSheetTitle {
-    font-size: 1.6em;
-    font-weight: 600;
-    margin-bottom: .2em !important;
-    margin-top: 0em !important;
-    cursor: default;
-    border-bottom: chartreuse;
-    border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
-    padding: .7em;
-}
-
-.layout-desktop .actionSheetContent {
-    padding: 0 !important;
-}
-
 /* Home Page */
 .layout-mobile .homePage {
     padding-left: 0;
@@ -101,12 +77,18 @@
     }
 }
 
+
+#slides-container .backdrop-container {
+    height: 90%;
+}
+
+
 /* Home Sections Container */
 .layout-tv .homeSectionsContainer {
     top: 0;
 }
 .layout-desktop .homeSectionsContainer {
-    top: 69vh;
+    top: 64.5vh;
 }
 @media(max-width: 48.125em) {
     .layout-mobile .homeSectionsContainer {
@@ -127,11 +109,15 @@
 /* Slides: Pause Button alignment */
 .layout-desktop .pause-button {
     top: 5em;
-    right: 2vw;
+    right: 2em;
 }
 .layout-desktop .volume-toggle {
     top: 5em;
-    right: 4vw;
+    right: 5em;
+}
+.pause-button i,
+.volume-toggle i {
+    font-size: 2rem !important;
 }
 
 /* Slides: Font Size */
@@ -220,7 +206,8 @@
         color: white !important;
     }
 }
-.alphaPickerButton:focus {
+.alphaPickerButton:focus,
+.alphaPickerButton:active {
     -webkit-transform: none !important;
     transform: none !important;
     transition: none !important;
@@ -245,6 +232,7 @@
 .itemsViewSettingsContainer {
     margin-bottom: 1.25em;
     padding: 0.25em;
+    /* top: 5em; */
 }
 
 .layout-tv .pageTabContent>.focuscontainer-x,
@@ -275,7 +263,69 @@
 
 /* Sorting Menu: Radio Button spacing */
 .radio-label-block {
-    margin: 1em !important;
+    margin: 0 !important;
+    padding: .5em 1em !important;
+    cursor: pointer;
+}
+
+/*
+===========================================================================
+   Library Page: Multi-Select
+===========================================================================
+*/
+
+/* Multi-Select Dialog */
+.selectionCommandsPanel {
+    top: 3.9em;
+    padding: .5em;
+}
+.itemSelectionCount {
+    color: var(--accent100) !important;
+}
+.layout-desktop .selectionCommandsPanel {
+    top: 7.65em;
+    left:  auto;
+    right: 4.3em;
+    max-width: 10em;
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+
+/* Multi-Select Dialog Buttons */
+.layout-desktop .itemSelectionCount {
+    font-size: 140%;
+    font-weight: 600;
+    order: 1;
+    margin: 0em .5em;
+    margin-bottom: .1em;
+    min-width: 1em;
+    text-align: center;
+    cursor: default;
+}
+.layout-desktop .btnSelectionPanelOptions {
+    order: 2;
+    margin: 0em .5em;
+    min-width: 1em;
+}
+.layout-desktop .btnCloseSelectionPanel {
+    order: 3;
+    margin: 0em .5em;
+    min-width: 1em;
+}
+
+.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
+    box-shadow: var(--cardglow);
+    border-color: var(--accent60) !important;
+}
+
+/* Card Indicators: Multi Select Checkboxes */
+.multiSelectCheckboxOutline {
+    margin: .5em !important;
+}
+
+.itemSelectionPanel {
+    border-color: #0000 !important;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /*
@@ -372,7 +422,6 @@
     margin-right: .5em !important;
     margin-left: .5em !important;
 }
-
 
 @media all and (max-width: 75em) {
     .layout-desktop .detailLogo {
@@ -583,7 +632,7 @@
 .layout-mobile .userPreferencesPage .listItem-border {
     border: var(--buttonborder) !important;
     margin-bottom: .6em !important;
-    background: var(--bgdark20) !important;
+    background: var(--bgdark40) !important;
 }
 .layout-mobile #myPreferencesMenuPage .sectionTitle {
     padding-left: 0em !important;
@@ -675,6 +724,14 @@
 #myPreferencesMenuPage .sectionTitle {
     padding-left: 3em !important;
 }
+
+.layout-desktop #myPreferencesMenuPage .readOnlyContent,
+.layout-tv #myPreferencesMenuPage .readOnlyContent {
+    background-color: var(--itembg);
+    padding: 1em;
+    border-radius: var(--rounding-media);
+}
+
 
 /* Settings Pages: User Profile
 --------------------------------------------------------------------------*/

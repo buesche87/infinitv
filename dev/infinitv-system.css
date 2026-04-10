@@ -95,7 +95,6 @@
     transform: translateY(-5em) !important;
 }
 
-
 /* Dialogs: Fullscreen (TV)
 --------------------------------------------------------------------------*/
 .layout-tv .formDialog {
@@ -116,6 +115,10 @@
     animation-duration: var(--anispeed) !important;
 }
 
+/* we don't need a close button in tv-mode, there is BACK and ESC */
+.layout-tv .btnCloseActionSheet {
+    display: none;
+}
 
 /* Dialogs: Content
 --------------------------------------------------------------------------*/
@@ -156,14 +159,6 @@
    Action Sheets
 ============================================================================
 */
-
-/* Header
-.layout-desktop:has(.actionsheet-not-fullscreen.actionSheet.centeredDialog.opened) .actionSheet[style*="top: 10px"] {
-    transform: translateY(4em) !important;
-} */
-
-
-
 
 /* Action Sheets: Title */
 .layout-desktop .actionSheetTitle,
@@ -275,7 +270,6 @@
     overflow-x: hidden;
     scrollbar-width: none;
 }
-
 
 /*
 ============================================================================

@@ -1,6 +1,6 @@
 /*
 ============================================================================
-   System & Dialogs
+   System
 ============================================================================
 */
 
@@ -38,6 +38,104 @@
     border-color: var(--accent100) !important;
 }
 
+/*
+============================================================================
+   Dialogs
+============================================================================
+*/
+
+/* Dialogs: Position (Desktop)
+--------------------------------------------------------------------------*/
+
+/* Media Filter */
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
+    transform: translateX(10em) !important;
+    top: 10.5em !important;
+    position: fixed;
+}
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {
+    transform: translateX(13.5em) !important;
+    top: 11em !important;
+}
+
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog {
+    transform: translateX(7em) !important;
+    top: 10.5em !important;
+    position: fixed;
+}
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog {
+    transform: translateX(10em) !important;
+    top: 10.5em !important;
+}
+
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog {
+    transform: translateX(6em) !important;
+    top: 10.5em !important;
+    position: fixed;
+}
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
+    transform: translateX(9em) !important;
+    top: 10.5em !important;
+    position: fixed;
+}
+
+/* Header */
+.layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
+    transform: translateY(4em) !important;
+}
+.layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
+    transform: translateY(10em) !important;
+}
+
+/* Player OSD */
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]  {
+    transform: translateY(3em) !important;
+}
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
+    transform: translateY(-5em) !important;
+}
+
+/* Dialogs: Fullscreen (TV)
+--------------------------------------------------------------------------*/
+.layout-tv .formDialog {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    left: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    animation-duration: var(--anispeed) !important;
+}
+
+.layout-tv .actionSheet {
+    animation-duration: var(--anispeed) !important;
+}
+
+/* we don't need a close button in tv-mode, there is BACK and ESC */
+.layout-tv .btnCloseActionSheet {
+    display: none;
+}
+
+/* Dialogs: Content
+--------------------------------------------------------------------------*/
+
+/* Content */
+.layout-desktop .dialogContainer .dynamicFilterDialog,
+.layout-mobile .dialogContainer .dynamicFilterDialog {
+    bottom: unset !important;
+    max-height: 75% !important;
+}
+
+.layout-desktop .dialogContainer .dynamicFilterDialog .collapseContent,
+.layout-mobile .dialogContainer .dynamicFilterDialog .collapseContent {
+    max-height: 12em;
+    overflow-y: scroll;
+}
+
 /* User Profile: Improve Alignments */
 .layout-tv .formDialogContent {
     margin-bottom: 6.2em;
@@ -48,6 +146,55 @@
 }
 .layout-tv .listItem-indexnumberleft {
     margin: 1em;
+}
+
+/* Collapsible Menu */
+.collapseContent {
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+/*
+============================================================================
+   Action Sheets
+============================================================================
+*/
+
+/* Action Sheets: Title */
+.layout-desktop .actionSheetTitle,
+.layout-mobile .actionSheetTitle {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: .2em !important;
+    margin-top: 0em !important;
+    cursor: default;
+    border-bottom: chartreuse;
+    border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
+    padding: .7em;
+}
+
+/* Action Sheets: Content */
+.layout-desktop .actionSheetContent {
+    padding: 0 !important;
+}
+
+.layout-desktop .actionSheetScroller {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.layout-desktop .actionSheetItemText {
+    font-size: 1em;
+}
+
+.layout-desktop .actionSheetContent .listItem {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+    padding-left: 2em !important;
+    padding-right: 3em !important;
+}
+.layut-tv .actionSheetContent .listItem {
+    padding: 1em 1em;
 }
 
 /*
@@ -81,31 +228,22 @@
 
 /*
 ============================================================================
-   Collapsible Menus
-============================================================================
-*/
-
-/* Collapsible Menu */
-.collapseContent {
-    padding-top: 0em;
-    padding-bottom: 0em;
-}
-
-/* Action Sheet: Item size */
-.actionSheetContent .listItem {
-    padding: .5em;
-}
-
-/*
-============================================================================
    Scrollbar
 ============================================================================
 */
 
 /* Scrollbar: Style */
 * {
-    scrollbar-width: none;
     scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+.layout-desktop {
+    scrollbar-width: thin;
+}
+
+.layout-tv,
+.layout-mobile {
+    scrollbar-width: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -422,3 +560,11 @@
     align-self: center;
 }
 
+.emby-select-withcolor:hover,
+.emby-select-withcolor:focus {
+    cursor: pointer;
+}
+
+.emby-select-withcolor > option {
+    cursor: pointer !important;   
+}

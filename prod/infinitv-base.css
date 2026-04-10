@@ -25,6 +25,7 @@
 
     /* Card Shadow */
     --cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
+    --itemshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
 
     /* Card Smoothening */
     --insettop: inset -1px 3px 14px 0px rgb(255 255 255 / 10%);
@@ -36,6 +37,12 @@
 
     /* Text Shadow */
     --textshadow: 2px 2px 4px black;
+
+    /* Item Background */
+    --itembg: rgba(0, 0, 0, 0.6);
+
+    /* Animation Duration */
+    --anispeed: 240ms;
 }
 
 /*
@@ -81,16 +88,18 @@
 #loginPage .cardImage,
 .actionSheetMenuItem:hover,
 .button-link:hover,
-.detailButton:focus,
 .emby-collapsible-button:hover,
 .emby-textarea:hover + .textareaLabel,
 .emby-checkbox:hover + .checkboxLabel,
+.detailButton:focus,
 .listTextButton-autohide:hover,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
+.radio-label-block:hover,
 .Mui-selected,
 .navMenuOption-selected,
+.radio-label-block:hover,
 .overview-expand:hover {
     color: var(--accent80) !important;
 }
@@ -98,8 +107,9 @@
 /* Color: Accent 100% */
 .cardOverlayButton:hover,
 .detailButton:hover,
-.emby-button:hover,
-.emby-button:focus,
+.layout-desktop .emby-button:hover,
+.layout-tv .emby-button:hover,
+.layout-tv .emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .favorite-button:hover,
 .favorite-button.favorited,
@@ -109,6 +119,8 @@
 .listItem-button:focus h2.listItemBodyText,
 .listItemIcon.check,
 .listTextButton-autohide:focus,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle, 
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle, 
 .mdl-slider,
@@ -160,7 +172,7 @@
 
 /* Background: Black 85%  */
 .dialog {
-    background: rgba(0, 0, 0, .85) !important;
+    background: rgba(0, 0, 0, .95) !important;
 }
 
 /* Background: --headeropacity */
@@ -221,7 +233,6 @@
 .detail-button,
 .emby-button.block:hover,
 .favorite-button,
-.itemsContainer > .listItem-focusscale,
 .play-button,
 .raised:hover {
     background-color: var(--bgdark20) !important;
@@ -238,6 +249,7 @@
 .emby-input,
 .emby-textarea,
 .emby-select,
+.itemsContainer > .listItem-focusscale,
 .itemProgressBar,
 .itemsViewSettingsContainer,
 .listItem-largeImage:hover,
@@ -339,7 +351,6 @@
     background-color: #0000 !important;
 }
 
-
 /*
 ============================================================================
    Borders
@@ -354,6 +365,7 @@
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
+.layout-desktop .emby-select-withcolor:focus,
 .favorite-button,
 .imagePlaceHolder,
 .itemSelectionPanel,
@@ -412,7 +424,7 @@
 .emby-textarea:not(:disabled):hover,
 .favorite-button:hover,
 .imagePlaceHolder:hover,
-.listItem-focusscale:hover,
+/* .listItem-focusscale:hover, */
 .mainDetailButtons .detailButton:hover,
 .play-button:hover {
     border-color: var(--accent40) !important;
@@ -434,8 +446,8 @@
 
 /* Border Color: Transparent*/
 .actionSheetMenuItem:focus,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable,
 .navMenuOption:focus,
-/* .navMenuOption-selected, */
 .userPreferencesPage .listItem-border:focus,
 .upNextDialog-button:focus {
     border-color: #0000 !important;
@@ -449,6 +461,8 @@
 
 /* Card Glow*/
 .actionsheet-not-fullscreen,
+.layout-desktop .dialogContainer .formDialog,
+.layout-mobile .dialogContainer .formDialog .centeredDialog,
 .toast,
 .upNextContainer {
     box-shadow: var(--cardglow) !important;
@@ -464,11 +478,9 @@
 }
 
 /* Box Shadows */
-/* @media (hover: hover) and (pointer: fine) { */
-    .detailImageContainer .card {
-        box-shadow: var(--cardshadow) !important;
-    } 
-
+.detailImageContainer .card {
+    box-shadow: var(--itemshadow) !important;
+} 
 
 /* No Shadows / no Glow */
 .cardPadder,
@@ -507,6 +519,7 @@
 .subtitleSyncSliderContainer .sliderBubble,
 .subtitleappearance-preview,
 .toast,
+.selectionCommandsPanel,
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) {
     border-radius: var(--rounding-system) !important;

@@ -159,19 +159,39 @@
 
 /* Card (TV) */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
-    padding-top: 1.5vh !important;
-    padding-bottom: 1.5vh !important;
-    padding-right: 1vw !important;
-    margin-bottom: 1em;
-    padding-left: 0em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 0;
+    padding-right: 1em;
+    margin-bottom: 1.2em;
+    margin-left: 1%;
     height: 5em;
+    width: 98%;
 }
+
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) {
+    /* height: 6em; */
+    width: 98%;
+}
+
+
+/* Poster */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
     height: 5em;
-    width: 10em;
+    width: 14%;
+    border-right: var(--buttonborder);
 }
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
-    width: 11em;
+    width: 15%;
+}
+
+
+/* Rating */
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo {
+    width: 4%;
+}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo {
+    width: 5%;
 }
 
 /* Layout Desktop
@@ -271,6 +291,7 @@
     min-height: 14em;
     max-width: 30em !important;
     height: 15vw !important;
+    border-right: var(--buttonborder);
 }
 
 /* ListItem Overview Text - TV */
@@ -404,7 +425,7 @@
     margin: 1em !important;
 }
 .layout-tv  .itemsContainer > .card > .cardBox {
-    margin: 1.5em 1.2em !important;
+    margin: 1.6em !important;
 }
 .layout-tv .availableImagesList .portraitCard .cardBox {
     margin: 1em .75em !important;
@@ -526,20 +547,6 @@
     color: #fff;
     background: #ae3030eb;
     padding: .3em .6em;
-}
-
-/* Card Indicators: Multi Select Checkboxes */
-.multiSelectCheckboxOutline {
-    border-top-left-radius: var(--rounding-media) !important;
-    border-top-right-radius: var(--rounding-system) !important;
-    border-bottom-right-radius: var(--rounding-system) !important;
-    border-bottom-left-radius: var(--rounding-system) !important;
-}
-
-/* Multi-Select panel */
-.selectionCommandsPanel {
-    top: 3.9em;
-    padding: .5em;
 }
 
 /* Card Progressbar: Background */

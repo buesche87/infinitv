@@ -1,3 +1,26 @@
+# v0.3.1
+
+Main focus on dialogs & list view
+
+- Matched style, positioning and animation speed of different dialogs
+- More full-screen dialogs shown in TV Mode
+- New multi-select style in Desktop Mode
+- Some mouse cursor adjustments
+- New episode list style (list view generally)
+- Fixed some alignment and style errors
+
+
+There is now a transparent box behind the user-settings list, to disable it:
+
+```css
+:root {
+    [...]
+    --itembg: none;
+}
+```
+
+> This variable could be used to style more elements in feature updates
+
 # v0.3.0
 
 > The changes mostly affect desktop layout
