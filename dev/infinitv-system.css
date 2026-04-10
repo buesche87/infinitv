@@ -149,14 +149,6 @@
     overflow-y: scroll;
 }
 
-
-/* Sync play */
-
-.layout-desktop .syncPlayGroupMenu .actionSheetTitle {
-    text-align: center;
-}
-
-
 /* User Profile: Improve Alignments */
 .layout-tv .formDialogContent {
     margin-bottom: 6.2em;
@@ -192,7 +184,8 @@
     /* border-bottom: chartreuse; */
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
     padding: .6em .5em;
-    text-align: center;
+    text-align: center !important;
+
 }
 
 /* Action Sheets: Content */
