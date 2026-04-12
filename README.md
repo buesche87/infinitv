@@ -81,6 +81,7 @@ In addition to the base theme, there is an extension designed for small smartpho
 - Chromium based client (v105 and later)
 - Set `theme` to `Dark`
 - Set `display mode` to `TV` (htpc only)
+- Use the home sections plugin from [IAmParadox27/jellyfin-plugin-home-sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) (optional)
 
 # TV-Mode Screenshots
 
