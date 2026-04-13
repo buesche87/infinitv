@@ -85,12 +85,6 @@
     text-align: -webkit-center;
 }
 
-/* Banner Cards */
-.layout-tv .itemsContainer > .bannerCard {
-    padding-bottom: 1.5vh !important;
-    padding-right: 1vw !important;
-}
-
 /*
 ===========================================================================
    Cards: Animation
@@ -426,6 +420,9 @@
 }
 .layout-tv  .itemsContainer > .card > .cardBox {
     margin: 1.6em !important;
+}
+.layout-tv .itemsContainer > .bannerCard > .cardBox {
+    margin: .8em 1.6em !important;
 }
 .layout-tv .availableImagesList .portraitCard .cardBox {
     margin: 1em .75em !important;
