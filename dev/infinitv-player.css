@@ -30,14 +30,12 @@
 
 /* Player OSD: Media-Buttons */
 .ltr > .paper-icon-button-light:focus {
-    -webkit-transform: scale(1.2) !important;
     transform: scale(1.2) !important;
 }
 
 /* Player OSD: Volume-Button */
 .volumeButtons > .paper-icon-button-light:focus,
 .osdControls > .focuscontainer-x > .paper-icon-button-light:focus {
-    -webkit-transform: none !important;
     transform: none !important;
 }
 
@@ -139,7 +137,6 @@
 /* UpNext: Buttons */
 .upNextDialog-button {
     margin-left: .5em;
-    -webkit-transform: none !important;
     transform: none !important;
 }
 
@@ -204,11 +201,9 @@
     background: #0000 !important;
 }
 .layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
-    -webkit-transform: none !important;
     transform: none !important;
 }
 .layout-tv .playlistSectionButton .paper-icon-button-light {
-    -webkit-transform: none !important;
     transform: none !important;
 }
 

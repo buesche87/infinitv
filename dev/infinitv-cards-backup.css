@@ -4,91 +4,10 @@
 ===========================================================================
 */
 
-:root {
-    /* Default Card Widths */
-    --card-portrait-width: 33.33%;
-    --card-square-width: 33.33%;
-    --card-backdrop-width: 50%;
-
-    /* Overflow Card Widths */
-    --overflow-portrait-width: 33.33%;
-    --overflow-square-width: 33.33%;
-    --overflow-backdrop-width: 50%;
-    --overflow-small-backdrop-width: 50%;
-
-    /* TV Layout Card Widths */
-    --tv-card-portrait-width: 33.33%;
-    --tv-card-square-width: 33.33%;
-    --tv-card-backdrop-width: 50%;
-
-    /* TV Overflow Card Widths */
-    --tv-overflow-portrait-width: 33.33%;
-    --tv-overflow-square-width: 33.33%;
-    --tv-overflow-backdrop-width: 50%;
-
-    /* Mobile Layout Card Widths */
-    --mobile-card-portrait-width: 33.33%;
-    --mobile-card-square-width: 33.33%;
-    --mobile-card-backdrop-width: 50%;
-
-    /* Mobile Overflow Card Widths */
-    --mobile-overflow-portrait-width: 33.33%;
-    --mobile-overflow-square-width: 33.33%;
-    --mobile-overflow-backdrop-width: 50%;
-
-    /* Person Card Widths (vw units) */
-    --person-card-width: 22.1vw;
-    --person-card-scalable-width: calc(22.1vw - 1.75em);
-    --person-card-height: 22.1vw;
-
-    --tv-person-card-width: 23.2vw;
-    --tv-person-card-scalable-width: calc(23.2vw - 1.75em);
-    --tv-person-card-height: 23.2vw;
-
-    --mobile-person-card-width: 23vw;
-    --mobile-person-card-scalable-width: calc(23vw - 1.75em);
-    --mobile-person-card-height: 23vw;
-
-    /* NextUp Section */
-    --nextup-card-width: 50%;
-    --nextup-max-width: 40em;
-    --nextup-min-width: 18em;
-
-    --tv-nextup-width: 50%;
-    --tv-nextup-max-width: 30em;
-
-    --mobile-nextup-width: 75%;
-    --mobile-nextup-max-width: 38em;
-
-    /* Dialog Container (Desktop) */
-    --dialog-portrait-width: 25%;
-    --dialog-square-width: 25%;
-    --dialog-backdrop-width: 33.33%;
-
-    /* List Item Overview */
-    --listitem-line-clamp: 3;
+/* Poster Cards */
+.layout-desktop .detailImageContainer .portraitCard {
+    max-width: 36em !important;
 }
-
-/*
-===========================================================================
-   Cards
-===========================================================================
-*/
-
-/* Person Cards */
-.itemsContainer > .overflowPortraitCard.personCard {
-    font-size: 90% !important;
-}
-
-/* Person Cards: Center Content */
-.personCard > .cardBox {
-    text-align: center;
-}
-
-/* Layout TV
---------------------------------------------------------------------------*/
-
-/* Cards */
 .layout-tv .detailImageContainer .portraitCard {
     left: 1vw;
     max-width: 28em;
@@ -97,39 +16,130 @@
     left: 1vw;
 }
 .layout-tv .detailImageContainer .squareCard {
+    width: 20vw;
     max-width: 18em;
 }
 
+/* Cards */
+.itemsContainer > .portraitCard,
+.itemsContainer > .squareCard {
+    width: 33.33%;
+}
+.itemsContainer > .backdropCard {
+    width: 50%;
+}
+
+/* Overflow Cards */
+.itemsContainer > .overflowPortraitCard,
+.itemsContainer > .overflowSquareCard {
+    width: 33.33%;
+}
+.itemsContainer > .overflowBackdropCard {
+    width: 50%;
+}
+
 /* NextUp Card */
+.detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
+    width: 50% !important;
+    max-width: 40em;
+    min-width: 18em;
+}
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
     width: 50% !important;
     max-width: 30em;
     min-width: 18em;
 }
-
-/* Layout Desktop
---------------------------------------------------------------------------*/
-
-/* Poster Cards */
-.layout-desktop .detailImageContainer .portraitCard {
-    max-width: 36em !important;
-}
-
-/* NextUp Card */
-.layout-desktop .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-    width: 50% !important;
-    max-width: 40em;
-    min-width: 18em;
-}
-
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-/* NextUp Card */
 .layout-mobile .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
     width: 75% !important;
     max-width: 38em;
     min-width: 18em;
+}
+
+/* Person Cards */
+.itemsContainer > .overflowPortraitCard.personCard {
+    width: 22.1vw;
+    font-size: 90% !important;
+}
+.itemsContainer > .overflowPortraitCard.personCard .cardScalable {
+    width:  calc(22.1vw - 1.75em);
+    height: 22.1vw;
+}
+.layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
+    width: 23.2vw;
+}
+.layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
+    width:  calc(23.2vw - 1.75em);
+    height: 23.2vw;
+}
+.layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
+    width: 23vw;
+}
+.layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
+    width:  calc(23vw - 1.75em);
+    height: 23vw;
+}
+
+/* Person Cards: Center Content */
+.personCard > .cardBox {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+/*
+===========================================================================
+   Cards: Animation
+===========================================================================
+*/
+
+/* CardText on Hover (Desktop) */
+.layout-desktop .bannerCard:hover > .cardText,
+.layout-desktop .itemsContainer > .card:hover .cardText {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/* CardBox: Zoom on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardBox {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Card Text: Bold on Focus (TV) */
+.layout-tv .card.show-animation:focus .cardText-first,
+.layout-tv .card.show-animation:focus .cardText-secondary,
+.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) {
+    font-weight: 600;
+}
+
+/* Card Glow */
+.card:hover .cardScalable,
+.card:hover .cardBox:has(> .cardFooter) {
+    box-shadow: var(--cardglow) !important;
+}
+
+/* Card Shadows */
+.cardScalable {
+    box-shadow: var(--cardshadow) !important;
+}
+
+/* Shadow for cardBox if footer present */
+.cardBox:has(> .cardFooter) {
+    box-shadow: var(--cardshadow) !important;
+}
+
+/* No shadows */
+.cardBox:has(> .cardFooter) > .cardScalable,
+.dialogContentInner .imageEditorCard .cardBox {
+    box-shadow: none !important;
+}
+
+/* Cards: Inset Shadow (smoothening) */
+.libraryPage .cardImageContainer {
+    box-shadow: var(--insettop), var(--insetbottom);
 }
 
 /*
@@ -150,11 +160,32 @@
     margin-bottom: 1.2em;
     margin-left: 1%;
     height: 5em;
+    width: 98%;
 }
+
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) {
+    /* height: 6em; */
+    width: 98%;
+}
+
 
 /* Poster */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
+    height: 5em;
+    width: 14%;
     border-right: var(--buttonborder);
+}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
+    width: 15%;
+}
+
+
+/* Rating */
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo {
+    width: 4%;
+}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo {
+    width: 5%;
 }
 
 /* Layout Desktop
@@ -224,6 +255,7 @@
     margin-bottom: 1em;
     padding: 0em;
     border-color: hsl(0deg 0% 100% / 20%);
+    -webkit-transform: none !important;
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
@@ -264,7 +296,9 @@
 
 @media (max-width: 64em) {
     .layout-tv .listItemImage-large {
+        height: 16vw;
         margin-right: .5em !important;
+        width: 22vw
     }
 
     .layout-tv .listItemImageButton,
@@ -340,66 +374,6 @@
     left: 0.5em;
     top: 0.5em;
     font-size: .75em !important
-}
-
-/*
-===========================================================================
-   Cards: Animation
-===========================================================================
-*/
-
-/* Card Glow */
-.card:hover .cardScalable,
-.card:hover .cardBox:has(> .cardFooter) {
-    box-shadow: var(--cardglow) !important;
-}
-
-/* Card Shadows */
-.cardScalable {
-    box-shadow: var(--cardshadow) !important;
-}
-
-/* Shadow for cardBox if footer present */
-.cardBox:has(> .cardFooter) {
-    box-shadow: var(--cardshadow) !important;
-}
-
-/* No shadows */
-.cardBox:has(> .cardFooter) > .cardScalable,
-.dialogContentInner .imageEditorCard .cardBox {
-    box-shadow: none !important;
-}
-
-/* Cards: Inset Shadow (smoothening) */
-.libraryPage .cardImageContainer {
-    box-shadow: var(--insettop), var(--insetbottom);
-}
-
-/* Layout TV
---------------------------------------------------------------------------*/
-
-/* CardBox: Zoom on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardBox {
-    transform: scale(1.1);
-}
-
-/* Card Text: Bold on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardText-first,
-.layout-tv .card.show-animation:focus .cardText-secondary,
-.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) {
-    font-weight: 600;
-}
-
-/* Layout Desktop
---------------------------------------------------------------------------*/
-
-/* CardText on Hover (Desktop) */
-.layout-desktop .bannerCard:hover > .cardText,
-.layout-desktop .itemsContainer > .card:hover .cardText {
-    transform: scale(1.1);
-}
-.layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
-    transform: scale(1);
 }
 
 /*
@@ -586,113 +560,30 @@
 
 /*
 ===========================================================================
-   Card Size
-===========================================================================
-*/
-
-/* Cards */
-.itemsContainer > .portraitCard {
-    width: var(--card-portrait-width);
-}
-.itemsContainer > .squareCard {
-    width: var(--card-square-width);
-}
-.itemsContainer > .backdropCard {
-    width: var(--card-backdrop-width);
-}
-
-/* Overflow Cards */
-.itemsContainer > .overflowPortraitCard {
-    width: var(--overflow-portrait-width);
-}
-.itemsContainer > .overflowSquareCard {
-    width: var( --overflow-square-width);
-}
-.itemsContainer > .overflowBackdropCard {
-    width: var(--overflow-backdrop-width);
-}
-
-/* Person Cards */
-.itemsContainer > .overflowPortraitCard.personCard {
-    width: var(--person-card-width);
-}
-.itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-    width: var(--person-card-scalable-width);
-    height: var(--person-card-height);
-}
-
-/* Layout TV
---------------------------------------------------------------------------*/
-
-/* Person Cards */
-.layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard {
-    width: var(--tv-person-card-width);
-}
-.layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-    width: var(--tv-person-card-scalable-width);
-    height: var(--tv-person-card-height);
-}
-
-
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-/* Person Cards */
-.layout-mobile .itemsContainer > .overflowPortraitCard.personCard {
-    width: var(--mobile-person-card-width);
-}
-.layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-    width: var(--mobile-person-card-scalable-width);
-    height: var(--mobile-person-card-height);
-}
-
-/*
-===========================================================================
-   List Item Size
-===========================================================================
-*/
-
-/* Layout TV
---------------------------------------------------------------------------*/
-
-/* Card (TV) */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) {
-    width: 98%;
-}
-
-.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) {
-    width: 98%;
-}
-
-/* Poster */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
-    height: 5em;
-    width: 14%;
-}
-.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage {
-    width: 15%;
-}
-
-/* Rating */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo {
-    width: 4%;
-}
-.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo {
-    width: 5%;
-}
-
-/*
-===========================================================================
    Dynamic Card Size
 ===========================================================================
 */
 
 @media(min-width: 30em) {
-    .layout-mobile .itemsContainer > .portraitCard,
-    .layout-mobile .itemsContainer > .squareCard,
-    .layout-mobile .itemsContainer > .backdropCard,
-    .layout-mobile .itemsContainer > .overflowPortraitCard,
-    .layout-mobile .itemsContainer > .overflowSquareCard,
+
+    /* Cards - Mobile */
+    .layout-mobile .itemsContainer > .portraitCard {
+        width: 33.33%;
+    } 
+     .layout-mobile .itemsContainer > .squareCard {
+        width: 33.33%;
+    } 
+    .layout-mobile .itemsContainer > .backdropCard {
+        width: 33.33%;
+    }
+
+    /* Overflow Cards - Mobile */
+    .layout-mobile .itemsContainer > .overflowPortraitCard {
+        width: 33.33%;
+    }
+    .layout-mobile .itemsContainer > .overflowSquareCard {
+        width: 33.33%;
+    }
     .layout-mobile .itemsContainer > .overflowBackdropCard {
         width: 33.33%;
     }
@@ -2005,4 +1896,3 @@
         left: 4%;
     }
 }
-
