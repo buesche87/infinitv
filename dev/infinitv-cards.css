@@ -95,6 +95,7 @@
 /* Person Cards: Center Content */
 .personCard > .cardBox {
     text-align: center;
+    text-align: -webkit-center;
 }
 
 /* Layout TV
@@ -248,7 +249,6 @@
     margin-right: 1.25em;
     padding: 0;
 }
-
 
 /* Large Image List Item - TV
 --------------------------------------------------------------------------*/
@@ -623,15 +623,6 @@
 /* Rating */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo { width: 4%; }
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo { width: 5%; }
-
-
-/*
-===========================================================================
-   Dynamic Card Size
-===========================================================================
-*/
-
-
 
 /*
 ===========================================================================
@@ -1255,11 +1246,6 @@
         --card-tv-secondary-overflow-backdrop-width: 14.25%;
         --card-tv-secondary-overflow-smallbackdrop-width: 14.25%;
 
-        /* Person Cards */
-        --card-person-height: 6.4vw;
-        --card-person-scalable-width: calc(6.4vw - 1.75em);
-        --card-person-scalable-height: 6.4vw;
-
         /* Person Cards - TV */
         --card-tv-person-height: 6.335vw;
         --card-tv-person-scalable-width: calc(6.335vw - 1.75em);
@@ -1340,22 +1326,22 @@
 /* Person Cards */
 .itemsContainer > .overflowPortraitCard.personCard { width: var(--card-person-height); }
 .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-    width: var(--card-person-scalable-width);
-    height: var(--card-person-scalable-height);
+    width: var(--card-person-scalable-width) !important;
+    height: var(--card-person-height) !important;
 }
 
 /* Person Cards - TV */
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard { width: var(--card-tv-person-height); }
 .layout-tv .itemsContainer-tv > .overflowPortraitCard.personCard .cardScalable {
-    width: var(--card-tv-person-scalable-width);
-    height: var(--card-tv-person-scalable-height);
+    width: var(--card-tv-person-scalable-width) !important;
+    height: var(--card-tv-person-height) !important;
 }
 
 /* Person Cards - Mobile */
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard { width: var(--card-mobile-person-height); }
 .layout-mobile .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
-    width: var(--card-mobile-person-scalable-width);
-    height: var(--card-mobile-person-scalable-height);
+    width: var(--card-mobile-person-scalable-width) !important;
+    height: var(--card-mobile-person-height) !important;
 }
 
 /* ListItem: Text Wrap */
