@@ -77,28 +77,11 @@
     }
 }
 
+/* Home Page: Slides
+--------------------------------------------------------------------------*/
 
 #slides-container .backdrop-container {
     height: 90%;
-}
-
-
-/* Home Sections Container */
-.layout-tv .homeSectionsContainer {
-    top: 0;
-}
-.layout-desktop .homeSectionsContainer {
-    top: 64.5vh;
-}
-@media(max-width: 48.125em) {
-    .layout-mobile .homeSectionsContainer {
-        top: 68vh;
-    }
-}
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .homeSectionsContainer {
-        top: 61vh;
-    }
 }
 
 /* Slides: Disable in TV layout (they don't work well with a remote) */
@@ -126,6 +109,27 @@
     .slide .info-container,
     .slide .plot-container {
         font-size: 120%;
+    }
+}
+
+/* Home Page: Home Sections
+--------------------------------------------------------------------------*/
+
+/* Home Sections Container */
+.layout-tv .homeSectionsContainer {
+    top: 0;
+}
+.layout-desktop .homeSectionsContainer {
+    top: 64.5vh;
+}
+@media(max-width: 48.125em) {
+    .layout-mobile .homeSectionsContainer {
+        top: 68vh;
+    }
+}
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .homeSectionsContainer {
+        top: 61vh;
     }
 }
 
