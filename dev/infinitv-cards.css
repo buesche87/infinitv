@@ -25,9 +25,9 @@
     --card-overflow-backdrop-width: 50%;
 
     /* Overflow Cards in Primary Container not containing a NextUp Section */
-    --card-overflow-portrait-nextuphide-width: 33.33%;
-    --card-overflow-square-nextuphide-width: 25%;
-    --card-overflow-backdrop-nextuphide-width: 33.33%;
+    --card-overflow-portrait-nextuphide-width: 50%;
+    --card-overflow-square-nextuphide-width: 33%; /* not sure if used anywhere */
+    --card-overflow-backdrop-nextuphide-width: 33.33%; /* not sure if used anywhere */
 
     /* Person Cards */
     --card-person-height: 22.1vw;
@@ -51,9 +51,8 @@
 
     /* Overflow Cards in Secondary Container - TV */
     --card-secondary-overflow-portrait-width-tv: 33.33%;
-    --card-secondary-overflow-square-width-tv: 33.33%;
+    --card-secondary-overflow-square-width-tv: 25%;
     --card-secondary-overflow-backdrop-width-tv: 50%;
-    --card-secondary-overflow-smallbackdrop-width-tv: 50%;
 
     /* Person Cards - TV */
     --card-person-height-tv: 23.2vw;
@@ -247,6 +246,7 @@
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
+    
 }
 
 /* Large Image List Item: Align Body */
@@ -442,15 +442,17 @@
 .layout-desktop .itemsContainer > .card > .cardBox {
     margin: 1em !important;
 }
+
 .layout-tv  .itemsContainer > .card > .cardBox {
-    margin: 1.6em !important;
+    margin: 1.2vw !important;
 }
 .layout-tv .itemsContainer > .bannerCard > .cardBox {
-    margin: .8em 1.6em !important;
+    margin: 1vw 1.2vw !important;
 }
 .layout-tv .availableImagesList .portraitCard .cardBox {
     margin: 1em .75em !important;
 }
+
 .layout-mobile .itemsContainer .card > .cardBox {
     margin-left: .75em;
     margin-right: .75em;
@@ -460,7 +462,7 @@
 
 /* CardBox: Banner Card */
 .layout-desktop .itemsContainer > .bannerCard > .cardBox {
-    margin: .75em 1em !important;
+    margin: 1em !important;
 }
 
 /* CardBox: Overflow Portrait Card */
@@ -654,11 +656,6 @@
         --card-overflow-square-width: 25%;
         --card-overflow-backdrop-width: 33.33%;
 
-        /* Overflow Cards in Primary Container not containing a NextUp Section */
-        --card-overflow-portrait-nextuphide-width: 50%;
-        --card-overflow-square-nextuphide-width: 20%;
-        --card-overflow-backdrop-nextuphide-width: 25%;
-
         /* Person Cards */
         --card-person-height: 17.7vw;
         --card-person-scalable-width: calc(17.7vw - 1.75em);
@@ -686,7 +683,6 @@
         /* Overflow Cards - Mobile */
         --card-overflow-portrait-width-mobile: 25%;
         --card-overflow-square-width-mobile: 25%;
-        --card-overflow-backdrop-width-mobile: 33.33%;
 
         /* Overflow Cards in Secondary Container - Mobile */
         --card-secondary-overflow-portrait-width-mobile: 25%;
@@ -710,7 +706,9 @@
         /* Overflow Cards */
         --card-overflow-portrait-width: 25%;
         --card-overflow-square-width: 20%;
-        --card-overflow-backdrop-width: 33.33%;
+
+        /* Overflow Cards in Primary Container not containing a NextUp Section */
+        --card-overflow-portrait-nextuphide-width: 33.33%;
 
         /* Person Cards */
         --card-person-height: 14.8vw;
@@ -723,18 +721,18 @@
         --------------------------------------------------------------------------*/
 
         /* Cards - TV */
+        --card-portrait-width-tv: 25%;
         /* --card-square-width-tv: 25%; */
         --card-backdrop-width-tv: 33.33%;
 
         /* Overflow Cards - TV */
         --card-overflow-portrait-width-tv: 25%;
-        --card-overflow-square-width-tv: 20%;
         --card-overflow-backdrop-width-tv: 33.33%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 25%;
         --card-secondary-overflow-square-width-tv: 20%;
-        /* --card-secondary-overflow-backdrop-width-tv: 33.33%; */
+        --card-secondary-overflow-backdrop-width-tv: 33.33%;
 
         /* Person Cards - TV */
         --card-person-height-tv: 15.5vw;
@@ -786,6 +784,9 @@
         --card-overflow-square-width: 16.66%;
         --card-overflow-backdrop-width: 25%;
 
+        /* Overflow Cards in Primary Container not containing a NextUp Section */
+        --card-overflow-portrait-nextuphide-width: 25%;
+
         /* Person Cards */
         --card-person-height: 12.75vw;
         --card-person-scalable-width: calc(12.75vw - 1.75em);
@@ -802,14 +803,11 @@
         --card-backdrop-width-tv: 25%;
 
         /* Overflow Cards - TV */
-        --card-overflow-portrait-width-tv: 25%;
-        --card-overflow-square-width-tv: 25%;
-        --card-overflow-backdrop-width-tv: 33.33%;
+        --card-overflow-square-width-tv: 20%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 20%;
         --card-secondary-overflow-square-width-tv: 16.66%;
-        --card-secondary-overflow-backdrop-width-tv: 33.33%;
 
         /* Person Cards - TV */
         --card-person-height-tv: 13.55vw;
@@ -824,8 +822,6 @@
         --card-backdrop-width-mobile: 20%;
 
         /* Overflow Cards - Mobile */
-        /* --card-overflow-portrait-width-mobile: 20%; */
-        /* --card-overflow-square-width-mobile: 20%; */
         --card-overflow-backdrop-width-mobile: 20%;
 
         /* Overflow Cards in Secondary Container - Mobile */
@@ -838,14 +834,6 @@
         --card-person-scalable-width-mobile: calc(13.15vw - 1.75em);
     }
 }
-@media(min-width: 80em) {
-    :root {
-        /* Image Search Cards */
-        --card-search-portrait-width: 25%;
-        --card-search-square-width: 25%;
-        --card-search-backdrop-width: 33.33%;
-    }
-}
 @media(min-width: 87.5em) {
     :root {
         /* Layout Desktop (Default)
@@ -856,16 +844,8 @@
         --card-square-width: 14.25%;
         --card-backdrop-width: 20%;
 
-        /* Image Search Cards
-        --card-search-portrait-width: 25%;
-        --card-search-square-width: 25%;
-        --card-search-backdrop-width: 33.33%;
-        */
-
         /* Overflow Cards */
-        /* --card-overflow-portrait-width: 20%; */
         --card-overflow-square-width: 14.25%;
-        /* --card-overflow-backdrop-width: 25%; */
 
         /* Person Cards */
         --card-person-height: 11.15vw;
@@ -878,17 +858,14 @@
         --------------------------------------------------------------------------*/
 
         /* Cards - TV */
-        /* --card-portrait-width-tv: 20%; */
         --card-square-width-tv: 16.66%;
-        /* --card-backdrop-width-tv: 25%; */
 
         /* Overflow Cards - TV */
         --card-overflow-portrait-width-tv: 20%;
-        --card-overflow-square-width-tv: 20%;
+        --card-overflow-square-width-tv: 16.66%;
         --card-overflow-backdrop-width-tv: 25%;
 
         /* Overflow Cards in Secondary Container - TV */
-        /* --card-secondary-overflow-portrait-width-tv: 20%; */
         --card-secondary-overflow-square-width-tv: 14.25%;
         --card-secondary-overflow-backdrop-width-tv: 25%;
 
@@ -898,22 +875,14 @@
 
         /* Layout Mobile
         --------------------------------------------------------------------------*/
-        
-        /* Cards - Mobile
-        --card-portrait-width-mobile: 16.66%;
-        --card-square-width-mobile: 16.66%;
-        --card-backdrop-width-mobile: 20%;
-        */
 
         /* Overflow Cards - Mobile */
         --card-overflow-portrait-width-mobile: 16.66%;
         --card-overflow-square-width-mobile: 16.66%;
-        /* --card-overflow-backdrop-width-mobile: 20%; */
 
         /* Overflow Cards in Secondary Container - Mobile */
         --card-secondary-overflow-portrait-width-mobile: 14.25%;
         --card-secondary-overflow-square-width-mobile: 14.25%;
-        /* --card-secondary-overflow-backdrop-width-mobile: 20%; */
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 10.225vw;
@@ -929,9 +898,7 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        /* --card-portrait-width: 16.66%; */
         --card-square-width: 12.5%;
-        /* --card-backdrop-width: 20%; */
 
         /* Image Search Cards */
         --card-search-portrait-width: 20%;
@@ -960,13 +927,11 @@
 
         /* Overflow Cards - TV */
         --card-overflow-portrait-width-tv: 16.66%;
-        --card-overflow-square-width-tv: 16.66%;
-        /* --card-overflow-backdrop-width-tv: 25%; */
+        --card-overflow-square-width-tv: 14.25%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 16.66%;
         --card-secondary-overflow-square-width-tv: 12.5%;
-        /* --card-secondary-overflow-backdrop-width-tv: 25%; */
 
         /* Person Cards - TV */
         --card-person-height-tv: 10.55vw;
@@ -988,7 +953,7 @@
         /* Overflow Cards in Secondary Container - Mobile */
         --card-secondary-overflow-portrait-width-mobile: 12.5%;
         --card-secondary-overflow-square-width-mobile: 12.5%;
-        /* --card-secondary-overflow-backdrop-width-mobile: 20%; */
+        --card-secondary-overflow-backdrop-width-mobile: 16.66%;
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 9.195vw;
@@ -1005,18 +970,15 @@
 
         /* Cards */
         --card-portrait-width: 14.25%;
-        /* --card-square-width: 12.5%; */
         --card-backdrop-width: 16.66%;
-
-        /* Image Search Cards
-        --card-search-portrait-width: 20%;
-        --card-search-backdrop-width: 25%;
-        */
 
         /* Overflow Cards */
         --card-overflow-portrait-width: 14.25%;
         --card-overflow-square-width: 11.1%;
         --card-overflow-backdrop-width: 16.66%;
+
+        /* Overflow Cards in Primary Container not containing a NextUp Section */
+        --card-overflow-portrait-nextuphide-width: 20%;
 
         /* Person Cards */
         --card-person-height: 8.95vw;
@@ -1030,18 +992,17 @@
 
         /* Cards - TV */
         --card-portrait-width-tv: 14.25%;
-        --card-square-width-tv: 14.25%;
-        /* --card-backdrop-width-tv: 20%; */
+        --card-square-width-tv: 12.5%;
 
         /* Overflow Cards - TV */
         --card-overflow-portrait-width-tv: 14.25%;
-        --card-overflow-square-width-tv: 20%;
+        --card-overflow-square-width-tv: 12.5%;
         --card-overflow-backdrop-width-tv: 20%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 14.25%;
-        --card-secondary-overflow-square-width-tv: 11.11%;
-        /* --card-secondary-overflow-backdrop-width-tv: 25%; */
+        --card-secondary-overflow-square-width-tv: 11.1%;
+        --card-secondary-overflow-backdrop-width-tv: 20%;
 
         /* Person Cards - TV */
         --card-person-height-tv: 9.5vw;
@@ -1056,8 +1017,6 @@
         /* --card-backdrop-width-mobile: 16.66%; */
 
         /* Overflow Cards - Mobile */
-        /* --card-overflow-portrait-width-mobile: 14.25%; */
-        /* --card-overflow-square-width-mobile: 14.25%; */
         --card-overflow-backdrop-width-mobile: 14.25%;
 
         /* Person Cards - Mobile */
@@ -1074,9 +1033,8 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 11.1%;
+        --card-portrait-width: 12.5%;
         --card-square-width: 11.1%;
-        --card-backdrop-width: 16.66%;
 
         /* Image Search Cards */
         --card-search-portrait-width: 16.66%;
@@ -1085,26 +1043,16 @@
 
         /* Overflow Cards */
         --card-overflow-portrait-width: 12.5%;
-        --card-overflow-square-width: 11.1%;
         --card-overflow-backdrop-width: 14.25%;
 
         /* Layout TV
         --------------------------------------------------------------------------*/
 
         /* Cards - TV */
-        --card-portrait-width-tv: 14.25%;
-        --card-square-width-tv: 14.25%;
-        --card-backdrop-width-tv: 20%;
-
-        /* Overflow Cards - TV */
-        --card-overflow-portrait-width-tv: 12.5%;
-        --card-overflow-square-width-tv: 16.66%;
-        --card-overflow-backdrop-width-tv: 20%;
+        --card-backdrop-width-tv: 16.66%;
 
         /* Overflow Cards in Secondary Container - TV */
-        --card-secondary-overflow-portrait-width-tv: 14.25%;
         --card-secondary-overflow-square-width-tv: 10%;
-        --card-secondary-overflow-backdrop-width-tv: 25%;
 
         /* ListItem Text Wrap - TV*/
         --listitem-line-clamp-tv: 7;
@@ -1120,12 +1068,10 @@
         /* Overflow Cards - Mobile */
         --card-overflow-portrait-width-mobile: 12.5%;
         --card-overflow-square-width-mobile: 12.5%;
-        --card-overflow-backdrop-width-mobile: 14.25%;
 
         /* Overflow Cards in Secondary Container - Mobile */
-        --card-secondary-overflow-portrait-width-mobile: 11.11%;
-        --card-secondary-overflow-square-width-mobile: 11.11%;
-        --card-secondary-overflow-backdrop-width-mobile: 20%;
+        --card-secondary-overflow-portrait-width-mobile: 11.1%;
+        --card-secondary-overflow-square-width-mobile: 11.1%;
     }
 }
 @media(min-width: 150em) {
@@ -1148,6 +1094,9 @@
         --card-overflow-square-width: 10%;
         --card-overflow-backdrop-width: 12.5%;
 
+        /* Overflow Cards in Primary Container not containing a NextUp Section */
+        --card-overflow-portrait-nextuphide-width: 16.66%;
+
         /* Person Cards */
         --card-person-height: 7.465vw;
         --card-person-scalable-width: calc(7.465vw - 1.75em);
@@ -1157,18 +1106,18 @@
 
         /* Cards - TV */
         --card-portrait-width-tv: 12.5%;
-        --card-square-width-tv: 12.5%;
-        --card-backdrop-width-tv: 16.66%;
+        --card-square-width-tv: 11.1%;
+        --card-backdrop-width-tv: 14.25%;
 
         /* Overflow Cards - TV */
         --card-overflow-portrait-width-tv: 12.5%;
-        --card-overflow-square-width-tv: 16.66%;
+        --card-overflow-square-width-tv: 11.1%;
         --card-overflow-backdrop-width-tv: 16.66%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 12.5%;
         --card-secondary-overflow-square-width-tv: 9.09%;
-        --card-secondary-overflow-backdrop-width-tv: 20%;
+        --card-secondary-overflow-backdrop-width-tv: 16.66%;
 
         /* Person Cards - TV */
         --card-person-height-tv: 7.31vw;
@@ -1216,9 +1165,7 @@
         --card-overflow-backdrop-width: 11.1%;
 
         /* Overflow Cards in Primary Container not containing a NextUp Section */
-        --card-overflow-portrait-nextuphide-width: 16.66%;
-        --card-overflow-square-nextuphide-width: 20%;
-        --card-overflow-backdrop-nextuphide-width: 25%;
+        --card-overflow-portrait-nextuphide-width: 14.25%;
 
         /* Person Cards */
         --card-person-height: 6.4vw;
@@ -1229,18 +1176,18 @@
 
         /* Cards - TV */
         --card-portrait-width-tv: 11.1%;
-        --card-square-width-tv: 11.1%;
-        --card-backdrop-width-tv: 14.25%;
+        --card-square-width-tv: 10%;
+        --card-backdrop-width-tv: 12.5%;
 
         /* Overflow Cards - TV */
-        --card-overflow-portrait-width-tv: 12.5%;
-        --card-overflow-square-width-tv: 14.25%;
+        --card-overflow-portrait-width-tv: 11.1%;
+        --card-overflow-square-width-tv: 10%;
         --card-overflow-backdrop-width-tv: 14.25%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 11.1%;
         --card-secondary-overflow-square-width-tv: 8.33%;
-        --card-secondary-overflow-backdrop-width-tv: 16.66%;
+        --card-secondary-overflow-backdrop-width-tv: 14.25%;
 
         /* Person Cards - TV */
         --card-person-height-tv: 6.785vw;
@@ -1250,15 +1197,15 @@
         --------------------------------------------------------------------------*/
 
         /* Cards - Mobile */
-        --card-backdrop-width-mobile: 14.25%;
+        --card-backdrop-width-mobile: 11.1%;
 
         /* Overflow Cards - Mobile */
-        --card-overflow-backdrop-width-mobile: 16.66%;
+        --card-overflow-backdrop-width-mobile: 11.1%;
 
         /* Overflow Cards in Secondary Container - Mobile */
         --card-secondary-overflow-portrait-width-mobile: 10%;
         --card-secondary-overflow-square-width-mobile: 10%;
-        --card-secondary-overflow-backdrop-width-mobile: 16.66%;
+        --card-secondary-overflow-backdrop-width-mobile: 14.25%;
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 6.135vw;
@@ -1280,41 +1227,30 @@
 
         /* Cards */
         --card-portrait-width: 9%;
-        --card-square-width: 10%;
         --card-backdrop-width: 11.11%;
 
         /* Image Search Cards */
-        --card-search-portrait-width: 12.5%;
-        --card-search-square-width: 12.5%;
         --card-search-backdrop-width: 12.5%;
 
         /* Overflow Cards */
-        --card-overflow-portrait-width: 9%;
-        --card-overflow-square-width: 9.15%;
-        --card-overflow-backdrop-width: 11.11%;
-
-        /* Overflow Cards in Primary Container not containing a NextUp Section */
-        --card-overflow-portrait-nextuphide-width: 14.25%;
-        --card-overflow-square-nextuphide-width: 20%;
-        --card-overflow-backdrop-nextuphide-width: 25%;
+        --card-overflow-portrait-width: 9.09%;
 
         /* Layout TV
         --------------------------------------------------------------------------*/
 
         /* Cards - TV */
-        --card-portrait-width-tv: 9.09%;
+        --card-portrait-width-tv: 10%;
         --card-square-width-tv: 9.09%;
-        --card-backdrop-width-tv: 12.5%;
 
         /* Overflow Cards - TV */
         --card-overflow-portrait-width-tv: 10%;
-        --card-overflow-square-width-tv: 12.5%;
+        --card-overflow-square-width-tv: 9.09%;
         --card-overflow-backdrop-width-tv: 12.5%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 10%;
         --card-secondary-overflow-square-width-tv: 8.33%;
-        --card-secondary-overflow-backdrop-width-tv: 14.25%;
+        --card-secondary-overflow-backdrop-width-tv: 12.5%;
 
         /* Person Cards - TV */
         --card-person-height-tv: 6.335vw;
