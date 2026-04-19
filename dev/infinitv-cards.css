@@ -466,9 +466,9 @@
 
 .layout-tv .itemsContainer > .backdropCard > .cardBox {
     margin-left: 1.6em !important;
-    margin-right: .8em !important;
+    margin-right: 1em !important;
     margin-top: 1.4em !important;
-    margin-bottom: 1.2em !important;
+    margin-bottom: .6em !important;
 }
 .layout-tv .itemsContainer > .portraitCard > .cardBox,
 .layout-tv .itemsContainer > .squareCard > .cardBox {
@@ -484,12 +484,17 @@
     margin-top: 1.4em;
     margin-bottom: 1.2em !important;
 }
-.layout-tv .itemsContainer > .overflowPortraitCard > .cardBox,
-.layout-tv .itemsContainer > .overflowSquareCard > .cardBox{
+.layout-tv .itemsContainer > .overflowPortraitCard > .cardBox {
+    margin-right: 1em !important;
     margin-left: 1.6em !important;
-    margin-right: .6em !important;
-    margin-top: 1.4em !important;
-    margin-bottom: 1.2em !important;
+    margin-top: 2em !important;
+    margin-bottom: 1.6em !important;
+}
+.layout-tv .itemsContainer > .overflowSquareCard > .cardBox {
+    margin-right: 1em !important;
+    margin-left: 1.6em !important;
+    margin-top: 1.6em !important;
+    margin-bottom: 1em !important;
 }
 
 
