@@ -161,6 +161,24 @@
     padding: 0.2em;
 }
 
+/* Playback Info */
+.playerStats {
+    /* margin: auto; */
+    top: 5em;
+    /* bottom: auto; */
+}
+
+.playerStats-content-tv {
+    font-size: 85%;
+}
+
+
+
+
+
+
+
+
 /*
 ===========================================================================
    Music Player
