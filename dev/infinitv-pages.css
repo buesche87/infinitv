@@ -392,9 +392,16 @@
 .layout-mobile .detailRibbon {
     margin-top: -1em !important;
     padding-bottom: 1.25em;
-    padding-right: 5% !important;
+    padding-right: 3% !important;
     padding-left: 5%;
 }
+
+
+.layout-mobile .detailImageContainer .card.backdropCard {
+    top: 1em;
+    max-width: 33vw;
+}
+
 
 /* Detail-Ribbon: Info Container */
 .layout-mobile .infoWrapper {
