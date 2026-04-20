@@ -166,14 +166,21 @@
     /* margin: auto; */
     top: 5em;
     /* bottom: auto; */
+    font-size: 110%;
 }
 
 .playerStats-content-tv {
     font-size: 85%;
 }
 
+.playerStats-stat-label {
+    color: #ddd;
+}
 
-
+.playerStats-stat-value {
+    color: #fff;
+    font-weight: 600;
+}
 
 
 
