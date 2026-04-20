@@ -370,7 +370,7 @@
         /* Overflow Cards */
         --card-overflow-portrait-width: 16.66%;
         --card-overflow-square-width: 12.5%;
-        --card-overflow-backdrop-width: 25%;
+        --card-overflow-backdrop-width: 20%;
 
         /* Person Cards */
         --card-person-height: 8.68vw;
