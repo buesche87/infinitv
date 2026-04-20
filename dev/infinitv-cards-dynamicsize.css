@@ -323,13 +323,13 @@
         --card-square-width-tv: 16.66%;
 
         /* Overflow Cards - TV */
-        --card-overflow-portrait-width-tv: 20%;
+        --card-overflow-portrait-width-tv: 16.66%;
         --card-overflow-square-width-tv: 16.66%;
         --card-overflow-backdrop-width-tv: 25%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-square-width-tv: 14.25%;
-        --card-secondary-overflow-backdrop-width-tv: 33%;
+        --card-secondary-overflow-backdrop-width-tv: 25%;
 
         /* Person Cards - TV */
         --card-person-height-tv: 11.87vw;

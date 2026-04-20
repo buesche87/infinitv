@@ -79,7 +79,7 @@
     padding-right: 1em;
     margin-bottom: 1.2em;
     margin-left: 1%;
-    height: 5em;
+    height: 6em;
 }
 
 /* List Item: Content (TV) */
@@ -595,7 +595,7 @@
 
 /* List Item: Poster - TV */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
-    height: 5em;
+    height: 6em;
     width: 14%;
 }
 /* List Item: Poster Focus - TV */
