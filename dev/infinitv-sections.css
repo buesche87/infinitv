@@ -259,7 +259,7 @@
 .layout-desktop #albumsPage .verticalSection > .itemsContainer {
     margin: .5vw 1.5vw;
 }
-.layout-desktop #favoritesTab .verticalSection > .emby-scroller,
+
 .layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,
 .layout-desktop #moviesPage .verticalSection > .emby-scroller,
 .layout-desktop #albumsPage .verticalSection > .emby-scroller {

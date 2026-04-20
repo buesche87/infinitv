@@ -158,7 +158,7 @@
 
         /* Cards */
         --card-square-width: 20%;
-        --card-backdrop-width: 25%;
+        --card-backdrop-width: 20%;
 
         /* Overflow Cards */
         --card-overflow-portrait-width: 25%;
@@ -233,7 +233,7 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 20%;
+        --card-portrait-width: 16.66%;
         --card-square-width: 16.66%;
 
         /* Overflow Cards */
@@ -297,7 +297,7 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 16.66%;
+        --card-portrait-width: 14.25%;
         --card-square-width: 14.25%;
         --card-backdrop-width: 20%;
 
@@ -305,8 +305,8 @@
         --card-overflow-square-width: 14.25%;
 
         /* Person Cards */
-        --card-person-height: 11.15vw;
-        --card-person-scalable-width: calc(11.15vw - 1.75em);
+        --card-person-height: 9.55vw;
+        --card-person-scalable-width: calc(9.55vw - 1.75em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 5;
@@ -368,8 +368,8 @@
         --card-overflow-backdrop-width: 20%;
 
         /* Person Cards */
-        --card-person-height: 9.935vw;
-        --card-person-scalable-width: calc(9.935vw - 1.75em);
+        --card-person-height: 8.68vw;
+        --card-person-scalable-width: calc(8.68vw - 1.75em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 6;
@@ -426,7 +426,7 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 14.25%;
+        --card-portrait-width: 12.5%;
         --card-backdrop-width: 16.66%;
 
         /* Overflow Cards */
@@ -438,8 +438,8 @@
         --card-overflow-portrait-nextuphide-width: 20%;
 
         /* Person Cards */
-        --card-person-height: 8.95vw;
-        --card-person-scalable-width: calc(8.95vw - 1.75em);
+        --card-person-height: 7.95vw;
+        --card-person-scalable-width: calc(7.95vw - 1.75em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 7;
@@ -490,7 +490,7 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 12.5%;
+        --card-portrait-width: 11.1%;
         --card-square-width: 11.1%;
 
         /* Image Search Cards */
@@ -537,7 +537,7 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 11.1%;
+        --card-portrait-width: 10%;
         --card-square-width: 10%;
         --card-backdrop-width: 14.25%;
 
@@ -607,8 +607,8 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 10%;
-        --card-square-width: 9%;
+        --card-portrait-width: 9.09%;
+        --card-square-width: 9.09%;
         --card-backdrop-width: 12.5%;
 
         /* Image Search Cards */
@@ -683,7 +683,6 @@
         --------------------------------------------------------------------------*/
 
         /* Cards */
-        --card-portrait-width: 9%;
         --card-backdrop-width: 11.11%;
 
         /* Image Search Cards */
