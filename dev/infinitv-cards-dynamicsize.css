@@ -30,8 +30,8 @@
     --card-overflow-backdrop-nextuphide-width: 33.33%; /* not sure if used anywhere */
 
     /* Person Cards */
-    --card-person-height: 22.1vw;
-    --card-person-scalable-width: calc(22.1vw - 1.75em);
+    --card-person-height: 19vw;
+    --card-person-scalable-width: calc(19vw - 1.75em);
 
     /* ListItem Text Wrap */
     --listitem-line-clamp: 3;
@@ -114,8 +114,8 @@
         --card-overflow-backdrop-width: 33.33%;
 
         /* Person Cards */
-        --card-person-height: 17.7vw;
-        --card-person-scalable-width: calc(17.7vw - 1.75em);
+        --card-person-height: 15.8vw;
+        --card-person-scalable-width: calc(15.8vw - 1.75em);
 
         /* Layout TV
         --------------------------------------------------------------------------*/
@@ -168,8 +168,8 @@
         --card-overflow-portrait-nextuphide-width: 33.33%;
 
         /* Person Cards */
-        --card-person-height: 14.8vw;
-        --card-person-scalable-width: calc(14.8vw - 1.75em);
+        --card-person-height: 13.6vw;
+        --card-person-scalable-width: calc(13.6vw - 1.75em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 5;
@@ -223,6 +223,11 @@
 }
 @media(min-width: 60em)  {
     :root {
+
+        /* Person Cards */
+        --card-person-height: 11.9vw;
+        --card-person-scalable-width: calc(11.9vw - 1.75em);
+
         /* ListItem Text Wrap - Mobile */
         --listitem-line-clamp-mobile: 4;
     }
@@ -245,8 +250,8 @@
         --card-overflow-portrait-nextuphide-width: 25%;
 
         /* Person Cards */
-        --card-person-height: 12.75vw;
-        --card-person-scalable-width: calc(12.75vw - 1.75em);
+        --card-person-height: 10.6vw;
+        --card-person-scalable-width: calc(10.6vw - 1.75em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 4;
@@ -365,7 +370,7 @@
         /* Overflow Cards */
         --card-overflow-portrait-width: 16.66%;
         --card-overflow-square-width: 12.5%;
-        --card-overflow-backdrop-width: 20%;
+        --card-overflow-backdrop-width: 25%;
 
         /* Person Cards */
         --card-person-height: 8.68vw;
@@ -432,7 +437,7 @@
         /* Overflow Cards */
         --card-overflow-portrait-width: 14.25%;
         --card-overflow-square-width: 11.1%;
-        --card-overflow-backdrop-width: 16.66%;
+        --card-overflow-backdrop-width: 20%;
 
         /* Overflow Cards in Primary Container not containing a NextUp Section */
         --card-overflow-portrait-nextuphide-width: 20%;
@@ -500,7 +505,7 @@
 
         /* Overflow Cards */
         --card-overflow-portrait-width: 12.5%;
-        --card-overflow-backdrop-width: 14.25%;
+        --card-overflow-backdrop-width: 20%;
 
         /* Layout TV
         --------------------------------------------------------------------------*/
@@ -549,14 +554,14 @@
         /* Overflow Cards */
         --card-overflow-portrait-width: 11.1%;
         --card-overflow-square-width: 10%;
-        --card-overflow-backdrop-width: 12.5%;
+        --card-overflow-backdrop-width: 16.66%;
 
         /* Overflow Cards in Primary Container not containing a NextUp Section */
         --card-overflow-portrait-nextuphide-width: 16.66%;
 
         /* Person Cards */
-        --card-person-height: 7.465vw;
-        --card-person-scalable-width: calc(7.465vw - 1.75em);
+        --card-person-height: 7.35vw;
+        --card-person-scalable-width: calc(7.35vw - 1.75em);
 
         /* Layout TV
         --------------------------------------------------------------------------*/
@@ -619,14 +624,14 @@
         /* Overflow Cards */
         --card-overflow-portrait-width: 10%;
         --card-overflow-square-width: 9.15%;
-        --card-overflow-backdrop-width: 11.1%;
+        --card-overflow-backdrop-width: 14.25%;
 
         /* Overflow Cards in Primary Container not containing a NextUp Section */
         --card-overflow-portrait-nextuphide-width: 14.25%;
 
         /* Person Cards */
-        --card-person-height: 6.4vw;
-        --card-person-scalable-width: calc(6.4vw - 1.75em);
+        --card-person-height: 6.38vw;
+        --card-person-scalable-width: calc(6.38vw - 1.75em);
 
         /* Layout TV
         --------------------------------------------------------------------------*/
