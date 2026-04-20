@@ -245,10 +245,7 @@
 
 /* Filter & Sorting Header */
 .pageTabContent>.focuscontainer-x,
-.itemsViewSettingsContainer {
-
-    padding: 0.25em;
-}
+.itemsViewSettingsContainer {padding: 0.25em;margin-bottom: 1em;}
 
 
 .layout-desktop .paging {
@@ -426,7 +423,7 @@
 
 .layout-desktop .detailImageContainer .card {
     left: 3vw;
-    width: 26vw;
+    width: 27vw;
     max-width: 30vw;
 }
 
