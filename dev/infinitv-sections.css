@@ -22,7 +22,7 @@
 /* Stretch Seasons Scroller */
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
 .layout-desktop .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
-    margin-left: -29vw;
+    margin-left: -30.5vw;
     margin-bottom: -1.5em !important;
 }
 
@@ -73,17 +73,37 @@
 /* Container */
 .layout-desktop .sectionTitleContainer-cards,
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    padding-left: 0;
+    padding-left: 2.5vw;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.layout-desktop .homePage .sectionTitleContainer-cards,
-.layout-desktop .homePage div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+.layout-desktop #musicRecommendedPage #suggestionsTab .sectionTitle-cards {
+    padding-left: 2.5vw;
+}
+
+.layout-desktop .detailPageWrapperContainer .sectionTitle.sectionTitle-cards {
+    padding-left: 1.5vw;
+}
+
+
+/*
+.layout-desktop .sectionTitleContainer-cards,
+.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding-left: 2.5%;
     padding-top: 10px;
     padding-bottom: 10px;
+}*/
+
+
+.layout-desktop .homePage .sectionTitleContainer-cards,
+.layout-desktop .homePage div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    padding-left: 2.5vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+
 
 /* Titles */
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
@@ -91,9 +111,6 @@
 }
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
     border-radius: 0;
-}
-.layout-desktop .libraryPage:not(.homePage) .sectionTitle-cards {
-    padding-left: 1em !important;
 }
 
 /* Text & Icon */
@@ -105,7 +122,14 @@
 
 .layout-desktop h2.sectionTitle {
     font-weight: 600;
+    /* padding-left: 0; */
 } 
+
+.layout-desktop #tvRecommendedPage .sectionTitle,
+.layout-desktop #moviesPage .sectionTitle {
+    padding-left: 0;
+}
+
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
@@ -213,18 +237,27 @@
 /* Emby Scroller */
 .layout-desktop .emby-scroller {
     padding: 0;
-    margin: .5vw 2vw;
+    margin: .5vw .5vw;
 }
+
+.layout-desktop .homePage .emby-scroller {
+    padding: 0;
+    margin: .5vw 1.5vw;
+}
+
 
 /* Items Container */
 .layout-desktop .itemsContainer {
     padding: 0;
 }
-.layout-desktop #favoritesTab .verticalSection > .itemsContainer,
+
+.layout-desktop #musicRecommendedPage #suggestionsTab .itemsContainer,
+.layout-desktop #musicRecommendedPage #genresTab .itemsContainer,
+.layout-desktop #moviesPage #favoritesTab .itemsContainer,
 .layout-desktop #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-desktop #moviesPage .verticalSection > .itemsContainer,
 .layout-desktop #albumsPage .verticalSection > .itemsContainer {
-    margin: .5vw 2vw;
+    margin: .5vw 1.5vw;
 }
 .layout-desktop #favoritesTab .verticalSection > .emby-scroller,
 .layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,
@@ -236,10 +269,12 @@
     margin: 0;
 }
 
+
+
 /* Items Container Primary Content */
 .layout-desktop .detailPagePrimaryContainer .itemsContainer {
     padding: 0;
-    margin: 1vw 1vw;
+    margin: 1vw .5vw;
 }
 
 .layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
