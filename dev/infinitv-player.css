@@ -140,8 +140,14 @@
     transform: none !important;
 }
 
+.upNextDialog-nextVideoText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .upNextDialog-countdownText {
-    margin-left: .2em;
+    margin-right: .2em;
 }
 
 /* Subtitle Sync: Container */
