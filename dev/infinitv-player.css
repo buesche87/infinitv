@@ -140,6 +140,10 @@
     transform: none !important;
 }
 
+.upNextDialog-countdownText {
+    margin-left: .2em;
+}
+
 /* Subtitle Sync: Container */
 .subtitleSync {
     top: 5em;
