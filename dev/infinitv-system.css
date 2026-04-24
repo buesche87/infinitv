@@ -256,6 +256,7 @@
 
 .layout-desktop {
     scrollbar-width: thin;
+    overflow-y: scroll;
 }
 
 .layout-tv,

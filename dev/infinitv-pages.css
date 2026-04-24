@@ -144,6 +144,9 @@
     padding-right: 3vw;
 }
 
+.libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 3.9em !important;
+}
 
 /*
 .layout-desktop #genresTab .itemsContainer {
