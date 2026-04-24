@@ -30,14 +30,12 @@
 
 /* Player OSD: Media-Buttons */
 .ltr > .paper-icon-button-light:focus {
-    -webkit-transform: scale(1.2) !important;
     transform: scale(1.2) !important;
 }
 
 /* Player OSD: Volume-Button */
 .volumeButtons > .paper-icon-button-light:focus,
 .osdControls > .focuscontainer-x > .paper-icon-button-light:focus {
-    -webkit-transform: none !important;
     transform: none !important;
 }
 
@@ -139,8 +137,17 @@
 /* UpNext: Buttons */
 .upNextDialog-button {
     margin-left: .5em;
-    -webkit-transform: none !important;
     transform: none !important;
+}
+
+.upNextDialog-nextVideoText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upNextDialog-countdownText {
+    margin-right: .2em;
 }
 
 /* Subtitle Sync: Container */
@@ -163,6 +170,31 @@
 .subtitleSyncSliderContainer .sliderBubbleText {
     padding: 0.2em;
 }
+
+/* Playback Info */
+.playerStats {
+    /* margin: auto; */
+    top: 5em;
+    /* bottom: auto; */
+    font-size: 110%;
+}
+
+.playerStats-content-tv {
+    font-size: 85%;
+}
+
+.playerStats-stat-label {
+    color: #ddd;
+}
+
+.playerStats-stat-value {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
 
 /*
 ===========================================================================
@@ -204,11 +236,9 @@
     background: #0000 !important;
 }
 .layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
-    -webkit-transform: none !important;
     transform: none !important;
 }
 .layout-tv .playlistSectionButton .paper-icon-button-light {
-    -webkit-transform: none !important;
     transform: none !important;
 }
 

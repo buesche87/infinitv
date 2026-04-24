@@ -179,6 +179,7 @@
 .formDialogHeader,
 .formDialogFooter,
 .mainDrawer,
+.playerStats,
 .selectionCommandsPanel,
 .skinHeader-withBackground,
 .subtitleSyncContainer,
@@ -513,8 +514,10 @@
 .listTextButton-autohide,
 .pageTabContent>.focuscontainer-x,
 .paperList,
-.sectionTitle,
-.sectionTitleContainer-cards,
+.layout-tv .sectionTitle,
+.layout-tv .sectionTitleContainer-cards,
+.detailPageWrapperContainer .sectionTitle,
+.detailPageWrapperContainer .sectionTitleContainer-cards,
 .subtitleSyncContainer,
 .subtitleSyncSliderContainer .sliderBubble,
 .subtitleappearance-preview,
@@ -563,8 +566,6 @@
 .dialog.dialog-fullscreen,
 .layout-desktop .homePage .sectionTitleContainer-cards,
 .layout-desktop .homePage .sectionTitle-cards,
-.layout-desktop #tvRecommendedPage .sectionTitleContainer-cards,
-.layout-desktop #tvRecommendedPage .sectionTitle-cards,
 .navMenuOption {
     border-radius: 0 !important;
 }

@@ -11,7 +11,7 @@
 
                          The Big Screen Experience                         
 
-*                                v0.3.1                                    */
+*                                v0.3.2                                    */
 
 /* Stylesheets */
 @import url('https://buesche87.github.io/infinitv/prod/infinitv-base.css');
@@ -19,6 +19,7 @@
 @import url('https://buesche87.github.io/infinitv/prod/infinitv-pages.css');
 @import url('https://buesche87.github.io/infinitv/prod/infinitv-sections.css');
 @import url('https://buesche87.github.io/infinitv/prod/infinitv-cards.css');
+@import url('https://buesche87.github.io/infinitv/prod/infinitv-cards-dynamicsize.css');
 @import url('https://buesche87.github.io/infinitv/prod/infinitv-player.css');
 /* @import url('https://buesche87.github.io/infinitv/prod/infinitv-mobile.css'); */
 

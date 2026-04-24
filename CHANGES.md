@@ -1,3 +1,13 @@
+# v0.3.2
+
+Time to bump a number
+
+- Split some code in a new file for better readability
+- Fidddled with card sizes, spacings and alignments
+- Found one more dialog to style > PlaybackInfo
+- Tried something with that off looking counter in the NextUp dialog
+
+
 # v0.3.1
 
 Main focus on dialogs & list view
@@ -20,6 +30,7 @@ There is now a transparent box behind the user-settings list, to disable it:
 ```
 
 > This variable could be used to style more elements in feature updates
+
 
 # v0.3.0
 
@@ -45,6 +56,7 @@ To disable glow, add the following to your custom css code:
 
 - Work done on subtitle-sync dialog
 - Fixed chapter thumbnail position
+
 
 # v0.2.2
 
