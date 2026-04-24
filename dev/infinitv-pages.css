@@ -244,6 +244,13 @@
     font-weight: 600;
 }
 
+.layout-desktop .alphaPicker {
+    /* flex-direction: column; */
+    top: 8em;
+    /* position: relative; */
+    bottom: auto;
+}
+
 /* Stretch Alphabet Picker - Mobile */
 .layout-mobile .alphaPicker {
     bottom: 7em;
