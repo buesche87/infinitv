@@ -246,7 +246,7 @@
 
 .layout-desktop .alphaPicker {
     /* flex-direction: column; */
-    top: 8em;
+    top: 128px;
     /* position: relative; */
     bottom: auto;
 }
