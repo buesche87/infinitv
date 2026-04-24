@@ -120,13 +120,22 @@
     top: 0;
 }
 .layout-desktop .homeSectionsContainer {
-    top: 64.5vh;
+    top: 69vh;
 }
+
+@media(max-width: 48.125em) {
+    .layout-desktop .homeSectionsContainer {
+        top: 50.5vh;
+    }
+}
+
+
 @media(max-width: 48.125em) {
     .layout-mobile .homeSectionsContainer {
         top: 68vh;
     }
 }
+
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .homeSectionsContainer {
         top: 61vh;
