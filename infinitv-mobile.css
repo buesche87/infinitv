@@ -48,7 +48,7 @@
 
     /* Move Home Sections Container*/
     .layout-mobile .homeSectionsContainer {
-        top: 52vh;
+        top: 52.5vh;
     }
     
     /* Header: Remove Logo */
@@ -200,7 +200,7 @@
 }
 
 @media only screen and (max-height: 767px) and (orientation: landscape) {
-    .homeSectionsContainer {
+    .layout-desktop .homeSectionsContainer {
         top: 61vh;
     }
 }
