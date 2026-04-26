@@ -49,13 +49,13 @@
 
 /* Media Filter */
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
-    transform: translateX(10em) !important;
-    top: 10.5em !important;
+    transform: translateX(10.5em) !important;
+    top: 8em !important;
     position: fixed;
 }
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {
     transform: translateX(13.5em) !important;
-    top: 11em !important;
+    top: 8em !important;
 }
 
 .layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog {
@@ -84,7 +84,7 @@
     transform: translateY(4em) !important;
 }
 .layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
-    transform: translateY(10em) !important;
+    transform: translateY(7.5em) !important;
 }
 
 /* Player OSD */

@@ -127,7 +127,7 @@
     top: 0;
 }
 .layout-desktop .homeSectionsContainer {
-    top: 69vh;
+    top: 68vh;
 }
 
 @media(max-width: 48.125em) {
@@ -152,6 +152,13 @@
     }
 }
 
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-desktop .homeSectionsContainer {
+        top: 74vh;
+    }
+}
+
+
 /*
 ===========================================================================
    Library Page
@@ -163,7 +170,8 @@
     padding-right: 3vw;
 }
 
-.libraryPage:not(.noSecondaryNavPage) {
+.layout-desktop .libraryPage,
+.layout-desktop .libraryPage:not(.noSecondaryNavPage) {
     padding-top: 3.9em !important;
 }
 
