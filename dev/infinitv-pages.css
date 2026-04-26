@@ -84,6 +84,13 @@
     height: 90%;
 }
 
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+  .layout-mobile #slides-container {
+    height: 100%;
+  }
+}
+
+
 /* Slides: Disable in TV layout (they don't work well with a remote) */
 .layout-tv #slides-container {
     display: none !important;
@@ -139,6 +146,9 @@
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .homeSectionsContainer {
         top: 61vh;
+    }
+    .layout-mobile .homeSectionsContainer {
+        top: 73vh;
     }
 }
 
@@ -253,7 +263,13 @@
 
 /* Stretch Alphabet Picker - Mobile */
 .layout-mobile .alphaPicker {
-    bottom: 7em;
+    bottom: 8em;
+}
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile .alphaPicker {
+        bottom: 1em;
+    }
 }
 
 /*

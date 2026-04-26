@@ -285,6 +285,7 @@
 
         /* Overflow Cards - Mobile */
         --card-overflow-backdrop-width-mobile: 20%;
+        --card-overflow-portrait-width-mobile: 16.66%;
 
         /* Overflow Cards in Secondary Container - Mobile */
         --card-secondary-overflow-portrait-width-mobile: 16.66%;
@@ -339,8 +340,8 @@
         --------------------------------------------------------------------------*/
 
         /* Overflow Cards - Mobile */
-        --card-overflow-portrait-width-mobile: 16.66%;
-        --card-overflow-square-width-mobile: 16.66%;
+        --card-overflow-portrait-width-mobile: 14.25%;
+        --card-overflow-square-width-mobile: 14.25%;
 
         /* Overflow Cards in Secondary Container - Mobile */
         --card-secondary-overflow-portrait-width-mobile: 14.25%;
