@@ -200,7 +200,7 @@
 
 /* Library Page: Studios Tab workaround */
 .layout-desktop #studiosTab {
-    padding: 0 2vw;
+    padding: 2vh 2vw;
 }
 
 /* Library Page: Content */
@@ -351,8 +351,16 @@
 /* Layout Desktop
 --------------------------------------------------------------------------*/
 
-.layout-desktop .paging {
-    padding: 0.25em;
+.layout-desktop .pageTabContent > .focuscontainer-x {
+    height: 3em;
+    margin-bottom: 1em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+
+.layout-desktop .itemsViewSettingsContainer {
+    padding: .05em;
+    margin-bottom: 1em;
 }
 
 /* Layout TV

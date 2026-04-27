@@ -47,37 +47,38 @@
 /* Dialogs: Position (Desktop)
 --------------------------------------------------------------------------*/
 
-/* Media Filter */
-.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
-    transform: translateX(10.5em) !important;
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened,
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog,
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog, 
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
     top: 8em !important;
     position: fixed;
+}
+
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
+    transform: translateX(10.5em) !important;
 }
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {
     transform: translateX(13.5em) !important;
-    top: 8em !important;
 }
 
-.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog {
+
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.opened  {
     transform: translateX(7em) !important;
-    top: 10.5em !important;
-    position: fixed;
 }
-.layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog {
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened  {
     transform: translateX(10em) !important;
-    top: 10.5em !important;
 }
 
-.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog {
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.opened  {
     transform: translateX(6em) !important;
-    top: 10.5em !important;
-    position: fixed;
 }
-.layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened  {
     transform: translateX(9em) !important;
-    top: 10.5em !important;
-    position: fixed;
 }
+
 
 /* Header */
 .layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {

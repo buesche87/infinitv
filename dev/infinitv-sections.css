@@ -82,12 +82,21 @@
 --------------------------------------------------------------------------*/
 
 /* Container */
-.layout-desktop .sectionTitleContainer-cards,
+.layout-desktop .sectionTitleContainer-cards {
+    padding-left: 0;
+    padding-top: 0.75em;
+    padding-bottom: .75em;
+    text-align: center;
+}
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding-left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: .5em;
+    padding-bottom: .5em;
     text-align: center;
+}
+.layout-desktop .detailPagePrimaryContainer div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 
 /* Titles */
@@ -110,7 +119,7 @@
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: 5px;
+    padding-top: 0.5em;
     padding-bottom: 0em;
 }
 
@@ -237,7 +246,7 @@
 .layout-desktop #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-desktop #moviesPage .verticalSection > .itemsContainer,
 .layout-desktop #albumsPage .verticalSection > .itemsContainer {
-    margin: .5vw 1.5vw;
+    margin: 1em 1.5vw;
 }
 .layout-desktop #items .itemsContainer {
     margin: 0;
