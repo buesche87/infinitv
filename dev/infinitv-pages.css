@@ -354,13 +354,25 @@
 .layout-desktop .pageTabContent > .focuscontainer-x {
     height: 3em;
     margin-bottom: 1em;
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding-top: .1em;
+    padding-bottom: .1em;
 }
+
+.layout-desktop #albumArtistsTab > .focuscontainer-x {
+    /* padding: .1em; */
+    /* margin-bottom: 1em; */
+}
+
+
 
 .layout-desktop .itemsViewSettingsContainer {
     padding: .05em;
     margin-bottom: 1em;
+}
+
+.layout-desktop .paging {
+    /* padding: 0.25em; */
+    /* margin-bottom: 0.2em; */
 }
 
 /* Layout TV
