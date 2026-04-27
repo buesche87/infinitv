@@ -59,6 +59,9 @@
 ============================================================================
 */
 
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
 /* Home Page */
 .layout-mobile .homePage {
     padding-left: 0;
@@ -77,24 +80,18 @@
     }
 }
 
-/* Home Page: Slides
---------------------------------------------------------------------------*/
+/*
+============================================================================
+   Home Page: Slides
+============================================================================
+*/
 
 #slides-container .backdrop-container {
     height: 90%;
 }
 
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-  .layout-mobile #slides-container {
-    height: 100%;
-  }
-}
-
-
-/* Slides: Disable in TV layout (they don't work well with a remote) */
-.layout-tv #slides-container {
-    display: none !important;
-}
+/* Layout Desktop
+--------------------------------------------------------------------------*/
 
 /* Slides: Pause Button alignment */
 .layout-desktop .pause-button {
@@ -105,6 +102,8 @@
     top: 5em;
     right: 5em;
 }
+
+/* Slides: Buttons */
 .pause-button i,
 .volume-toggle i {
     font-size: 2rem !important;
@@ -119,71 +118,105 @@
     }
 }
 
-/* Home Page: Home Sections
+/* Layout TV
 --------------------------------------------------------------------------*/
 
-/* Home Sections Container */
-.layout-tv .homeSectionsContainer {
-    top: 0;
+/* Slides: Disable in TV layout (they don't work well with a remote) */
+.layout-tv #slides-container {
+    display: none !important;
 }
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+  .layout-mobile #slides-container {
+    height: 100%;
+  }
+}
+
+/*
+============================================================================
+   Home Page: Home Section
+============================================================================
+*/
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
 .layout-desktop .homeSectionsContainer {
     top: 68vh;
 }
-
 @media(max-width: 48.125em) {
     .layout-desktop .homeSectionsContainer {
         top: 50.5vh;
     }
 }
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-desktop .homeSectionsContainer {
+        top: 61vh;
+    }
+}
 
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+.layout-tv .homeSectionsContainer {
+    top: 0;
+}
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
 
 @media(max-width: 48.125em) {
     .layout-mobile .homeSectionsContainer {
         top: 68vh;
     }
 }
-
 @media only screen and (max-height: 767px) and (orientation: landscape) {
-    .homeSectionsContainer {
-        top: 61vh;
-    }
     .layout-mobile .homeSectionsContainer {
         top: 73vh;
     }
 }
-
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-desktop .homeSectionsContainer {
         top: 74vh;
     }
 }
 
-
 /*
 ===========================================================================
-   Library Page
+   Library Pages
 ===========================================================================
 */
 
-.layout-desktop .libraryPage .padded-right-withalphapicker {
-    padding-left: 1.5vw;
-    padding-right: 3vw;
-}
+/*  Layout Desktop
+--------------------------------------------------------------------------*/
 
 .layout-desktop .libraryPage,
 .layout-desktop .libraryPage:not(.noSecondaryNavPage) {
     padding-top: 3.9em !important;
 }
 
+/* Library Page: Studios Tab workaround */
+.layout-desktop #studiosTab {
+    padding: 0 2vw;
+}
+
+/* Library Page: Content */
+.layout-desktop .libraryPage .padded-right-withalphapicker {
+    padding-left: 1.5vw;
+    padding-right: 3vw;
+}
 .layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
     padding-right: 0;
     padding-left: 0;
 }
 
+
 /*  Layout TV
 --------------------------------------------------------------------------*/
 
-/* Library Pages: Alignment */
 .layout-tv .libraryPage {
     padding-top: 5.5em !important;
     padding-left: 3vw;
@@ -198,15 +231,9 @@
     .layout-tv #studiosTab {
         margin-left: -1vw;
     }
-
-    .layout-tv .pageTabContent>.focuscontainer-x,
-    .layout-tv .itemsViewSettingsContainer {
-        border-radius: var(--rounding-system) !important;
-        padding: 0.05em;
-    }
 }
 
-/* Library Pages with Alphapicker - TV */
+/* Library Pages: Content with Alphapicker */
 .layout-tv .libraryPage .padded-right-withalphapicker {
     padding-left: 2vw;
     padding-right: 3vw;
@@ -228,7 +255,7 @@
     }
 }
 
-/* Library Pages with Alphapicker - Mobile */
+/* Library Pages: Content with Alphapicker */
 .layout-mobile .libraryPage .padded-right-withalphapicker {
     padding-left: 2vw;
     padding-right: 6vw;
@@ -242,11 +269,31 @@
 
 /*
 ===========================================================================
-   Library Page: Alphabet Picker
+   Alphabet Picker
 ===========================================================================
 */
 
-/* Library Pages: Alphabet Picker */
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+.layout-desktop .alphaPicker {
+    top: 128px;
+    bottom: auto;
+}
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+/* Stretch Alphabet Picker */
+.layout-mobile .alphaPicker {
+    bottom: 8em;
+}
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile .alphaPicker {
+        bottom: 1em;
+    }
+}
+
+/* Alphabet Picker: Buttons */
 .alphaPickerButton {
     height: 1.6em;
 }
@@ -265,59 +312,23 @@
     font-weight: 600;
 }
 
-.layout-desktop .alphaPicker {
-    /* flex-direction: column; */
-    top: 128px;
-    /* position: relative; */
-    bottom: auto;
-}
-
-/* Stretch Alphabet Picker - Mobile */
-.layout-mobile .alphaPicker {
-    bottom: 8em;
-}
-
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-mobile .alphaPicker {
-        bottom: 1em;
-    }
-}
-
 /*
 ===========================================================================
-   Library Page: Sorting & Filter
+   Library Pages: Sorting & Filter
 ===========================================================================
 */
 
 /* Filter & Sorting Header */
 .pageTabContent>.focuscontainer-x,
-.itemsViewSettingsContainer {padding: 0.25em;/* padding-top: 10px; *//* padding-bottom: 10px; */margin-bottom: 1em;}
-
-
-.layout-desktop .paging {
+.itemsViewSettingsContainer {
     padding: 0.25em;
+    margin-bottom: 1em;
 }
 
-.layout-tv .pageTabContent>.focuscontainer-x,
-.layout-tv .itemsViewSettingsContainer {
-    border-radius: var(--rounding-system) !important;
-    padding: 0.05em;
-    /* margin-left: 1vw; */
-    /* margin-right: 1vw; */
+.selfBackdropPage h1.parentName.focuscontainer-x {
+    font-size: 150%;
 }
 
-.layout-tv #episodesTab > .focuscontainer-x,
-.layout-tv #songsTab > .focuscontainer-x {
-    margin-bottom: 1.5em;
-}
-
-/* Filter & Sorting Header: Buttons */
-.pageTabContent .focuscontainer-x .paper-icon-button-light {
-    transform: none !important;
-}
-.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
-    margin: 0 .2em;
-}
 
 /* Filter & Sorting Header: Item Count */
 .listPaging > span {
@@ -337,6 +348,49 @@
     cursor: pointer;
 }
 
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+.layout-desktop .paging {
+    padding: 0.25em;
+}
+
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+.layout-tv .pageTabContent>.focuscontainer-x,
+.layout-tv .itemsViewSettingsContainer {
+    border-radius: var(--rounding-system) !important;
+    padding: 0.05em;
+}
+
+@media(min-width: 75em) {
+    .layout-tv .pageTabContent>.focuscontainer-x,
+    .layout-tv .itemsViewSettingsContainer {
+        border-radius: var(--rounding-system) !important;
+        padding: 0.05em;
+    }
+}
+
+.layout-tv #episodesTab > .focuscontainer-x,
+.layout-tv #songsTab > .focuscontainer-x {
+    margin-bottom: 1.5em;
+}
+
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light {
+    transform: none !important;
+}
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+/* Filter & Sorting Header: Buttons */
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
+    margin: 0 .2em;
+}
+
 /*
 ===========================================================================
    Library Page: Multi-Select
@@ -344,6 +398,10 @@
 */
 
 /* Multi-Select Dialog */
+.itemSelectionPanel {
+    border-color: #0000 !important;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 .selectionCommandsPanel {
     top: 3.9em;
     padding: .5em;
@@ -351,6 +409,19 @@
 .itemSelectionCount {
     color: var(--accent100) !important;
 }
+
+/* Checkboxes & Indicators */
+.multiSelectCheckboxOutline {
+    margin: .5em !important;
+}
+.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
+    box-shadow: var(--cardglow);
+    border-color: var(--accent60) !important;
+}
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
 .layout-desktop .selectionCommandsPanel {
     top: 7.65em;
     left:  auto;
@@ -382,28 +453,38 @@
     min-width: 1em;
 }
 
-.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
-    box-shadow: var(--cardglow);
-    border-color: var(--accent60) !important;
-}
-
-/* Card Indicators: Multi Select Checkboxes */
-.multiSelectCheckboxOutline {
-    margin: .5em !important;
-}
-
-.itemSelectionPanel {
-    border-color: #0000 !important;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
 /*
 ===========================================================================
    Media Pages
 ===========================================================================
 */
 
-/* Media Pages: Hide some Elements (TV) */
+/* Move Content up */
+.detailPageWrapperContainer {
+    padding-top: 1em;
+}
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* Detail-Ribbon: Fix narrow Desktop layout */
+.layout-desktop .detailPageWrapperContainer {
+    position: static !important;
+}
+.layout-desktop .detailPageWrapperContainer {
+    margin-top: 0 !important;
+}
+
+/* Increase Season Title Text */
+.layout-desktop .selfBackdropPage .itemName {
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+/* Hide some Elements */
 .layout-tv .itemExternalLinks,
 .layout-tv .detailsGroupItem.directorsGroup,
 .layout-tv .detailsGroupItem.writersGroup,
@@ -414,33 +495,16 @@
     display: none !important;
 }
 
-/* Media Pages: Move Content up */
-.detailPageWrapperContainer {
-    padding-top: 1em;
-}
-/* Detail-Ribbon: Fix narrow Desktop layout */
-.layout-desktop .detailPageWrapperContainer {
-    position: static !important;
-}
-.layout-desktop .detailPageWrapperContainer {
-    margin-top: 0 !important;
-}
-
-
-
-
-
-/* Media Pages: Increase Season Title Text */
-.layout-tv .selfBackdropPage .itemName,
-.layout-desktop .selfBackdropPage .itemName {
+/* Increase Season Title Text */
+.layout-tv .selfBackdropPage .itemName {
     font-size: 150%;
     color: rgba(255, 255, 255, 0.8);
 }
-.selfBackdropPage h1.parentName.focuscontainer-x {
-    font-size: 150%;
-}
 
-/* Media Pages: Center Content (Mobile) */
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+/* Center Content */
 .layout-mobile .verticalSection .itemsContainer.vertical-wrap {
     justify-content: center;
     padding-right: 0em;
@@ -456,59 +520,40 @@
 .detailRibbon {
     padding-right: 2% !important;
 }
+
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
 .layout-desktop .detailRibbon {
     height: 9em;
     margin-top: -9em;
 }
-.layout-mobile .detailRibbon {
-    margin-top: -1em !important;
-    padding-bottom: 1.25em;
-    padding-right: 3% !important;
-    padding-left: 5%;
-}
 
-
-.layout-mobile .detailImageContainer .card.backdropCard {
-    top: 1em;
-    max-width: 33vw;
-}
-
-
+/* Card in Detail Ribbon */
 .layout-desktop .detailImageContainer .card {
     left: 3vw;
     width: 27vw;
     max-width: 30vw;
 }
 
-/* Detail-Ribbon: Info Container */
-.layout-mobile .infoWrapper {
-    padding-bottom: 0.15em;
-}
+/* Info Container */
 .layout-desktop .infoWrapper {
     padding-top: 0.25em;
 }
 
-/* Detail-Ribbon: Media Infos */
-.layout-tv .itemMiscInfo,
+/* Media Infos */
 .layout-desktop .itemMiscInfo {
     font-size: 125%;
     margin-top: 0.25em;
     margin-bottom: 0.6em;
 }
 
-/* Detail-Ribbon: Buttons */
+/* Buttons */
 .layout-desktop .mainDetailButtons {
     margin-left: 1em;
 }
-.layout-tv .mainDetailButtons {
-    margin-top: 1.5em;
-    margin-left: .5em;
-}
-.layout-mobile .mainDetailButtons .detailButton {
-    margin-right: .5em !important;
-    margin-left: .5em !important;
-}
 
+/* Some Small Screen fixes */
 @media all and (max-width: 75em) {
     .layout-desktop .detailLogo {
         display: block;
@@ -538,24 +583,67 @@
     }
 }
 
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+/* Media Infos */
+.layout-tv .itemMiscInfo {
+    font-size: 125%;
+    margin-top: 0.25em;
+    margin-bottom: 0.6em;
+}
+
+/* Buttons */
+.layout-tv .mainDetailButtons {
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+
+.layout-mobile .detailRibbon {
+    margin-top: -1em !important;
+    padding-bottom: 1.25em;
+    padding-right: 3% !important;
+    padding-left: 5%;
+}
+
+/* Card in Detail Ribbon */
+.layout-mobile .detailImageContainer .card.backdropCard {
+    top: 1em;
+    max-width: 33vw;
+}
+
+/* Info Container */
+.layout-mobile .infoWrapper {
+    padding-bottom: 0.15em;
+}
+
+/* Buttons */
+.layout-mobile .mainDetailButtons .detailButton {
+    margin-right: .5em !important;
+    margin-left: .5em !important;
+}
+
 /*
 ===========================================================================
    Media Pages: Content
 ===========================================================================
 */
 
-/* Media Details: Track Select */
+/* Media Details > Track Select */
 .detailTrackSelect {
     padding: .35em 1.9em .35em .35em !important;
 }
 
-/* Media Description: Text */
+/* Media Description Text */
 .overview.detail-clamp-text {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
-/* Media Description: Director & Studio */
+/* Media Description > Director & Studio */
 .itemDetailsGroup {
     margin-top: 0.5em;
     padding-bottom: 1em;
@@ -576,6 +664,8 @@
     padding-left: 1.5vw !important;
     padding-right: 1.5vw !important;
 }
+
+/* Secondary Container: Content */
 .layout-desktop .detailPageSecondaryContainer .detailPageContent {
     padding-left: 0;
     padding-right: 0;
