@@ -810,12 +810,21 @@
 .layout-desktop .listItem-overview {
     line-clamp: var(--listitem-line-clamp);
     -webkit-line-clamp: var(--listitem-line-clamp);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
 }
 .layout-mobile .listItem-overview {
     line-clamp: var(--listitem-line-clamp-mobile);
     -webkit-line-clamp: var(--listitem-line-clamp-mobile);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
 }
 .layout-tv .listItem-overview {
     line-clamp: var(--listitem-line-clamp-tv);
     -webkit-line-clamp: var(--listitem-line-clamp-tv);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
 }

@@ -20,6 +20,8 @@
     --bgdark60: rgba(0, 0, 0, 0.6);
     --bgdark80: rgba(0, 0, 0, 0.8);
 
+    --bgsecondary: hsl(0deg 0% 100% / 10%);
+
     /* Border */
     --buttonborder: solid 2px hsl(0deg 0% 100% / 20%);
 
@@ -222,12 +224,16 @@
 #loginPage .cardImage,
 #searchPage .sectionTitle,
 #controlsPreferencesPage .sectionTitle,
+.itemsViewSettingsContainer,
 .homeScreenSettingsContainer .sectionTitle,
+.pageTabContent > .focuscontainer-x,
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
 .verticalSection > .sectionTitleContainer-cards {
-    background-color: var(--bgwhite10);
+    background-color: var(--bgsecondary);
 }
+
+
 
 /* Background Color: Dark 20% */
 .button-submit:hover,
@@ -252,10 +258,8 @@
 .emby-select,
 .itemsContainer > .listItem-focusscale,
 .itemProgressBar,
-.itemsViewSettingsContainer,
 .listItem-largeImage:hover,
 .paperList,
-.pageTabContent > .focuscontainer-x,
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus),
 .upNextDialog-button:hover {
@@ -508,11 +512,11 @@
 .formDialogHeader,
 .formDialogFooter,
 .indicator,
-.itemsViewSettingsContainer,
+/* .itemsViewSettingsContainer, */
 .listItem,
 .listItemIcon,
 .listTextButton-autohide,
-.pageTabContent>.focuscontainer-x,
+/* .pageTabContent>.focuscontainer-x, */
 .paperList,
 .layout-tv .sectionTitle,
 .layout-tv .sectionTitleContainer-cards,

@@ -73,42 +73,25 @@
 /* Container */
 .layout-desktop .sectionTitleContainer-cards,
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    padding-left: 2.5vw;
+    padding-left: 0;
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-.layout-desktop #musicRecommendedPage #suggestionsTab .sectionTitle-cards {
-    padding-left: 2.5vw;
-}
-
-.layout-desktop .detailPageWrapperContainer .sectionTitle.sectionTitle-cards {
-    padding-left: 1.5vw;
-}
-
-
-/*
-.layout-desktop .sectionTitleContainer-cards,
-.layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    padding-left: 2.5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}*/
-
-
-.layout-desktop .homePage .sectionTitleContainer-cards,
-.layout-desktop .homePage div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    /* padding-left: 2.5vw; */
-    padding: 10px 0;
-    /* padding-bottom: 10px; */
     text-align: center;
 }
+
+.layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 
 
 
 /* Titles */
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
-    padding-left: 1.5% !important;
+    text-align: left !important;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
     border-radius: 0;
@@ -122,25 +105,13 @@
 }
 
 
-
-
-.layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
-    padding-right: 0;
-    padding-left: 0;
-}
-
-
-
-
-
 .layout-desktop h2.sectionTitle {
     font-weight: 600;
-    /* padding-left: 0; */
-    /* text-align: center; */
 } 
 
 .layout-desktop #tvRecommendedPage .sectionTitle,
-.layout-desktop #moviesPage .sectionTitle {
+.layout-desktop #moviesPage .sectionTitle,
+.layout-desktop #musicRecommendedPage .sectionTitle {
     padding-left: 0;
 }
 
@@ -259,10 +230,14 @@
     margin: .5vw 1.5vw;
 }
 
-
 /* Items Container */
 .layout-desktop .itemsContainer {
     padding: 0;
+}
+
+.layout-desktop .padded-right-withalphapicker .itemsContainer {
+    padding-left: 1%;
+    padding-right: 3%;
 }
 
 .layout-desktop #musicRecommendedPage #suggestionsTab .itemsContainer,
