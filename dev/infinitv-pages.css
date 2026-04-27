@@ -382,21 +382,13 @@
 .layout-tv .itemsViewSettingsContainer {
     border-radius: var(--rounding-system) !important;
     padding: 0.05em;
-}
-
-@media(min-width: 75em) {
-    .layout-tv .pageTabContent>.focuscontainer-x,
-    .layout-tv .itemsViewSettingsContainer {
-        border-radius: var(--rounding-system) !important;
-        padding: 0.05em;
-    }
+    min-height: 2em;
 }
 
 .layout-tv #episodesTab > .focuscontainer-x,
 .layout-tv #songsTab > .focuscontainer-x {
     margin-bottom: 1.5em;
 }
-
 
 /* Filter & Sorting Header: Buttons */
 .pageTabContent .focuscontainer-x .paper-icon-button-light {
@@ -807,6 +799,17 @@
 /* Subtitles: Preview-Box */
 .subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+.layout-tv .settingsContainer .sectionTitle,
+.layout-tv .homeScreenSettingsContainer .sectionTitle,
+.layout-tv #controlsPreferencesPage .sectionTitle {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .5em;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: 0em;
 }
 
 /* Layout Mobile
