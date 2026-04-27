@@ -427,6 +427,12 @@
     margin: .2em !important;
 }
 
+.layout-tv .listTextButton-autohide {
+    transform: none !important;
+    padding: 0.65em .75em !important;
+    margin: 0 !important;
+}
+
 /* Buttons: Collapsible
 --------------------------------------------------------------------------*/
 

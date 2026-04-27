@@ -13,7 +13,7 @@
     --card-portrait-width: 33.33%;
     --card-square-width: 33.33%;
     --card-backdrop-width: 50%;
-
+    
     /* Image Search Cards */
     --card-search-portrait-width: 25%;
     --card-search-square-width: 25%;
@@ -59,7 +59,7 @@
     --card-person-scalable-width-tv: calc(23.2vw - 1.75em);
 
     /* ListItem Text Wrap - TV */
-    --listitem-line-clamp-tv: 7;
+    --listitem-line-clamp-tv: 6;
 
     /* Layout Mobile
     --------------------------------------------------------------------------*/

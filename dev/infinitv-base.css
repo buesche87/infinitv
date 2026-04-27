@@ -325,6 +325,7 @@
 /* Background Color: Transparent */
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
+.listTextButton-autohide:focus,
 .actionSheetMenuItem:hover,
 .actionSheetMenuItem:focus,
 .button-link:focus,

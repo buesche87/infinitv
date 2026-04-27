@@ -175,18 +175,6 @@
     padding-top: 3.9em !important;
 }
 
-/*
-.layout-desktop #genresTab .itemsContainer {
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-}*/
-/*
-.layout-desktop #suggestionsTab .itemsContainer {
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-}*/
-
-
 /*  Layout TV
 --------------------------------------------------------------------------*/
 
@@ -200,6 +188,16 @@
     .layout-tv .libraryPage {
         padding-left: 2vw;
         padding-right: 2vw;
+    }
+
+    .layout-tv #studiosTab {
+        margin-left: -1vw;
+    }
+
+    .layout-tv .pageTabContent>.focuscontainer-x,
+    .layout-tv .itemsViewSettingsContainer {
+        border-radius: var(--rounding-system) !important;
+        padding: 0.05em;
     }
 }
 
@@ -288,7 +286,7 @@
 
 /* Filter & Sorting Header */
 .pageTabContent>.focuscontainer-x,
-.itemsViewSettingsContainer {padding: 0.25em;margin-bottom: 1em;}
+.itemsViewSettingsContainer {padding: 0.25em;/* padding-top: 10px; *//* padding-bottom: 10px; */margin-bottom: 1em;}
 
 
 .layout-desktop .paging {
@@ -297,8 +295,15 @@
 
 .layout-tv .pageTabContent>.focuscontainer-x,
 .layout-tv .itemsViewSettingsContainer {
-    margin-left: -1vw;
-    margin-right: -.5vw;
+    border-radius: var(--rounding-system) !important;
+    padding: 0.05em;
+    /* margin-left: 1vw; */
+    /* margin-right: 1vw; */
+}
+
+.layout-tv #episodesTab > .focuscontainer-x,
+.layout-tv #songsTab > .focuscontainer-x {
+    margin-bottom: 1.5em;
 }
 
 /* Filter & Sorting Header: Buttons */

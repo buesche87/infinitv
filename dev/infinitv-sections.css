@@ -52,6 +52,13 @@
     padding-bottom: 8px;
 }
 
+.layout-tv .sectionTitle {
+    padding-left: 0;
+}
+
+
+
+
 /* Titles */
 .layout-tv .homePage .sectionTitleContainer-cards,
 .layout-tv .homePage .sectionTitle {
@@ -192,6 +199,11 @@
 .layout-tv .itemsContainer {
     padding: 0;
 }
+
+.layout-tv #episodesTab .itemsContainer {
+    padding: 0 2em;
+}
+
 .layout-tv #favoritesTab .verticalSection > .itemsContainer,
 .layout-tv #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-tv #moviesPage .verticalSection > .itemsContainer,
