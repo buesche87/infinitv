@@ -56,9 +56,6 @@
     padding-left: 0;
 }
 
-
-
-
 /* Titles */
 .layout-tv .homePage .sectionTitleContainer-cards,
 .layout-tv .homePage .sectionTitle {
@@ -84,11 +81,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-}
-
-.layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
-    padding-right: 0;
-    padding-left: 0;
 }
 
 

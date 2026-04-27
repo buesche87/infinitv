@@ -175,6 +175,11 @@
     padding-top: 3.9em !important;
 }
 
+.layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
+    padding-right: 0;
+    padding-left: 0;
+}
+
 /*  Layout TV
 --------------------------------------------------------------------------*/
 
