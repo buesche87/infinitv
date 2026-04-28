@@ -127,7 +127,7 @@
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle, 
 .mdl-slider,
 .paper-icon-button-light:not(:disabled):hover,
-.paper-icon-button-light:focus,
+.layout-tv .paper-icon-button-light:focus,
 .playedIndicator,
 .playstatebutton-icon-played,
 .ratingbutton-icon-withrating,

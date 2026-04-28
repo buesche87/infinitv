@@ -158,7 +158,7 @@
 
         /* Cards */
         --card-square-width: 20%;
-        --card-backdrop-width: 20%;
+        --card-backdrop-width: 25%;
 
         /* Overflow Cards */
         --card-overflow-portrait-width: 25%;
