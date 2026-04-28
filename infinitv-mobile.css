@@ -109,10 +109,10 @@
         margin-top: 0rem;
     }
 
-    /* Filter Bar */
+    /* Filter Bar
     .layout-mobile .pageTabContent > .focuscontainer-x {
-        margin-top: 1em;
-    }
+        margin-top: 0em;
+    } */
     .layout-mobile .nowPlayingInfoControls {
         padding-bottom: 2em;
     }

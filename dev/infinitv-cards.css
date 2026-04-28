@@ -236,7 +236,9 @@
     height: 5.2em;
 }
 
-
+.layout-mobile .listItemImage-large {
+    border-right: var(--buttonborder);
+}
 
 /* Large Image List Item: Content (Mobile) */
 .layout-mobile .detailPageWrapperContainer .listItem-content {
