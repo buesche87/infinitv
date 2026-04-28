@@ -106,12 +106,31 @@
     width: 100%;
     height: 100%;
     justify-content: center;
+    /* align-content: center; */
+    /* flex-wrap: wrap; */
+    left: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    animation-duration: var(--anispeed) !important;
+    /* flex-direction: column; */
+    flex-flow: column;
+}
+
+.layout-tv .centeredDialog,
+.layout-tv .dynamicFilterDialog {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     left: 0 !important;
     margin: 0 !important;
     top: 0 !important;
     animation-duration: var(--anispeed) !important;
+    /* flex-direction: column; */
+    /* flex-flow: column; */
 }
 
 .layout-tv .filterDialogContent {
@@ -126,10 +145,10 @@
     color: hsla(0, 0%, 100%, .8) !important;
 }
 
-/* we don't need a close button in tv-mode, there is BACK and ESC */
+/* we don't need a close button in tv-mode, there is BACK and ESC
 .layout-tv .btnCloseActionSheet {
     display: none;
-}
+} */
 
 /* Dialogs: Content
 --------------------------------------------------------------------------*/
