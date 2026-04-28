@@ -85,7 +85,7 @@
     transform: translateY(4em) !important;
 }
 .layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
-    transform: translateY(7.5em) !important;
+    transform: translateY(7.25em) !important;
 }
 
 /* Player OSD */

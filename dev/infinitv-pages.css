@@ -358,21 +358,9 @@
     padding-bottom: .1em;
 }
 
-.layout-desktop #albumArtistsTab > .focuscontainer-x {
-    /* padding: .1em; */
-    /* margin-bottom: 1em; */
-}
-
-
-
 .layout-desktop .itemsViewSettingsContainer {
     padding: .05em;
     margin-bottom: 1em;
-}
-
-.layout-desktop .paging {
-    /* padding: 0.25em; */
-    /* margin-bottom: 0.2em; */
 }
 
 /* Layout TV
@@ -794,6 +782,7 @@
     padding-left: 1.4em;
     margin-left: -1.5em;
     margin-right: -1.5em;
+    border-radius: var(--rounding-system);
 }
 
 /* Subtitles: Preview-Box */
