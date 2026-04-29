@@ -231,12 +231,57 @@
     padding-right: 0;
 }
 
-/* Landscape - Mobile */
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-  .layout-mobile #slides-container {
-    height: 100%;
-  }
+.layout-mobile .volume-toggle {
+    top: 7.5em;
+    right: 5em;
 }
+.layout-mobile .pause-button {
+    top: 7.5em;
+    right: 2em;
+}
+
+.layout-mobile #slides-container {
+    height: 100%;
+}
+.layout-mobile .slide,
+.layout-mobile .video-container {
+    height: 73%;
+}
+
+.layout-mobile .logo-container {
+    top: 10vh;
+}
+.layout-mobile .logo {
+    max-height: 60%;
+}
+
+.layout-mobile .info-container {
+    top: 40vh;
+}
+.layout-mobile .genre {
+    top: 43vh;
+}
+
+.layout-mobile .plot-container {
+    top: 48vh;
+    width: 80%;
+}
+
+.layout-mobile .dots-container {
+    top: 62vh;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) scale(0.8);
+}
+
+.layout-mobile .button-container {
+    top: 59vh;
+}
+
+.layout-mobile .homeSectionsContainer {
+    top: 59vh;
+}  
+
 
 /* Portrait - Mobile */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -244,17 +289,9 @@
     .layout-mobile #slides-container {
         height: 90%;
     }
-
-    .layout-mobile .slide {
-        height: 90%;
-    }
-   
+    
+    .layout-mobile .slide,
     .layout-mobile .backdrop-container {
-        width: 100%;
-        height: 75%;
-    }
-
-    .layout-mobile .gradient-overlay {
         height: 90%;
     }
 
@@ -267,7 +304,7 @@
     }
 
     .layout-mobile .info-container {
-        top: 45vh;
+        top: 47vh;
     }
 
     .layout-mobile .genre {
@@ -275,8 +312,9 @@
     }
     
     .layout-mobile .dots-container {
-        top: 56vh;
+        top: 55vh;
         left: 50%;
+        right: auto;
         transform: translateX(-50%) scale(0.8);
         background-color: #ffffff00;
     }
@@ -284,54 +322,52 @@
     .layout-mobile .button-container {
         top: 59vh;
     }
-
-    .layout-mobile .pause-button {
-        right: 4vw;
-    }
-}
-
-
-
-/*
-============================================================================
-   Home Page: Home Section
-============================================================================
-*/
-
-/* Layout Desktop
---------------------------------------------------------------------------*/
-/*
-.layout-desktop .homeSectionsContainer {
-    top: 69vh;
-} */
-
-/*
-@media(max-width: 48.125em) and (orientation: landscape) {
-    .layout-desktop .homeSectionsContainer {
-        top: 50vh;
-    }
-}
-
-
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-desktop .homeSectionsContainer {
-        top: 61vh;
-    }
-}*/
-
-/* Layout TV
---------------------------------------------------------------------------*/
-
-.layout-tv .homeSectionsContainer {
-    top: 0;
-}
-
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-@media only screen and (orientation: portrait) {
     .layout-mobile .homeSectionsContainer {
-        top: 58vh;
+        top: 59vh;
+    }
+}
+
+/* Landscape - Mobile */
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile #slides-container {
+        height: 90%;
+    }
+    
+    .layout-mobile .slide,
+    .layout-mobile .backdrop-container {
+        height: 90%;
+    }
+
+    .layout-mobile .logo-container {
+        top: 7em;
+    }
+
+    .layout-mobile .logo {
+        max-height: 60%;
+    }
+
+    .layout-mobile .info-container {
+        top: 38vh;
+    }
+
+    .layout-mobile .genre {
+        top: 42vh;
+    }
+    
+    .layout-mobile .dots-container {
+        top: 63vh;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%) scale(0.8);
+        background-color: #ffffff00;
+    }
+
+    .layout-mobile .button-container {
+        top: 56vh;
+        /* left: 3vw; */
+    }
+    .layout-mobile .homeSectionsContainer {
+        top: 54vh;
     }
 }
 
@@ -400,6 +436,10 @@
 
 .layout-mobile .libraryPage.noSecondaryNavPage {
     padding-top: 4em !important;
+}
+
+.layout-mobile #itemDetailPage {
+    padding-top: 0 !important;
 }
 
 
