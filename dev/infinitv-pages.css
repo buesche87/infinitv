@@ -213,7 +213,6 @@
     padding-left: 0;
 }
 
-
 /*  Layout TV
 --------------------------------------------------------------------------*/
 
@@ -247,6 +246,10 @@
 
 /* Layout Mobile
 --------------------------------------------------------------------------*/
+
+.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 6.35em !important;
+}
 
 /* Library Pages: Item backdrop alignment - Mobile */
 @media (min-width: 50em) {
@@ -394,11 +397,11 @@
 /* Filter & Sorting Header */
 .layout-mobile .pageTabContent>.focuscontainer-x,
 .layout-mobile .itemsViewSettingsContainer {
-    padding: 0.25em;
+    padding: 0;
     margin-left: -1em;
     margin-right: -1em;
     margin-bottom: 1em;
-    margin-top: -1em;
+    margin-top: 0;
 }
 
 

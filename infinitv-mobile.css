@@ -104,6 +104,16 @@
         padding-top: 2em !important;
     }
 
+    /* Filter & Sorting Header */
+    .layout-mobile .pageTabContent>.focuscontainer-x,
+    .layout-mobile .itemsViewSettingsContainer {
+        padding: 0.25em;
+        margin-left: -1em;
+        margin-right: -1em;
+        margin-bottom: 1em;
+        margin-top: -1em;
+    }
+
     /* Media Details: Move up */
     .layout-mobile .itemBackdrop {
         margin-top: 0rem;

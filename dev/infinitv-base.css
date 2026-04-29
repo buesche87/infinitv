@@ -467,8 +467,8 @@
 
 /* Card Glow*/
 .actionsheet-not-fullscreen,
-.layout-desktop .dialogContainer .formDialog,
-.layout-mobile .dialogContainer .formDialog .centeredDialog,
+.layout-desktop .formDialog,
+.layout-mobile .centeredDialog,
 .toast,
 .upNextContainer {
     box-shadow: var(--cardglow) !important;
