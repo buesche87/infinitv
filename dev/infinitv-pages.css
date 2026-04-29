@@ -197,13 +197,15 @@
 --------------------------------------------------------------------------*/
 
 .layout-desktop .homeSectionsContainer {
-    top: 68vh;
+    top: 72vh;
 }
-@media(max-width: 48.125em) {
+@media(max-width: 48.125em) and (orientation: landscape) {
     .layout-desktop .homeSectionsContainer {
         top: 50.5vh;
     }
 }
+
+
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-desktop .homeSectionsContainer {
         top: 61vh;
