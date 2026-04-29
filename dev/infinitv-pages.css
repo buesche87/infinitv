@@ -59,48 +59,9 @@
 ============================================================================
 */
 
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-/* Home Page */
-.layout-mobile .homePage {
-    padding-left: 0;
-    padding-right: 0;
-}
-@media(min-width: 48.125em) {
-    .layout-mobile .homePage {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-}
-@media(min-width: 75em)  {
-    .layout-mobile .homePage {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-}
-
-/*
-============================================================================
-   Home Page: Slides
-============================================================================
-*/
-
-#slides-container .backdrop-container {
-    height: 90%;
-}
-
-/* Layout Desktop
---------------------------------------------------------------------------*/
-
-/* Slides: Pause Button alignment */
-.layout-desktop .pause-button {
-    top: 5em;
-    right: 2em;
-}
-.layout-desktop .volume-toggle {
-    top: 5em;
-    right: 5em;
+/* Disable Slides in TV layout (they don't work well with a remote) */
+.layout-tv #slides-container {
+    display: none !important;
 }
 
 /* Slides: Buttons */
@@ -118,23 +79,166 @@
     }
 }
 
-/* Layout TV
+/* Layout Desktop
 --------------------------------------------------------------------------*/
 
-/* Slides: Disable in TV layout (they don't work well with a remote) */
-.layout-tv #slides-container {
-    display: none !important;
+/* Slides: Button alignment */
+.layout-desktop .volume-toggle {
+    top: 5em;
+    right: 6em;
+}
+.layout-desktop .pause-button {
+    top: 5em;
+    right: 2em;
+}
+
+.layout-desktop .slide,
+.layout-desktop .video-container {
+    height: 80%;
+}
+
+.layout-desktop .logo-container {
+    top: 20%;
+}
+.layout-desktop .logo {
+    max-height: 60%;
+}
+
+.layout-desktop .info-container {
+    top: 55%;
+}
+
+.layout-desktop .genre {
+    top: 61%;
+}
+
+.layout-desktop .dots-container {
+    top: 61%;
+}
+
+.layout-desktop .button-container {
+    top: 81%;
+}
+
+.layout-desktop .plot-container {
+    top: 68%;
+    width: 80%;
+}
+
+.layout-desktop .homeSectionsContainer {
+    top: 62vh;
+}   
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    
+    .layout-desktop .volume-toggle {
+        top: 5em;
+        right: 6em;
+    }
+    .layout-desktop .pause-button {
+        top: 5em;
+        right: 1em;
+    }
+
+    .layout-desktop .slide,
+    .layout-desktop .video-container {
+        height: 90%;
+    }
+
+    .layout-desktop .logo-container {
+        top: 33%;
+    }
+    .layout-desktop .logo {
+        max-height: 60%;
+    }
+
+    .layout-desktop .info-container {
+        top: 55%;
+    }
+
+    .layout-desktop .genre {
+        top: 60%;
+    }
+    
+    .layout-desktop .dots-container {
+        top: 61%;
+    }
+
+    .layout-desktop .button-container {
+        top: 72%;
+    }
+
+    .layout-desktop .homeSectionsContainer {
+        top: 63vh;
+    }    
+}
+
+
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    /* Slides: Button alignment */
+    .layout-desktop .volume-toggle {
+        top: 5em;
+        right: 6em;
+    }
+    .layout-desktop .pause-button {
+        top: 5em;
+        right: 2em;
+    }
+    
+    .layout-desktop .slide,
+    .layout-desktop .video-container {
+        height: 80%;
+    }
+    
+    .layout-desktop .logo-container {
+        top: 5em;
+    }
+    .layout-desktop .logo {
+        max-height: 60%;
+    }
+    
+    .layout-desktop .info-container {
+        top: 49%;
+    }
+    
+    .layout-desktop .genre {
+        top: 56%;
+    }
+    
+    .layout-desktop .dots-container {
+        top: 61%;
+    }
+    
+    .layout-desktop .button-container {
+        top: 77%;
+    }
+    
+    .layout-desktop .plot-container {
+        top: 64%;
+        width: 80%;
+    }
+    
+    .layout-desktop .homeSectionsContainer {
+        top: 65vh;
+    }   
 }
 
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
+.layout-mobile .homePage {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Landscape - Mobile */
 @media only screen and (max-height: 767px) and (orientation: landscape) {
   .layout-mobile #slides-container {
     height: 100%;
   }
 }
 
+/* Portrait - Mobile */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     
     .layout-mobile #slides-container {
@@ -187,6 +291,7 @@
 }
 
 
+
 /*
 ============================================================================
    Home Page: Home Section
@@ -195,13 +300,15 @@
 
 /* Layout Desktop
 --------------------------------------------------------------------------*/
-
+/*
 .layout-desktop .homeSectionsContainer {
-    top: 72vh;
-}
+    top: 69vh;
+} */
+
+/*
 @media(max-width: 48.125em) and (orientation: landscape) {
     .layout-desktop .homeSectionsContainer {
-        top: 50.5vh;
+        top: 50vh;
     }
 }
 
@@ -210,7 +317,7 @@
     .layout-desktop .homeSectionsContainer {
         top: 61vh;
     }
-}
+}*/
 
 /* Layout TV
 --------------------------------------------------------------------------*/
@@ -225,11 +332,6 @@
 @media only screen and (orientation: portrait) {
     .layout-mobile .homeSectionsContainer {
         top: 58vh;
-    }
-}
-@media only screen and (orientation: landscape) {
-    .layout-desktop .homeSectionsContainer {
-        top: 74vh;
     }
 }
 
