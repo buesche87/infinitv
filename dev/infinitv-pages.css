@@ -135,6 +135,58 @@
   }
 }
 
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    
+    .layout-mobile #slides-container {
+        height: 90%;
+    }
+
+    .layout-mobile .slide {
+        height: 90%;
+    }
+   
+    .layout-mobile .backdrop-container {
+        width: 100%;
+        height: 75%;
+    }
+
+    .layout-mobile .gradient-overlay {
+        height: 90%;
+    }
+
+    .layout-mobile .logo-container {
+        top: 30vh;
+    }
+
+    .layout-mobile .logo {
+        max-height: 60%;
+    }
+
+    .layout-mobile .info-container {
+        top: 45vh;
+    }
+
+    .layout-mobile .genre {
+        top: 50vh;
+    }
+    
+    .layout-mobile .dots-container {
+        top: 56vh;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+        background-color: #ffffff00;
+    }
+
+    .layout-mobile .button-container {
+        top: 59vh;
+    }
+
+    .layout-mobile .pause-button {
+        right: 4vw;
+    }
+}
+
+
 /*
 ============================================================================
    Home Page: Home Section
@@ -168,17 +220,12 @@
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
-@media(max-width: 48.125em) {
+@media only screen and (orientation: portrait) {
     .layout-mobile .homeSectionsContainer {
-        top: 68vh;
+        top: 58vh;
     }
 }
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-mobile .homeSectionsContainer {
-        top: 73vh;
-    }
-}
-@media only screen and (max-height: 767px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
     .layout-desktop .homeSectionsContainer {
         top: 74vh;
     }
@@ -247,8 +294,13 @@
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
+.layout-mobile .libraryPage.noSecondaryNavPage {
+    padding-top: 4em !important;
+}
+
+
 .layout-mobile .libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 6.35em !important;
+    padding-top: 6.3em !important;
 }
 
 /* Library Pages: Item backdrop alignment - Mobile */
@@ -395,11 +447,20 @@
 }
 
 /* Filter & Sorting Header */
-.layout-mobile .pageTabContent>.focuscontainer-x,
-.layout-mobile .itemsViewSettingsContainer {
+.layout-mobile .itemsViewSettingsContainer,
+.layout-mobile .pageTabContent > .focuscontainer-x {
     padding: 0;
-    margin-left: -1em;
-    margin-right: -1em;
+    margin-left: -3.5%;
+    margin-right: -3.5%;
+    margin-bottom: 1em;
+    margin-top: 0;
+    /* min-height: 1.8em; */
+}
+
+.layout-mobile .padded-right-withalphapicker .itemsViewSettingsContainer {
+    padding: 0;
+    margin-left: -3.5%;
+    margin-right: -7%;
     margin-bottom: 1em;
     margin-top: 0;
 }
@@ -632,6 +693,7 @@
 /* Info Container */
 .layout-mobile .infoWrapper {
     padding-bottom: 0.15em;
+    padding-left: 35% !important;
 }
 
 /* Buttons */

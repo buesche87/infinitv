@@ -142,7 +142,18 @@
     box-shadow: var(--buttonglow);
 }
 
+.layout-mobile .focuscontainer.dialog.dialog-fixedSize.dialog-small.formDialog.opened {
+    top: 0em !important;
+    box-shadow: none;
+    border-radius: 0;
+}
+
 .layout-mobile .actionSheet {
+    left: unset !important;
+    top: 4em !important;
+}
+
+.layout-mobile .actionSheet:has(.listItem-button) {
     position: fixed !important;
     display: flex;
     justify-content: center;
@@ -153,8 +164,8 @@
     box-shadow: var(--buttonglow);
 }
 
-.layout-mobile:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
-    top: 1em !important;
+.layout-mobile .actionSheet.syncPlayGroupMenu {
+    top: 4em !important;
 }
 
 /*
