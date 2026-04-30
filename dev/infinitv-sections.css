@@ -130,7 +130,7 @@
 .layout-mobile .sectionTitleContainer-cards,
 .layout-mobile :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     text-align: center;
-    padding: 4px 0 4px 0;
+    padding: .35em 0 .35em 0;
 }
 
 /* Titles */

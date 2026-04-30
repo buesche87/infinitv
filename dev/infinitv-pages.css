@@ -268,9 +268,9 @@
 }
 
 .layout-mobile .dots-container {
-    top: 62vh;
+    top: 63vh;
     /* left: 50%; */
-    right: auto;
+    /* right: auto; */
     /* transform: translateX(-50%) scale(0.8); */
 }
 
@@ -444,19 +444,7 @@
 }
 
 .layout-mobile #itemDetailPage {
-    padding-top: 1em !important;
-}
-
-
-.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 6.3em !important;
-}
-
-/* Library Pages: Item backdrop alignment - Mobile */
-@media (min-width: 50em) {
-    .layout-mobile .itemBackdrop {
-        margin-top: 3.9rem;
-    }
+    padding-top: 1em;
 }
 
 /* Library Pages: Content with Alphapicker */
@@ -464,12 +452,36 @@
     padding-left: 2vw;
     padding-right: 6vw;
 }
-@media(min-width: 48.125em) {
+
+.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 6.3em !important;
+}
+
+@media (min-width: 50em) {
+    .layout-mobile .itemBackdrop {
+        margin-top: 3.9rem;
+    }
+    .layout-mobile .libraryPage.noSecondaryNavPage {
+        padding-top: 4em !important;
+    }
     .layout-mobile .libraryPage .padded-right-withalphapicker {
         padding-left: 2vw;
         padding-right: 4vw;
     }
 }
+@media (min-width: 100em) {
+    .layout-mobile .libraryPage {
+        padding-top: 4.3em !important;
+    }
+    .layout-mobile .libraryPage.noSecondaryNavPage {
+        padding-top: 4.3em !important;
+    }
+    .layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+        padding-top: 4.3em !important;
+    }
+}
+
+
 
 /*
 ===========================================================================
