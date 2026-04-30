@@ -64,6 +64,10 @@
     display: none !important;
 }
 
+.layout-tv .homeSectionsContainer {
+    top: 0;
+}
+
 /* Slides: Buttons */
 .pause-button i,
 .volume-toggle i {

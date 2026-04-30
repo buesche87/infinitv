@@ -187,14 +187,14 @@
 .subtitleSyncContainer,
 .subtitleSyncSliderContainer .sliderBubble,
 .videoOsdBottom {
-    background: rgba(0, 0, 0, var(--headeropacity));
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
 }
 
 /* Background: --itemopacity */
 .cardFooter:not(.visualCardBox-cardFooter),
 .layout-desktop .detailRibbon,
 .layout-mobile .detailRibbon {
-    background: rgba(0, 0, 0, var(--itemopacity));
+    background: rgba(0, 0, 0, var(--itemopacity)) !important;
 }
 
 /* Card defaults */
