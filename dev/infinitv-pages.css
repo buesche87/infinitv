@@ -304,7 +304,7 @@
     }
 
     .layout-mobile .info-container {
-        top: 47vh;
+        top: 46vh;
     }
 
     .layout-mobile .genre {
@@ -323,7 +323,7 @@
         top: 59vh;
     }
     .layout-mobile .homeSectionsContainer {
-        top: 59vh;
+        top: 58vh;
     }
 }
 
@@ -594,8 +594,8 @@
 .layout-mobile .itemsViewSettingsContainer,
 .layout-mobile .pageTabContent > .focuscontainer-x {
     padding: 0;
-    margin-left: -3.5%;
-    margin-right: -3.5%;
+    margin-left: -3.3%;
+    margin-right: -3.3%;
     margin-bottom: 1em;
     margin-top: 0;
     /* min-height: 1.8em; */
@@ -603,8 +603,8 @@
 
 .layout-mobile .padded-right-withalphapicker .itemsViewSettingsContainer {
     padding: 0;
-    margin-left: -3.5%;
-    margin-right: -7%;
+    margin-left: -3.3%;
+    margin-right: -6.6%;
     margin-bottom: 1em;
     margin-top: 0;
 }
