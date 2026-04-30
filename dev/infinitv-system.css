@@ -357,9 +357,10 @@
     background: rgba(0, 0, 0, 1);
 }
 
+/*
 .layout-mobile:has(.homePage:not(.hide)) .skinHeader {
     background: rgba(0, 0, 0, var(--headeropacity));
-}
+} */
 
 /* Header: Fixed size (Mobile) */
 @media (max-width: 100em) {
