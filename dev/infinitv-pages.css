@@ -171,8 +171,6 @@
         top: 61vh;
     }    
 }
-
-
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     /* Slides: Button alignment */
     .layout-desktop .volume-toggle {
@@ -242,13 +240,13 @@
 .layout-mobile #slides-container {
     height: 100%;
 }
-.layout-mobile .slide,
-.layout-mobile .video-container {
-    height: 73%;
+.layout-mobile .backdrop-container,
+.layout-mobile .slide {
+    height: 90%;
 }
 
 .layout-mobile .logo-container {
-    top: 10vh;
+    /* top: 12vh; */
 }
 .layout-mobile .logo {
     max-height: 60%;
@@ -258,33 +256,38 @@
     top: 40vh;
 }
 .layout-mobile .genre {
-    top: 43vh;
+    top: 44vh;
 }
 
 .layout-mobile .plot-container {
-    top: 48vh;
+    top: 50vh;
     width: 80%;
 }
 
 .layout-mobile .dots-container {
-    top: 63vh;
-    /* left: 50%; */
-    /* right: auto; */
-    /* transform: translateX(-50%) scale(0.8); */
+    top: 59vh;
 }
 
 .layout-mobile .button-container {
     text-align: center;
-    top: 59vh;
+    /* top: 59vh; */
 }
 
 .layout-mobile .homeSectionsContainer {
-    top: 59vh;
+    top: 65vh;
 }  
+.layout-mobile .video-container {
+    min-height: 90vh;
+  mask-image:
+    linear-gradient(to right, transparent 10%, black 30%),
+    linear-gradient(to top, transparent 15%, rgba(0, 0, 0, 0.5) 20%, black 30%);
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 10%, black 30%),
+    linear-gradient(to top, transparent 15%, rgba(0, 0, 0, 0.5) 20%, black 30%);
+}
 
 
-/* Portrait - Mobile */
-@media only screen and (max-width: 767px) and (orientation: portrait) {
+@media only screen and (max-height: 767px) and (orientation: portrait) {
     
     .layout-mobile #slides-container {
         height: 90%;
@@ -293,10 +296,11 @@
     .layout-mobile .pause-button {
         right: 1.5em;
     }
-    
-    .layout-mobile .slide,
-    .layout-mobile .backdrop-container {
-        height: 90%;
+
+    .layout-mobile .play-button,
+    .layout-mobile .detail-button,
+    .layout-mobile .favorite-button {
+        margin: 0 .5em !important;
     }
 
     .layout-mobile .logo-container {
@@ -316,10 +320,7 @@
     }
     
     .layout-mobile .dots-container {
-        top: 55vh;
-        /* left: 50%; */
-        /* right: auto; */
-        /* transform: translateX(-50%) scale(0.8); */
+        top: 54.5vh;
         background-color: #ffffff00;
     }
 
@@ -327,23 +328,89 @@
         top: 58vh;
     }
     .layout-mobile .homeSectionsContainer {
-        top: 57.5vh;
+        top: 57vh;
     }
 }
 
-/* Landscape - Mobile */
+/* Small Portrait */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .layout-mobile .logo-container {
+        top: 50%;
+    }
+    .layout-mobile .info-container {
+        top: calc(50% + 10vh);
+    }
+
+    .layout-mobile .genre {
+        top: calc(50% + 13vh);
+    }
+
+    .layout-mobile .dots-container {
+        top: calc(50% + 13vh);
+    }
+    
+    .layout-mobile .button-container {
+        top: calc(50% + 21vh);
+        transform: translateX(-50%) scale(0.9);
+    }
+}
+
+
+@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: portrait) { 
+    .layout-mobile .homeSectionsContainer {
+        top: 57vh;
+    } 
+
+    .layout-mobile .backdrop-container {
+        height: 100%;
+        max-height: 90vh;
+    }
+
+    .layout-mobile .slide {
+        height: 72vh;
+        max-height: 90vh;
+    }
+
+    .layout-mobile .button-container {
+        top: 57vh;
+        left: 3vw;
+    }
+    
+}
+@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: portrait) { 
+    .layout-mobile .homeSectionsContainer {
+        top: 61vh;
+    }  
+
+    .layout-mobile .slide {
+        height: 75%;
+    }
+    .layout-mobile .backdrop-container {
+        height: 100%;
+    }
+
+    .layout-mobile .button-container {
+        top: 58vh;
+    }
+
+    .layout-mobile .video-container {
+        height: 80%;
+    }
+}
+
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-mobile #slides-container {
         height: 90%;
     }
-    
-    .layout-mobile .slide,
-    .layout-mobile .backdrop-container {
-        height: 90%;
-    }
 
-    .layout-mobile .logo-container {
-        top: 7em;
+    .layout-mobile .slide {
+        height: 100%;
+        max-height: 90vh;
+    }
+    
+    .layout-mobile .backdrop-container {
+        height: 100%;
+        max-height: 90vh;
     }
 
     .layout-mobile .logo {
@@ -351,29 +418,81 @@
     }
 
     .layout-mobile .info-container {
-        top: 38vh;
+        top: 39vh;
     }
 
     .layout-mobile .genre {
-        top: 42vh;
+        top: 46vh;
     }
     
     .layout-mobile .dots-container {
-        top: 63vh;
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%) scale(0.8);
+        top: 73vh;
+        right: 0vw;
+        transform: scale(0.8);
         background-color: #ffffff00;
     }
 
-    .layout-mobile .button-container {
-        top: 56vh;
-        /* left: 3vw; */
-    }
-    .layout-mobile .homeSectionsContainer {
+    .layout-mobile .slide .plot-container {
         top: 54vh;
     }
+    
+    .layout-mobile .button-container {
+        top: 63vh;
+        left: 3vw;
+        /* transform: translateX(-6%) scale(0.8); */
+    }
+    .layout-mobile .homeSectionsContainer {
+        top: 61vh;
+    }
+
+    .layout-mobile .slide .plot-container {
+        font-size: 90%;
+    }
 }
+
+
+@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: landscape) { 
+    .layout-mobile .homeSectionsContainer {
+        top: 57vh;
+    } 
+
+    .layout-mobile .backdrop-container {
+        height: 72vh;
+        max-height: 90vh;
+    }
+
+    .layout-mobile .slide {
+        height: 81%;
+        max-height: 90vh;
+    }
+
+    .layout-mobile .button-container {
+        top: 57vh;
+        left: 3.5%;
+    }
+    
+}
+@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) { 
+    .layout-mobile .homeSectionsContainer {
+        top: 61vh;
+    }  
+
+    .layout-mobile .slide {
+        height: 72vh;
+    }
+    .layout-mobile .backdrop-container {
+        height: 100%;
+    }
+
+    .layout-mobile .button-container {
+        top: 58vh;
+    }
+
+    .layout-mobile .video-container {
+        height: 80%;
+    }
+}
+
 
 /*
 ===========================================================================
@@ -500,7 +619,7 @@
 --------------------------------------------------------------------------*/
 /* Stretch Alphabet Picker */
 .layout-mobile .alphaPicker {
-    bottom: 8em;
+    bottom: 2em;
 }
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-mobile .alphaPicker {
@@ -617,6 +736,7 @@
     /* min-height: 1.8em; */
 }
 
+.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right,
 .layout-mobile .padded-right-withalphapicker .itemsViewSettingsContainer {
     padding: 0;
     margin-left: -3.3%;
@@ -625,6 +745,11 @@
     margin-top: 0;
 }
 
+.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right {
+    background-color: var(--bgwhite10);
+    height: 3em;
+    margin-top: 1em;
+}
 
 /*
 ===========================================================================
@@ -1156,6 +1281,17 @@
     padding: 1em;
     border-radius: var(--rounding-media);
 }
+
+
+.layout-mobile #episodesTab .itemsContainer {
+    margin-bottom: 1em !important;
+}
+
+
+.layout-mobile #studiosTab .itemsContainer {
+    margin-top: 1em !important;
+}
+
 
 
 /* Settings Pages: User Profile
