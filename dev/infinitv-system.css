@@ -264,7 +264,7 @@
 
 /* Main Drawer */
 .mainDrawer {
-    margin-top: 3.9em;
+    margin-top: 4em;
     transition: background .5s ease-in-out;
 }
 
@@ -367,7 +367,7 @@
     .layout-mobile .headerTop {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        height: 2.9em;
+        height: 3em;
     }
     .layout-mobile .emby-tab-button {
         padding-top: 0em;
@@ -533,7 +533,6 @@
 .detail-button,
 .favorite-button {
     font-size: 120% !important;
-    margin-right: .2em !important;
     color: inherit;
     height: 3.5em;
     margin-right: 1em !important;
@@ -541,12 +540,17 @@
 .detail-button,
 .favorite-button {
     width: 3.5em;
-    margin-right: 1em !important;
 }
 .play-button:focus,
 .detail-button:focus,
 .favorite-button:focus {
     transform: scale(1.2) !important;
+}
+
+.layout-mobile .play-button,
+.layout-mobile .detail-button,
+.layout-mobile .favorite-button {
+    margin: 0 .5em !important;
 }
 
 /* Buttons: Links acting as Buttons

@@ -269,12 +269,13 @@
 
 .layout-mobile .dots-container {
     top: 62vh;
-    left: 50%;
+    /* left: 50%; */
     right: auto;
-    transform: translateX(-50%) scale(0.8);
+    /* transform: translateX(-50%) scale(0.8); */
 }
 
 .layout-mobile .button-container {
+    text-align: center;
     top: 59vh;
 }
 
@@ -288,6 +289,10 @@
     
     .layout-mobile #slides-container {
         height: 90%;
+    }
+
+    .layout-mobile .pause-button {
+        right: 1.5em;
     }
     
     .layout-mobile .slide,
@@ -304,23 +309,23 @@
     }
 
     .layout-mobile .info-container {
-        top: 46vh;
+        top: 45vh;
     }
 
     .layout-mobile .genre {
-        top: 50vh;
+        top: 49vh;
     }
     
     .layout-mobile .dots-container {
         top: 55vh;
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%) scale(0.8);
+        /* left: 50%; */
+        /* right: auto; */
+        /* transform: translateX(-50%) scale(0.8); */
         background-color: #ffffff00;
     }
 
     .layout-mobile .button-container {
-        top: 59vh;
+        top: 58vh;
     }
     .layout-mobile .homeSectionsContainer {
         top: 57.5vh;
