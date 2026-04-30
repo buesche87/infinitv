@@ -323,7 +323,7 @@
         top: 59vh;
     }
     .layout-mobile .homeSectionsContainer {
-        top: 58vh;
+        top: 57.5vh;
     }
 }
 
@@ -439,7 +439,7 @@
 }
 
 .layout-mobile #itemDetailPage {
-    padding-top: 0 !important;
+    padding-top: 1em !important;
 }
 
 
@@ -837,7 +837,7 @@
 /* Info Container */
 .layout-mobile .infoWrapper {
     padding-bottom: 0.15em;
-    padding-left: 35% !important;
+    padding-left: 38% !important;
 }
 
 /* Buttons */

@@ -264,7 +264,7 @@
 
 /* Main Drawer */
 .mainDrawer {
-    margin-top: 3.9em;
+    margin-top: 4em;
     transition: background .5s ease-in-out;
 }
 
@@ -354,7 +354,11 @@
 
 /* Header: Black (Mobile) */
 .layout-mobile .skinHeader {
-    background: rgba(0, 0, 0, 1) !important;
+    background: rgba(0, 0, 0, 1);
+}
+
+.layout-mobile:has(.homePage:not(.hide)) .skinHeader {
+    background: rgba(0, 0, 0, var(--headeropacity));
 }
 
 /* Header: Fixed size (Mobile) */
@@ -362,7 +366,7 @@
     .layout-mobile .headerTop {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        height: 2.9em;
+        height: 3em;
     }
     .layout-mobile .emby-tab-button {
         padding-top: 0em;

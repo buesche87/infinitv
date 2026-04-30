@@ -174,7 +174,7 @@
 
 /* Background: Black 85%  */
 .dialog {
-    background: rgba(0, 0, 0, .95) !important;
+    background: rgba(0, 0, 0, .95);
 }
 
 /* Background: --headeropacity */
@@ -187,14 +187,14 @@
 .subtitleSyncContainer,
 .subtitleSyncSliderContainer .sliderBubble,
 .videoOsdBottom {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    background: rgba(0, 0, 0, var(--headeropacity));
 }
 
 /* Background: --itemopacity */
 .cardFooter:not(.visualCardBox-cardFooter),
 .layout-desktop .detailRibbon,
 .layout-mobile .detailRibbon {
-    background: rgba(0, 0, 0, var(--itemopacity)) !important;
+    background: rgba(0, 0, 0, var(--itemopacity));
 }
 
 /* Card defaults */
@@ -232,8 +232,6 @@
 .verticalSection > .sectionTitleContainer-cards {
     background-color: var(--bgsecondary);
 }
-
-
 
 /* Background Color: Dark 20% */
 .button-submit:hover,
