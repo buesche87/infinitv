@@ -264,7 +264,7 @@
 
 /* Main Drawer */
 .mainDrawer {
-    margin-top: 4em;
+    margin-top: 3.9em;
     transition: background .5s ease-in-out;
 }
 
@@ -367,7 +367,7 @@
     .layout-mobile .headerTop {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        height: 3em;
+        height: 2.9em;
     }
     .layout-mobile .emby-tab-button {
         padding-top: 0em;
