@@ -105,15 +105,15 @@
 }
 
 .layout-desktop .info-container {
-    top: 55%;
+    top: 40vh;
 }
 
 .layout-desktop .genre {
-    top: 61%;
+    top: 43vh;
 }
 
 .layout-desktop .dots-container {
-    top: 61%;
+    top: 68%;
 }
 
 .layout-desktop .button-container {
@@ -121,12 +121,12 @@
 }
 
 .layout-desktop .plot-container {
-    top: 68%;
+    top: 47vh;
     width: 80%;
 }
 
 .layout-desktop .homeSectionsContainer {
-    top: 62vh;
+    top: 61vh;
 }   
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -140,9 +140,8 @@
         right: 1em;
     }
 
-    .layout-desktop .slide,
-    .layout-desktop .video-container {
-        height: 90%;
+    .layout-desktop .backdrop-container {
+        height: 71vh;
     }
 
     .layout-desktop .logo-container {
@@ -153,23 +152,23 @@
     }
 
     .layout-desktop .info-container {
-        top: 55%;
+        top: 40vh;
     }
 
     .layout-desktop .genre {
-        top: 60%;
+        top: 43vh;
     }
     
     .layout-desktop .dots-container {
-        top: 61%;
+        top: 60%;
     }
 
     .layout-desktop .button-container {
-        top: 72%;
+        top: 58vh;
     }
 
     .layout-desktop .homeSectionsContainer {
-        top: 63vh;
+        top: 61vh;
     }    
 }
 
