@@ -84,9 +84,10 @@
 /* Container */
 .layout-desktop .sectionTitleContainer-cards {
     padding-left: 0;
-    padding-top: 0.6em;
-    padding-bottom: .6em;
+    /* padding-top: 0.6em; */
+    /* padding-bottom: .6em; */
     text-align: center;
+    padding: .6em;
 }
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding-left: 0;
@@ -109,7 +110,7 @@
     border-radius: 0;
 }
 .layout-desktop h2.sectionTitle {
-    font-weight: 600;
+    font-weight: 500;
 } 
 .layout-desktop #tvRecommendedPage .sectionTitle,
 .layout-desktop #moviesPage .sectionTitle,

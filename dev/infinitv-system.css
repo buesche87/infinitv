@@ -488,6 +488,10 @@
     margin: .2em !important;
 }
 
+.layout-desktop .listTextButton-autohide {
+    padding: .6em !important;
+}
+
 .layout-tv .listTextButton-autohide {
     transform: none !important;
     padding: 0.65em .75em !important;
