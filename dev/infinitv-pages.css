@@ -117,7 +117,7 @@
 }
 
 .layout-desktop .dots-container {
-    top: 68%;
+    top: 69%;
 }
 
 .layout-desktop .button-container {
@@ -362,7 +362,6 @@
     }
 }
 
-
 @media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: portrait) { 
     .layout-mobile .homeSectionsContainer {
         top: 57vh;
@@ -384,6 +383,7 @@
     }
     
 }
+
 @media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: portrait) { 
     .layout-mobile .homeSectionsContainer {
         top: 61vh;
@@ -457,7 +457,6 @@
     }
 }
 
-
 @media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: landscape) { 
     .layout-mobile .homeSectionsContainer {
         top: 57vh;
@@ -479,6 +478,7 @@
     }
     
 }
+
 @media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) { 
     .layout-mobile .homeSectionsContainer {
         top: 61vh;
@@ -499,7 +499,6 @@
         height: 80%;
     }
 }
-
 
 /*
 ===========================================================================
@@ -1302,7 +1301,6 @@
 .layout-mobile #studiosTab .itemsContainer {
     margin-top: 1em !important;
 }
-
 
 
 /* Settings Pages: User Profile
