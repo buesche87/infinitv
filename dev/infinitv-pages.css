@@ -690,13 +690,6 @@
 ===========================================================================
 */
 
-/* Filter & Sorting Header */
-.pageTabContent>.focuscontainer-x,
-.itemsViewSettingsContainer {
-    /* padding: 0.25em; */
-    /* margin-bottom: 1em; */
-}
-
 .selfBackdropPage h1.parentName.focuscontainer-x {
     font-size: 150%;
 }
