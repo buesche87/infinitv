@@ -74,18 +74,23 @@
     font-size: 2rem !important;
 }
 
+
+
+
 /* Slides: Font Size */
-@media(min-width: 400px) {
+@media(min-width: 400px) and (min-height: 767px) {
     .slide .genre,
     .slide .info-container,
     .slide .plot-container {
         font-size: 120%;
     }
+
+
+    
 }
 
 /* Layout Desktop
 --------------------------------------------------------------------------*/
-
 /* Slides: Button alignment */
 .layout-desktop .volume-toggle {
     top: 5em;
@@ -96,24 +101,31 @@
     right: 2em;
 }
 
-.layout-desktop .slide,
+.layout-desktop .slide {
+    height: 75vh;
+}
+
+.backdrop-container {
+  height: 97%;
+}
+
 .layout-desktop .video-container {
-    height: 80%;
+    height: 100%;
 }
 
 .layout-desktop .logo-container {
-    top: 20%;
+    top: 5em;
 }
 .layout-desktop .logo {
     max-height: 60%;
 }
 
 .layout-desktop .info-container {
-    top: 40vh;
+    top: 37vh;
 }
 
 .layout-desktop .genre {
-    top: 43vh;
+    top: 41vh;
 }
 
 .layout-desktop .dots-container {
@@ -121,7 +133,7 @@
 }
 
 .layout-desktop .button-container {
-    top: 81%;
+    top: 75%;
 }
 
 .layout-desktop .plot-container {
@@ -131,9 +143,15 @@
 
 .layout-desktop .homeSectionsContainer {
     top: 61vh;
-}   
+}  
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
+
+
+    .layout-desktop .slide {
+        height: 75vh;
+    }
+
     
     .layout-desktop .volume-toggle {
         top: 5em;
@@ -145,7 +163,7 @@
     }
 
     .layout-desktop .backdrop-container {
-        height: 71vh;
+        height: 74vh;
     }
 
     .layout-desktop .logo-container {
@@ -186,9 +204,11 @@
         right: 2em;
     }
     
-    .layout-desktop .slide,
+    .layout-desktop .slide {
+        height: 85vh;
+    }
     .layout-desktop .video-container {
-        height: 80%;
+        height: 100%;
     }
     
     .layout-desktop .logo-container {
@@ -199,11 +219,11 @@
     }
     
     .layout-desktop .info-container {
-        top: 49%;
+        top: 40vh;
     }
     
     .layout-desktop .genre {
-        top: 56%;
+        top: 45vh;
     }
     
     .layout-desktop .dots-container {
@@ -211,11 +231,12 @@
     }
     
     .layout-desktop .button-container {
-        top: 77%;
+        top: 61vh;
+        /* left: 1.75vw; */
     }
     
     .layout-desktop .plot-container {
-        top: 64%;
+        top: 52vh;
         width: 80%;
     }
     
@@ -223,6 +244,17 @@
         top: 65vh;
     }   
 }
+
+@media only screen and (min-height: 767px) and (orientation: landscape) {
+    .layout-desktop .button-container {
+        top: 56vh;
+        transform: scale(1);
+    }
+}
+
+
+
+
 
 /* Layout Mobile
 --------------------------------------------------------------------------*/
@@ -1230,6 +1262,8 @@
     justify-content: center;
     display: flex;
     text-align: center;
+    padding-top: 7em !important;
+    /* align-items: center; */
 }
 
 /* Settings Pages: Move content up */
@@ -1240,6 +1274,10 @@
 #languagePreferencesPage,
 #searchPage {
     padding-top: 5em !important;
+}
+
+.layout-desktop #myPreferencesMenuPage {
+    padding-top: 3em !important;
 }
 
 /* Preferences Pages */

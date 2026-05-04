@@ -503,7 +503,7 @@
 /* Rounding: System */
 .actionSheetMenuItem,
 .checkboxOutline,
-.dialog,
+/* .dialog, */
 .emby-button,
 .emby-input,
 .emby-select,
@@ -533,6 +533,7 @@
 
 /* Rounding: Media */
 .blurhash-canvas,
+.dialog,
 .cardBox,
 .cardContent,
 .cardContent-button,
