@@ -1154,6 +1154,10 @@
     border: var(--buttonborder);
 }
 
+.layout-tv .availableImagesList .portraitCard .cardBox {
+    margin: 1em .75em !important;
+}
+
 /* Align card image */
 .dialogContentInner .portraitCard .cardContent .cardImageContainer {
     top: -.6em;
