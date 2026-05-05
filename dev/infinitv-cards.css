@@ -376,33 +376,6 @@
 ===========================================================================
 */
 
-/* Edit Images (needs to be moved) */
-#backdropsContainer .imageEditorCard > .cardBox,
-#imagesContainer .imageEditorCard > .cardBox {
-    background-color: rgb(0 0 0 / 0%) !important;
-    border: var(--buttonborder);
-}
-
-.availableImagesList .imageEditorCard > .cardBox {
-    background-color: rgb(0 0 0) !important;
-    border: var(--buttonborder);
-}
-
-#backdropsContainer .imageEditorCard .cardFooter,
-#imagesContainer .imageEditorCard .cardFooter {
-    padding-top: .5em;
-    padding-bottom: 0;
-}
-.availableImagesList .imageEditorCard .cardFooter {
-    border-top: var(--buttonborder);
-    padding-top: .5em;
-    padding-bottom: 0;
-}
-
-#backdropsContainer .paper-icon-button-light {
-    margin: .1em;
-}
-
 /* Layout Desktop
 --------------------------------------------------------------------------*/
 

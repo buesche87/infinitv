@@ -1132,7 +1132,6 @@
     padding-right: 3% !important;
 }
 
-
 /*
 ===========================================================================
    Media Pages: Image Search
@@ -1144,14 +1143,37 @@
     color: var(--accent100);
 }
 
-/* Card Backgroiund: Grey */
-.dialogContentInner .card .cardBox {
-    background-color: rgb(32, 32, 32) !important;
+/* Cards */
+#backdropsContainer .imageEditorCard > .cardBox,
+#imagesContainer .imageEditorCard > .cardBox {
+    background-color: rgb(0 0 0 / 0%) !important;
+    border: var(--buttonborder);
+}
+.availableImagesList .imageEditorCard > .cardBox {
+    background-color: rgb(0 0 0) !important;
+    border: var(--buttonborder);
 }
 
 /* Align card image */
 .dialogContentInner .portraitCard .cardContent .cardImageContainer {
     top: -.6em;
+}
+
+/* Card Footer */
+#backdropsContainer .imageEditorCard .cardFooter,
+#imagesContainer .imageEditorCard .cardFooter {
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+.availableImagesList .imageEditorCard .cardFooter {
+    border-top: var(--buttonborder);
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+
+/* Buttons */
+#backdropsContainer .paper-icon-button-light {
+    margin: .1em;
 }
 
 /*
@@ -1160,13 +1182,17 @@
 ===========================================================================
 */
 
-/* Settings: Center content */
+/* Page */
 #myPreferencesMenuPage {
     justify-content: center;
     display: flex;
+    padding-top: 5em !important;
 }
 
-/* Settings: Titles */
+/* Section Titles */
+#myPreferencesMenuPage .sectionTitle {
+    padding-left: 3em !important;
+}
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
 #controlsPreferencesPage .sectionTitle {
@@ -1178,11 +1204,27 @@
     border-radius: var(--rounding-system);
 }
 
-/* Subtitles: Preview-Box */
-.subtitleappearance-preview {
-    background: linear-gradient(140deg,var(--accent100),#111) !important;
+/* Layout Desktop
+--------------------------------------------------------------------------*/
+
+/* Content */
+.layout-desktop #myPreferencesMenuPage .readOnlyContent {
+    background-color: var(--itembg);
+    padding: 1em;
+    border-radius: var(--rounding-media);
 }
 
+/* Layout TV
+--------------------------------------------------------------------------*/
+
+/* Content */
+.layout-tv #myPreferencesMenuPage .readOnlyContent {
+    background-color: var(--itembg);
+    padding: 1em;
+    border-radius: var(--rounding-media);
+}
+
+/* Section Titles */
 .layout-tv .settingsContainer .sectionTitle,
 .layout-tv .homeScreenSettingsContainer .sectionTitle,
 .layout-tv #controlsPreferencesPage .sectionTitle {
@@ -1197,6 +1239,23 @@
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
+/* Content */
+.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
+    width: 100%;
+    text-align: center;
+}
+.layout-mobile .userPreferencesPage .settingsContainer,
+.layout-mobile .homeScreenSettingsContainer,
+.layout-mobile #controlsPreferencesPage .padded-left {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+/* Section Titles */
+.layout-mobile #myPreferencesMenuPage .sectionTitle {
+    padding-left: 0em !important;
+    font-weight: 600;
+} 
 .layout-mobile .settingsContainer .sectionTitle,
 .layout-mobile .homeScreenSettingsContainer .sectionTitle,
 .layout-mobile #controlsPreferencesPage .sectionTitle {
@@ -1205,21 +1264,12 @@
     padding-left: .5em;
 }
 
-.layout-mobile .userPreferencesPage .settingsContainer,
-.layout-mobile .homeScreenSettingsContainer,
-.layout-mobile #controlsPreferencesPage .padded-left {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-}
+/* List Items */
 .layout-mobile .userPreferencesPage .listItem-border {
     border: var(--buttonborder) !important;
     margin-bottom: .6em !important;
     background: var(--bgdark40) !important;
 }
-.layout-mobile #myPreferencesMenuPage .sectionTitle {
-    padding-left: 0em !important;
-    font-weight: 600;
-} 
 .layout-mobile .userPreferencesPage .listItem {
     padding-right: 1.5em !important;
 } 
@@ -1238,13 +1288,10 @@
     text-align: left;
 }
 
-.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
-    width: 100%;
-    text-align: center;
-}
-
-/* Settings Pages: Individual Sites
---------------------------------------------------------------------------*/
+/*
+===========================================================================
+   Settings: Individual Sites
+===========================================================================
 
 /* Settings Pages: Center content and Text */
 #userProfilePage,
@@ -1253,21 +1300,15 @@
     display: flex;
     text-align: center;
     padding-top: 7em !important;
-    /* align-items: center; */
 }
 
 /* Settings Pages: Move content up */
-#myPreferencesMenuPage,
 #quickConnectPreferencesPage,
 #displayPreferencesPage,
 #homeScreenPreferencesPage,
 #languagePreferencesPage,
 #searchPage {
     padding-top: 5em !important;
-}
-
-.layout-desktop #myPreferencesMenuPage {
-    padding-top: 3em !important;
 }
 
 /* Preferences Pages */
@@ -1309,22 +1350,10 @@
     font-weight: 600;
 }
 
-#myPreferencesMenuPage .sectionTitle {
-    padding-left: 3em !important;
-}
-
-.layout-desktop #myPreferencesMenuPage .readOnlyContent,
-.layout-tv #myPreferencesMenuPage .readOnlyContent {
-    background-color: var(--itembg);
-    padding: 1em;
-    border-radius: var(--rounding-media);
-}
-
 
 .layout-mobile #episodesTab .itemsContainer {
     margin-bottom: 1em !important;
 }
-
 
 .layout-mobile #studiosTab .itemsContainer {
     margin-top: 1em !important;
@@ -1350,4 +1379,10 @@ h2.username {
     margin-top: 0px;
     font-weight: 600;
     color: #fff;
+}
+
+
+/* Subtitles: Preview-Box */
+.subtitleappearance-preview {
+    background: linear-gradient(140deg,var(--accent100),#111) !important;
 }
