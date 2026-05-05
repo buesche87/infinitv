@@ -373,9 +373,6 @@
 
 /* Small Portrait */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-    .layout-mobile .logo-container {
-        top: 50%;
-    }
     .layout-mobile .info-container {
         top: calc(50% + 10vh);
     }

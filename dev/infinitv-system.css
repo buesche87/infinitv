@@ -364,16 +364,8 @@
 
 /* Header: Black (Mobile) */
 .layout-mobile .skinHeader {
-    background: rgba(0, 0, 0, 1);
-    /* height: 4em; */
+    background: rgba(0, 0, 0, 1) !important;
 }
-
-/*
-.layout-mobile:has(.homePage:not(.hide)) .skinHeader {
-    background: rgba(0, 0, 0, var(--headeropacity));
-} */
-
-
 
 /* Header: Fixed size (Mobile) */
 @media (max-width: 100em) {
@@ -386,7 +378,6 @@
         padding-top: 0em;
     }
 }
-
 
 /* Header: Size & Alignment */
 .layout-tv .skinHeader,
