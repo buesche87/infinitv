@@ -11,7 +11,7 @@
                         The Big Screen Experience                          
 ```
 
-This theme is designed with a strong focus on htpc setups using Jellyfin Desktop as the client, while fully supporting both desktop and mobile devices.
+> This theme is designed with a strong focus on htpc setups using Jellyfin Desktop as the client, while fully supporting both desktop and mobile devices.
 
 ## Key features
 
@@ -69,12 +69,6 @@ Give it your style by changing `:root` values:
 - Set opacity from `1.00` to `0.00`
 - Give roundings more radius
 
-## Mobile
-In addition to the base theme, there is an extension designed for small smartphone screens (< 6.4"). The navigation bar is moved to the bottom for easier thumb access, and the layout becomes more compact.
-
-```css
-@import url('https://buesche87.github.io/infinitv/infinitv-mobile.css');
-```
 
 ## Optimal Results
 
