@@ -30,7 +30,6 @@
     margin-bottom: 0em !important;
 }
 
-
 /* Layout Desktop
 --------------------------------------------------------------------------*/
 
@@ -84,8 +83,6 @@
 /* Container */
 .layout-desktop .sectionTitleContainer-cards {
     padding-left: 0;
-    /* padding-top: 0.6em; */
-    /* padding-bottom: .6em; */
     text-align: center;
     padding: .6em;
 }
@@ -178,35 +175,26 @@
 --------------------------------------------------------------------------*/
 
 /* Emby Scroller */
-.layout-tv .emby-scroller {
-    padding: 0;
-    margin: 0 .5vw;
-}
+.layout-tv .emby-scroller                                        { padding: 0; margin: 0 .5vw; }
+
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
 .layout-tv #moviesPage .verticalSection > .emby-scroller,
-.layout-tv #albumsPage .verticalSection > .emby-scroller {
-    margin: .5vw 1vw;
-}
+.layout-tv #albumsPage .verticalSection > .emby-scroller         { margin: .5vw 1vw; }
 
 /* Items Container */
-.layout-tv .itemsContainer {
-    padding: 0;
-}
-.layout-tv #episodesTab .itemsContainer {
-    padding: 0 2em;
-}
+.layout-tv .itemsContainer                                       { padding: 0; }
+
+.layout-tv #episodesTab .itemsContainer                          { padding: 0 2em; }
+
 .layout-tv #favoritesTab .verticalSection > .itemsContainer,
 .layout-tv #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-tv #moviesPage .verticalSection > .itemsContainer,
-.layout-tv #albumsPage .verticalSection > .itemsContainer {
-    margin: .5vw 1vw;
-}
+.layout-tv #albumsPage .verticalSection > .itemsContainer        { margin: .5vw 1vw; }
+
 .layout-tv #seriesTab .itemsContainer,
 .layout-tv #moviesTab .itemsContainer,
-.layout-tv #albumsTab .itemsContainer{
-    margin: 0;
-}
+.layout-tv #albumsTab .itemsContainer                            { margin: 0; }
 
 /* Items Container with largeImage List */
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
@@ -223,48 +211,33 @@
 --------------------------------------------------------------------------*/
 
 /* Emby Scroller */
-.layout-desktop .emby-scroller {
-    padding: 0;
-    margin: .5vw .5vw;
-}
-.layout-desktop .homePage .emby-scroller {
-    padding: 0;
-    margin: .5vw 1.5vw;
-}
+.layout-desktop .emby-scroller                                       { padding: 0; margin: .5vw .5vw; }
+
+.layout-desktop .homePage .emby-scroller                             { padding: 0; margin: .5vw 1.5vw; }
+
 .layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,
 .layout-desktop #moviesPage .verticalSection > .emby-scroller,
-.layout-desktop #albumsPage .verticalSection > .emby-scroller {
-    margin: .5vw 1vw;
-}
+.layout-desktop #albumsPage .verticalSection > .emby-scroller        { margin: .5vw 1vw; }
 
 /* Items Container */
-.layout-desktop .itemsContainer {
-    padding: 0;
-}
+.layout-desktop .itemsContainer                                      { padding: 0; }
+
 .layout-desktop #musicRecommendedPage #suggestionsTab .itemsContainer,
 .layout-desktop #musicRecommendedPage #genresTab .itemsContainer,
 .layout-desktop #moviesPage #favoritesTab .itemsContainer,
 .layout-desktop #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-desktop #moviesPage .verticalSection > .itemsContainer,
-.layout-desktop #albumsPage .verticalSection > .itemsContainer {
-    margin: 1em 1.5vw;
-}
-.layout-desktop #items .itemsContainer {
-    margin: 0;
-}
+.layout-desktop #albumsPage .verticalSection > .itemsContainer       { margin: 1em 1.5vw; }
+
+.layout-desktop #items .itemsContainer                               { margin: 0; }
 
 /* Items Container next to Alphapicker */
-.layout-desktop .padded-right-withalphapicker .itemsContainer {
-    padding-left: 1%;
-    padding-right: 3%;
-}
+.layout-desktop .padded-right-withalphapicker .itemsContainer        { padding-left: 1%; padding-right: 3%; }
 
 /* Items Container in PrimaryContainer */
-.layout-desktop .detailPagePrimaryContainer .itemsContainer {
-    padding: 0;
-    margin: 1vw .5vw;
-}
-.layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
+.layout-desktop .detailPagePrimaryContainer .itemsContainer          { padding: 0;  margin: 1vw .5vw; }
+
+.layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) { 
     margin: 1vw 0vw;
 }
 
@@ -277,26 +250,19 @@
 --------------------------------------------------------------------------*/
 
 /* Emby Scroller */
-.layout-mobile .emby-scroller {
-    padding: 0;
-    margin: 0 1vw;
-}
+.layout-mobile .emby-scroller                     { padding: 0; margin: 0 1vw; }
 
 /* Items Container */
-.layout-mobile .itemsContainer {
-    padding: 0;
-}
+.layout-mobile .itemsContainer                    { padding: 0; }
+
 .layout-mobile #favoritesTab .itemsContainer,
 .layout-mobile #tvRecommendedPage .itemsContainer,
 .layout-mobile #moviesPage .itemsContainer,
-.layout-mobile #albumsPage .itemsContainer {
-    margin: 0 2vw;
-}
+.layout-mobile #albumsPage .itemsContainer        { margin: 0 2vw; }
+
 .layout-mobile #seriesTab .itemsContainer,
 .layout-mobile #moviesTab .itemsContainer,
-.layout-mobile #albumsTab .itemsContainer{
-    margin: 0;
-}
+.layout-mobile #albumsTab .itemsContainer         { margin: 0; }
 
 /* Items Container with listItems */
 .layout-mobile .pageTabContent .itemsContainer:has(.listItem-border) {

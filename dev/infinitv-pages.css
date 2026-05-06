@@ -12,29 +12,29 @@
 @media(min-width: 400px) and (min-height: 767px) {
     .slide .genre,
     .slide .info-container,
-    .slide .plot-container { font-size: 120%; }    
+    .slide .plot-container { font-size: 120%; }
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 /* ── Base ── */
-.layout-desktop .slide              { height: 75vh; }
-.layout-desktop .backdrop-container { height: 97%; }
-.layout-desktop .video-container    { height: 100%; }
+.layout-desktop .slide                     { height: 75vh; }
+.layout-desktop .backdrop-container        { height: 97%; }
+.layout-desktop .video-container           { height: 100%; }
+       
+.layout-desktop .pause-button              { top: 5em; right: 2em; }
+.layout-desktop .volume-toggle             { top: 5em; right: 6em; }
+       
+.layout-desktop .logo-container            { top: 5em; }
+.layout-desktop .logo                      { max-height: 60%; }
+       
+.layout-desktop .info-container            { top: 37vh; }
+.layout-desktop .genre                     { top: 41vh; }
+.layout-desktop .plot-container            { top: 47vh; width: 80%; }
+.layout-desktop .dots-container            { top: 69%; }
+.layout-desktop .button-container          { top: 75%; }
 
-.layout-desktop .pause-button       { top: 5em; right: 2em; }
-.layout-desktop .volume-toggle      { top: 5em; right: 6em; }
-
-.layout-desktop .logo-container     { top: 5em; }
-.layout-desktop .logo               { max-height: 60%; }
-
-.layout-desktop .info-container     { top: 37vh; }
-.layout-desktop .genre              { top: 41vh; }
-.layout-desktop .plot-container     { top: 47vh; width: 80%; }
-.layout-desktop .dots-container     { top: 69%; }
-.layout-desktop .button-container   { top: 75%; }
-
-.layout-desktop .homeSectionsContainer { top: 61vh; }
+.layout-desktop .homeSectionsContainer     { top: 61vh; }
 
 /* ── Portrait (narrow) ── */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -64,14 +64,14 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Disable Slides in TV layout because they don't work well with a remote */
 .layout-tv #slides-container { display: none !important; }
 .layout-tv .homeSectionsContainer { top: 0; }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* ── Base ── */
 .layout-mobile .homePage              { padding-left: 0; padding-right: 0; }
@@ -191,7 +191,7 @@
 */
 
 /*  Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop .libraryPage,
 .layout-desktop .libraryPage:not(.noSecondaryNavPage) {
@@ -214,7 +214,7 @@
 }
 
 /*  Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-tv .libraryPage {
     padding-top: 5.5em !important;
@@ -245,7 +245,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-mobile .libraryPage.noSecondaryNavPage {
     padding-top: 4em !important;
@@ -296,7 +296,7 @@
 */
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop .alphaPicker {
     top: 128px;
@@ -304,7 +304,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 /* Stretch Alphabet Picker */
 .layout-mobile .alphaPicker {
     bottom: 2em;
@@ -364,7 +364,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop .pageTabContent > .focuscontainer-x {
     height: 3em;
@@ -379,7 +379,7 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-tv .pageTabContent>.focuscontainer-x,
 .layout-tv .itemsViewSettingsContainer {
@@ -399,7 +399,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Filter & Sorting Header: Buttons */
 .layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
@@ -465,7 +465,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop .selectionCommandsPanel {
     top: 7.65em;
@@ -510,7 +510,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Detail-Ribbon: Fix narrow Desktop layout */
 .layout-desktop .detailPageWrapperContainer {
@@ -527,7 +527,7 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Hide some Elements */
 .layout-tv .itemExternalLinks,
@@ -547,7 +547,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Center Content */
 .layout-mobile .verticalSection .itemsContainer.vertical-wrap {
@@ -567,7 +567,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop .detailRibbon {
     height: 9em;
@@ -629,7 +629,7 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Media Infos */
 .layout-tv .itemMiscInfo {
@@ -645,7 +645,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-mobile .detailRibbon {
     margin-top: -1em !important;
@@ -696,7 +696,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Primary Container */
 .layout-desktop .detailPagePrimaryContent {
@@ -718,7 +718,7 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Primary Container */
 .layout-tv .detailPagePrimaryContent  {
@@ -755,7 +755,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Primary Container */
 .layout-mobile .detailPagePrimaryContent {
@@ -862,7 +862,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Content */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent {
@@ -872,7 +872,7 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Content */
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
@@ -894,7 +894,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Content */
 .layout-mobile #myPreferencesMenuPage .padded-bottom-page {
@@ -1017,7 +1017,7 @@
 
 
 /* Settings Pages: User Profile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* User Profile: Form Alignment */
 .updatePasswordForm br {
