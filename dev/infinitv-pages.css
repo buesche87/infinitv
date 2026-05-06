@@ -31,7 +31,7 @@
 .layout-desktop .info-container            { top: 37vh; }
 .layout-desktop .genre                     { top: 41vh; }
 .layout-desktop .plot-container            { top: 47vh; width: 80%; }
-.layout-desktop .dots-container            { top: 69%; }
+.layout-desktop .dots-container            { top: 69%; right: 2vw; }
 .layout-desktop .button-container          { top: 75%; }
 
 .layout-desktop .homeSectionsContainer     { top: 61vh; }
