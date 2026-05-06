@@ -5,12 +5,12 @@
 */
 
 /* Person Cards */
-.itemsContainer > .overflowPortraitCard.personCard {
+.overflowPortraitCard.personCard {
     font-size: 90% !important;
 }
 
 /* Person Cards: Center Content */
-.personCard > .cardBox {
+.overflowPortraitCard.personCard > .cardBox {
     text-align: center;
     text-align: -webkit-center;
 }
@@ -19,16 +19,9 @@
 --------------------------------------------------------------------------*/
 
 /* Default Cards */
-.layout-tv .detailImageContainer .portraitCard {
-    left: 1vw;
-    max-width: 28em;
-}
-.layout-tv .detailImageContainer .backdropCard {
-    left: 1vw;
-}
-.layout-tv .detailImageContainer .squareCard {
-    max-width: 18em;
-}
+.layout-tv .detailImageContainer .portraitCard { left: 1vw; max-width: 28em; }
+.layout-tv .detailImageContainer .backdropCard { left: 1vw; }
+.layout-tv .detailImageContainer .squareCard   { max-width: 18em; }
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -41,9 +34,7 @@
 --------------------------------------------------------------------------*/
 
 /* Poster Cards */
-.layout-desktop .detailImageContainer .portraitCard {
-    max-width: 36em !important;
-}
+.layout-desktop .detailImageContainer .portraitCard { max-width: 36em !important; }
 
 /* NextUp Card */
 .layout-desktop .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -208,22 +199,11 @@
 
 /* Large Image List Item: Positioning on small screens (TV) */
 @media (max-width: 64em) {
-    .layout-tv .listItemImage-large {
-        margin-right: .5em !important;
-    }
-
+    .layout-tv .listItemImage-large { margin-right: .5em !important; }
     .layout-tv .listItemImageButton,
-    .layout-tv .listItemIndicators {
-        font-size: .6em !important;
-    }
-
-    .layout-tv .listItemBody {
-        padding-left: .5em;
-    }
-
-    .layout-tv h2.listItemBodyText {
-        font-size: 1.2em !important;
-    }
+    .layout-tv .listItemIndicators  { font-size: .6em !important; }
+    .layout-tv .listItemBody        { padding-left: .5em; }
+    .layout-tv h2.listItemBodyText  { font-size: 1.2em !important; }
 }
 
 /* Layout Mobile - Large Image List Items
@@ -286,30 +266,20 @@
 
 /* Card Glow */
 .card:hover .cardScalable,
-.card:hover .cardBox:has(> .cardFooter) {
-    box-shadow: var(--cardglow) !important;
-}
+.card:hover .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow) !important; }
 
 /* Card Shadows */
-.cardScalable {
-    box-shadow: var(--cardshadow) !important;
-}
+.cardScalable                                 { box-shadow: var(--cardshadow) !important; }
 
 /* Shadow for cardBox if footer present */
-.cardBox:has(> .cardFooter) {
-    box-shadow: var(--cardshadow) !important;
-}
+.cardBox:has(> .cardFooter)                   { box-shadow: var(--cardshadow) !important; }
 
 /* No shadows */
 .cardBox:has(> .cardFooter) > .cardScalable,
-.dialogContentInner .imageEditorCard .cardBox {
-    box-shadow: none !important;
-}
+.dialogContentInner .imageEditorCard .cardBox { box-shadow: none !important; }
 
 /* Cards: Inset Shadow (smoothening) */
-.libraryPage .cardImageContainer {
-    box-shadow: var(--insettop), var(--insetbottom);
-}
+.libraryPage .cardImageContainer              { box-shadow: var(--insettop), var(--insetbottom); }
 
 /* Layout Desktop - Card Animation
 --------------------------------------------------------------------------*/
@@ -404,40 +374,24 @@
 --------------------------------------------------------------------------*/
 
 /* CardBoxes in General */
-.layout-tv .itemsContainer > .backdropCard > .cardBox {
-    margin: 1.4em 1em .6em 1.6em !important;
-}
+.layout-tv .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 1em .6em 1.6em !important; }
 .layout-tv .itemsContainer > .portraitCard > .cardBox,
-.layout-tv .itemsContainer > .squareCard > .cardBox {
-    margin: 1.4em .8em 1.6em 1.6em !important;
-}
+.layout-tv .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em .8em 1.6em 1.6em !important; }
 
 /* CardBoxes in OverflowCards */
-.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox {
-    margin: 1.6em .8em 1.2em 1.6em !important;
-}
-.layout-tv .itemsContainer > .overflowPortraitCard > .cardBox {
-    margin: 2em 1em 1.6em 1.6em !important;
-}
-.layout-tv .itemsContainer > .overflowSquareCard > .cardBox {
-    margin: 1.6em 1em 1em 1.6em !important;
-}
+.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.6em .8em 1.2em 1.6em !important; }
+.layout-tv .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1em 1.6em 1.6em !important; }
+.layout-tv .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.6em 1em 1em 1.6em !important; }
 
 /* CardBoxes in PersonCards */
-.layout-tv .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
-    margin: 1.5em 0 !important;
-}
+.layout-tv .itemsContainer > .overflowPortraitCard.personCard > .cardBox { margin: 1.5em 0 !important; }
 
 /* CardBoxes in BannerCards */
-.layout-tv .itemsContainer > .bannerCard > .cardBox {
-    margin: 1vw 1.2vw !important;
-}
+.layout-tv .itemsContainer > .bannerCard > .cardBox                      { margin: 1vw 1.2vw !important; }
 
 /* CardBoxes in OverflowCards residing in a PrimaryContainer */
 .layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
-.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
-    margin: 2em .6em 2em 1.6em !important;
-}
+.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox { margin: 2em .6em 2em 1.6em !important; }
 
 /* Layout Mobile
 --------------------------------------------------------------------------*/
@@ -539,14 +493,12 @@
     padding: .3em .6em;
 }
 
-/* Card Progressbar: Background */
+/* Card Progressbar */
 .itemProgressBar {
     height: .4em !important;
     margin: .5em .8em !important;
     backdrop-filter: blur(6px);
 }
-
-/* Card Progressbar: Progress */
 .itemProgressBarForeground {
     background-color: var(--accent100) !important;
 }
@@ -557,22 +509,17 @@
     left: 0.75em;
     top: 0.75em;
 }
-
-/* List Item: Indicators (TV) */
 .layout-tv .listItemIndicators {
     position: fixed;
     left: 0.75em;
     top: 0.75em;
 }
-
-/* List Item: Indicators */
 .layout-mobile .listItemIndicators {
     position: fixed;
     left: 0.5em;
     top: 0.5em;
     font-size: .75em !important
 }
-
 
 /*
 ===========================================================================
@@ -581,23 +528,18 @@
 */
 
 /* List Item - TV */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) { width: 98%; }
-.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) { width: 98%; }
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage)                          { width: 98%; }
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage)                    { width: 98%; }
 
 /* List Item: Poster - TV */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
-    height: 6em;
-    width: 14%;
-}
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage           { width: 14%; height: 6em; }
 /* List Item: Poster Focus - TV */
-.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage { 
-    width: 15%; 
-}
+.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage     { width: 15%; }
 
 /* List Item: Rating - TV */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo {width: 4%;}
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo       { width: 4%; }
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo { width: 5%; }
 
 /* List Item: Rating - TV */
-.layout-tv #episodesTab .listItem-button:not(.listItem-largeImage) .listItemMediaInfo {width: auto;}
+.layout-tv #episodesTab .listItem-button:not(.listItem-largeImage) .listItemMediaInfo       { width: auto; }
 .layout-tv #episodesTab .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo { width: auto; }
