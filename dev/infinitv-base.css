@@ -136,6 +136,7 @@
 .upNextDialog-countdownText { color: var(--accent100) !important; }
 
 /* Color: White */
+.paper-icon-button-light.emby-scrollbuttons-button:focus,
 .layout-mobile .overview-expand:focus { color: white !important; }
 
 /* Font Weight */
@@ -152,6 +153,7 @@
 .paper-icon-button-light:active { color: var(--accent100) !important; }
 
 /* Active: White */
+.paper-icon-button-light.emby-scrollbuttons-button:active,
 .emby-tab-button-active { color: white !important; }
 
 /*
