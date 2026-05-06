@@ -1,532 +1,187 @@
 /*
-===========================================================================
-   Login Page
-===========================================================================
-*/
-
-/* Hide some elements */
-#loginPage .btnForgotPassword,
-#loginPage .loginDisclaimerContainer {
-    display: none;
-}
-
-/* Login Form: Dimensions & Colors */
-#loginPage .padded-left.padded-right.padded-bottom-page {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    width: 24em;
-    padding-bottom: 2em !important;
-}
-
-/* Manual Login Form */
-#loginPage .readOnlyContent,
-#loginPage form {
-    max-width: 22em;
-}
-
-/* Login Card: "please sign in" */
-#loginPage .visualLoginForm {
-    padding-top: 1em;
-}
-#loginPage .manualLoginForm {
-    padding-top: 2em;
-}
-
-/* Login Card: User */
-#loginPage .squareCard {
-    width: 33% !important;
-    margin: 1em !important;
-}
-
-#loginPage .cardBox {
-    box-shadow: none !important;
-}
-
-#loginPage .cardScalable {
-    box-shadow: var(--cardshadow) !important;
-}
-
-#loginPage .card:hover .cardScalable {
-    box-shadow: var(--cardglow) !important;
-}
-
-/*
 ============================================================================
-   Home Page
+   HomePage & Slides
 ============================================================================
 */
 
-/* Disable Slides in TV layout (they don't work well with a remote) */
-.layout-tv #slides-container {
-    display: none !important;
-}
-
-.layout-tv .homeSectionsContainer {
-    top: 0;
-}
-
-/* Slides: Buttons */
+/* Increase size of media buttons in slides */
 .pause-button i,
-.volume-toggle i {
-    font-size: 2rem !important;
-}
+.volume-toggle i { font-size: 2rem !important; }
 
-
-
-
-/* Slides: Font Size */
+/* Make text bigger if window size allows */
 @media(min-width: 400px) and (min-height: 767px) {
     .slide .genre,
     .slide .info-container,
-    .slide .plot-container {
-        font-size: 120%;
-    }
-
-
-    
+    .slide .plot-container { font-size: 120%; }    
 }
 
 /* Layout Desktop
 --------------------------------------------------------------------------*/
-/* Slides: Button alignment */
-.layout-desktop .volume-toggle {
-    top: 5em;
-    right: 6em;
-}
-.layout-desktop .pause-button {
-    top: 5em;
-    right: 2em;
-}
+/* ── Base ── */
+.layout-desktop .slide              { height: 75vh; }
+.layout-desktop .backdrop-container { height: 97%; }
+.layout-desktop .video-container    { height: 100%; }
 
-.layout-desktop .slide {
-    height: 75vh;
-}
+.layout-desktop .pause-button       { top: 5em; right: 2em; }
+.layout-desktop .volume-toggle      { top: 5em; right: 6em; }
 
-.backdrop-container {
-  height: 97%;
-}
+.layout-desktop .logo-container     { top: 5em; }
+.layout-desktop .logo               { max-height: 60%; }
 
-.layout-desktop .video-container {
-    height: 100%;
-}
+.layout-desktop .info-container     { top: 37vh; }
+.layout-desktop .genre              { top: 41vh; }
+.layout-desktop .plot-container     { top: 47vh; width: 80%; }
+.layout-desktop .dots-container     { top: 69%; }
+.layout-desktop .button-container   { top: 75%; }
 
-.layout-desktop .logo-container {
-    top: 5em;
-}
-.layout-desktop .logo {
-    max-height: 60%;
-}
+.layout-desktop .homeSectionsContainer { top: 61vh; }
 
-.layout-desktop .info-container {
-    top: 37vh;
-}
-
-.layout-desktop .genre {
-    top: 41vh;
-}
-
-.layout-desktop .dots-container {
-    top: 69%;
-}
-
-.layout-desktop .button-container {
-    top: 75%;
-}
-
-.layout-desktop .plot-container {
-    top: 47vh;
-    width: 80%;
-}
-
-.layout-desktop .homeSectionsContainer {
-    top: 61vh;
-}  
-
+/* ── Portrait (narrow) ── */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-
-
-    .layout-desktop .slide {
-        height: 75vh;
-    }
-
-    
-    .layout-desktop .volume-toggle {
-        top: 5em;
-        right: 6em;
-    }
-    .layout-desktop .pause-button {
-        top: 5em;
-        right: 1em;
-    }
-
-    .layout-desktop .backdrop-container {
-        height: 74vh;
-    }
-
-    .layout-desktop .logo-container {
-        top: 33%;
-    }
-    .layout-desktop .logo {
-        max-height: 60%;
-    }
-
-    .layout-desktop .info-container {
-        top: 40vh;
-    }
-
-    .layout-desktop .genre {
-        top: 43vh;
-    }
-    
-    .layout-desktop .dots-container {
-        top: 60%;
-    }
-
-    .layout-desktop .button-container {
-        top: 58vh;
-    }
-
-    .layout-desktop .homeSectionsContainer {
-        top: 61vh;
-    }    
+    .layout-desktop .backdrop-container    { height: 74vh; }
+    .layout-desktop .pause-button          { right: 1em; }
+    .layout-desktop .logo-container        { top: 33%; }
+    .layout-desktop .info-container        { top: 40vh; }
+    .layout-desktop .genre                 { top: 43vh; }
+    .layout-desktop .dots-container        { top: 60%; }
+    .layout-desktop .button-container      { top: 58vh; }
 }
+
+/* ── Small Landscape ── */
 @media only screen and (max-height: 767px) and (orientation: landscape) {
-    /* Slides: Button alignment */
-    .layout-desktop .volume-toggle {
-        top: 5em;
-        right: 6em;
-    }
-    .layout-desktop .pause-button {
-        top: 5em;
-        right: 2em;
-    }
-    
-    .layout-desktop .slide {
-        height: 85vh;
-    }
-    .layout-desktop .video-container {
-        height: 100%;
-    }
-    
-    .layout-desktop .logo-container {
-        top: 5em;
-    }
-    .layout-desktop .logo {
-        max-height: 60%;
-    }
-    
-    .layout-desktop .info-container {
-        top: 40vh;
-    }
-    
-    .layout-desktop .genre {
-        top: 45vh;
-    }
-    
-    .layout-desktop .dots-container {
-        top: 61%;
-    }
-    
-    .layout-desktop .button-container {
-        top: 61vh;
-        /* left: 1.75vw; */
-    }
-    
-    .layout-desktop .plot-container {
-        top: 52vh;
-        width: 80%;
-    }
-    
-    .layout-desktop .homeSectionsContainer {
-        top: 65vh;
-    }   
+    .layout-desktop .slide                 { height: 85vh; }
+    .layout-desktop .info-container        { top: 40vh; }
+    .layout-desktop .genre                 { top: 45vh; }
+    .layout-desktop .plot-container        { top: 52vh; }
+    .layout-desktop .dots-container        { top: 69%; }
+    .layout-desktop .button-container      { top: 61vh; }
+    .layout-desktop .homeSectionsContainer { top: 65vh; }
 }
 
+/* ── Large Landscape ── */
 @media only screen and (min-height: 767px) and (orientation: landscape) {
-    .layout-desktop .button-container {
-        top: 56vh;
-        transform: scale(1);
-    }
+    .layout-desktop .button-container      { top: 56vh; }
 }
 
+/* Layout TV
+--------------------------------------------------------------------------*/
 
-
-
+/* Disable Slides in TV layout because they don't work well with a remote */
+.layout-tv #slides-container { display: none !important; }
+.layout-tv .homeSectionsContainer { top: 0; }
 
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
-.layout-mobile .homePage {
-    padding-left: 0;
-    padding-right: 0;
-}
+/* ── Base ── */
+.layout-mobile .homePage              { padding-left: 0; padding-right: 0; }
 
-.layout-mobile .volume-toggle {
-    top: 7.5em;
-    right: 5em;
-}
-.layout-mobile .pause-button {
-    top: 7.5em;
-    right: 2em;
-}
+.layout-mobile .volume-toggle         { top: 7.5em; right: 5em; }
+.layout-mobile .pause-button          { top: 7.5em; right: 2em; }
 
 @media (max-width: 768px) {
-    .layout-mobile .pause-button {
-        right: 4vw;
-    }
+    .layout-mobile .pause-button      { right: 4vw; }
 }
 
-.layout-mobile #slides-container {
-    height: 100%;
-}
+.layout-mobile #slides-container      { height: 100%; }
+
 .layout-mobile .backdrop-container,
-.layout-mobile .slide {
-    height: 90%;
-}
+.layout-mobile .slide                 { height: 90%; }
 
-.layout-mobile .logo {
-    max-height: 60%;
-}
+.layout-mobile .logo                  { max-height: 60%; }
+.layout-mobile .info-container        { top: 40vh; }
+.layout-mobile .genre                 { top: 44vh; }
+.layout-mobile .plot-container        { top: 50vh; width: 80%; }
+.layout-mobile .dots-container        { top: 59vh; }
+.layout-mobile .button-container      { text-align: center; }
+.layout-mobile .homeSectionsContainer { top: 65vh; }
 
-.layout-mobile .info-container {
-    top: 40vh;
-}
-.layout-mobile .genre {
-    top: 44vh;
-}
-
-.layout-mobile .plot-container {
-    top: 50vh;
-    width: 80%;
-}
-
-.layout-mobile .dots-container {
-    top: 59vh;
-}
-
-.layout-mobile .button-container {
-    text-align: center;
-    /* top: 59vh; */
-}
-
-.layout-mobile .homeSectionsContainer {
-    top: 65vh;
-}  
-.layout-mobile .video-container {
+.layout-mobile .video-container       {
     min-height: 90vh;
-  mask-image:
-    linear-gradient(to right, transparent 10%, black 30%),
-    linear-gradient(to top, transparent 15%, rgba(0, 0, 0, 0.5) 20%, black 30%);
-  -webkit-mask-image:
-    linear-gradient(to right, transparent 10%, black 30%),
-    linear-gradient(to top, transparent 15%, rgba(0, 0, 0, 0.5) 20%, black 30%);
+    mask-image:
+        linear-gradient(to right, transparent 10%, black 30%),
+        linear-gradient(to top, transparent 15%, rgba(0,0,0,.5) 20%, black 30%);
+    -webkit-mask-image:
+        linear-gradient(to right, transparent 10%, black 30%),
+        linear-gradient(to top, transparent 15%, rgba(0,0,0,.5) 20%, black 30%);
 }
 
+/* ── Small height (both orientations) ── */
+@media only screen and (max-height: 767px) {
+    .layout-mobile #slides-container      { height: 90%; }
+}
 
+/* ── Small Portrait ── */
 @media only screen and (max-height: 767px) and (orientation: portrait) {
-    
-    .layout-mobile #slides-container {
-        height: 90%;
-    }
-
-    .layout-mobile .pause-button {
-        right: 1.5em;
-    }
-
+    .layout-mobile .pause-button          { right: 1.5em; }
+    .layout-mobile .logo-container        { top: 30vh; }
+    .layout-mobile .info-container        { top: 45vh; }
+    .layout-mobile .genre                 { top: 49vh; }
+    .layout-mobile .dots-container        { top: 54.5vh; background-color: transparent; }
+    .layout-mobile .button-container      { top: 58vh; }
     .layout-mobile .play-button,
     .layout-mobile .detail-button,
-    .layout-mobile .favorite-button {
-        margin: 0 .5em !important;
-    }
-
-    .layout-mobile .logo-container {
-        top: 30vh;
-    }
-
-    .layout-mobile .logo {
-        max-height: 60%;
-    }
-
-    .layout-mobile .info-container {
-        top: 45vh;
-    }
-
-    .layout-mobile .genre {
-        top: 49vh;
-    }
-    
-    .layout-mobile .dots-container {
-        top: 54.5vh;
-        background-color: #ffffff00;
-    }
-
-    .layout-mobile .button-container {
-        top: 58vh;
-    }
-    .layout-mobile .homeSectionsContainer {
-        top: 57vh;
-    }
+    .layout-mobile .favorite-button       { margin: 0 .5em !important; }
+    .layout-mobile .homeSectionsContainer { top: 57vh; }
 }
 
-/* Small Portrait */
+/* ── Narrow Portrait (max-width) ── */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-    .layout-mobile .info-container {
-        top: calc(50% + 10vh);
-    }
-
-    .layout-mobile .genre {
-        top: calc(50% + 13vh);
-    }
-
-    .layout-mobile .dots-container {
-        top: calc(50% + 13vh);
-    }
-    
-    .layout-mobile .button-container {
+    .layout-mobile .info-container        { top: calc(50% + 10vh); }
+    .layout-mobile .genre                 { top: calc(50% + 13vh); }
+    .layout-mobile .dots-container        { top: calc(50% + 13vh); }
+    .layout-mobile .button-container      {
         top: calc(50% + 21vh);
         transform: translateX(-50%) scale(0.9);
     }
 }
 
-@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: portrait) { 
-    .layout-mobile .homeSectionsContainer {
-        top: 57vh;
-    } 
-
-    .layout-mobile .backdrop-container {
-        height: 100%;
-        max-height: 90vh;
-    }
-
-    .layout-mobile .slide {
-        height: 72vh;
-        max-height: 90vh;
-    }
-
-    .layout-mobile .button-container {
-        top: 57vh;
-        left: 3vw;
-    }
-    
-}
-
-@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: portrait) { 
-    .layout-mobile .homeSectionsContainer {
-        top: 61vh;
-    }  
-
-    .layout-mobile .slide {
-        height: 75%;
-    }
-    .layout-mobile .backdrop-container {
-        height: 100%;
-    }
-
-    .layout-mobile .button-container {
-        top: 58vh;
-    }
-
-    .layout-mobile .video-container {
-        height: 80%;
-    }
-}
-
+/* ── Small Landscape ── */
 @media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-mobile #slides-container {
-        height: 90%;
-    }
-
-    .layout-mobile .slide {
-        height: 100%;
-        max-height: 90vh;
-    }
-    
-    .layout-mobile .backdrop-container {
-        height: 100%;
-        max-height: 90vh;
-    }
-
-    .layout-mobile .logo {
-        max-height: 60%;
-    }
-
-    .layout-mobile .info-container {
-        top: 39vh;
-    }
-
-    .layout-mobile .genre {
-        top: 46vh;
-    }
-    
-    .layout-mobile .dots-container {
-        top: 73vh;
-        right: 0vw;
-        transform: scale(0.8);
-        background-color: #ffffff00;
-    }
-
-    .layout-mobile .slide .plot-container {
-        top: 54vh;
-    }
-    
-    .layout-mobile .button-container {
-        top: 63vh;
-        left: 3vw;
-        /* transform: translateX(-6%) scale(0.8); */
-    }
-    .layout-mobile .homeSectionsContainer {
-        top: 61vh;
-    }
-
-    .layout-mobile .slide .plot-container {
-        font-size: 90%;
-    }
+    .layout-mobile .slide,
+    .layout-mobile .backdrop-container    { height: 100%; max-height: 90vh; }
+    .layout-mobile .info-container        { top: 39vh; }
+    .layout-mobile .genre                 { top: 46vh; }
+    .layout-mobile .dots-container        { top: 73vh; right: 0; transform: scale(0.8); background-color: transparent; }
+    .layout-mobile .plot-container        { top: 54vh; font-size: 90%; }
+    .layout-mobile .button-container      { top: 63vh; left: 3vw; }
+    .layout-mobile .homeSectionsContainer { top: 61vh; }
 }
 
-@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: landscape) { 
-    .layout-mobile .homeSectionsContainer {
-        top: 57vh;
-    } 
-
-    .layout-mobile .backdrop-container {
-        height: 72vh;
-        max-height: 90vh;
-    }
-
-    .layout-mobile .slide {
-        height: 81%;
-        max-height: 90vh;
-    }
-
-    .layout-mobile .button-container {
-        top: 57vh;
-        left: 3.5%;
-    }
-    
+/* ── Large ≥50em ── */
+@media only screen and (min-height: 767px) and (min-width: 50em) {
+    .layout-mobile .slide,
+    .layout-mobile .backdrop-container    { max-height: 90vh; }
+    .layout-mobile .button-container      { top: 57vh; }
+    .layout-mobile .homeSectionsContainer { top: 57vh; }
 }
 
-@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) { 
-    .layout-mobile .homeSectionsContainer {
-        top: 61vh;
-    }  
+@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: portrait) {
+    .layout-mobile .slide                 { height: 72vh; }
+    .layout-mobile .backdrop-container    { height: 100%; }
+    .layout-mobile .button-container      { left: 3vw; }
+}
 
-    .layout-mobile .slide {
-        height: 72vh;
-    }
-    .layout-mobile .backdrop-container {
-        height: 100%;
-    }
+@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: landscape) {
+    .layout-mobile .slide                 { height: 81%; }
+    .layout-mobile .backdrop-container    { height: 72vh; }
+    .layout-mobile .button-container      { left: 3.5%; }
+}
 
-    .layout-mobile .button-container {
-        top: 58vh;
-    }
+/* ── Large ≥100em ── */
+@media only screen and (min-height: 767px) and (min-width: 100em) {
+    .layout-mobile .backdrop-container    { height: 100%; }
+    .layout-mobile .button-container      { top: 58vh; }
+    .layout-mobile .video-container       { height: 80%; }
+    .layout-mobile .homeSectionsContainer { top: 61vh; }
+}
 
-    .layout-mobile .video-container {
-        height: 80%;
-    }
+@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: portrait) {
+    .layout-mobile .slide                 { height: 75%; }
+}
+
+@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) {
+    .layout-mobile .slide                 { height: 72vh; }
 }
 
 /*
@@ -634,8 +289,6 @@
     }
 }
 
-
-
 /*
 ===========================================================================
    Alphabet Picker
@@ -687,10 +340,10 @@
 ===========================================================================
 */
 
+/* Filter & Sorting Header */
 .selfBackdropPage h1.parentName.focuscontainer-x {
     font-size: 150%;
 }
-
 
 /* Filter & Sorting Header: Item Count */
 .listPaging > span {
@@ -1354,7 +1007,6 @@
     font-weight: 600;
 }
 
-
 .layout-mobile #episodesTab .itemsContainer {
     margin-bottom: 1em !important;
 }
@@ -1385,8 +1037,62 @@ h2.username {
     color: #fff;
 }
 
-
 /* Subtitles: Preview-Box */
 .subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+/*
+===========================================================================
+   Login Page
+===========================================================================
+*/
+
+/* Hide some elements */
+#loginPage .btnForgotPassword,
+#loginPage .loginDisclaimerContainer {
+    display: none;
+}
+
+/* Login Form: Dimensions & Colors */
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 24em;
+    padding-bottom: 2em !important;
+}
+
+/* Manual Login Form */
+#loginPage .readOnlyContent,
+#loginPage form {
+    max-width: 22em;
+}
+
+/* Login Card: "please sign in" */
+#loginPage .visualLoginForm {
+    padding-top: 1em;
+}
+#loginPage .manualLoginForm {
+    padding-top: 2em;
+}
+
+/* Login Card: User */
+#loginPage .squareCard {
+    width: 33% !important;
+    margin: 1em !important;
+}
+
+#loginPage .cardBox {
+    box-shadow: none !important;
+}
+
+#loginPage .cardScalable {
+    box-shadow: var(--cardshadow) !important;
+}
+
+#loginPage .card:hover .cardScalable {
+    box-shadow: var(--cardglow) !important;
 }
