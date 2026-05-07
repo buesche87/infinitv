@@ -185,11 +185,11 @@
 
 /* Layout Desktop - Large Image List Items
 --------------------------------------------------------------------------*/
-
+/* 
 .layout-desktop .listItem.listItem-largeImage .listItemImage-large {
-    border-right: var(--buttonborder);
+    border-right: var(--buttonborder); 
 }
-
+*/
 
 /* Layout TV - Large Image List Items
 --------------------------------------------------------------------------*/
