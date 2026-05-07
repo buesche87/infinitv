@@ -198,6 +198,11 @@
     padding-top: 3.9em !important;
 }
 
+.layout-desktop .itemDetailPage {
+    padding-top: 0em !important;
+}
+
+
 /* Library Page: Studios Tab workaround */
 .layout-desktop #studiosTab {
     padding: 2vh 2vw;
