@@ -81,16 +81,16 @@ Give it your style by changing `:root` values:
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/home-tv.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/movie-tv.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-home.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-library.png"></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/movies-tv.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tvshows-tv.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-series.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-episodes.png"></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/show-tv.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/season-tv.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-movie.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-player.png"></td>
   </tr>
 </table>
 
@@ -99,12 +99,12 @@ Give it your style by changing `:root` values:
 
 <table>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-drawer.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-tvhows.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-home.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-library.png"></td>
   </tr>
   <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-show.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-movie.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-series.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-.png"></td>
   </tr>
 </table>
 

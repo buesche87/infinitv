@@ -381,7 +381,12 @@
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-tv .pageTabContent>.focuscontainer-x,
+.layout-tv .pageTabContent>.focuscontainer-x {
+    border-radius: var(--rounding-system) !important;
+    padding: 0.05em;
+    min-height: 2em;
+    margin-bottom: 1em
+}
 .layout-tv .itemsViewSettingsContainer {
     border-radius: var(--rounding-system) !important;
     padding: 0.05em;
