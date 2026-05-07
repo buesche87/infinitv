@@ -217,9 +217,10 @@
 .layout-desktop .listViewUserDataButtons {
     margin-right: .5em;
 }
+/*
 .layout-desktop .listViewUserDataButtons .listItemButton:hover {
     background-color: var(--accent20) !important;
-}
+}*/
 
 /* playlist buttons: no animations */
 .layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
