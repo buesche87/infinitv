@@ -59,7 +59,7 @@
     --card-person-scalable-width-tv: calc(23.2vw - 1.75em);
 
     /* ListItem Text Wrap - TV */
-    --listitem-line-clamp-tv: 6;
+    --listitem-line-clamp-tv: 5;
 
     /* Layout Mobile
     --------------------------------------------------------------------------*/

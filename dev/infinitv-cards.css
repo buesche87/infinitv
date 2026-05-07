@@ -23,6 +23,18 @@
 .layout-tv .detailImageContainer .backdropCard { left: 1vw; }
 .layout-tv .detailImageContainer .squareCard   { max-width: 18em; }
 
+
+.layout-tv .detailImageContainer .card {
+    float: left;
+    max-height: 80vh;
+    max-width: 25vw;
+    position: sticky;
+    top: 7em;
+    left: 3em;
+    z-index: 3
+}
+
+
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
     width: 50% !important;
@@ -188,7 +200,6 @@
     min-height: 14em;
     max-width: 30em !important;
     height: 15vw !important;
-    border-right: var(--buttonborder);
 }
 
 /* Large Image List Item: Overview Text (TV) */
