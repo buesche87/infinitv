@@ -86,8 +86,11 @@
     text-align: center;
     padding: 10px;
 }
+.layout-desktop .libraryPage .sectionTitle {
+    padding-left: 0;
+}
 
-.layout-desktop .detailPagePrimaryContent .detailVerticalSection .sectionTitle-cards {
+.layout-desktop .detailPagePrimaryContent:has(.nextUpSection.hide) .detailVerticalSection .sectionTitle-cards {
     margin-left: -31.45vw;
     padding-left: 31.45vw;
 }
@@ -97,36 +100,34 @@
     margin-left: -.5vw;
 }
 
+.layout-desktop  .detailPagePrimaryContainer .nextUpSection .sectionTitle,
+.layout-desktop .detailPagePrimaryContainer:has(.nextUpSection.hide)  #listChildrenCollapsible .sectionTitle-cards {
+    margin-left: -31.45vw;
+    padding-left: 31.45vw;
+    text-align: left;
+}
+
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
     padding: 10px 0;
     text-align: center;
 }
-/* Titles */
+
 .layout-desktop .detailPagePrimaryContainer .sectionTitle {
-    /* text-align: left !important; */
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
-
-.layout-desktop  .detailPagePrimaryContainer .nextUpSection .sectionTitle {
-    text-align: left !important;
-}
-
-
-
 
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
     border-radius: 0;
 }
 .layout-desktop h2.sectionTitle {
     font-weight: 500;
-    /* font-size: 1.5em; */
 } 
-.layout-desktop #tvRecommendedPage .sectionTitle,
-.layout-desktop #moviesPage .sectionTitle,
-.layout-desktop #musicRecommendedPage .sectionTitle {
-    padding-left: 0;
+
+.layout-desktop .settingsContainer .sectionTitle {
+    padding-left: .75em;
 }
+
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
@@ -246,6 +247,8 @@
 .layout-desktop #albumsPage .verticalSection > .itemsContainer       { margin: 1em 1.5vw; }
 
 .layout-desktop #items .itemsContainer                               { margin: 0; }
+
+.layout-desktop #resumableSection #resumableItems                    { margin-bottom: 0; }
 
 /* Items Container next to Alphapicker */
 .layout-desktop .padded-right-withalphapicker .itemsContainer        { padding-left: 1%; padding-right: 3%; }

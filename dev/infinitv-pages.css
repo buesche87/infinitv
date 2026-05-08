@@ -1030,6 +1030,16 @@
     margin-top: 2em;
 }
 
+.layout-desktop #displayPreferencesPage .btnSave,
+.layout-desktop #homeScreenPreferencesPage .btnSave,
+.layout-desktop #languagePreferencesPage .btnSave {
+    margin-top: 2em;
+    margin-left: -1.5em;
+    width: 106%;
+}
+
+
+
 #searchPage .searchFieldsInner {
     padding-bottom: 1em;
 }
