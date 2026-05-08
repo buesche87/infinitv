@@ -173,34 +173,25 @@
 
 /* Playback Info */
 .playerStats {
-    /* margin: auto; */
     top: 5em;
-    /* bottom: auto; */
     font-size: 110%;
 }
-
 .playerStats-content-tv {
     font-size: 85%;
 }
-
 .playerStats-stat-label {
     color: #ddd;
 }
-
 .playerStats-stat-value {
     color: #fff;
     font-weight: 600;
 }
 
-
-
-
-
 /*
 ===========================================================================
    Music Player
 ===========================================================================
-* > needs work */
+* > TODO: needs work */
 
 .layout-tv .nowPlayingPageImageContainer {
     margin-right: 1.5em;
@@ -226,9 +217,10 @@
 .layout-desktop .listViewUserDataButtons {
     margin-right: .5em;
 }
+/*
 .layout-desktop .listViewUserDataButtons .listItemButton:hover {
     background-color: var(--accent20) !important;
-}
+}*/
 
 /* playlist buttons: no animations */
 .layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {

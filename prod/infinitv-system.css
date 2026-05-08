@@ -44,47 +44,48 @@
 ============================================================================
 */
 
-/* Dialogs: Position (Desktop)
+/* Layout Desktop - Dialog Position
 --------------------------------------------------------------------------*/
 
-/* Media Filter */
-.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
-    transform: translateX(10em) !important;
-    top: 10.5em !important;
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened,
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog,
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog, 
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
+    top: 8em !important;
     position: fixed;
+}
+
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
+    transform: translateX(10.5em) !important;
 }
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {
     transform: translateX(13.5em) !important;
-    top: 11em !important;
 }
 
-.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog {
+
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.opened  {
     transform: translateX(7em) !important;
-    top: 10.5em !important;
-    position: fixed;
 }
-.layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog {
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened  {
     transform: translateX(10em) !important;
-    top: 10.5em !important;
 }
 
-.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog {
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.opened  {
     transform: translateX(6em) !important;
-    top: 10.5em !important;
-    position: fixed;
 }
-.layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened  {
     transform: translateX(9em) !important;
-    top: 10.5em !important;
-    position: fixed;
 }
+
 
 /* Header */
 .layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
     transform: translateY(4em) !important;
 }
 .layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
-    transform: translateY(10em) !important;
+    transform: translateY(7.25em) !important;
 }
 
 /* Player OSD */
@@ -95,9 +96,7 @@
     transform: translateY(-5em) !important;
 }
 
-
-
-/* Dialogs: Fullscreen (TV)
+/* Layout TV - Dialogs Fullscreen
 --------------------------------------------------------------------------*/
 .layout-tv .formDialog {
     position: fixed;
@@ -125,13 +124,56 @@
     color: hsla(0, 0%, 100%, .8) !important;
 }
 
-/* we don't need a close button in tv-mode, there is BACK and ESC */
+/* we don't need a close button in tv-mode, there is BACK and ESC
 .layout-tv .btnCloseActionSheet {
     display: none;
+} */
+
+
+/* Layout Mobile
+--------------------------------------------------------------------------*/
+.layout-mobile .formDialog {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    top: 10em !important;
+    animation-duration: var(--anispeed) !important;
+    box-shadow: var(--buttonglow);
 }
 
-/* Dialogs: Content
---------------------------------------------------------------------------*/
+.layout-mobile .focuscontainer.dialog.dialog-fixedSize.dialog-small.formDialog.opened {
+    top: 0em !important;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.layout-mobile .actionSheet {
+    left: unset !important;
+    top: 4em !important;
+}
+
+.layout-mobile .actionSheet:has(.listItem-button) {
+    position: fixed !important;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    left: unset !important;
+    top: 10em !important;
+    animation-duration: var(--anispeed) !important;
+    box-shadow: var(--buttonglow);
+}
+
+.layout-mobile .actionSheet.syncPlayGroupMenu {
+    top: 4em !important;
+}
+
+/*
+============================================================================
+   Dialogs: Content
+============================================================================
+*/
+
 
 /* Content */
 .layout-desktop .dialogContainer .dynamicFilterDialog,
@@ -226,6 +268,16 @@
     transition: background .5s ease-in-out;
 }
 
+.layout-mobile .mainDrawer {
+    margin-top: 4em;
+}
+
+@media (min-width: 100em) {
+    .layout-mobile .mainDrawer {
+        margin-top: 4.4em;
+    }
+}
+
 /* Drawer Open: Match background and transition with header */
 .mainDrawer.drawer-open {
     background-color: rgba(0, 0, 0, .9) !important;
@@ -256,6 +308,7 @@
 
 .layout-desktop {
     scrollbar-width: thin;
+    overflow-y: scroll;
 }
 
 .layout-tv,
@@ -319,7 +372,7 @@
     .layout-mobile .headerTop {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
-        height: 2.9em;
+        height: 3em;
     }
     .layout-mobile .emby-tab-button {
         padding-top: 0em;
@@ -347,8 +400,7 @@
 }
 
 /* Header Section Tabs: Stay in Header with invisible scroll */
-.layout-tv .headerTabs.sectionTabs,
-.layout-desktop .headerTabs.sectionTabs {
+.layout-tv .headerTabs.sectionTabs {
     font-size: 110% !important;
     margin-top: -2.7em !important;
     width: 42vw;
@@ -357,6 +409,20 @@
     scroll-behavior: smooth !important;
     overflow-x: auto;
     overflow-y: hidden;
+    white-space: nowrap;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    transition: filter 0.2s;
+}
+
+.layout-desktop .headerTabs.sectionTabs {
+    font-size: 110% !important;
+    margin-top: -2.7em !important;
+    max-width: 58%;
+    min-width: 26vw;
+    scrollbar-width: none;
+    scroll-behavior: smooth !important;
     white-space: nowrap;
     align-items: center;
     align-self: center;
@@ -413,6 +479,16 @@
     margin: .2em !important;
 }
 
+.layout-desktop .listTextButton-autohide {
+    padding: .6em !important;
+}
+
+.layout-tv .listTextButton-autohide {
+    transform: none !important;
+    padding: 0.65em .75em !important;
+    margin: 0 !important;
+}
+
 /* Buttons: Collapsible
 --------------------------------------------------------------------------*/
 
@@ -466,7 +542,6 @@
 .detail-button,
 .favorite-button {
     font-size: 120% !important;
-    margin-right: .2em !important;
     color: inherit;
     height: 3.5em;
     margin-right: 1em !important;
@@ -474,12 +549,17 @@
 .detail-button,
 .favorite-button {
     width: 3.5em;
-    margin-right: 1em !important;
 }
 .play-button:focus,
 .detail-button:focus,
 .favorite-button:focus {
     transform: scale(1.2) !important;
+}
+
+.layout-mobile .play-button,
+.layout-mobile .detail-button,
+.layout-mobile .favorite-button {
+    margin: 0 .5em !important;
 }
 
 /* Buttons: Links acting as Buttons
@@ -505,6 +585,7 @@
     padding: 0em 1em !important;
     transform: none !important;
     margin-left: 0px !important;
+    margin: 0;
 }
 
 /* Clearlink: Buttons inside */

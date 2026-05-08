@@ -1,3 +1,16 @@
+# v0.4.0
+
+With this release many adjustments to the desktop layout are introduced.
+
+- Made slides slightly smaller and repositioned some elements on them
+- Moved the filter-bar on library pages right under the header
+- Adjustments to mobile layout responsiveness
+- Work done on the Image editor and it's cards
+- More work done on dialogs
+- Fixed some text wrapping / line clamping issued
+- And lots of other fixes and optimizations
+
+
 # v0.3.2
 
 Time to bump a number

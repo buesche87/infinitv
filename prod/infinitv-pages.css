@@ -1,4 +1,1063 @@
 /*
+============================================================================
+   HomePage & Slides
+============================================================================
+*/
+
+/* Increase size of media buttons in slides */
+.pause-button i,
+.volume-toggle i { font-size: 2rem !important; }
+
+/* Make text bigger if window size allows */
+@media(min-width: 400px) and (min-height: 767px) {
+    .slide .genre,
+    .slide .info-container,
+    .slide .plot-container { font-size: 120%; }
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+/* ── Base ── */
+.layout-desktop .slide                     { height: 75vh; }
+.layout-desktop .backdrop-container        { height: 97%; }
+.layout-desktop .video-container           { height: 100%; }
+       
+.layout-desktop .pause-button              { top: 5em; right: 2em; }
+.layout-desktop .volume-toggle             { top: 5em; right: 6em; }
+       
+.layout-desktop .logo-container            { top: 5em; }
+.layout-desktop .logo                      { max-height: 60%; }
+       
+.layout-desktop .info-container            { top: 37vh; }
+.layout-desktop .genre                     { top: 41vh; }
+.layout-desktop .plot-container            { top: 47vh; width: 80%; }
+.layout-desktop .dots-container            { top: 69%; right: 2vw; }
+.layout-desktop .button-container          { top: 75%; }
+
+.layout-desktop .homeSectionsContainer     { top: 61vh; }
+
+/* ── Portrait (narrow) ── */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .layout-desktop .backdrop-container    { height: 74vh; }
+    .layout-desktop .pause-button          { right: 1em; }
+    .layout-desktop .logo-container        { top: 33%; }
+    .layout-desktop .info-container        { top: 40vh; }
+    .layout-desktop .genre                 { top: 43vh; }
+    .layout-desktop .dots-container        { top: 60%; }
+    .layout-desktop .button-container      { top: 58vh; }
+}
+
+/* ── Small Landscape ── */
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-desktop .slide                 { height: 85vh; }
+    .layout-desktop .info-container        { top: 40vh; }
+    .layout-desktop .genre                 { top: 45vh; }
+    .layout-desktop .plot-container        { top: 52vh; }
+    .layout-desktop .dots-container        { top: 69%; }
+    .layout-desktop .button-container      { top: 61vh; }
+    .layout-desktop .homeSectionsContainer { top: 65vh; }
+}
+
+/* ── Large Landscape ── */
+@media only screen and (min-height: 767px) and (orientation: landscape) {
+    .layout-desktop .button-container      { top: 56vh; }
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Disable Slides in TV layout because they don't work well with a remote */
+.layout-tv #slides-container { display: none !important; }
+.layout-tv .homeSectionsContainer { top: 0; }
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* ── Base ── */
+.layout-mobile .homePage              { padding-left: 0; padding-right: 0; }
+
+.layout-mobile .volume-toggle         { top: 7.5em; right: 5em; }
+.layout-mobile .pause-button          { top: 7.5em; right: 2em; }
+
+@media (max-width: 768px) {
+    .layout-mobile .pause-button      { right: 4vw; }
+}
+
+.layout-mobile #slides-container      { height: 100%; }
+
+.layout-mobile .backdrop-container,
+.layout-mobile .slide                 { height: 90%; }
+
+.layout-mobile .logo                  { max-height: 60%; }
+.layout-mobile .info-container        { top: 40vh; }
+.layout-mobile .genre                 { top: 44vh; }
+.layout-mobile .plot-container        { top: 50vh; width: 80%; }
+.layout-mobile .dots-container        { top: 59vh; }
+.layout-mobile .button-container      { text-align: center; }
+.layout-mobile .homeSectionsContainer { top: 65vh; }
+
+.layout-mobile .video-container       {
+    min-height: 90vh;
+    mask-image:
+        linear-gradient(to right, transparent 10%, black 30%),
+        linear-gradient(to top, transparent 15%, rgba(0,0,0,.5) 20%, black 30%);
+    -webkit-mask-image:
+        linear-gradient(to right, transparent 10%, black 30%),
+        linear-gradient(to top, transparent 15%, rgba(0,0,0,.5) 20%, black 30%);
+}
+
+/* ── Small height (both orientations) ── */
+@media only screen and (max-height: 767px) {
+    .layout-mobile #slides-container      { height: 90%; }
+}
+
+/* ── Small Portrait ── */
+@media only screen and (max-height: 767px) and (orientation: portrait) {
+    .layout-mobile .pause-button          { right: 1.5em; }
+    .layout-mobile .logo-container        { top: 30vh; }
+    .layout-mobile .info-container        { top: 45vh; }
+    .layout-mobile .genre                 { top: 49vh; }
+    .layout-mobile .dots-container        { top: 54.5vh; background-color: transparent; }
+    .layout-mobile .button-container      { top: 58vh; }
+    .layout-mobile .play-button,
+    .layout-mobile .detail-button,
+    .layout-mobile .favorite-button       { margin: 0 .5em !important; }
+    .layout-mobile .homeSectionsContainer { top: 57vh; }
+}
+
+/* ── Narrow Portrait (max-width) ── */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .layout-mobile .info-container        { top: calc(50% + 10vh); }
+    .layout-mobile .genre                 { top: calc(50% + 13vh); }
+    .layout-mobile .dots-container        { top: calc(50% + 13vh); }
+    .layout-mobile .button-container      {
+        top: calc(50% + 21vh);
+        transform: translateX(-50%) scale(0.9);
+    }
+}
+
+/* ── Small Landscape ── */
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile .slide,
+    .layout-mobile .backdrop-container    { height: 100%; max-height: 90vh; }
+    .layout-mobile .info-container        { top: 39vh; }
+    .layout-mobile .genre                 { top: 46vh; }
+    .layout-mobile .dots-container        { top: 73vh; right: 0; transform: scale(0.8); background-color: transparent; }
+    .layout-mobile .plot-container        { top: 54vh; font-size: 90%; }
+    .layout-mobile .button-container      { top: 63vh; left: 3vw; }
+    .layout-mobile .homeSectionsContainer { top: 61vh; }
+}
+
+/* ── Large ≥50em ── */
+@media only screen and (min-height: 767px) and (min-width: 50em) {
+    .layout-mobile .slide,
+    .layout-mobile .backdrop-container    { max-height: 90vh; }
+    .layout-mobile .button-container      { top: 57vh; }
+    .layout-mobile .homeSectionsContainer { top: 57vh; }
+}
+
+@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: portrait) {
+    .layout-mobile .slide                 { height: 72vh; }
+    .layout-mobile .backdrop-container    { height: 100%; }
+    .layout-mobile .button-container      { left: 3vw; }
+}
+
+@media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: landscape) {
+    .layout-mobile .slide                 { height: 81%; }
+    .layout-mobile .backdrop-container    { height: 72vh; }
+    .layout-mobile .button-container      { left: 3.5%; }
+}
+
+/* ── Large ≥100em ── */
+@media only screen and (min-height: 767px) and (min-width: 100em) {
+    .layout-mobile .backdrop-container    { height: 100%; }
+    .layout-mobile .button-container      { top: 58vh; }
+    .layout-mobile .video-container       { height: 80%; }
+    .layout-mobile .homeSectionsContainer { top: 61vh; }
+}
+
+@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: portrait) {
+    .layout-mobile .slide                 { height: 75%; }
+}
+
+@media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) {
+    .layout-mobile .slide                 { height: 72vh; }
+}
+
+/*
+===========================================================================
+   Library Pages
+===========================================================================
+*/
+
+/*  Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .libraryPage,
+.layout-desktop .libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 3.9em !important;
+}
+
+.layout-desktop .itemDetailPage {
+    padding-top: 0em !important;
+}
+
+
+/* Library Page: Studios Tab workaround */
+.layout-desktop #studiosTab {
+    padding: 2vh 2vw;
+}
+
+/* Library Page: Content */
+.layout-desktop .libraryPage .padded-right-withalphapicker {
+    padding-left: 1.5vw;
+    padding-right: 3vw;
+}
+.layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/*  Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-tv .libraryPage {
+    padding-top: 5.5em !important;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+@media(min-width: 75em) {
+    .layout-tv .libraryPage {
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .layout-tv #studiosTab {
+        margin-left: -1vw;
+    }
+}
+
+/* Library Pages: Content with Alphapicker */
+.layout-tv .libraryPage .padded-right-withalphapicker {
+    padding-left: 2vw;
+    padding-right: 3vw;
+}
+@media(min-width: 50em) {
+    .layout-tv .libraryPage .padded-right-withalphapicker {
+        padding-left: 0;
+        padding-right: 1vw;
+    }
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-mobile .libraryPage.noSecondaryNavPage {
+    padding-top: 4em !important;
+}
+
+.layout-mobile #itemDetailPage {
+    padding-top: 1em;
+}
+
+.layout-mobile .itemBackdrop {
+    margin-top: 0;
+}
+
+
+/* Library Pages: Content with Alphapicker */
+.layout-mobile .libraryPage .padded-right-withalphapicker {
+    padding-left: 2vw;
+    padding-right: 6vw;
+}
+
+.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+    padding-top: 6.3em !important;
+}
+
+@media (min-width: 50em) {
+    .layout-mobile .itemBackdrop {
+        margin-top: 3.9rem;
+    }
+    .layout-mobile .libraryPage.noSecondaryNavPage {
+        padding-top: 4em !important;
+    }
+    .layout-mobile .libraryPage .padded-right-withalphapicker {
+        padding-left: 2vw;
+        padding-right: 4vw;
+    }
+}
+@media (min-width: 100em) {
+    .layout-mobile .libraryPage {
+        padding-top: 4.3em !important;
+    }
+    .layout-mobile .libraryPage.noSecondaryNavPage {
+        padding-top: 4.3em !important;
+    }
+    .layout-mobile .libraryPage:not(.noSecondaryNavPage) {
+        padding-top: 4.3em !important;
+    }
+}
+
+/*
+===========================================================================
+   Alphabet Picker
+===========================================================================
+*/
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .alphaPicker {
+    top: 128px;
+    bottom: auto;
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+/* Stretch Alphabet Picker */
+.layout-mobile .alphaPicker {
+    bottom: 2em;
+}
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile .alphaPicker {
+        bottom: 1em;
+    }
+}
+
+/* Alphabet Picker: Buttons */
+.alphaPickerButton {
+    height: 1.6em;
+}
+@media (pointer: fine) {
+    .alphaPickerButton:hover {
+        background: var(--accent60) !important;
+        color: white !important;
+    }
+}
+.alphaPickerButton:focus,
+.alphaPickerButton:active {
+    transform: none !important;
+    transition: none !important;
+    background: var(--accent80) !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+/*
+===========================================================================
+   Library Pages: Sorting & Filter
+===========================================================================
+*/
+
+/* Filter & Sorting Header */
+.selfBackdropPage h1.parentName.focuscontainer-x {
+    font-size: 150%;
+}
+
+/* Filter & Sorting Header: Item Count */
+.listPaging > span {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/* Filter Indicator */
+.filterIndicator {
+    color: black;
+}
+
+/* Sorting Menu: Radio Button spacing */
+.radio-label-block {
+    margin: 0 !important;
+    padding: .5em 1em !important;
+    cursor: pointer;
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .pageTabContent > .focuscontainer-x {
+    height: 3em;
+    margin-bottom: 1em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+}
+
+.layout-desktop .itemsViewSettingsContainer {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-tv .pageTabContent>.focuscontainer-x {
+    border-radius: var(--rounding-system) !important;
+    padding: 0.05em;
+    min-height: 2em;
+    margin-bottom: 1em
+}
+.layout-tv .itemsViewSettingsContainer {
+    border-radius: var(--rounding-system) !important;
+    padding: 0.05em;
+    min-height: 2em;
+}
+
+.layout-tv #episodesTab > .focuscontainer-x,
+.layout-tv #songsTab > .focuscontainer-x {
+    margin-bottom: 1.5em;
+}
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light {
+    transform: none !important;
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Filter & Sorting Header: Buttons */
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
+    margin: 0 .2em;
+}
+
+/* Filter & Sorting Header */
+.layout-mobile .itemsViewSettingsContainer,
+.layout-mobile .pageTabContent > .focuscontainer-x {
+    padding: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.layout-mobile .padded-left.padded-right .itemsViewSettingsContainer {
+    margin-left: -3.3%;
+    margin-right: -3.3%;
+}
+
+.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right,
+.layout-mobile .padded-right-withalphapicker .itemsViewSettingsContainer {
+    padding: 0;
+    margin-left: -3.3%;
+    margin-right: -6.6%;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right {
+    background-color: var(--bgwhite10);
+    height: 3em;
+    margin-top: 1em;
+}
+
+/*
+===========================================================================
+   Library Page: Multi-Select
+===========================================================================
+*/
+
+/* Multi-Select Dialog */
+.itemSelectionPanel {
+    border-color: #0000 !important;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.selectionCommandsPanel {
+    top: 3.9em;
+    padding: .5em;
+}
+.itemSelectionCount {
+    color: var(--accent100) !important;
+}
+
+/* Checkboxes & Indicators */
+.multiSelectCheckboxOutline {
+    margin: .5em !important;
+}
+.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
+    box-shadow: var(--cardglow);
+    border-color: var(--accent60) !important;
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .selectionCommandsPanel {
+    top: 7.65em;
+    left:  auto;
+    right: 4.3em;
+    max-width: 10em;
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+
+/* Multi-Select Dialog Buttons */
+.layout-desktop .itemSelectionCount {
+    font-size: 140%;
+    font-weight: 600;
+    order: 1;
+    margin: 0em .5em;
+    margin-bottom: .1em;
+    min-width: 1em;
+    text-align: center;
+    cursor: default;
+}
+.layout-desktop .btnSelectionPanelOptions {
+    order: 2;
+    margin: 0em .5em;
+    min-width: 1em;
+}
+.layout-desktop .btnCloseSelectionPanel {
+    order: 3;
+    margin: 0em .5em;
+    min-width: 1em;
+}
+
+/*
+===========================================================================
+   Media Pages
+===========================================================================
+*/
+
+/* Move Content up */
+.detailPageWrapperContainer {
+    padding-top: 1em;
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Detail-Ribbon: Fix narrow Desktop layout */
+.layout-desktop .detailPageWrapperContainer {
+    position: static !important;
+}
+.layout-desktop .detailPageWrapperContainer {
+    margin-top: 0 !important;
+}
+
+/* Increase Season Title Text */
+.layout-desktop .selfBackdropPage .itemName {
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Hide some Elements */
+.layout-tv .itemExternalLinks,
+.layout-tv .detailsGroupItem.directorsGroup,
+.layout-tv .detailsGroupItem.writersGroup,
+.layout-tv .detailsGroupItem.studiosGroup,
+.layout-tv .hide+.detailPageWrapperContainer .itemName,
+.layout-tv .endsAt,
+.layout-tv .itemTags {
+    display: none !important;
+}
+
+/* Increase Season Title Text */
+.layout-tv .selfBackdropPage .itemName {
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Center Content */
+.layout-mobile .verticalSection .itemsContainer.vertical-wrap {
+    justify-content: center;
+    padding-right: 0em;
+}
+
+/*
+===========================================================================
+   Media Pages: Detail-Ribbon
+===========================================================================
+*/
+
+/* Detail-Ribbon */
+.detailRibbon {
+    padding-right: 2% !important;
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .detailRibbon {
+    height: 9em;
+    margin-top: -9em;
+}
+
+/* Card in Detail Ribbon */
+.layout-desktop .detailImageContainer .card {
+    left: 3vw;
+    width: 27vw;
+    max-width: 30vw;
+}
+
+/* Info Container */
+.layout-desktop .infoWrapper {
+    padding-top: 0.25em;
+}
+
+/* Media Infos */
+.layout-desktop .itemMiscInfo {
+    font-size: 125%;
+    margin-top: 0.25em;
+    margin-bottom: 0.6em;
+}
+
+/* Buttons */
+.layout-desktop .mainDetailButtons {
+    margin-left: 1em;
+}
+
+/* Some Small Screen fixes */
+@media all and (max-width: 75em) {
+    .layout-desktop .detailLogo {
+        display: block;
+    }
+    .layout-desktop .detailImageContainer {
+        display: flex;
+        position: relative;
+        left: 0%;
+        bottom: 37%;
+        top: -28%;
+        box-shadow: none !important;
+        flex-shrink: 0;
+    }
+    .layout-desktop .detailRibbon {
+        flex-direction: column;
+        height: 14em;
+        padding-left: 30vw !important;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        left: 0em;
+    }
+    .layout-desktop .infoWrapper {
+        margin-top: .5em;
+    }
+    .layout-desktop .mainDetailButtons {
+        margin-left: 2vw;
+    }
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Media Infos */
+.layout-tv .itemMiscInfo {
+    font-size: 125%;
+    margin-top: 0.25em;
+    margin-bottom: 0.6em;
+}
+
+/* Buttons */
+.layout-tv .mainDetailButtons {
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-mobile .detailRibbon {
+    margin-top: -1em !important;
+    padding-bottom: 1.25em;
+    padding-right: 3% !important;
+    padding-left: 5%;
+}
+
+/* Card in Detail Ribbon */
+.layout-mobile .detailImageContainer .card.backdropCard {
+    top: 1em;
+    max-width: 33vw;
+}
+
+/* Info Container */
+.layout-mobile .infoWrapper {
+    padding-bottom: 0.15em;
+    padding-left: 38% !important;
+}
+
+/* Buttons */
+.layout-mobile .mainDetailButtons .detailButton {
+    margin-right: .5em !important;
+    margin-left: .5em !important;
+}
+
+/*
+===========================================================================
+   Media Pages: Content
+===========================================================================
+*/
+
+/* Media Details > Track Select */
+.detailTrackSelect {
+    padding: .35em 1.9em .35em .35em !important;
+}
+
+/* Media Description Text */
+.overview.detail-clamp-text {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Media Description > Director & Studio */
+.itemDetailsGroup {
+    margin-top: 0.5em;
+    padding-bottom: 1em;
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Primary Container */
+.layout-desktop .detailPagePrimaryContent {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1%;
+}
+
+/* Secondary Container */
+.layout-desktop .detailPageSecondaryContainer {
+    padding-left: 1.5vw !important;
+    padding-right: 1.5vw !important;
+}
+
+/* Secondary Container: Content */
+.layout-desktop .detailPageSecondaryContainer .detailPageContent {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Primary Container */
+.layout-tv .detailPagePrimaryContent  {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-right: 0;
+}
+.layout-tv [dir=ltr] .detailRibbon,
+.layout-tv .detailPagePrimaryContent,
+.layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
+    padding-left: 29vw;
+}
+
+/* Tracks & Subtitles */
+.layout-tv .trackSelections {
+    max-width: 100%;
+    width: 65%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.layout-tv .trackSelections .selectLabelFocused {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+/* Secondary Container */
+.layout-tv .detailPageSecondaryContainer {
+    padding-top: 2em
+}
+.layout-tv .detailPageSecondaryContainer .detailPageContent  {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Primary Container */
+.layout-mobile .detailPagePrimaryContent {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+.layout-mobile .detailPagePrimaryContent .trackSelections,
+.layout-mobile .detailPagePrimaryContent .detailSectionContent,
+.layout-mobile .detailPagePrimaryContent .itemDetailsGroup {
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+}
+
+/* Tracks & Subtitles */
+.layout-mobile .trackSelections {
+    padding-top: 1em;
+}
+
+/* Secondary Container */
+.layout-mobile .detailPageSecondaryContainer {
+    padding-top: 0em !important;
+}
+.layout-mobile .detailPageSecondaryContainer .detailPageContent {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+
+/*
+===========================================================================
+   Media Pages: Image Search
+===========================================================================
+*/
+
+/* ListItem Color on Hover */
+.paperList .listItem:hover {
+    color: var(--accent100);
+}
+
+/* Cards */
+#backdropsContainer .imageEditorCard > .cardBox,
+#imagesContainer .imageEditorCard > .cardBox {
+    background-color: rgb(0 0 0 / 0%) !important;
+    border: var(--buttonborder);
+}
+.availableImagesList .imageEditorCard > .cardBox {
+    background-color: rgb(0 0 0) !important;
+    border: var(--buttonborder);
+}
+
+.layout-tv .availableImagesList .portraitCard .cardBox {
+    margin: 1em .75em !important;
+}
+
+/* Align card image */
+.dialogContentInner .portraitCard .cardContent .cardImageContainer {
+    top: -.6em;
+}
+
+/* Card Footer */
+#backdropsContainer .imageEditorCard .cardFooter,
+#imagesContainer .imageEditorCard .cardFooter {
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+.availableImagesList .imageEditorCard .cardFooter {
+    border-top: var(--buttonborder);
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+
+/* Buttons */
+#backdropsContainer .paper-icon-button-light {
+    margin: .1em;
+}
+
+/*
+===========================================================================
+   Settings Page
+===========================================================================
+*/
+
+/* Page */
+#myPreferencesMenuPage {
+    justify-content: center;
+    display: flex;
+    padding-top: 5em !important;
+}
+
+/* Section Titles */
+#myPreferencesMenuPage .sectionTitle {
+    padding-left: 3em !important;
+}
+.settingsContainer .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle,
+#controlsPreferencesPage .sectionTitle {
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: 1.4em;
+    margin-left: -1.5em;
+    margin-right: -1.5em;
+    border-radius: var(--rounding-system);
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Content */
+.layout-desktop #myPreferencesMenuPage .readOnlyContent {
+    background-color: var(--itembg);
+    padding: 1em;
+    border-radius: var(--rounding-media);
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Content */
+.layout-tv #myPreferencesMenuPage .readOnlyContent {
+    background-color: var(--itembg);
+    padding: 1em;
+    border-radius: var(--rounding-media);
+}
+
+/* Section Titles */
+.layout-tv .settingsContainer .sectionTitle,
+.layout-tv .homeScreenSettingsContainer .sectionTitle,
+.layout-tv #controlsPreferencesPage .sectionTitle {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .5em;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: 0em;
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Content */
+.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
+    width: 100%;
+    text-align: center;
+}
+.layout-mobile .userPreferencesPage .settingsContainer,
+.layout-mobile .homeScreenSettingsContainer,
+.layout-mobile #controlsPreferencesPage .padded-left {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+}
+
+/* Section Titles */
+.layout-mobile #myPreferencesMenuPage .sectionTitle {
+    padding-left: 0em !important;
+    font-weight: 600;
+} 
+.layout-mobile .settingsContainer .sectionTitle,
+.layout-mobile .homeScreenSettingsContainer .sectionTitle,
+.layout-mobile #controlsPreferencesPage .sectionTitle {
+    margin-left: -.5em;
+    margin-right: -.5em;
+    padding-left: .5em;
+}
+
+/* List Items */
+.layout-mobile .userPreferencesPage .listItem-border {
+    border: var(--buttonborder) !important;
+    margin-bottom: .6em !important;
+    background: var(--bgdark40) !important;
+}
+.layout-mobile .userPreferencesPage .listItem {
+    padding-right: 1.5em !important;
+} 
+.layout-mobile .userPreferencesPage .listItemIcon {
+    width: 2% !important;
+    text-align: left;
+    margin-right: 0;
+    flex: auto;
+    padding-right: .5em;
+}
+.layout-mobile .userPreferencesPage .listItemBody {
+    flex: auto;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    text-align: left;
+}
+
+/*
+===========================================================================
+   Settings: Individual Sites
+===========================================================================
+
+/* Settings Pages: Center content and Text */
+#userProfilePage,
+#quickConnectPreferencesPage {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    padding-top: 7em !important;
+}
+
+/* Settings Pages: Move content up */
+#quickConnectPreferencesPage,
+#displayPreferencesPage,
+#homeScreenPreferencesPage,
+#languagePreferencesPage,
+#searchPage {
+    padding-top: 5em !important;
+}
+
+/* Preferences Pages */
+#homeScreenPreferencesPage .verticalSection-extrabottompadding,
+#languagePreferencesPage .verticalSection-extrabottompadding {
+    margin-bottom: 0em;
+}
+#languagePreferencesPage .selectContainer,
+#displayPreferencesPage .inputContainer {
+    margin-bottom: 1em;
+}
+#displayPreferencesPage .checkboxContainer,
+#displayPreferencesPage .selectContainer, 
+#homeScreenPreferencesPage .selectContainer,
+#homeScreenPreferencesPage .checkboxContainer,
+#homeScreenPreferencesPage .checkboxListContainer,
+#languagePreferencesPage .checkboxContainer {
+    margin-bottom: 1.25em;
+}
+#displayPreferencesPage .btnSave,
+#homeScreenPreferencesPage .btnSave,
+#languagePreferencesPage .btnSave {
+    margin-top: 2em;
+}
+
+#searchPage .searchFieldsInner {
+    padding-bottom: 1em;
+}
+
+/* Section Titles */
+#searchPage .sectionTitle {
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.layout-mobile #episodesTab .itemsContainer {
+    margin-bottom: 1em !important;
+}
+
+.layout-mobile #studiosTab .itemsContainer {
+    margin-top: 1em !important;
+}
+
+
+/* Settings Pages: User Profile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* User Profile: Form Alignment */
+.updatePasswordForm br {
+    display: none;
+}
+.updatePasswordForm .inputContainer {
+    margin-bottom: 1em;
+}
+.updatePasswordForm .emby-button.block {
+    margin-top: 2em;
+}
+
+/* User Profile: Username bold */
+h2.username {
+    margin-top: 0px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Subtitles: Preview-Box */
+.subtitleappearance-preview {
+    background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+/*
 ===========================================================================
    Login Page
 ===========================================================================
@@ -51,738 +1110,4 @@
 
 #loginPage .card:hover .cardScalable {
     box-shadow: var(--cardglow) !important;
-}
-
-/*
-============================================================================
-   Home Page
-============================================================================
-*/
-
-/* Home Page */
-.layout-mobile .homePage {
-    padding-left: 0;
-    padding-right: 0;
-}
-@media(min-width: 48.125em) {
-    .layout-mobile .homePage {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-}
-@media(min-width: 75em)  {
-    .layout-mobile .homePage {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-}
-
-/* Home Page: Slides
---------------------------------------------------------------------------*/
-
-#slides-container .backdrop-container {
-    height: 90%;
-}
-
-/* Slides: Disable in TV layout (they don't work well with a remote) */
-.layout-tv #slides-container {
-    display: none !important;
-}
-
-/* Slides: Pause Button alignment */
-.layout-desktop .pause-button {
-    top: 5em;
-    right: 2em;
-}
-.layout-desktop .volume-toggle {
-    top: 5em;
-    right: 5em;
-}
-.pause-button i,
-.volume-toggle i {
-    font-size: 2rem !important;
-}
-
-/* Slides: Font Size */
-@media(min-width: 400px) {
-    .slide .genre,
-    .slide .info-container,
-    .slide .plot-container {
-        font-size: 120%;
-    }
-}
-
-/* Home Page: Home Sections
---------------------------------------------------------------------------*/
-
-/* Home Sections Container */
-.layout-tv .homeSectionsContainer {
-    top: 0;
-}
-.layout-desktop .homeSectionsContainer {
-    top: 64.5vh;
-}
-@media(max-width: 48.125em) {
-    .layout-mobile .homeSectionsContainer {
-        top: 68vh;
-    }
-}
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .homeSectionsContainer {
-        top: 61vh;
-    }
-}
-
-/*
-===========================================================================
-   Library Page
-===========================================================================
-*/
-
-.layout-desktop .libraryPage .padded-right-withalphapicker {
-    padding-left: 1.5vw;
-    padding-right: 3vw;
-}
-
-
-/*
-.layout-desktop #genresTab .itemsContainer {
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-}*/
-/*
-.layout-desktop #suggestionsTab .itemsContainer {
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-}*/
-
-
-/*  Layout TV
---------------------------------------------------------------------------*/
-
-/* Library Pages: Alignment */
-.layout-tv .libraryPage {
-    padding-top: 5.5em !important;
-    padding-left: 3vw;
-    padding-right: 3vw;
-}
-@media(min-width: 75em) {
-    .layout-tv .libraryPage {
-        padding-left: 2vw;
-        padding-right: 2vw;
-    }
-}
-
-/* Library Pages with Alphapicker - TV */
-.layout-tv .libraryPage .padded-right-withalphapicker {
-    padding-left: 2vw;
-    padding-right: 3vw;
-}
-@media(min-width: 50em) {
-    .layout-tv .libraryPage .padded-right-withalphapicker {
-        padding-left: 0;
-        padding-right: 1vw;
-    }
-}
-
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-/* Library Pages: Item backdrop alignment - Mobile */
-@media (min-width: 50em) {
-    .layout-mobile .itemBackdrop {
-        margin-top: 3.9rem;
-    }
-}
-
-/* Library Pages with Alphapicker - Mobile */
-.layout-mobile .libraryPage .padded-right-withalphapicker {
-    padding-left: 2vw;
-    padding-right: 6vw;
-}
-@media(min-width: 48.125em) {
-    .layout-mobile .libraryPage .padded-right-withalphapicker {
-        padding-left: 2vw;
-        padding-right: 4vw;
-    }
-}
-
-/*
-===========================================================================
-   Library Page: Alphabet Picker
-===========================================================================
-*/
-
-/* Library Pages: Alphabet Picker */
-.alphaPickerButton {
-    height: 1.6em;
-}
-@media (pointer: fine) {
-    .alphaPickerButton:hover {
-        background: var(--accent60) !important;
-        color: white !important;
-    }
-}
-.alphaPickerButton:focus,
-.alphaPickerButton:active {
-    transform: none !important;
-    transition: none !important;
-    background: var(--accent80) !important;
-    color: white !important;
-    font-weight: 600;
-}
-
-/* Stretch Alphabet Picker - Mobile */
-.layout-mobile .alphaPicker {
-    bottom: 7em;
-}
-
-/*
-===========================================================================
-   Library Page: Sorting & Filter
-===========================================================================
-*/
-
-/* Filter & Sorting Header */
-.pageTabContent>.focuscontainer-x,
-.itemsViewSettingsContainer {padding: 0.25em;margin-bottom: 1em;}
-
-
-.layout-desktop .paging {
-    padding: 0.25em;
-}
-
-.layout-tv .pageTabContent>.focuscontainer-x,
-.layout-tv .itemsViewSettingsContainer {
-    margin-left: -1vw;
-    margin-right: -.5vw;
-}
-
-/* Filter & Sorting Header: Buttons */
-.pageTabContent .focuscontainer-x .paper-icon-button-light {
-    transform: none !important;
-}
-.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
-    margin: 0 .2em;
-}
-
-/* Filter & Sorting Header: Item Count */
-.listPaging > span {
-    margin-left: .5em;
-    margin-right: .5em;
-}
-
-/* Filter Indicator */
-.filterIndicator {
-    color: black;
-}
-
-/* Sorting Menu: Radio Button spacing */
-.radio-label-block {
-    margin: 0 !important;
-    padding: .5em 1em !important;
-    cursor: pointer;
-}
-
-/*
-===========================================================================
-   Library Page: Multi-Select
-===========================================================================
-*/
-
-/* Multi-Select Dialog */
-.selectionCommandsPanel {
-    top: 3.9em;
-    padding: .5em;
-}
-.itemSelectionCount {
-    color: var(--accent100) !important;
-}
-.layout-desktop .selectionCommandsPanel {
-    top: 7.65em;
-    left:  auto;
-    right: 4.3em;
-    max-width: 10em;
-    margin: 0 auto;
-    padding: 0 .5em;
-}
-
-/* Multi-Select Dialog Buttons */
-.layout-desktop .itemSelectionCount {
-    font-size: 140%;
-    font-weight: 600;
-    order: 1;
-    margin: 0em .5em;
-    margin-bottom: .1em;
-    min-width: 1em;
-    text-align: center;
-    cursor: default;
-}
-.layout-desktop .btnSelectionPanelOptions {
-    order: 2;
-    margin: 0em .5em;
-    min-width: 1em;
-}
-.layout-desktop .btnCloseSelectionPanel {
-    order: 3;
-    margin: 0em .5em;
-    min-width: 1em;
-}
-
-.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
-    box-shadow: var(--cardglow);
-    border-color: var(--accent60) !important;
-}
-
-/* Card Indicators: Multi Select Checkboxes */
-.multiSelectCheckboxOutline {
-    margin: .5em !important;
-}
-
-.itemSelectionPanel {
-    border-color: #0000 !important;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/*
-===========================================================================
-   Media Pages
-===========================================================================
-*/
-
-/* Media Pages: Hide some Elements (TV) */
-.layout-tv .itemExternalLinks,
-.layout-tv .detailsGroupItem.directorsGroup,
-.layout-tv .detailsGroupItem.writersGroup,
-.layout-tv .detailsGroupItem.studiosGroup,
-.layout-tv .hide+.detailPageWrapperContainer .itemName,
-.layout-tv .endsAt,
-.layout-tv .itemTags {
-    display: none !important;
-}
-
-/* Media Pages: Move Content up */
-.detailPageWrapperContainer {
-    padding-top: 1em;
-}
-/* Detail-Ribbon: Fix narrow Desktop layout */
-.layout-desktop .detailPageWrapperContainer {
-    position: static !important;
-}
-.layout-desktop .detailPageWrapperContainer {
-    margin-top: 0 !important;
-}
-
-
-
-
-
-/* Media Pages: Increase Season Title Text */
-.layout-tv .selfBackdropPage .itemName,
-.layout-desktop .selfBackdropPage .itemName {
-    font-size: 150%;
-    color: rgba(255, 255, 255, 0.8);
-}
-.selfBackdropPage h1.parentName.focuscontainer-x {
-    font-size: 150%;
-}
-
-/* Media Pages: Center Content (Mobile) */
-.layout-mobile .verticalSection .itemsContainer.vertical-wrap {
-    justify-content: center;
-    padding-right: 0em;
-}
-
-/*
-===========================================================================
-   Media Pages: Detail-Ribbon
-===========================================================================
-*/
-
-/* Detail-Ribbon */
-.detailRibbon {
-    padding-right: 2% !important;
-}
-.layout-desktop .detailRibbon {
-    height: 9em;
-    margin-top: -9em;
-}
-.layout-mobile .detailRibbon {
-    margin-top: -1em !important;
-    padding-bottom: 1.25em;
-    padding-right: 3% !important;
-    padding-left: 5%;
-}
-
-
-.layout-mobile .detailImageContainer .card.backdropCard {
-    top: 1em;
-    max-width: 33vw;
-}
-
-
-.layout-desktop .detailImageContainer .card {
-    left: 3vw;
-    width: 27vw;
-    max-width: 30vw;
-}
-
-/* Detail-Ribbon: Info Container */
-.layout-mobile .infoWrapper {
-    padding-bottom: 0.15em;
-}
-.layout-desktop .infoWrapper {
-    padding-top: 0.25em;
-}
-
-/* Detail-Ribbon: Media Infos */
-.layout-tv .itemMiscInfo,
-.layout-desktop .itemMiscInfo {
-    font-size: 125%;
-    margin-top: 0.25em;
-    margin-bottom: 0.6em;
-}
-
-/* Detail-Ribbon: Buttons */
-.layout-desktop .mainDetailButtons {
-    margin-left: 1em;
-}
-.layout-tv .mainDetailButtons {
-    margin-top: 1.5em;
-    margin-left: .5em;
-}
-.layout-mobile .mainDetailButtons .detailButton {
-    margin-right: .5em !important;
-    margin-left: .5em !important;
-}
-
-@media all and (max-width: 75em) {
-    .layout-desktop .detailLogo {
-        display: block;
-    }
-    .layout-desktop .detailImageContainer {
-        display: flex;
-        position: relative;
-        left: 0%;
-        bottom: 37%;
-        top: -28%;
-        box-shadow: none !important;
-        flex-shrink: 0;
-    }
-    .layout-desktop .detailRibbon {
-        flex-direction: column;
-        height: 14em;
-        padding-left: 30vw !important;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        left: 0em;
-    }
-    .layout-desktop .infoWrapper {
-        margin-top: .5em;
-    }
-    .layout-desktop .mainDetailButtons {
-        margin-left: 2vw;
-    }
-}
-
-/*
-===========================================================================
-   Media Pages: Content
-===========================================================================
-*/
-
-/* Media Details: Track Select */
-.detailTrackSelect {
-    padding: .35em 1.9em .35em .35em !important;
-}
-
-/* Media Description: Text */
-.overview.detail-clamp-text {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-/* Media Description: Director & Studio */
-.itemDetailsGroup {
-    margin-top: 0.5em;
-    padding-bottom: 1em;
-}
-
-/* Layout Desktop
---------------------------------------------------------------------------*/
-
-/* Primary Container */
-.layout-desktop .detailPagePrimaryContent {
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-/* Secondary Container */
-.layout-desktop .detailPageSecondaryContainer {
-    padding-left: 1.5vw !important;
-    padding-right: 1.5vw !important;
-}
-.layout-desktop .detailPageSecondaryContainer .detailPageContent {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Layout TV
---------------------------------------------------------------------------*/
-
-/* Primary Container */
-.layout-tv .detailPagePrimaryContent  {
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-right: 0;
-}
-.layout-tv [dir=ltr] .detailRibbon,
-.layout-tv .detailPagePrimaryContent,
-.layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
-    padding-left: 29vw;
-}
-
-/* Tracks & Subtitles */
-.layout-tv .trackSelections {
-    max-width: 100%;
-    width: 65%;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-.layout-tv .trackSelections .selectLabelFocused {
-    color: #fff !important;
-    font-weight: 600 !important;
-}
-
-/* Secondary Container */
-.layout-tv .detailPageSecondaryContainer {
-    padding-top: 2em
-}
-.layout-tv .detailPageSecondaryContainer .detailPageContent  {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-/* Primary Container */
-.layout-mobile .detailPagePrimaryContent {
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.layout-mobile .detailPagePrimaryContent .trackSelections,
-.layout-mobile .detailPagePrimaryContent .detailSectionContent,
-.layout-mobile .detailPagePrimaryContent .itemDetailsGroup {
-    padding-left: 2vw !important;
-    padding-right: 2vw !important;
-}
-
-/* Tracks & Subtitles */
-.layout-mobile .trackSelections {
-    padding-top: 1em;
-}
-
-/* Secondary Container */
-.layout-mobile .detailPageSecondaryContainer {
-    padding-top: 0em !important;
-}
-.layout-mobile .detailPageSecondaryContainer .detailPageContent {
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-
-
-/*
-===========================================================================
-   Media Pages: Image Search
-===========================================================================
-*/
-
-/* ListItem Color on Hover */
-.paperList .listItem:hover {
-    color: var(--accent100);
-}
-
-/* Card Backgroiund: Grey */
-.dialogContentInner .card .cardBox {
-    background-color: rgb(32, 32, 32) !important;
-}
-
-/* Align card image */
-.dialogContentInner .portraitCard .cardContent .cardImageContainer {
-    top: -.6em;
-}
-
-/*
-===========================================================================
-   Settings Page
-===========================================================================
-*/
-
-/* Settings: Center content */
-#myPreferencesMenuPage {
-    justify-content: center;
-    display: flex;
-}
-
-/* Settings: Titles */
-.settingsContainer .sectionTitle,
-.homeScreenSettingsContainer .sectionTitle,
-#controlsPreferencesPage .sectionTitle {
-    padding-top: .3em;
-    padding-bottom: .3em;
-    padding-left: 1.4em;
-    margin-left: -1.5em;
-    margin-right: -1.5em;
-}
-
-/* Subtitles: Preview-Box */
-.subtitleappearance-preview {
-    background: linear-gradient(140deg,var(--accent100),#111) !important;
-}
-
-/* Layout Mobile
---------------------------------------------------------------------------*/
-
-.layout-mobile .settingsContainer .sectionTitle,
-.layout-mobile .homeScreenSettingsContainer .sectionTitle,
-.layout-mobile #controlsPreferencesPage .sectionTitle {
-    margin-left: -.5em;
-    margin-right: -.5em;
-    padding-left: .5em;
-}
-
-.layout-mobile .userPreferencesPage .settingsContainer,
-.layout-mobile .homeScreenSettingsContainer,
-.layout-mobile #controlsPreferencesPage .padded-left {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-}
-.layout-mobile .userPreferencesPage .listItem-border {
-    border: var(--buttonborder) !important;
-    margin-bottom: .6em !important;
-    background: var(--bgdark40) !important;
-}
-.layout-mobile #myPreferencesMenuPage .sectionTitle {
-    padding-left: 0em !important;
-    font-weight: 600;
-} 
-.layout-mobile .userPreferencesPage .listItem {
-    padding-right: 1.5em !important;
-} 
-.layout-mobile .userPreferencesPage .listItemIcon {
-    width: 2% !important;
-    text-align: left;
-    margin-right: 0;
-    flex: auto;
-    padding-right: .5em;
-}
-.layout-mobile .userPreferencesPage .listItemBody {
-    flex: auto;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: .5em;
-    text-align: left;
-}
-
-.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
-    width: 100%;
-    text-align: center;
-}
-
-/* Settings Pages: Individual Sites
---------------------------------------------------------------------------*/
-
-/* Settings Pages: Center content and Text */
-#userProfilePage,
-#quickConnectPreferencesPage {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
-
-/* Settings Pages: Move content up */
-#myPreferencesMenuPage,
-#quickConnectPreferencesPage,
-#displayPreferencesPage,
-#homeScreenPreferencesPage,
-#languagePreferencesPage,
-#searchPage {
-    padding-top: 5em !important;
-}
-
-/* Preferences Pages */
-#homeScreenPreferencesPage .verticalSection-extrabottompadding,
-#languagePreferencesPage .verticalSection-extrabottompadding {
-    margin-bottom: 0em;
-}
-#languagePreferencesPage .selectContainer,
-#displayPreferencesPage .inputContainer {
-    margin-bottom: 1em;
-}
-#displayPreferencesPage .checkboxContainer,
-#displayPreferencesPage .selectContainer, 
-#homeScreenPreferencesPage .selectContainer,
-#homeScreenPreferencesPage .checkboxContainer,
-#homeScreenPreferencesPage .checkboxListContainer,
-#languagePreferencesPage .checkboxContainer {
-    margin-bottom: 1.25em;
-}
-#displayPreferencesPage .btnSave,
-#homeScreenPreferencesPage .btnSave,
-#languagePreferencesPage .btnSave {
-    margin-top: 2em;
-}
-
-#searchPage .searchFieldsInner {
-    padding-bottom: 1em;
-}
-
-/* Section Titles */
-#searchPage .sectionTitle {
-    padding-top: .3em;
-    padding-bottom: .3em;
-    padding-left: 0em;
-    padding-right: 0em;
-    margin-top: .5em;
-    margin-bottom: .5em;
-    text-align: center;
-    font-weight: 600;
-}
-
-#myPreferencesMenuPage .sectionTitle {
-    padding-left: 3em !important;
-}
-
-.layout-desktop #myPreferencesMenuPage .readOnlyContent,
-.layout-tv #myPreferencesMenuPage .readOnlyContent {
-    background-color: var(--itembg);
-    padding: 1em;
-    border-radius: var(--rounding-media);
-}
-
-
-/* Settings Pages: User Profile
---------------------------------------------------------------------------*/
-
-/* User Profile: Form Alignment */
-.updatePasswordForm br {
-    display: none;
-}
-.updatePasswordForm .inputContainer {
-    margin-bottom: 1em;
-}
-.updatePasswordForm .emby-button.block {
-    margin-top: 2em;
-}
-
-/* User Profile: Username bold */
-h2.username {
-    margin-top: 0px;
-    font-weight: 600;
-    color: #fff;
 }
