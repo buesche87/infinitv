@@ -118,13 +118,13 @@ Give it your style by changing `:root` values:
 <table>
   <tr>
      <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-home.png"></td>
-     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-drawer.png"></td>
-     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-tvshows.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-library.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-settings.png"></td>
   </tr>
   <tr>
-     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-show.png"></td>
-     <td></td>
-     <td></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-series.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-episodes.png"></td>
+     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/mobile-movie.png"></td>
   </tr>
 </table>
 
