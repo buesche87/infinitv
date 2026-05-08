@@ -77,7 +77,7 @@ Give it your style by changing `:root` values:
 - Set `display mode` to `TV` (htpc only)
 - Use the home sections plugin from [IAmParadox27/jellyfin-plugin-home-sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) (optional)
 
-# TV-Mode Screenshots
+# TV Layout
 
 <table>
   <tr>
@@ -95,7 +95,7 @@ Give it your style by changing `:root` values:
 </table>
 
 
-# Desktop Screenshots
+# Desktop Layout
 
 <table>
   <tr>
@@ -113,7 +113,7 @@ Give it your style by changing `:root` values:
 </table>
 
 
-# Mobile Screenshots
+# Mobile Layout
 
 <table>
   <tr>
