@@ -524,6 +524,13 @@
     padding-top: 1em;
 }
 
+/* Content Background without Backdrops */
+.noBackdropTransparency .detailPagePrimaryContainer, 
+.noBackdropTransparency .detailPageSecondaryContainer {
+    background: rgba(0, 0, 0, var(--itemopacity)) !important;
+}
+
+
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
