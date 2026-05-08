@@ -82,32 +82,45 @@
 
 /* Container */
 .layout-desktop .sectionTitleContainer-cards {
-    padding-left: 0;
+    /* padding-left: 0; */
     text-align: center;
-    padding: .6em;
+    padding: 10px;
 }
+
+.layout-desktop .detailPagePrimaryContent .detailVerticalSection .sectionTitle-cards {
+    margin-left: -31.45vw;
+    padding-left: 31.45vw;
+}
+
+.layout-desktop .detailPagePrimaryContainer #listChildrenCollapsible .sectionTitle-cards {
+    padding-left: 0;
+    margin-left: -.5vw;
+}
+
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    padding-left: 0;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: 10px 0;
     text-align: center;
 }
-.layout-desktop .detailPagePrimaryContainer div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+/* Titles */
+.layout-desktop .detailPagePrimaryContainer .sectionTitle {
+    /* text-align: left !important; */
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
 
-/* Titles */
-.layout-desktop .detailPagePrimaryContainer .sectionTitle {
+.layout-desktop  .detailPagePrimaryContainer .nextUpSection .sectionTitle {
     text-align: left !important;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
 }
+
+
+
+
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
     border-radius: 0;
 }
 .layout-desktop h2.sectionTitle {
     font-weight: 500;
+    /* font-size: 1.5em; */
 } 
 .layout-desktop #tvRecommendedPage .sectionTitle,
 .layout-desktop #moviesPage .sectionTitle,
@@ -117,8 +130,11 @@
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: 0.4em;
-    padding-bottom: 0em;
+    padding: 0.4em;
+    /* padding-bottom: 0em; */
+    /* display: flex; */
+    /* margin-top: auto; */
+    /* margin: .5em; */
 }
 
 /* Layout Mobile

@@ -714,7 +714,7 @@
 /* Media Description > Director & Studio */
 .itemDetailsGroup {
     margin-top: 0.5em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
 }
 
 /* Layout Desktop
@@ -722,15 +722,37 @@
 
 /* Primary Container */
 .layout-desktop .detailPagePrimaryContent {
-    padding-top: 1em;
+    padding-top: 0em;
     padding-bottom: 1em;
-    padding-right: 1%;
+    padding-right: 1.5vw;
 }
+
+.layout-desktop .itemDetailsGroup {
+    margin-bottom: 2em;
+    margin-top: .5em;
+}
+
+.layout-desktop .itemTags {
+    padding: 0;
+    margin: 1em 0 !important;
+    /* justify-content: end; */
+    /* display: flex; */
+}
+
+.layout-desktop .itemExternalLinks {
+    margin: 1em 0 .75em 0 !important;
+}
+
+.layout-desktop .itemTags > .button-link {
+    margin-left: .25em;
+}
+
+
 
 /* Secondary Container */
 .layout-desktop .detailPageSecondaryContainer {
-    padding-left: 1.5vw !important;
-    padding-right: 1.5vw !important;
+    padding: 0 1.5vw !important;
+    /* padding-right: 1.5vw !important; */
 }
 
 /* Secondary Container: Content */
