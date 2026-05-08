@@ -260,6 +260,11 @@
     padding-top: 1em;
 }
 
+.layout-mobile .itemBackdrop {
+    margin-top: 0;
+}
+
+
 /* Library Pages: Content with Alphapicker */
 .layout-mobile .libraryPage .padded-right-withalphapicker {
     padding-left: 2vw;
