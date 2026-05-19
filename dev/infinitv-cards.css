@@ -172,7 +172,7 @@
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
-    
+
 }
 
 /* Large Image List Item: Align Body */
@@ -185,9 +185,9 @@
 
 /* Layout Desktop - Large Image List Items
 --------------------------------------------------------------------------*/
-/* 
+/*
 .layout-desktop .listItem.listItem-largeImage .listItemImage-large {
-    border-right: var(--buttonborder); 
+    border-right: var(--buttonborder);
 }
 */
 
@@ -419,7 +419,7 @@
 ===========================================================================
    Cards: Text & Buttons
 ===========================================================================
-* > needs plugin "home section containers" */ 
+* > needs plugin "home section containers" */
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,

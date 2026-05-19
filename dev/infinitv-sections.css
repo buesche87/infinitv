@@ -122,7 +122,7 @@
 }
 .layout-desktop h2.sectionTitle {
     font-weight: 500;
-} 
+}
 
 .layout-desktop .settingsContainer .sectionTitle {
     padding-left: .75em;
@@ -154,13 +154,13 @@
     padding: 0;
 }
 @media(max-width: 48.125em) {
-    .layout-mobile .homePage .sectionTitleContainer-cards, 
+    .layout-mobile .homePage .sectionTitleContainer-cards,
     .layout-mobile .homePage .sectionTitle-cards,
-    .layout-mobile #tvRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #tvRecommendedPage .sectionTitleContainer-cards,
     .layout-mobile #tvRecommendedPage .sectionTitle-cards,
-    .layout-mobile #moviesPage .sectionTitleContainer-cards, 
+    .layout-mobile #moviesPage .sectionTitleContainer-cards,
     .layout-mobile #moviesPage .sectionTitle-cards,
-    .layout-mobile #musicRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #musicRecommendedPage .sectionTitleContainer-cards,
     .layout-mobile #musicRecommendedPage .sectionTitle-cards {
         border-radius: 0 !important;
     }
@@ -256,7 +256,7 @@
 /* Items Container in PrimaryContainer */
 .layout-desktop .detailPagePrimaryContainer .itemsContainer          { padding: 0;  margin: 1vw .5vw; }
 
-.layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) { 
+.layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     margin: 1vw 0vw;
 }
 

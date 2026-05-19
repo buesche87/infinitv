@@ -29,7 +29,7 @@
     text-align: center;
 }
 
-/* Spinner Color */ 
+/* Spinner Color */
 .mdl-spinner__layer-1,
 .mdl-spinner__layer-2,
 .mdl-spinner__layer-3,
@@ -51,7 +51,7 @@
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
 .layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog,
 .layout-desktop:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
-.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog, 
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog,
 .layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
     top: 8em !important;
     position: fixed;
@@ -652,5 +652,5 @@
 }
 
 .emby-select-withcolor > option {
-    cursor: pointer !important;   
+    cursor: pointer !important;
 }
