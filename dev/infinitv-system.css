@@ -90,7 +90,7 @@
 
 /* Player OSD */
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]  {
-    transform: translateY(3em) !important;
+    transform: translateY(3.5em) !important;
 }
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
     transform: translateY(-5em) !important;
@@ -245,13 +245,17 @@
 .layout-desktop .actionSheetItemText {
     font-size: 1em;
 }
-
+/*
 .layout-desktop .actionSheetContent .listItem {
     padding-top: 1em !important;
     padding-bottom: 1em !important;
     padding-left: 2em !important;
     padding-right: 3em !important;
+}*/
+.layout-desktop .actionSheetMenuItem {
+    padding: 1em !important;
 }
+
 .layut-tv .actionSheetContent .listItem {
     padding: 1em 1em;
 }
@@ -532,6 +536,7 @@
     font-size: 120% !important;
     margin-right: 1em !important;
 }
+
 .layout-tv .detailButton:focus {
     transform: scale(1.2) !important;
 }

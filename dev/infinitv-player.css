@@ -79,6 +79,17 @@
     padding-bottom: .5em;
 }
 
+.layout-desktop .actionSheet {
+    background: rgba(0, 0, 0, var(--headeropacity)); 
+    box-shadow: none !important;
+    border: var(--buttonborder);
+}
+
+
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionsheetMenuItemIcon {
+    margin: 0 .5em 0 .2em !important;
+}
+
 /* OSD Footer: Small Box-Layout */
 @media all and (min-width: 105em) {
     .videoOsdBottom {
@@ -88,6 +99,10 @@
         margin-left: 24vw;
         margin-right: 24vw;
         border-radius: var(--rounding-media);
+    }
+
+    .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
+        transform: translateY(-8.5em) !important;
     }
 }
 
