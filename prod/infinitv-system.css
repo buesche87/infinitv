@@ -90,7 +90,7 @@
 
 /* Player OSD */
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]  {
-    transform: translateY(3em) !important;
+    transform: translateY(3.5em) !important;
 }
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
     transform: translateY(-5em) !important;
