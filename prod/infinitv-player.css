@@ -79,16 +79,12 @@
     padding-bottom: .5em;
 }
 
-.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
+.layout-desktop .actionSheet {
     background: rgba(0, 0, 0, var(--headeropacity)); 
     box-shadow: none !important;
     border: var(--buttonborder);
 }
 
-.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheetMenuItem {
-    padding: 1em !important;
-    /* padding-right: 1em !important; */
-}
 
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionsheetMenuItemIcon {
     margin: 0 .5em 0 .2em !important;
