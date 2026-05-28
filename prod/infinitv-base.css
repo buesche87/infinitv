@@ -8,17 +8,17 @@
 
     /* Accents */
     --accent100: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-    --accent80: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
-    --accent60: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
-    --accent40: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
-    --accent20: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
+    --accent80:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
+    --accent60:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
+    --accent40:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
+    --accent20:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
 
     /* Backgrounds */
     --bgwhite10: hsl(0deg 0% 100% / 10%);
-    --bgdark20: rgba(0, 0, 0, 0.2);
-    --bgdark40: rgba(0, 0, 0, 0.4);
-    --bgdark60: rgba(0, 0, 0, 0.6);
-    --bgdark80: rgba(0, 0, 0, 0.8);
+    --bgdark20:  rgba(0, 0, 0, 0.2);
+    --bgdark40:  rgba(0, 0, 0, 0.4);
+    --bgdark60:  rgba(0, 0, 0, 0.6);
+    --bgdark80:  rgba(0, 0, 0, 0.8);
 
     --bgsecondary: hsl(0deg 0% 100% / 10%);
 
@@ -64,14 +64,15 @@
 }
 
 /* Darken Background with Backdrops enables */
-.backgroundContainer.withBackdrop,
-.noBackdropTransparency .detailPagePrimaryContainer, 
-.noBackdropTransparency .detailPageSecondaryContainer {
+.backgroundContainer.withBackdrop {
     background: rgba(0, 0, 0, var(--bgdarkness)) !important;
 }
 
-/* Background Image on Homepage */
-.backgroundContainer.withBackdrop:has(~ .mainAnimatedPages > .homePage:not(.hide)) {
+/* Background Image on Homepage and Library Pages */
+[dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop,
+[dir=ltr]:has(#tvRecommendedPage:not(.hide)) .backgroundContainer.withBackdrop,
+[dir=ltr]:has(#moviesPage:not(.hide)) .backgroundContainer.withBackdrop,
+[dir=ltr]:has(#musicRecommendedPage:not(.hide)) .backgroundContainer.withBackdrop {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
         var(--bgImage) !important;
@@ -124,9 +125,9 @@
 .listItemIcon.check,
 .listTextButton-autohide:focus,
 .mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle, 
+.mdl-radio__button:focus + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__inner-circle,
-.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle, 
+.mdl-radio__button[checked] + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-slider,
 .paper-icon-button-light:not(:disabled):hover,
 .paper-icon-button-light:focus,
@@ -149,7 +150,7 @@
 .textareaLabelFocused,
 .emby-checkbox:focus + .checkboxLabel { font-weight: 500; }
 
-/* Active 
+/* Active
 --------------------------------------------------------------------------*/
 
 /* Active: Accent 100% */
@@ -420,7 +421,7 @@
 .upNextDialog-button:focus                   { box-shadow: var(--buttonglow) !important; }
 
 /* Box Shadows */
-.detailImageContainer .card                  { box-shadow: var(--itemshadow) !important; } 
+.detailImageContainer .card                  { box-shadow: var(--itemshadow) !important; }
 
 /* No Shadows / no Glow */
 .cardPadder,

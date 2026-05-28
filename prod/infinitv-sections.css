@@ -82,43 +82,60 @@
 
 /* Container */
 .layout-desktop .sectionTitleContainer-cards {
-    padding-left: 0;
+    /* padding-left: 0; */
     text-align: center;
-    padding: .6em;
+    padding: 10px;
 }
+.layout-desktop .libraryPage .sectionTitle {
+    padding-left: 0;
+}
+
+.layout-desktop .detailPagePrimaryContent:has(.nextUpSection.hide) .detailVerticalSection .sectionTitle-cards {
+    margin-left: -31.45vw;
+    padding-left: 31.45vw;
+}
+
+.layout-desktop .detailPagePrimaryContainer #listChildrenCollapsible .sectionTitle-cards {
+    padding-left: 0;
+    margin-left: -.5vw;
+}
+
+.layout-desktop  .detailPagePrimaryContainer .nextUpSection .sectionTitle,
+.layout-desktop .detailPagePrimaryContainer:has(.nextUpSection.hide)  #listChildrenCollapsible .sectionTitle-cards {
+    margin-left: -31.45vw;
+    padding-left: 31.45vw;
+    text-align: left;
+}
+
 .layout-desktop div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-    padding-left: 0;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: 10px 0;
     text-align: center;
 }
-.layout-desktop .detailPagePrimaryContainer div:not(.sectionTitleContainer-cards) > .sectionTitle-cards {
+
+.layout-desktop .detailPagePrimaryContainer .sectionTitle {
     padding-left: 2.5%;
     padding-right: 2.5%;
 }
 
-/* Titles */
-.layout-desktop .detailPagePrimaryContainer .sectionTitle {
-    text-align: left !important;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-}
 .layout-desktop .detailPageSecondaryContainer .sectionTitle {
     border-radius: 0;
 }
 .layout-desktop h2.sectionTitle {
     font-weight: 500;
-} 
-.layout-desktop #tvRecommendedPage .sectionTitle,
-.layout-desktop #moviesPage .sectionTitle,
-.layout-desktop #musicRecommendedPage .sectionTitle {
-    padding-left: 0;
 }
+
+.layout-desktop .settingsContainer .sectionTitle {
+    padding-left: .75em;
+}
+
 
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
-    padding-top: 0.4em;
-    padding-bottom: 0em;
+    padding: 0.4em;
+    /* padding-bottom: 0em; */
+    /* display: flex; */
+    /* margin-top: auto; */
+    /* margin: .5em; */
 }
 
 /* Layout Mobile
@@ -137,13 +154,13 @@
     padding: 0;
 }
 @media(max-width: 48.125em) {
-    .layout-mobile .homePage .sectionTitleContainer-cards, 
+    .layout-mobile .homePage .sectionTitleContainer-cards,
     .layout-mobile .homePage .sectionTitle-cards,
-    .layout-mobile #tvRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #tvRecommendedPage .sectionTitleContainer-cards,
     .layout-mobile #tvRecommendedPage .sectionTitle-cards,
-    .layout-mobile #moviesPage .sectionTitleContainer-cards, 
+    .layout-mobile #moviesPage .sectionTitleContainer-cards,
     .layout-mobile #moviesPage .sectionTitle-cards,
-    .layout-mobile #musicRecommendedPage .sectionTitleContainer-cards, 
+    .layout-mobile #musicRecommendedPage .sectionTitleContainer-cards,
     .layout-mobile #musicRecommendedPage .sectionTitle-cards {
         border-radius: 0 !important;
     }
@@ -231,13 +248,15 @@
 
 .layout-desktop #items .itemsContainer                               { margin: 0; }
 
+.layout-desktop #resumableSection #resumableItems                    { margin-bottom: 0; }
+
 /* Items Container next to Alphapicker */
 .layout-desktop .padded-right-withalphapicker .itemsContainer        { padding-left: 1%; padding-right: 3%; }
 
 /* Items Container in PrimaryContainer */
 .layout-desktop .detailPagePrimaryContainer .itemsContainer          { padding: 0;  margin: 1vw .5vw; }
 
-.layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) { 
+.layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     margin: 1vw 0vw;
 }
 

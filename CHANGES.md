@@ -1,3 +1,11 @@
+# v0.4.1
+
+Mainly a bugfix release with the following changes:
+
+- hide he scrollbar while playing a video (bugfix)
+- show wallpaper on library pages, even if backdrops are enabled 
+- some other fixes
+
 # v0.4.0
 
 With this release many adjustments to the desktop layout are introduced.

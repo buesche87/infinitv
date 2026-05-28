@@ -21,13 +21,13 @@
 .layout-desktop .slide                     { height: 75vh; }
 .layout-desktop .backdrop-container        { height: 97%; }
 .layout-desktop .video-container           { height: 100%; }
-       
+
 .layout-desktop .pause-button              { top: 5em; right: 2em; }
 .layout-desktop .volume-toggle             { top: 5em; right: 6em; }
-       
+
 .layout-desktop .logo-container            { top: 5em; }
 .layout-desktop .logo                      { max-height: 60%; }
-       
+
 .layout-desktop .info-container            { top: 37vh; }
 .layout-desktop .genre                     { top: 41vh; }
 .layout-desktop .plot-container            { top: 47vh; width: 80%; }
@@ -329,12 +329,12 @@
 .alphaPickerButton {
     height: 1.6em;
 }
-@media (pointer: fine) {
-    .alphaPickerButton:hover {
-        background: var(--accent60) !important;
-        color: white !important;
-    }
+
+.alphaPickerButton:hover {
+    background: var(--accent60) !important;
+    color: white !important;
 }
+
 .alphaPickerButton:focus,
 .alphaPickerButton:active {
     transform: none !important;
@@ -524,6 +524,13 @@
     padding-top: 1em;
 }
 
+/* Content Background without Backdrops */
+.noBackdropTransparency .detailPagePrimaryContainer,
+.noBackdropTransparency .detailPageSecondaryContainer {
+    background: rgba(0, 0, 0, var(--itemopacity)) !important;
+}
+
+
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -707,7 +714,7 @@
 /* Media Description > Director & Studio */
 .itemDetailsGroup {
     margin-top: 0.5em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
 }
 
 /* Layout Desktop
@@ -715,15 +722,32 @@
 
 /* Primary Container */
 .layout-desktop .detailPagePrimaryContent {
-    padding-top: 1em;
+    padding-top: 0em;
     padding-bottom: 1em;
-    padding-right: 1%;
+    padding-right: 1.5vw;
+}
+
+.layout-desktop .itemDetailsGroup {
+    margin-bottom: 2em;
+    margin-top: .5em;
+}
+
+.layout-desktop .itemTags {
+    padding: 0;
+    margin: 1em 0 !important;
+}
+
+.layout-desktop .itemExternalLinks {
+    margin: 1em 0 .75em 0 !important;
+}
+
+.layout-desktop .itemTags > .button-link {
+    margin-left: .25em;
 }
 
 /* Secondary Container */
 .layout-desktop .detailPageSecondaryContainer {
-    padding-left: 1.5vw !important;
-    padding-right: 1.5vw !important;
+    padding: 0 1.5vw !important;
 }
 
 /* Secondary Container: Content */
@@ -927,7 +951,7 @@
 .layout-mobile #myPreferencesMenuPage .sectionTitle {
     padding-left: 0em !important;
     font-weight: 600;
-} 
+}
 .layout-mobile .settingsContainer .sectionTitle,
 .layout-mobile .homeScreenSettingsContainer .sectionTitle,
 .layout-mobile #controlsPreferencesPage .sectionTitle {
@@ -944,7 +968,7 @@
 }
 .layout-mobile .userPreferencesPage .listItem {
     padding-right: 1.5em !important;
-} 
+}
 .layout-mobile .userPreferencesPage .listItemIcon {
     width: 2% !important;
     text-align: left;
@@ -993,7 +1017,7 @@
     margin-bottom: 1em;
 }
 #displayPreferencesPage .checkboxContainer,
-#displayPreferencesPage .selectContainer, 
+#displayPreferencesPage .selectContainer,
 #homeScreenPreferencesPage .selectContainer,
 #homeScreenPreferencesPage .checkboxContainer,
 #homeScreenPreferencesPage .checkboxListContainer,
@@ -1005,6 +1029,16 @@
 #languagePreferencesPage .btnSave {
     margin-top: 2em;
 }
+
+.layout-desktop #displayPreferencesPage .btnSave,
+.layout-desktop #homeScreenPreferencesPage .btnSave,
+.layout-desktop #languagePreferencesPage .btnSave {
+    margin-top: 2em;
+    margin-left: -1.5em;
+    width: 106%;
+}
+
+
 
 #searchPage .searchFieldsInner {
     padding-bottom: 1em;

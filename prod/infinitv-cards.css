@@ -23,7 +23,7 @@
 .layout-tv .detailImageContainer .backdropCard { left: 1vw; }
 .layout-tv .detailImageContainer .squareCard   { max-width: 18em; }
 
-
+/* Card Container */
 .layout-tv .detailImageContainer .card {
     float: left;
     max-height: 80vh;
@@ -33,7 +33,6 @@
     left: 3em;
     z-index: 3
 }
-
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -124,7 +123,7 @@
 /* Layout Mobile
 --------------------------------------------------------------------------*/
 
-/* List Item: Content (Mobile) */
+/* List Item: Content */
 .layout-mobile .itemsContainer .listItemBodyText {
     justify-content: center;
     line-clamp: 2;
@@ -132,6 +131,7 @@
     max-height: 3em;
 }
 
+/* List Item: Content Secondary Text */
 .layout-mobile .itemsContainer .listItemBodyText.secondary {
     justify-content: center;
     line-clamp: 1;
@@ -139,6 +139,7 @@
     max-height: 1.6em;
 }
 
+/* List Item: Overview */
 .layout-mobile .itemsContainer .listItem-overview {
     padding-top: 0;
 }
@@ -146,7 +147,7 @@
     margin-top: .5em;
 }
 
-/* Hide Image on small screens (Mobile) */
+/* Hide Image on small screens */
 @media (max-width: 40em) {
     [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
         display: flex;
@@ -172,7 +173,7 @@
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
-    
+
 }
 
 /* Large Image List Item: Align Body */
@@ -182,14 +183,6 @@
     margin-right: 1.25em;
     padding: 0;
 }
-
-/* Layout Desktop - Large Image List Items
---------------------------------------------------------------------------*/
-/* 
-.layout-desktop .listItem.listItem-largeImage .listItemImage-large {
-    border-right: var(--buttonborder); 
-}
-*/
 
 /* Layout TV - Large Image List Items
 --------------------------------------------------------------------------*/
@@ -419,7 +412,7 @@
 ===========================================================================
    Cards: Text & Buttons
 ===========================================================================
-* > needs plugin "home section containers" */ 
+* > needs plugin "home section containers" */
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
