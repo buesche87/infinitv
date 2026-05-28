@@ -303,10 +303,10 @@
 
 /* Scrollbar: Style */
 * {
-    scrollbar-color: var(--accent80) rgba(0, 0, 0, var(--headeropacity)) !important;
+    scrollbar-color: var(--accent80) rgba(0, 0, 0) !important;
 }
 
-.layout-desktop {
+.layout-desktop:not:has(#videoOsdPage) {
     scrollbar-width: thin;
     overflow-y: scroll;
 }
