@@ -913,10 +913,13 @@
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
+.layout-tv #myPreferencesMenuPage > div {
+    padding-top: 0;
+}
+
 /* Content */
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
     background-color: var(--itembg);
-    padding: 1em;
     border-radius: var(--rounding-media);
 }
 

@@ -98,31 +98,6 @@
 
 /* Layout TV - Dialogs Fullscreen
 --------------------------------------------------------------------------*/
-.layout-tv .formDialog {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    left: 0 !important;
-    margin: 0 !important;
-    top: 0 !important;
-    animation-duration: var(--anispeed) !important;
-}
-
-.layout-tv .filterDialogContent {
-    min-width: 24em;
-}
-
-.layout-tv .actionSheet {
-    animation-duration: var(--anispeed) !important;
-}
-
-.layout-tv .listItem:focus .secondary {
-    color: hsla(0, 0%, 100%, .8) !important;
-}
 
 /* we don't need a close button in tv-mode, there is BACK and ESC
 .layout-tv .btnCloseActionSheet {
@@ -188,6 +163,37 @@
     overflow-y: scroll;
 }
 
+
+
+/* Layout TV - Dialogs
+--------------------------------------------------------------------------*/
+
+.layout-tv .formDialog {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    left: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    animation-duration: var(--anispeed) !important;
+}
+
+.layout-tv .filterDialogContent {
+    min-width: 24em;
+}
+
+.layout-tv .actionSheet {
+    animation-duration: var(--anispeed) !important;
+}
+
+.layout-tv .listItem:focus .secondary {
+    color: hsla(0, 0%, 100%, .8) !important;
+}
+
 .layout-tv .dialogContainer .dynamicFilterDialog .collapseContent {
     max-height: 12em;
     overflow-y: scroll;
@@ -203,6 +209,35 @@
 }
 .layout-tv .listItem-indexnumberleft {
     margin: 1em;
+}
+
+/* Media Infos */
+.layout-tv .formDialog:has(.dialog-fullscreen) {
+    align-content: normal;
+}
+
+.layout-tv .dialog-fullscreen .formDialogHeader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.layout-tv .dialog-fullscreen .formDialogContent {
+    margin: 4em 6em;
+    /* margin-top: 5em; */
+}
+
+.layout-tv .dialog-fullscreen .mediaInfoContent {
+    /* margin-top: 4.5em; */
+    width: 100%;
+    /* font-size: 100%; */
+}
+.mediaInfoLabel {
+    color: #ddd;
+    font-weight: 400;
+}
+.mediaInfoAttribute {
+    color: #fff;
+    font-weight: 600;
 }
 
 /* Collapsible Menu */
