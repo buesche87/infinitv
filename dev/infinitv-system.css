@@ -349,7 +349,7 @@
 
 /* Scrollbar: Style */
 * {
-    scrollbar-color: var(--accent40) rgba(0, 0, 0) !important;
+    scrollbar-color: var(--accent60) rgba(0, 0, 0) !important;
 }
 
 .layout-desktop:not:has(#videoOsdPage) {
