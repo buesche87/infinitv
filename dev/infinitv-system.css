@@ -252,6 +252,13 @@
 ============================================================================
 */
 
+/* Action Sheets */
+.layout-desktop .actionSheet {
+    background: rgba(0, 0, 0, 0.95); 
+    box-shadow: none !important;
+    border: var(--buttonborder);
+}
+
 /* Action Sheets: Title */
 .layout-desktop .actionSheetTitle,
 .layout-mobile .actionSheetTitle {

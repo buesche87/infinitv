@@ -79,12 +79,9 @@
     padding-bottom: .5em;
 }
 
-.layout-desktop .actionSheet {
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
     background: rgba(0, 0, 0, var(--headeropacity)); 
-    box-shadow: none !important;
-    border: var(--buttonborder);
 }
-
 
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionsheetMenuItemIcon {
     margin: 0 .5em 0 .2em !important;
@@ -232,10 +229,6 @@
 .layout-desktop .listViewUserDataButtons {
     margin-right: .5em;
 }
-/*
-.layout-desktop .listViewUserDataButtons .listItemButton:hover {
-    background-color: var(--accent20) !important;
-}*/
 
 /* playlist buttons: no animations */
 .layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
