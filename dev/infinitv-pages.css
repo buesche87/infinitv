@@ -68,7 +68,7 @@
 
 /* Disable Slides in TV layout because they don't work well with a remote */
 .layout-tv #slides-container { display: none !important; }
-.layout-tv .homeSectionsContainer { top: 0; }
+.layout-tv .homeSectionsContainer { top: .5em; }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -885,6 +885,10 @@
     padding-top: 5em !important;
 }
 
+.layout-tv #myPreferencesMenuPage {
+    padding-top: 4em !important;
+}
+
 /* Section Titles */
 #myPreferencesMenuPage .sectionTitle {
     padding-left: 3em !important;
@@ -921,6 +925,10 @@
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
     background-color: var(--itembg);
     border-radius: var(--rounding-media);
+}
+
+.layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding {
+    margin-bottom: 2em;
 }
 
 /* Section Titles */
