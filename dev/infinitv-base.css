@@ -23,7 +23,8 @@
     --bgsecondary: hsl(0deg 0% 100% / 10%);
 
     /* Border */
-    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%);
+    --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
+    --systemborder: solid 1px hsla(0, 0%, 100%, .2);
 
     /* Card Shadow */
     --cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);

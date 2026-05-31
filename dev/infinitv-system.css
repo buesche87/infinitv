@@ -214,6 +214,9 @@
     margin: 1em;
 }
 
+
+
+
 /* Media Infos */
 .layout-tv .formDialog:has(.dialog-fullscreen) {
     align-content: normal;
@@ -226,7 +229,13 @@
     padding-top: .5em;
     padding-bottom: .25em;
     border-bottom: var(--buttonborder);
+    border-radius: 0 !important;
 }
+.layout-tv .dialog-fullscreen .btnCloseActionSheet {
+    display: none;
+}
+
+
 .layout-tv .dialog-fullscreen .formDialogContent {
     /* margin: 4em 3em; */
     scrollbar-color: aliceblue;
@@ -237,14 +246,12 @@
     margin-right: 3em;
     scrollbar-width: thin;
 }
-
 .layout-tv .dialog-fullscreen .mediaInfoContent {
     /* margin-top: 4.5em; */
     width: 100%;
     /* font-size: 100%; */
     font-size: 80%;
 }
-
 .mediaInfoLabel {
     color: hsla(0, 0%, 100%, .8);
     font-weight: 400;
@@ -253,10 +260,12 @@
     color: #fff;
     font-weight: 600;
 }
-
 .mediaInfoStreamType {
     color: hsla(0, 0%, 100%, .9);
 }
+
+
+
 
 /* Collapsible Menu */
 .collapseContent {
@@ -285,16 +294,15 @@
     margin-bottom: .2em !important;
     margin-top: 0em !important;
     cursor: default;
-    /* border-bottom: chartreuse; */
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
     padding: .6em .5em;
     text-align: center !important;
-
 }
 
 /* Action Sheets: Content */
 .layout-desktop .actionSheetContent {
     padding: 0 !important;
+    min-width: 13em;
 }
 
 .layout-desktop .actionSheetScroller {
@@ -304,16 +312,6 @@
 
 .layout-desktop .actionSheetItemText {
     font-size: 1em;
-}
-/*
-.layout-desktop .actionSheetContent .listItem {
-    padding-top: 1em !important;
-    padding-bottom: 1em !important;
-    padding-left: 2em !important;
-    padding-right: 3em !important;
-}*/
-.layout-desktop .actionSheetMenuItem {
-    padding: 1em !important;
 }
 
 .layut-tv .actionSheetContent .listItem {
@@ -538,6 +536,11 @@
     margin-bottom: .2em !important;
     padding-left: .5em !important;
     padding-right: .5em !important;
+}
+
+.layout-desktop .actionSheetMenuItem {
+    transform: none !important;
+    padding: .5em 1.25em .5em .75em !important;
 }
 
 /* Buttons: List Menu Items
