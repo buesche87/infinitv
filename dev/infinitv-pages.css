@@ -68,7 +68,7 @@
 
 /* Disable Slides in TV layout because they don't work well with a remote */
 .layout-tv #slides-container { display: none !important; }
-.layout-tv .homeSectionsContainer { top: .5em; }
+.layout-tv .homeSectionsContainer { top: 0; }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
