@@ -88,6 +88,10 @@
 ============================================================================
 */
 
+/* TRY: colorize navMenuOption "Dashboard" */
+.navMenuOption[data-itemid*="dashboard"] { color: hsla(var(--accent-h),85%,85%, 0.75); }
+
+
 /* Color: Accent 80% */
 #loginPage .cardImage,
 .actionSheetMenuItem:hover,

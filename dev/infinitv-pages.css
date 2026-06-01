@@ -909,9 +909,10 @@
 
 /* Content */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent {
-    background-color: var(--itembg);
     padding: 1em;
+    background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
+    border: var(--buttonborder);
 }
 
 /* Layout TV
@@ -923,8 +924,9 @@
 
 /* Content */
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
-    background-color: var(--itembg);
+    background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
+    border: var(--buttonborder);
 }
 
 .layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding {
