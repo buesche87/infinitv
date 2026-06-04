@@ -886,7 +886,7 @@
 }
 
 .layout-tv #myPreferencesMenuPage {
-    padding-top: 4em !important;
+    /* padding-top: 4em !important; */
 }
 
 /* Section Titles */
@@ -913,6 +913,7 @@
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
+    display: flex;
 }
 
 /* Layout TV
@@ -923,11 +924,12 @@
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
-    font-size: 90%;
+    /* font-size: 90%; */
+    display: flex;
 }
 
 .layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 /* Section Titles */
