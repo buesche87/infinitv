@@ -930,6 +930,7 @@
 
 .layout-tv #myPreferencesMenuPage .verticalSection-extrabottompadding {
     /* margin-bottom: 1em; */
+    margin-top: 1em;
 }
 
 /* Section Titles */
