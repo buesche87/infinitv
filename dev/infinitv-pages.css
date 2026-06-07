@@ -890,9 +890,11 @@
 }
 
 /* Section Titles */
-#myPreferencesMenuPage .sectionTitle {
-    padding-left: 3em !important;
+.layout-desktop #myPreferencesMenuPage .sectionTitle {
+    padding-left: 0em !important;
+    text-align: center;
 }
+
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
 #controlsPreferencesPage .sectionTitle {
@@ -914,6 +916,7 @@
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
     display: flex;
+    max-width: 95%;
 }
 
 /* Layout TV
