@@ -594,8 +594,9 @@
 
 .layout-desktop .userPreferencesPage .listItem-border,
 .layout-tv .userPreferencesPage .listItem-border {
-    padding-left: 6em !important;
-    padding-right: 6em !important;
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+    min-width: 15em;
 }
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
