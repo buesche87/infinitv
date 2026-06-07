@@ -310,6 +310,10 @@
     padding-bottom: .5em;
 }
 
+.layout-desktop .actionsheetDivider {
+    display: none;
+}
+
 .layout-desktop .actionSheetItemText {
     font-size: 1em;
 }
