@@ -221,9 +221,11 @@
     padding-left: 1.5vw;
     padding-right: 3vw;
 }
-.layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
+.layout-desktop #myPreferencesMenuPage .padded-bottom-page {
     padding-right: 0;
     padding-left: 0;
+    /* padding-bottom: calc(env(safe-area-inset-bottom) + 5em) !important; */
+    padding-top: 1.25em;
 }
 
 /*  Layout TV
@@ -359,8 +361,12 @@
 */
 
 /* Filter & Sorting Header */
-.selfBackdropPage h1.parentName.focuscontainer-x {
+.selfBackdropPage h1.parentName{
     font-size: 150%;
+}
+
+.layout-desktop .selfBackdropPage h1.parentName {
+    font-size: 175%;
 }
 
 /* Filter & Sorting Header: Item Count */
@@ -544,10 +550,7 @@
 
 /* Detail-Ribbon: Fix narrow Desktop layout */
 .layout-desktop .detailPageWrapperContainer {
-    position: static !important;
-}
-.layout-desktop .detailPageWrapperContainer {
-    margin-top: 0 !important;
+    margin-top: 1.5em !important;
 }
 
 /* Increase Season Title Text */
@@ -988,18 +991,15 @@
     text-align: left;
 }
 
-
-
-
 /* Settings: Subpages */
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
 #controlsPreferencesPage .sectionTitle {
-    padding-top: .3em;
-    padding-bottom: .3em;
-    padding-left: 1.4em;
-    margin-left: -1.5em;
-    margin-right: -1.5em;
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-left: .6em !important;
+    margin-left: -1.4em;
+    margin-right: -1.4em;
     border-radius: var(--rounding-system);
 }
 .layout-tv .settingsContainer .sectionTitle,
@@ -1070,8 +1070,9 @@
 .layout-desktop #homeScreenPreferencesPage .btnSave,
 .layout-desktop #languagePreferencesPage .btnSave {
     margin-top: 2em;
-    margin-left: -1.5em;
-    width: 106%;
+    margin-left: -1.75em;
+    width: 107%;
+    margin-bottom: 1.5em;
 }
 
 

@@ -21,12 +21,12 @@
 }
 
 /* Toast: Center */
-.layout-tv .toastContainer,
-.layout-mobile .toastContainer {
+.toastContainer {
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%);
     text-align: center;
+    bottom: .25em;
 }
 
 /* Spinner Color */
@@ -79,7 +79,6 @@
     transform: translateX(9em) !important;
 }
 
-
 /* Header */
 .layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
     transform: translateY(4em) !important;
@@ -96,13 +95,21 @@
     transform: translateY(-5em) !important;
 }
 
-/* Layout TV - Dialogs Fullscreen
+
+.layout-desktop .formDialog.dialog-fixedSize.dialog-small {
+    width:40%;
+    height: auto;
+}
+
+.layout-desktop .formDialog.dialog-fixedSize.dialog-small .formDialogContent .dialogContentInner {
+    padding-bottom: 2em;
+}
+
+
+/* Layout TV 
 --------------------------------------------------------------------------*/
 
-/* we don't need a close button in tv-mode, there is BACK and ESC
-.layout-tv .btnCloseActionSheet {
-    display: none;
-} */
+
 
 
 /* Layout Mobile
@@ -653,6 +660,7 @@
     font-size: 1.2em;
     font-weight: 400;
     margin: 0;
+    border: none !important;
 }
 
 /* Misc Buttons

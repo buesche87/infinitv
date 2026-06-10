@@ -99,9 +99,8 @@
     padding-left: 0;
     margin-left: -.5vw;
 }
-
-.layout-desktop  .detailPagePrimaryContainer .nextUpSection .sectionTitle,
-.layout-desktop .detailPagePrimaryContainer:has(.nextUpSection.hide)  #listChildrenCollapsible .sectionTitle-cards {
+/* .layout-desktop .detailPagePrimaryContainer:has(.nextUpSection.hide)  #listChildrenCollapsible .sectionTitle-cards, */
+.layout-desktop  .detailPagePrimaryContainer .nextUpSection .sectionTitle {
     margin-left: -31.45vw;
     padding-left: 31.45vw;
     text-align: left;
