@@ -315,7 +315,7 @@
 }
 
 .layout-desktop .actionSheetItemText {
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .layut-tv .actionSheetContent .listItem {
@@ -367,43 +367,23 @@
 ============================================================================
 */
 
-/* Scrollbar: Style */
+/* Scrollbar Style */
 * {
-    scrollbar-color: var(--accent60) rgba(0, 0, 0) !important;
+    scrollbar-color: var(--accent60) rgba(0, 0, 0, .8) !important;
 }
 
-.layout-desktop:not:has(#videoOsdPage) {
+/* always show in desktop layout unless playing a video */
+.layout-desktop:not(:has(#videoOsdPage)) {
     scrollbar-width: thin;
     overflow-y: scroll;
 }
 
+/* don't show scrollbar */
+#loginPage,
 .layout-tv,
 .layout-mobile {
-    scrollbar-width: none;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--accent80) !important;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    background-clip: content-box;
-}
-::-webkit-scrollbar-corner  {
-    background: var(--accent80) !important;
-}
-
-/* Scrollbar: Hide (TV) */
-.layout-tv ::-webkit-scrollbar {
-    display: none;
-}
-
-#loginPage,
-.layout-tv {
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
     scrollbar-width: none;
 }
 
@@ -544,7 +524,7 @@
 
 .layout-desktop .actionSheetMenuItem {
     transform: none !important;
-    padding: .5em 1.25em .5em .75em !important;
+    padding: .5em 1.75em .5em 1em !important;
 }
 
 /* Buttons: List Menu Items
