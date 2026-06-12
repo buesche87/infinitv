@@ -36,7 +36,7 @@
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-    width: 50% !important;
+    width: 45% !important;
     max-width: 30em;
     min-width: 18em;
 }

@@ -15,15 +15,15 @@
 
     /* Backgrounds */
     --bgwhite10: hsl(0deg 0% 100% / 10%);
+    --bgwhite05: hsl(0deg 0% 100% / 5%);
     --bgdark20:  rgba(0, 0, 0, 0.2);
     --bgdark40:  rgba(0, 0, 0, 0.4);
     --bgdark60:  rgba(0, 0, 0, 0.6);
     --bgdark80:  rgba(0, 0, 0, 0.8);
 
-    --bgsecondary: hsl(0deg 0% 100% / 10%);
-
     /* Border */
-    --buttonborder: solid 2px hsl(0deg 0% 100% / 20%);
+    --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
+    --systemborder: solid 1px hsla(0, 0%, 100%, .2);
 
     /* Card Shadow */
     --cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
@@ -86,6 +86,10 @@
    Colors
 ============================================================================
 */
+
+/* TRY: colorize navMenuOption "Dashboard" */
+.navMenuOption[data-itemid*="dashboard"] { color: hsla(var(--accent-h),85%,85%, 0.75); }
+
 
 /* Color: Accent 80% */
 #loginPage .cardImage,
@@ -199,7 +203,10 @@
 ============================================================================
 */
 
-/* Background Color: Light 10% */
+/* Background Color: White 5% */
+.searchSuggestionsList > div:hover                { background-color: var(--bgwhite05); }
+
+/* Background Color: White 10% */
 #loginPage .cardImage,
 #searchPage .sectionTitle,
 #controlsPreferencesPage .sectionTitle,
@@ -208,7 +215,7 @@
 .pageTabContent > .focuscontainer-x,
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
-.verticalSection > .sectionTitleContainer-cards   { background-color: var(--bgsecondary); }
+.verticalSection > .sectionTitleContainer-cards   { background-color: var(--bgwhite10); }
 
 /* Background Color: Dark 20% */
 .button-submit:hover,
@@ -233,8 +240,7 @@
 .itemProgressBar,
 .listItem-largeImage:hover,
 .paperList,
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus),
+/* .searchSuggestionsList > div:has(.emby-button:focus), */
 .upNextDialog-button:hover                        { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
@@ -326,6 +332,7 @@
 
 /* Borders: Grey
 --------------------------------------------------------------------------*/
+.layout-desktop .formDialog,
 .checkboxOutline,
 .detailButton,
 .emby-button,
@@ -407,8 +414,6 @@
 */
 
 /* Card Glow*/
-.actionsheet-not-fullscreen,
-.layout-desktop .formDialog,
 .layout-mobile .centeredDialog,
 .toast,
 .upNextContainer                             { box-shadow: var(--cardglow) !important; }

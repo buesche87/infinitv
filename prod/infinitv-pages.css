@@ -70,6 +70,14 @@
 .layout-tv #slides-container { display: none !important; }
 .layout-tv .homeSectionsContainer { top: 0; }
 
+/* User Button focus animation when profile image is set */
+.layout-tv .headerUserButtonRound {
+    border-radius: 100em !important;
+}
+.layout-tv .headerUserButtonRound:focus {
+    box-shadow: var(--buttonglow);
+}
+
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -213,9 +221,11 @@
     padding-left: 1.5vw;
     padding-right: 3vw;
 }
-.layout-desktop .libraryPage .padded-left.padded-right.padded-bottom-page {
+.layout-desktop #myPreferencesMenuPage .padded-bottom-page {
     padding-right: 0;
     padding-left: 0;
+    /* padding-bottom: calc(env(safe-area-inset-bottom) + 5em) !important; */
+    padding-top: 1.25em;
 }
 
 /*  Layout TV
@@ -351,8 +361,12 @@
 */
 
 /* Filter & Sorting Header */
-.selfBackdropPage h1.parentName.focuscontainer-x {
+.selfBackdropPage h1.parentName{
     font-size: 150%;
+}
+
+.layout-desktop .selfBackdropPage h1.parentName {
+    font-size: 175%;
 }
 
 /* Filter & Sorting Header: Item Count */
@@ -536,10 +550,7 @@
 
 /* Detail-Ribbon: Fix narrow Desktop layout */
 .layout-desktop .detailPageWrapperContainer {
-    position: static !important;
-}
-.layout-desktop .detailPageWrapperContainer {
-    margin-top: 0 !important;
+    margin-top: 1.5em !important;
 }
 
 /* Increase Season Title Text */
@@ -885,51 +896,53 @@
     padding-top: 5em !important;
 }
 
-/* Section Titles */
-#myPreferencesMenuPage .sectionTitle {
-    padding-left: 3em !important;
-}
-.settingsContainer .sectionTitle,
-.homeScreenSettingsContainer .sectionTitle,
-#controlsPreferencesPage .sectionTitle {
-    padding-top: .3em;
-    padding-bottom: .3em;
-    padding-left: 1.4em;
-    margin-left: -1.5em;
-    margin-right: -1.5em;
-    border-radius: var(--rounding-system);
-}
-
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Content */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent {
-    background-color: var(--itembg);
     padding: 1em;
+    background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
+    border: var(--buttonborder);
+    display: flex;
+    max-width: 95%;
 }
+.layout-desktop #myPreferencesMenuPage .verticalSection {
+    margin: 2em;
+}
+
+/* Section Titles */
+.layout-desktop #myPreferencesMenuPage .sectionTitle {
+    padding-left: 4em !important;
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    border-bottom: var(--buttonborder);
+    border-radius: 0 !important;
+}
+
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Content */
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
-    background-color: var(--itembg);
-    padding: 1em;
+    background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
+    border: var(--buttonborder);
+    /* font-size: 90%; */
+    display: flex;
+}
+.layout-tv #myPreferencesMenuPage .verticalSection {
+    margin: 2em;
 }
 
-/* Section Titles */
-.layout-tv .settingsContainer .sectionTitle,
-.layout-tv .homeScreenSettingsContainer .sectionTitle,
-.layout-tv #controlsPreferencesPage .sectionTitle {
-    padding-top: .25em;
-    padding-bottom: .25em;
-    padding-left: .5em;
-    margin-left: -1em;
-    margin-right: -1em;
-    margin-top: 0em;
+.layout-tv #myPreferencesMenuPage .sectionTitle {
+    padding-left: 4em !important;
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    border-bottom: var(--buttonborder);
+    border-radius: 0 !important;
 }
 
 /* Layout Mobile
@@ -952,13 +965,7 @@
     padding-left: 0em !important;
     font-weight: 600;
 }
-.layout-mobile .settingsContainer .sectionTitle,
-.layout-mobile .homeScreenSettingsContainer .sectionTitle,
-.layout-mobile #controlsPreferencesPage .sectionTitle {
-    margin-left: -.5em;
-    margin-right: -.5em;
-    padding-left: .5em;
-}
+
 
 /* List Items */
 .layout-mobile .userPreferencesPage .listItem-border {
@@ -982,6 +989,35 @@
     padding-bottom: .5em;
     padding-left: .5em;
     text-align: left;
+}
+
+/* Settings: Subpages */
+.settingsContainer .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle,
+#controlsPreferencesPage .sectionTitle {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-left: .6em !important;
+    margin-left: -1.4em;
+    margin-right: -1.4em;
+    border-radius: var(--rounding-system);
+}
+.layout-tv .settingsContainer .sectionTitle,
+.layout-tv .homeScreenSettingsContainer .sectionTitle,
+.layout-tv #controlsPreferencesPage .sectionTitle {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .5em;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: 0em;
+}
+.layout-mobile .settingsContainer .sectionTitle,
+.layout-mobile .homeScreenSettingsContainer .sectionTitle,
+.layout-mobile #controlsPreferencesPage .sectionTitle {
+    margin-left: -.5em;
+    margin-right: -.5em;
+    padding-left: .5em;
 }
 
 /*
@@ -1034,8 +1070,9 @@
 .layout-desktop #homeScreenPreferencesPage .btnSave,
 .layout-desktop #languagePreferencesPage .btnSave {
     margin-top: 2em;
-    margin-left: -1.5em;
-    width: 106%;
+    margin-left: -1.75em;
+    width: 107%;
+    margin-bottom: 1.5em;
 }
 
 
@@ -1144,4 +1181,27 @@ h2.username {
 
 #loginPage .card:hover .cardScalable {
     box-shadow: var(--cardglow) !important;
+}
+
+#selectServerPage .card {
+    width: 14vw;
+}
+
+#selectServerPage .cardBox {
+    margin: 1em !important;
+}
+
+#selectServerPage .cardBox:has(.cardFooter) .blurhash-canvas,
+#selectServerPage .cardBox:has(.cardFooter) .cardContent,
+#selectServerPage .cardBox:has(.cardFooter) .cardImage,
+#selectServerPage .cardBox:has(.cardFooter) .cardPadder-portrait,
+#selectServerPage .cardBox:has(.cardFooter) .coveredImage,
+#selectServerPage .cardBox:has(.cardFooter) .cardImageContainer,
+#selectServerPage .cardBox:has(.cardFooter) .cardOverlayContainer {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+#selectServerPage .cardFooter {
+    padding: 0.8em .3em;
 }

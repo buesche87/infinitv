@@ -1,3 +1,14 @@
+# v0.4.2
+
+Some design improvements have been made:
+
+- fixed the scrollbar
+- fixed server selection page
+- redesigned dialogs
+- redesigned media and playback infos
+- redesigned settings page
+- and some more cosmetics
+
 # v0.4.1
 
 Mainly a bugfix release with the following changes:

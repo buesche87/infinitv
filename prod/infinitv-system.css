@@ -21,12 +21,12 @@
 }
 
 /* Toast: Center */
-.layout-tv .toastContainer,
-.layout-mobile .toastContainer {
+.toastContainer {
     left: 50% !important;
     right: auto !important;
     transform: translateX(-50%);
     text-align: center;
+    bottom: .25em;
 }
 
 /* Spinner Color */
@@ -79,7 +79,6 @@
     transform: translateX(9em) !important;
 }
 
-
 /* Header */
 .layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
     transform: translateY(4em) !important;
@@ -96,38 +95,21 @@
     transform: translateY(-5em) !important;
 }
 
-/* Layout TV - Dialogs Fullscreen
+
+.layout-desktop .formDialog.dialog-fixedSize.dialog-small {
+    width:40%;
+    height: auto;
+}
+
+.layout-desktop .formDialog.dialog-fixedSize.dialog-small .formDialogContent .dialogContentInner {
+    padding-bottom: 2em;
+}
+
+
+/* Layout TV 
 --------------------------------------------------------------------------*/
-.layout-tv .formDialog {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    left: 0 !important;
-    margin: 0 !important;
-    top: 0 !important;
-    animation-duration: var(--anispeed) !important;
-}
 
-.layout-tv .filterDialogContent {
-    min-width: 24em;
-}
 
-.layout-tv .actionSheet {
-    animation-duration: var(--anispeed) !important;
-}
-
-.layout-tv .listItem:focus .secondary {
-    color: hsla(0, 0%, 100%, .8) !important;
-}
-
-/* we don't need a close button in tv-mode, there is BACK and ESC
-.layout-tv .btnCloseActionSheet {
-    display: none;
-} */
 
 
 /* Layout Mobile
@@ -188,6 +170,37 @@
     overflow-y: scroll;
 }
 
+
+
+/* Layout TV - Dialogs
+--------------------------------------------------------------------------*/
+
+.layout-tv .formDialog {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    left: 0 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    animation-duration: var(--anispeed) !important;
+}
+
+.layout-tv .filterDialogContent {
+    min-width: 24em;
+}
+
+.layout-tv .actionSheet {
+    animation-duration: var(--anispeed) !important;
+}
+
+.layout-tv .listItem:focus .secondary {
+    color: hsla(0, 0%, 100%, .8) !important;
+}
+
 .layout-tv .dialogContainer .dynamicFilterDialog .collapseContent {
     max-height: 12em;
     overflow-y: scroll;
@@ -199,11 +212,67 @@
 }
 .layout-tv .dialogContentInner {
     padding: .5em 5em;
-    justify-content: center;
+    /* overflow: scroll; */
+    padding-top: 0 !important;
+    margin-top: -.5em !important;
+    /* justify-content: center; */
 }
 .layout-tv .listItem-indexnumberleft {
     margin: 1em;
 }
+
+
+
+
+/* Media Infos */
+.layout-tv .formDialog:has(.dialog-fullscreen) {
+    align-content: normal;
+}
+
+.layout-tv .dialog-fullscreen .formDialogHeader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    border-bottom: var(--buttonborder);
+    border-radius: 0 !important;
+}
+.layout-tv .dialog-fullscreen .btnCloseActionSheet {
+    display: none;
+}
+
+
+.layout-tv .dialog-fullscreen .formDialogContent {
+    /* margin: 4em 3em; */
+    scrollbar-color: aliceblue;
+    padding-top: .5em;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    margin-left: 1.5em;
+    margin-right: 3em;
+    scrollbar-width: thin;
+}
+.layout-tv .dialog-fullscreen .mediaInfoContent {
+    /* margin-top: 4.5em; */
+    width: 100%;
+    /* font-size: 100%; */
+    font-size: 80%;
+}
+.mediaInfoLabel {
+    color: hsla(0, 0%, 100%, .8);
+    font-weight: 400;
+}
+.mediaInfoAttribute {
+    color: #fff;
+    font-weight: 600;
+}
+.mediaInfoStreamType {
+    color: hsla(0, 0%, 100%, .9);
+}
+
+
+
 
 /* Collapsible Menu */
 .collapseContent {
@@ -217,6 +286,13 @@
 ============================================================================
 */
 
+/* Action Sheets */
+.layout-desktop .actionSheet {
+    background: rgba(0, 0, 0, 0.95); 
+    box-shadow: none !important;
+    border: var(--buttonborder);
+}
+
 /* Action Sheets: Title */
 .layout-desktop .actionSheetTitle,
 .layout-mobile .actionSheetTitle {
@@ -225,16 +301,15 @@
     margin-bottom: .2em !important;
     margin-top: 0em !important;
     cursor: default;
-    /* border-bottom: chartreuse; */
     border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
     padding: .6em .5em;
     text-align: center !important;
-
 }
 
 /* Action Sheets: Content */
 .layout-desktop .actionSheetContent {
     padding: 0 !important;
+    min-width: 13em;
 }
 
 .layout-desktop .actionSheetScroller {
@@ -242,18 +317,12 @@
     padding-bottom: .5em;
 }
 
-.layout-desktop .actionSheetItemText {
-    font-size: 1em;
+.layout-desktop .actionsheetDivider {
+    display: none;
 }
-/*
-.layout-desktop .actionSheetContent .listItem {
-    padding-top: 1em !important;
-    padding-bottom: 1em !important;
-    padding-left: 2em !important;
-    padding-right: 3em !important;
-}*/
-.layout-desktop .actionSheetMenuItem {
-    padding: 1em !important;
+
+.layout-desktop .actionSheetItemText {
+    font-size: 1.1em;
 }
 
 .layut-tv .actionSheetContent .listItem {
@@ -305,43 +374,23 @@
 ============================================================================
 */
 
-/* Scrollbar: Style */
+/* Scrollbar Style */
 * {
-    scrollbar-color: var(--accent80) rgba(0, 0, 0) !important;
+    scrollbar-color: var(--accent60) rgba(0, 0, 0, .8) !important;
 }
 
-.layout-desktop:not:has(#videoOsdPage) {
+/* always show in desktop layout unless playing a video */
+.layout-desktop:not(:has(#videoOsdPage)) {
     scrollbar-width: thin;
     overflow-y: scroll;
 }
 
+/* don't show scrollbar */
+#loginPage,
 .layout-tv,
 .layout-mobile {
-    scrollbar-width: none;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, var(--headeropacity)) !important;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--accent80) !important;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    background-clip: content-box;
-}
-::-webkit-scrollbar-corner  {
-    background: var(--accent80) !important;
-}
-
-/* Scrollbar: Hide (TV) */
-.layout-tv ::-webkit-scrollbar {
-    display: none;
-}
-
-#loginPage,
-.layout-tv {
-    overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
     scrollbar-width: none;
 }
 
@@ -440,6 +489,12 @@
 ============================================================================
 */
 
+
+.layout-tv .formDialogHeader .paper-icon-button-light.show-focus:focus {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
 /* Buttons: Sign In, Save, Cancel...
 --------------------------------------------------------------------------*/
 
@@ -472,6 +527,11 @@
     margin-bottom: .2em !important;
     padding-left: .5em !important;
     padding-right: .5em !important;
+}
+
+.layout-desktop .actionSheetMenuItem {
+    transform: none !important;
+    padding: .5em 1.75em .5em 1em !important;
 }
 
 /* Buttons: List Menu Items
@@ -521,8 +581,9 @@
 
 .layout-desktop .userPreferencesPage .listItem-border,
 .layout-tv .userPreferencesPage .listItem-border {
-    padding-left: 6em !important;
-    padding-right: 6em !important;
+    padding-left: 3em !important;
+    padding-right: 3em !important;
+    min-width: 15em;
 }
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
@@ -599,6 +660,7 @@
     font-size: 1.2em;
     font-weight: 400;
     margin: 0;
+    border: none !important;
 }
 
 /* Misc Buttons
