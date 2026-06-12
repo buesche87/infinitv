@@ -1182,3 +1182,26 @@ h2.username {
 #loginPage .card:hover .cardScalable {
     box-shadow: var(--cardglow) !important;
 }
+
+#selectServerPage .card {
+    width: 14vw;
+}
+
+#selectServerPage .cardBox {
+    margin: 1em !important;
+}
+
+#selectServerPage .cardBox:has(.cardFooter) .blurhash-canvas,
+#selectServerPage .cardBox:has(.cardFooter) .cardContent,
+#selectServerPage .cardBox:has(.cardFooter) .cardImage,
+#selectServerPage .cardBox:has(.cardFooter) .cardPadder-portrait,
+#selectServerPage .cardBox:has(.cardFooter) .coveredImage,
+#selectServerPage .cardBox:has(.cardFooter) .cardImageContainer,
+#selectServerPage .cardBox:has(.cardFooter) .cardOverlayContainer {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+#selectServerPage .cardFooter {
+    padding: 0.8em .3em;
+}
