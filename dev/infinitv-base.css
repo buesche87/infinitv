@@ -321,6 +321,10 @@
 .sliderBubble,
 .userPreferencesPage .listItem-border:focus       { background-color: #0000 !important; }
 
+.btnAddServer,
+.btnAddServer:hover,
+.btnAddServer:focus { background: var(--bgdark60) !important; }
+
 /*
 ============================================================================
    Borders
