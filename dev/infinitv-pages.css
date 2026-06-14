@@ -960,6 +960,7 @@
 .layout-mobile #myPreferencesMenuPage .padded-bottom-page {
     width: 100%;
     text-align: center;
+    padding-top: 0;
 }
 .layout-mobile .userPreferencesPage .settingsContainer,
 .layout-mobile .homeScreenSettingsContainer,
