@@ -518,11 +518,14 @@
     left: 0.75em;
     top: 0.75em;
 }
-.layout-mobile .listItemIndicators {
+.layout-mobile .listItemImage-large .listItemIndicators {
     position: fixed;
     left: 0.5em;
     top: 0.5em;
     font-size: .75em !important
+}
+.layout-mobile .listItem-border .listItemIndicators {
+    display: none;
 }
 
 /*

@@ -337,6 +337,7 @@
 /* Borders: Grey
 --------------------------------------------------------------------------*/
 .layout-desktop .formDialog,
+.layout-mobile .formDialog,
 .checkboxOutline,
 .detailButton,
 .emby-button,
@@ -418,7 +419,7 @@
 */
 
 /* Card Glow*/
-.layout-mobile .centeredDialog,
+/* .layout-mobile .centeredDialog, */
 .toast,
 .upNextContainer                             { box-shadow: var(--cardglow) !important; }
 

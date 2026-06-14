@@ -127,18 +127,17 @@
     padding-left: .75em;
 }
 
-
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
     padding: 0.4em;
-    /* padding-bottom: 0em; */
-    /* display: flex; */
-    /* margin-top: auto; */
-    /* margin: .5em; */
 }
 
 /* Layout Mobile
 --------------------------------------------------------------------------*/
+
+.layout-mobile .sectionTitle {
+    font-size: 1.4em;
+}
 
 /* Container */
 .layout-mobile .sectionTitleContainer-cards,
@@ -151,6 +150,7 @@
 .layout-mobile .sectionTitleTextButton .sectionTitle-cards {
     text-align: center;
     padding: 0;
+    font-size: 1.4em;
 }
 @media(max-width: 48.125em) {
     .layout-mobile .homePage .sectionTitleContainer-cards,
@@ -285,4 +285,8 @@
 /* Items Container with listItems */
 .layout-mobile .pageTabContent .itemsContainer:has(.listItem-border) {
     padding: .5em 3% !important;
+}
+
+.layout-mobile .pageTabContent .itemsContainer.padded-right-withalphapicker:has(.listItem-border) {
+    padding: 0.5em 8% .5em 4% !important;
 }

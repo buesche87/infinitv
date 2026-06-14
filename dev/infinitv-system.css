@@ -143,7 +143,7 @@
     left: unset !important;
     top: 10em !important;
     animation-duration: var(--anispeed) !important;
-    box-shadow: var(--buttonglow);
+    /* box-shadow: var(--buttonglow); */
 }
 
 .layout-mobile .actionSheet.syncPlayGroupMenu {
@@ -287,7 +287,8 @@
 */
 
 /* Action Sheets */
-.layout-desktop .actionSheet {
+.layout-desktop .actionSheet,
+.layout-mobile .actionSheet {
     background: rgba(0, 0, 0, 0.95); 
     box-shadow: none !important;
     border: var(--buttonborder);
@@ -307,21 +308,25 @@
 }
 
 /* Action Sheets: Content */
-.layout-desktop .actionSheetContent {
+.layout-desktop .actionSheetContent,
+.layout-mobile .actionSheetContent {
     padding: 0 !important;
     min-width: 13em;
 }
 
-.layout-desktop .actionSheetScroller {
+.layout-desktop .actionSheetScroller,
+.layout-mobile .actionSheetScroller {
     padding-top: .5em;
     padding-bottom: .5em;
 }
 
-.layout-desktop .actionsheetDivider {
+.layout-desktop .actionsheetDivider,
+.layout-mobile .actionsheetDivider {
     display: none;
 }
 
-.layout-desktop .actionSheetItemText {
+.layout-desktop .actionSheetItemText,
+.layout-mobile .actionSheetItemText {
     font-size: 1.1em;
 }
 

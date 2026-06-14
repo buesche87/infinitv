@@ -285,6 +285,7 @@
     padding-right: 6vw;
 }
 
+
 .layout-mobile .libraryPage:not(.noSecondaryNavPage) {
     padding-top: 6.3em !important;
 }
@@ -440,18 +441,21 @@
 }
 
 /* Filter & Sorting Header */
+.layout-mobile .itemsViewSettingsContainer {
+    margin-left: -3.3%;
+    margin-right: -3.3%;
+}
+
 .layout-mobile .itemsViewSettingsContainer,
 .layout-mobile .pageTabContent > .focuscontainer-x {
     padding: 0;
-    margin-left: 0%;
-    margin-right: 0%;
     margin-bottom: 1em;
     margin-top: 0;
 }
-
-.layout-mobile .padded-left.padded-right .itemsViewSettingsContainer {
-    margin-left: -3.3%;
-    margin-right: -3.3%;
+.layout-mobile .pageTabContent > .focuscontainer-x:not(:has(.paper-icon-button-light)) {
+    margin-top: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 .layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right,
