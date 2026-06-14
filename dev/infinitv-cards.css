@@ -269,21 +269,23 @@
 */
 
 /* Card Glow */
-.card:hover .cardScalable,
-.card:hover .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow) !important; }
+.layout-desktop .card:hover .cardScalable,
+.layout-tv .card:hover .cardScalable,
+.layout-desktop .card:hover .cardBox:has(> .cardFooter),
+.layout-tv .card:hover .cardBox:has(> .cardFooter) { box-shadow: var(--cardglow) !important; }
 
 /* Card Shadows */
-.cardScalable                                 { box-shadow: var(--cardshadow) !important; }
+.cardScalable                                      { box-shadow: var(--cardshadow) !important; }
 
 /* Shadow for cardBox if footer present */
-.cardBox:has(> .cardFooter)                   { box-shadow: var(--cardshadow) !important; }
+.cardBox:has(> .cardFooter)                        { box-shadow: var(--cardshadow) !important; }
 
 /* No shadows */
 .cardBox:has(> .cardFooter) > .cardScalable,
-.dialogContentInner .imageEditorCard .cardBox { box-shadow: none !important; }
+.dialogContentInner .imageEditorCard .cardBox      { box-shadow: none !important; }
 
 /* Cards: Inset Shadow (smoothening) */
-.libraryPage .cardImageContainer              { box-shadow: var(--insettop), var(--insetbottom); }
+.libraryPage .cardImageContainer                   { box-shadow: var(--insettop), var(--insetbottom); }
 
 /* Layout Desktop - Card Animation
 --------------------------------------------------------------------------*/
