@@ -44,9 +44,73 @@
 ============================================================================
 */
 
-/* Layout Desktop - Dialog Position
+/* Action Sheets */
+.layout-desktop .actionSheet,
+.layout-mobile .actionSheet {
+    background: rgba(0, 0, 0, 0.95); 
+    box-shadow: none !important;
+    border: var(--buttonborder);
+}
+
+/* Action Sheets: Title */
+.layout-desktop .actionSheetTitle,
+.layout-mobile .actionSheetTitle {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: .2em !important;
+    margin-top: 0em !important;
+    cursor: default;
+    border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
+    padding: .6em .5em;
+    text-align: center !important;
+}
+
+/* Action Sheets: Content */
+.layout-desktop .actionSheetContent,
+.layout-mobile .actionSheetContent {
+    padding: 0 !important;
+    min-width: 13em;
+}
+
+.layout-desktop .actionSheetScroller,
+.layout-mobile .actionSheetScroller {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.layout-desktop .actionsheetDivider,
+.layout-mobile .actionsheetDivider {
+    display: none;
+}
+
+.layout-desktop .actionSheetItemText,
+.layout-mobile .actionSheetItemText {
+    font-size: 1.1em;
+}
+
+
+/* Layout Desktop - Dialogs
 --------------------------------------------------------------------------*/
 
+/* Style */
+.layout-desktop .formDialog.dialog-fixedSize.dialog-small {
+    width: 40%;
+    height: auto;
+}
+.layout-desktop .formDialog.dialog-fixedSize.dialog-small .dialogContentInner {
+    padding-bottom: 2em;
+}
+
+/* Style: Content */
+.layout-desktop .formDialog.dynamicFilterDialog {
+    max-height: 75% !important;
+}
+.layout-desktop .formDialog.dynamicFilterDialog .collapseContent  {
+    max-height: 12em;
+    overflow-y: scroll;
+}
+
+/* Positioning */
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened,
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
 .layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog,
@@ -57,118 +121,83 @@
     position: fixed;
 }
 
-.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened {
-    transform: translateX(10.5em) !important;
-}
-.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {
-    transform: translateX(13.5em) !important;
-}
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(10.5em) !important; }
+.layout-desktop:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(13.5em) !important; }
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
+.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
+.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
 
+/* Positioning: Header */
+.layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet                        { transform: translateY(4em) !important; }
+.layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet                      { transform: translateY(7.25em) !important; }
 
-.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.opened  {
-    transform: translateX(7em) !important;
-}
-.layout-desktop:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened  {
-    transform: translateX(10em) !important;
-}
-
-.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.opened  {
-    transform: translateX(6em) !important;
-}
-.layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened  {
-    transform: translateX(9em) !important;
-}
-
-/* Header */
-.layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet {
-    transform: translateY(4em) !important;
-}
-.layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
-    transform: translateY(7.25em) !important;
-}
-
-/* Player OSD */
-.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]  {
-    transform: translateY(3.5em) !important;
-}
-.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
-    transform: translateY(-5em) !important;
-}
-
-
-.layout-desktop .formDialog.dialog-fixedSize.dialog-small {
-    width:40%;
-    height: auto;
-}
-
-.layout-desktop .formDialog.dialog-fixedSize.dialog-small .formDialogContent .dialogContentInner {
-    padding-bottom: 2em;
-}
-
-
-/* Layout TV 
---------------------------------------------------------------------------*/
-
-
+/* Positioning: Player OSD */
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]               { transform: translateY(3.5em) !important; }
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
 
 
 /* Layout Mobile
 --------------------------------------------------------------------------*/
-.layout-mobile .formDialog {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    top: 10em !important;
-    animation-duration: var(--anispeed) !important;
-    box-shadow: var(--buttonglow);
-}
 
+/* Style */
+.layout-mobile .formDialog {
+    animation-duration: var(--anispeed) !important;
+    border: var(--buttonborder) !important;
+}
 .layout-mobile .focuscontainer.dialog.dialog-fixedSize.dialog-small.formDialog.opened {
-    top: 0em !important;
     box-shadow: none;
     border-radius: 0;
 }
-
 .layout-mobile .actionSheet {
-    left: unset !important;
-    top: 4em !important;
+    background: rgba(0, 0, 0, 0.95); 
+    box-shadow: none !important;
+    border: var(--buttonborder);
 }
-
 .layout-mobile .actionSheet:has(.listItem-button) {
-    position: fixed !important;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-    left: unset !important;
-    top: 10em !important;
-    animation-duration: var(--anispeed) !important;
-    /* box-shadow: var(--buttonglow); */
+    animation-duration: var(--anispeed) !important; 
 }
 
-.layout-mobile .actionSheet.syncPlayGroupMenu {
-    top: 4em !important;
-}
-
-/*
-============================================================================
-   Dialogs: Content
-============================================================================
-*/
-
-
-/* Content */
-.layout-desktop .dialogContainer .dynamicFilterDialog,
+/* Style: Content */
 .layout-mobile .dialogContainer .dynamicFilterDialog {
-    bottom: unset !important;
     max-height: 75% !important;
 }
-
-.layout-desktop .dialogContainer .dynamicFilterDialog .collapseContent,
 .layout-mobile .dialogContainer .dynamicFilterDialog .collapseContent {
     max-height: 12em;
     overflow-y: scroll;
 }
+
+/* Positioning: Sort By & Filter */
+.layout-mobile .formDialog.centeredDialog {
+    padding: 0 .5em;
+}
+
+
+/* Positioning */
+.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened,
+.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
+.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog,
+.layout-mobile:has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
+.layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog,
+.layout-mobile:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
+    top: 9.5em !important;
+    position: fixed;
+}
+
+.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened                               {/* transform: translateX(0em) !important; */}
+.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(13.5em) !important; }
+.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
+.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
+.layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
+.layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
+
+/* Positioning: Header */
+.layout-mobile:has(.centeredDialog[style*="top: 10px"]) .actionSheet                        {transform: translateY(3em) !important;}
+.layout-mobile:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet                      {transform: translateY(9em) !important;}
+
+/* Positioning: Player OSD */
+.layout-mobile:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]               { transform: translateY(3.5em) !important; }
+.layout-mobile:has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
 
 
 
@@ -221,8 +250,16 @@
     margin: 1em;
 }
 
+.layut-tv .actionSheetContent .listItem {
+    padding: 1em 1em;
+}
 
 
+/*
+============================================================================
+   Media Infos & 
+============================================================================
+*/
 
 /* Media Infos */
 .layout-tv .formDialog:has(.dialog-fullscreen) {
@@ -271,67 +308,10 @@
     color: hsla(0, 0%, 100%, .9);
 }
 
-
-
-
 /* Collapsible Menu */
 .collapseContent {
     padding-top: 0em;
     padding-bottom: 0em;
-}
-
-/*
-============================================================================
-   Action Sheets
-============================================================================
-*/
-
-/* Action Sheets */
-.layout-desktop .actionSheet,
-.layout-mobile .actionSheet {
-    background: rgba(0, 0, 0, 0.95); 
-    box-shadow: none !important;
-    border: var(--buttonborder);
-}
-
-/* Action Sheets: Title */
-.layout-desktop .actionSheetTitle,
-.layout-mobile .actionSheetTitle {
-    font-size: 1.6em;
-    font-weight: 600;
-    margin-bottom: .2em !important;
-    margin-top: 0em !important;
-    cursor: default;
-    border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
-    padding: .6em .5em;
-    text-align: center !important;
-}
-
-/* Action Sheets: Content */
-.layout-desktop .actionSheetContent,
-.layout-mobile .actionSheetContent {
-    padding: 0 !important;
-    min-width: 13em;
-}
-
-.layout-desktop .actionSheetScroller,
-.layout-mobile .actionSheetScroller {
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
-
-.layout-desktop .actionsheetDivider,
-.layout-mobile .actionsheetDivider {
-    display: none;
-}
-
-.layout-desktop .actionSheetItemText,
-.layout-mobile .actionSheetItemText {
-    font-size: 1.1em;
-}
-
-.layut-tv .actionSheetContent .listItem {
-    padding: 1em 1em;
 }
 
 /*
