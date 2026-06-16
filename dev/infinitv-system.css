@@ -185,12 +185,14 @@
     position: fixed;
 }
 
-.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened                               {/* transform: translateX(0em) !important; */}
+/* 
+.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(0em) !important; }
 .layout-mobile:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(13.5em) !important; }
-/* .layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; } */
-/* .layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; } */
+.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
+.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
 .layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
 .layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
+*/
 
 /* Positioning: Header */
 .layout-mobile:has(.centeredDialog[style*="top: 10px"]) .actionSheet                        {transform: translateY(3em) !important;}
