@@ -946,11 +946,12 @@
 }
 
 .layout-tv #myPreferencesMenuPage .sectionTitle {
-    padding-left: 4em !important;
+    padding-left: 0 !important;
     margin-top: 0;
     padding-bottom: 0.5em;
     border-bottom: var(--buttonborder);
     border-radius: 0 !important;
+    text-align: center;
 }
 
 /* Layout Mobile

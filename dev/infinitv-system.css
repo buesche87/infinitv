@@ -147,7 +147,8 @@
 }
 .layout-mobile .focuscontainer.dialog.dialog-fixedSize.dialog-small.formDialog.opened {
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 0 !important;
+    border: none !important;
 }
 .layout-mobile .actionSheet {
     background: rgba(0, 0, 0, 0.95); 
@@ -186,14 +187,18 @@
 
 .layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened                               {/* transform: translateX(0em) !important; */}
 .layout-mobile:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(13.5em) !important; }
-.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
-.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
+/* .layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; } */
+/* .layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; } */
 .layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
 .layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
 
 /* Positioning: Header */
 .layout-mobile:has(.centeredDialog[style*="top: 10px"]) .actionSheet                        {transform: translateY(3em) !important;}
-.layout-mobile:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet                      {transform: translateY(9em) !important;}
+.layout-mobile:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) translateY(9.5em) !important;
+}
 
 /* Positioning: Player OSD */
 .layout-mobile:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]               { transform: translateY(3.5em) !important; }
