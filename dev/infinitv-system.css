@@ -1,24 +1,16 @@
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    System
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Smaller TV-Layout */
-.layout-tv {
-    font-size: 110% !important;
-}
+.layout-tv           { font-size: 110% !important; }
 
 /* Progress Ring */
-.progressring {
-    margin: .4em;
-}
-.progressring-bg {
-    display: none;
-}
-.progressring-spiner {
-    border-width: .35em;
-}
+.progressring        { margin: .4em; }
+.progressring-bg     { display: none; }
+.progressring-spiner { border-width: .35em; }
 
 /* Toast: Center */
 .toastContainer {
@@ -29,19 +21,10 @@
     bottom: .25em;
 }
 
-/* Spinner Color */
-.mdl-spinner__layer-1,
-.mdl-spinner__layer-2,
-.mdl-spinner__layer-3,
-.mdl-spinner__layer-4,
-.progressring-spiner {
-    border-color: var(--accent100) !important;
-}
-
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Dialogs
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Action Sheets */
@@ -71,26 +54,22 @@
     padding: 0 !important;
     min-width: 13em;
 }
-
 .layout-desktop .actionSheetScroller,
 .layout-mobile .actionSheetScroller {
     padding-top: .5em;
     padding-bottom: .5em;
 }
-
 .layout-desktop .actionsheetDivider,
 .layout-mobile .actionsheetDivider {
     display: none;
 }
-
 .layout-desktop .actionSheetItemText,
 .layout-mobile .actionSheetItemText {
     font-size: 1.1em;
 }
 
-
 /* Layout Desktop - Dialogs
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Style */
 .layout-desktop .formDialog.dialog-fixedSize.dialog-small {
@@ -103,7 +82,7 @@
 
 /* Style: Content */
 .layout-desktop .formDialog.dynamicFilterDialog {
-    max-height: 75% !important;
+    max-height: 82% !important;
 }
 .layout-desktop .formDialog.dynamicFilterDialog .collapseContent  {
     max-height: 12em;
@@ -119,6 +98,7 @@
 .layout-desktop:has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
     top: 8em !important;
     position: fixed;
+    bottom: auto !important;
 }
 
 .layout-desktop:has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(10.5em) !important; }
@@ -129,7 +109,7 @@
 .layout-desktop:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
 
 /* Positioning: Header */
-.layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet                        { transform: translateY(4em) !important; }
+.layout-desktop:has(.centeredDialog[style*="top: 10px"]) .actionSheet                        { transform: translateY(3.3em) !important; }
 .layout-desktop:has(.actionSheetMenuItem[data-id*="List"]) .actionSheet                      { transform: translateY(7.25em) !important; }
 
 /* Positioning: Player OSD */
@@ -137,8 +117,8 @@
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
 
 
-/* Layout Mobile
---------------------------------------------------------------------------*/
+/* Layout Mobile - Dialogs
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Style */
 .layout-mobile .formDialog {
@@ -199,8 +179,9 @@
 
 
 /* Layout TV - Dialogs
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
+/* Form Dialogs */
 .layout-tv .formDialog {
     position: fixed;
     display: flex;
@@ -215,84 +196,32 @@
     animation-duration: var(--anispeed) !important;
 }
 
-.layout-tv .filterDialogContent {
-    min-width: 24em;
-}
+/* Action Sheets */
+.layout-tv .actionSheet { animation-duration: var(--anispeed) !important; }
 
-.layout-tv .actionSheet {
-    animation-duration: var(--anispeed) !important;
+/* Content */
+.layout-tv .formDialogContent { margin-bottom: 6.2em; }
+.layout-tv .dialogContentInner {
+    padding: .5em 5em;
+    padding-top: 0 !important;
+    margin-top: -.5em !important;
 }
-
-.layout-tv .listItem:focus .secondary {
-    color: hsla(0, 0%, 100%, .8) !important;
-}
-
+.layout-tv .filterDialogContent { min-width: 24em; }
 .layout-tv .dialogContainer .dynamicFilterDialog .collapseContent {
     max-height: 12em;
     overflow-y: scroll;
 }
 
-/* User Profile: Improve Alignments */
-.layout-tv .formDialogContent {
-    margin-bottom: 6.2em;
-}
-.layout-tv .dialogContentInner {
-    padding: .5em 5em;
-    /* overflow: scroll; */
-    padding-top: 0 !important;
-    margin-top: -.5em !important;
-    /* justify-content: center; */
-}
-.layout-tv .listItem-indexnumberleft {
-    margin: 1em;
-}
-
-.layut-tv .actionSheetContent .listItem {
-    padding: 1em 1em;
-}
-
+.layout-tv .actionSheetContent .listItem { padding: 1em 1em; }
+.layout-tv .listItem-indexnumberleft { margin: 1em; }
+.layout-tv .listItem:focus .secondary { color: hsla(0, 0%, 100%, .8) !important; }
 
 /*
-============================================================================
-   Media Infos & 
-============================================================================
+────────────────────────────────────────────────────────────────────────────
+   Media Infos
+────────────────────────────────────────────────────────────────────────────
 */
 
-/* Media Infos */
-.layout-tv .formDialog:has(.dialog-fullscreen) {
-    align-content: normal;
-}
-
-.layout-tv .dialog-fullscreen .formDialogHeader {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding-top: .5em;
-    padding-bottom: .25em;
-    border-bottom: var(--buttonborder);
-    border-radius: 0 !important;
-}
-.layout-tv .dialog-fullscreen .btnCloseActionSheet {
-    display: none;
-}
-
-
-.layout-tv .dialog-fullscreen .formDialogContent {
-    /* margin: 4em 3em; */
-    scrollbar-color: aliceblue;
-    padding-top: .5em;
-    margin-top: 4em;
-    margin-bottom: 3em;
-    margin-left: 1.5em;
-    margin-right: 3em;
-    scrollbar-width: thin;
-}
-.layout-tv .dialog-fullscreen .mediaInfoContent {
-    /* margin-top: 4.5em; */
-    width: 100%;
-    /* font-size: 100%; */
-    font-size: 80%;
-}
 .mediaInfoLabel {
     color: hsla(0, 0%, 100%, .8);
     font-weight: 400;
@@ -311,10 +240,41 @@
     padding-bottom: 0em;
 }
 
+/* Layout TV - Media Infos
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Media Infos */
+.layout-tv .formDialog:has(.dialog-fullscreen) { align-content: normal; }
+.layout-tv .dialog-fullscreen .btnCloseActionSheet { display: none; }
+.layout-tv .dialog-fullscreen .formDialogHeader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    border-bottom: var(--buttonborder);
+    border-radius: 0 !important;
+}
+
+/* Content */
+.layout-tv .dialog-fullscreen .formDialogContent {
+    scrollbar-color: aliceblue;
+    padding-top: .5em;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    margin-left: 1.5em;
+    margin-right: 3em;
+    scrollbar-width: thin;
+}
+.layout-tv .dialog-fullscreen .mediaInfoContent {
+    width: 100%;
+    font-size: 80%;
+}
+
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Menu Drawer
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Main Drawer */
@@ -351,9 +311,9 @@
 }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Scrollbar
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Scrollbar Style */
@@ -377,9 +337,9 @@
 }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Header & Section Tabs
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Shorten transition time */
@@ -466,9 +426,9 @@
 }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Buttons
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 
@@ -478,7 +438,7 @@
 }
 
 /* Buttons: Sign In, Save, Cancel...
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .emby-button.block,
 .button-submit,
@@ -488,7 +448,7 @@
 }
 
 /* Buttons: Header Buttons
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .emby-tab-button.show-focus:focus,
 .headerButton:focus {
@@ -501,7 +461,7 @@
 }
 
 /* Buttons: Action Sheet Menu Items
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .actionSheetMenuItem {
     transform: none !important;
@@ -517,7 +477,7 @@
 }
 
 /* Buttons: List Menu Items
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .listTextButton-autohide {
     transform: none !important;
@@ -536,7 +496,7 @@
 }
 
 /* Buttons: Collapsible
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .emby-collapsible-button {
     padding: .75em !important;
@@ -550,7 +510,7 @@
 
 
 /* Buttons: Menu List Items
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* List Item Border */
 .listItem-border {
@@ -569,7 +529,7 @@
 }
 
 /* Buttons: Media Buttons (Play, Watched, Favourite...)
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-tv .mainDetailButtons .detailButton {
     font-size: 120% !important;
@@ -585,7 +545,7 @@
 }
 
 /* Buttons: Slide Buttons (Desktop & Mobile)
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 .play-button,
 .detail-button,
 .favorite-button {
@@ -611,7 +571,7 @@
 }
 
 /* Buttons: Links acting as Buttons
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 .button-link,
 .overview-expand {
@@ -621,7 +581,7 @@
 }
 
 /* ClearLinks: Buttons with Link-Buttons inside
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Clearlinks: Won't focus with remote > hide in TV layout */
 .layout-tv .sectionTitleContainer > .clearLink {
@@ -646,7 +606,7 @@
 }
 
 /* Misc Buttons
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 .listPaging .paper-icon-button-light:focus,
 .emby-button.sectionTitleTextButton.show-focus:focus {
     transform: scale(1);
@@ -654,9 +614,9 @@
 }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Inputs and Labels
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Input */

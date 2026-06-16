@@ -1,7 +1,7 @@
 /*
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
    Variables
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 :root {
@@ -48,9 +48,9 @@
 }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Wallpaper
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Background Image: If Backdrops disabled */
@@ -82,9 +82,9 @@
 }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Colors
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* TRY: colorize navMenuOption "Dashboard" */
@@ -155,7 +155,7 @@
 .emby-checkbox:focus + .checkboxLabel { font-weight: 500; }
 
 /* Active
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Active: Accent 100% */
 .header-right .headerButton:active,
@@ -166,9 +166,9 @@
 .emby-tab-button-active { color: white !important; }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Backgrounds
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Background: Black 85%  */
@@ -183,24 +183,29 @@
 .skinHeader-withBackground,
 .subtitleSyncContainer,
 .subtitleSyncSliderContainer .sliderBubble,
-.videoOsdBottom { background: rgba(0, 0, 0, var(--headeropacity)) !important; }
+.videoOsdBottom                              { background: rgba(0, 0, 0, var(--headeropacity)) !important; }
 
 /* Background: --itemopacity */
 .cardFooter:not(.visualCardBox-cardFooter),
 .layout-desktop .detailRibbon,
-.layout-mobile .detailRibbon { background: rgba(0, 0, 0, var(--itemopacity)) !important; }
+.layout-mobile .detailRibbon                 { background: rgba(0, 0, 0, var(--itemopacity)) !important; }
+
+/* Background: Dark 85%  */
+.btnAddServer,
+.btnAddServer:hover,
+.btnAddServer:focus                                { background: var(--bgdark60) !important; }
 
 /* Default card color if no image is present */
-.defaultCardBackground1 { background: hsl(var(--accent-h), var(--accent-s), 17%); }
-.defaultCardBackground2 { background: hsl(var(--accent-h), var(--accent-s), 16%); }
-.defaultCardBackground3 { background: hsl(var(--accent-h), var(--accent-s), 15%); }
-.defaultCardBackground4 { background: hsl(var(--accent-h), var(--accent-s), 14%); }
-.defaultCardBackground5 { background: hsl(var(--accent-h), var(--accent-s), 13%); }
+.defaultCardBackground1                      { background: hsl(var(--accent-h), var(--accent-s), 17%); }
+.defaultCardBackground2                      { background: hsl(var(--accent-h), var(--accent-s), 16%); }
+.defaultCardBackground3                      { background: hsl(var(--accent-h), var(--accent-s), 15%); }
+.defaultCardBackground4                      { background: hsl(var(--accent-h), var(--accent-s), 14%); }
+.defaultCardBackground5                      { background: hsl(var(--accent-h), var(--accent-s), 13%); }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Background Colors
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Background Color: White 5% */
@@ -319,23 +324,20 @@
 .paper-icon-button-light:not(.alphaPickerButton):active,
 .sectionTitleTextButton:focus,
 .sliderBubble,
-.userPreferencesPage .listItem-border:focus       { background-color: #0000 !important; }
-
-.btnAddServer,
-.btnAddServer:hover,
-.btnAddServer:focus { background: var(--bgdark60) !important; }
+.userPreferencesPage 
+.listItem-border:focus                             { background-color: #0000 !important; }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Borders
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Outline: None */
-:focus-visible { outline-style: none; }
+:focus-visible               { outline-style: none; }
 
 /* Borders: Grey
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 .layout-desktop .formDialog,
 .checkboxOutline,
 .detailButton,
@@ -352,7 +354,7 @@
 .selectionCommandsPanel      { border: var(--buttonborder) !important; }
 
 /* Borders: Transparent
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 .actionSheetMenuItem,
 .emby-collapsible-button,
 .listItem-border,
@@ -361,7 +363,7 @@
 .navMenuOption               { border: solid 1px #0000 !important; }
 
 /* Borders: None
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 .button-link,
 .clearLink,
 .cardOverlayButton,
@@ -373,9 +375,9 @@
 .skip-button                 { border: none !important; }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Border Colors
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Border Color: Accent 40% */
@@ -404,7 +406,14 @@
 .mainDetailButtons .detailButton:focus,
 .itemsContainer > .listItem-largeImage:focus   { border-color: var(--accent60) !important; }
 
-/* Border Color: Transparent*/
+/* Border Color: Accent 100% */
+.mdl-spinner__layer-1,
+.mdl-spinner__layer-2,
+.mdl-spinner__layer-3,
+.mdl-spinner__layer-4,
+.progressring-spiner                           { border-color: var(--accent100) !important; }
+
+/* Border Color: Transparent */
 .actionSheetMenuItem:focus,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable,
 .navMenuOption:focus,
@@ -412,9 +421,9 @@
 .upNextDialog-button:focus                     { border-color: #0000 !important; }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Glow & Shadows
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Card Glow*/
@@ -430,7 +439,7 @@
 .upNextDialog-button:focus                   { box-shadow: var(--buttonglow) !important; }
 
 /* Box Shadows */
-.detailImageContainer .card                  { box-shadow: var(--itemshadow) !important; }
+.detailImageContainer .card                        { box-shadow: var(--itemshadow) !important; }
 
 /* No Shadows / no Glow */
 .cardPadder,
@@ -439,9 +448,9 @@
 .card:hover .cardBox.withMultiSelect .cardScalable { box-shadow: none !important; }
 
 /*
-============================================================================
+────────────────────────────────────────────────────────────────────────────
    Roundings
-============================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Rounding: System */
