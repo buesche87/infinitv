@@ -174,8 +174,6 @@
     padding: 0 .5em;
 }
 
-.layout-mobile focuscontainer dialog formDialog align-items-center justify-content-center dialog-fullscreen-lowres centeredDialog opened
-
 /* Positioning */
 .layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened,
 .layout-mobile:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
@@ -186,15 +184,6 @@
     top: 9.5em !important;
     position: fixed;
 }
-
-/* 
-.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(0em) !important; }
-.layout-mobile:has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(13.5em) !important; }
-.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
-.layout-mobile:has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
-.layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
-.layout-mobile:has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
-*/
 
 /* Positioning: Header */
 .layout-mobile:has(.centeredDialog[style*="top: 10px"]) .actionSheet                        {transform: translateY(3em) !important;}
@@ -207,7 +196,6 @@
 /* Positioning: Player OSD */
 .layout-mobile:has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]               { transform: translateY(3.5em) !important; }
 .layout-mobile:has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
-
 
 
 /* Layout TV - Dialogs
