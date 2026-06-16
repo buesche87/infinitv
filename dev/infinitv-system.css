@@ -145,7 +145,8 @@
     animation-duration: var(--anispeed) !important;
     border: var(--buttonborder) !important;
 }
-.layout-mobile .focuscontainer.dialog.dialog-fixedSize.dialog-small.formDialog.opened {
+.layout-mobile .dialog-fullscreen-lowres,
+.layout-mobile .dialog-fixedSize.dialog-small {
     box-shadow: none;
     border-radius: 0 !important;
     border: none !important;
@@ -173,6 +174,7 @@
     padding: 0 .5em;
 }
 
+.layout-mobile focuscontainer dialog formDialog align-items-center justify-content-center dialog-fullscreen-lowres centeredDialog opened
 
 /* Positioning */
 .layout-mobile:has(#moviesPage:not(.hide)) .formDialog.opened,
