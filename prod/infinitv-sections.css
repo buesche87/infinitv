@@ -1,11 +1,11 @@
 /*
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
    Sections: Media Pages
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Margin if NextUp Section is hidden */
 .layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide)
@@ -31,7 +31,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* More Space to stretch Seasons Scroller */
 .layout-desktop .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
@@ -40,9 +40,9 @@
 }
 
 /*
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
    Sections: Titles
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 /* Text & Icon */
@@ -53,7 +53,7 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Container */
 .layout-tv .sectionTitleContainer-cards,
@@ -78,7 +78,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Container */
 .layout-desktop .sectionTitleContainer-cards {
@@ -127,18 +127,17 @@
     padding-left: .75em;
 }
 
-
 /* Scroll Buttons */
 .layout-desktop .verticalSection > .emby-scrollbuttons {
     padding: 0.4em;
-    /* padding-bottom: 0em; */
-    /* display: flex; */
-    /* margin-top: auto; */
-    /* margin: .5em; */
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-mobile .sectionTitle {
+    font-size: 1.4em;
+}
 
 /* Container */
 .layout-mobile .sectionTitleContainer-cards,
@@ -151,6 +150,7 @@
 .layout-mobile .sectionTitleTextButton .sectionTitle-cards {
     text-align: center;
     padding: 0;
+    font-size: 1.4em;
 }
 @media(max-width: 48.125em) {
     .layout-mobile .homePage .sectionTitleContainer-cards,
@@ -173,9 +173,9 @@
 }
 
 /*
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
    Media Scroller
-===========================================================================
+────────────────────────────────────────────────────────────────────────────
 */
 
 .emby-scroller {
@@ -188,7 +188,7 @@
 }
 
 /* Layout TV
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
 .layout-tv .emby-scroller                                        { padding: 0; margin: 0 .5vw; }
@@ -224,7 +224,7 @@
 }
 
 /* Layout Desktop
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
 .layout-desktop .emby-scroller                                       { padding: 0; margin: .5vw .5vw; }
@@ -265,7 +265,7 @@
 }
 
 /* Layout Mobile
---------------------------------------------------------------------------*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
 .layout-mobile .emby-scroller                     { padding: 0; margin: 0 1vw; }
@@ -285,4 +285,8 @@
 /* Items Container with listItems */
 .layout-mobile .pageTabContent .itemsContainer:has(.listItem-border) {
     padding: .5em 3% !important;
+}
+
+.layout-mobile .pageTabContent .itemsContainer.padded-right-withalphapicker:has(.listItem-border) {
+    padding: 0.5em 8% .5em 4% !important;
 }

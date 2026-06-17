@@ -1,6 +1,15 @@
+# v0.4.3
+
+> Mainly dialog design and bugfixes
+
+- dialog style in mobile layout
+- fixed the select server page
+- fixed some things in mobile layout
+
+
 # v0.4.2
 
-Some design improvements have been made:
+> Some design improvements
 
 - fixed the scrollbar
 - fixed server selection page
@@ -9,17 +18,19 @@ Some design improvements have been made:
 - redesigned settings page
 - and some more cosmetics
 
+
 # v0.4.1
 
-Mainly a bugfix release with the following changes:
+> Mainly a bugfix release with the following changes
 
 - hide he scrollbar while playing a video (bugfix)
 - show wallpaper on library pages, even if backdrops are enabled 
 - some other fixes
 
+
 # v0.4.0
 
-With this release many adjustments to the desktop layout are introduced.
+> With this release many adjustments to the desktop layout are introduced
 
 - Made slides slightly smaller and repositioned some elements on them
 - Moved the filter-bar on library pages right under the header
@@ -32,7 +43,7 @@ With this release many adjustments to the desktop layout are introduced.
 
 # v0.3.2
 
-Time to bump a number
+> Just time to bump a number
 
 - Split some code in a new file for better readability
 - Fidddled with card sizes, spacings and alignments
@@ -42,7 +53,7 @@ Time to bump a number
 
 # v0.3.1
 
-Main focus on dialogs & list view
+> Main focus on dialogs & list view
 
 - Matched style, positioning and animation speed of different dialogs
 - More full-screen dialogs shown in TV mode
@@ -50,18 +61,6 @@ Main focus on dialogs & list view
 - Some mouse cursor adjustments
 - New episode list style (list view generally)
 - Fixed some alignment and style errors
-
-
-There is now a transparent box behind the user-settings list, to disable it:
-
-```css
-:root {
-    [...]
-    --itembg: none;
-}
-```
-
-> This variable could be used to style more elements in feature updates
 
 
 # v0.3.0
@@ -89,10 +88,9 @@ To disable glow, add the following to your custom css code:
 - Work done on subtitle-sync dialog
 - Fixed chapter thumbnail position
 
-
 # v0.2.2
 
-**This version introduces changes to the mobile layout.**
+> This version introduces changes to the mobile layout
 
 If you would like to keep the previous mobile layout with the header at the bottom, please import the following CSS:
 
