@@ -897,15 +897,6 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Page */
-#myPreferencesMenuPage {
-    justify-content: center;
-    display: flex;
-    padding-top: 5em !important;
-}
-
-
-
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -914,7 +905,7 @@
 .layout-tv #myPreferencesMenuPage .readOnlyContent,
 .layout-tv #quickConnectPreferencesPage .padded-left,
 .layout-tv #displayPreferencesPage form,
-.layout-tv #homeScreenSettingsContainer form,
+.layout-tv #homeScreenPreferencesPage form,
 .layout-tv #languagePreferencesPage form,
 .layout-tv #controlsPreferencesPage form,
 .layout-desktop #userProfilePage .padded-left,
@@ -931,17 +922,30 @@
 
 .layout-tv #displayPreferencesPage form,
 .layout-tv #homeScreenPreferencesPage form,
-.layout-tv #languagePreferencesPage form,
+.layout-tv #languagePreferencesPage form {
+    padding: 2em 4em;
+    /* margin-bottom: 2em !important; */
+}
+
 .layout-desktop #displayPreferencesPage form,
 .layout-desktop #homeScreenPreferencesPage form,
 .layout-desktop #languagePreferencesPage form {
     padding: 1em 4em;
 }
 
-.layout-tv #controlsPreferencesPage form,
+.layout-tv #controlsPreferencesPage form{
+    padding: 3em 5.5em;
+    padding-top: 2.5em;
+}
+
 .layout-desktop #controlsPreferencesPage form {
     padding: 3em 5.5em;
     padding-top: 1.5em;
+}
+
+.layout-tv #myPreferencesMenuPage > .padded-left,
+.layout-desktop #myPreferencesMenuPage > .padded-left {
+    padding-top: 0em;
 }
 
 .layout-tv #myPreferencesMenuPage .readOnlyContent,
@@ -973,11 +977,6 @@
     height: 30em;
 }
 
-.layout-tv #quickConnectPreferencesPage, 
-.layout-desktop #quickConnectPreferencesPage {
-    padding-top: 6em !important;
-}
-
 .layout-tv #quickConnectPreferencesPage .padded-left,
 .layout-desktop #quickConnectPreferencesPage .padded-left {
     display: flex;
@@ -990,19 +989,23 @@
 .layout-desktop #displayPreferencesPage {
     justify-content: center;
     display: flex;
+    /* padding-bottom: 0em !important; */
 }
 
+.layout-tv .inputLabel[for="txtQuickConnectCode"],
 .layout-desktop .inputLabel[for="txtQuickConnectCode"] {
     font-size: 1.2em;
     padding: .5em;
 }
 
-#txtQuickConnectCode {
+.layout-tv #txtQuickConnectCode,
+.layout-desktop #txtQuickConnectCode {
     padding: 1em 0;
     text-align: center;
     font-size: 1.2em;
 }
 
+.layout-tv #quickConnectPreferencesPage .button-submit,
 .layout-desktop #quickConnectPreferencesPage .button-submit {
     margin-top: 3em;
 }
@@ -1018,6 +1021,7 @@
     border: var(--buttonborder);
     /* font-size: 90%; */
     display: flex;
+    padding-top: 0;
 }
 .layout-tv #myPreferencesMenuPage .verticalSection {
     margin: 2em;
@@ -1114,15 +1118,17 @@
 ===========================================================================
 
 /* Settings Pages: Center content and Text */
+#myPreferencesMenuPage,
 #userProfilePage,
 #quickConnectPreferencesPage {
     justify-content: center;
     display: flex;
     text-align: center;
-    padding-top: 6em !important;
 }
 
 /* Settings Pages: Move content up */
+#userProfilePage,
+#myPreferencesMenuPage,
 #controlsPreferencesPage,
 #quickConnectPreferencesPage,
 #displayPreferencesPage,
@@ -1131,6 +1137,8 @@
 #searchPage {
     padding-top: 5em !important;
 }
+
+
 
 /* Preferences Pages */
 #homeScreenPreferencesPage .verticalSection-extrabottompadding,
