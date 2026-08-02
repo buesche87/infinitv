@@ -78,9 +78,10 @@ h2.username                                              {
     color: #fff;
 }
 
-/* Display: Center content */
+/* Display: Center content
 .layout-desktop #displayPreferencesPage,
 .layout-tv #displayPreferencesPage                        { display: flex; justify-content: center }
+ */
 
 /* Quick Connect: Box size */
 .layout-desktop #quickConnectPreferencesPage form,
