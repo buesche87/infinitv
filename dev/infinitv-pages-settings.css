@@ -54,6 +54,7 @@
 
 /*  No text wrap */
 .layout-tv .userPreferencesPage .listItemBodyText,
+.layout-desktop .userPreferencesPage .listItemBodyText      { white-space: nowrap }
 
 /* Settings Page: Box size */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
