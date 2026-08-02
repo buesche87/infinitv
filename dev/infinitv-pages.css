@@ -661,16 +661,9 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Primary Container */
-.layout-desktop .detailPagePrimaryContent {
-    padding-top: 0em;
-    padding-bottom: 1em;
-    padding-right: 1.5vw;
-}
+.layout-desktop .detailPagePrimaryContent { padding: 0em 1.5vw 1em 32.45vw; }
 
-.layout-desktop .itemDetailsGroup {
-    margin-bottom: 2em;
-    margin-top: .5em;
-}
+.layout-desktop .itemDetailsGroup { margin: .5em 0 2em 0; }
 
 .layout-desktop .itemTags {
     padding: 0;
@@ -685,10 +678,7 @@
 .layout-desktop .detailPageSecondaryContainer { padding: 0 1.5vw !important; }
 
 /* Secondary Container: Content */
-.layout-desktop .detailPageSecondaryContainer .detailPageContent {
-    padding-left: 0;
-    padding-right: 0;
-}
+.layout-desktop .detailPageSecondaryContainer .detailPageContent { padding: 0; }
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
@@ -719,9 +709,7 @@
 }
 
 /* Secondary Container */
-.layout-tv .detailPageSecondaryContainer {
-    padding-top: 2em
-}
+.layout-tv .detailPageSecondaryContainer { padding-top: 2em }
 .layout-tv .detailPageSecondaryContainer .detailPageContent  {
     padding-left: 0;
     padding-right: 0;
@@ -745,14 +733,10 @@
 }
 
 /* Tracks & Subtitles */
-.layout-mobile .trackSelections {
-    padding-top: 1em;
-}
+.layout-mobile .trackSelections { padding-top: 1em; }
 
 /* Secondary Container */
-.layout-mobile .detailPageSecondaryContainer {
-    padding-top: 0em !important;
-}
+.layout-mobile .detailPageSecondaryContainer { padding-top: 0em !important; }
 .layout-mobile .detailPageSecondaryContainer .detailPageContent {
     padding-left: 3% !important;
     padding-right: 3% !important;
@@ -815,26 +799,21 @@
 
 /* Settings Pages: Narrow contect margins */
 #homeScreenPreferencesPage .verticalSection-extrabottompadding,
-#languagePreferencesPage .verticalSection-extrabottompadding {
-    margin-bottom: 0em;
-}
+#languagePreferencesPage .verticalSection-extrabottompadding { margin-bottom: 0em; }
+
 #languagePreferencesPage .selectContainer,
-#displayPreferencesPage .inputContainer {
-    margin-bottom: 1em;
-}
+#displayPreferencesPage .inputContainer                      { margin-bottom: 1em; }
+
 #displayPreferencesPage .checkboxContainer,
 #displayPreferencesPage .selectContainer,
 #homeScreenPreferencesPage .selectContainer,
 #homeScreenPreferencesPage .checkboxContainer,
 #homeScreenPreferencesPage .checkboxListContainer,
-#languagePreferencesPage .checkboxContainer {
-    margin-bottom: 1.25em;
-}
+#languagePreferencesPage .checkboxContainer                  { margin-bottom: 1.25em; }
+
 #displayPreferencesPage .btnSave,
 #homeScreenPreferencesPage .btnSave,
-#languagePreferencesPage .btnSave {
-    margin-top: 2em;
-}
+#languagePreferencesPage .btnSave                            { margin-top: 2em; }
 
 /* Background */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
@@ -852,9 +831,6 @@
 .layout-tv .userPreferencesPage .listItemBodyText,
 .layout-desktop .userPreferencesPage .listItemBodyText { white-space: nowrap }
 
-
-
-
 /* Settings Page: Box size */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
@@ -864,21 +840,14 @@
 .layout-desktop #myPreferencesMenuPage > .padded-left,
 .layout-tv #myPreferencesMenuPage > .padded-left      { padding-top: 0; }
 
-
 .layout-desktop #myPreferencesMenuPage .verticalSection,
 .layout-tv #myPreferencesMenuPage .verticalSection {margin: 2em;}
 
 
 /* User Profile: Form Alignment */
-.updatePasswordForm br {
-    display: none;
-}
-.updatePasswordForm .inputContainer {
-    margin-bottom: 1em;
-}
-.updatePasswordForm .emby-button.block {
-    margin-top: 2em;
-}
+.updatePasswordForm br { display: none; }
+.updatePasswordForm .inputContainer { margin-bottom: 1em; }
+.updatePasswordForm .emby-button.block { margin-top: 2em; }
 
 /* User Profile: Username bold */
 h2.username {
@@ -916,6 +885,35 @@ h2.username {
 /* Subtitles: Preview-Box color */
 .subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+/* Settings: Section Titles */
+.settingsContainer .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle,
+#controlsPreferencesPage .sectionTitle {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-left: .6em !important;
+    margin-left: -1.4em;
+    margin-right: -1.4em;
+    border-radius: var(--rounding-system);
+}
+.layout-tv .settingsContainer .sectionTitle,
+.layout-tv .homeScreenSettingsContainer .sectionTitle,
+.layout-tv #controlsPreferencesPage .sectionTitle {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .5em;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: 0em;
+}
+.layout-mobile .settingsContainer .sectionTitle,
+.layout-mobile .homeScreenSettingsContainer .sectionTitle,
+.layout-mobile #controlsPreferencesPage .sectionTitle {
+    margin-left: -.5em;
+    margin-right: -.5em;
+    padding-left: .5em;
 }
 
 
@@ -1067,34 +1065,7 @@ h2.username {
     text-align: left;
 }
 
-/* Settings: Subpages */
-.settingsContainer .sectionTitle,
-.homeScreenSettingsContainer .sectionTitle,
-#controlsPreferencesPage .sectionTitle {
-    padding-top: .4em;
-    padding-bottom: .4em;
-    padding-left: .6em !important;
-    margin-left: -1.4em;
-    margin-right: -1.4em;
-    border-radius: var(--rounding-system);
-}
-.layout-tv .settingsContainer .sectionTitle,
-.layout-tv .homeScreenSettingsContainer .sectionTitle,
-.layout-tv #controlsPreferencesPage .sectionTitle {
-    padding-top: .25em;
-    padding-bottom: .25em;
-    padding-left: .5em;
-    margin-left: -1em;
-    margin-right: -1em;
-    margin-top: 0em;
-}
-.layout-mobile .settingsContainer .sectionTitle,
-.layout-mobile .homeScreenSettingsContainer .sectionTitle,
-.layout-mobile #controlsPreferencesPage .sectionTitle {
-    margin-left: -.5em;
-    margin-right: -.5em;
-    padding-left: .5em;
-}
+
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -1160,10 +1131,8 @@ h2.username {
     margin: 1em !important;
 }
 
-#loginPage .cardBox { box-shadow: none !important; }
-
-#loginPage .cardScalable { box-shadow: var(--cardshadow) !important; }
-
+#loginPage .cardBox                  { box-shadow: none !important; }
+#loginPage .cardScalable             { box-shadow: var(--cardshadow) !important; }
 #loginPage .card:hover .cardScalable { box-shadow: var(--cardglow) !important; }
 
 /*

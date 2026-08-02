@@ -230,13 +230,11 @@
 .raised:hover                                     { background-color: var(--bgdark20) !important; }
 
 /* Background Color: Dark 40% */
-#loginPage .padded-left.padded-right.padded-bottom-page,
 .button-submit,
 .cardOverlayButton.cardOverlayFab-primary:hover,
 .checkboxOutline,
 .detailButton:hover,
 .emby-button.block,
-/* .emby-button:focus, */
 .emby-input,
 .emby-textarea,
 .emby-select,
@@ -244,7 +242,6 @@
 .itemProgressBar,
 .listItem-largeImage:hover,
 .paperList,
-/* .searchSuggestionsList > div:has(.emby-button:focus), */
 .upNextDialog-button:hover                        { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
@@ -404,7 +401,8 @@
 .favorite-button:focus,
 .itemsContainer > .listItem:focus,
 .mainDetailButtons .detailButton:focus,
-.itemsContainer > .listItem-largeImage:focus   { border-color: var(--accent60) !important; }
+.itemsContainer > .listItem-largeImage:focus,
+.toast                                          { border-color: var(--accent60) !important; }
 
 /* Border Color: Accent 100% */
 .mdl-spinner__layer-1,
@@ -427,7 +425,6 @@
 */
 
 /* Card Glow*/
-/* .layout-mobile .centeredDialog, */
 .upNextContainer                             { box-shadow: var(--cardglow) !important; }
 
 /* Button Glow*/
@@ -507,8 +504,7 @@
 .nowPlayingPageImage,
 .paper-icon-button-light,
 .upNextContainer,
-.upNextDialog-poster-img,
-#loginPage .padded-left.padded-right.padded-bottom-page { border-radius: var(--rounding-media) !important; }
+.upNextDialog-poster-img   { border-radius: var(--rounding-media) !important; }
 
 /* No Roundings */
 .backdrop-overlay,
