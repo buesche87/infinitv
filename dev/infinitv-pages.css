@@ -67,8 +67,8 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Disable Slides in TV layout because they don't work well with a remote */
-.layout-tv #slides-container      { display: none !important; }
-.layout-tv .homeSectionsContainer { top: 0; }
+.layout-tv #slides-container            { display: none !important; }
+.layout-tv .homeSectionsContainer       { top: 0; }
 
 /* User Button focus animation when profile image is set */
 .layout-tv .headerUserButtonRound       { border-radius: 100em !important; }
@@ -204,20 +204,11 @@
 
 .layout-desktop .itemDetailPage { padding-top: 0em !important; }
 
-
 /* Library Page: Studios Tab workaround */
 .layout-desktop #studiosTab { padding: 2vh 2vw; }
 
 /* Library Page: Content */
-.layout-desktop .libraryPage .padded-right-withalphapicker {
-    padding-left: 1.5vw;
-    padding-right: 3vw;
-}
-.layout-desktop #myPreferencesMenuPage .padded-bottom-page {
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 1.25em;
-}
+.layout-desktop .libraryPage .padded-right-withalphapicker { padding: 0 3vw 0 1.5vw; }
 
 /*  Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
