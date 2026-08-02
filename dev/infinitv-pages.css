@@ -1114,9 +1114,7 @@ h2.username {
 
 /* Hide some elements */
 #loginPage .btnForgotPassword,
-#loginPage .loginDisclaimerContainer {
-    display: none;
-}
+#loginPage .loginDisclaimerContainer { display: none; }
 
 /* Login Form: Dimensions & Colors */
 #loginPage .padded-left.padded-right.padded-bottom-page {
@@ -1131,17 +1129,11 @@ h2.username {
 
 /* Manual Login Form */
 #loginPage .readOnlyContent,
-#loginPage form {
-    max-width: 22em;
-}
+#loginPage form { max-width: 22em; }
 
 /* Login Card: "please sign in" */
-#loginPage .visualLoginForm {
-    padding-top: 1em;
-}
-#loginPage .manualLoginForm {
-    padding-top: 2em;
-}
+#loginPage .visualLoginForm { padding-top: 1em; }
+#loginPage .manualLoginForm { padding-top: 2em; }
 
 /* Login Card: User */
 #loginPage .squareCard {
@@ -1149,25 +1141,21 @@ h2.username {
     margin: 1em !important;
 }
 
-#loginPage .cardBox {
-    box-shadow: none !important;
-}
+#loginPage .cardBox { box-shadow: none !important; }
 
-#loginPage .cardScalable {
-    box-shadow: var(--cardshadow) !important;
-}
+#loginPage .cardScalable { box-shadow: var(--cardshadow) !important; }
 
-#loginPage .card:hover .cardScalable {
-    box-shadow: var(--cardglow) !important;
-}
+#loginPage .card:hover .cardScalable { box-shadow: var(--cardglow) !important; }
 
-#selectServerPage .card {
-    width: 14vw;
-}
+/*
+────────────────────────────────────────────────────────────────────────────
+   Select Server Page
+────────────────────────────────────────────────────────────────────────────
+*/
 
-#selectServerPage .cardBox {
-    margin: 1em !important;
-}
+#selectServerPage .card { width: 33%; }
+
+#selectServerPage .cardBox { margin: 1em !important; }
 
 #selectServerPage .cardBox:has(.cardFooter) .blurhash-canvas,
 #selectServerPage .cardBox:has(.cardFooter) .cardContent,
@@ -1180,6 +1168,4 @@ h2.username {
     border-bottom-right-radius: 0 !important;
 }
 
-#selectServerPage .cardFooter {
-    padding: 0.8em .3em;
-}
+#selectServerPage .cardFooter { padding: 0.8em .3em; }
