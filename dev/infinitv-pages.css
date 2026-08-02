@@ -990,31 +990,64 @@ h2.username {
 /* Layout Mobile - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Content */
-.layout-mobile #myPreferencesMenuPage .padded-bottom-page {
-    width: 100%;
-    text-align: center;
+/* Background */
+.layout-mobile #myPreferencesMenuPage,
+.layout-mobile #userProfilePage,
+.layout-mobile #quickConnectPreferencesPage,
+.layout-mobile #controlsPreferencesPage {
+    background: rgba(0, 0, 0, var(--headeropacity));
+}
+.layout-mobile .userPreferencesPage > .padded-left {
     padding-top: 0;
 }
-.layout-mobile .userPreferencesPage .settingsContainer,
-.layout-mobile .homeScreenSettingsContainer,
-.layout-mobile #controlsPreferencesPage .padded-left {
-    padding-left: 5% !important;
-    padding-right: 5% !important;
+.layout-mobile .userPreferencesPage > .padded-left > .readOnlyContent,
+.layout-mobile .userPreferencesPage > .padded-left > form {
+    width: 90%;
 }
 
-/* Section Titles */
+.layout-mobile .userPreferencesPage .settingsContainer,
+.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {
+    background: rgba(0, 0, 0, var(--headeropacity));
+    padding-top: 1em;
+    margin-top: -1em;
+}
+
+/* Main Settings Page */
+.layout-mobile #myPreferencesMenuPage > .padded-left {
+    width: 100%
+}
 .layout-mobile #myPreferencesMenuPage .sectionTitle {
     padding-left: 0em !important;
     font-weight: 600;
 }
 
+/* User Profile */
+.layout-mobile #userProfilePage {
+    padding: 5em 5% !important;
+}
+.layout-mobile #userProfilePage > .padded-left {
+    padding: 0;
+    width: 90%;
+}
+.layout-mobile #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) {
+    margin-left: 2em !important;
+    margin-right: 0 !important;
+}
+
+/* Quick Connect */
+.layout-mobile #quickConnectPreferencesPage {
+    padding-top: 5em !important;
+}
+
+.layout-mobile #quickConnectPreferencesPage > .padded-left {
+    justify-content: center;
+    display: flex;
+}
 
 /* List Items */
 .layout-mobile .userPreferencesPage .listItem-border {
     border: var(--buttonborder) !important;
     margin-bottom: .6em !important;
-    background: var(--bgdark40) !important;
 }
 .layout-mobile .userPreferencesPage .listItem {
     padding-right: 1.5em !important;
