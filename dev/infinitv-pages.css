@@ -223,7 +223,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 .layout-tv .libraryPage {
-    padding-top: 5.5em !important;
+    padding-top: 5em !important;
     padding-left: 3vw;
     padding-right: 3vw;
 }
@@ -804,7 +804,7 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Settings Pages: Move content up */
+/* Settings Pages: Move content up
 #userProfilePage,
 #myPreferencesMenuPage,
 #controlsPreferencesPage,
@@ -812,7 +812,9 @@
 #displayPreferencesPage,
 #homeScreenPreferencesPage,
 #languagePreferencesPage,
-#searchPage {
+*/
+
+.userPreferencesPage {
     padding-top: 5em !important;
 }
 
@@ -861,7 +863,6 @@
     margin-bottom: 1.5em;
 }
 
-
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
 .layout-desktop #userProfilePage > .padded-left,
 .layout-desktop .userPreferencesPage .padded-left > form,
@@ -872,10 +873,6 @@
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
 }
-
-
-
-
 
 /* User Profile: Form Alignment */
 .updatePasswordForm br {
@@ -905,7 +902,7 @@ h2.username {
 
 /* Quick Connect */
 .layout-desktop #quickConnectPreferencesPage form,
-.layout-tv #quickConnectPreferencesPage form { padding: 1em 4em 3em 4em; }
+.layout-tv #quickConnectPreferencesPage form {padding: 1em 4em 2em 4em;}
 
 .layout-desktop #txtQuickConnectCode,
 .layout-tv #txtQuickConnectCode  {
@@ -920,10 +917,12 @@ h2.username {
     padding: .5em;
 }
 
+
 /* Subtitles: Preview-Box */
 .subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
 }
+
 
 
 /* Layout Desktop - Settings Pages
@@ -986,7 +985,9 @@ h2.username {
 /* User Profile */
 .layout-tv #userProfilePage .padded-left {
     padding: 3em 4em;
-    height: 27em;
+    height: 26em;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 
@@ -1072,7 +1073,10 @@ h2.username {
 ────────────────────────────────────────────────────────────────────────────
 */
 
-#searchPage .searchFieldsInner { padding-bottom: 1em; }
+#searchPage .searchFieldsInner { 
+    padding-top: 5em !important;
+    padding-bottom: 1em;
+}
 
 /* Section Titles */
 #searchPage .sectionTitle {
@@ -1086,14 +1090,8 @@ h2.username {
     font-weight: 600;
 }
 
-
-
 .layout-mobile #episodesTab .itemsContainer { margin-bottom: 1em !important; }
-
 .layout-mobile #studiosTab .itemsContainer { margin-top: 1em !important; }
-
-
-
 
 /*
 ────────────────────────────────────────────────────────────────────────────
