@@ -3,13 +3,17 @@
    Settings Pages: Background & Borders
 ────────────────────────────────────────────────────────────────────────────
 */
-
+#selectServerPage .padded-bottom-page,
+#loginPage .padded-bottom-page,
+.standalonePage .addServerForm,
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
 .layout-desktop #userProfilePage > .padded-left,
 .layout-desktop .userPreferencesPage .padded-left > form,
 .layout-tv #myPreferencesMenuPage .readOnlyContent,
 .layout-tv #userProfilePage > .padded-left,
-.layout-tv .userPreferencesPage .padded-left > form {
+.layout-tv .userPreferencesPage .padded-left > form,
+.layout-mobile .userPreferencesPage .settingsContainer,
+.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
@@ -117,38 +121,31 @@ h2.username                                              {
 /* Layout Desktop - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Move content up */
+/* Content alignment */
 .layout-desktop .userPreferencesPage                    { padding-top: 5em !important }
-
 .layout-desktop #myPreferencesMenuPage .readOnlyContent { padding: 1em }
-
 .layout-desktop #userProfilePage .padded-left           { padding: 2em 4em; height: 28em }
-
 .layout-desktop #displayPreferencesPage form,
 .layout-desktop #homeScreenPreferencesPage form,
 .layout-desktop #languagePreferencesPage form,
 .layout-desktop #controlsPreferencesPage form           { padding: 1em 4em }
 
-
-
 /* Save Button */
-.layout-desktop .userPreferencesPage .btnSave            {
+.layout-desktop .userPreferencesPage .btnSave           {
     margin-top: 2em;
     margin-left: -1.75em;
     width: 107%;
     margin-bottom: 1.5em;
 }
 
-/* Section Titles: Main Menu */
-.layout-desktop #myPreferencesMenuPage .sectionTitle{
+/* Section Titles in Main Menu */
+.layout-desktop #myPreferencesMenuPage .sectionTitle    {
     padding-left: 0 !important;
     margin-top: 0;
     padding-bottom: 0.5em;
     border-bottom: var(--buttonborder);
     border-radius: 0 !important;
 }
-
-
 
 
 /* Layout TV - Settings Pages
@@ -171,7 +168,6 @@ h2.username                                              {
     height: 26em;
 }
 
-
 /* Section Titles */
 .layout-tv .settingsContainer .sectionTitle,
 .layout-tv .homeScreenSettingsContainer .sectionTitle,
@@ -182,7 +178,6 @@ h2.username                                              {
     margin-left: -1em;
     margin-right: -1em;
 }
-
 .layout-tv #myPreferencesMenuPage .sectionTitle    {
     padding-left: 0 !important;
     margin-top: 0;
@@ -198,46 +193,31 @@ h2.username                                              {
 .layout-mobile #myPreferencesMenuPage,
 .layout-mobile #userProfilePage,
 .layout-mobile #quickConnectPreferencesPage,
-.layout-mobile #controlsPreferencesPage                          { background: rgba(0, 0, 0, var(--headeropacity)) }
-.layout-mobile .userPreferencesPage > .padded-left               { padding-top: 0 }
-
+.layout-mobile #controlsPreferencesPage                          {  background: rgba(0, 0, 0, var(--headeropacity)) }
+.layout-mobile .userPreferencesPage > .padded-left               {  padding-top: 0 }
 .layout-mobile .userPreferencesPage > .padded-left > .readOnlyContent,
-.layout-mobile .userPreferencesPage > .padded-left > form        { width: 90% }
-
+.layout-mobile .userPreferencesPage > .padded-left > form        {  width: 90% }
 .layout-mobile .userPreferencesPage .settingsContainer,
-.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {
-    background: rgba(0, 0, 0, var(--headeropacity));
-    padding-top: 1em;
-    margin-top: -1em;
-}
+.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {  padding-top: 1em; margin-top: -1em }
 
 /* Main Settings Page */
-.layout-mobile #myPreferencesMenuPage > .padded-left             { width: 100% }
-.layout-mobile #myPreferencesMenuPage .sectionTitle              {
-    padding-left: 0em !important;
-    font-weight: 600;
-}
+.layout-mobile #myPreferencesMenuPage > .padded-left             {  width: 100% }
+.layout-mobile #myPreferencesMenuPage .sectionTitle              {  padding-left: 0em !important; font-weight: 600 }
 
 /* User Profile */
-.layout-mobile #userProfilePage                                  { padding: 5em 5% !important }
-.layout-mobile #userProfilePage > .padded-left                   { padding: 0; width: 90% }
+.layout-mobile #userProfilePage                                  {  padding: 5em 5% !important }
+.layout-mobile #userProfilePage > .padded-left                   {  padding: 0; width: 90% }
 
-.layout-mobile #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) {
-    margin-left: 2em !important;
-    margin-right: 0 !important;
-}
+.layout-mobile #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) { margin-left: 2em !important; margin-right: 0 !important }
 
 /* Quick Connect */
-.layout-mobile #quickConnectPreferencesPage                      { padding-top: 5em !important }
-.layout-mobile #quickConnectPreferencesPage > .padded-left       {
-    justify-content: center;
-    display: flex;
-}
+.layout-mobile #quickConnectPreferencesPage                      {  padding-top: 5em !important }
+.layout-mobile #quickConnectPreferencesPage > .padded-left       {  display: flex; justify-content: center }
 
 /* Section Titles */
 .layout-mobile .settingsContainer .sectionTitle,
 .layout-mobile .homeScreenSettingsContainer .sectionTitle,
-.layout-mobile #controlsPreferencesPage .sectionTitle {
+.layout-mobile #controlsPreferencesPage .sectionTitle            {
     margin-left: -.5em;
     margin-right: -.5em;
     padding-left: .5em;
@@ -297,10 +277,7 @@ h2.username                                              {
     transform: translate(-50%, -50%);
     margin: 0;
     width: 24em;
-    padding-bottom: 2em !important;
-    background: rgba(0, 0, 0, var(--headeropacity));
-    border-radius: var(--rounding-media);
-    border: var(--buttonborder);
+    padding-bottom: 2em !important; 
 }
 
 /* Login: Hide some elements */
@@ -325,32 +302,22 @@ h2.username                                              {
 ────────────────────────────────────────────────────────────────────────────
    Select Server Page
 ────────────────────────────────────────────────────────────────────────────
-*/
+*/ 
 
 /* Select Server: Form Dimensions & Colors */
-#selectServerPage .padded-bottom-page {
-    margin: 0 5%;
-    background: rgba(0, 0, 0, var(--headeropacity));
-    border-radius: var(--rounding-media);
-    border: var(--buttonborder);
-    padding-top: 1em;
-    padding-bottom: 2em !important;
-}
-#selectServerPage .btnAddServer:hover { border-color: var(--accent60) !important }
+#selectServerPage .padded-bottom-page       { margin: 0 5%;
+                                              padding-top: 1em;
+                                              padding-bottom: 2em !important }
+
+#selectServerPage .btnAddServer:hover       { border-color: var(--accent60) !important }
 
 /* Select Server: Server cards */
-#selectServerPage .cardBox            { margin: 1em !important }
-#selectServerPage .cardFooter         { padding: 0.8em .3em }
-#selectServerPage .cardBox:has(.cardFooter) .cardScalable div {
-    border-bottom-left-radius:  0 !important;
-    border-bottom-right-radius: 0 !important;
-}
+#selectServerPage .cardBox                  { margin:  1em !important }
+#selectServerPage .cardFooter               { padding: 0.8em .3em }
 
-/* Connect to Server form*/
-.standalonePage .addServerForm {
-    background: rgba(0, 0, 0, var(--headeropacity));
-    border-radius: var(--rounding-media);
-    border: var(--buttonborder);
-    padding: 1em 4em 2em 4em;
-}
-.addServerForm h1 { text-align: center }
+#selectServerPage .cardBox:has(.cardFooter) 
+.cardScalable div                           { border-bottom-left-radius: 0 !important;
+                                              border-bottom-right-radius: 0 !important }
+/* Connect to Server form */
+.standalonePage .addServerForm              { padding: 1em 4em 2em 4em }
+.addServerForm h1                           { text-align: center }
