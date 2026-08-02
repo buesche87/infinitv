@@ -1141,6 +1141,9 @@ h2.username {
     margin: 0;
     width: 24em;
     padding-bottom: 2em !important;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-radius: var(--rounding-media);
+    border: var(--buttonborder);
 }
 
 /* Manual Login Form */
@@ -1169,12 +1172,36 @@ h2.username {
 ────────────────────────────────────────────────────────────────────────────
 */
 
-#selectServerPage .card    { width: 33%; }
 #selectServerPage .cardBox { margin: 1em !important; }
 
-#selectServerPage .cardBox:has(.cardFooter) > div {
+#selectServerPage .cardBox:has(.cardFooter) .cardScalable div {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
 #selectServerPage .cardFooter { padding: 0.8em .3em; }
+
+#selectServerPage .padded-bottom-page {
+    margin: 0 5%;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-radius: var(--rounding-media);
+    border: var(--buttonborder);
+    padding-top: 1em;
+    padding-bottom: 2em !important;
+}
+
+#selectServerPage .btnAddServer:hover {
+    border-color: var(--accent60) !important;
+}
+
+.standalonePage .addServerForm {
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-radius: var(--rounding-media);
+    border: var(--buttonborder);
+    padding: 1em 4em 2em 4em;
+}
+
+/*
+.dialog .actionSheetMenuItem[data-id="connect"] .actionSheetItemText {
+    text-align: center;
+}*/
