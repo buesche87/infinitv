@@ -46,33 +46,32 @@
 #homeScreenPreferencesPage .selectContainer,
 #homeScreenPreferencesPage .checkboxContainer,
 #homeScreenPreferencesPage .checkboxListContainer,
-#languagePreferencesPage .checkboxContainer                  { margin-bottom: 1.25em }
+#languagePreferencesPage .checkboxContainer                 { margin-bottom: 1.25em }
 
 #displayPreferencesPage .btnSave,
 #homeScreenPreferencesPage .btnSave,
-#languagePreferencesPage .btnSave                            { margin-top: 2em }
+#languagePreferencesPage .btnSave                           { margin-top: 2em }
 
 /*  No text wrap */
 .layout-tv .userPreferencesPage .listItemBodyText,
-.layout-desktop .userPreferencesPage .listItemBodyText   { white-space: nowrap }
 
 /* Settings Page: Box size */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
-.layout-tv #myPreferencesMenuPage .readOnlyContent       { display: flex; max-width: 95% }
+.layout-tv #myPreferencesMenuPage .readOnlyContent          { display: flex; max-width: 95% }
 
 .layout-desktop #myPreferencesMenuPage > .padded-left,
-.layout-tv #myPreferencesMenuPage > .padded-left         { padding-top: 0 }
+.layout-tv #myPreferencesMenuPage > .padded-left            { padding-top: 0 }
 
-.layout-desktop #myPreferencesMenuPage .verticalSection  { margin: 1em 2em }
-.layout-tv #myPreferencesMenuPage .verticalSection       { margin: 2em }
+.layout-desktop #myPreferencesMenuPage .verticalSection     { margin: 1em 2em }
+.layout-tv #myPreferencesMenuPage .verticalSection          { margin: 2em }
 
 /* User Profile: Form Alignment */
-.updatePasswordForm br                                   { display: none }
-.updatePasswordForm .inputContainer                      { margin-bottom: 1em }
-.updatePasswordForm .emby-button.block                   { margin-top: 2em }
+.updatePasswordForm br                                      { display: none }
+.updatePasswordForm .inputContainer                         { margin-bottom: 1em }
+.updatePasswordForm .emby-button.block                      { margin-top: 2em }
 
 /* User Profile: Username bold */
-h2.username                                              {
+h2.username                                                 {
     margin-top: 0px;
     font-weight: 600;
     color: #fff;
@@ -85,11 +84,11 @@ h2.username                                              {
 
 /* Quick Connect: Box size */
 .layout-desktop #quickConnectPreferencesPage form,
-.layout-tv #quickConnectPreferencesPage form              { padding: 1em 4em 2em 4em }
+.layout-tv #quickConnectPreferencesPage form                { padding: 1em 4em 2em 4em }
 
 /* Quick Connect: Code input size */
 .layout-desktop #txtQuickConnectCode,
-.layout-tv #txtQuickConnectCode                           {
+.layout-tv #txtQuickConnectCode                             {
     padding: 1em 0;
     text-align: center;
     font-size: 1.2em;
@@ -102,9 +101,6 @@ h2.username                                              {
 /* Subtitles: Preview-Box color */
 .subtitleappearance-preview { background: linear-gradient(140deg,var(--accent100),#111) !important }
 
-
-
-
 /* Section Titles */
 .settingsContainer .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
@@ -116,8 +112,6 @@ h2.username                                              {
     margin-right: -1.4em;
     border-radius: var(--rounding-system);
 }
-
-
 
 /* Layout Desktop - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
