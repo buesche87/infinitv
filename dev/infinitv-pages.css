@@ -804,15 +804,130 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Layout Desktop
-──────────────────────────────────────────────────────────────────────────── */
+/* Settings Pages: Move content up */
+#userProfilePage,
+#myPreferencesMenuPage,
+#controlsPreferencesPage,
+#quickConnectPreferencesPage,
+#displayPreferencesPage,
+#homeScreenPreferencesPage,
+#languagePreferencesPage,
+#searchPage {
+    padding-top: 5em !important;
+}
 
+/* Settings Page: No text wrap */
+.layout-tv .userPreferencesPage .listItemBodyText,
+.layout-desktop .userPreferencesPage .listItemBodyText { white-space: nowrap }
+
+/* Settings Pages: Center content and Text */
+#myPreferencesMenuPage,
+#userProfilePage,
+#quickConnectPreferencesPage {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+/* Setting: Individual Pages */
+#homeScreenPreferencesPage .verticalSection-extrabottompadding,
+#languagePreferencesPage .verticalSection-extrabottompadding {
+    margin-bottom: 0em;
+}
+#languagePreferencesPage .selectContainer,
+#displayPreferencesPage .inputContainer {
+    margin-bottom: 1em;
+}
+#displayPreferencesPage .checkboxContainer,
+#displayPreferencesPage .selectContainer,
+#homeScreenPreferencesPage .selectContainer,
+#homeScreenPreferencesPage .checkboxContainer,
+#homeScreenPreferencesPage .checkboxListContainer,
+#languagePreferencesPage .checkboxContainer {
+    margin-bottom: 1.25em;
+}
+#displayPreferencesPage .btnSave,
+#homeScreenPreferencesPage .btnSave,
+#languagePreferencesPage .btnSave {
+    margin-top: 2em;
+}
+
+.layout-desktop #displayPreferencesPage .btnSave,
+.layout-desktop #homeScreenPreferencesPage .btnSave,
+.layout-desktop #languagePreferencesPage .btnSave {
+    margin-top: 2em;
+    margin-left: -1.75em;
+    width: 107%;
+    margin-bottom: 1.5em;
+}
+
+
+.layout-desktop #myPreferencesMenuPage .readOnlyContent,
 .layout-desktop #userProfilePage > .padded-left,
-.layout-desktop .userPreferencesPage .padded-left > form {
+.layout-desktop .userPreferencesPage .padded-left > form,
+.layout-tv #myPreferencesMenuPage .readOnlyContent,
+.layout-tv #userProfilePage > .padded-left,
+.layout-tv .userPreferencesPage .padded-left > form {
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
 }
+
+
+
+
+
+/* User Profile: Form Alignment */
+.updatePasswordForm br {
+    display: none;
+}
+.updatePasswordForm .inputContainer {
+    margin-bottom: 1em;
+}
+.updatePasswordForm .emby-button.block {
+    margin-top: 2em;
+}
+
+/* User Profile: Username bold */
+h2.username {
+    margin-top: 0px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/* Display */
+.layout-desktop #displayPreferencesPage,
+.layout-tv #displayPreferencesPage {
+    justify-content: center;
+    display: flex;
+}
+
+/* Quick Connect */
+.layout-desktop #quickConnectPreferencesPage form,
+.layout-tv #quickConnectPreferencesPage form { padding: 1em 4em 3em 4em; }
+
+.layout-desktop #txtQuickConnectCode,
+.layout-tv #txtQuickConnectCode  {
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.layout-desktop .inputLabel[for="txtQuickConnectCode"],
+.layout-tv .inputLabel[for="txtQuickConnectCode"] {
+    font-size: 1.2em;
+    padding: .5em;
+}
+
+/* Subtitles: Preview-Box */
+.subtitleappearance-preview {
+    background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+
+/* Layout Desktop - Settings Pages
+──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop #myPreferencesMenuPage > .padded-left { padding-top: 0; }
 .layout-desktop #myPreferencesMenuPage .readOnlyContent {
@@ -825,7 +940,7 @@
     padding: 3em 4em;
     height: 27em;
 }
-.layout-desktop #quickConnectPreferencesPage form { padding: 1em 4em 3em 4em; }
+
 .layout-desktop #displayPreferencesPage form,
 .layout-desktop #homeScreenPreferencesPage form,
 .layout-desktop #languagePreferencesPage form,
@@ -842,31 +957,10 @@
     border-radius: 0 !important;
 }
 
-.layout-desktop #displayPreferencesPage {
-    justify-content: center;
-    display: flex;
-}
-
-.layout-desktop .inputLabel[for="txtQuickConnectCode"] {
-    font-size: 1.2em;
-    padding: .5em;
-}
-.layout-desktop #txtQuickConnectCode {
-    padding: 1em 0;
-    text-align: center;
-    font-size: 1.2em;
-}
 
 /* Layout TV - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-tv #myPreferencesMenuPage .readOnlyContent,
-.layout-tv #userProfilePage > .padded-left,
-.layout-tv .userPreferencesPage .padded-left > form {
-    background: rgba(0, 0, 0, var(--headeropacity));
-    border-radius: var(--rounding-media);
-    border: var(--buttonborder);
-}
 .layout-tv #displayPreferencesPage form,
 .layout-tv #homeScreenPreferencesPage form,
 .layout-tv #languagePreferencesPage form,
@@ -895,26 +989,8 @@
     height: 27em;
 }
 
-/* Quick Connect */
-.layout-tv #quickConnectPreferencesPage form { padding: 1em 4em 3em 4em; }
-.layout-tv #txtQuickConnectCode {
-    padding: 1em 0;
-    text-align: center;
-    font-size: 1.2em;
-}
-.layout-tv .inputLabel[for="txtQuickConnectCode"] {
-    font-size: 1.2em;
-    padding: .5em;
-}
 
-/* Display */
-.layout-tv #displayPreferencesPage {
-    justify-content: center;
-    display: flex;
-}
-
-
-/* Layout Mobile
+/* Layout Mobile - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Content */
@@ -992,67 +1068,11 @@
 
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Settings: Individual Sites
-===========================================================================
+   Search Page
+────────────────────────────────────────────────────────────────────────────
+*/
 
-/* Settings Pages: Center content and Text */
-#myPreferencesMenuPage,
-#userProfilePage,
-#quickConnectPreferencesPage {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
-
-/* Settings Pages: Move content up */
-#userProfilePage,
-#myPreferencesMenuPage,
-#controlsPreferencesPage,
-#quickConnectPreferencesPage,
-#displayPreferencesPage,
-#homeScreenPreferencesPage,
-#languagePreferencesPage,
-#searchPage {
-    padding-top: 5em !important;
-}
-
-/* Preferences Pages */
-#homeScreenPreferencesPage .verticalSection-extrabottompadding,
-#languagePreferencesPage .verticalSection-extrabottompadding {
-    margin-bottom: 0em;
-}
-#languagePreferencesPage .selectContainer,
-#displayPreferencesPage .inputContainer {
-    margin-bottom: 1em;
-}
-#displayPreferencesPage .checkboxContainer,
-#displayPreferencesPage .selectContainer,
-#homeScreenPreferencesPage .selectContainer,
-#homeScreenPreferencesPage .checkboxContainer,
-#homeScreenPreferencesPage .checkboxListContainer,
-#languagePreferencesPage .checkboxContainer {
-    margin-bottom: 1.25em;
-}
-#displayPreferencesPage .btnSave,
-#homeScreenPreferencesPage .btnSave,
-#languagePreferencesPage .btnSave {
-    margin-top: 2em;
-}
-
-.layout-desktop #displayPreferencesPage .btnSave,
-.layout-desktop #homeScreenPreferencesPage .btnSave,
-.layout-desktop #languagePreferencesPage .btnSave {
-    margin-top: 2em;
-    margin-left: -1.75em;
-    width: 107%;
-    margin-bottom: 1.5em;
-}
-
-
-
-#searchPage .searchFieldsInner {
-    padding-bottom: 1em;
-}
+#searchPage .searchFieldsInner { padding-bottom: 1em; }
 
 /* Section Titles */
 #searchPage .sectionTitle {
@@ -1066,45 +1086,14 @@
     font-weight: 600;
 }
 
-.layout-mobile #episodesTab .itemsContainer {
-    margin-bottom: 1em !important;
-}
-
-.layout-mobile #studiosTab .itemsContainer {
-    margin-top: 1em !important;
-}
-
-.layout-tv .userPreferencesPage .listItemBodyText,
-.layout-desktop .userPreferencesPage .listItemBodyText {
-    white-space: nowrap
-}
 
 
-/* Settings Pages: User Profile
-──────────────────────────────────────────────────────────────────────────── */
+.layout-mobile #episodesTab .itemsContainer { margin-bottom: 1em !important; }
 
-/* User Profile: Form Alignment */
-.updatePasswordForm br {
-    display: none;
-}
-.updatePasswordForm .inputContainer {
-    margin-bottom: 1em;
-}
-.updatePasswordForm .emby-button.block {
-    margin-top: 2em;
-}
+.layout-mobile #studiosTab .itemsContainer { margin-top: 1em !important; }
 
-/* User Profile: Username bold */
-h2.username {
-    margin-top: 0px;
-    font-weight: 600;
-    color: #fff;
-}
 
-/* Subtitles: Preview-Box */
-.subtitleappearance-preview {
-    background: linear-gradient(140deg,var(--accent100),#111) !important;
-}
+
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -1153,17 +1142,10 @@ h2.username {
 ────────────────────────────────────────────────────────────────────────────
 */
 
-#selectServerPage .card { width: 33%; }
-
+#selectServerPage .card    { width: 33%; }
 #selectServerPage .cardBox { margin: 1em !important; }
 
-#selectServerPage .cardBox:has(.cardFooter) .blurhash-canvas,
-#selectServerPage .cardBox:has(.cardFooter) .cardContent,
-#selectServerPage .cardBox:has(.cardFooter) .cardImage,
-#selectServerPage .cardBox:has(.cardFooter) .cardPadder-portrait,
-#selectServerPage .cardBox:has(.cardFooter) .coveredImage,
-#selectServerPage .cardBox:has(.cardFooter) .cardImageContainer,
-#selectServerPage .cardBox:has(.cardFooter) .cardOverlayContainer {
+#selectServerPage .cardBox:has(.cardFooter) > div {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
