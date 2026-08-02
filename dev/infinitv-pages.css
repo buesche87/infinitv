@@ -818,7 +818,13 @@ h2.username                                              {
 }
 .layout-tv .settingsContainer .sectionTitle,
 .layout-tv .homeScreenSettingsContainer .sectionTitle,
-.layout-tv #controlsPreferencesPage .sectionTitle { padding: .25em 0em .25em .5em; margin: 0 -1em }
+.layout-tv #controlsPreferencesPage .sectionTitle {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    padding-left: .5em;
+    margin-left: -1em;
+    margin-right: -1em;
+}
 
 .layout-mobile .settingsContainer .sectionTitle,
 .layout-mobile .homeScreenSettingsContainer .sectionTitle,
@@ -868,7 +874,7 @@ h2.username                                              {
 .layout-tv #displayPreferencesPage form,
 .layout-tv #homeScreenPreferencesPage form,
 .layout-tv #languagePreferencesPage form,
-.layout-tv #controlsPreferencesPage form           { padding: 2em 4em }
+.layout-tv #controlsPreferencesPage form           { padding: 1em 4em }
 
 /* Settings */
 .layout-tv #myPreferencesMenuPage > .padded-left   { padding-top: 0 }
