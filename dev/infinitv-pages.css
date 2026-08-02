@@ -804,24 +804,6 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Settings Pages: Move content up
-#userProfilePage,
-#myPreferencesMenuPage,
-#controlsPreferencesPage,
-#quickConnectPreferencesPage,
-#displayPreferencesPage,
-#homeScreenPreferencesPage,
-#languagePreferencesPage,
-*/
-
-.userPreferencesPage {
-    padding-top: 5em !important;
-}
-
-/* Settings Page: No text wrap */
-.layout-tv .userPreferencesPage .listItemBodyText,
-.layout-desktop .userPreferencesPage .listItemBodyText { white-space: nowrap }
-
 /* Settings Pages: Center content and Text */
 #myPreferencesMenuPage,
 #userProfilePage,
@@ -831,7 +813,7 @@
     text-align: center;
 }
 
-/* Setting: Individual Pages */
+/* Settings Pages: Narrow contect margins */
 #homeScreenPreferencesPage .verticalSection-extrabottompadding,
 #languagePreferencesPage .verticalSection-extrabottompadding {
     margin-bottom: 0em;
@@ -854,15 +836,7 @@
     margin-top: 2em;
 }
 
-.layout-desktop #displayPreferencesPage .btnSave,
-.layout-desktop #homeScreenPreferencesPage .btnSave,
-.layout-desktop #languagePreferencesPage .btnSave {
-    margin-top: 2em;
-    margin-left: -1.75em;
-    width: 107%;
-    margin-bottom: 1.5em;
-}
-
+/* Background */
 .layout-desktop #myPreferencesMenuPage .readOnlyContent,
 .layout-desktop #userProfilePage > .padded-left,
 .layout-desktop .userPreferencesPage .padded-left > form,
@@ -873,6 +847,27 @@
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
 }
+
+/*  No text wrap */
+.layout-tv .userPreferencesPage .listItemBodyText,
+.layout-desktop .userPreferencesPage .listItemBodyText { white-space: nowrap }
+
+
+
+
+/* Settings Page: Box size */
+.layout-desktop #myPreferencesMenuPage .readOnlyContent,
+.layout-tv #myPreferencesMenuPage .readOnlyContent {
+    display: flex;
+    max-width: 95%;
+}
+.layout-desktop #myPreferencesMenuPage > .padded-left,
+.layout-tv #myPreferencesMenuPage > .padded-left      { padding-top: 0; }
+
+
+.layout-desktop #myPreferencesMenuPage .verticalSection,
+.layout-tv #myPreferencesMenuPage .verticalSection {margin: 2em;}
+
 
 /* User Profile: Form Alignment */
 .updatePasswordForm br {
@@ -892,18 +887,18 @@ h2.username {
     color: #fff;
 }
 
-
-/* Display */
+/* Display: Center content */
 .layout-desktop #displayPreferencesPage,
 .layout-tv #displayPreferencesPage {
     justify-content: center;
     display: flex;
 }
 
-/* Quick Connect */
+/* Quick Connect: Box size */
 .layout-desktop #quickConnectPreferencesPage form,
 .layout-tv #quickConnectPreferencesPage form {padding: 1em 4em 2em 4em;}
 
+/* Quick Connect: Code input size */
 .layout-desktop #txtQuickConnectCode,
 .layout-tv #txtQuickConnectCode  {
     padding: 1em 0;
@@ -911,33 +906,30 @@ h2.username {
     font-size: 1.2em;
 }
 
+/* Quick Connect: Label for input */
 .layout-desktop .inputLabel[for="txtQuickConnectCode"],
 .layout-tv .inputLabel[for="txtQuickConnectCode"] {
     font-size: 1.2em;
     padding: .5em;
 }
 
-
-/* Subtitles: Preview-Box */
+/* Subtitles: Preview-Box color */
 .subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
 }
 
 
-
 /* Layout Desktop - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-desktop #myPreferencesMenuPage > .padded-left { padding-top: 0; }
-.layout-desktop #myPreferencesMenuPage .readOnlyContent {
-    padding: 1em;
-    display: flex;
-    max-width: 95%;
-}
+/* Move content up */
+.layout-desktop .userPreferencesPage { padding-top: 5em !important; }
+
+.layout-desktop #myPreferencesMenuPage .readOnlyContent { padding: 1em; }
 
 .layout-desktop #userProfilePage .padded-left {
-    padding: 3em 4em;
-    height: 27em;
+    padding: 2em 4em;
+    height: 28em;
 }
 
 .layout-desktop #displayPreferencesPage form,
@@ -945,15 +937,21 @@ h2.username {
 .layout-desktop #languagePreferencesPage form,
 .layout-desktop #controlsPreferencesPage form { padding: 1em 4em; }
 
-.layout-desktop #myPreferencesMenuPage .verticalSection { margin: 2em; }
-
 /* Section Titles */
 .layout-desktop #myPreferencesMenuPage .sectionTitle {
-    padding-left: 4em !important;
+    padding-left: 0 !important;
     margin-top: 0;
     padding-bottom: 0.5em;
     border-bottom: var(--buttonborder);
     border-radius: 0 !important;
+}
+
+/* Save Button */
+.layout-desktop .userPreferencesPage .btnSave {
+    margin-top: 2em;
+    margin-left: -1.75em;
+    width: 107%;
+    margin-bottom: 1.5em;
 }
 
 
@@ -986,8 +984,6 @@ h2.username {
 .layout-tv #userProfilePage .padded-left {
     padding: 3em 4em;
     height: 26em;
-    /* display: flex; */
-    /* flex-direction: column; */
 }
 
 
