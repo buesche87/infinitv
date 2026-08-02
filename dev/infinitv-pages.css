@@ -67,16 +67,12 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Disable Slides in TV layout because they don't work well with a remote */
-.layout-tv #slides-container { display: none !important; }
+.layout-tv #slides-container      { display: none !important; }
 .layout-tv .homeSectionsContainer { top: 0; }
 
 /* User Button focus animation when profile image is set */
-.layout-tv .headerUserButtonRound {
-    border-radius: 100em !important;
-}
-.layout-tv .headerUserButtonRound:focus {
-    box-shadow: var(--buttonglow);
-}
+.layout-tv .headerUserButtonRound       { border-radius: 100em !important; }
+.layout-tv .headerUserButtonRound:focus { box-shadow: var(--buttonglow); }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -198,27 +194,19 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-.standalonePage {
-    padding-top: 5.5em !important;
-}
+.standalonePage { padding-top: 5.5em !important; }
 
 /*  Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop .libraryPage,
-.layout-desktop .libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 3.9em !important;
-}
+.layout-desktop .libraryPage:not(.noSecondaryNavPage) { padding-top: 3.9em !important; }
 
-.layout-desktop .itemDetailPage {
-    padding-top: 0em !important;
-}
+.layout-desktop .itemDetailPage { padding-top: 0em !important; }
 
 
 /* Library Page: Studios Tab workaround */
-.layout-desktop #studiosTab {
-    padding: 2vh 2vw;
-}
+.layout-desktop #studiosTab { padding: 2vh 2vw; }
 
 /* Library Page: Content */
 .layout-desktop .libraryPage .padded-right-withalphapicker {
@@ -228,7 +216,6 @@
 .layout-desktop #myPreferencesMenuPage .padded-bottom-page {
     padding-right: 0;
     padding-left: 0;
-    /* padding-bottom: calc(env(safe-area-inset-bottom) + 5em) !important; */
     padding-top: 1.25em;
 }
 
@@ -266,18 +253,11 @@
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-mobile .libraryPage.noSecondaryNavPage {
-    padding-top: 4em !important;
-}
+.layout-mobile .libraryPage.noSecondaryNavPage { padding-top: 4em !important; }
 
-.layout-mobile #itemDetailPage {
-    padding-top: 1em;
-}
+.layout-mobile #itemDetailPage { padding-top: 1em; }
 
-.layout-mobile .itemBackdrop {
-    margin-top: 0;
-}
-
+.layout-mobile .itemBackdrop { margin-top: 0; }
 
 /* Library Pages: Content with Alphapicker */
 .layout-mobile .libraryPage .padded-right-withalphapicker {
@@ -285,33 +265,20 @@
     padding-right: 6vw;
 }
 
-
-.layout-mobile .libraryPage:not(.noSecondaryNavPage) {
-    padding-top: 6.3em !important;
-}
+.layout-mobile .libraryPage:not(.noSecondaryNavPage) { padding-top: 6.3em !important; }
 
 @media (min-width: 50em) {
-    .layout-mobile .itemBackdrop {
-        margin-top: 3.9rem;
-    }
-    .layout-mobile .libraryPage.noSecondaryNavPage {
-        padding-top: 4em !important;
-    }
+    .layout-mobile .itemBackdrop { margin-top: 3.9rem; }
+    .layout-mobile .libraryPage.noSecondaryNavPage { padding-top: 4em !important; }
     .layout-mobile .libraryPage .padded-right-withalphapicker {
         padding-left: 2vw;
         padding-right: 4vw;
     }
 }
 @media (min-width: 100em) {
-    .layout-mobile .libraryPage {
-        padding-top: 4.3em !important;
-    }
-    .layout-mobile .libraryPage.noSecondaryNavPage {
-        padding-top: 4.3em !important;
-    }
-    .layout-mobile .libraryPage:not(.noSecondaryNavPage) {
-        padding-top: 4.3em !important;
-    }
+    .layout-mobile .libraryPage { padding-top: 4.3em !important; }
+    .layout-mobile .libraryPage.noSecondaryNavPage { padding-top: 4.3em !important; }
+    .layout-mobile .libraryPage:not(.noSecondaryNavPage) { padding-top: 4.3em !important; }
 }
 
 /*
@@ -331,19 +298,13 @@
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 /* Stretch Alphabet Picker */
-.layout-mobile .alphaPicker {
-    bottom: 2em;
-}
+.layout-mobile .alphaPicker { bottom: 2em; }
 @media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-mobile .alphaPicker {
-        bottom: 1em;
-    }
+    .layout-mobile .alphaPicker { bottom: 1em; }
 }
 
 /* Alphabet Picker: Buttons */
-.alphaPickerButton {
-    height: 1.6em;
-}
+.alphaPickerButton { height: 1.6em; }
 
 .alphaPickerButton:hover {
     background: var(--accent60) !important;
@@ -366,13 +327,8 @@
 */
 
 /* Filter & Sorting Header */
-.selfBackdropPage h1.parentName{
-    font-size: 150%;
-}
-
-.layout-desktop .selfBackdropPage h1.parentName {
-    font-size: 175%;
-}
+.selfBackdropPage h1.parentName{ font-size: 150%;}
+.layout-desktop .selfBackdropPage h1.parentName { font-size: 175%; }
 
 /* Filter & Sorting Header: Item Count */
 .listPaging > span {
@@ -381,9 +337,7 @@
 }
 
 /* Filter Indicator */
-.filterIndicator {
-    color: black;
-}
+.filterIndicator { color: black; }
 
 /* Sorting Menu: Radio Button spacing */
 .radio-label-block {
@@ -423,22 +377,16 @@
 }
 
 .layout-tv #episodesTab > .focuscontainer-x,
-.layout-tv #songsTab > .focuscontainer-x {
-    margin-bottom: 1.5em;
-}
+.layout-tv #songsTab > .focuscontainer-x { margin-bottom: 1.5em;}
 
 /* Filter & Sorting Header: Buttons */
-.pageTabContent .focuscontainer-x .paper-icon-button-light {
-    transform: none !important;
-}
+.pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important; }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Filter & Sorting Header: Buttons */
-.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light {
-    margin: 0 .2em;
-}
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light { margin: 0 .2em; }
 
 /* Filter & Sorting Header */
 .layout-mobile .itemsViewSettingsContainer {
@@ -488,14 +436,10 @@
     top: 3.9em;
     padding: .5em;
 }
-.itemSelectionCount {
-    color: var(--accent100) !important;
-}
+.itemSelectionCount { color: var(--accent100) !important; }
 
 /* Checkboxes & Indicators */
-.multiSelectCheckboxOutline {
-    margin: .5em !important;
-}
+.multiSelectCheckboxOutline { margin: .5em !important; }
 .chkItemSelect:hover + span + .multiSelectCheckboxOutline {
     box-shadow: var(--cardglow);
     border-color: var(--accent60) !important;
@@ -542,9 +486,7 @@
 */
 
 /* Move Content up */
-.detailPageWrapperContainer {
-    padding-top: 1em;
-}
+.detailPageWrapperContainer { padding-top: 1em; }
 
 /* Content Background without Backdrops */
 .noBackdropTransparency .detailPagePrimaryContainer,
@@ -557,9 +499,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Detail-Ribbon: Fix narrow Desktop layout */
-.layout-desktop .detailPageWrapperContainer {
-    margin-top: 1.5em !important;
-}
+.layout-desktop .detailPageWrapperContainer { margin-top: 1.5em !important; }
 
 /* Increase Season Title Text */
 .layout-desktop .selfBackdropPage .itemName {
@@ -577,9 +517,7 @@
 .layout-tv .detailsGroupItem.studiosGroup,
 .layout-tv .hide+.detailPageWrapperContainer .itemName,
 .layout-tv .endsAt,
-.layout-tv .itemTags {
-    display: none !important;
-}
+.layout-tv .itemTags { display: none !important; }
 
 /* Increase Season Title Text */
 .layout-tv .selfBackdropPage .itemName {
@@ -603,9 +541,7 @@
 */
 
 /* Detail-Ribbon */
-.detailRibbon {
-    padding-right: 2% !important;
-}
+.detailRibbon { padding-right: 2% !important; }
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
@@ -623,9 +559,7 @@
 }
 
 /* Info Container */
-.layout-desktop .infoWrapper {
-    padding-top: 0.25em;
-}
+.layout-desktop .infoWrapper { padding-top: 0.25em; }
 
 /* Media Infos */
 .layout-desktop .itemMiscInfo {
@@ -635,15 +569,11 @@
 }
 
 /* Buttons */
-.layout-desktop .mainDetailButtons {
-    margin-left: 1em;
-}
+.layout-desktop .mainDetailButtons { margin-left: 1em; }
 
 /* Some Small Screen fixes */
 @media all and (max-width: 75em) {
-    .layout-desktop .detailLogo {
-        display: block;
-    }
+    .layout-desktop .detailLogo { display: block; }
     .layout-desktop .detailImageContainer {
         display: flex;
         position: relative;
@@ -661,12 +591,8 @@
         flex-wrap: wrap;
         left: 0em;
     }
-    .layout-desktop .infoWrapper {
-        margin-top: .5em;
-    }
-    .layout-desktop .mainDetailButtons {
-        margin-left: 2vw;
-    }
+    .layout-desktop .infoWrapper { margin-top: .5em; }
+    .layout-desktop .mainDetailButtons { margin-left: 2vw; }
 }
 
 /* Layout TV
@@ -720,9 +646,7 @@
 */
 
 /* Media Details > Track Select */
-.detailTrackSelect {
-    padding: .35em 1.9em .35em .35em !important;
-}
+.detailTrackSelect { padding: .35em 1.9em .35em .35em !important; }
 
 /* Media Description Text */
 .overview.detail-clamp-text {
@@ -731,10 +655,7 @@
 }
 
 /* Media Description > Director & Studio */
-.itemDetailsGroup {
-    margin-top: 0.5em;
-    /* padding-bottom: 1em; */
-}
+.itemDetailsGroup { margin-top: 0.5em; }
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
@@ -756,18 +677,12 @@
     margin: 1em 0 !important;
 }
 
-.layout-desktop .itemExternalLinks {
-    margin: 1em 0 .75em 0 !important;
-}
+.layout-desktop .itemExternalLinks { margin: 1em 0 .75em 0 !important; }
 
-.layout-desktop .itemTags > .button-link {
-    margin-left: .25em;
-}
+.layout-desktop .itemTags > .button-link { margin-left: .25em; }
 
 /* Secondary Container */
-.layout-desktop .detailPageSecondaryContainer {
-    padding: 0 1.5vw !important;
-}
+.layout-desktop .detailPageSecondaryContainer { padding: 0 1.5vw !important; }
 
 /* Secondary Container: Content */
 .layout-desktop .detailPageSecondaryContainer .detailPageContent {
@@ -780,8 +695,8 @@
 
 /* Primary Container */
 .layout-tv .detailPagePrimaryContent  {
-    padding-top: 0em;
-    padding-bottom: 0em;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-right: 0;
 }
 .layout-tv [dir=ltr] .detailRibbon,
@@ -850,9 +765,7 @@
 */
 
 /* ListItem Color on Hover */
-.paperList .listItem:hover {
-    color: var(--accent100);
-}
+.paperList .listItem:hover { color: var(--accent100); }
 
 /* Cards */
 #backdropsContainer .imageEditorCard > .cardBox,
@@ -865,14 +778,10 @@
     border: var(--buttonborder);
 }
 
-.layout-tv .availableImagesList .portraitCard .cardBox {
-    margin: 1em .75em !important;
-}
+.layout-tv .availableImagesList .portraitCard .cardBox { margin: 1em .75em !important; }
 
 /* Align card image */
-.dialogContentInner .portraitCard .cardContent .cardImageContainer {
-    top: -.6em;
-}
+.dialogContentInner .portraitCard .cardContent .cardImageContainer { top: -.6em; }
 
 /* Card Footer */
 #backdropsContainer .imageEditorCard .cardFooter,
@@ -887,9 +796,7 @@
 }
 
 /* Buttons */
-#backdropsContainer .paper-icon-button-light {
-    margin: .1em;
-}
+#backdropsContainer .paper-icon-button-light { margin: .1em; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -907,9 +814,7 @@
     border: var(--buttonborder);
 }
 
-.layout-desktop #myPreferencesMenuPage > .padded-left {
-    padding-top: 0em;
-}
+.layout-desktop #myPreferencesMenuPage > .padded-left { padding-top: 0; }
 .layout-desktop #myPreferencesMenuPage .readOnlyContent {
     padding: 1em;
     display: flex;
@@ -920,19 +825,13 @@
     padding: 3em 4em;
     height: 27em;
 }
-.layout-desktop #quickConnectPreferencesPage form {
-    padding: 1em 4em 3em 4em;
-}
+.layout-desktop #quickConnectPreferencesPage form { padding: 1em 4em 3em 4em; }
 .layout-desktop #displayPreferencesPage form,
 .layout-desktop #homeScreenPreferencesPage form,
 .layout-desktop #languagePreferencesPage form,
-.layout-desktop #controlsPreferencesPage form {
-    padding: 1em 4em;
-}
+.layout-desktop #controlsPreferencesPage form { padding: 1em 4em; }
 
-.layout-desktop #myPreferencesMenuPage .verticalSection {
-    margin: 2em;
-}
+.layout-desktop #myPreferencesMenuPage .verticalSection { margin: 2em; }
 
 /* Section Titles */
 .layout-desktop #myPreferencesMenuPage .sectionTitle {
@@ -958,43 +857,46 @@
     font-size: 1.2em;
 }
 
-/* Layout TV
+/* Layout TV - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
+.layout-tv #myPreferencesMenuPage .readOnlyContent,
 .layout-tv #userProfilePage > .padded-left,
 .layout-tv .userPreferencesPage .padded-left > form {
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
 }
+.layout-tv #displayPreferencesPage form,
+.layout-tv #homeScreenPreferencesPage form,
+.layout-tv #languagePreferencesPage form,
+.layout-tv #controlsPreferencesPage form { padding: 2em 4em; }
 
-.layout-tv #myPreferencesMenuPage > .padded-left {
-    padding-top: 0em;
-}
+/* Settings */
+.layout-tv #myPreferencesMenuPage > .padded-left { padding-top: 0; }
 .layout-tv #myPreferencesMenuPage .readOnlyContent {
-    padding: 1em;
+    padding: 0 1em;
     display: flex;
     max-width: 95%;
 }
+.layout-tv #myPreferencesMenuPage .verticalSection { margin: 2em; }
+.layout-tv #myPreferencesMenuPage .sectionTitle {
+    padding-left: 0 !important;
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    border-bottom: var(--buttonborder);
+    border-radius: 0 !important;
+    text-align: center;
+}
 
+/* User Profile */
 .layout-tv #userProfilePage .padded-left {
     padding: 3em 4em;
     height: 27em;
 }
-.layout-tv #quickConnectPreferencesPage form {
-    padding: 1em 4em 3em 4em;
-}
-.layout-tv #displayPreferencesPage form,
-.layout-tv #homeScreenPreferencesPage form,
-.layout-tv #languagePreferencesPage form,
-.layout-tv #controlsPreferencesPage form {
-    padding: 2em 4em;
-}
-.layout-tv #displayPreferencesPage {
-    justify-content: center;
-    display: flex;
-}
 
+/* Quick Connect */
+.layout-tv #quickConnectPreferencesPage form { padding: 1em 4em 3em 4em; }
 .layout-tv #txtQuickConnectCode {
     padding: 1em 0;
     text-align: center;
@@ -1005,25 +907,12 @@
     padding: .5em;
 }
 
-/* Content */
-.layout-tv #myPreferencesMenuPage .readOnlyContent {
-    background: rgba(0, 0, 0, var(--headeropacity));
-    border-radius: var(--rounding-media);
-    border: var(--buttonborder);
+/* Display */
+.layout-tv #displayPreferencesPage {
+    justify-content: center;
     display: flex;
-    padding-top: 0;
 }
-.layout-tv #myPreferencesMenuPage .verticalSection {
-    margin: 2em;
-}
-.layout-tv #myPreferencesMenuPage .sectionTitle {
-    padding-left: 0 !important;
-    margin-top: 0;
-    padding-bottom: 0.5em;
-    border-bottom: var(--buttonborder);
-    border-radius: 0 !important;
-    text-align: center;
-}
+
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -1126,8 +1015,6 @@
 #searchPage {
     padding-top: 5em !important;
 }
-
-
 
 /* Preferences Pages */
 #homeScreenPreferencesPage .verticalSection-extrabottompadding,
