@@ -1,0 +1,275 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Pages
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Move Content up */
+.detailPageWrapperContainer { padding-top: 1em }
+
+/* Content Background without Backdrops */
+.noBackdropTransparency .detailPagePrimaryContainer,
+.noBackdropTransparency .detailPageSecondaryContainer { background: rgba(0, 0, 0, var(--itemopacity)) !important }
+
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Detail-Ribbon: Fix narrow Desktop layout */
+.layout-desktop .detailPageWrapperContainer { margin-top: 1.5em !important; }
+
+/* Increase Season Title Text */
+.layout-desktop .selfBackdropPage .itemName {
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Hide some Elements */
+.layout-tv .itemExternalLinks,
+.layout-tv .detailsGroupItem.directorsGroup,
+.layout-tv .detailsGroupItem.writersGroup,
+.layout-tv .detailsGroupItem.studiosGroup,
+.layout-tv .hide+.detailPageWrapperContainer .itemName,
+.layout-tv .endsAt,
+.layout-tv .itemTags { display: none !important }
+
+/* Increase Season Title Text */
+.layout-tv .selfBackdropPage .itemName {
+    font-size: 150%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Center Content */
+.layout-mobile .verticalSection .itemsContainer.vertical-wrap {
+    justify-content: center;
+    padding-right: 0em;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Pages: Detail-Ribbon
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Detail-Ribbon */
+.detailRibbon { padding-right: 2% !important }
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .detailRibbon { height: 9em; margin-top: -9em }
+
+/* Card in Detail Ribbon */
+.layout-desktop .detailImageContainer .card {
+    left: 3vw;
+    width: 27vw;
+    max-width: 30vw;
+}
+
+/* Info Container */
+.layout-desktop .infoWrapper { padding-top: 0.25em }
+
+/* Media Infos */
+.layout-desktop .itemMiscInfo {
+    font-size: 125%;
+    margin-top: 0.25em;
+    margin-bottom: 0.6em;
+}
+
+/* Buttons */
+.layout-desktop .mainDetailButtons { margin-left: 1em }
+
+/* Some Small Screen fixes */
+@media all and (max-width: 75em) {
+    .layout-desktop .detailLogo    { display: block }
+    
+    .layout-desktop .detailImageContainer {
+        display: flex;
+        position: relative;
+        left: 0%;
+        bottom: 37%;
+        top: -28%;
+        box-shadow: none !important;
+        flex-shrink: 0;
+    }
+    .layout-desktop .detailRibbon {
+        flex-direction: column;
+        height: 14em;
+        padding-left: 30vw !important;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        left: 0em;
+    }
+    .layout-desktop .infoWrapper { margin-top: .5em }
+    .layout-desktop .mainDetailButtons { margin-left: 2vw }
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Media Infos */
+.layout-tv .itemMiscInfo {
+    font-size: 125%;
+    margin-top: 0.25em;
+    margin-bottom: 0.6em;
+}
+
+/* Buttons */
+.layout-tv .mainDetailButtons { margin: 1.25em 0 1.25em 0.5em }
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-mobile .detailRibbon {
+    margin-top: -1em !important;
+    padding-bottom: 1.25em;
+    padding-right: 3% !important;
+    padding-left: 5%;
+}
+
+/* Card in Detail Ribbon */
+.layout-mobile .detailImageContainer .card.backdropCard {
+    top: 1em;
+    max-width: 33vw;
+}
+
+/* Info Container */
+.layout-mobile .infoWrapper {
+    padding-bottom: 0.15em;
+    padding-left: 38% !important;
+}
+
+/* Buttons */
+.layout-mobile .mainDetailButtons .detailButton {
+    margin-right: .5em !important;
+    margin-left: .5em !important;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Pages: Content
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Media Details > Track Select */
+.detailTrackSelect          { padding: .35em 1.9em .35em .35em !important }
+
+/* Media Description Text */
+.overview.detail-clamp-text { margin: .5em 0 }
+
+/* Media Description > Director & Studio */
+.itemDetailsGroup           { margin-top: 0.5em }
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Primary Container */
+.layout-desktop .detailPagePrimaryContent { padding: 0em 1.5vw 1em 32.45vw }
+.layout-desktop .itemDetailsGroup         { margin: .5em 0 2em 0 }
+.layout-desktop .itemTags                 { padding: 0; margin: 1em 0 !important }
+.layout-desktop .itemExternalLinks        { margin: 1em 0 .75em 0 !important }
+.layout-desktop .itemTags > .button-link  { margin-left: .25em }
+
+/* Secondary Container */
+.layout-desktop .detailPageSecondaryContainer { padding: 0 1.5vw !important }
+
+/* Secondary Container: Content */
+.layout-desktop .detailPageSecondaryContainer .detailPageContent { padding: 0 }
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Primary Container */
+.layout-tv .detailPagePrimaryContent  { padding: 0 }
+
+.layout-tv [dir=ltr] .detailRibbon,
+.layout-tv .detailPagePrimaryContent,
+.layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) { padding-left: 29vw }
+
+/* Tracks & Subtitles */
+.layout-tv .trackSelections {
+    max-width: 100%;
+    width: 65%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.layout-tv .trackSelections .selectLabelFocused {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+/* Secondary Container */
+.layout-tv .detailPageSecondaryContainer                     { padding-top: 2em }
+.layout-tv .detailPageSecondaryContainer .detailPageContent  { padding: 0 }
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Primary Container */
+.layout-mobile .detailPagePrimaryContent {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+.layout-mobile .detailPagePrimaryContent .trackSelections,
+.layout-mobile .detailPagePrimaryContent .detailSectionContent,
+.layout-mobile .detailPagePrimaryContent .itemDetailsGroup {
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+}
+
+/* Tracks & Subtitles */
+.layout-mobile .trackSelections { padding-top: 1em }
+
+/* Secondary Container */
+.layout-mobile .detailPageSecondaryContainer { padding-top: 0em !important }
+
+.layout-mobile .detailPageSecondaryContainer .detailPageContent {
+    padding-left: 3% !important;
+    padding-right: 3% !important;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Pages: Image Search
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* ListItem Color on Hover */
+.paperList .listItem:hover { color: var(--accent100) }
+
+/* Cards */
+#backdropsContainer .imageEditorCard > .cardBox,
+#imagesContainer .imageEditorCard > .cardBox {
+    background-color: rgb(0 0 0 / 0%) !important;
+    border: var(--buttonborder);
+}
+.availableImagesList .imageEditorCard > .cardBox {
+    background-color: rgb(0 0 0) !important;
+    border: var(--buttonborder);
+}
+
+.layout-tv .availableImagesList .portraitCard .cardBox { margin: 1em .75em !important }
+
+/* Align card image */
+.dialogContentInner .portraitCard .cardContent .cardImageContainer { top: -.6em }
+
+/* Card Footer */
+#backdropsContainer .imageEditorCard .cardFooter,
+#imagesContainer .imageEditorCard .cardFooter     { padding-top: .5em; padding-bottom: 0 }
+.availableImagesList .imageEditorCard .cardFooter {
+    border-top: var(--buttonborder);
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+
+/* Buttons */
+#backdropsContainer .paper-icon-button-light { margin: .1em }

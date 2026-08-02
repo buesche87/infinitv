@@ -1,0 +1,246 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+   Library Pages
+────────────────────────────────────────────────────────────────────────────
+*/
+
+.standalonePage                                            { padding-top: 5.5em !important }
+
+/*  Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+/* .layout-desktop .libraryPage, */
+.layout-desktop .libraryPage:not(.noSecondaryNavPage)      { padding-top: 3.9em !important }
+.layout-desktop .itemDetailPage                            { padding-top: 0em !important }
+
+/* Library Page: Studios Tab workaround */
+.layout-desktop #studiosTab                                { padding: 2vh 2vw }
+
+/* Library Page: Content */
+.layout-desktop .libraryPage .padded-right-withalphapicker { padding: 0 3vw 0 1.5vw }
+
+/*  Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-tv .libraryPage                                    { padding: 0 3vw; padding-top: 5em !important }
+
+@media(min-width: 75em)                                    {
+    .layout-tv .libraryPage                                { padding: 0 2vw }
+    .layout-tv #studiosTab                                 { margin-left: -1vw }
+}
+
+/* Library Pages: Content with Alphapicker */
+.layout-tv .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw }
+@media(min-width: 50em)                                    {
+    .layout-tv .libraryPage .padded-right-withalphapicker  { padding: 0 1vw 0 0 }
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-mobile .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
+.layout-mobile #itemDetailPage                                { padding-top: 1em }
+.layout-mobile .itemBackdrop                                  { margin-top: 0 }
+
+/* Library Pages: Content with Alphapicker */
+.layout-mobile .libraryPage .padded-right-withalphapicker     { padding-left: 2vw; padding-right: 6vw }
+
+.layout-mobile .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.3em !important }
+
+@media (min-width: 50em)                                      {
+    .layout-mobile .itemBackdrop                              { margin-top: 3.9rem }
+    .layout-mobile .libraryPage.noSecondaryNavPage            { padding-top: 4em !important }
+    .layout-mobile .libraryPage .padded-right-withalphapicker { padding-left: 2vw;  padding-right: 4vw }
+}
+@media (min-width: 100em)                                     {
+    .layout-mobile .libraryPage                               { padding-top: 4.3em !important }
+    .layout-mobile .libraryPage.noSecondaryNavPage            { padding-top: 4.3em !important }
+    .layout-mobile .libraryPage:not(.noSecondaryNavPage)      { padding-top: 4.3em !important }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Alphabet Picker
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .alphaPicker { top: 128px; bottom: auto }
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+/* Stretch Alphabet Picker */
+.layout-mobile .alphaPicker { bottom: 2em }
+@media only screen and (max-height: 767px) and (orientation: landscape) {
+    .layout-mobile .alphaPicker { bottom: 1em }
+}
+
+/* Alphabet Picker: Buttons */
+.alphaPickerButton { height: 1.6em }
+
+.alphaPickerButton:hover {
+    background: var(--accent60) !important;
+    color: white !important;
+}
+
+.alphaPickerButton:focus,
+.alphaPickerButton:active {
+    transform: none !important;
+    transition: none !important;
+    background: var(--accent80) !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Library Pages: Sorting & Filter
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Filter & Sorting Header */
+.selfBackdropPage h1.parentName                 { font-size: 150% }
+.layout-desktop .selfBackdropPage h1.parentName { font-size: 175% }
+
+/* Filter & Sorting Header: Item Count */
+.listPaging > span { margin-left: .5em; margin-right: .5em }
+
+/* Filter Indicator */
+.filterIndicator { color: black }
+
+/* Sorting Menu: Radio Button spacing */
+.radio-label-block {
+    margin: 0 !important;
+    padding: .5em 1em !important;
+    cursor: pointer;
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .pageTabContent > .focuscontainer-x {
+    height: 3em;
+    margin-bottom: 1em;
+    padding-top: .1em;
+    padding-bottom: .1em;
+}
+
+.layout-desktop .itemsViewSettingsContainer {
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-tv .pageTabContent>.focuscontainer-x {
+    border-radius: var(--rounding-system) !important;
+    padding: 0.05em;
+    min-height: 2em;
+    margin-bottom: 1em
+}
+.layout-tv .itemsViewSettingsContainer {
+    border-radius: var(--rounding-system) !important;
+    padding: 0.05em;
+    min-height: 2em;
+}
+
+.layout-tv #episodesTab > .focuscontainer-x,
+.layout-tv #songsTab > .focuscontainer-x { margin-bottom: 1.5em }
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important }
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Filter & Sorting Header: Buttons */
+.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light { margin: 0 .2em; }
+
+/* Filter & Sorting Header */
+.layout-mobile .itemsViewSettingsContainer { margin-left: -3.3%; margin-right: -3.3% }
+
+.layout-mobile .itemsViewSettingsContainer,
+.layout-mobile .pageTabContent > .focuscontainer-x {
+    padding: 0;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+.layout-mobile .pageTabContent > .focuscontainer-x:not(:has(.paper-icon-button-light)) {
+    margin-top: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right,
+.layout-mobile .padded-right-withalphapicker .itemsViewSettingsContainer {
+    padding: 0;
+    margin-left: -3.3%;
+    margin-right: -6.4%;
+    margin-bottom: 1em;
+    margin-top: 0;
+}
+
+.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right {
+    background-color: var(--bgwhite10);
+    height: 3em;
+    margin-top: 1em;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Library Page: Multi-Select
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Multi-Select Dialog */
+.itemSelectionPanel {
+    border-color: #0000 !important;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.selectionCommandsPanel { top: 3.9em; padding: .5em }
+.itemSelectionCount     { color: var(--accent100) !important }
+
+/* Checkboxes & Indicators */
+.multiSelectCheckboxOutline { margin: .5em !important }
+
+.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
+    box-shadow: var(--cardglow);
+    border-color: var(--accent60) !important;
+}
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop .selectionCommandsPanel {
+    top: 7.65em;
+    left:  auto;
+    right: 4.3em;
+    max-width: 10em;
+    margin: 0 auto;
+    padding: 0 .5em;
+}
+
+/* Multi-Select Dialog Buttons */
+.layout-desktop .itemSelectionCount {
+    font-size: 140%;
+    font-weight: 600;
+    order: 1;
+    margin: 0em .5em;
+    margin-bottom: .1em;
+    min-width: 1em;
+    text-align: center;
+    cursor: default;
+}
+.layout-desktop .btnSelectionPanelOptions {
+    order: 2;
+    margin: 0em .5em;
+    min-width: 1em;
+}
+.layout-desktop .btnCloseSelectionPanel {
+    order: 3;
+    margin: 0em .5em;
+    min-width: 1em;
+}
