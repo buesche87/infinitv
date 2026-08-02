@@ -7,37 +7,31 @@
 /* Player OSD: Hide some Elements */
 .btnFullscreen,
 .btnPip,
-.videoOsdBottom .endsAtText {
-    display: none;
-}
+.videoOsdBottom .endsAtText { display: none }
 
 /* Player OSD: Media Infos */
-.osdTitle {
-    margin-left: 0.5em;
-}
+.osdTitle { margin-left: 0.5em }
+
 .startTimeText,
 .endTimeText {
     width: 3.4em;
     display: block;
     text-align: center;
+    margin: 0.1em 0 0 0 !important;
 }
-.osdTextContainer {
-    margin: 0 !important;
-    margin-top: 0.2em !important;
-    padding-left: 0.5em !important;
-    padding-right: 0.5em !important;
-}
+.startTimeText { padding-left: .5em !important }
+.endTimeText   { padding-right: 0.5em !important }
+
+/* Progressbar & Volume: Marker */
+.videoOsdBottom .mdl-slider { margin-bottom: 1px }
+.sliderMarker { width: 3px; margin-top: 2px }
 
 /* Player OSD: Media-Buttons */
-.ltr > .paper-icon-button-light:focus {
-    transform: scale(1.2) !important;
-}
+.ltr > .paper-icon-button-light:focus { transform: scale(1.2) !important }
 
 /* Player OSD: Volume-Button */
 .volumeButtons > .paper-icon-button-light:focus,
-.osdControls > .focuscontainer-x > .paper-icon-button-light:focus {
-    transform: none !important;
-}
+.osdControls > .focuscontainer-x > .paper-icon-button-light:focus { transform: none !important }
 
 /* Progressbar & Volume */
 .mdl-slider::-moz-range-thumb {
@@ -48,18 +42,8 @@
     color: var(--accent100) !important;
     background: var(--accent100) !important;
 }
-.mdl-slider::-webkit-scrollbar-corner {
-    background: #0000 !important;
-}
-.mdl-slider::-webkit-scrollbar-track-piece {
-    background: #0000 !important;
-}
-
-/* Progressbar & Volume: Marker */
-.sliderMarker {
-    width: 3px;
-    border-radius: 2px;
-}
+.mdl-slider::-webkit-scrollbar-corner      { background: #0000 !important }
+.mdl-slider::-webkit-scrollbar-track-piece { background: #0000 !important }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -74,10 +58,7 @@
 }
 
 /* OSD Footer: Full Layout */
-.videoOsdBottom {
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
+.videoOsdBottom { padding: .5em 0 }
 
 .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
     background: rgba(0, 0, 0, var(--headeropacity)); 
@@ -115,9 +96,7 @@
 * > ultrachromic */
 
 /* Chapter Thumbnails */
-.chapterThumbContainer {
-    box-shadow: 0 0 1.9vh #000;
-}
+.chapterThumbContainer { box-shadow: 0 0 1.9vh #000 }
 .chapterThumb {
     height: 14vh;
     min-width: 14vh;
@@ -130,9 +109,7 @@
 	bottom: 4px;
 	padding: .25em 0.7em;
 }
-.chapterThumbText {
-    font-size: 1em;
-}
+.chapterThumbText { font-size: 1em }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -141,10 +118,7 @@
 */
 
 /* UpNext: Dialog-Box */
-.upNextContainer {
-    padding-left: 1.25em;
-    padding-right: 1.25em;
-}
+.upNextContainer { padding: 1em 1.25em }
 
 /* UpNext: Buttons */
 .upNextDialog-button {
@@ -158,46 +132,24 @@
   align-items: center;
 }
 
-.upNextDialog-countdownText {
-    margin-right: .2em;
-}
+.upNextDialog-countdownText { margin-right: .2em }
 
 /* Subtitle Sync: Container */
-.subtitleSync {
-    top: 5em;
-}
-.subtitleSyncContainer {
-    padding-bottom: .5em;
-}
+.subtitleSync          { top: 5em }
+.subtitleSyncContainer { padding-bottom: .5em }
 
 /* Subtitle Sync: seconds */
-.subtitleSyncTextField {
-    padding-top: 0.2em;
-}
+.subtitleSyncTextField { padding-top: 0.2em }
 
 /* Subtitle Sync: Slider bubble */
-.subtitleSyncSliderContainer .sliderBubble {
-    top: 6em;
-}
-.subtitleSyncSliderContainer .sliderBubbleText {
-    padding: 0.2em;
-}
+.subtitleSyncSliderContainer .sliderBubble     { top: 6em }
+.subtitleSyncSliderContainer .sliderBubbleText { padding: 0.2em }
 
 /* Playback Info */
-.playerStats {
-    top: 5em;
-    font-size: 110%;
-}
-.playerStats-content-tv {
-    font-size: 85%;
-}
-.playerStats-stat-label {
-    color: #ddd;
-}
-.playerStats-stat-value {
-    color: #fff;
-    font-weight: 600;
-}
+.playerStats            { top: 5em; font-size: 110% }
+.playerStats-content-tv { font-size: 85% }
+.playerStats-stat-label { color: #ddd }
+.playerStats-stat-value { color: #fff; font-weight: 600 }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -205,30 +157,20 @@
 ===========================================================================
 * > TODO: needs work */
 
-.layout-tv .nowPlayingPageImageContainer {
-    margin-right: 1.5em;
-}
-.layout-tv .nowPlayingButtonsContainer {
-    margin-top: .5em;
-}
+.layout-tv .nowPlayingPageImageContainer                 { margin-right: 1.5em }
+.layout-tv .nowPlayingButtonsContainer                   { margin-top: .5em }
 
 /* Fix seekbar jumping around */
-.layout-tv .nowPlayingInfoControls .positionTime {
-    width: 2em;
-}
+.layout-tv .nowPlayingInfoControls .positionTime         { width: 2em }
 
 /* playlist */
-.layout-tv .playlistSectionButton {
-    margin-bottom: .5em;
-}
+.layout-tv .playlistSectionButton                        { margin-bottom: .5em }
 .layout-desktop .listViewUserDataButtons .listItemButton {
     margin-right: .1em;
     margin-left: .1em;
     border: none !important;
 }
-.layout-desktop .listViewUserDataButtons {
-    margin-right: .5em;
-}
+.layout-desktop .listViewUserDataButtons                 { margin-right: .5em }
 
 /* playlist buttons: no animations */
 .layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
@@ -238,7 +180,7 @@
 .layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
     transform: none !important;
 }
-.layout-tv .playlistSectionButton .paper-icon-button-light {
+.layout-tv .playlistSectionButton .paper-icon-button-light      {
     transform: none !important;
 }
 

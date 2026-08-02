@@ -1023,14 +1023,14 @@ h2.username                                              {
 ────────────────────────────────────────────────────────────────────────────
 */
 
-#selectServerPage .cardBox   { margin: 1em !important }
+#selectServerPage .cardBox            { margin: 1em !important }
 
 #selectServerPage .cardBox:has(.cardFooter) .cardScalable div {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
-#selectServerPage .cardFooter { padding: 0.8em .3em }
+#selectServerPage .cardFooter         { padding: 0.8em .3em }
 
 #selectServerPage .padded-bottom-page {
     margin: 0 5%;
@@ -1043,7 +1043,7 @@ h2.username                                              {
 
 #selectServerPage .btnAddServer:hover { border-color: var(--accent60) !important }
 
-.standalonePage .addServerForm {
+.standalonePage .addServerForm        {
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);

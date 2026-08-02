@@ -5,9 +5,7 @@
 */
 
 /* Person Cards */
-.overflowPortraitCard.personCard {
-    font-size: 90% !important;
-}
+.overflowPortraitCard.personCard { font-size: 90% !important }
 
 /* Person Cards: Center Content */
 .overflowPortraitCard.personCard > .cardBox {
@@ -24,7 +22,7 @@
 .layout-tv .detailImageContainer .squareCard   { max-width: 18em; }
 
 /* Card Container */
-.layout-tv .detailImageContainer .card {
+.layout-tv .detailImageContainer .card         {
     float: left;
     max-height: 80vh;
     max-width: 25vw;
@@ -506,9 +504,7 @@
     margin: .5em .8em !important;
     backdrop-filter: blur(6px);
 }
-.itemProgressBarForeground {
-    background-color: var(--accent100) !important;
-}
+.itemProgressBarForeground { background-color: var(--accent100) !important }
 
 /* List Items: Indicator */
 .listItemIndicators {
