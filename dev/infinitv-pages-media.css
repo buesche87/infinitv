@@ -188,9 +188,10 @@
 /* Primary Container */
 .layout-tv .detailPagePrimaryContent  { padding: 0 }
 
-.layout-tv [dir=ltr] .detailRibbon,
-.layout-tv .detailPagePrimaryContent,
-.layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) { padding-left: 29vw }
+.layout-tv [dir=ltr] .detailRibbon, .layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
+    padding-left: 1em;
+    margin-right: 1vw
+}
 
 /* Tracks & Subtitles */
 .layout-tv .trackSelections {
@@ -206,7 +207,7 @@
 }
 
 /* Secondary Container */
-.layout-tv .detailPageSecondaryContainer                     { padding-top: 2em }
+.layout-tv .detailPageSecondaryContainer                     {padding-top: .5em;margin-right: 1vw;margin-left: 1vw;}
 .layout-tv .detailPageSecondaryContainer .detailPageContent  { padding: 0 }
 
 /* Layout Mobile
@@ -273,3 +274,8 @@
 
 /* Buttons */
 #backdropsContainer .paper-icon-button-light { margin: .1em }
+
+
+
+
+

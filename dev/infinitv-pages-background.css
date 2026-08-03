@@ -1,5 +1,5 @@
 .layout-tv .detailRibbon {
-    margin-left: 29vw;
+    margin-left: 28vw;
     padding-left: 0;
     padding: 1em 1vw 0 1vw;
     background: rgba(0, 0, 0, var(--headeropacity));
@@ -7,14 +7,125 @@
     border-radius: var(--rounding-media);
 }
 .layout-tv .detailPagePrimaryContent {
-    margin-left: 29vw;
-    padding: 1em 1vw 0 1vw;
+    margin-left: 28vw;
+    padding: 1em 1vw 1em 1vw;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border: var(--buttonborder);
+    border-top-color: transparent;
+    border-bottom-right-radius: var(--rounding-media);
+    border-bottom-left-radius: var(--rounding-media);
+}
+
+.layout-tv .detailPageSecondaryContainer .detailPageContent {
     background: rgba(0, 0, 0, var(--headeropacity));
     border: var(--buttonborder);
     border-radius: var(--rounding-media);
 }
 
-.layout-tv .detailPagePrimaryContent:has(.listItem-largeImage) {
+
+/* Episode list */
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailRibbon {
+    margin-bottom: .5em;
+    margin-right: 1vw;
+    padding-left: 1em;
+}
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailPagePrimaryContent {
     background: none;
     border-color: transparent;
+}
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .itemGenres {
+    display: none;
+}
+
+
+/* Media Page */
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections) .detailRibbon {
+    margin-bottom: 0;
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections) .detailPagePrimaryContent {
+    margin-bottom: .5em;
+    margin-right: 1vw;
+    padding-left: 1em;
+    border-top: none;
+    padding-bottom: 0;
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections) .detailSection {
+    padding-bottom: .5em;
+}
+
+
+/* TV Show */
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailRibbon {
+    margin-bottom: 0;
+    margin-right: 1vw;
+    padding-left: 1em;
+    border-bottom: var(--buttonborder);
+    border-radius: var(--rounding-media);
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailPagePrimaryContent {
+    margin-right: 1vw;
+    padding-top: 1em;
+    background: transparent;
+    border-color:  transparent;
+    /* border-top: var(--buttonborder); */
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailSectionContent {
+    margin: 0 -1vw;
+    padding: 0 1em;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border: var(--buttonborder);
+    border-bottom: none;
+    /* border-top: none; */
+    /* border-radius: var(--rounding-media); */
+    border-top-right-radius: var(--rounding-media);
+    border-top-left-radius: var(--rounding-media);
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .itemDetailsGroup {
+    padding: .5em 1em;
+    margin: 0 -1vw 1em -1vw;
+    border: var(--buttonborder);
+    border-top: none;
+    border-bottom-right-radius: var(--rounding-media);
+    border-bottom-left-radius: var(--rounding-media);
+    background: rgba(0, 0, 0, var(--headeropacity));
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .itemDetailsGroup div {
+    margin: .25em 0 !important;
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .itemGenres {
+    display: none;
+}
+
+
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .nextUpSection {
+    margin: 0 -1vw 1em -1vw;
+    border: var(--buttonborder);
+    border-radius: var(--rounding-media);
+    background: rgba(0, 0, 0, var(--headeropacity));
+}
+
+
+.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
+    border: var(--buttonborder);
+    border-radius: var(--rounding-media);
+    background: rgba(0, 0, 0, var(--headeropacity));
+    margin-top: -2em;
+}
+
+.layout-tv .detailPageSecondaryContainer {
+    margin-top: 1em;
+}
+
+.layout-tv .detailPageSecondaryContainer .detailVerticalSection {
+    margin-bottom: 0em !important;
 }

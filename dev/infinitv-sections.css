@@ -5,27 +5,36 @@
 */
 
 /* More Space to stretch Seasons Scroller */
-.layout-desktop .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
-.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
+.layout-desktop .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
     margin-left: -30.5vw;
+    margin-right: -1vw;
     margin-bottom: -1.5em !important;
+}
+
+.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
+    margin-left: -28vw;
+    margin-right: -1vw;
+    margin-bottom: -1.5em !important;
+    
 }
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Margin if NextUp Section is hidden */
+/* Margin if NextUp Section is hidden
 .layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide)
-#listChildrenCollapsible          { margin-top: 2em }
-.layout-tv:has(.trackSelections.hide ~ .nextUpSection.hide) 
-.detailPageSecondaryContainer     { padding-top: 0 }
+#listChildrenCollapsible          { margin-top: 3em }
+*/
 
-/* Margin if episode list */
+/* Margin if episode list
 .layout-tv .detailSection:has(.listItem-largeImage)
 #listChildrenCollapsible          { margin-top: 0em !important }
-
+ */
 /* Space between Sections */
+
+/*
 .layout-tv .detailVerticalSection { margin-bottom: 0em !important }
+*/
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -58,6 +67,15 @@
 .layout-tv .nextUpSection .sectionTitle {
     text-align: left !important;
     padding-left: 1em !important;
+}
+
+.layout-tv #peopleHeader {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
+    border-radius: 0 !important; 
 }
 
 /* Layout Desktop

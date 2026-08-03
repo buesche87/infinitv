@@ -25,10 +25,20 @@
 .layout-tv .detailImageContainer .card         {
     float: left;
     position: sticky;
-    top: 7em;
-    left: 3em;
-    z-index: 3
+    /* top: 0em; */
+    /* left: 2vw; */
+    /* z-index: 3; */
 }
+
+.layout-tv .detailImageContainer .portraitCard   {
+    max-width: 25vw;
+    /* position: sticky; */
+}
+
+.layout-tv .detailPagePrimaryContent:has(.listItem-largeImage) .card {
+    
+}
+
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
