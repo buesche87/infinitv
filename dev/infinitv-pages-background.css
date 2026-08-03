@@ -1,0 +1,89 @@
+
+/* TEST - Background */
+
+
+/* Media Details */
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .detailRibbon,
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .detailPagePrimaryContent,
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .itemsContainer-tv:has(.listItem-largeImage) {
+    margin-left: 28vw;
+    padding: 1em 1vw 0 1vw;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-left: var(--buttonborder);
+    border-right: var(--buttonborder);
+}
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .detailRibbon {
+    margin-left: 28vw;
+    padding: 1em 1vw 0 1vw;
+    border-top: var(--buttonborder);
+    border-top-left-radius: var(--rounding-media);
+    border-top-right-radius: var(--rounding-media);
+}
+.layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .detailPagePrimaryContent {
+    margin-left: 28vw;
+    padding: 0 1vw 0 1vw;
+    border-bottom: var(--buttonborder);
+    border-bottom-left-radius: var(--rounding-media);
+    border-bottom-right-radius: var(--rounding-media);
+}
+.layout-tv .detailPagePrimaryContent .detailSection {
+    padding-bottom: .5em;
+}
+
+
+/* TV Show */
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailRibbonm,
+.layout-tv .detailPagePrimaryContainer:has(.nextUpSection) .detailRibbon {
+    margin-left: 29vw;
+    padding: 1em 1vw 0 1vw;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-top: var(--buttonborder);
+    border-left: var(--buttonborder);
+    border-right: var(--buttonborder);
+    border-top-left-radius: var(--rounding-media);
+    border-top-right-radius: var(--rounding-media);
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailSectionContent {
+    padding: 0 1vw 0 1vw;
+    margin-bottom: 2em;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-top: solid 1px hsla(0, 0%, 100%, 0);
+    border-left: var(--buttonborder);
+    border-right: var(--buttonborder);
+    border-bottom: var(--buttonborder);
+    border-bottom-left-radius: var(--rounding-media);
+    border-bottom-right-radius: var(--rounding-media);
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .mainDetailButtons {
+    margin-bottom: 0;
+}
+
+
+
+/* Episode List */
+.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .detailSectionContent {
+    padding: 0 1vw 0 1vw;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-top: solid 1px hsla(0, 0%, 100%, 0);
+    border-left: var(--buttonborder);
+    border-right: var(--buttonborder);
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .itemDetailsGroup {
+    padding: 0 1vw .5em 1vw;
+    margin-bottom: 2em;
+    margin-top: 0;
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-left: var(--buttonborder);
+    border-right: var(--buttonborder);
+    border-bottom: var(--buttonborder);
+    border-top: solid 1px hsla(0, 0%, 100%, 0);
+    border-bottom-left-radius: var(--rounding-media);
+    border-bottom-right-radius: var(--rounding-media);
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .mainDetailButtons {
+    margin-bottom: 0;
+}

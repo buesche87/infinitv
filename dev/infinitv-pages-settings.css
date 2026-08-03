@@ -102,7 +102,8 @@ h2.username                                                 {
     padding: .75em 1em;
     margin: .5em 0;
     font-weight: 500;
-    background: linear-gradient(140deg,var(--accent60),#111);
+    color: var(--accent100);
+    background: #0000;
 }
 
 /* Section Titles */
@@ -156,7 +157,7 @@ h2.username                                                 {
 .layout-tv #displayPreferencesPage form,
 .layout-tv #homeScreenPreferencesPage form,
 .layout-tv #languagePreferencesPage form,
-.layout-tv #controlsPreferencesPage form           { padding: 1em 4em }
+.layout-tv #controlsPreferencesPage form           { padding: .5em 4em 2em 4em }
 
 /* Settings */
 .layout-tv #myPreferencesMenuPage > .padded-left   { padding-top: 0 }
@@ -317,7 +318,8 @@ h2.username                                                 {
                                               padding-top: 1em;
                                               padding-bottom: 2em !important }
 
-#selectServerPage .btnAddServer:hover       { border-color: var(--accent60) !important }
+#selectServerPage .btnAddServer:hover,
+#selectServerPage .btnAddServer:focus       { border-color: var(--accent60) !important }
 
 /* Select Server: Server cards */
 #selectServerPage .cardBox                  { margin:  1em !important }
