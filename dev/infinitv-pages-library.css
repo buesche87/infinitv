@@ -101,7 +101,7 @@
 */
 
 /* Filter & Sorting Header */
-.selfBackdropPage h1.parentName                 { font-size: 150% }
+.selfBackdropPage h1.parentName                 {font-size: 200%;}
 .layout-desktop .selfBackdropPage h1.parentName { font-size: 175% }
 
 /* Filter & Sorting Header: Item Count */
