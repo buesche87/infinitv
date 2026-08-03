@@ -1,8 +1,5 @@
 
 /* TEST - Background */
-
-
-/* Media Details */
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .detailRibbon,
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .detailPagePrimaryContent,
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections:not(.hide)) .itemsContainer-tv:has(.listItem-largeImage) {
@@ -31,7 +28,7 @@
 }
 
 
-/* TV Show */
+
 .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailRibbonm,
 .layout-tv .detailPagePrimaryContainer:has(.nextUpSection) .detailRibbon {
     margin-left: 29vw;
@@ -56,14 +53,14 @@
     border-bottom-right-radius: var(--rounding-media);
 }
 
-.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .mainDetailButtons {
-    margin-bottom: 0;
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .itemGenres {
+    display: none;
 }
 
 
 
-/* Episode List */
-.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .detailSectionContent {
+.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .detailSectionContent,
+.layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide) .detailSectionContent {
     padding: 0 1vw 0 1vw;
     background: rgba(0, 0, 0, var(--headeropacity));
     border-top: solid 1px hsla(0, 0%, 100%, 0);
@@ -71,8 +68,9 @@
     border-right: var(--buttonborder);
 }
 
-.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .itemDetailsGroup {
-    padding: 0 1vw .5em 1vw;
+.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .itemDetailsGroup,
+.layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide) .itemDetailsGroup {
+    padding: 0 1vw 1em 1vw;
     margin-bottom: 2em;
     margin-top: 0;
     background: rgba(0, 0, 0, var(--headeropacity));
@@ -84,6 +82,7 @@
     border-bottom-right-radius: var(--rounding-media);
 }
 
-.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .mainDetailButtons {
+.layout-tv .detailPagePrimaryContainer:has(.nextUpSection:not(.hide)) .mainDetailButtons,
+.layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide) .mainDetailButtons {
     margin-bottom: 0;
 }

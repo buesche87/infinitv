@@ -16,7 +16,9 @@
 
 /* Margin if NextUp Section is hidden */
 .layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide)
-#listChildrenCollapsible          { margin-top: 3em }
+#listChildrenCollapsible          { margin-top: 2em }
+.layout-tv:has(.trackSelections.hide ~ .nextUpSection.hide) 
+.detailPageSecondaryContainer     { padding-top: 0 }
 
 /* Margin if episode list */
 .layout-tv .detailSection:has(.listItem-largeImage)
@@ -24,7 +26,6 @@
 
 /* Space between Sections */
 .layout-tv .detailVerticalSection { margin-bottom: 0em !important }
-
 
 /*
 ────────────────────────────────────────────────────────────────────────────

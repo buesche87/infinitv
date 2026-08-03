@@ -24,8 +24,6 @@
 /* Card Container */
 .layout-tv .detailImageContainer .card         {
     float: left;
-    max-height: 80vh;
-    max-width: 25vw;
     position: sticky;
     top: 7em;
     left: 3em;
