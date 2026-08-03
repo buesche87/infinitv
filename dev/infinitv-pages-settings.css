@@ -78,11 +78,6 @@ h2.username                                                 {
     color: #fff;
 }
 
-/* Display: Center content
-.layout-desktop #displayPreferencesPage,
-.layout-tv #displayPreferencesPage                        { display: flex; justify-content: center }
- */
-
 /* Quick Connect: Box size */
 .layout-desktop #quickConnectPreferencesPage form,
 .layout-tv #quickConnectPreferencesPage form                { padding: 1em 4em 2em 4em }
@@ -100,7 +95,17 @@ h2.username                                                 {
 .layout-tv .inputLabel[for="txtQuickConnectCode"]         { font-size: 1.2em; padding: .5em }
 
 /* Subtitles: Preview-Box color */
-.subtitleappearance-preview { background: linear-gradient(140deg,var(--accent100),#111) !important }
+.subtitleappearance-preview { 
+    background: linear-gradient(140deg,var(--accent100),#111) !important 
+}
+
+/* Client Settings: Restart hint */
+#clientSettingsPage .infoBanner {
+    padding: .75em 1em;
+    margin: .5em 0;
+    font-weight: 500;
+    background: linear-gradient(140deg,var(--accent60),#111);
+}
 
 /* Section Titles */
 .settingsContainer .sectionTitle,
@@ -121,13 +126,15 @@ h2.username                                                 {
 .layout-desktop .userPreferencesPage                    { padding-top: 5em !important }
 .layout-desktop #myPreferencesMenuPage .readOnlyContent { padding: 1em }
 .layout-desktop #userProfilePage .padded-left           { padding: 2em 4em; height: 28em }
+.layout-desktop #clientSettingsPage form,
 .layout-desktop #displayPreferencesPage form,
 .layout-desktop #homeScreenPreferencesPage form,
 .layout-desktop #languagePreferencesPage form,
 .layout-desktop #controlsPreferencesPage form           { padding: 1em 4em }
 
-/* Save Button */
-.layout-desktop .userPreferencesPage .btnSave           {
+/* Save & Cancel Button */
+.layout-desktop .userPreferencesPage .btnSave,
+.layout-desktop .userPreferencesPage .button-cancel     {
     margin-top: 2em;
     margin-left: -1.75em;
     width: 107%;
@@ -147,6 +154,7 @@ h2.username                                                 {
 /* Layout TV - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
+.layout-tv #clientSettingsPage form,
 .layout-tv #displayPreferencesPage form,
 .layout-tv #homeScreenPreferencesPage form,
 .layout-tv #languagePreferencesPage form,
