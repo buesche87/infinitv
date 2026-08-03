@@ -11,9 +11,7 @@
 .layout-desktop .userPreferencesPage .padded-left > form,
 .layout-tv #myPreferencesMenuPage .readOnlyContent,
 .layout-tv #userProfilePage > .padded-left,
-.layout-tv .userPreferencesPage .padded-left > form,
-.layout-mobile .userPreferencesPage .settingsContainer,
-.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {
+.layout-tv .userPreferencesPage .padded-left > form {
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
@@ -192,6 +190,12 @@ h2.username                                                 {
 
 /* Layout Mobile - Settings Pages
 ──────────────────────────────────────────────────────────────────────────── */
+
+.layout-mobile .userPreferencesPage .settingsContainer,
+.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {
+    background: rgba(0, 0, 0, var(--headeropacity));
+    border-radius: 0;
+}
 
 /* Background */
 .layout-mobile #myPreferencesMenuPage,
