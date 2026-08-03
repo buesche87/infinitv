@@ -189,9 +189,9 @@
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
     padding-right: 0em;
     padding-left: 0em;
-    margin-top: -1em;
+    /* margin-top: -1em; */
 }
-.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) { margin-left: 0; margin-top: -3vh }
+.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {margin: 1em -1vw 0 -1vw;/* margin-top: 2em; */margin-bottom: 0 !important;}
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */

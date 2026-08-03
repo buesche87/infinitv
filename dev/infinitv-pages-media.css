@@ -190,7 +190,7 @@
 
 .layout-tv [dir=ltr] .detailRibbon, .layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
     padding-left: 1em;
-    margin-right: 1vw
+    /* margin-right: 0vw; */
 }
 
 /* Tracks & Subtitles */
