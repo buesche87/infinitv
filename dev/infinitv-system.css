@@ -101,6 +101,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Style */
+.layout-mobile .actionSheet,
 .layout-mobile .formDialog {
     animation-duration: var(--anispeed) !important;
     border: var(--buttonborder) !important;
