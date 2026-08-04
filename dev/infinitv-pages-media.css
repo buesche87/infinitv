@@ -5,7 +5,7 @@
 */
 
 /* Move Content up */
-.detailPageWrapperContainer { padding-top: 1em }
+.detailPageWrapperContainer {/* padding-top: 1em; */}
 
 /* Content Background without Backdrops */
 .noBackdropTransparency .detailPagePrimaryContainer,
@@ -38,7 +38,7 @@
 
 /* Increase Season Title Text */
 .layout-tv .selfBackdropPage .itemName {
-    font-size: 150%;
+    font-size: 175%;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -63,7 +63,7 @@
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-desktop .detailRibbon { height: 9em; margin-top: -9em }
+.layout-desktop .detailRibbon               { height: 9em; margin-top: -9em }
 
 /* Card in Detail Ribbon */
 .layout-desktop .detailImageContainer .card {
@@ -73,17 +73,17 @@
 }
 
 /* Info Container */
-.layout-desktop .infoWrapper { padding-top: 0.25em }
+.layout-desktop .infoWrapper                { padding-top: 0.25em }
 
 /* Media Infos */
-.layout-desktop .itemMiscInfo {
+.layout-desktop .itemMiscInfo               {
     font-size: 125%;
     margin-top: 0.25em;
     margin-bottom: 0.6em;
 }
 
 /* Buttons */
-.layout-desktop .mainDetailButtons { margin-left: 1em }
+.layout-desktop .mainDetailButtons          { margin-left: 1em }
 
 /* Some Small Screen fixes */
 @media all and (max-width: 75em) {
@@ -116,7 +116,7 @@
 /* Media Infos */
 .layout-tv .itemMiscInfo {
     font-size: 125%;
-    margin-top: 0.25em;
+    margin-top: .6em;
     margin-bottom: 0.6em;
 }
 
@@ -178,20 +178,90 @@
 
 /* Secondary Container */
 .layout-desktop .detailPageSecondaryContainer { padding: 0 1.5vw !important }
-
-/* Secondary Container: Content */
 .layout-desktop .detailPageSecondaryContainer .detailPageContent { padding: 0 }
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Primary Container */
-.layout-tv .detailPagePrimaryContent  { padding: 0 }
+/*  */
+.layout-tv [dir=ltr] .detailRibbon                              { margin-left: 28vw; padding: 1em 1vw 0 1vw; } 
+.layout-tv .detailPagePrimaryContent                            { margin-left: 28vw; padding: 1em 1vw 1em 1vw; }
+.layout-tv .detailPageSecondaryContainer                        { margin: 1em 1vw 0 1vw; }
+.layout-tv .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
+.layout-tv .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0em !important; }
 
-.layout-tv [dir=ltr] .detailRibbon, .layout-tv .detailPagePrimaryContent .itemsContainer-tv:has(.listItem-largeImage) {
-    padding-left: 1em;
-    /* margin-right: 0vw; */
+/* Series */
+.layout-tv .libraryPage:not(.hide):has(#castCollapsible) .detailPageSecondaryContainer       {margin-top: 1em;padding-top: 0;}
+.layout-tv .libraryPage:not(.hide):has(.moreFromSeasonSection) .detailPageSecondaryContainer {/* margin-top: 1em; */}
+
+
+/* Media Page */
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
+    /* margin-bottom: .5em; */
+    margin-right: 1vw;
+    padding-bottom: .5em;
 }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
+    margin-top: 1em;
+    /* margin-bottom: .5em; */
+    margin-right: 1vw;
+    padding-left: 1em;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {
+    padding-bottom: .5em;
+}
+
+/* TV Show Page */
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailRibbon {
+    margin-right: 1vw;
+    padding-left: 1em;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
+    margin-right: 1vw;
+    padding-top: 0em;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
+    margin: 0 -1vw;
+    padding: 0 1em;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
+    padding: .5em 1em 1em 1em;
+    margin: 0 -1vw 1em -1vw;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup div {
+    margin: .25em 0 !important;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection {
+    margin: 0 -1vw 1em -1vw;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer {
+    margin-top: 0em;
+}
+
+
+
+/* Episode List */
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    margin-right: 1vw !important;
+    padding-left: 1em !important;
+}
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPageSecondaryContainer { margin-top: 1em !important; }
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailPagePrimaryContent {
+    padding-top: 0 !important;
+}
+
+
+
+/* ?? */
+.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
+    margin-top: -2em;
+    margin-bottom: -.5em !important;
+}
+
 
 /* Tracks & Subtitles */
 .layout-tv .trackSelections {
@@ -206,9 +276,7 @@
     font-weight: 600 !important;
 }
 
-/* Secondary Container */
-.layout-tv .detailPageSecondaryContainer                     {padding-top: .5em;margin-right: 1vw;margin-left: 1vw;}
-.layout-tv .detailPageSecondaryContainer .detailPageContent  { padding: 0 }
+
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */

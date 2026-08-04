@@ -185,7 +185,7 @@
 /* Background: --itemopacity */
 .cardFooter:not(.visualCardBox-cardFooter),
 .layout-desktop .detailRibbon,
-.layout-mobile .detailRibbon                 { background: rgba(0, 0, 0, var(--itemopacity)) !important; }
+.layout-mobile .detailRibbon                 { background: rgba(0, 0, 0, var(--itemopacity)); }
 
 /* Background: Dark 85%  */
 .btnAddServer,
