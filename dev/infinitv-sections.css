@@ -18,24 +18,6 @@
     
 }
 
-/* Layout TV
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Margin if NextUp Section is hidden
-.layout-tv .detailSection:has(.trackSelections.hide ~ .nextUpSection.hide)
-#listChildrenCollapsible          { margin-top: 3em }
-*/
-
-/* Margin if episode list
-.layout-tv .detailSection:has(.listItem-largeImage)
-#listChildrenCollapsible          { margin-top: 0em !important }
- */
-/* Space between Sections */
-
-/*
-.layout-tv .detailVerticalSection { margin-bottom: 0em !important }
-*/
-
 /*
 ────────────────────────────────────────────────────────────────────────────
    Sections: Titles
@@ -191,7 +173,7 @@
     padding-left: 0em;
     /* margin-top: -1em; */
 }
-.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {margin: 1em -1vw 0 -1vw;/* margin-top: 2em; */margin-bottom: 0 !important;}
+.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {/* margin: 1em -1vw 0 -1vw; *//* margin-top: 2em; */margin-bottom: 0 !important;}
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */

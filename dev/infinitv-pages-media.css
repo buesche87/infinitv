@@ -121,7 +121,11 @@
 }
 
 /* Buttons */
-.layout-tv .mainDetailButtons { margin: 1.25em 0 1.25em 0.5em }
+.layout-tv .mainDetailButtons {margin: 1.25em 0;}
+
+.layout-tv .tagline {
+    font-weight: 500;
+}
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -197,49 +201,41 @@
 
 /* Media Page */
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
-    /* margin-bottom: .5em; */
     margin-right: 1vw;
     padding-bottom: .5em;
+    padding-left: 1.5em;
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
     margin-top: 1em;
-    /* margin-bottom: .5em; */
     margin-right: 1vw;
-    padding-left: 1em;
+    padding-left: 1.5em;
     padding-bottom: .5em;
-    padding-top: .5em;
+    padding-top: 1em;
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {
-    padding-bottom: .5em;
-}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection { padding-bottom: .5em; }
 
 /* TV Show Page */
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailRibbon {
     margin-right: 1vw;
-    padding-left: 1em;
+    padding-left: 1.5em;
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
     margin-right: 1vw;
     padding-top: 0em;
+    padding-left: 0;
+    margin-left: 29vw;
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
     margin: 0 -1vw;
-    padding: 0 1em;
+    padding: 0 1.5em;
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
-    padding: .5em 1em 1em 1em;
+    padding: .5em 1em 1em 1.5em;
     margin: 0 -1vw 1em -1vw;
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup div {
-    margin: .25em 0 !important;
-}
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection {
-    margin: 0 -1vw 1em -1vw;
-}
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer {
-    margin-top: 0em;
-}
-
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup div { margin: .25em 0 !important; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection { margin: 0 -1vw 1em -1vw; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 0em; }
 
 
 /* Episode List */
@@ -247,13 +243,15 @@
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
     margin-right: 1vw !important;
-    padding-left: 1em !important;
+    padding-left: 1.5em !important;
 }
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPageSecondaryContainer { margin-top: 1em !important; }
-.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailPagePrimaryContent {
-    padding-top: 0 !important;
-}
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent { padding-top: 0 !important; }
 
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent {
+    margin-right: 0 !important;
+    margin-left: 28vw !important;
+}
 
 
 /* ?? */
@@ -342,8 +340,4 @@
 
 /* Buttons */
 #backdropsContainer .paper-icon-button-light { margin: .1em }
-
-
-
-
 

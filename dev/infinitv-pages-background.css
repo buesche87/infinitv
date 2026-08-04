@@ -33,14 +33,6 @@
     border-top-left-radius: var(--rounding-media);
 }
 
-/* Episode List */
-.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailPagePrimaryContent {
-    background: none;
-    border-color: transparent;
-}
-.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .itemGenres {
-    display: none;
-}
 
 /* TV Show */
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailRibbon {
@@ -79,3 +71,14 @@
     background: rgba(0, 0, 0, var(--headeropacity));
 }
 
+/* Episode List */
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailPagePrimaryContent {
+    background: none;
+    border-color: transparent;
+}
+
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .itemGenres,
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .itemDetailsGroup,
+.layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailSectionContent {
+    display: none;
+}
