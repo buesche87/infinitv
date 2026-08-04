@@ -392,6 +392,10 @@
 .layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
 .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox { margin: 2em .6em 2em 1.6em !important; }
 
+
+.layout-tv .nextUpSection .itemsContainer > .overflowBackdropCard > .cardBox {margin: 2em 1em 1.5em 2.5em !important;}
+
+
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -402,6 +406,7 @@
     margin-bottom: .5em !important;
     margin-top: .75em !important;
 }
+
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -533,6 +538,7 @@
 
 /* List Item: Poster - TV */
 .layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage           { width: 14%; height: 6em; }
+
 /* List Item: Poster Focus - TV */
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage     { width: 15%; }
 
