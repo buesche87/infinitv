@@ -21,16 +21,16 @@
 }
 
 /* Media Page */
-.layout-tv .detailPagePrimaryContainer:has(.trackSelections) .detailRibbon {
-    /* border-bottom: none; */
-    /* border-bottom-right-radius: 0; */
-    /* border-bottom-left-radius: 0; */
-}
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections) .detailPagePrimaryContent {
-    /* border-top: none; */
+    padding-top: 1em;
+    margin-top: 1em;
     border-top: var(--buttonborder);
     border-top-right-radius: var(--rounding-media);
     border-top-left-radius: var(--rounding-media);
+}
+
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
+    padding-bottom: 1em;
 }
 
 
@@ -38,6 +38,7 @@
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailRibbon {
     border-bottom: var(--buttonborder);
     border-radius: var(--rounding-media);
+    padding-bottom: 1em !important;
 }
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailPagePrimaryContent {
     background: transparent;
@@ -82,3 +83,6 @@
 .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailSectionContent {
     display: none;
 }
+
+
+
