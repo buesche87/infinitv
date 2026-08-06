@@ -1,3 +1,25 @@
+# v0.5.0 (announcement)
+
+> Big TV-Layout update
+
+- a lot of lines have been exchanged
+- an optional theme will bring background boxes
+
+Those boxes will be available at release by adding the following code to your custom css:
+
+```css
+@import url('https://buesche87.github.io/infinitv/infinitv-boxes.css');
+```
+
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-episode-boxes.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-episodelist-boxes.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-player.png"></td>
+  </tr>
+</table>
+
+
 # v0.4.3
 
 > Mainly dialog design and bugfixes

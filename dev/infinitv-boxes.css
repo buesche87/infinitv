@@ -21,18 +21,15 @@
 }
 
 /* Media Page */
-.layout-tv .detailPagePrimaryContainer:has(.trackSelections) .detailPagePrimaryContent {
-    padding-top: 1em;
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon { padding-bottom: 1em; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
+    padding-top: .5em;
     margin-top: 1em;
     border-top: var(--buttonborder);
     border-top-right-radius: var(--rounding-media);
     border-top-left-radius: var(--rounding-media);
 }
-
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
-    padding-bottom: 1em;
-}
-
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent { padding-bottom: 0; }
 
 /* TV Show */
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailRibbon {
@@ -64,7 +61,6 @@
     background: rgba(0, 0, 0, var(--headeropacity));
 }
 
-
 /* */ 
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
     border: var(--buttonborder);
@@ -83,6 +79,3 @@
 .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .detailSectionContent {
     display: none;
 }
-
-
-

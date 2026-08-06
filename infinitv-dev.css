@@ -11,23 +11,24 @@
 
                          The Big Screen Experience                         
 
-*                               v0.4.4-dev                                 */
+*                               v0.5.0-dev                                 */
 
 /* Load Stylesheets */
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-base.css');
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-system.css');
 
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-pages-home.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-pages-library.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-pages-media.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-pages-settings.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-home.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-library.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-media.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-settings.css');
 
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-sections.css');
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-cards.css');
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-cards-dynamicsize.css');
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-dynamicsize.css');
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-player.css');
 
-@import url('https://buesche87.github.io/infinitv/dev/infinitv-pages-background.css');
+/* will be removed in prod */
+@import url('https://buesche87.github.io/infinitv/dev/infinitv-boxes.css');
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
