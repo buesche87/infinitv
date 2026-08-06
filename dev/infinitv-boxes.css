@@ -42,7 +42,7 @@
     border-color:  transparent;
 }
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .detailSectionContent {
-    background: rgba(0, 0, 0, var(--headeropacity));
+    background: rgba(0, 0, 0, var(--bgdarkness));
     border: var(--buttonborder);
     border-bottom: none;
     border-top-right-radius: var(--rounding-media);
@@ -53,19 +53,19 @@
     border-top: none;
     border-bottom-right-radius: var(--rounding-media);
     border-bottom-left-radius: var(--rounding-media);
-    background: rgba(0, 0, 0, var(--headeropacity));
+    background: rgba(0, 0, 0, var(--bgdarkness));
 }
 .layout-tv .detailPagePrimaryContainer:has(.trackSelections.hide) .nextUpSection {
     border: var(--buttonborder);
     border-radius: var(--rounding-media);
-    background: rgba(0, 0, 0, var(--headeropacity));
+    background: rgba(0, 0, 0, var(--bgdarkness));
 }
 
 /* */ 
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
     border: var(--buttonborder);
     border-radius: var(--rounding-media);
-    background: rgba(0, 0, 0, var(--headeropacity));
+    background: rgba(0, 0, 0, var(--bgdarkness));
 }
 
 /* Episode List */
