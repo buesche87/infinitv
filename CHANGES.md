@@ -15,7 +15,7 @@ Those boxes will be available at release by adding the following code to your cu
   <tr>
     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-episode-boxes.png"></td>
     <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-episodelist-boxes.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/desktop-player.png"></td>
+    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-movie-boxes.png"></td>
   </tr>
 </table>
 
