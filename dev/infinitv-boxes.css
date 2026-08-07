@@ -38,7 +38,11 @@
 }
 
 /* Media Page */
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {padding-bottom: 1em;padding-left: 1.5em;}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+}
+
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
     padding-top: .5em;
     margin-top: 1em;
@@ -59,20 +63,22 @@
     border-bottom: none;
     border-top-right-radius: var(--rounding-media);
     border-top-left-radius: var(--rounding-media);
-    margin: 0 -1vw;
+    margin: 0;
     padding: 0 1.5em;
 }
-
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
     border: var(--buttonborder);
     border-top: none;
     border-bottom-right-radius: var(--rounding-media);
     border-bottom-left-radius: var(--rounding-media);
     background: rgba(0, 0, 0, var(--bgdarkness));
-    padding: .5em 1em 1em 1.5em;
-    margin: 0 -1vw 1em -1vw;
+    /* padding: .5em 1em 1em 1.5em; */
+    /* margin: 0 0 1em -1vw; */
+    margin-left: 0;
+    padding-top: .5em;
+    padding-left: 1.5em;
+    padding-bottom: 1em;
 }
-
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection {
     border: var(--buttonborder);
     border-radius: var(--rounding-media);
@@ -80,6 +86,11 @@
     margin-bottom: 3em !important;
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 2em; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection {
+    margin-left: 0;
+}
+
+
 
 /* */ 
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {

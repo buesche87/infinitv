@@ -234,8 +234,9 @@
     margin-top: 0;
     margin-right: -1vw;
     margin-bottom: 2em !important;
-    margin-left: -1vw;
+    margin-left: -.5em;
 }
+
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 0; }
 
 /* Episode List */
