@@ -9,83 +9,43 @@
     /* Layout Desktop (Default)
     ──────────────────────────────────────────────────────────────────────────── */
 
-    /* Cards */
-    --card-portrait-width: 33.33%;
-    --card-square-width:   33.33%;
-    --card-backdrop-width: 50%;
+    /* Cards */--card-portrait-width: 33.33%;--card-square-width:   33.33%;--card-backdrop-width: 50%;
     
-    /* Image Search Cards */
-    --card-search-portrait-width: 25%;
-    --card-search-square-width:   25%;
-    --card-search-backdrop-width: 33.33%;
+    /* Image Search Cards */--card-search-portrait-width: 25%;--card-search-square-width:   25%;--card-search-backdrop-width: 33.33%;
 
-    /* Overflow Cards */
-    --card-overflow-portrait-width: 33.33%;
-    --card-overflow-square-width:   33.33%;
-    --card-overflow-backdrop-width: 50%;
+    /* Overflow Cards */--card-overflow-portrait-width: 33.33%;--card-overflow-square-width:   33.33%;--card-overflow-backdrop-width: 50%;
 
-    /* Overflow Cards in Primary Container not containing a NextUp Section */
-    --card-overflow-portrait-nextuphide-width: 50%;
-    --card-overflow-square-nextuphide-width:   33%; /* not sure if used anywhere */
-    --card-overflow-backdrop-nextuphide-width: 33.33%; /* not sure if used anywhere */
+    /* Overflow Cards in Primary Container not containing a NextUp Section */--card-overflow-portrait-nextuphide-width: 50%;--card-overflow-square-nextuphide-width:   33%; /* not sure if used anywhere */--card-overflow-backdrop-nextuphide-width: 33.33%; /* not sure if used anywhere */
 
-    /* Person Cards */
-    --card-person-height: 19vw;
-    --card-person-scalable-width: calc(19vw - 3em);
+    /* Person Cards */--card-person-height: 19vw;--card-person-scalable-width: calc(19vw - 3em);
 
-    /* ListItem Text Wrap */
-    --listitem-line-clamp: 3;
+    /* ListItem Text Wrap */--listitem-line-clamp: 3;
 
     /* Layout TV
     ──────────────────────────────────────────────────────────────────────────── */    
 
-    /* Cards - TV */
-    --card-portrait-width-tv: 33.33%;
-    --card-square-width-tv:   33.33%;
-    --card-backdrop-width-tv: 50%;
+    /* Cards - TV */--card-portrait-width-tv: 33.33%;--card-square-width-tv:   33.33%;--card-backdrop-width-tv: 50%;
 
-    /* Overflow Cards - TV */
-    --card-overflow-portrait-width-tv: 33.33%;
-    --card-overflow-square-width-tv:   33.33%;
-    --card-overflow-backdrop-width-tv: 50%;
+    /* Overflow Cards - TV */--card-overflow-portrait-width-tv: 33.33%;--card-overflow-square-width-tv:   33.33%;--card-overflow-backdrop-width-tv: 50%;
 
-    /* Overflow Cards in Secondary Container - TV */
-    --card-secondary-overflow-portrait-width-tv: 33.33%;
-    --card-secondary-overflow-square-width-tv:   25%;
-    --card-secondary-overflow-backdrop-width-tv: 50%;
+    /* Overflow Cards in Secondary Container - TV */--card-secondary-overflow-portrait-width-tv: 33.33%;--card-secondary-overflow-square-width-tv:   25%;--card-secondary-overflow-backdrop-width-tv: 50%;
 
-    /* Person Cards - TV */
-    --card-person-height-tv: 23.2vw;
-    --card-person-scalable-width-tv: calc(23.2vw - 2.5em);
+    /* Person Cards - TV */--card-person-height-tv: 22.4vw;--card-person-scalable-width-tv: calc(22.4vw - 3em);
 
-    /* ListItem Text Wrap - TV */
-    --listitem-line-clamp-tv: 5;
+    /* ListItem Text Wrap - TV */--listitem-line-clamp-tv: 5;
 
     /* Layout Mobile
     ──────────────────────────────────────────────────────────────────────────── */
 
-    /* Cards - Mobile */
-    --card-portrait-width-mobile: 33.33%;
-    --card-square-width-mobile:   33.33%;
-    --card-backdrop-width-mobile: 50%;
+    /* Cards - Mobile */--card-portrait-width-mobile: 33.33%;--card-square-width-mobile:   33.33%;--card-backdrop-width-mobile: 50%;
 
-    /* Overflow Cards - Mobile */
-    --card-overflow-portrait-width-mobile: 33.33%;
-    --card-overflow-square-width-mobile:   33.33%;
-    --card-overflow-backdrop-width-mobile: 50%;
+    /* Overflow Cards - Mobile */--card-overflow-portrait-width-mobile: 33.33%;--card-overflow-square-width-mobile:   33.33%;--card-overflow-backdrop-width-mobile: 50%;
 
-    /* Overflow Cards in Secondary Container - Mobile */
-    --card-secondary-overflow-portrait-width-mobile: 33.33%;
-    --card-secondary-overflow-square-width-mobile:   33.33%;
-    --card-secondary-overflow-backdrop-width-mobile: 50%;
+    /* Overflow Cards in Secondary Container - Mobile */--card-secondary-overflow-portrait-width-mobile: 33.33%;--card-secondary-overflow-square-width-mobile:   33.33%;--card-secondary-overflow-backdrop-width-mobile: 50%;
 
-    /* Person Cards - Mobile */
-    --card-person-height-mobile: 23vw;
-    --card-person-scalable-width-mobile: calc(23vw - 2.5em);
+    /* Person Cards - Mobile */--card-person-height-mobile: 23vw;--card-person-scalable-width-mobile: calc(23vw - 3em);
 
-    /* ListItem: Text Wrap - Mobile */
-    --listitem-line-clamp-mobile: 3;
-}
+    /* ListItem: Text Wrap - Mobile */--listitem-line-clamp-mobile: 3;}
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -115,7 +75,7 @@
 
         /* Person Cards */
         --card-person-height: 15.8vw;
-        --card-person-scalable-width: calc(15.8vw - 2.5em);
+        --card-person-scalable-width: calc(15.8vw - 3em);
 
         /* Layout TV
         ──────────────────────────────────────────────────────────────────────────── */
@@ -127,8 +87,8 @@
         --card-overflow-square-width-tv: 25%;
 
         /* Person Cards - TV */
-        --card-person-height-tv: 18.55vw;
-        --card-person-scalable-width-tv: calc(18.55vw - 2.5em);
+        --card-person-height-tv: 18vw;
+        --card-person-scalable-width-tv: calc(18vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */
@@ -148,7 +108,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 18.4vw;
-        --card-person-scalable-width-mobile: calc(18.4vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(18.4vw - 3em);
     }
 }
 @media(min-width: 50em) {
@@ -169,7 +129,7 @@
 
         /* Person Cards */
         --card-person-height: 13.6vw;
-        --card-person-scalable-width: calc(13.6vw - 2.5em);
+        --card-person-scalable-width: calc(13.6vw - 3em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 5;
@@ -192,8 +152,8 @@
         --card-secondary-overflow-backdrop-width-tv: 33.33%;
 
         /* Person Cards - TV */
-        --card-person-height-tv: 15.5vw;
-        --card-person-scalable-width-tv: calc(15.5vw - 2.5em);
+        --card-person-height-tv: 15.2vw;
+        --card-person-scalable-width-tv: calc(15.2vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */
@@ -215,7 +175,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 15.35vw;
-        --card-person-scalable-width-mobile: calc(15.35vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(15.35vw - 3em);
 
         /* ListItem Text Wrap - Mobile */
         --listitem-line-clamp-mobile: 3;
@@ -226,7 +186,7 @@
 
         /* Person Cards */
         --card-person-height: 11.9vw;
-        --card-person-scalable-width: calc(11.9vw - 2.5em);
+        --card-person-scalable-width: calc(11.9vw - 3em);
 
         /* ListItem Text Wrap - Mobile */
         --listitem-line-clamp-mobile: 4;
@@ -251,7 +211,7 @@
 
         /* Person Cards */
         --card-person-height: 10.6vw;
-        --card-person-scalable-width: calc(10.6vw - 2.5em);
+        --card-person-scalable-width: calc(10.6vw - 3em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 4;
@@ -272,8 +232,8 @@
         --card-secondary-overflow-square-width-tv: 16.66%;
 
         /* Person Cards - TV */
-        --card-person-height-tv: 13.55vw;
-        --card-person-scalable-width-tv: calc(13.55vw - 2.5em);
+        --card-person-height-tv: 13.35vw;
+        --card-person-scalable-width-tv: calc(13.35vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */
@@ -294,7 +254,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 13.15vw;
-        --card-person-scalable-width-mobile: calc(13.15vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(13.15vw - 3em);
     }
 }
 @media(min-width: 87.5em) {
@@ -312,7 +272,7 @@
 
         /* Person Cards */
         --card-person-height: 9.55vw;
-        --card-person-scalable-width: calc(9.55vw - 2.5em);
+        --card-person-scalable-width: calc(9.55vw - 3em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 5;
@@ -334,7 +294,7 @@
 
         /* Person Cards - TV */
         --card-person-height-tv: 11.68vw;
-        --card-person-scalable-width-tv: calc(11.68vw - 2.5em);
+        --card-person-scalable-width-tv: calc(11.68vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */
@@ -349,7 +309,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 10.225vw;
-        --card-person-scalable-width-mobile: calc(10.225vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(10.225vw - 3em);
 
         /* ListItem Text Wrap - Mobile */
         --listitem-line-clamp-mobile: 5;
@@ -375,7 +335,7 @@
 
         /* Person Cards */
         --card-person-height: 8.68vw;
-        --card-person-scalable-width: calc(8.68vw - 2.5em);
+        --card-person-scalable-width: calc(8.68vw - 3em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 6;
@@ -397,8 +357,8 @@
         --card-secondary-overflow-square-width-tv: 12.5%;
 
         /* Person Cards - TV */
-        --card-person-height-tv: 10.45vw;
-        --card-person-scalable-width-tv: calc(10.45vw - 3em);
+        --card-person-height-tv: 10.42vw;
+        --card-person-scalable-width-tv: calc(10.42vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */
@@ -420,7 +380,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 9.195vw;
-        --card-person-scalable-width-mobile: calc(9.195vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(9.195vw - 3em);
 
         /* ListItem Text Wrap - Mobile */
         --listitem-line-clamp-mobile: 6;
@@ -445,7 +405,7 @@
 
         /* Person Cards */
         --card-person-height: 7.95vw;
-        --card-person-scalable-width: calc(7.95vw - 2.5em);
+        --card-person-scalable-width: calc(7.95vw - 3em);
 
         /* ListItem Text Wrap */
         --listitem-line-clamp: 7;
@@ -468,8 +428,8 @@
         --card-secondary-overflow-backdrop-width-tv: 20%;
 
         /* Person Cards - TV */
-        --card-person-height-tv: 9.5vw;
-        --card-person-scalable-width-tv: calc(9.5vw - 2.5em);
+        --card-person-height-tv: 9.39vw;
+        --card-person-scalable-width-tv: calc(9.39vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */
@@ -484,7 +444,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 8.36vw;
-        --card-person-scalable-width-mobile: calc(8.36vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(8.36vw - 3em);
 
         /* ListItem Text Wrap - Mobile */
         --listitem-line-clamp-mobile: 7;
@@ -562,7 +522,7 @@
 
         /* Person Cards */
         --card-person-height: 7.35vw;
-        --card-person-scalable-width: calc(7.35vw - 2.5em);
+        --card-person-scalable-width: calc(7.35vw - 3em);
 
         /* Layout TV
         ──────────────────────────────────────────────────────────────────────────── */
@@ -583,8 +543,8 @@
         --card-secondary-overflow-backdrop-width-tv: 16.66%;
 
         /* Person Cards - TV */
-        --card-person-height-tv: 7.31vw;
-        --card-person-scalable-width-tv: calc(7.31vw - 2.5em);
+        --card-person-height-tv: 7.24vw;
+        --card-person-scalable-width-tv: calc(7.24vw - 3em);
 
         /* ListItem Text Wrap - TV */
         --listitem-line-clamp-tv: 8;
@@ -604,7 +564,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 7.075vw;
-        --card-person-scalable-width-mobile: calc(7.075vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(7.075vw - 3em);
     }
 }
 @media(min-width: 175em) {
@@ -632,7 +592,7 @@
 
         /* Person Cards */
         --card-person-height: 6.38vw;
-        --card-person-scalable-width: calc(6.38vw - 2.5em);
+        --card-person-scalable-width: calc(6.38vw - 3em);
 
         /* Layout TV
         ──────────────────────────────────────────────────────────────────────────── */
@@ -654,7 +614,7 @@
 
         /* Person Cards - TV */
         --card-person-height-tv: 6.785vw;
-        --card-person-scalable-width-tv: calc(6.785vw - 2.5em);
+        --card-person-scalable-width-tv: calc(6.785vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */
@@ -672,7 +632,7 @@
 
         /* Person Cards - Mobile */
         --card-person-height-mobile: 6.135vw;
-        --card-person-scalable-width-mobile: calc(6.135vw - 2.5em);
+        --card-person-scalable-width-mobile: calc(6.135vw - 3em);
 
         /* ListItem Text Wrap - TV */
         --listitem-line-clamp-tv: 9;
@@ -716,7 +676,7 @@
 
         /* Person Cards - TV */
         --card-person-height-tv: 6.335vw;
-        --card-person-scalable-width-tv: calc(6.335vw - 2.5em);
+        --card-person-scalable-width-tv: calc(6.335vw - 3em);
 
         /* ListItem Text Wrap - TV */
         --listitem-line-clamp-tv: 10;
