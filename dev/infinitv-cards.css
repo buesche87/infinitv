@@ -389,7 +389,7 @@
 
 /* CardBoxes in OverflowCards residing in a PrimaryContainer */
 .layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
-.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox { margin: 2em .6em 2em 1.6em !important; }
+.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {margin: 2em 1.1em 2em 1.1em !important;}
 .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard.personCard > .cardBox {margin: 1.5em 0 !important;/* padding: 0 .5em !important; */}
 
 
