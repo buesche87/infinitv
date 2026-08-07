@@ -18,6 +18,11 @@
     
 }
 
+.layout-tv .detailPagePrimaryContent #listChildrenCollapsible .itemsContainer-tv {
+    margin: 0 .5vw;
+    padding: 0 .5em;
+}
+
 /*
 ────────────────────────────────────────────────────────────────────────────
    Sections: Titles
