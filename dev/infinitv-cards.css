@@ -27,7 +27,7 @@
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-    width: 42% !important;
+    width: 38% !important;
     max-width: 30em;
     min-width: 18em;
 }
@@ -164,7 +164,7 @@
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
-
+    /* height: 33%; */
 }
 
 /* Large Image List Item: Align Body */
@@ -180,10 +180,10 @@
 
 /* Large Image List Item (TV) */
 .layout-tv .listItemImage-large-tv {
-    max-height: 20em !important;
+    max-height: 20em;
     min-height: 14em;
-    max-width: 30em !important;
-    height: 15vw !important;
+    width: 33% !important;
+    height: 33% !important;
 }
 
 /* Large Image List Item: Overview Text (TV) */
