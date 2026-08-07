@@ -4,12 +4,9 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Move Content up */
-.detailPageWrapperContainer {/* padding-top: 1em; */}
-
 /* Content Background without Backdrops */
 .noBackdropTransparency .detailPagePrimaryContainer,
-.noBackdropTransparency .detailPageSecondaryContainer { background: rgba(0, 0, 0, var(--itemopacity)) !important }
+.noBackdropTransparency .detailPageSecondaryContainer { background: rgba(0, 0, 0, var(--itemopacity)) !important; }
 
 
 /* Layout Desktop
@@ -34,7 +31,7 @@
 .layout-tv .detailsGroupItem.studiosGroup,
 .layout-tv .hide+.detailPageWrapperContainer .itemName,
 .layout-tv .endsAt,
-.layout-tv .itemTags { display: none !important }
+.layout-tv .itemTags { display: none !important; }
 
 /* Increase Season Title Text */
 .layout-tv .selfBackdropPage .itemName {
@@ -58,38 +55,33 @@
 */
 
 /* Detail-Ribbon */
-.detailRibbon { padding-right: 2% !important }
+.detailRibbon { padding-right: 2% !important; }
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-desktop .detailRibbon               { height: 9em; margin-top: -9em }
-
-/* Card in Detail Ribbon */
+/* Poster Card */
 .layout-desktop .detailImageContainer .card {
     left: 3vw;
     width: 27vw;
     max-width: 30vw;
 }
 
-/* Info Container */
-.layout-desktop .infoWrapper                { padding-top: 0.25em }
-
-/* Media Infos */
+/* Detail Ribbon with media buttons */
+.layout-desktop .detailRibbon               { height: 9em; margin-top: -9em; }
+.layout-desktop .infoWrapper                { padding-top: 0.25em; }
+.layout-desktop .mainDetailButtons          { margin-left: 1em; }
 .layout-desktop .itemMiscInfo               {
     font-size: 125%;
     margin-top: 0.25em;
     margin-bottom: 0.6em;
 }
 
-/* Buttons */
-.layout-desktop .mainDetailButtons          { margin-left: 1em }
-
 /* Some Small Screen fixes */
 @media all and (max-width: 75em) {
-    .layout-desktop .detailLogo    { display: block }
+    .layout-desktop .detailLogo             { display: block; }
     
-    .layout-desktop .detailImageContainer {
+    .layout-desktop .detailImageContainer   {
         display: flex;
         position: relative;
         left: 0%;
@@ -98,7 +90,7 @@
         box-shadow: none !important;
         flex-shrink: 0;
     }
-    .layout-desktop .detailRibbon {
+    .layout-desktop .detailRibbon           {
         flex-direction: column;
         height: 14em;
         padding-left: 30vw !important;
@@ -106,28 +98,28 @@
         flex-wrap: wrap;
         left: 0em;
     }
-    .layout-desktop .infoWrapper { margin-top: .5em }
-    .layout-desktop .mainDetailButtons { margin-left: 2vw }
+    .layout-desktop .infoWrapper            { margin-top: .5em; }
+    .layout-desktop .mainDetailButtons      { margin-left: 2vw; }
 }
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Media Infos */
-.layout-tv .itemMiscInfo {
+.layout-tv .itemMiscInfo         {
     font-size: 125%;
     margin-top: .6em;
     margin-bottom: 0.6em;
 }
 
 /* Buttons */
-.layout-tv .mainDetailButtons     {margin: 1.5em 0 .5em 0;}
+.layout-tv .mainDetailButtons     { margin: 1.5em 0 .5em 0; }
 
 @media all and (max-width: 52em)  {
     .layout-tv .mainDetailButtons { font-size: 90%; }
 }
 
-.layout-tv .tagline { font-weight: 500; }
+.layout-tv .tagline               { font-weight: 500; }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -164,71 +156,62 @@
 */
 
 /* Media Details > Track Select */
-.detailTrackSelect          { padding: .35em 1.9em .35em .35em !important }
+.detailTrackSelect          { padding: .35em 1.9em .35em .35em !important; }
 
 /* Media Description Text */
-.overview.detail-clamp-text { margin: .5em 0 }
+.overview.detail-clamp-text { margin: .5em 0; }
 
 /* Media Description > Director & Studio */
-.itemDetailsGroup           { margin-top: 0.5em }
+.itemDetailsGroup           { margin-top: 0.5em; }
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Primary Container */
-.layout-desktop .detailPagePrimaryContent { padding: 0em 1.5vw 1em 32.45vw }
-.layout-desktop .itemDetailsGroup         { margin: .5em 0 2em 0 }
-.layout-desktop .itemTags                 { padding: 0; margin: 1em 0 !important }
-.layout-desktop .itemExternalLinks        { margin: 1em 0 .75em 0 !important }
-.layout-desktop .itemTags > .button-link  { margin-left: .25em }
+.layout-desktop .detailPagePrimaryContent     { padding: 0em 1.5vw 1em 32.45vw; }
+.layout-desktop .itemDetailsGroup             { margin: .5em 0 2em 0; }
+.layout-desktop .itemTags                     { padding: 0; margin: 1em 0 !important; }
+.layout-desktop .itemExternalLinks            { margin: 1em 0 .75em 0 !important; }
+.layout-desktop .itemTags > .button-link      { margin-left: .25em; }
 
 /* Secondary Container */
-.layout-desktop .detailPageSecondaryContainer { padding: 0 1.5vw !important }
-.layout-desktop .detailPageSecondaryContainer .detailPageContent { padding: 0 }
+.layout-desktop .detailPageSecondaryContainer { padding: 0 1.5vw !important; }
+.layout-desktop .detailPageSecondaryContainer .detailPageContent { padding: 0; }
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-/*  */
-.layout-tv [dir=ltr] .detailRibbon                              { margin-left: 28vw; padding: 1em 1vw 0 1vw; } 
-.layout-tv .detailPagePrimaryContent                            { margin-left: 28vw; padding: 0 1vw 1em 1vw; }
-.layout-tv .detailPageSecondaryContainer                        { margin: 1em 1vw 0 1vw; }
+/* Series */
+.layout-tv [dir=ltr] .detailRibbon { 
+    margin-left: 28vw;
+    margin-right: 1vw; 
+    padding-top: 1em;
+    padding-right: 1vw;
+    padding-bottom: .5em;
+    padding-left: 1.5em;
+} 
+.layout-tv .detailPagePrimaryContent { 
+    margin-left: 28vw;
+    margin-right: 1vw; 
+    padding-top: 0;
+    padding-right: 1vw;
+    padding-bottom: 1em;
+    padding-left: 1vw;
+}
+.layout-tv .detailPageSecondaryContainer {
+    margin-top: 1em;
+    margin-right: 1vw;
+    margin-bottom: 0;
+    margin-left: 1vw;
+    padding-top: 0;
+}
 .layout-tv .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
 .layout-tv .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0em !important; }
-
-/* Series */
-.layout-tv .libraryPage:not(.hide):has(#castCollapsible) .detailPageSecondaryContainer       {margin-top: 1em;padding-top: .5em;}
-.layout-tv .libraryPage:not(.hide):has(.moreFromSeasonSection) .detailPageSecondaryContainer {/* margin-top: 1em; */}
-
-
-/* Media Page */
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
-    margin-right: 1vw;
-    padding-bottom: .5em;
-    padding-left: 1.5em;
-}
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
-    margin-right: 1vw;
-    padding-left: 1.5em;
-    padding-bottom: .5em;
-}
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection { padding-bottom: .5em; }
-
-.trackSelections .selectContainer .selectLabel {flex-basis: 5em;}
-
-
-
-
-
-
+.layout-tv .trackSelections .selectContainer .selectLabel { flex-basis: 5em; }
+.layout-tv .detailSection { padding-bottom: .5em; }
 
 /* TV Show Page */
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailRibbon {
-    margin-right: 1vw;
-    padding-left: 1.5em;
-}
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
-    margin-right: 1vw;
     padding-top: 0em;
     padding-left: 0;
     margin-left: 29vw;
@@ -243,17 +226,12 @@
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup div         { margin: .25em 0 !important; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                { margin: 0 -1vw 1em -1vw; }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 0em; }
-
-
-
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 0em !important; }
 
 /* Episode List */
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-    margin-right: 1vw !important;
-    padding-left: 1.5em !important;
 }
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPageSecondaryContainer { margin-top: 0em !important; }
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent {
@@ -286,8 +264,6 @@
     color: #fff !important;
     font-weight: 600 !important;
 }
-
-
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
