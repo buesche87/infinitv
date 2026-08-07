@@ -542,8 +542,7 @@
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemImage     { width: 15%; }
 
 /* List Item: Rating - TV */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo       { width: 4%; }
-.layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage) .listItemMediaInfo { width: 5%; }
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemMediaInfo       { width: 20%; justify-content: end; }
 
 /* List Item: Rating - TV */
 .layout-tv #episodesTab .listItem-button:not(.listItem-largeImage) .listItemMediaInfo       { width: auto; }

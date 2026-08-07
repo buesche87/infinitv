@@ -31,9 +31,9 @@
 }
 
 /* Library Pages: Content with Alphapicker */
-.layout-tv .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw }
+.layout-tv .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
 @media(min-width: 50em)                                    {
-    .layout-tv .libraryPage .padded-right-withalphapicker  { padding: 0 1vw 0 0 }
+    .layout-tv .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 1vw; }
 }
 
 /* Layout Mobile

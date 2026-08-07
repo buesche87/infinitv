@@ -146,7 +146,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
-.layout-tv .emby-scroller                                        {/* padding: 0; */margin: 0 .5vw;padding: 0 .5em;}
+.layout-tv .emby-scroller                                        { margin: 0 .5vw; padding: 0; }
 
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
@@ -168,19 +168,18 @@
 .layout-tv #albumsTab .itemsContainer                            { margin: 0 }
 
 /* Items Container with largeImage List */
-.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) {
+.layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItemImage-large-tv) {
     padding-right: 0em;
     padding-left: 0em;
     /* margin-top: -1em; */
 }
-.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) {/* margin: 1em -1vw 0 -1vw; *//* margin-top: 2em; */margin-bottom: 0 !important;}
+.layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) { margin-bottom: 0 !important;}
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
 .layout-desktop .emby-scroller                                       { padding: 0; margin: .5vw .5vw }
-
 .layout-desktop .homePage .emby-scroller                             { padding: 0; margin: .5vw 1.5vw }
 
 .layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,

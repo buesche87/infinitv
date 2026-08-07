@@ -182,9 +182,9 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Series */
-.layout-tv [dir=ltr] .detailRibbon { 
+.layout-tv [dir=ltr] .detailRibbon {
     margin-left: 28vw;
-    margin-right: 1vw; 
+    margin-right: 1vw;
     padding-top: 1em;
     padding-right: 1vw;
     padding-bottom: .5em;
@@ -215,6 +215,7 @@
     padding-top: 0em;
     padding-left: 0;
     margin-left: 29vw;
+    /* right: 0; */
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
     margin: 0 -1vw;
@@ -233,13 +234,20 @@
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPageSecondaryContainer { margin-top: 0em !important; }
+
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent {
     padding-bottom: 0;
-    margin-right: 0 !important;
+    padding-right: 0 !important;
     margin-left: 28vw !important;
 }
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailSection { padding-bottom: 0; }
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailSection               { padding-bottom: 0; }
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailSectionContent,
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .itemDetailsGroup            {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPageSecondaryContainer { margin-top: 0em !important; }
 
 /* ?? */
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
