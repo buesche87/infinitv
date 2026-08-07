@@ -5,6 +5,12 @@
     border: var(--buttonborder);
     border-radius: var(--rounding-media);
 }
+
+.layout-tv .detailPagePrimaryContainer {
+    margin-right: 1em;
+}
+
+
 .layout-tv .detailPagePrimaryContent {
     background: rgba(0, 0, 0, var(--headeropacity));
     border: var(--buttonborder);
@@ -88,6 +94,7 @@
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 2em; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection {
     margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -99,6 +106,13 @@
     background: rgba(0, 0, 0, var(--bgdarkness));
 }
 
+
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) #listChildrenCollapsible .itemsContainer-tv {
+    margin: 0 1em;
+}
+
+
+
 /* Episode List */
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent {
     background: none;
@@ -109,4 +123,8 @@
     padding-left: 0 !important;
 }
 
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {/* margin-left: 29vw; */padding-left: 1.5em;}
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {/* margin-left: 29vw; */padding-left: 1.5em;/* margin-right: 1em; */}
+
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #listChildrenCollapsible .itemsContainer-tv {
+    margin: 0 !important;
+}

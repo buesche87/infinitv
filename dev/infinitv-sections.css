@@ -12,15 +12,9 @@
 }
 
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
-    margin-left: -28vw;
-    margin-right: -1vw;
+    margin-left: -27vw;
+    /* margin-right: -1vw; */
     margin-bottom: -1.5em !important;
-    
-}
-
-.layout-tv .detailPagePrimaryContent #listChildrenCollapsible .itemsContainer-tv {
-    margin: 0 .5vw;
-    padding: 0 .5em;
 }
 
 /*
