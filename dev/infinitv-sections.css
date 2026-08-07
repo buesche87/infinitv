@@ -146,7 +146,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
-.layout-tv .emby-scroller                                        {/* padding: 0; */margin: 0 .5vw;padding: 0 .1em;}
+.layout-tv .emby-scroller                                        {/* padding: 0; */margin: 0 .5vw;padding: 0 .5em;}
 
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
@@ -154,7 +154,7 @@
 .layout-tv #albumsPage .verticalSection > .emby-scroller         { margin: .5vw 1vw }
 
 /* Items Container */
-.layout-tv .itemsContainer                                       { padding: 0 }
+.layout-tv .itemsContainer                                       {/* padding: 0; */}
 
 .layout-tv #episodesTab .itemsContainer                          { padding: 0 2em }
 
