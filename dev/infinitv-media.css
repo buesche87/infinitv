@@ -227,7 +227,7 @@
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup div         { margin: .25em 0 !important; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                { margin: 0 -1vw 1em -1vw; }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 0em !important; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer {margin-top: 2em;}
 
 /* Episode List */
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {
