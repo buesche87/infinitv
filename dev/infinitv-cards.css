@@ -13,6 +13,7 @@
     text-align: -webkit-center;
 }
 
+
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -22,8 +23,14 @@
 .layout-tv .detailImageContainer .squareCard   { max-width: 25vw; margin-left: 0; left: 2vw;}
 
 /* Card Container */
-.layout-tv .detailImageContainer .card         { float: left; position: sticky; }
+.layout-tv .detailImageContainer .card         {
+    float: left;
+    position: sticky;
+    margin-top: 1em;
+}
+
 .layout-tv .detailImageContainer .portraitCard { max-width: 25vw; }
+
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {

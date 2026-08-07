@@ -45,8 +45,9 @@
 
 /* Media Page */
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
-    padding-bottom: 1em;
-    padding-left: 1.5em;
+    /* padding-bottom: 1em; */
+    /* padding-left: 1.5em; */
+    padding: 1em 1.5em;
 }
 
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
@@ -57,6 +58,12 @@
     border-top-left-radius: var(--rounding-media);
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent { padding-bottom: 0; }
+
+
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {
+    margin-left: .5em;
+}
+
 
 /* TV Show */
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
@@ -127,4 +134,10 @@
 
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #listChildrenCollapsible .itemsContainer-tv {
     margin: 0 !important;
+}
+
+
+/* Card Container */
+.layout-tv .detailImageContainer .card         {
+    margin-top: 0;
 }

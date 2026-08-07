@@ -55,7 +55,9 @@
 */
 
 /* Detail-Ribbon */
-.detailRibbon { padding-right: 2% !important; }
+.detailRibbon { 
+    padding-right: 2% !important;
+}
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
@@ -111,6 +113,10 @@
     margin-top: .6em;
     margin-bottom: 0.6em;
 }
+
+    .layout-tv .detailRibbon {
+        padding: 1em 1.5em;
+    }
 
 /* Buttons */
 .layout-tv .mainDetailButtons     { margin: 1.5em 0 .5em 0; }
@@ -188,7 +194,7 @@
     padding-top: 1em;
     padding-right: 1vw;
     padding-bottom: .5em;
-    padding-left: .5em;
+    padding-left: 1em;
 } 
 .layout-tv .detailPagePrimaryContent {
     margin-left: 28vw;
@@ -210,7 +216,7 @@
 .layout-tv .trackSelections .selectContainer .selectLabel { flex-basis: 5em; }
 .layout-tv .detailSection {
     padding-bottom: .5em;
-    margin-left: .5em;
+    /* margin-left: .5em; */
 }
 
 /* TV Show Page */
