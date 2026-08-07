@@ -51,15 +51,6 @@
     padding-left: 1em !important;
 }
 
-.layout-tv #peopleHeader {
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-}
-
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
-    border-radius: 0 !important; 
-}
-
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -154,7 +145,7 @@
 .layout-tv #albumsPage .verticalSection > .emby-scroller         { margin: .5vw 1vw }
 
 /* Items Container */
-.layout-tv .itemsContainer                                       {/* padding: 0; */}
+.layout-tv .itemsContainer:has(.personCard)                      {/* padding: 0 .5em; */margin: 0 .5em;}
 
 .layout-tv #episodesTab .itemsContainer                          { padding: 0 2em }
 
