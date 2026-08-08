@@ -99,11 +99,12 @@ h2.username                                                 {
 
 /* Client Settings: Restart hint */
 #clientSettingsPage .infoBanner {
-    padding: .75em 1em;
+    padding: .5em 1em .25em 1em;
     margin: .5em 0;
     font-weight: 500;
-    color: var(--accent100);
-    background: #0000;
+    color: white;
+    background-color: var(--accent20);
+    text-align: center;
 }
 
 /* Section Titles */

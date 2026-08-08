@@ -384,8 +384,8 @@
 .layout-tv .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em .8em 1.6em 1.6em !important; }
 
 /* CardBoxes in OverflowCards */
-.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            {margin: 1.6em !important;}
-.layout-tv .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1em 1.6em 1.6em !important; }
+.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.6em !important; }
+.layout-tv .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1.2em 1.6em 1.2em !important; }
 .layout-tv .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.6em 1em 1em 1.6em !important; }
 
 /* CardBoxes in PersonCards */

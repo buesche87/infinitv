@@ -136,8 +136,8 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
-.layout-tv .emby-scroller                                        {margin: 0 .5vw;padding: 0;}
-.layout-tv #itemDetailPage .emby-scroller                        {margin: 0 .5vw;padding: 0 .5em;}
+.layout-tv .emby-scroller                                        {margin: 0 .5vw; padding: 0;}
+.layout-tv #itemDetailPage .emby-scroller                        {margin: 0 .5vw; padding: 0 .5em;}
 
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
@@ -150,11 +150,13 @@
 .layout-tv #favoritesTab .verticalSection > .itemsContainer,
 .layout-tv #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-tv #moviesPage .verticalSection > .itemsContainer,
-.layout-tv #albumsPage .verticalSection > .itemsContainer        { margin: .5vw 1vw }
+.layout-tv #albumsPage .verticalSection > .itemsContainer        { margin: .5vw 1vw; padding: 0 }
 
 .layout-tv #seriesTab .itemsContainer,
 .layout-tv #moviesTab .itemsContainer,
 .layout-tv #albumsTab .itemsContainer                            { margin: 0 }
+
+.layout-tv #studiosTab .itemsContainer { padding: 0 2vw}
 
 /* Items Container with largeImage List */
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItemImage-large-tv) {
