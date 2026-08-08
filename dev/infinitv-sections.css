@@ -150,7 +150,7 @@
 .layout-tv #favoritesTab .verticalSection > .itemsContainer,
 .layout-tv #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-tv #moviesPage .verticalSection > .itemsContainer,
-.layout-tv #albumsPage .verticalSection > .itemsContainer        {margin: 0 1vw;padding: 0}
+.layout-tv #albumsPage .verticalSection > .itemsContainer        { margin: 0 1vw .5em 1vw; padding: 0}
 
 .layout-tv #seriesTab .itemsContainer,
 .layout-tv #moviesTab .itemsContainer,
