@@ -64,6 +64,8 @@
 .layout-desktop #myPreferencesMenuPage .verticalSection     { margin: 1em 2em }
 .layout-tv #myPreferencesMenuPage .verticalSection          { margin: 2em }
 
+.layout-tv #clientSettingsPage                              { scrollbar-width: none }
+
 /* User Profile: Form Alignment */
 .updatePasswordForm br                                      { display: none }
 .updatePasswordForm .inputContainer                         { margin-bottom: 1em }
