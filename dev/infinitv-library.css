@@ -22,7 +22,7 @@
 /*  Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-tv .libraryPage                                    { padding: 0 2vw; padding-top: 5em !important }
+.layout-tv .libraryPage                                    { padding: 0 2vw; padding-top: 5em !important; }
 
 @media(min-width: 75em)                                    {
     .layout-tv .libraryPage                                { padding: 0 1vw }
@@ -140,7 +140,7 @@
     border-radius: var(--rounding-system) !important;
     padding: 0.05em;
     min-height: 2em;
-    margin-bottom: 1em
+    /* margin-bottom: 1em; */
 }
 .layout-tv .itemsViewSettingsContainer {
     border-radius: var(--rounding-system) !important;

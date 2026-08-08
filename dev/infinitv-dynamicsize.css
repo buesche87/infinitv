@@ -226,6 +226,7 @@
 
         /* Overflow Cards - TV */
         --card-overflow-square-width-tv: 20%;
+        --card-overflow-portrait-width-tv: 20%;
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-portrait-width-tv: 20%;
