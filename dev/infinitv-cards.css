@@ -5,13 +5,10 @@
 */
 
 /* Person Cards */
-.overflowPortraitCard.personCard { font-size: 90% !important }
+.overflowPortraitCard.personCard            { font-size: 90% !important }
 
 /* Person Cards: Center Content */
-.overflowPortraitCard.personCard > .cardBox {
-    text-align: center;
-    text-align: -webkit-center;
-}
+.overflowPortraitCard.personCard > .cardBox { text-align: center; text-align: -webkit-center; }
 
 
 /* Layout TV
@@ -20,7 +17,7 @@
 /* Default Cards */
 .layout-tv .detailImageContainer .portraitCard { left: 1vw; max-width: 28em; }
 .layout-tv .detailImageContainer .backdropCard { left: 1vw; }
-.layout-tv .detailImageContainer .squareCard   { max-width: 25vw; margin-left: 0; left: 2vw;}
+.layout-tv .detailImageContainer .squareCard   { max-width: 25vw; margin-left: 0; left: 2vw; }
 
 /* Card Container */
 .layout-tv .detailImageContainer .card         {
@@ -77,7 +74,7 @@
     padding-bottom: 1.5em;
     padding-left: 0;
     padding-right: 1em;
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
     margin-left: 1%;
     height: 6em;
 }
@@ -540,7 +537,7 @@
 */
 
 /* List Item - TV */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage)                          { width: 98%; }
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage)                          {width: 98%;}
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage)                    { width: 98%; }
 
 /* List Item: Poster - TV */

@@ -288,6 +288,18 @@
     margin-bottom: -.5em !important;
 }
 
+/* Music */
+.layout-tv .libraryPage:has(.listItem[data-action="playallfromhere"]) #listChildrenCollapsible .itemsContainer-tv {
+    padding: 0;
+    margin: 0;
+}
+
+.layout-tv #itemDetailPage #listChildrenCollapsible:has(.overflowSquareCard) { margin-bottom: 0 !important; }
+.layout-tv #itemDetailPage #listChildrenCollapsible:has(.overflowSquareCard) .itemsContainer-tv { margin: 0 !important; }
+
+.layout-tv #musicRecommendedPage .itemsContainer-tv { padding: 0; }
+
+
 /* Tracks & Subtitles */
 .layout-tv .trackSelections {
     padding-top: 0.5em;
