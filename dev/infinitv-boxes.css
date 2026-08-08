@@ -1,68 +1,61 @@
+/* Detail Ribbon */
 .layout-tv .detailRibbon {
-    padding-left: 0;
     padding: 1em 1vw 0 1vw;
-    background: rgba(0, 0, 0, var(--headeropacity));
+    background: rgba(0, 0, 0, var(--bgdarkness));
     border: var(--buttonborder);
     border-radius: var(--rounding-media);
 }
 
-.layout-tv .detailPagePrimaryContainer {
-    margin-right: 1em;
-}
+/* Card Container */
+.layout-tv .detailImageContainer .card { margin-top: 0; }
 
-
-.layout-tv .detailPagePrimaryContent {
-    background: rgba(0, 0, 0, var(--headeropacity));
+/* Primary Content */
+.layout-tv .detailPagePrimaryContainer { margin-right: 1em; }
+.layout-tv .detailPagePrimaryContent   {
+    background: rgba(0, 0, 0, var(--bgdarkness));
     border: var(--buttonborder);
     border-top-color: transparent;
     border-bottom-right-radius: var(--rounding-media);
     border-bottom-left-radius: var(--rounding-media);
 }
+.layout-tv .detailPagePrimaryContent .sectionTitle {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.layout-tv .itemDetailsGroup { padding-bottom: .5em; }
 
+/* Seasons Background */ 
+.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
+    border: var(--buttonborder);
+    border-radius: var(--rounding-media);
+    background: rgba(0, 0, 0, var(--bgdarkness));
+}
+
+/* Secondary Content */
 .layout-tv .detailPageSecondaryContainer .detailPageContent {
-    background: rgba(0, 0, 0, var(--headeropacity));
+    background: rgba(0, 0, 0, var(--bgdarkness));
     border: var(--buttonborder);
     border-radius: var(--rounding-media);
 }
-
-.layout-tv .itemDetailsGroup {
-    padding-bottom: .5em;
+.layout-tv .detailPageSecondaryContainer .sectionTitle {
+    border-radius: 0 !important; 
 }
-
 .layout-tv #peopleHeader {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
 
-.layout-tv .detailPagePrimaryContent .sectionTitle {
-    border-bottom-left-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-}
-
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
-    border-radius: 0 !important; 
-}
-
-/* Media Page */
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {
-    /* padding-bottom: 1em; */
-    /* padding-left: 1.5em; */
-    padding: 1em 1.5em;
-}
-
+/* Media (Item Details) */
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon { padding: 1em 1.5em; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
     padding-top: .5em;
+    padding-bottom: 0;
     margin-top: 1em;
     border-top: var(--buttonborder);
     border-top-right-radius: var(--rounding-media);
     border-top-left-radius: var(--rounding-media);
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent { padding-bottom: 0; }
-
-
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {
-    margin-left: .5em;
-}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection { margin-left: .5em; }
 
 
 /* TV Show */
@@ -85,12 +78,7 @@
     border-bottom-right-radius: var(--rounding-media);
     border-bottom-left-radius: var(--rounding-media);
     background: rgba(0, 0, 0, var(--bgdarkness));
-    /* padding: .5em 1em 1em 1.5em; */
-    /* margin: 0 0 1em -1vw; */
-    margin-left: 0;
-    padding-top: .5em;
-    padding-left: 1.5em;
-    padding-bottom: 1em;
+    padding: .5em 1em 1em 1.5em;
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection {
     border: var(--buttonborder);
@@ -103,21 +91,7 @@
     margin-left: 0;
     margin-right: 0;
 }
-
-
-
-/* */ 
-.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
-    border: var(--buttonborder);
-    border-radius: var(--rounding-media);
-    background: rgba(0, 0, 0, var(--bgdarkness));
-}
-
-
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) #listChildrenCollapsible .itemsContainer-tv {
-    margin: 0 1em;
-}
-
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) #listChildrenCollapsible .itemsContainer-tv { margin: 0 1em; }
 
 
 /* Episode List */
@@ -126,18 +100,7 @@
     border-color: transparent;
 }
 
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent {
-    padding-left: 0 !important;
-}
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent { padding-left: 0 !important; }
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon { padding-left: 1.5em; }
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #listChildrenCollapsible .itemsContainer-tv { margin: 0 !important; }
 
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {/* margin-left: 29vw; */padding-left: 1.5em;/* margin-right: 1em; */}
-
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #listChildrenCollapsible .itemsContainer-tv {
-    margin: 0 !important;
-}
-
-
-/* Card Container */
-.layout-tv .detailImageContainer .card         {
-    margin-top: 0;
-}
