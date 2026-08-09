@@ -37,12 +37,6 @@
     --cardglow: 0px 0px 10px 3px var(--accent80);
     --buttonglow: 0px 0px 10px 1px var(--accent100);
 
-    /* Text Shadow */
-    --textshadow: 2px 2px 4px black;
-
-    /* Item Background */
-    --itembg: rgba(0, 0, 0, 0.6);
-
     /* Animation Duration */
     --anispeed: 240ms;
 }
@@ -87,7 +81,6 @@
 
 /* TRY: colorize navMenuOption "Dashboard" */
 .navMenuOption[data-itemid*="dashboard"] { color: hsla(var(--accent-h),85%,85%, 0.75); }
-
 
 /* Color: Accent 80% */
 #loginPage .cardImage,

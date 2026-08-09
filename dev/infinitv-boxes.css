@@ -55,7 +55,7 @@
     border-top-right-radius: var(--rounding-media);
     border-top-left-radius: var(--rounding-media);
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection { margin-left: .5em; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {margin-left: .5em;}
 
 
 /* TV Show */
@@ -125,4 +125,8 @@
     border-radius: var(--rounding-media);
     background: rgba(0, 0, 0, var(--bgdarkness));
     margin-bottom: 1em;
+}
+
+.layout-tv .detailImageContainer .card {
+    border: solid 1px hsla(0, 0%, 100%, .1);
 }

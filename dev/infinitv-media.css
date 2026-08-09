@@ -200,7 +200,7 @@
     margin-left: 28vw;
     /* margin-right: 1vw; */
     padding-top: 0;
-    padding-right: 0;
+    padding-right: 1vw;
     padding-bottom: 1em;
     padding-left: 1vw;
 }
@@ -305,8 +305,8 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-.layout-tv .trackSelections .selectSubtitlesContainer {
-    max-width: 28em;
+.layout-tv .trackSelections .selectContainer {
+    max-width: 30em;
 }
 .layout-tv .trackSelections .selectSubtitlesContainer .selectArrowContainer {
     right: .5em;

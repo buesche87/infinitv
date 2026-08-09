@@ -26,7 +26,7 @@
     margin-top: 1em;
 }
 
-.layout-tv .detailImageContainer .portraitCard { max-width: 25vw; }
+.layout-tv .detailImageContainer .portraitCard {max-width: 26vw;width: 34em;}
 
 
 /* NextUp Card */
@@ -276,7 +276,9 @@
 
 /* No shadows */
 .cardBox:has(> .cardFooter) > .cardScalable,
-.dialogContentInner .imageEditorCard .cardBox { box-shadow: none !important; }
+.dialogContentInner .imageEditorCard .cardBox   { box-shadow: none !important; }
+.card:hover .cardBox:has(> .cardFooter)         { box-shadow: var(--cardglow) !important; }
+.detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
 
 
 /* Cards: Inset Shadow (smoothening) */

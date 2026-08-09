@@ -22,13 +22,10 @@
 /*  Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-tv .libraryPage                                    { padding: 0 2vw; padding-top: 5em !important; }
-
-@media(min-width: 75em)                                    {
-    .layout-tv .libraryPage                                { padding: 0 1vw }
-    .layout-tv #studiosTab                                 { margin-left: -1vw }
-    .layout-tv .detailImageContainer .card {margin-left: 1vw}
-}
+.layout-tv .libraryPage                                    { padding: 0 2vw;  }
+.layout-tv .libraryPage                                    { padding: 0 1vw; padding-top: 5em !important; }
+.layout-tv #studiosTab                                     { margin-left: -1vw }
+.layout-tv .detailImageContainer .card                     { margin-left: 1vw }
 
 /* Library Pages: Content with Alphapicker */
 .layout-tv .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
