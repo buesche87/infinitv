@@ -62,6 +62,7 @@
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
     background: transparent;
     border-color:  transparent;
+    padding-right: 0;
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
     background: rgba(0, 0, 0, var(--bgdarkness));
@@ -130,3 +131,4 @@
 .layout-tv .detailImageContainer .card {
     border: solid 1px hsla(0, 0%, 100%, .1);
 }
+

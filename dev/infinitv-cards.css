@@ -263,23 +263,22 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Card Glow */
-.card:hover .cardScalable,
-.card:hover .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow) !important; }
-
 /* Card Shadows */
 .cardScalable                                 { box-shadow: var(--cardshadow) !important; }
 
 /* Shadow for cardBox if footer present */
 .cardBox:has(> .cardFooter)                   { box-shadow: var(--cardshadow) !important; }
 
-
 /* No shadows */
 .cardBox:has(> .cardFooter) > .cardScalable,
 .dialogContentInner .imageEditorCard .cardBox   { box-shadow: none !important; }
-.card:hover .cardBox:has(> .cardFooter)         { box-shadow: var(--cardglow) !important; }
 .detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
 
+/* Card Glow */
+.layout-tv .card:hover .cardScalable,
+.layout-tv .card:hover .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow) !important; }
+.layout-desktop .card:hover .cardScalable,
+.layout-desktop .card:hover .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow) !important; }
 
 /* Cards: Inset Shadow (smoothening) */
 .libraryPage .cardImageContainer              { box-shadow: var(--insettop), var(--insetbottom); }
