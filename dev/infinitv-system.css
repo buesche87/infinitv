@@ -281,7 +281,10 @@
 */
 
 /* Shorten transition time */
-.skinHeader { transition: background .3s ease-in-out }
+.skinHeader { 
+    transition: background .3s ease-in-out;
+    backdrop-filter: blur(5.2px) saturate(1.35);
+}
 
 /* Match background with drawer background when opening it */
 [dir=ltr]:has(.drawer-open) .skinHeader-withBackground { background-color: rgba(0, 0, 0, .9) !important }
