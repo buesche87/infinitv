@@ -161,9 +161,6 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Background: Black 85%  */
-.dialog { background: rgba(0, 0, 0, .95); }
-
 /* Background: --headeropacity */
 .formDialogHeader,
 .formDialogFooter,
