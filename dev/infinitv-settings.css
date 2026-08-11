@@ -15,6 +15,7 @@
     background: rgba(0, 0, 0, var(--headeropacity));
     border-radius: var(--rounding-media);
     border: var(--buttonborder);
+    backdrop-filter: blur(5.2px) saturate(1.35);
 }
 
 /*
