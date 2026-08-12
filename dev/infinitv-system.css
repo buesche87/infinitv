@@ -290,7 +290,7 @@
 /* Shorten transition time */
 .skinHeader { 
     transition: background .3s ease-in-out;
-    backdrop-filter: blur(5.2px) saturate(1.35);
+    backdrop-filter: blur(5.2px) saturate(1.35) !important;
 }
 
 /* Match background with drawer background when opening it */
