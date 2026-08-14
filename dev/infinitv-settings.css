@@ -12,9 +12,9 @@
 .layout-tv #myPreferencesMenuPage .readOnlyContent,
 .layout-tv #userProfilePage > .padded-left,
 .layout-tv .userPreferencesPage .padded-left > form {
-    background: rgba(0, 0, 0, var(--headeropacity));
-    border-radius: var(--rounding-media);
+    background: rgba(0, 0, 0, var(--bgdarkness));
     border: var(--buttonborder);
+    border-radius: var(--rounding-media);
     backdrop-filter: var(--blur);
 }
 
