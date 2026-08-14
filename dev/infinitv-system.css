@@ -30,7 +30,7 @@
 /* Background: Black 85%  */
 .dialog { 
    background: rgba(0, 0, 0, .9); 
-   backdrop-filter: blur(5.2px) saturate(1.35);
+   backdrop-filter: var(--blur);
 }
 
 /* Action Sheets */
@@ -253,7 +253,7 @@
 /* Drawer Open: Match background and transition with header */
 .mainDrawer.drawer-open {
     background-color: rgba(0, 0, 0, .9) !important;
-    backdrop-filter: blur(5.2px) saturate(1.35);
+    backdrop-filter: var(--blur);
     transition: transform .24s ease-out, left .26s ease-out, -webkit-transform .24s ease-out, background .3s ease-in-out;
 }
 
@@ -290,7 +290,7 @@
 /* Shorten transition time */
 .skinHeader { 
     transition: background .3s ease-in-out;
-    backdrop-filter: blur(5.2px) saturate(1.35);
+    backdrop-filter: var(--blur);
 }
 
 /* Match background with drawer background when opening it */

@@ -39,6 +39,9 @@
 
     /* Animation Duration */
     --anispeed: 240ms;
+
+    /* Blur */
+    --blur: blur(5.2px) saturate(1.35);
 }
 
 /*

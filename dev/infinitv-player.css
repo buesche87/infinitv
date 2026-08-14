@@ -54,7 +54,7 @@
 /* OSD Header: Height */
 .osdHeader {
     height: 3.3em !important;
-    --webkit-backdrop-filter: none;
+    backdrop-filter: var(--blur);
 }
 
 /* OSD Footer: Full Layout */
