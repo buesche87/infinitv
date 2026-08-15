@@ -385,8 +385,8 @@
 /* Buttons: Header Buttons
 ──────────────────────────────────────────────────────────────────────────── */
 
-.emby-tab-button:focus,
-.headerButton:focus              { transform: none !important; }
+.emby-tab-button.show-focus:focus, 
+.headerButton:focus { transform: none !important; }
 
 .layout-tv .emby-tab-button,
 .layout-desktop .emby-tab-button { 
