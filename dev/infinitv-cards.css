@@ -333,12 +333,12 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* CardBoxes in General */
-.layout-tv .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 1.2em .8em 1.2em !important; }
+.layout-tv .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 1.4em .8em 1.4em !important; }
 .layout-tv .itemsContainer > .portraitCard > .cardBox                    { margin: 2em 1.2em 1.6em 1.2em !important; }
-.layout-tv .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 1.2em 1.6em 1.2em !important; }
+.layout-tv .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 1.4em 1.6em 1.4em !important; }
 
 /* CardBoxes in OverflowCards */
-.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 1.4em 1.2em 1.4em !important; }
+.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 1.8em 1.2em 1.8em !important; }
 .layout-tv .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1.2em 1.6em 1.2em !important; }
 .layout-tv .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.6em 1em 1em 1.6em !important; }
 
