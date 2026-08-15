@@ -247,8 +247,10 @@
 
 /* No shadows / No Glow */
 .cardBox:has(> .cardFooter) > .cardScalable,
-.dialogContentInner .imageEditorCard .cardBox   { box-shadow: none !important; }
+.layout-tv .cardBox:has(> .cardFooter) > .cardScalable,
+.dialogContentInner .imageEditorCard .cardBox,
 .detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
+
 
 /* Cards: Inset Shadow (smoothening) */
 .libraryPage .cardImageContainer { box-shadow: var(--insettop), var(--insetbottom); }
