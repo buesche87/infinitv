@@ -3,10 +3,9 @@
 
 /* Background & Border */
 .layout-tv .detailRibbon,
-.layout-tv .detailPagePrimaryContent,
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent,
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection,
@@ -57,11 +56,15 @@
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon { padding: 1em 1.5em; }
 
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
-    padding-top: .5em;
+    /* padding-top: .5em; */
     padding-bottom: 0;
     margin-top: 1em;
+    padding: 0;
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {margin-left: .5em;}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {
+    padding: .5em 1.5em;
+    margin: 0;
+}
 
 /* TV Show */
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
@@ -78,6 +81,10 @@
     border-top: none;
     padding: .5em 1em 1em 1.5em;
 }
+.layout-tv .libraryPage:not(.hide):has(.detailSectionContent > .overview.hide) .itemDetailsGroup {
+    display: none;
+}
+
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                              { margin-bottom: 3em !important; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer               { margin-top: 2em; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection                              { margin-left: 0; margin-right: 0; }
