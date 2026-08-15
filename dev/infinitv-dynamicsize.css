@@ -677,11 +677,6 @@
         /* ListItem Text Wrap - TV */
         --listitem-line-clamp-tv: 9;
     }
-
-    /* Poster Cards - TV */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage) .portraitCard {
-        left: 3%;
-    }
 }
 @media(min-width: 200em) {
     :root {
@@ -720,12 +715,6 @@
 
         /* ListItem Text Wrap - TV */
         --listitem-line-clamp-tv: 10;
-    }
-    
-    /* Poster Cards */
-    .layout-tv .detailPagePrimaryContainer:has(.listItem-largeImage)
-    .layout-tv .detailImageContainer > .portraitCard {
-        left: 4%;
     }
 }
 

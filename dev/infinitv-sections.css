@@ -134,7 +134,6 @@
 
 /* Emby Scroller */
 .layout-tv .emby-scroller                                        { margin: 0 .5vw; padding: 0; }
-.layout-tv #itemDetailPage .emby-scroller                        { margin: 0 .5vw; padding: 0 .5em; }
 
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,

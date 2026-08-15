@@ -17,14 +17,12 @@
     float: left;
     position: sticky;
     margin-top: 1em;
-}
-.layout-tv .detailImageContainer .portraitCard {
-    left: 1vw;
+    width: 25.5vw;
     max-width: 25.5vw;
-    width: 34em;
+    left: 1vw;
 }
-.layout-tv .detailImageContainer .backdropCard { left: 1vw; }
-.layout-tv .detailImageContainer .squareCard   { max-width: 25vw; margin-left: 0; left: 2vw; }
+.layout-tv .detailImageContainer .portraitCard { max-height: 78vh; }
+.layout-tv .detailImageContainer .squareCard   { margin-left: 0; }
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
