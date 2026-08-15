@@ -23,14 +23,14 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 .layout-tv .libraryPage                                    { padding: 0 2vw;  }
-.layout-tv .libraryPage                                    { padding: 0 1vw; padding-top: 5em !important; }
+.layout-tv .libraryPage                                    {padding: 0 1vw;padding-top: 5em !important;}
 .layout-tv #studiosTab                                     { margin-left: -1vw }
 .layout-tv .detailImageContainer .card                     { margin-left: 1vw }
 
 /* Library Pages: Content with Alphapicker */
 .layout-tv .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
 @media(min-width: 50em)                                    {
-    .layout-tv .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 1vw; }
+    .layout-tv .libraryPage .padded-right-withalphapicker  {padding: 0 2vw 0 0vw;}
 }
 
 /* Layout Mobile
@@ -130,6 +130,42 @@
     margin-bottom: 1em;
 }
 
+
+.layout-desktop .pageTabContent>.focuscontainer-x {
+    padding: 0.05em;
+    min-height: 2em;
+    margin-bottom: .5em;
+    position: fixed;
+    background-color: hsl(0deg 0% 62.03% / 17%);
+    backdrop-filter: var(--blur);
+}
+
+.layout-desktop .pageTabContent>.focuscontainer-x:has(button) {
+    top: 3.9em;
+    z-index: 1;
+    width: 100%;
+}
+
+.layout-desktop .pageTabContent>.focuscontainer-x:not(:has(button))  {
+    bottom: 0;
+    z-index: 1;
+    border-radius: var(--rounding-system);
+    right: 1vw;
+}
+
+/*
+.layout-desktop .pageTabContent.is-active:has(.focuscontainer-x) {
+    justify-content:center;
+    display: flex;
+} */
+
+.layout-desktop .pageTabContent>.alphaPicker {
+    bottom: 4em;
+}
+
+.layout-desktop #moviesPage .itemsContainer { margin-top: .5em; }
+
+
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -139,6 +175,8 @@
     min-height: 2em;
     margin-bottom: .5em;
 }
+
+
 .layout-tv .itemsViewSettingsContainer {
     border-radius: var(--rounding-system) !important;
     padding: 0.05em;

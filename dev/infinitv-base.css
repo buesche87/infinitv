@@ -6,42 +6,24 @@
 
 :root {
 
-    /* Accents */
-    --accent100: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
-    --accent80:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
-    --accent60:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
-    --accent40:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
-    --accent20:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
+    /* Accents */--accent100: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 1.0);--accent80:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);--accent60:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);--accent40:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);--accent20:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
 
-    /* Backgrounds */
-    --bgwhite10: hsl(0deg 0% 100% / 10%);
-    --bgwhite05: hsl(0deg 0% 100% / 5%);
-    --bgdark20:  rgba(0, 0, 0, 0.2);
-    --bgdark40:  rgba(0, 0, 0, 0.4);
-    --bgdark60:  rgba(0, 0, 0, 0.6);
-    --bgdark80:  rgba(0, 0, 0, 0.8);
+    /* Backgrounds */--bgwhite10: hsla(0, 0%, 100%, .1);--bgwhite05: hsla(0, 0%, 100%, .5);--bgdark20:  rgba(0, 0, 0, 0.2);--bgdark40:  rgba(0, 0, 0, 0.4);--bgdark60:  rgba(0, 0, 0, 0.6);--bgdark80:  rgba(0, 0, 0, 0.8);
 
-    /* Border */
-    --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
+    /* Titel Bckgrounds */--bgtitle: hsla(0, 0%, 75%, .1);
+    /* Buttonbar Bckground */--bgbar: hsl(0deg 0% 12.29% / 74%);
 
-    /* Card Shadow */
-    --cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
+    /* Borders */--buttonborder: solid 2px hsla(0, 0%, 100%, .2);
 
-    /* Card Smoothening */
-    --insettop: inset -1px 3px 14px 0px rgb(255 255 255 / 10%);
-    --insetbottom: inset -3px -3px 14px 0px rgb(0 0 0 / 40%);
+    /* Card Shadows */--cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
 
-    /* Glow */
-    --cardglow: 0px 0px 10px 3px var(--accent80);
-    --cardglow-focus: 0px 0px 10px 3px var(--accent80);
-    --buttonglow: 0px 0px 10px 1px var(--accent100);
+    /* Glow */--cardglow: 0px 0px 10px 3px var(--accent80);--cardglow-focus: 0px 0px 10px 3px var(--accent80);--buttonglow: 0px 0px 10px 1px var(--accent100);
 
-    /* Animation Duration */
-    --anispeed: 240ms;
+    /* Blur */--blur: blur(5.2px) saturate(1.35);
 
-    /* Blur */
-    --blur: blur(5.2px) saturate(1.35);
-}
+    /* Animation Duration */--anispeed: 240ms;
+    
+    /* Card Smoothening */--insettop: inset -1px 3px 14px 0px rgb(255 255 255 / 10%);--insetbottom: inset -3px -3px 14px 0px rgb(0 0 0 / 40%);}
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -197,19 +179,21 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
+/* Title Background */
+#searchPage .sectionTitle,
+#controlsPreferencesPage .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle,
+.settingsContainer .sectionTitle,
+.verticalSection > .sectionTitle-cards,
+.verticalSection > .sectionTitleContainer-cards  { background-color: var(--bgtitle); }
+
 /* Background Color: White 5% */
 .searchSuggestionsList > div:hover               { background-color: var(--bgwhite05); }
 
 /* Background Color: White 10% */
-#loginPage .cardImage,
-#searchPage .sectionTitle,
-#controlsPreferencesPage .sectionTitle,
-.itemsViewSettingsContainer,
-.homeScreenSettingsContainer .sectionTitle,
 .pageTabContent > .focuscontainer-x,
-.settingsContainer .sectionTitle,
-.verticalSection > .sectionTitle-cards,
-.verticalSection > .sectionTitleContainer-cards  { background-color: var(--bgwhite10); }
+#loginPage .cardImage,
+.itemsViewSettingsContainer                      { background-color: var(--bgwhite10); }
 
 /* Background Color: Dark 20% */
 .button-submit:hover,
