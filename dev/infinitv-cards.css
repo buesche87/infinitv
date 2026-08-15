@@ -333,12 +333,12 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* CardBoxes in General */
-.layout-tv .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 1em .6em 1.6em !important; }
-.layout-tv .itemsContainer > .portraitCard > .cardBox,
-.layout-tv .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em .8em 1.6em 1.6em !important; }
+.layout-tv .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 1.2em .8em 1.2em !important; }
+.layout-tv .itemsContainer > .portraitCard > .cardBox                    { margin: 2em 1.2em 1.6em 1.2em !important; }
+.layout-tv .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 1.2em 1.6em 1.2em !important; }
 
 /* CardBoxes in OverflowCards */
-.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.6em !important; }
+.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 1.4em 1.2em 1.4em !important; }
 .layout-tv .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1.2em 1.6em 1.2em !important; }
 .layout-tv .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.6em 1em 1em 1.6em !important; }
 
@@ -350,8 +350,8 @@
 
 /* CardBoxes in OverflowCards residing in a PrimaryContainer */
 .layout-tv .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
-.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {margin: 2em 1.1em 2em 1.1em !important;}
-.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard.personCard > .cardBox {margin: 1.5em 0 !important;/* padding: 0 .5em !important; */}
+.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox { margin: 2.2em 1.2em 1.8em 1.2em !important; }
+.layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard.personCard > .cardBox { margin: 1.8em 0 1.6em 0 !important; }
 
 /* CardBoxes in Nextup Cards */
 .layout-tv .nextUpSection .itemsContainer > .overflowBackdropCard > .cardBox {margin: 2em 1em 1.5em 2.5em !important;}
