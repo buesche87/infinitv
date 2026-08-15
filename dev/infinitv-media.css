@@ -55,9 +55,7 @@
 */
 
 /* Detail-Ribbon */
-.detailRibbon { 
-    padding-right: 2% !important;
-}
+.detailRibbon { padding-right: 2% !important; }
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
@@ -108,15 +106,13 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Media Infos */
-.layout-tv .itemMiscInfo         {
+.layout-tv .itemMiscInfo          {
     font-size: 125%;
     margin-top: .6em;
     margin-bottom: 0.6em;
 }
 
-    .layout-tv .detailRibbon {
-        padding: 1em 1.5em;
-    }
+    .layout-tv .detailRibbon      { padding: 1em 1.5em; }
 
 /* Buttons */
 .layout-tv .mainDetailButtons     { margin: 1.5em 0 .5em 0; }
@@ -190,7 +186,6 @@
 /* Series */
 .layout-tv [dir=ltr] .detailRibbon {
     margin-left: 28vw;
-    /* margin-right: 1vw; */
     padding-top: 1em;
     padding-right: 1vw;
     padding-bottom: .5em;
@@ -198,7 +193,6 @@
 } 
 .layout-tv .detailPagePrimaryContent {
     margin-left: 28vw;
-    /* margin-right: 1vw; */
     padding-top: 0;
     padding-right: 1vw;
     padding-bottom: 1em;
@@ -213,22 +207,15 @@
 }
 .layout-tv .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
 .layout-tv .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0em !important; }
-.layout-tv .trackSelections .selectContainer .selectLabel { flex-basis: 5em; }
-.layout-tv .detailSection {
-    padding-bottom: .5em;
-    /* margin-left: .5em; */
-}
+.layout-tv .trackSelections .selectContainer .selectLabel       { flex-basis: 5em; }
+.layout-tv .detailSection { padding-bottom: .5em; }
 
 /* TV Show Page */
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
     padding-top: 0em;
     padding-left: 0;
-    /* margin-left: 28.5vw; */
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
-    /* margin: 0 -1vw; */
-    padding-left: .5em;
-}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent { padding-left: .5em; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
     padding-left: .5em;
     padding-bottom: .5em;
@@ -238,22 +225,19 @@
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup div         { margin: .25em 0 !important; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                {
     margin-top: 0;
-    /* margin-right: -1vw; */
     margin-bottom: 2em !important;
-    /* margin-left: -.5em; */
 }
 
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContainer { margin-right: 1vw; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContainer   { margin-right: 1vw; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 0; }
 
 /* Episode List */
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {
     margin-bottom: 0 !important;
-    /* padding-bottom: 1em !important; */
     margin-left: 28vw;
 }
 
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent {
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent    {
     padding-bottom: 0;
     padding-right: 0 !important;
     margin-left: 28vw;
@@ -267,16 +251,11 @@
     margin-right: 0 !important;
     margin-left: 0 !important;
     padding-top: 0 !important;
-    /* margin-bottom: 0; */
 }
 
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .itemGenres {
-    display: none;
-}
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .itemGenres { display: none; }
 
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent {
-    padding-left: .5em;
-}
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent { padding-left: .5em;}
 
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPageSecondaryContainer {margin-top: .5em !important;}
 
@@ -296,7 +275,6 @@
 
 .layout-tv #itemDetailPage #listChildrenCollapsible:has(.overflowSquareCard) { margin-bottom: 0 !important; }
 .layout-tv #itemDetailPage #listChildrenCollapsible:has(.overflowSquareCard) .itemsContainer-tv { margin: 0 !important; }
-
 .layout-tv #musicRecommendedPage .itemsContainer-tv { padding: 0; }
 
 
@@ -305,12 +283,8 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-.layout-tv .trackSelections .selectContainer {
-    max-width: 30em;
-}
-.layout-tv .trackSelections .selectSubtitlesContainer .selectArrowContainer {
-    right: .5em;
-}
+.layout-tv .trackSelections .selectContainer { max-width: 30em; }
+.layout-tv .trackSelections .selectSubtitlesContainer .selectArrowContainer { right: .5em; }
 .layout-tv .trackSelections .selectLabelFocused {
     color: #fff !important;
     font-weight: 600 !important;
@@ -355,12 +329,9 @@
 
 /* Cards */
 #backdropsContainer .imageEditorCard > .cardBox,
-#imagesContainer .imageEditorCard > .cardBox {
+#imagesContainer .imageEditorCard > .cardBox,
+.availableImagesList .imageEditorCard > .cardBox  {
     background-color: rgb(0 0 0 / 0%) !important;
-    border: var(--buttonborder);
-}
-.availableImagesList .imageEditorCard > .cardBox {
-    background-color: rgb(0 0 0) !important;
     border: var(--buttonborder);
 }
 

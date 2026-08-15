@@ -17,7 +17,10 @@
     backdrop-filter: var(--blur);
 }
 
-/* No Border or Border-Radius */
+/* Small Border */
+.layout-tv .detailImageContainer .card { border: solid 1px hsla(0, 0%, 100%, .1); }
+
+/* Special Border radius */
 .layout-tv .detailPagePrimaryContent,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
     border-top-right-radius: 0;
@@ -29,6 +32,9 @@
     border-bottom-left-radius: 0;
 }
 
+/* No Background */
+
+
 /* Alignment & Fixes
 ──────────────────────────────────────────────────────────────────────────── */
 
@@ -36,16 +42,11 @@
 .layout-tv .detailRibbon { padding: 1em 1vw 0 1vw; }
 
 /* Card Container */
-.layout-tv .detailImageContainer .card { 
-    margin-top: 0; 
-    border: solid 1px hsla(0, 0%, 100%, .1);
-}
+.layout-tv .detailImageContainer .card { margin-top: 0; }
 
 /* Section Titles */
 .layout-tv .detailPagePrimaryContent .sectionTitle,
-.layout-tv .detailPageSecondaryContainer .sectionTitle {
-    border-radius: 0 !important; 
-}
+.layout-tv .detailPageSecondaryContainer .sectionTitle { border-radius: 0 !important; }
 
 /* Primary Content */
 .layout-tv .detailPagePrimaryContainer { margin-right: 1em; }
@@ -54,13 +55,11 @@
 
 /* Media (Item Details) */
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon { padding: 1em 1.5em; }
+
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
     padding-top: .5em;
     padding-bottom: 0;
     margin-top: 1em;
-    border-top: var(--buttonborder);
-    border-top-right-radius: var(--rounding-media);
-    border-top-left-radius: var(--rounding-media);
 }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {margin-left: .5em;}
 
@@ -79,31 +78,22 @@
     border-top: none;
     padding: .5em 1em 1em 1.5em;
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection {
-    margin-bottom: 3em !important;
-}
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 2em; }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection {
-    margin-left: 0;
-    margin-right: 0;
-}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                              { margin-bottom: 3em !important; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer               { margin-top: 2em; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection                              { margin-left: 0; margin-right: 0; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) #listChildrenCollapsible .itemsContainer-tv { margin: 0 1em; }
 
 /* Episode List */
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent {
-    background: none;
-    border-color: transparent;
-}
-
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent { padding-left: 0 !important; }
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon { padding-left: 1.5em; }
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent                   { background: none; border-color: transparent; }
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent                            { padding-left: 0 !important; }
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon                               { padding-left: 1.5em; }
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #listChildrenCollapsible .itemsContainer-tv { margin: 0 !important; }
 
 
 /* Music */
 .layout-tv #nowPlayingPage .nowPlayingInfoContainer { padding: 1em; }
-.layout-tv #nowPlayingPage .nowPlayingInfoControls { padding: 0 .5em; }
-.layout-tv .playlistSection { margin-top: .5em; }
-.layout-tv .playlistSection .playlistSectionButton { margin-bottom: 1em; }
+.layout-tv #nowPlayingPage .nowPlayingInfoControls  { padding: 0 .5em; }
+.layout-tv .playlistSection                         { margin-top: .5em; }
+.layout-tv .playlistSection .playlistSectionButton  { margin-bottom: 1em; }
 
 

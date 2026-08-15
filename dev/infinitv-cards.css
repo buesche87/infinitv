@@ -26,8 +26,8 @@
     margin-top: 1em;
 }
 
+/* Media Poster */
 .layout-tv .detailImageContainer .portraitCard {max-width: 25.5vw;width: 34em;}
-
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -80,9 +80,7 @@
 }
 
 /* List Item: Content (TV) */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage {
-    border-right: var(--buttonborder);
-}
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage { border-right: var(--buttonborder); }
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
@@ -99,21 +97,15 @@
     border: 2px solid var(--accent40) !important;
     color: inherit !important;
 }
-.layout-desktop .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) {
-    color: var(--accent100) !important;
-}
+.layout-desktop .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) { color: var(--accent100) !important; }
 
 /* List Item: Content (Desktop) */
 .layout-desktop .itemsContainer > .listItem-border .listItemImage {
     transform: scale(1.3);
     border-right: var(--buttonborder);
 }
-.layout-desktop .itemsContainer > .listItem-border .listItemBody {
-    padding-left: 2%;
-}
-.layout-desktop .itemsContainer > .listItem-border .listItemBodyText {
-    font-weight: 600;
-}
+.layout-desktop .itemsContainer > .listItem-border .listItemBody { padding-left: 2%; }
+.layout-desktop .itemsContainer > .listItem-border .listItemBodyText { font-weight: 600; }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -135,23 +127,15 @@
 }
 
 /* List Item: Overview */
-.layout-mobile .itemsContainer .listItem-overview {
-    padding-top: 0;
-}
-.layout-mobile .itemsContainer .listItem-overview p {
-    margin-top: .5em;
-}
+.layout-mobile .itemsContainer .listItem-overview   { padding-top: 0; }
+.layout-mobile .itemsContainer .listItem-overview p { margin-top: .5em; }
 
 /* Hide Image on small screens */
 @media (max-width: 40em) {
-    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
-        display: flex;
-    }
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage { display: flex; }
 }
 @media (max-width: 30em) {
-    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage {
-        display: none;
-    }
+    [data-type=Movie] .listItemImage,[data-type=Series] .listItemImage { display: none; }
 }
 
 /*
@@ -168,7 +152,6 @@
     transform: none !important;
     margin-right: .5em;
     background: var(--bgdark40) !important;
-    /* height: 33%; */
 }
 
 /* Large Image List Item: Align Body */
@@ -208,9 +191,7 @@
 /* Layout Mobile - Large Image List Items
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-mobile .listItem.listItem-largeImage {
-    margin-right: 0em;
-}
+.layout-mobile .listItem.listItem-largeImage { margin-right: 0em; }
 .layout-mobile .vertical-list .listItem-border {
     border: var(--buttonborder) !important;
     border-radius: var(--rounding-media) !important;
@@ -228,14 +209,10 @@
         border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
     }
 }
-.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview {
-    margin: .5em;
-}
+.layout-mobile .detailPageWrapperContainer .listItem-bottomoverview { margin: .5em; }
 
 /* Center Text */
-.layout-mobile .detailPageWrapperContainer .listItemBody {
-    text-align: center;
-}
+.layout-mobile .detailPageWrapperContainer .listItemBody { text-align: center; }
 .layout-mobile .vertical-list .listItem-border .listItemBody {
     padding-left: 2em;
     padding-top: .3em;
@@ -248,9 +225,7 @@
     margin-left: -.2em;
     border-right: var(--buttonborder);
 }
-.layout-mobile .listItemImage-large {
-    border-right: var(--buttonborder);
-}
+.layout-mobile .listItemImage-large { border-right: var(--buttonborder); }
 
 /* Buttons */
 .layout-mobile .listItem-largeImage .listItemImageButton {
@@ -276,14 +251,14 @@
 
 /* Card Glow */
 .layout-tv .card:hover .cardScalable,
-.layout-tv .card:hover .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow) !important; }
+.layout-tv .card:hover .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow) !important; }
 .layout-tv .card:focus .cardScalable,
-.layout-tv .card:focus .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow-focus) !important; }
+.layout-tv .card:focus .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow-focus) !important; }
 .layout-desktop .card:hover .cardScalable,
-.layout-desktop .card:hover .cardBox:has(> .cardFooter)       { box-shadow: var(--cardglow) !important; }
+.layout-desktop .card:hover .cardBox:has(> .cardFooter) { box-shadow: var(--cardglow) !important; }
 
 /* Cards: Inset Shadow (smoothening) */
-.libraryPage .cardImageContainer              { box-shadow: var(--insettop), var(--insetbottom); }
+.libraryPage .cardImageContainer { box-shadow: var(--insettop), var(--insetbottom); }
 
 
 /* Layout Desktop - Card Animation
@@ -291,27 +266,19 @@
 
 /* CardText on Hover (Desktop) */
 .layout-desktop .bannerCard:hover > .cardText,
-.layout-desktop .itemsContainer > .card:hover .cardText {
-    transform: scale(1.1);
-}
-.layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText {
-    transform: scale(1);
-}
+.layout-desktop .itemsContainer > .card:hover .cardText                  { transform: scale(1.1); }
+.layout-desktop .itemsContainer > .card:hover:has(.cardFooter) .cardText { transform: scale(1); }
 
 /* Layout TV - Card Animation
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* CardBox: Zoom on Focus (TV) */
-.layout-tv .card.show-animation:focus .cardBox {
-    transform: scale(1.1);
-}
+.layout-tv .card.show-animation:focus .cardBox { transform: scale(1.1); }
 
 /* Card Text: Bold on Focus (TV) */
 .layout-tv .card.show-animation:focus .cardText-first,
 .layout-tv .card.show-animation:focus .cardText-secondary,
-.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) {
-    font-weight: 600;
-}
+.layout-tv .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) { font-weight: 600; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -356,24 +323,16 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* CardBoxes in General */
-.layout-desktop .itemsContainer > .card > .cardBox {
-    margin: 1em !important;
-}
+.layout-desktop .itemsContainer > .card > .cardBox { margin: 1em !important; }
 
 /* CardBoxes in BannerCards */
-.layout-desktop .itemsContainer > .bannerCard > .cardBox {
-    margin: 1em !important;
-}
+.layout-desktop .itemsContainer > .bannerCard > .cardBox { margin: 1em !important; }
 
 /* CardBoxes in Person Cards */
-.layout-desktop .itemsContainer > .overflowPortraitCard.personCard > .cardBox {
-    margin: 1.5em 0 !important;
-}
+.layout-desktop .itemsContainer > .overflowPortraitCard.personCard > .cardBox { margin: 1.5em 0 !important; }
 
 /* CardBoxes in OverflowPortraitCards residing in a SecondaryContainer */
-.layout-desktop .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {
-    margin: 2em 1em !important;
-}
+.layout-desktop .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox { margin: 2em 1em !important; }
 
 /* Layout TV - CardBoxes
 ──────────────────────────────────────────────────────────────────────────── */
@@ -399,9 +358,8 @@
 .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox {margin: 2em 1.1em 2em 1.1em !important;}
 .layout-tv .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard.personCard > .cardBox {margin: 1.5em 0 !important;/* padding: 0 .5em !important; */}
 
-
+/* CardBoxes in Nextup Cards */
 .layout-tv .nextUpSection .itemsContainer > .overflowBackdropCard > .cardBox {margin: 2em 1em 1.5em 2.5em !important;}
-
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -414,7 +372,6 @@
     margin-top: .75em !important;
 }
 
-
 /*
 ────────────────────────────────────────────────────────────────────────────
    Cards: Text & Buttons
@@ -423,9 +380,7 @@
 
 /* Recent & NextUp: Hide Series Title */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
-.NextUp .card[data-type="Episode"] .cardText-first {
-    display: none;
-}
+.NextUp .card[data-type="Episode"] .cardText-first { display: none; }
 
 /* Recent & NextUp: Inflate Episode Name */
 .ContinueWatching .card[data-type="Episode"] .cardText-secondary,
@@ -437,27 +392,17 @@
 
 /* Recent & NextUp: Hide Movie Year */
 .ContinueWatching .card[data-type="Movie"] .cardText-secondary,
-.NextUp .card[data-type="Movie"] .cardText-secondary {
-    display: none;
-}
+.NextUp .card[data-type="Movie"] .cardText-secondary { display: none; }
 
 /* Card Text First: Spacing with and without card footer */
-.cardText-first {
-    padding-top: .5em !important;
-}
-.cardFooter > .cardText.cardText-first {
-    padding-top: .25em !important;
-}
+.cardText-first { padding-top: .5em !important; }
+.cardFooter > .cardText.cardText-first { padding-top: .25em !important; }
 
 /* Card Text Secondary: Font size */
-.cardText.cardText-secondary {
-    font-size: 75% !important;
-}
+.cardText.cardText-secondary { font-size: 75% !important; }
 
 /* Links / Action-Text in card footer */
-.textActionButton {
-    text-decoration: none !important;
-}
+.textActionButton { text-decoration: none !important; }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -467,9 +412,7 @@
     margin-bottom: 4.4em !important;
     margin-right: .25em !important;
 }
-.layout-mobile .itemAction > .material-icons {
-    color: white;
-}
+.layout-mobile .itemAction > .material-icons { color: white; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -479,22 +422,15 @@
 
 /* Card Indicators: Alignment */
 .cardContent .cardIndicators,
-.mediaSourceIndicator {
-    right: 0.5em !important;
-    top: 0.5em !important;
-}
+.mediaSourceIndicator { right: 0.5em !important; top: 0.5em !important; }
 
 /* Card Indicators: Count & Played */
 .countIndicator,
 .mediaSourceIndicator,
-.playedIndicator {
-    background: rgba(0, 0, 0, 1);
-}
+.playedIndicator      { background: rgba(0, 0, 0, 1); }
+
 .countIndicator,
-.mediaSourceIndicator {
-    font-weight: 600;
-    font-size: 89%;
-}
+.mediaSourceIndicator { font-weight: 600; font-size: 89%; }
 
 /* Card Indicators: Missing & Unaired */
 .missingIndicator,
@@ -518,20 +454,19 @@
     left: 0.75em;
     top: 0.75em;
 }
+/*
 .layout-tv .listItemIndicators {
     position: fixed;
     left: 0.75em;
     top: 0.75em;
-}
+}*/
 .layout-mobile .listItemImage-large .listItemIndicators {
-    position: fixed;
+    /* position: fixed; */
     left: 0.5em;
     top: 0.5em;
     font-size: .75em !important
 }
-.layout-mobile .listItem-border .listItemIndicators {
-    display: none;
-}
+.layout-mobile .listItem-border .listItemIndicators { display: none; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -540,7 +475,7 @@
 */
 
 /* List Item - TV */
-.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage)                          {width: 98%;}
+.layout-tv .libraryPage .listItem-button:not(.listItem-largeImage)                          { width: 98%; }
 .layout-tv .libraryPage .listItem-button:focus:not(.listItem-largeImage)                    { width: 98%; }
 
 /* List Item: Poster - TV */

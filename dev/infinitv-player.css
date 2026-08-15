@@ -24,7 +24,7 @@
 
 /* Progressbar & Volume: Marker */
 .videoOsdBottom .mdl-slider { margin-bottom: 1px }
-.sliderMarker { width: 3px; margin-top: 2px }
+.sliderMarker               { width: 3px; margin-top: 2px }
 
 /* Player OSD: Media-Buttons */
 .ltr > .paper-icon-button-light:focus { transform: scale(1.2) !important }
@@ -60,15 +60,6 @@
 /* OSD Footer: Full Layout */
 .videoOsdBottom { padding: .5em 0 }
 
-.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
-    background: rgba(0, 0, 0, var(--headeropacity)); 
-}
-
-.layout-desktop:has(#videoOsdPage:not(.hide)) .actionsheetMenuItemIcon {
-    margin: 0 .5em 0 .2em !important;
-}
-
-/* OSD Footer: Small Box-Layout */
 @media all and (min-width: 105em) {
     .videoOsdBottom {
         padding-top: .5em;
@@ -78,15 +69,20 @@
         margin-right: 23vw;
         border-radius: var(--rounding-media);
     }
-
-    .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet {
-        transform: translateY(-8.5em) !important;
-    }
 }
 
 /* OSD Footer: Lift Progressbar */
-.buttons.focuscontainer-x {
-    padding-top: .5em;
+.buttons.focuscontainer-x { padding-top: .5em; }
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet             { background: rgba(0, 0, 0, var(--headeropacity)); }
+.layout-desktop:has(#videoOsdPage:not(.hide)) .actionsheetMenuItemIcon { margin: 0 .5em 0 .2em !important; }
+
+/* OSD Footer: Small Box-Layout */
+@media all and (min-width: 105em) {
+    .layout-desktop:has(#videoOsdPage:not(.hide)) .actionSheet         { transform: translateY(-8.5em) !important; }
 }
 
 /*
@@ -126,10 +122,11 @@
     transform: none !important;
 }
 
+/* Upnext Text */
 .upNextDialog-nextVideoText {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .upNextDialog-countdownText { margin-right: .2em }
@@ -157,31 +154,20 @@
 ===========================================================================
 * > TODO: needs work */
 
-.layout-tv .nowPlayingPageImageContainer                 { margin-right: 1.5em }
-.layout-tv .nowPlayingButtonsContainer                   { margin-top: .5em }
+/* Footer */
+@media (max-width: 50em) {
+    .nowPlayingBarPositionContainer { margin-right: .8em; margin-left: .8em; }
+    .nowPlayingBarInfoContainer     { margin-left: .2em; }
+}
 
-/* Fix seekbar jumping around */
-.layout-tv .nowPlayingInfoControls .positionTime         { width: 2em }
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
 
-/* playlist */
-.layout-tv .playlistSectionButton                        { margin-bottom: .5em }
+.layout-desktop .listViewUserDataButtons                 { margin-right: .5em }
 .layout-desktop .listViewUserDataButtons .listItemButton {
     margin-right: .1em;
     margin-left: .1em;
     border: none !important;
-}
-.layout-desktop .listViewUserDataButtons                 { margin-right: .5em }
-
-/* playlist buttons: no animations */
-.layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
-    border: none !important;
-    background: #0000 !important;
-}
-.layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light {
-    transform: none !important;
-}
-.layout-tv .playlistSectionButton .paper-icon-button-light      {
-    transform: none !important;
 }
 
 /* now playing bar */
@@ -192,78 +178,64 @@
     padding-top: 1em;
     padding-bottom: .25em;
 }
-.layout-desktop .nowPlayingBarTop {
-    padding-top: .5em;
-    padding-bottom: .2em;
-}
-.layout-desktop .nowPlayingBarPositionContainer {
-        margin-right: .8em;
-        margin-left: .8em;
-}
-.layout-desktop .nowPlayingBarInfoContainer {
-    margin-left: .6em;
-}
-.layout-desktop .nowPlayingBarUserDataButtons .mediaButton {
+.layout-desktop .nowPlayingBarTop                          { padding-top: .5em; padding-bottom: .2em; }
+.layout-desktop .nowPlayingBarPositionContainer            { margin-right: .8em; margin-left: .8em; }
+.layout-desktop .nowPlayingBarInfoContainer                { margin-left: .6em; }
+.layout-desktop .nowPlayingBarUserDataButtons .mediaButton { border: none !important; }
+
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+
+/* now playing bar */
+.layout-tv .nowPlayingPageImageContainer                 { margin-right: 1.5em }
+.layout-tv .nowPlayingButtonsContainer                   { margin-top: .5em }
+
+/* Fix seekbar jumping around */
+.layout-tv .nowPlayingInfoControls .positionTime         { width: 2em }
+
+/* playlist */
+.layout-tv .playlistSectionButton                        { margin-bottom: .5em }
+
+/* playlist buttons: no animations */
+.layout-tv .nowPlayingButtonsContainer .paper-icon-button-light {
     border: none !important;
+    background: #0000 !important;
 }
+.layout-tv .nowPlayingSecondaryButtons .paper-icon-button-light,
+.layout-tv .playlistSectionButton .paper-icon-button-light      { transform: none !important; }
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* now playing bar */
 .layout-mobile .nowPlayingBar {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     padding-top: 1em;
 }
-.layout-mobile .nowPlayingBarTop {
-    padding-top: .5em;
-}
-.layout-mobile .nowPlayingPageUserDataButtonsTitle .paper-icon-button-light  {
-    border: none !important;
-}
+.layout-mobile .nowPlayingBarTop { padding-top: .5em; }
+.layout-mobile .nowPlayingPageUserDataButtonsTitle .paper-icon-button-light  { border: none !important; }
 
-/* Footer */
+/* Main Drawer: Hide HeaderTabs when open (Mobile) */
 @media (max-width: 50em) {
-
-    .nowPlayingBarPositionContainer {
-        margin-right: .8em;
-        margin-left: .8em;
-    }
-
-    .nowPlayingBarInfoContainer {
-        margin-left: .2em;
-    }
-
-    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
-    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs {
-        display: none;
-    }
-
-    /* Main Drawer: Hide HeaderTabs when open (Mobile) */
-    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter {
-        display: none !important;
-    }
+    .layout-mobile .mainDrawer.drawer-open + .skinHeader > .headerTabs,
+    .layout-mobile #reactRoot:has(.mainDrawer.drawer-open) ~ .appfooter { display: none !important;  }
 }
 @media (min-width: 50em) {
-
-    .layout-mobile .appfooter {
-        background: #0000;
-    }
-
-    .layout-mobile .nowPlayingBar {
+    .layout-mobile .appfooter { background: #0000; }
+    .layout-mobile .nowPlayingBar                  {
         margin-bottom: .5em;
         margin-left: 33vw;
         margin-right: 33vw;
         border-radius: var(--rounding-media);
     }
 
-    .layout-mobile .nowPlayingBarRight {
-        margin: 0 1em 0 auto;
-    }
-
+    .layout-mobile .nowPlayingBarRight             { margin: 0 1em 0 auto; }
     .layout-mobile .nowPlayingBarPositionContainer {
         margin-right: 1em;
         margin-left: 1em;
         margin-top: .5em;
         margin-bottom: .5em;
     }
-
-    .layout-mobile .nowPlayingBarInfoContainer {
-        margin-left: .8em;
-    }
+    .layout-mobile .nowPlayingBarInfoContainer     { margin-left: .8em; }
 }

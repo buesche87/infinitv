@@ -13,7 +13,6 @@
 
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
     margin-left: -27vw;
-    /* margin-right: -1vw; */
     margin-bottom: -1.5em !important;
 }
 
@@ -53,9 +52,13 @@
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Container */
+.layout-desktop .libraryPage .sectionTitle                  { padding-left: 0 }
+.layout-desktop .detailPagePrimaryContainer .sectionTitle   { padding-left: 2.5%; padding-right: 2.5% }
+.layout-desktop .detailPageSecondaryContainer .sectionTitle { border-radius: 0 }
+.layout-desktop h2.sectionTitle                             { font-weight: 500 }
+.layout-desktop .settingsContainer .sectionTitle            { padding-left: .75em }
+
 .layout-desktop .sectionTitleContainer-cards { text-align: center; padding: 10px }
-.layout-desktop .libraryPage .sectionTitle   { padding-left: 0 }
 
 .layout-desktop .detailPagePrimaryContent:has(.nextUpSection.hide) 
 .detailVerticalSection .sectionTitle-cards   { margin-left: -31.45vw; padding-left: 31.45vw }
@@ -65,6 +68,7 @@
     margin-left: -.5vw;
 }
 
+/* Section Title NextUp */
 .layout-desktop  .detailPagePrimaryContainer .nextUpSection .sectionTitle {
     margin-left: -31.45vw;
     padding-left: 31.45vw;
@@ -76,15 +80,8 @@
     text-align: center;
 }
 
-.layout-desktop .detailPagePrimaryContainer .sectionTitle   { padding-left: 2.5%; padding-right: 2.5% }
-
-.layout-desktop .detailPageSecondaryContainer .sectionTitle { border-radius: 0 }
-.layout-desktop h2.sectionTitle                             { font-weight: 500 }
-
-.layout-desktop .settingsContainer .sectionTitle            { padding-left: .75em }
-
-/* Scroll Buttons */
-.layout-desktop .verticalSection > .emby-scrollbuttons      { padding: 0.4em }
+/* Scroll Buttons in Section Titles */
+.layout-desktop .verticalSection > .emby-scrollbuttons { padding: 0.4em }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
@@ -136,8 +133,8 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
-.layout-tv .emby-scroller                                        {margin: 0 .5vw; padding: 0;}
-.layout-tv #itemDetailPage .emby-scroller                        {margin: 0 .5vw; padding: 0 .5em;}
+.layout-tv .emby-scroller                                        { margin: 0 .5vw; padding: 0; }
+.layout-tv #itemDetailPage .emby-scroller                        { margin: 0 .5vw; padding: 0 .5em; }
 
 .layout-tv #favoritesTab .verticalSection > .emby-scroller,
 .layout-tv #tvRecommendedPage .verticalSection > .emby-scroller,
@@ -155,14 +152,12 @@
 .layout-tv #seriesTab .itemsContainer,
 .layout-tv #moviesTab .itemsContainer,
 .layout-tv #albumsTab .itemsContainer                            { margin: 0 }
-
-.layout-tv #studiosTab .itemsContainer { padding: 0 2vw}
+.layout-tv #studiosTab .itemsContainer                           { padding: 0 2vw }
 
 /* Items Container with largeImage List */
 .layout-tv .detailPagePrimaryContainer .itemsContainer:has(.listItemImage-large-tv) {
     padding-right: 0em;
     padding-left: 0em;
-    /* margin-top: -1em; */
 }
 .layout-tv #listChildrenCollapsible:has(.listItemImage-large-tv) { margin-bottom: 0 !important;}
 

@@ -70,15 +70,15 @@
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 /* Stretch Alphabet Picker */
-.layout-mobile .alphaPicker { bottom: 2em }
+.layout-mobile .alphaPicker     { bottom: 2em }
 @media only screen and (max-height: 767px) and (orientation: landscape) {
     .layout-mobile .alphaPicker { bottom: 1em }
 }
 
 /* Alphabet Picker: Buttons */
-.alphaPickerButton { height: 1.6em }
+.alphaPickerButton              { height: 1.6em }
 
-.alphaPickerButton:hover {
+.alphaPickerButton:hover        {
     background: var(--accent60) !important;
     color: white !important;
 }
@@ -99,14 +99,14 @@
 */
 
 /* Filter & Sorting Header */
-.selfBackdropPage h1.parentName                 {font-size: 200%;}
+.selfBackdropPage h1.parentName                 { font-size: 200%; }
 .layout-desktop .selfBackdropPage h1.parentName { font-size: 175% }
 
 /* Filter & Sorting Header: Item Count */
 .listPaging > span { margin-left: .5em; margin-right: .5em }
 
 /* Filter Indicator */
-.filterIndicator { color: black }
+.filterIndicator   { color: black }
 
 /* Sorting Menu: Radio Button spacing */
 .radio-label-block {
