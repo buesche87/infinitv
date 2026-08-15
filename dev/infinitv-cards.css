@@ -232,10 +232,10 @@
 */
 
 /* Card Shadows */
-.cardScalable                                 { box-shadow: var(--cardshadow) !important; }
+.cardScalable                                           { box-shadow: var(--cardshadow) !important; }
 
 /* Shadow for cardBox if footer present */
-.cardBox:has(> .cardFooter)                   { box-shadow: var(--cardshadow) !important; }
+.cardBox:has(> .cardFooter)                             { box-shadow: var(--cardshadow) !important; }
 
 /* Card Glow */
 .layout-tv .card:hover .cardScalable,
@@ -249,11 +249,11 @@
 .cardBox:has(> .cardFooter) > .cardScalable,
 .layout-tv .cardBox:has(> .cardFooter) > .cardScalable,
 .dialogContentInner .imageEditorCard .cardBox,
-.detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
+.detailImageContainer .card:hover .cardScalable         { box-shadow: none !important; }
 
 
 /* Cards: Inset Shadow (smoothening) */
-.libraryPage .cardImageContainer { box-shadow: var(--insettop), var(--insetbottom); }
+.libraryPage .cardImageContainer                        { box-shadow: var(--insettop), var(--insetbottom); }
 
 
 /* Layout Desktop - Card Animation
@@ -338,7 +338,7 @@
 .layout-tv .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 1.4em 1.6em 1.4em !important; }
 
 /* CardBoxes in OverflowCards */
-.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 1.8em 1.2em 1.8em !important; }
+.layout-tv .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 1.8em 1.4em 1.8em !important; }
 .layout-tv .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1.2em 1.6em 1.2em !important; }
 .layout-tv .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.6em 1em 1em 1.6em !important; }
 
