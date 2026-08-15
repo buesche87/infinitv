@@ -177,7 +177,7 @@
 .layout-desktop .itemTags > .button-link      { margin-left: .25em; }
 
 /* Secondary Container */
-.layout-desktop .detailPageSecondaryContainer { padding: 0 1.5vw !important; }
+.layout-desktop .detailPageSecondaryContainer { padding: 1em 1.5vw !important; }
 .layout-desktop .detailPageSecondaryContainer .detailPageContent { padding: 0; }
 
 /* Layout TV

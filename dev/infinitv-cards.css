@@ -6,28 +6,25 @@
 
 /* Person Cards */
 .overflowPortraitCard.personCard            { font-size: 90% !important }
-
-/* Person Cards: Center Content */
 .overflowPortraitCard.personCard > .cardBox { text-align: center; text-align: -webkit-center; }
 
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Default Cards */
-.layout-tv .detailImageContainer .portraitCard { left: 1vw; max-width: 28em; }
-.layout-tv .detailImageContainer .backdropCard { left: 1vw; }
-.layout-tv .detailImageContainer .squareCard   { max-width: 25vw; margin-left: 0; left: 2vw; }
-
-/* Card Container */
+/* Media Poster */
 .layout-tv .detailImageContainer .card         {
     float: left;
     position: sticky;
     margin-top: 1em;
 }
-
-/* Media Poster */
-.layout-tv .detailImageContainer .portraitCard { max-width: 25.5vw; width: 34em; }
+.layout-tv .detailImageContainer .portraitCard {
+    left: 1vw;
+    max-width: 25.5vw;
+    width: 34em;
+}
+.layout-tv .detailImageContainer .backdropCard { left: 1vw; }
+.layout-tv .detailImageContainer .squareCard   { max-width: 25vw; margin-left: 0; left: 2vw; }
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -39,8 +36,8 @@
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Poster Cards */
-.layout-desktop .detailImageContainer .portraitCard { max-width: 36em !important; }
+/* Media Poster */
+/* .layout-desktop .detailImageContainer .portraitCard { max-width: 36em !important; } */
 
 /* NextUp Card */
 .layout-desktop .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -228,9 +225,7 @@
 .layout-mobile .listItemImage-large { border-right: var(--buttonborder); }
 
 /* Buttons */
-.layout-mobile .listItem-largeImage .listItemImageButton {
-    border-radius: var(--rounding-system) !important;
-}
+.layout-mobile .listItem-largeImage .listItemImageButton { border-radius: var(--rounding-system) !important; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -323,7 +318,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* CardBoxes in General */
-.layout-desktop .itemsContainer > .card > .cardBox { margin: 1em !important; }
+.layout-desktop .itemsContainer > .card > .cardBox { margin: 1.2em !important; }
 
 /* CardBoxes in BannerCards */
 .layout-desktop .itemsContainer > .bannerCard > .cardBox { margin: 1em !important; }

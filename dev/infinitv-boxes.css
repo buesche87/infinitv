@@ -6,6 +6,7 @@
 .layout-tv .detailPagePrimaryContent,
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection,
@@ -32,7 +33,6 @@
     border-bottom-left-radius: 0;
 }
 
-/* No Background */
 
 
 /* Alignment & Fixes
@@ -89,11 +89,8 @@
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon                               { padding-left: 1.5em; }
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #listChildrenCollapsible .itemsContainer-tv { margin: 0 !important; }
 
-
 /* Music */
 .layout-tv #nowPlayingPage .nowPlayingInfoContainer { padding: 1em; }
 .layout-tv #nowPlayingPage .nowPlayingInfoControls  { padding: 0 .5em; }
 .layout-tv .playlistSection                         { margin-top: .5em; }
 .layout-tv .playlistSection .playlistSectionButton  { margin-bottom: 1em; }
-
-

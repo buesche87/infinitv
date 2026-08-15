@@ -165,8 +165,8 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Emby Scroller */
-.layout-desktop .emby-scroller                                       { padding: 0; margin: .5vw .5vw }
-.layout-desktop .homePage .emby-scroller                             { padding: 0; margin: .5vw 1.5vw }
+.layout-desktop .emby-scroller                                       {padding: 0;margin: 0 .5vw;}
+.layout-desktop .homePage .emby-scroller                             {padding: 0;margin: 0 1.5vw;}
 
 .layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,
 .layout-desktop #moviesPage .verticalSection > .emby-scroller,
