@@ -13,7 +13,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Detail-Ribbon: Fix narrow Desktop layout */
-.layout-desktop .detailPageWrapperContainer { margin-top: 1.5em !important; }
+.layout-desktop .detailPageWrapperContainer {margin-top: 1.5em !important;}
 
 /* Increase Season Title Text */
 .layout-desktop .selfBackdropPage .itemName {

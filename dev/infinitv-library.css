@@ -10,14 +10,23 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* .layout-desktop .libraryPage, */
-.layout-desktop .libraryPage:not(.noSecondaryNavPage)      { padding-top: 3.9em !important }
-.layout-desktop .itemDetailPage                            { padding-top: 0em !important }
+.layout-desktop .libraryPage                               { padding-top: 3.9em !important }
+.layout-desktop .libraryPage:not(.noSecondaryNavPage)      {padding-top: 3.9em !important;}
+
+.layout-desktop .noSecondaryNavPage {/* top: -5em; */}
+
+.layout-desktop .itemDetailPage .itemBackdrop {height: 35vh;}
+
+.layout-desktop .itemDetailPage .detailLogo {
+    right: 0;
+}
+
 
 /* Library Page: Studios Tab workaround */
 .layout-desktop #studiosTab                                { padding: 2vh 2vw }
 
 /* Library Page: Content */
-.layout-desktop .libraryPage .padded-right-withalphapicker { padding: 0 3vw 0 1.5vw }
+.layout-desktop .libraryPage .padded-right-withalphapicker {/* padding: 0 3vw 0 1.5vw; */padding-left:  1vw;padding-right: 2.5em;padding-top: 3em;}
 
 /*  Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
@@ -132,35 +141,40 @@
 
 
 .layout-desktop .pageTabContent>.focuscontainer-x {
-    padding: 0.05em;
+    /* padding: 0.05em; */
     min-height: 2em;
     margin-bottom: .5em;
     position: fixed;
     background-color: hsl(0deg 0% 62.03% / 17%);
     backdrop-filter: var(--blur);
-}
-
-.layout-desktop .pageTabContent>.focuscontainer-x:has(button) {
-    top: 3.9em;
-    z-index: 1;
-    width: 100%;
-}
-
-.layout-desktop .pageTabContent>.focuscontainer-x:not(:has(button))  {
-    bottom: 0;
-    z-index: 1;
-    border-radius: var(--rounding-system);
-    right: 1vw;
+    padding: 0;
 }
 
 /*
-.layout-desktop .pageTabContent.is-active:has(.focuscontainer-x) {
-    justify-content:center;
+.layout-desktop .pageTabContent.is-active {
+    justify-content: center;
     display: flex;
-} */
+}*/
+
+.layout-desktop .pageTabContent>.focuscontainer-x:has(>button) {
+    z-index: 1;
+    /* text-align:center; */
+    justify-self: center;
+    border-radius: var(--rounding-system);
+    padding-left: .5em;
+    /* width: 100%; */
+}
+
+.layout-desktop .pageTabContent>.focuscontainer-x:not(:has(>button))  {
+    z-index: 1;
+    border-radius: var(--rounding-system);
+    bottom: 0;
+    right: 0;
+    padding-left: .5em;
+}
 
 .layout-desktop .pageTabContent>.alphaPicker {
-    bottom: 4em;
+    /* bottom: 4vh; */
 }
 
 .layout-desktop #moviesPage .itemsContainer { margin-top: .5em; }
