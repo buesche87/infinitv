@@ -27,7 +27,7 @@
 }
 
 /* Media Poster */
-.layout-tv .detailImageContainer .portraitCard {max-width: 25.5vw;width: 34em;}
+.layout-tv .detailImageContainer .portraitCard { max-width: 25.5vw; width: 34em; }
 
 /* NextUp Card */
 .layout-tv .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -244,11 +244,6 @@
 /* Shadow for cardBox if footer present */
 .cardBox:has(> .cardFooter)                   { box-shadow: var(--cardshadow) !important; }
 
-/* No shadows */
-.cardBox:has(> .cardFooter) > .cardScalable,
-.dialogContentInner .imageEditorCard .cardBox   { box-shadow: none !important; }
-.detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
-
 /* Card Glow */
 .layout-tv .card:hover .cardScalable,
 .layout-tv .card:hover .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow) !important; }
@@ -256,6 +251,11 @@
 .layout-tv .card:focus .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow-focus) !important; }
 .layout-desktop .card:hover .cardScalable,
 .layout-desktop .card:hover .cardBox:has(> .cardFooter) { box-shadow: var(--cardglow) !important; }
+
+/* No shadows / No Glow */
+.cardBox:has(> .cardFooter) > .cardScalable,
+.dialogContentInner .imageEditorCard .cardBox   { box-shadow: none !important; }
+.detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
 
 /* Cards: Inset Shadow (smoothening) */
 .libraryPage .cardImageContainer { box-shadow: var(--insettop), var(--insetbottom); }
