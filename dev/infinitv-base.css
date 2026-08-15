@@ -35,6 +35,7 @@
 
     /* Glow */
     --cardglow: 0px 0px 10px 3px var(--accent80);
+    --cardglow-focus: 0px 0px 10px 3px var(--accent80);
     --buttonglow: 0px 0px 10px 1px var(--accent100);
 
     /* Animation Duration */

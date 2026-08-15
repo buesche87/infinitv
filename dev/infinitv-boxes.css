@@ -18,10 +18,15 @@
 }
 
 /* No Border or Border-Radius */
-
-.layout-tv .detailPagePrimaryContent   {
+.layout-tv .detailPagePrimaryContent,
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+}
+
+.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 /* Alignment & Fixes
