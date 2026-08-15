@@ -53,7 +53,7 @@
 .layout-tv .itemDetailsGroup           { padding-bottom: .5em; }
 
 /* Media (Item Details) */
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon { padding: 1em 1.5em; }
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {padding: 1em 1.5em;}
 
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
     /* padding-top: .5em; */
