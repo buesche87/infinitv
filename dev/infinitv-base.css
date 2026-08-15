@@ -23,7 +23,6 @@
 
     /* Border */
     --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
-    --systemborder: solid 1px hsla(0, 0%, 100%, .2);
 
     /* Card Shadow */
     --cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
@@ -427,7 +426,7 @@
 .upNextDialog-button:focus                         { box-shadow: var(--buttonglow) !important; }
 
 /* Box Shadows */
-.detailImageContainer .card                        { box-shadow: var(--itemshadow) !important; }
+.detailImageContainer .card                        { box-shadow: var(--cardshadow) !important; }
 
 /* No Shadows / no Glow */
 .cardPadder,
