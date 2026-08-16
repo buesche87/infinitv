@@ -7,7 +7,7 @@
 .overflowPortraitCard.personCard            { font-size: 90% !important }
 .overflowPortraitCard.personCard > .cardBox { text-align: center; text-align: -webkit-center; }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     /* NextUp Card */
     .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -17,7 +17,7 @@
     }
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     /* Media Poster */
     .detailImageContainer .card {
@@ -39,7 +39,7 @@
     }
 }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
     /* NextUp Card */
     .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
@@ -64,7 +64,7 @@
     [data-type=Series] .listItemImage { display: none; }
 }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     /* List Item (Desktop) */
     .itemsContainer > .listItem-border {
@@ -89,7 +89,7 @@
     .itemsContainer > .listItem-border .listItemBodyText { font-weight: 600; }
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     /* List Item (TV) */
     .libraryPage .listItem-button:not(.listItem-largeImage) {
@@ -106,7 +106,7 @@
     .libraryPage .listItem-button:not(.listItem-largeImage) .listItemImage { border-right: var(--buttonborder); }
 }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
     /* List Item: Content */
     .itemsContainer .listItemBodyText {
@@ -151,7 +151,7 @@
     padding: 0;
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     /* Large Image List Item (TV) */
     .listItemImage-large-tv {
@@ -177,7 +177,7 @@
     }
 }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
     .listItem.listItem-largeImage { margin-right: 0em; }
     .vertical-list .listItem-border {
@@ -233,7 +233,7 @@
 /* Inset Shadow for Cards (smoothening) */
 .libraryPage .cardImageContainer                        { box-shadow: var(--insettop), var(--insetbottom); }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
 
     /* Scale Cardtext on Hover */
@@ -246,7 +246,7 @@
     .card:hover .cardBox:has(> .cardFooter) { box-shadow: var(--cardglow) }
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
 
     /* Zoom Card on focus */
@@ -314,7 +314,7 @@
    CardBoxes
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     /* CardBoxes in General */
     .itemsContainer > .card > .cardBox { margin: 1.2em !important; }
@@ -329,7 +329,7 @@
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox { margin: 2em 1em !important; }
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv  {
     /* CardBoxes in General */
     .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 1.4em .8em 1.4em !important; }
@@ -356,7 +356,7 @@
     .nextUpSection .itemsContainer > .overflowBackdropCard > .cardBox {margin: 2em 1em 1.5em 2.5em !important;}
 }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
     /* CardBoxes in General */
     .itemsContainer .card > .cardBox {
@@ -401,8 +401,7 @@
 /* Links / Action-Text in card footer */
 .textActionButton { text-decoration: none !important; }
 
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
     /* Card Action-Button*/
     .cardFooter .itemAction {
@@ -451,7 +450,7 @@
     top: 0.75em;
 }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
     .listItemImage-large .listItemIndicators {
         left: 0.5em;
@@ -466,7 +465,7 @@
    List Item
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
 
     .libraryPage .listItem-button:not(.listItem-largeImage)                          { width: 98%; }

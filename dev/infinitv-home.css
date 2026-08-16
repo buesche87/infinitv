@@ -14,7 +14,7 @@
     .slide .plot-container { font-size: 120% }
 }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     /* ── Base ── */
     .slide                     { height: 75vh }
@@ -63,7 +63,7 @@
     }
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     /* Disable Slides in TV layout because they don't work well with a remote */
     #slides-container               { display: none !important }

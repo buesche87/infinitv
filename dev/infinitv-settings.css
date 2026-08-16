@@ -145,7 +145,7 @@ h2.username                                                 {
     border-radius: var(--rounding-system);
 }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     /* Content alignment */
     .userPreferencesPage                    { padding-top: 5em !important; }
@@ -176,7 +176,7 @@ h2.username                                                 {
     }
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     #clientSettingsPage form,
     #displayPreferencesPage form,

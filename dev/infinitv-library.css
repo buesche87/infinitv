@@ -5,7 +5,7 @@
 
 .standalonePage    { padding-top: 5.5em !important }
 
-/*  Layout Desktop ───────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     .libraryPage   { padding-top: 3.9em !important }
     #studiosTab    { padding: 2vh 2vw }
@@ -70,7 +70,7 @@
     font-weight: 600;
 }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     .alphaPicker    { top: 128px; bottom: auto }
 }

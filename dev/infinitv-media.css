@@ -19,7 +19,7 @@
 .detailTrackSelect          { padding: .35em 1.9em .35em .35em !important; }
 .overview.detail-clamp-text { margin: .5em 0; }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
 
     /* Poster Card */
@@ -88,7 +88,7 @@
     }
 } 
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
 
     /* Hide some Elements */
@@ -288,7 +288,7 @@
 /* Buttons */
 #backdropsContainer .paper-icon-button-light { margin: .1em }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     .availableImagesList .portraitCard .cardBox { margin: 1em .75em !important }
 } 

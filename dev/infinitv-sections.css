@@ -7,7 +7,7 @@
 .sectionTitleTextButton > .sectionTitle,
 .sectionTitleTextButton > .material-icons {padding: 0;margin: 0;}
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     /* Container */
     .sectionTitleContainer-cards,
@@ -30,7 +30,7 @@
     }
 }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     .libraryPage .sectionTitle                  {padding-left: 0;align-content: center;}
     .detailPagePrimaryContainer .sectionTitle   { padding-left: 2.5%; padding-right: 2.5% }
@@ -109,7 +109,7 @@
 }
 .emby-scroller::-webkit-scrollbar { display: none }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop { 
     /* Emby Scroller */
     .emby-scroller                                       {padding: 0;margin: 0 .5vw;}
@@ -166,7 +166,7 @@
     #musicRecommendedPage .itemsContainer.vertical-list { padding: 4em 8vw; }
 }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     /* Emby Scroller */
     .emby-scroller                                        { margin: 0 .5vw; padding: 0; }
