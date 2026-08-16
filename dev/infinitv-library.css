@@ -11,32 +11,12 @@
 
 .layout-desktop .libraryPage                               { padding-top: 3.9em !important }
 
-.layout-desktop .itemDetailPage .itemBackdrop {height: 35vh;}
-.layout-desktop .itemDetailPage .detailLogo { right: 0; }
-
-/* Library Page: Content */
-.layout-desktop .libraryPage .itemsContainer.padded-right-withalphapicker,
-.layout-desktop .libraryPage .padded-right-withalphapicker > .itemsContainer,
-.layout-desktop .libraryPage:has(.itemsViewSettingsContainer) .itemsContainer {
-    padding-left: 1vw;
-    padding-right: 2.5em;
-    padding-top: 3.5em;
-}
-
-.layout-desktop .libraryPage.noSecondaryNavPage > .padded-right {
-    padding-left: 1vw;
-    padding-right: 0em;
-}
-
 .layout-desktop #studiosTab                                { padding: 2vh 2vw }
-.layout-desktop #episodesTab .itemsContainer,
-.layout-desktop #musicRecommendedPage .itemsContainer.vertical-list { padding: 4em 8vw; }
 
 /*  Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-tv .libraryPage                                    { padding: 0 2vw;  }
-.layout-tv .libraryPage                                    {padding: 0 1vw;padding-top: 5em !important;}
+.layout-tv .libraryPage                                    { padding: 0 1vw; padding-top: 5em !important; }
 .layout-tv #studiosTab                                     { margin-left: -1vw }
 .layout-tv .detailImageContainer .card                     { margin-left: 1vw }
 

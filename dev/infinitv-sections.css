@@ -193,6 +193,23 @@
 
 .layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) { margin: 1vw 0vw }
 
+/* Special Items Container */
+.layout-desktop .libraryPage .itemsContainer.padded-right-withalphapicker,
+.layout-desktop .libraryPage .padded-right-withalphapicker > .itemsContainer,
+.layout-desktop .libraryPage:has(.itemsViewSettingsContainer) .itemsContainer {
+    padding-left: 1vw;
+    padding-right: 2.5em;
+    padding-top: 3.5em;
+}
+
+.layout-desktop .libraryPage.noSecondaryNavPage > .padded-right {
+    padding-left: 1vw;
+    padding-right: 0em;
+}
+
+.layout-desktop #episodesTab .itemsContainer,
+.layout-desktop #musicRecommendedPage .itemsContainer.vertical-list { padding: 4em 8vw; }
+
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */

@@ -21,6 +21,12 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
+/* Make backdrop space with logo smaller */ 
+.layout-desktop .itemDetailPage .itemBackdrop { height: 35vh; }
+
+/* Move logo to the right side */
+.layout-desktop .itemDetailPage .detailLogo   { right: 0; }
+
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
