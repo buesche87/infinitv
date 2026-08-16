@@ -91,10 +91,7 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Filter & Sorting Header */
-.selfBackdropPage h1.parentName { font-size: 200%; }
-
-/* Filter & Sorting Header: Item Count */
+/* Item Count */
 .listPaging > span              { margin: 0 .5em; }
 
 /* Filter Indicator */
@@ -109,8 +106,6 @@
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
-
-.layout-desktop .selfBackdropPage h1.parentName { font-size: 175% }
 
 .layout-desktop .itemsViewSettingsContainer,
 .layout-desktop .pageTabContent>.focuscontainer-x,

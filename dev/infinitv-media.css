@@ -8,327 +8,266 @@
 .noBackdropTransparency .detailPagePrimaryContainer,
 .noBackdropTransparency .detailPageSecondaryContainer { background: rgba(0, 0, 0, var(--itemopacity)) !important; }
 
-/* Layout Desktop
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Detail-Ribbon: Fix narrow Desktop layout */
-.layout-desktop .detailPageWrapperContainer   { margin-top: 1.5em !important; }
-
-/* Increase Season Title Text */
-.layout-desktop .selfBackdropPage .itemName   {
-    font-size: 150%;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-/* Make backdrop space with logo smaller */ 
-.layout-desktop .itemDetailPage .itemBackdrop { height: 35vh; }
-
-/* Move logo to the right side */
-.layout-desktop .itemDetailPage .detailLogo   { right: 0; }
-
-/* Layout TV
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Hide some Elements */
-.layout-tv .itemExternalLinks,
-.layout-tv .detailsGroupItem.directorsGroup,
-.layout-tv .detailsGroupItem.writersGroup,
-.layout-tv .detailsGroupItem.studiosGroup,
-.layout-tv .hide+.detailPageWrapperContainer .itemName,
-.layout-tv .endsAt,
-.layout-tv .itemTags { display: none !important; }
-
-/* Increase Season Title Text */
-.layout-tv .selfBackdropPage .itemName {
-    font-size: 175%;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Center Content */
-.layout-mobile .verticalSection .itemsContainer.vertical-wrap {
-    justify-content: center;
-    padding-right: 0em;
-}
-
-/*
-────────────────────────────────────────────────────────────────────────────
-   Media Pages: Detail-Ribbon
-────────────────────────────────────────────────────────────────────────────
-*/
+/* Text Color */
+.selfBackdropPage h1.parentName,
+.selfBackdropPage h3.itemName   { color: rgba(255, 255, 255, 0.8); }
 
 /* Detail-Ribbon */
-.detailRibbon { padding-right: 2% !important; }
+.detailRibbon               { padding-right: 2% !important; }
 
-/* Layout Desktop
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Poster Card */
-.layout-desktop .detailImageContainer .card {
-    left: 3vw;
-    width: 27vw;
-    max-width: 30vw;
-}
-
-/* Detail Ribbon with media buttons */
-.layout-desktop .detailRibbon               { height: 9em; margin-top: -9em; }
-.layout-desktop .infoWrapper                { padding-top: 0.25em; }
-.layout-desktop .mainDetailButtons          { margin-left: 1em; }
-.layout-desktop .itemMiscInfo               {
-    font-size: 125%;
-    margin-top: 0.25em;
-    margin-bottom: 0.6em;
-}
-
-/* Some Small Screen fixes */
-@media all and (max-width: 75em) {
-    .layout-desktop .detailLogo             { display: block; }
-    
-    .layout-desktop .detailImageContainer   {
-        display: flex;
-        position: relative;
-        left: 0%;
-        bottom: 37%;
-        top: -28%;
-        box-shadow: none !important;
-        flex-shrink: 0;
-    }
-    .layout-desktop .detailRibbon           {
-        flex-direction: column;
-        height: 14em;
-        padding-left: 30vw !important;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        left: 0em;
-    }
-    .layout-desktop .infoWrapper            { margin-top: .5em; }
-    .layout-desktop .mainDetailButtons      { margin-left: 2vw; }
-}
-
-/* Layout TV
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Media Infos */
-.layout-tv .itemMiscInfo          {
-    font-size: 125%;
-    margin-top: .6em;
-    margin-bottom: 0.6em;
-}
-
-    .layout-tv .detailRibbon      { padding: 1em 1.5em; }
-
-/* Buttons */
-.layout-tv .mainDetailButtons     { margin: 1.5em 0 .5em 0; }
-
-@media all and (max-width: 52em)  {
-    .layout-tv .mainDetailButtons { font-size: 90%; }
-}
-
-.layout-tv .tagline               { font-weight: 500; }
-
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
-
-.layout-mobile .detailRibbon {
-    margin-top: -1em !important;
-    padding-bottom: 1.25em;
-    padding-right: 3% !important;
-    padding-left: 5%;
-}
-
-/* Card in Detail Ribbon */
-.layout-mobile .detailImageContainer .card.backdropCard {
-    top: 1em;
-    max-width: 33vw;
-}
-
-/* Info Container */
-.layout-mobile .infoWrapper {
-    padding-bottom: 0.15em;
-    padding-left: 38% !important;
-}
-
-/* Buttons */
-.layout-mobile .mainDetailButtons .detailButton {
-    margin-right: .5em !important;
-    margin-left: .5em !important;
-}
-
-/*
-────────────────────────────────────────────────────────────────────────────
-   Media Pages: Content
-────────────────────────────────────────────────────────────────────────────
-*/
-
-/* Media Details > Track Select */
+/* Content */
+.itemDetailsGroup           { margin-top: 0.5em; }
 .detailTrackSelect          { padding: .35em 1.9em .35em .35em !important; }
-
-/* Media Description Text */
 .overview.detail-clamp-text { margin: .5em 0; }
 
-/* Media Description > Director & Studio */
-.itemDetailsGroup           { margin-top: 0.5em; }
 
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Primary Container */
-.layout-desktop .detailPagePrimaryContent     { padding: 0em 1.5vw 1em 32.45vw; }
-.layout-desktop .itemDetailsGroup             { margin: .5em 0 2em 0; }
-.layout-desktop .itemTags                     { padding: 0; margin: 1em 0 !important; }
-.layout-desktop .itemExternalLinks            { margin: 1em 0 .75em 0 !important; }
-.layout-desktop .itemTags > .button-link      { margin-left: .25em; }
+.layout-desktop {
 
-/* Secondary Container */
-.layout-desktop .detailPageSecondaryContainer { padding: 1em 1.5vw !important; }
-.layout-desktop .detailPageSecondaryContainer .detailPageContent { padding: 0; }
+    /* Poster Card */
+    .detailImageContainer .card {
+        left: 3vw;
+        width: 27vw;
+        max-width: 30vw;
+    }
+
+    /* Detail Ribbon with media buttons */
+    .detailRibbon               { height: 9em; margin-top: -9em; }
+    .infoWrapper                { padding-top: 0.25em; }
+    .mainDetailButtons          { margin-left: 1em; }
+    .itemMiscInfo               {
+        font-size: 125%;
+        margin-top: 0.25em;
+        margin-bottom: 0.6em;
+    }
+
+    /* Primary Container */
+    .detailPagePrimaryContent     { padding: 0em 1.5vw 1em 32.45vw; }
+    .itemDetailsGroup             { margin: .5em 0 2em 0; }
+    .itemTags                     { padding: 0; margin: 1em 0 !important; }
+    .itemExternalLinks            { margin: 1em 0 .75em 0 !important; }
+    .itemTags > .button-link      { margin-left: .25em; }
+    
+    /* Secondary Container */
+    .detailPageSecondaryContainer { padding: 1em 1.5vw !important; }
+    .detailPageSecondaryContainer .detailPageContent { padding: 0; }
+
+    /* Detail-Ribbon: Fix narrow Desktop layout */
+    .detailPageWrapperContainer     { margin-top: 1.5em !important; }
+
+    /* Make backdrop space with logo smaller */ 
+    .itemDetailPage .itemBackdrop   { height: 35vh; }
+
+    /* Move logo to the right side */
+    .itemDetailPage .detailLogo     { right: 0; }
+
+    /* Increase Text Size */
+    .selfBackdropPage h1.parentName { font-size: 175%; }
+    .selfBackdropPage h3.itemName   { font-size: 150%; }
+
+    /* Some Small Screen fixes */
+    @media all and (max-width: 75em) {
+        .detailLogo             { display: block; }
+        .detailImageContainer   {
+            display: flex;
+            position: relative;
+            left: 0%;
+            bottom: 37%;
+            top: -28%;
+            box-shadow: none !important;
+            flex-shrink: 0;
+        }
+        .detailRibbon           {
+            flex-direction: column;
+            height: 14em;
+            padding-left: 30vw !important;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            left: 0em;
+        }
+        .infoWrapper            { margin-top: .5em; }
+        .mainDetailButtons      { margin-left: 2vw; }
+    }
+} 
+
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Series */
-.layout-tv [dir=ltr] .detailRibbon {
-    margin-left: 28vw;
-    padding-top: 1em;
-    padding-right: 1vw;
-    padding-bottom: .5em;
-    padding-left: 1em;
-} 
-.layout-tv .detailPagePrimaryContent {
-    margin-left: 28vw;
-    padding-top: 0;
-    padding-right: 1vw;
-    padding-bottom: 1em;
-    padding-left: 1vw;
-}
-.layout-tv .detailPageSecondaryContainer {
-    margin-top: 1em;
-    margin-right: 1vw;
-    margin-bottom: 0;
-    margin-left: 1vw;
-    padding-top: 0;
-}
-.layout-tv .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
-.layout-tv .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0em !important; }
-.layout-tv .trackSelections .selectContainer .selectLabel       { flex-basis: 5em; }
-.layout-tv .detailSection { padding-bottom: .5em; }
+/* Series Page */
+.layout-tv {
 
-/* TV Show Page */
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
-    padding-top: 0em;
-    padding-left: 0;
-}
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent { padding-left: .5em; }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
-    padding-left: .5em;
-    padding-bottom: .5em;
-    margin-top: 0;
-    margin-bottom: 1em;
-}
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup div         { margin: .25em 0 !important; }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                {
-    margin-top: 0;
-    margin-bottom: 2em !important;
+    /* Hide some Elements */
+    .itemExternalLinks,
+    .detailsGroupItem.directorsGroup,
+    .detailsGroupItem.writersGroup,
+    .detailsGroupItem.studiosGroup,
+    .hide+.detailPageWrapperContainer .itemName,
+    .endsAt,
+    .itemTags { display: none !important; }
+
+    /* Increase Text Size */
+    .selfBackdropPage h1.parentName { font-size: 175%; }
+    .selfBackdropPage h3.itemName   { font-size: 150%; }
+
+    /* Detail Ribbon */
+    [dir=ltr] .detailRibbon {
+        margin-left: 28vw;
+        padding-top: 1em;
+        padding-right: 1vw;
+        padding-bottom: .5em;
+        padding-left: 1em;
+    } 
+    .mainDetailButtons     { 
+        margin: 1.5em 0 .5em 0; 
+        @media all and (max-width: 52em) { font-size: 90%; } 
+    }
+    .itemMiscInfo          { font-size: 125%; margin: .6em 0; }
+    .tagline               { font-weight: 500; }
+
+    /* Content */
+    .detailPagePrimaryContent {
+        margin-left: 28vw;
+        padding-top: 0;
+        padding-right: 1vw;
+        padding-bottom: 1em;
+        padding-left: 1vw;
+    }
+    .detailPageSecondaryContainer {
+        margin-top: 1em;
+        margin-right: 1vw;
+        margin-bottom: 0;
+        margin-left: 1vw;
+        padding-top: 0;
+    }
+    .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
+    .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0em !important; }
+    .trackSelections .selectContainer .selectLabel       { flex-basis: 5em; }
+    .detailSection                                       { padding-bottom: .5em; }
+
+    /* Tracks & Subtitles */
+    .trackSelections {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .trackSelections .selectContainer { max-width: 30em; }
+    .trackSelections .selectSubtitlesContainer .selectArrowContainer { right: .5em; }
+    .trackSelections .selectLabelFocused {
+        color: #fff !important;
+        font-weight: 600 !important;
+    }
+
+    /* TV Show Page */
+    .libraryPage:not(.hide):has(.trackSelections.hide) {
+        .detailPagePrimaryContent {
+            padding-top: 0em;
+            padding-left: 0;
+        }
+        .detailSectionContent { padding-left: .5em; }
+        .itemDetailsGroup {
+            padding-left: .5em;
+            padding-bottom: .5em;
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+        .itemDetailsGroup div { margin: .25em 0 !important; }
+        .nextUpSection {
+            margin-top: 0;
+            margin-bottom: 2em !important;
+        }
+        .detailPagePrimaryContainer { margin-right: 1vw; }
+        .detailPageSecondaryContainer { margin-top: 0; }
+    }
+
+    /* Episode List */
+    .libraryPage:not(.hide):has(.listItem-largeImage) {
+        .detailRibbon {
+            margin-bottom: 0 !important;
+            margin-left: 28vw;
+        }
+        .detailPagePrimaryContent {
+            padding-bottom: 0;
+            padding-right: 0 !important;
+            margin-left: 28vw;
+        }
+        .detailSection {
+            padding: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            background: none !important;
+            border:  none !important;
+            backdrop-filter: none !important;  
+        }
+        .itemDetailsGroup {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            padding-top: 0 !important;
+        }
+        .itemGenres { display: none; }
+        #childrenContent { padding-left: .5em;}
+        .detailPageSecondaryContainer {margin-top: .5em !important;}
+    }
 }
 
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContainer   { margin-right: 1vw; }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer { margin-top: 0; }
-
-/* Episode List */
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon {
-    margin-bottom: 0 !important;
-    margin-left: 28vw;
-}
-
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent    {
-    padding-bottom: 0;
-    padding-right: 0 !important;
-    margin-left: 28vw;
-}
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailSection               {
-    padding: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    background: none !important;
-    border:  none !important;
-    backdrop-filter: none !important;
-}
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailSectionContent        {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-}
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .itemDetailsGroup            {
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-    padding-top: 0 !important;
-}
-
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .itemGenres { display: none; }
-
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent { padding-left: .5em;}
-
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPageSecondaryContainer {margin-top: .5em !important;}
-
-/* ?? */
-.layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    margin-top: -2em;
-    margin-bottom: -.5em !important;
-}
-
-/* Music */
-.layout-tv .libraryPage:has(.listItem[data-action="playallfromhere"]) #listChildrenCollapsible .itemsContainer-tv {
-    padding: 0;
-    margin: 0;
-}
-
-.layout-tv #itemDetailPage #listChildrenCollapsible:has(.overflowSquareCard) { margin-bottom: 0 !important; }
-.layout-tv #itemDetailPage #listChildrenCollapsible:has(.overflowSquareCard) .itemsContainer-tv { margin: 0 !important; }
-.layout-tv #musicRecommendedPage .itemsContainer-tv { padding: 0; }
-
-
-/* Tracks & Subtitles */
-.layout-tv .trackSelections {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-.layout-tv .trackSelections .selectContainer { max-width: 30em; }
-.layout-tv .trackSelections .selectSubtitlesContainer .selectArrowContainer { right: .5em; }
-.layout-tv .trackSelections .selectLabelFocused {
-    color: #fff !important;
-    font-weight: 600 !important;
-}
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Primary Container */
-.layout-mobile .detailPagePrimaryContent {
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
-.layout-mobile .detailPagePrimaryContent .trackSelections,
-.layout-mobile .detailPagePrimaryContent .detailSectionContent,
-.layout-mobile .detailPagePrimaryContent .itemDetailsGroup {
-    padding-left: 2vw !important;
-    padding-right: 2vw !important;
+.layout-mobile {
+
+    .detailRibbon {
+        margin-top: -1em !important;
+        padding-bottom: 1.25em;
+        padding-right: 3% !important;
+        padding-left: 5%;
+    }
+    
+    /* Media Poster */
+    .detailImageContainer .card.backdropCard {
+        top: 1em;
+        max-width: 33vw;
+    }
+    
+    /* Info Container */
+    .infoWrapper {
+        padding-bottom: 0.15em;
+        padding-left: 38% !important;
+    }
+    
+    /* Buttons */
+    .mainDetailButtons .detailButton {
+        margin-right: .5em !important;
+        margin-left: .5em !important;
+    }
+
+
+    /* Primary Container */
+    .detailPagePrimaryContent {
+        padding-top: 0em;
+        padding-bottom: 0em;
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+    .detailPagePrimaryContent .trackSelections,
+    .detailPagePrimaryContent .detailSectionContent,
+    .detailPagePrimaryContent .itemDetailsGroup {
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
+    }
+
+    /* Tracks & Subtitles */
+    .layout-mobile .trackSelections { padding-top: 1em }
+
+    /* Secondary Container */
+    .detailPageSecondaryContainer                    { padding-top: 0em !important }
+    .detailPageSecondaryContainer .detailPageContent {
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
 }
 
-/* Tracks & Subtitles */
-.layout-mobile .trackSelections { padding-top: 1em }
-
-/* Secondary Container */
-.layout-mobile .detailPageSecondaryContainer { padding-top: 0em !important }
-
-.layout-mobile .detailPageSecondaryContainer .detailPageContent {
-    padding-left: 3% !important;
-    padding-right: 3% !important;
-}
 
 /*
 ────────────────────────────────────────────────────────────────────────────
