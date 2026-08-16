@@ -5,7 +5,7 @@
 .layout-tv .detailRibbon,
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection,
+.layout-tv .libraryPage:not(.hide):has(.trackSelections:not(.hide)) .detailSection,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection,
@@ -56,12 +56,11 @@
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {padding: 1em 1.5em;}
 
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
-    /* padding-top: .5em; */
     padding-bottom: 0;
     margin-top: 1em;
     padding: 0;
 }
-.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {
+.layout-tv .libraryPage:not(.hide):has(.trackSelections:not(.hide)) .detailSection {
     padding: .5em 1.5em;
     margin: 0;
 }
@@ -83,6 +82,18 @@
 }
 .layout-tv .libraryPage:not(.hide):has(.detailSectionContent > .overview.hide) .itemDetailsGroup {
     display: none;
+}
+
+.layout-tv .libraryPage:not(.hide):has(.detailSectionContent > .overview.hide) .detailSectionContent {
+    border: none !important;
+}
+
+
+.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailSection {
+    background: none;
+    border: none;
+    backdrop-filter: none;
+    padding: 0;
 }
 
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                              { margin-bottom: 3em !important; }
