@@ -77,7 +77,8 @@
     .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
         border-bottom: none;
         margin: 0;
-        padding: 0 1.5em;
+        padding: 0em 1.5em .5em 1.5em;
+        /* padding-bottom: .5em; */
     }
     .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
         border-top: none;
