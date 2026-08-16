@@ -193,8 +193,6 @@
 
 .layout-desktop .detailPagePrimaryContainer .itemsContainer:has(.listItem-largeImage) { margin: 1vw 0vw }
 
-/* Items Container with listItems */
-.layout-desktop .pageTabContent .itemsContainer:has(.listItem-border) { padding: .5em 8% !important }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
