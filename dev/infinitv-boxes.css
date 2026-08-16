@@ -5,7 +5,7 @@
 .layout-tv .detailRibbon,
 .layout-tv .detailPageSecondaryContainer .detailPageContent,
 .layout-tv .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
-.layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailSection,
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup,
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection,
@@ -56,9 +56,14 @@
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {padding: 1em 1.5em;}
 
 .layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
+    /* padding-top: .5em; */
     padding-bottom: 0;
     margin-top: 1em;
     padding: 0;
+}
+.layout-tv .libraryPage:not(.hide):has(.trackSelections) .detailSection {
+    padding: .5em 1.5em;
+    margin: 0;
 }
 
 /* TV Show */
@@ -84,11 +89,6 @@
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer               { margin-top: 2em; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection                              { margin-left: 0; margin-right: 0; }
 .layout-tv .libraryPage:not(.hide):has(.trackSelections.hide) #listChildrenCollapsible .itemsContainer-tv { margin: 0 1em; }
-
-
-.layout-tv .libraryPage:not(.hide):has(.detailSectionContent > .overview.hide) .detailSectionContent {
-    border: none !important;
-}
 
 /* Episode List */
 .layout-tv .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent                   { background: none; border-color: transparent; }
