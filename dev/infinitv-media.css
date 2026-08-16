@@ -8,15 +8,14 @@
 .noBackdropTransparency .detailPagePrimaryContainer,
 .noBackdropTransparency .detailPageSecondaryContainer { background: rgba(0, 0, 0, var(--itemopacity)) !important; }
 
-
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Detail-Ribbon: Fix narrow Desktop layout */
-.layout-desktop .detailPageWrapperContainer {margin-top: 1.5em !important;}
+.layout-desktop .detailPageWrapperContainer   { margin-top: 1.5em !important; }
 
 /* Increase Season Title Text */
-.layout-desktop .selfBackdropPage .itemName {
+.layout-desktop .selfBackdropPage .itemName   {
     font-size: 150%;
     color: rgba(255, 255, 255, 0.8);
 }
