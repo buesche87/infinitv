@@ -1,8 +1,7 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
    Media Pages
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Content Background without Backdrops */
 .noBackdropTransparency .detailPagePrimaryContainer,
@@ -20,10 +19,7 @@
 .detailTrackSelect          { padding: .35em 1.9em .35em .35em !important; }
 .overview.detail-clamp-text { margin: .5em 0; }
 
-
-/* Layout Desktop
-──────────────────────────────────────────────────────────────────────────── */
-
+/* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
 
     /* Poster Card */
@@ -92,11 +88,7 @@
     }
 } 
 
-
-/* Layout TV
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Series Page */
+/* Layout TV ─────────────────────────────────────────────────────────────── */
 .layout-tv {
 
     /* Hide some Elements */
@@ -159,7 +151,7 @@
         font-weight: 600 !important;
     }
 
-    /* TV Show Page */
+    /* TV Show Page ------------------------------------ */
     .libraryPage:not(.hide):has(.trackSelections.hide) {
         .detailPagePrimaryContent {
             padding-top: 0em;
@@ -211,10 +203,7 @@
     }
 }
 
-
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
-
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
     .detailRibbon {
@@ -268,12 +257,10 @@
     }
 }
 
-
 /*
 ────────────────────────────────────────────────────────────────────────────
    Media Pages: Image Search
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* ListItem Color on Hover */
 .paperList .listItem:hover { color: var(--accent100) }
@@ -285,8 +272,6 @@
     background-color: rgb(0 0 0 / 0%) !important;
     border: var(--buttonborder);
 }
-
-.layout-tv .availableImagesList .portraitCard .cardBox { margin: 1em .75em !important }
 
 /* Align card image */
 .dialogContentInner .portraitCard .cardContent .cardImageContainer { top: -.6em }
@@ -303,3 +288,7 @@
 /* Buttons */
 #backdropsContainer .paper-icon-button-light { margin: .1em }
 
+/* Layout TV ─────────────────────────────────────────────────────────────── */
+.layout-tv {
+    .availableImagesList .portraitCard .cardBox { margin: 1em .75em !important }
+} 

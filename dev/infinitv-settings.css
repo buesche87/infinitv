@@ -22,8 +22,7 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
    Settings Pages
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Settings Pages: Center content and Text */
 #myPreferencesMenuPage,
@@ -52,54 +51,77 @@
 #homeScreenPreferencesPage .btnSave,
 #languagePreferencesPage .btnSave                           { margin-top: 2em; }
 
-/*  No text wrap */
-.layout-tv .userPreferencesPage .listItemBodyText,
-.layout-desktop .userPreferencesPage .listItemBodyText      { white-space: nowrap; }
+.layout-desktop, 
+.layout-tv {
+    /*  No text wrap */
+    .userPreferencesPage .listItemBodyText      { white-space: nowrap; }
 
-/* Settings Page: Box size */
-.layout-desktop #myPreferencesMenuPage .readOnlyContent,
-.layout-tv #myPreferencesMenuPage .readOnlyContent          { display: flex; max-width: 95%; }
+    /* Settings Page: Box size */
+    #myPreferencesMenuPage .readOnlyContent          { display: flex; max-width: 95%; }
+    #myPreferencesMenuPage > .padded-left            { padding-top: 0; }
+}
 
-.layout-desktop #myPreferencesMenuPage > .padded-left,
-.layout-tv #myPreferencesMenuPage > .padded-left            { padding-top: 0; }
+.layout-desktop {
+    #myPreferencesMenuPage .verticalSection     { margin: 1em 2em; }
+}
 
-.layout-desktop #myPreferencesMenuPage .verticalSection     { margin: 1em 2em; }
-.layout-tv #myPreferencesMenuPage .verticalSection          { margin: 2em; }
+.layout-tv {
+    #myPreferencesMenuPage .verticalSection          { margin: 2em; }
+    #clientSettingsPage                              { scrollbar-width: none; }
+} 
 
-.layout-tv #clientSettingsPage                              { scrollbar-width: none; }
+/*
+────────────────────────────────────────────────────────────────────────────
+   User Profile
+──────────────────────────────────────────────────────────────────────────── */
 
-/* User Profile: Form Alignment */
+/* Form Alignment */
 .updatePasswordForm br                                      { display: none; }
 .updatePasswordForm .inputContainer                         { margin-bottom: 1em; }
 .updatePasswordForm .emby-button.block                      { margin-top: 2em; }
 
-/* User Profile: Username bold */
+/* Username bold */
 h2.username                                                 {
     margin-top: 0px;
     font-weight: 600;
     color: #fff;
 }
 
-/* Quick Connect: Box size */
-.layout-desktop #quickConnectPreferencesPage form,
-.layout-tv #quickConnectPreferencesPage form                { padding: 1em 4em 2em 4em; }
+/*
+────────────────────────────────────────────────────────────────────────────
+   Quick Connect
+──────────────────────────────────────────────────────────────────────────── */
 
-/* Quick Connect: Code input size */
-.layout-desktop #txtQuickConnectCode,
-.layout-tv #txtQuickConnectCode                             {
-    padding: 1em 0;
-    text-align: center;
-    font-size: 1.2em;
+.layout-desktop, 
+.layout-tv {
+    /* Box size */
+    #quickConnectPreferencesPage form                { padding: 1em 4em 2em 4em; }
+
+    /* Code input size */
+    #txtQuickConnectCode                             {
+        padding: 1em 0;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /* Label for input */
+    .inputLabel[for="txtQuickConnectCode"]           { font-size: 1.2em; padding: .5em; }
 }
 
-/* Quick Connect: Label for input */
-.layout-desktop .inputLabel[for="txtQuickConnectCode"],
-.layout-tv .inputLabel[for="txtQuickConnectCode"]           { font-size: 1.2em; padding: .5em; }
+/*
+────────────────────────────────────────────────────────────────────────────
+   Subtitle Settings
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Subtitles: Preview-Box color */
 .subtitleappearance-preview { 
     background: linear-gradient(140deg,var(--accent100),#111) !important;
 }
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Client Settings
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Client Settings: Restart hint */
 #clientSettingsPage .infoBanner {
@@ -123,156 +145,156 @@ h2.username                                                 {
     border-radius: var(--rounding-system);
 }
 
-/* Layout Desktop - Settings Pages
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Desktop ────────────────────────────────────────────────────────── */
+.layout-desktop {
+    /* Content alignment */
+    .userPreferencesPage                    { padding-top: 5em !important; }
+    #myPreferencesMenuPage .readOnlyContent { padding: 1em; }
+    #userProfilePage .padded-left           { padding: 2em 4em; height: 28em; }
+    #clientSettingsPage form,
+    #displayPreferencesPage form,
+    #homeScreenPreferencesPage form,
+    #languagePreferencesPage form,
+    #controlsPreferencesPage form           { padding: 1em 4em; }
 
-/* Content alignment */
-.layout-desktop .userPreferencesPage                    { padding-top: 5em !important; }
-.layout-desktop #myPreferencesMenuPage .readOnlyContent { padding: 1em; }
-.layout-desktop #userProfilePage .padded-left           { padding: 2em 4em; height: 28em; }
-.layout-desktop #clientSettingsPage form,
-.layout-desktop #displayPreferencesPage form,
-.layout-desktop #homeScreenPreferencesPage form,
-.layout-desktop #languagePreferencesPage form,
-.layout-desktop #controlsPreferencesPage form           { padding: 1em 4em; }
+    /* Save & Cancel Button */
+    .userPreferencesPage .btnSave,
+    .userPreferencesPage .button-cancel     {
+        margin-top: 2em;
+        margin-left: -1.75em;
+        width: 107%;
+        margin-bottom: 1.5em;
+    }
 
-/* Save & Cancel Button */
-.layout-desktop .userPreferencesPage .btnSave,
-.layout-desktop .userPreferencesPage .button-cancel     {
-    margin-top: 2em;
-    margin-left: -1.75em;
-    width: 107%;
-    margin-bottom: 1.5em;
+    /* Section Titles in Main Menu */
+    #myPreferencesMenuPage .sectionTitle    {
+        padding-left: 0 !important;
+        margin-top: 0;
+        padding-bottom: 0.5em;
+        border-bottom: var(--buttonborder);
+        border-radius: 0 !important;
+    }
 }
 
-/* Section Titles in Main Menu */
-.layout-desktop #myPreferencesMenuPage .sectionTitle    {
-    padding-left: 0 !important;
-    margin-top: 0;
-    padding-bottom: 0.5em;
-    border-bottom: var(--buttonborder);
-    border-radius: 0 !important;
+/* Layout TV ─────────────────────────────────────────────────────────────── */
+.layout-tv {
+    #clientSettingsPage form,
+    #displayPreferencesPage form,
+    #homeScreenPreferencesPage form,
+    #languagePreferencesPage form,
+    #controlsPreferencesPage form           { padding: .5em 4em 2em 4em; }
+
+    /* Settings */
+    #myPreferencesMenuPage > .padded-left   { padding-top: 0; }
+    #myPreferencesMenuPage .readOnlyContent { padding: 0 1em; }
+    #myPreferencesMenuPage .verticalSection { margin: 2em; }
+    #myPreferencesMenuPage .sectionTitle    { text-align: center; }
+
+    /* User Profile */
+    #userProfilePage .padded-left           { padding: 3em 4em; height: 26em; }
+
+    /* Section Titles */
+    .settingsContainer .sectionTitle,
+    .homeScreenSettingsContainer .sectionTitle,
+    #controlsPreferencesPage .sectionTitle {
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .5em;
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+    #myPreferencesMenuPage .sectionTitle    {
+        padding-left: 0 !important;
+        margin-top: 0;
+        padding-bottom: 0.5em;
+        border-bottom: var(--buttonborder);
+        border-radius: 0 !important;
+    }
 }
 
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+    .userPreferencesPage .settingsContainer,
+    .userPreferencesPage .homeScreenSettingsContainer {
+        background: rgba(0, 0, 0, var(--headeropacity));
+        border-radius: 0;
+    }
 
-/* Layout TV - Settings Pages
-──────────────────────────────────────────────────────────────────────────── */
+    /* Background */
+    #myPreferencesMenuPage,
+    #userProfilePage,
+    #quickConnectPreferencesPage,
+    #controlsPreferencesPage                          {  background: rgba(0, 0, 0, var(--headeropacity)); }
+    .userPreferencesPage > .padded-left               {  padding-top: 0; }
+    .userPreferencesPage > .padded-left > .readOnlyContent,
+    .userPreferencesPage > .padded-left > form        {  width: 90%; }
+    .userPreferencesPage .settingsContainer,
+    .userPreferencesPage .homeScreenSettingsContainer {  padding-top: 1em; margin-top: -1em; }
 
-.layout-tv #clientSettingsPage form,
-.layout-tv #displayPreferencesPage form,
-.layout-tv #homeScreenPreferencesPage form,
-.layout-tv #languagePreferencesPage form,
-.layout-tv #controlsPreferencesPage form           { padding: .5em 4em 2em 4em; }
+    /* Main Settings Page */
+    #myPreferencesMenuPage > .padded-left             {  width: 100%; }
+    #myPreferencesMenuPage .sectionTitle              {  padding-left: 0em !important; font-weight: 600; }
 
-/* Settings */
-.layout-tv #myPreferencesMenuPage > .padded-left   { padding-top: 0; }
-.layout-tv #myPreferencesMenuPage .readOnlyContent { padding: 0 1em; }
-.layout-tv #myPreferencesMenuPage .verticalSection { margin: 2em; }
-.layout-tv #myPreferencesMenuPage .sectionTitle    { text-align: center; }
+    /* User Profile */
+    #userProfilePage                                  {  padding: 5em 5% !important; }
+    #userProfilePage > .padded-left                   {  padding: 0; width: 90%; }
+    #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) { margin-left: 2em !important; margin-right: 0 !important; }
 
-/* User Profile */
-.layout-tv #userProfilePage .padded-left           { padding: 3em 4em; height: 26em; }
+    /* Quick Connect */
+    #quickConnectPreferencesPage                      {  padding-top: 5em !important; }
+    #quickConnectPreferencesPage > .padded-left       {  display: flex; justify-content: center; }
 
-/* Section Titles */
-.layout-tv .settingsContainer .sectionTitle,
-.layout-tv .homeScreenSettingsContainer .sectionTitle,
-.layout-tv #controlsPreferencesPage .sectionTitle {
-    padding-top: .25em;
-    padding-bottom: .25em;
-    padding-left: .5em;
-    margin-left: -1em;
-    margin-right: -1em;
-}
-.layout-tv #myPreferencesMenuPage .sectionTitle    {
-    padding-left: 0 !important;
-    margin-top: 0;
-    padding-bottom: 0.5em;
-    border-bottom: var(--buttonborder);
-    border-radius: 0 !important;
-}
+    /* Section Titles */
+    .settingsContainer .sectionTitle,
+    .homeScreenSettingsContainer .sectionTitle,
+    #controlsPreferencesPage .sectionTitle            {
+        margin-left: -.5em;
+        margin-right: -.5em;
+        padding-left: .5em;
+    }
 
-/* Layout Mobile - Settings Pages
-──────────────────────────────────────────────────────────────────────────── */
-
-.layout-mobile .userPreferencesPage .settingsContainer,
-.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {
-    background: rgba(0, 0, 0, var(--headeropacity));
-    border-radius: 0;
-}
-
-/* Background */
-.layout-mobile #myPreferencesMenuPage,
-.layout-mobile #userProfilePage,
-.layout-mobile #quickConnectPreferencesPage,
-.layout-mobile #controlsPreferencesPage                          {  background: rgba(0, 0, 0, var(--headeropacity)); }
-.layout-mobile .userPreferencesPage > .padded-left               {  padding-top: 0; }
-.layout-mobile .userPreferencesPage > .padded-left > .readOnlyContent,
-.layout-mobile .userPreferencesPage > .padded-left > form        {  width: 90%; }
-.layout-mobile .userPreferencesPage .settingsContainer,
-.layout-mobile .userPreferencesPage .homeScreenSettingsContainer {  padding-top: 1em; margin-top: -1em; }
-
-/* Main Settings Page */
-.layout-mobile #myPreferencesMenuPage > .padded-left             {  width: 100%; }
-.layout-mobile #myPreferencesMenuPage .sectionTitle              {  padding-left: 0em !important; font-weight: 600; }
-
-/* User Profile */
-.layout-mobile #userProfilePage                                  {  padding: 5em 5% !important; }
-.layout-mobile #userProfilePage > .padded-left                   {  padding: 0; width: 90%; }
-
-.layout-mobile #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) { margin-left: 2em !important; margin-right: 0 !important; }
-
-/* Quick Connect */
-.layout-mobile #quickConnectPreferencesPage                      {  padding-top: 5em !important; }
-.layout-mobile #quickConnectPreferencesPage > .padded-left       {  display: flex; justify-content: center; }
-
-/* Section Titles */
-.layout-mobile .settingsContainer .sectionTitle,
-.layout-mobile .homeScreenSettingsContainer .sectionTitle,
-.layout-mobile #controlsPreferencesPage .sectionTitle            {
-    margin-left: -.5em;
-    margin-right: -.5em;
-    padding-left: .5em;
-}
-
-/* List Items */
-.layout-mobile .userPreferencesPage .listItem-border             {
-    border: var(--buttonborder) !important;
-    margin-bottom: .6em !important;
-}
-.layout-mobile .userPreferencesPage .listItem                    { padding-right: 1.5em !important; }
-.layout-mobile .userPreferencesPage .listItemIcon                {
-    width: 2% !important;
-    text-align: left;
-    margin-right: 0;
-    flex: auto;
-    padding-right: .5em;
-}
-.layout-mobile .userPreferencesPage .listItemBody                {
-    flex: auto;
-    padding-top: .5em;
-    padding-bottom: .5em;
-    padding-left: .5em;
-    text-align: left;
+    /* List Items */
+    .userPreferencesPage .listItem-border             {
+        border: var(--buttonborder) !important;
+        margin-bottom: .6em !important;
+    }
+    .userPreferencesPage .listItem                    { padding-right: 1.5em !important; }
+    .userPreferencesPage .listItemIcon                {
+        width: 2% !important;
+        text-align: left;
+        margin-right: 0;
+        flex: auto;
+        padding-right: .5em;
+    }
+    .userPreferencesPage .listItemBody                {
+        flex: auto;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: .5em;
+        text-align: left;
+    }
 }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
    Search Page
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 #searchPage .searchFieldsInner { padding-bottom: 1em; }
 
 /* Section Titles */
-#searchPage .sectionTitle      {
+#searchPage .sectionTitle {
     padding: .3em 0;
     margin: .5em 0;
     text-align: center;
     font-weight: 600;
 }
 
-.layout-mobile #episodesTab .itemsContainer { margin-bottom: 1em !important; }
-.layout-mobile #studiosTab .itemsContainer  { margin-top: 1em !important; }
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+    #episodesTab .itemsContainer { margin-bottom: 1em !important; }
+    #studiosTab .itemsContainer  { margin-top: 1em !important; }
+}
 
 /*
 ────────────────────────────────────────────────────────────────────────────

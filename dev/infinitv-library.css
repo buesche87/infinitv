@@ -1,72 +1,57 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
    Library Pages
-────────────────────────────────────────────────────────────────────────────
-*/
-
-.standalonePage                                            { padding-top: 5.5em !important }
-
-/*  Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-desktop .libraryPage                               { padding-top: 3.9em !important }
+.standalonePage    { padding-top: 5.5em !important }
 
-.layout-desktop #studiosTab                                { padding: 2vh 2vw }
-
-/*  Layout TV
-──────────────────────────────────────────────────────────────────────────── */
-
-.layout-tv .libraryPage                                    { padding: 0 1vw; padding-top: 5em !important; }
-.layout-tv #studiosTab                                     { margin-left: -1vw }
-.layout-tv .detailImageContainer .card                     { margin-left: 1vw }
-
-/* Library Pages: Content with Alphapicker */
-.layout-tv .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
-@media(min-width: 50em)                                    {
-    .layout-tv .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 0vw; }
+/*  Layout Desktop ───────────────────────────────────────────────────────── */
+.layout-desktop {
+    .libraryPage   { padding-top: 3.9em !important }
+    #studiosTab    { padding: 2vh 2vw }
 }
 
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
+/*  Layout TV ────────────────────────────────────────────────────────────── */
+.layout-tv {
+    .libraryPage                                    { padding: 0 1vw; padding-top: 5em !important; }
+    #studiosTab                                     { margin-left: -1vw }
 
-.layout-mobile .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
-.layout-mobile #itemDetailPage                                { padding-top: 1em }
-.layout-mobile .itemBackdrop                                  { margin-top: 0 }
+    .detailImageContainer .card                     { margin-left: 1vw }
 
-/* Library Pages: Content with Alphapicker */
-.layout-mobile .libraryPage .padded-right-withalphapicker     { padding-left: 2vw; padding-right: 6vw }
-
-.layout-mobile .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.3em !important }
-
-@media (min-width: 50em)                                      {
-    .layout-mobile .itemBackdrop                              { margin-top: 3.9rem }
-    .layout-mobile .libraryPage.noSecondaryNavPage            { padding-top: 4em !important }
-    .layout-mobile .libraryPage .padded-right-withalphapicker { padding-left: 2vw;  padding-right: 4vw }
+    /* Library Pages: Content with Alphapicker */
+    .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
+    @media(min-width: 50em)                                    {
+        .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 0vw; }
+    }
 }
-@media (min-width: 100em)                                     {
-    .layout-mobile .libraryPage                               { padding-top: 4.3em !important }
-    .layout-mobile .libraryPage.noSecondaryNavPage            { padding-top: 4.3em !important }
-    .layout-mobile .libraryPage:not(.noSecondaryNavPage)      { padding-top: 4.3em !important }
+
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+    .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
+    #itemDetailPage                                { padding-top: 1em }
+    .itemBackdrop                                  { margin-top: 0 }
+
+    /* Library Pages: Content with Alphapicker */
+    .libraryPage .padded-right-withalphapicker     { padding-left: 2vw; padding-right: 6vw }
+
+    .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.3em !important }
+
+    @media (min-width: 50em)                                      {
+        .itemBackdrop                              { margin-top: 3.9rem }
+        .libraryPage.noSecondaryNavPage            { padding-top: 4em !important }
+        .libraryPage .padded-right-withalphapicker { padding-left: 2vw;  padding-right: 4vw }
+    }
+    @media (min-width: 100em)                                     {
+        .libraryPage                               { padding-top: 4.3em !important }
+        .libraryPage.noSecondaryNavPage            { padding-top: 4.3em !important }
+        .libraryPage:not(.noSecondaryNavPage)      { padding-top: 4.3em !important }
+    }
 }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
    Alphabet Picker
-────────────────────────────────────────────────────────────────────────────
-*/
-
-/* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
-
-.layout-desktop .alphaPicker    { top: 128px; bottom: auto }
-
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
-/* Stretch Alphabet Picker */
-.layout-mobile .alphaPicker     { bottom: 2em }
-@media only screen and (max-height: 767px) and (orientation: landscape) {
-    .layout-mobile .alphaPicker { bottom: 1em }
-}
 
 /* Alphabet Picker: Buttons */
 .alphaPickerButton              { height: 1.6em }
@@ -85,11 +70,24 @@
     font-weight: 600;
 }
 
+/* Layout Desktop ────────────────────────────────────────────────────────── */
+.layout-desktop {
+    .alphaPicker    { top: 128px; bottom: auto }
+}
+
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+    /* Stretch Alphabet Picker */
+    .alphaPicker     { bottom: 2em }
+    @media only screen and (max-height: 767px) and (orientation: landscape) {
+        .layout-mobile .alphaPicker { bottom: 1em }
+    }
+}
+
 /*
 ────────────────────────────────────────────────────────────────────────────
    Library Pages: Sorting & Filter
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Item Count */
 .listPaging > span              { margin: 0 .5em; }
@@ -104,98 +102,97 @@
     cursor: pointer;
 }
 
-/* Layout Desktop
-──────────────────────────────────────────────────────────────────────────── */
-
-.layout-desktop .itemsViewSettingsContainer,
-.layout-desktop .pageTabContent>.focuscontainer-x,
-.layout-desktop .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
-.layout-desktop .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)) {
-    z-index: 1;
-    height: 3em;
-    align-content: center;
-    position: fixed;
-    background-color: hsl(0deg 0% 62.03% / 17%);
-    backdrop-filter: var(--blur);
-    border-radius: var(--rounding-system);
-    padding: 0;
-}
-
-/* Filterbar with buttons (top) */
-.layout-desktop .itemsViewSettingsContainer,
-.layout-desktop .pageTabContent>.focuscontainer-x:has(>button) { justify-self: center; }
-
-/* Paging-bar (bottom right) */
-.layout-desktop .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
-.layout-desktop .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
-.layout-desktop .pageTabContent>.focuscontainer-x:not(:has(>button))  {
-    bottom: 0;
-    right: .5em;
-    margin-bottom: .5em;
-}
-
-/* Padding for paging */
-.layout-desktop .listPaging > span { padding: 0 .556em; }
-
-
-/* Layout TV
-──────────────────────────────────────────────────────────────────────────── */
-
-.layout-tv .itemsViewSettingsContainer,
-.layout-tv .pageTabContent>.focuscontainer-x {
-    border-radius: var(--rounding-system) !important;
-    padding: 0.05em;
-    min-height: 2em;
-    margin-bottom: .5em;
-}
-
-.layout-tv #episodesTab > .focuscontainer-x,
-.layout-tv #songsTab > .focuscontainer-x { margin-bottom: 1.5em }
-
 /* Filter & Sorting Header: Buttons */
 .pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important }
 
+/* Layout Desktop ─────────────────────────────────────────────────────────── */
+.layout-desktop {
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x,
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)) {
+        z-index: 1;
+        height: 3em;
+        align-content: center;
+        position: fixed;
+        background-color: hsl(0deg 0% 62.03% / 17%);
+        backdrop-filter: var(--blur);
+        border-radius: var(--rounding-system);
+        padding: 0;
+    }
+
+    /* Filterbar with buttons (top) */
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x:has(>button) { justify-self: center; }
+
+    /* Paging-bar (bottom right) */
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
+    .pageTabContent>.focuscontainer-x:not(:has(>button))  {
+        bottom: 0;
+        right: .5em;
+        margin-bottom: .5em;
+    }
+
+    /* Padding for paging */
+    .listPaging > span { padding: 0 .556em; }
+}
+
+/* Layout TV ──────────────────────────────────────────────────────────────── */
+.layout-tv {
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x {
+        border-radius: var(--rounding-system) !important;
+        padding: 0.05em;
+        min-height: 2em;
+        margin-bottom: .5em;
+    }
+
+    #episodesTab > .focuscontainer-x,
+    #songsTab > .focuscontainer-x { margin-bottom: 1.5em }
+}
+
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
+.layout-mobile {
+    /* Filter & Sorting Header: Buttons */
+    .pageTabContent .focuscontainer-x .paper-icon-button-light { margin: 0 .2em; }
 
-/* Filter & Sorting Header: Buttons */
-.layout-mobile .pageTabContent .focuscontainer-x .paper-icon-button-light { margin: 0 .2em; }
+    /* Filter & Sorting Header */
+    .itemsViewSettingsContainer { margin-left: -3.3%; margin-right: -3.3% }
 
-/* Filter & Sorting Header */
-.layout-mobile .itemsViewSettingsContainer { margin-left: -3.3%; margin-right: -3.3% }
+    .itemsViewSettingsContainer,
+    .pageTabContent > .focuscontainer-x {
+        padding: 0;
+        margin-bottom: 1em;
+        margin-top: 0;
+    }
+    .pageTabContent > .focuscontainer-x:not(:has(.paper-icon-button-light)) {
+        margin-top: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
 
-.layout-mobile .itemsViewSettingsContainer,
-.layout-mobile .pageTabContent > .focuscontainer-x {
-    padding: 0;
-    margin-bottom: 1em;
-    margin-top: 0;
-}
-.layout-mobile .pageTabContent > .focuscontainer-x:not(:has(.paper-icon-button-light)) {
-    margin-top: 1em;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
+    .padded-right-withalphapicker .focuscontainer-x.padded-right,
+    .padded-right-withalphapicker .itemsViewSettingsContainer {
+        padding: 0;
+        margin-left: -3.3%;
+        margin-right: -6.4%;
+        margin-bottom: 1em;
+        margin-top: 0;
+    }
 
-.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right,
-.layout-mobile .padded-right-withalphapicker .itemsViewSettingsContainer {
-    padding: 0;
-    margin-left: -3.3%;
-    margin-right: -6.4%;
-    margin-bottom: 1em;
-    margin-top: 0;
-}
-
-.layout-mobile .padded-right-withalphapicker .focuscontainer-x.padded-right {
-    background-color: var(--bgwhite10);
-    height: 3em;
-    margin-top: 1em;
+    .padded-right-withalphapicker .focuscontainer-x.padded-right {
+        background-color: var(--bgwhite10);
+        height: 3em;
+        margin-top: 1em;
+    }
 }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
    Library Page: Multi-Select
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Multi-Select Dialog */
 .itemSelectionPanel {
@@ -213,36 +210,36 @@
     border-color: var(--accent60) !important;
 }
 
-/* Layout Desktop
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Desktop ─────────────────────────────────────────────────────────── */
+.layout-desktop {
+    .selectionCommandsPanel {
+        top: 7.65em;
+        left:  auto;
+        right: 4.3em;
+        max-width: 10em;
+        margin: 0 auto;
+        padding: 0 .5em;
+    }
 
-.layout-desktop .selectionCommandsPanel {
-    top: 7.65em;
-    left:  auto;
-    right: 4.3em;
-    max-width: 10em;
-    margin: 0 auto;
-    padding: 0 .5em;
-}
-
-/* Multi-Select Dialog Buttons */
-.layout-desktop .itemSelectionCount {
-    font-size: 140%;
-    font-weight: 600;
-    order: 1;
-    margin: 0em .5em;
-    margin-bottom: .1em;
-    min-width: 1em;
-    text-align: center;
-    cursor: default;
-}
-.layout-desktop .btnSelectionPanelOptions {
-    order: 2;
-    margin: 0em .5em;
-    min-width: 1em;
-}
-.layout-desktop .btnCloseSelectionPanel {
-    order: 3;
-    margin: 0em .5em;
-    min-width: 1em;
+    /* Multi-Select Dialog Buttons */
+    .itemSelectionCount {
+        font-size: 140%;
+        font-weight: 600;
+        order: 1;
+        margin: 0em .5em;
+        margin-bottom: .1em;
+        min-width: 1em;
+        text-align: center;
+        cursor: default;
+    }
+    .btnSelectionPanelOptions {
+        order: 2;
+        margin: 0em .5em;
+        min-width: 1em;
+    }
+    .btnCloseSelectionPanel {
+        order: 3;
+        margin: 0em .5em;
+        min-width: 1em;
+    }
 }
