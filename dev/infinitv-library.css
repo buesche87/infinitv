@@ -9,19 +9,15 @@
 /*  Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* .layout-desktop .libraryPage, */
 .layout-desktop .libraryPage                               { padding-top: 3.9em !important }
 
 .layout-desktop .itemDetailPage .itemBackdrop {height: 35vh;}
 .layout-desktop .itemDetailPage .detailLogo { right: 0; }
 
-
-/* Library Page: Studios Tab workaround */
-.layout-desktop #studiosTab                                { padding: 2vh 2vw }
-
 /* Library Page: Content */
 .layout-desktop .libraryPage .itemsContainer.padded-right-withalphapicker,
-.layout-desktop .libraryPage .padded-right-withalphapicker > .itemsContainer {
+.layout-desktop .libraryPage .padded-right-withalphapicker > .itemsContainer,
+.layout-desktop .libraryPage:has(.itemsViewSettingsContainer) .itemsContainer {
     padding-left: 1vw;
     padding-right: 2.5em;
     padding-top: 3.5em;
@@ -32,10 +28,9 @@
     padding-right: 0em;
 }
 
+.layout-desktop #studiosTab                                { padding: 2vh 2vw }
 .layout-desktop #episodesTab .itemsContainer,
-.layout-desktop #musicRecommendedPage .itemsContainer.vertical-list {
-    padding: 4em 8vw;
-}
+.layout-desktop #musicRecommendedPage .itemsContainer.vertical-list { padding: 4em 8vw; }
 
 /*  Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
@@ -136,20 +131,18 @@
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-
 .layout-desktop .itemsViewSettingsContainer,
 .layout-desktop .pageTabContent>.focuscontainer-x,
-.layout-desktop .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center {
+.layout-desktop .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-cente,
+.layout-desktop .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)) {
     z-index: 1;
     height: 3em;
-    margin-bottom: .5em;
+    align-content: center;
     position: fixed;
     background-color: hsl(0deg 0% 62.03% / 17%);
     backdrop-filter: var(--blur);
     border-radius: var(--rounding-system);
     padding: 0;
-    padding-left: .5em;
-    padding-right: .5em;
 }
 
 .layout-desktop .itemsViewSettingsContainer,
@@ -157,13 +150,22 @@
     justify-self: center;
 }
 
+
+
+.layout-desktop .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
 .layout-desktop .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
 .layout-desktop .pageTabContent>.focuscontainer-x:not(:has(>button))  {
+    position: fixed;
     bottom: 0;
     right: .5em;
+    margin-bottom: .5em;
 }
 
-.layout-desktop #moviesPage .itemsContainer { margin-top: .5em; }
+.layout-desktop .listPaging > span {
+    padding: 0 .556em;
+}
+
+
 
 
 /* Layout TV

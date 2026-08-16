@@ -24,7 +24,7 @@
 
 /* Text & Icon */
 .sectionTitleTextButton > .sectionTitle,
-.sectionTitleTextButton > .material-icons { padding: 0; margin: 0 }
+.sectionTitleTextButton > .material-icons {padding: 0;margin: 0;}
 
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
@@ -52,13 +52,13 @@
 /* Layout Desktop
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-desktop .libraryPage .sectionTitle                  { padding-left: 0 }
+.layout-desktop .libraryPage .sectionTitle                  {padding-left: 0;align-content: center;}
 .layout-desktop .detailPagePrimaryContainer .sectionTitle   { padding-left: 2.5%; padding-right: 2.5% }
 .layout-desktop .detailPageSecondaryContainer .sectionTitle { border-radius: 0 }
 .layout-desktop h2.sectionTitle                             { font-weight: 500 }
 .layout-desktop .settingsContainer .sectionTitle            { padding-left: .75em }
 
-.layout-desktop .sectionTitleContainer-cards { text-align: center; padding: 10px }
+.layout-desktop .sectionTitleContainer-cards {text-align: center;align-content: center;padding: 10px}
 
 .layout-desktop .detailPagePrimaryContent:has(.nextUpSection.hide) 
 .detailVerticalSection .sectionTitle-cards   { margin-left: -31.45vw; padding-left: 31.45vw }
@@ -165,7 +165,7 @@
 
 /* Emby Scroller */
 .layout-desktop .emby-scroller                                       {padding: 0;margin: 0 .5vw;}
-.layout-desktop .homePage .emby-scroller                             {padding: 0;margin: 0 1.5vw;}
+.layout-desktop .homePage .emby-scroller                             {padding: 0;margin: 0 1vw;}
 
 .layout-desktop #tvRecommendedPage .verticalSection > .emby-scroller,
 .layout-desktop #moviesPage .verticalSection > .emby-scroller,
@@ -174,9 +174,9 @@
 /* Items Container */
 .layout-desktop .itemsContainer                                      { padding: 0 }
 
-.layout-desktop #musicRecommendedPage #suggestionsTab .itemsContainer,
-.layout-desktop #musicRecommendedPage #genresTab .itemsContainer,
-.layout-desktop #moviesPage #favoritesTab .itemsContainer,
+.layout-desktop #suggestionsTab .itemsContainer,
+.layout-desktop #genresTab .itemsContainer,
+.layout-desktop #favoritesTab .itemsContainer,
 .layout-desktop #tvRecommendedPage .verticalSection > .itemsContainer,
 .layout-desktop #moviesPage .verticalSection > .itemsContainer,
 .layout-desktop #albumsPage .verticalSection > .itemsContainer       { margin: 1em 1.5vw }
