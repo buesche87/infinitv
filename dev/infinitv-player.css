@@ -52,10 +52,16 @@
 /* OSD Header: Height */
 .osdHeader {
     height: 3.3em !important;
+    backdrop-filter: none !important;
+    background: rgba(0, 0, 0, var(--osdopacity)) !important;
 }
 
 /* OSD Footer: Full Layout */
-.videoOsdBottom { padding: .5em 0 }
+.videoOsdBottom { 
+    backdrop-filter: var(--blur);
+    background: rgba(0, 0, 0, var(--osdopacity)) !important;
+    padding: .5em 0;
+}
 
 @media all and (min-width: 105em) {
     .videoOsdBottom {
@@ -243,13 +249,4 @@
    TODO: OSD Blur & Opacity
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-tv {
-    .osdHeader {
-        backdrop-filter: none !important;
-        background: rgba(0, 0, 0, var(--osdopacity)) !important;
-    }
-    .videoOsdBottom {
-        backdrop-filter: var(--blur);
-        background: rgba(0, 0, 0, var(--osdopacity)) !important;
-    }
-}
+
