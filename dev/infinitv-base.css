@@ -23,7 +23,6 @@
     --bgtitle: hsla(0, 0%, 75%, .1);     /* Title */
     --bgbar: hsl(0deg 0% 12.29% / 74%);  /* Buttonbar */
     
-        
     /* Borders */
     --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
 
@@ -433,9 +432,6 @@
     Glow, Shadows & Blur
 ────────────────────────────────────────────────────────────────────────────
 */
-
-/* Card Glow*/
-.upNextContainer                                   { box-shadow: var(--cardglow) !important; }
 
 /* Button Glow*/
 .detailButton:focus,
