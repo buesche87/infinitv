@@ -7,16 +7,17 @@
 #selectServerPage .padded-bottom-page,
 #loginPage .padded-bottom-page,
 .standalonePage .addServerForm,
-.layout-desktop #myPreferencesMenuPage .readOnlyContent,
-.layout-desktop #userProfilePage > .padded-left,
-.layout-desktop .userPreferencesPage .padded-left > form,
-.layout-tv #myPreferencesMenuPage .readOnlyContent,
-.layout-tv #userProfilePage > .padded-left,
-.layout-tv .userPreferencesPage .padded-left > form {
-    background: rgba(0, 0, 0, var(--bgdarkness));
-    border: var(--buttonborder);
-    border-radius: var(--rounding-media);
-    backdrop-filter: var(--blur);
+
+.layout-desktop,
+.layout-tv {
+    #myPreferencesMenuPage .readOnlyContent,
+    #userProfilePage > .padded-left,
+    .userPreferencesPage .padded-left > form {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--buttonborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
+    }
 }
 
 /*
