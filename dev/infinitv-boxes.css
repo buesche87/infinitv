@@ -100,7 +100,7 @@
     }
 
     .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                              { margin-bottom: 3em !important; }
-    .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer               { margin-top: 2em; }
+    .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer               { margin-top: 1em; }
     .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection                              { margin-left: 0; margin-right: 0; }
     .libraryPage:not(.hide):has(.trackSelections.hide) #listChildrenCollapsible .itemsContainer-tv { margin: 0 1em; }
 

@@ -105,7 +105,7 @@
 /* Filter & Sorting Header: Buttons */
 .pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important }
 
-/* Layout Desktop ─────────────────────────────────────────────────────────── */
+/* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
     .itemsViewSettingsContainer,
     .pageTabContent>.focuscontainer-x,
@@ -138,7 +138,7 @@
     .listPaging > span { padding: 0 .556em; }
 }
 
-/* Layout TV ──────────────────────────────────────────────────────────────── */
+/* Layout TV ─────────────────────────────────────────────────────────────── */
 .layout-tv {
     .itemsViewSettingsContainer,
     .pageTabContent>.focuscontainer-x {
@@ -210,7 +210,7 @@
     border-color: var(--accent60) !important;
 }
 
-/* Layout Desktop ─────────────────────────────────────────────────────────── */
+/* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
     .selectionCommandsPanel {
         top: 7.65em;
