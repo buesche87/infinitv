@@ -397,8 +397,8 @@
         --card-secondary-overflow-square-width-tv: 12.5%;
 
         /* Person Cards - TV */
-        --card-person-height-tv: 10.42vw;
-        --card-person-scalable-width-tv: calc(10.42vw - 3em);
+        --card-person-height-tv: 10.52vw;
+        --card-person-scalable-width-tv: calc(10.52vw - 3em);
 
         /* Layout Mobile
         ──────────────────────────────────────────────────────────────────────────── */

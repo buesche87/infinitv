@@ -52,7 +52,6 @@
 /* OSD Header: Height */
 .osdHeader {
     height: 3.3em !important;
-    backdrop-filter: var(--blur);
 }
 
 /* OSD Footer: Full Layout */
@@ -233,5 +232,24 @@
             margin-bottom: .5em;
         }
         .nowPlayingBarInfoContainer     { margin-left: .8em; }
+    }
+}
+
+
+
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   TODO: OSD Blur & Opacity
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-tv {
+    .osdHeader {
+        backdrop-filter: none !important;
+        background: rgba(0, 0, 0, var(--osdopacity)) !important;
+    }
+    .videoOsdBottom {
+        backdrop-filter: var(--blur);
+        background: rgba(0, 0, 0, var(--osdopacity)) !important;
     }
 }

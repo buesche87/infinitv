@@ -292,9 +292,10 @@
 */
 
 /* Shorten transition time */
-.skinHeader { 
+.skinHeader, 
+.skinHeader.semiTransparent { 
     transition: background .3s ease-in-out;
-    backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur) !important;
 }
 
 /* Match background with drawer background when opening it */

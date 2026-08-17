@@ -6,38 +6,51 @@
 
 :root {
 
-    /* Accents */
+    /* Background Image */
+    --bgImage: url("https://wallpaperaccess.com/download/purple-galaxy-439751");
+
+    /* Darkness & Opacity */
+    --bgdarkness:    0.6;  /* Background Darkness */
+    --headeropacity: 0.7;  /* Header & Drawer Opacity */
+    --itemopacity:   0.8;  /* Item Opacity (Like Card-Footer) */
+    --osdopacity:    0.4;  /* OSD Opacity */
+
+    /* Roundings */
+    --rounding-media: 12px;
+    --rounding-system: 6px;
+
+    /* Backgrounds */
+    --bgtitle: hsla(0, 0%, 75%, .1);     /* Title */
+    --bgbar: hsl(0deg 0% 12.29% / 74%);  /* Buttonbar */
+    
+        
+    /* Borders */
+    --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
+
+    /* Blur */
+    --blur: blur(5.2px) saturate(1.35);
+    
+    /* Glow Animation */
+    --cardglow: 0px 0px 10px 3px var(--accent80);
+    --cardglow-focus: 0px 0px 10px 3px var(--accent80);
+    --buttonglow: 0px 0px 10px 1px var(--accent100);
+    
+    /* Default Accents */
     --accent100: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 1.0);
     --accent80:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
     --accent60:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
     --accent40:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
     --accent20:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
 
-    /* Backgrounds */
+    /* Default Backgrounds */
     --bgwhite10: hsla(0, 0%, 100%, .1);
     --bgdark20:  rgba(0, 0, 0, 0.2);
     --bgdark40:  rgba(0, 0, 0, 0.4);
     --bgdark60:  rgba(0, 0, 0, 0.6);
     --bgdark80:  rgba(0, 0, 0, 0.8);
 
-    /* Titel Bckgrounds */
-    --bgtitle: hsla(0, 0%, 75%, .1);
-    /* Buttonbar Bckground */
-    --bgbar: hsl(0deg 0% 12.29% / 74%);
-
-    /* Borders */
-    --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
-
     /* Card Shadows */
     --cardshadow: 3px 3px 8px 2px rgb(0 0 0 / 40%);
-
-    /* Glow */
-    --cardglow: 0px 0px 10px 3px var(--accent80);
-    --cardglow-focus: 0px 0px 10px 3px var(--accent80);
-    --buttonglow: 0px 0px 10px 1px var(--accent100);
-
-    /* Blur */
-    --blur: blur(5.2px) saturate(1.35);
 
     /* Animation Duration */
     --anispeed: 240ms;
@@ -175,8 +188,8 @@
 .selectionCommandsPanel,
 .skinHeader-withBackground,
 .subtitleSyncContainer,
-.subtitleSyncSliderContainer .sliderBubble,
-.videoOsdBottom                              { background: rgba(0, 0, 0, var(--headeropacity)) !important; }
+.subtitleSyncSliderContainer .sliderBubble   { background: rgba(0, 0, 0, var(--headeropacity)) !important; }
+
 
 /* Background: --itemopacity */
 .cardFooter:not(.visualCardBox-cardFooter),
