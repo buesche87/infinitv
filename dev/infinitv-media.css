@@ -144,7 +144,7 @@
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-    .trackSelections .selectContainer {max-width: 32em;}
+    .trackSelections .selectContainer {max-width: 30em;}
     .trackSelections .selectSubtitlesContainer .selectArrowContainer { right: .5em; }
     .trackSelections .selectLabelFocused {
         color: #fff !important;
@@ -154,7 +154,7 @@
     /* TV Show Page ------------------------------------ */
     .libraryPage:not(.hide):has(.trackSelections.hide) {
         .detailPagePrimaryContent {
-            padding-top: 0em;
+            padding-top: 0;
             padding-left: 0;
         }
         .detailSectionContent { padding-left: .5em; }
