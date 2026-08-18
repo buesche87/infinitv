@@ -6,7 +6,12 @@
 
 #selectServerPage .padded-bottom-page,
 #loginPage .padded-bottom-page,
-.standalonePage .addServerForm,
+.standalonePage .addServerForm {
+    background: rgba(0, 0, 0, var(--bgdarkness));
+    border: var(--buttonborder);
+    border-radius: var(--rounding-media);
+    backdrop-filter: var(--blur);
+}
 
 .layout-desktop,
 .layout-tv {
