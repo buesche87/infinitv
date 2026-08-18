@@ -163,7 +163,10 @@
     }
 
     #episodesTab .itemsContainer,
-    #musicRecommendedPage .itemsContainer.vertical-list { padding: 4em 8vw; }
+    #musicRecommendedPage .itemsContainer {padding: 3.5em 2vw;}
+    
+    #episodesTab .itemsContainer:has(.listItem),
+    #musicRecommendedPage .itemsContainer:has(.listItem) { padding: 4em 8vw; }
 }
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */

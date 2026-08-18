@@ -72,7 +72,7 @@
         border-radius: var(--rounding-media) !important;
         padding-right: 0 !important;
         margin-bottom: .5em !important;
-        background: var(--bgdark20) !important;
+        background-color: var(--bgdark60) !important;
     }
     .itemsContainer > .listItem-border:hover {
         border: 2px solid var(--accent40) !important;
