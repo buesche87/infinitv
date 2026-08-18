@@ -99,12 +99,12 @@
 
 /* Color: Accent 80% */
 #loginPage .cardImage,
-.actionSheetMenuItem:hover,
+/* .actionSheetMenuItem:hover, */
 .button-link:hover,
 .emby-collapsible-button:hover,
 .emby-textarea:hover + .textareaLabel,
 .emby-checkbox:hover + .checkboxLabel,
-.detailButton:focus,
+/* .detailButton:focus, */
 .listTextButton-autohide:hover,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
@@ -128,8 +128,8 @@
 .right-arrow:hover,
 .pause-button:hover,
 .volume-toggle:hover,
-.listItem-border:hover,
-.listItem-border:focus,
+/* .listItem-border:hover, */
+/* .listItem-border:focus, */
 .listItem-button:focus h2.listItemBodyText,
 .listItemIcon.check,
 .listTextButton-autohide:focus,
@@ -151,7 +151,7 @@
 
 /* Color: White */
 .paper-icon-button-light.emby-scrollbuttons-button:focus,
-.layout-mobile .overview-expand:focus    { color: white !important; }
+.layout-mobile .overview-expand:focus    {color: white !important;}
 
 /* Font Weight */
 .inputLabelFocused,
@@ -204,6 +204,8 @@
     Background Colors
 ──────────────────────────────────────────────────────────────────────────── */
 
+/* ─  BG Light ──────────────────────────────────────────────────────── */
+
 /* Title Background */
 #searchPage .sectionTitle,
 #controlsPreferencesPage .sectionTitle,
@@ -221,6 +223,8 @@
 #loginPage .cardImage,
 .itemsViewSettingsContainer                      { background-color: var(--bgwhite10); }
 
+/* ─ BG Dark ──────────────────────────────────────────────────────── */
+
 /* Background Color: Dark 20% */
 .button-submit:hover,
 .detail-button,
@@ -230,36 +234,38 @@
 .raised:hover                                    { background-color: var(--bgdark20) !important; }
 
 /* Background Color: Dark 40% */
-.button-submit,
-.cardOverlayButton.cardOverlayFab-primary:hover,
-.checkboxOutline,
-.detailButton:hover,
 .emby-button.block,
 .emby-input,
 .emby-textarea,
 .emby-select,
-.itemsContainer > .listItem-focusscale,
+.checkboxOutline,
+.button-submit,
 .itemProgressBar,
-.listItem-largeImage:hover,
 .paperList,
+.listItem-focusscale,
+.listItem-largeImage:hover,
+.cardOverlayButton.cardOverlayFab-primary:hover,
 .upNextDialog-button:hover                       { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
-.button-submit:hover,
-.button-submit:focus,
-.detail-button:hover,
 .checkboxOutline:not(:disabled):hover,
-.emby-button.block:hover,
-.emby-button.block:focus,
 .emby-input:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
-.favorite-button:hover,
-.listItem-focusscale:hover,
 .listItem-largeImage:focus,
+.listItem-focusscale:hover,
 .listItemImageButton:hover,
-.mainDetailButtons .detailButton:focus,
+.button-submit:hover,
+.button-submit:focus,
+.emby-button.block:hover,
+.emby-button.block:focus,
+.favorite-button:hover,
+.favorite-button:focus,
+.detailButton:hover,
+.detailButton:focus,
 .play-button:hover,
+.play-button:focus,
+.upNextDialog-button:hover,
 .upNextDialog-button:focus                       { background-color: var(--bgdark60) !important; }
 
 /* Background Color: Dark 80% */
@@ -269,11 +275,13 @@
 .emby-textarea:focus,
 .listItem-focusscale:focus                       { background-color: var(--bgdark80) !important; }
 
+/* ─ BG: Accent ──────────────────────────────────────────────────────── */
+
 /* Background Color: Accent 40% */
 .emby-select option:hover                        { background-color: var(--accent40) !important; }
 
 /* Background Color: Accent 80% */
-.alphaPickerButton:focus,
+/* .alphaPickerButton:focus, */
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-select option:focus                        { background-color: var(--accent80) !important; }
 
@@ -290,8 +298,8 @@
 .layout-tv .itemsContainer .card .cardBox,
 .layout-desktop .itemsContainer .card .cardBox,
 .listTextButton-autohide:focus,
-.actionSheetMenuItem:hover,
-.actionSheetMenuItem:focus,
+/*.actionSheetMenuItem:hover, */
+/* .actionSheetMenuItem:focus, */
 .button-link:focus,
 .cardOverlayButton,
 .cardOverlayButton:hover,
@@ -302,9 +310,8 @@
 .collapseContent .listItem:hover,
 .emby-collapsible-button:focus,
 .emby-button,
-.emby-button.skip-button,
+.emby-button.skip-button, 
 .emby-tab-button:focus,
-.headerButton:hover,
 .listItem,
 .listItemBodyText,
 .listItemIcon,
@@ -313,24 +320,19 @@
 .navMenuOption:hover,
 .navMenuOption:focus,
 .overview-expand:focus,
-.paper-icon-button-light:not(:disabled):hover,
+.paper-icon-button-light:hover,
 .paper-icon-button-light:not(.alphaPickerButton):active,
 .sectionTitleTextButton:focus,
-.sliderBubble,
-.userPreferencesPage 
-.listItem-border:focus                           { background-color: #0000 !important; }
-
+.sliderBubble                          { background-color: #0000 !important; }
 /*
 ────────────────────────────────────────────────────────────────────────────
     Borders
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Outline: None */
-:focus-visible               { outline-style: none; }
+:focus-visible { outline-style: none; }
 
-/* Borders: Grey
-──────────────────────────────────────────────────────────────────────────── */
+/* Borders: Grey ─────────────────────────────────────────────────────────── */
 .layout-desktop .formDialog,
 .checkboxOutline,
 .detailButton,
@@ -347,17 +349,13 @@
 .selectionCommandsPanel,
 .toast                       { border: var(--buttonborder) !important; }
 
-/* Borders: Transparent
-──────────────────────────────────────────────────────────────────────────── */
+/* Borders: Transparent ──────────────────────────────────────────────────── */
 .actionSheetMenuItem,
 .emby-collapsible-button,
 .listItem-border,
 .listTextButton-autohide     { border: solid 2px #0000 !important; }
 
-.navMenuOption               { border: solid 1px #0000 !important; }
-
-/* Borders: None
-──────────────────────────────────────────────────────────────────────────── */
+/* Borders: None ─────────────────────────────────────────────────────────── */
 .button-link,
 .clearLink,
 .cardOverlayButton,
@@ -371,10 +369,11 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
     Border Colors
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
-/* Border Color: Accent 40% */
+/* Border Color: Accent ──────────────────────────────────────────────────── */
+                                                  
+/* Accent 40% */
 .listItem-largeImage:hover,
 .detail-button:hover,
 .emby-button.block:hover,
@@ -385,10 +384,10 @@
 .emby-textarea:not(:disabled):hover,
 .favorite-button:hover,
 .imagePlaceHolder:hover,
-.mainDetailButtons .detailButton:hover,
-.play-button:hover                               { border-color: var(--accent40) !important; }
+.detailButton:hover,
+.play-button:hover         { border-color: var(--accent40) !important; }
 
-/* Border Color: Accent 60% */
+/* Accent 60% */
 .emby-button.block:focus,
 .emby-input:focus,
 .emby-textarea:focus,
@@ -397,29 +396,29 @@
 .detail-button:focus,
 .favorite-button:focus,
 .itemsContainer > .listItem:focus,
-.mainDetailButtons .detailButton:focus,
+.detailButton:focus,
 .itemsContainer > .listItem-largeImage:focus,
-.toast                                           { border-color: var(--accent60) !important; }
+.toast                     { border-color: var(--accent60) !important; }
 
-/* Border Color: Accent 100% */
+/* Accent 100% */
 .mdl-spinner__layer-1,
 .mdl-spinner__layer-2,
 .mdl-spinner__layer-3,
 .mdl-spinner__layer-4,
-.progressring-spiner                             { border-color: var(--accent100) !important; }
+.progressring-spiner       { border-color: var(--accent100) !important; }
 
-/* Border Color: Transparent */
-.actionSheetMenuItem:focus,
+/* Border Color: Transparent ──────────────────────────────────────────────────── */
+                                                  
+/* .actionSheetMenuItem:focus, */
 .card:focus .cardBox:not(.visualCardBox) .cardScalable,
 .navMenuOption:focus,
-.userPreferencesPage .listItem-border:focus,
-.upNextDialog-button:focus                       { border-color: #0000 !important; }
+/* .userPreferencesPage .listItem-border:focus, */
+.upNextDialog-button:focus { border-color: #0000 !important; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
     Glow, Shadows & Blur
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Button Glow*/
 .detailButton:focus,
@@ -440,11 +439,10 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
     Roundings
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Rounding: System */
-.actionSheetMenuItem,
+/* .actionSheetMenuItem, */
 .checkboxOutline,
 .emby-button,
 .emby-input,

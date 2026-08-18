@@ -91,6 +91,7 @@
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
+    
     /* List Item (TV) */
     .libraryPage .listItem-button:not(.listItem-largeImage) {
         padding-top: 1.5em;

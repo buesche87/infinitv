@@ -52,7 +52,21 @@
    Alphabet Picker
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Alphabet Picker: Buttons */
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+    .alphaPicker    { top: 128px; bottom: auto }
+}
+
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+    /* Stretch Alphabet Picker */
+    .alphaPicker  { bottom: 2em }
+    @media only screen and (max-height: 767px) and (orientation: landscape) {
+        .alphaPicker { bottom: 1em }
+    }
+}
+
+/* Alphabet Picker Buttons */
 .alphaPickerButton              { height: 1.6em; }
 
 .alphaPickerButton:hover        {
@@ -66,20 +80,6 @@
     background: var(--accent80) !important;
     color: white !important;
     font-weight: 600;
-}
-
-/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
-.layout-desktop {
-    .alphaPicker    { top: 128px; bottom: auto }
-}
-
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
-.layout-mobile {
-    /* Stretch Alphabet Picker */
-    .alphaPicker  { bottom: 2em }
-    @media only screen and (max-height: 767px) and (orientation: landscape) {
-        .alphaPicker { bottom: 1em }
-    }
 }
 
 /*
