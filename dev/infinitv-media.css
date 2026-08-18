@@ -30,14 +30,33 @@
     }
 
     /* Detail Ribbon with media buttons */
-    .detailRibbon               { height: 9em; margin-top: -9em; }
-    .infoWrapper                { padding-top: 0.25em; }
-    .mainDetailButtons          { margin-left: 1em; }
+    .detailRibbon               {height: 10em;margin-top: -10em;}
+    .infoWrapper                {padding-top: 1em;padding-bottom: 1em;}
+    .mainDetailButtons          {margin-left: 1em;}
     .itemMiscInfo               {
         font-size: 125%;
         margin-top: 0.25em;
         margin-bottom: 0.6em;
     }
+    
+    /* Some Small Screen fixes */
+    @media (max-width: 62.5em) {
+        .detailImageContainer .card {top: -13em !important;}
+        .detailRibbon {flex-direction: column;height: 14em;margin-top: -14em;}
+        .infoWrapper {
+            padding-top: .5em !important;
+            padding-bottom: .5em !important;
+            align-self: flex-start;
+        }
+        .mainDetailButtons {
+            margin: 0;
+            margin-bottom: 1em;
+            align-self: flex-start;
+        }
+    }
+
+    
+
 
     /* Primary Container */
     .detailPagePrimaryContent     { padding: 0 1.5vw 1em 32.45vw; }
@@ -51,10 +70,10 @@
     .detailPageSecondaryContainer .detailPageContent { padding: 0; }
 
     /* Detail-Ribbon: Fix narrow Desktop layout */
-    .detailPageWrapperContainer     { margin-top: 1.5em !important; }
+    .detailPageWrapperContainer     {margin-top: 1.5em !important;}
 
     /* Make backdrop space with logo smaller */ 
-    .itemDetailPage .itemBackdrop   { height: 35vh; }
+    .itemDetailPage .itemBackdrop   {height: 37vh;}
 
     /* Move logo to the right side */
     .itemDetailPage .detailLogo     { right: 0; }
@@ -63,29 +82,6 @@
     .selfBackdropPage h1.parentName { font-size: 175%; }
     .selfBackdropPage h3.itemName   { font-size: 150%; }
 
-    /* Some Small Screen fixes */
-    @media all and (max-width: 75em) {
-        .detailLogo             { display: block; }
-        .detailImageContainer   {
-            display: flex;
-            position: relative;
-            left: 0%;
-            bottom: 37%;
-            top: -28%;
-            box-shadow: none !important;
-            flex-shrink: 0;
-        }
-        .detailRibbon           {
-            flex-direction: column;
-            height: 14em;
-            padding-left: 30vw !important;
-            align-content: flex-start;
-            flex-wrap: wrap;
-            left: 0;
-        }
-        .infoWrapper            { margin-top: .5em; }
-        .mainDetailButtons      { margin-left: 2vw; }
-    }
 } 
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
