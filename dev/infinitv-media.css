@@ -154,7 +154,7 @@
     /* TV Show Page ------------------------------------ */
     .libraryPage:not(.hide):has(.trackSelections.hide) {
         .detailPagePrimaryContent {
-            padding-top: 0;
+            padding-top: 0em;
             padding-left: 0;
         }
         .detailSectionContent { padding-left: .5em; }

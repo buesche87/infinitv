@@ -1,363 +1,586 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Settings Pages: Background & Borders
+   System
 ────────────────────────────────────────────────────────────────────────────
 */
 
-#selectServerPage .padded-bottom-page,
-#loginPage .padded-bottom-page,
-.standalonePage .addServerForm {
-    background: rgba(0, 0, 0, var(--bgdarkness));
-    border: var(--buttonborder);
-    border-radius: var(--rounding-media);
+/* Smaller TV-Layout */
+.layout-tv           { font-size: 110% !important; }
+
+/* Progress Ring */
+.progressring        { margin: .4em; }
+.progressring-bg     { display: none; }
+.progressring-spiner { border-width: .35em; }
+
+/* Toast: Center */
+.toastContainer {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: .25em;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Dialogs
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Background: Black 85%  */
+.dialog { 
+    background: rgba(0, 0, 0, .9); 
     backdrop-filter: var(--blur);
+}
+
+.toast { background-color: #000 !important; }
+
+.layout-desktop,
+.layout-mobile {
+   
+    .actionSheet {                         /* Action Sheets */
+        background: rgba(0, 0, 0, .9); 
+        backdrop-filter: var(--blur);
+        box-shadow: none !important;
+        border: var(--buttonborder);
+    }
+    .actionSheetTitle {                    /* Action Sheet: Titles */
+        font-size: 1.6em;
+        font-weight: 600;
+        margin-bottom: .2em !important;
+        margin-top: 0em !important;
+        cursor: default;
+        border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
+        padding: .6em .5em;
+        text-align: center !important;
+    }
+
+    /* Action Sheets: Content */
+    .actionSheetContent  { padding: 0 !important; min-width: 13em; }
+    .actionSheetScroller { padding-top: .5em; padding-bottom: .5em; }
+    .actionsheetDivider  { display: none; }
+    .actionSheetItemText { font-size: 1.1em; }
+}
+
+/* Layout Desktop - Dialogs
+──────────────────────────────────────────────────────────────────────────── */
+.layout-desktop {
+
+    /* Style */
+    .formDialog.dialog-fixedSize.dialog-small                     { width: 40%; height: auto; }
+    .formDialog.dialog-fixedSize.dialog-small .dialogContentInner { padding-bottom: 2em; }
+
+    /* Style: Content */
+    .formDialog.dynamicFilterDialog                   { max-height: 82% !important; }
+    .formDialog.dynamicFilterDialog .collapseContent  { max-height: 12em; overflow-y: scroll; }
+
+    /* Positioning */
+    :has(#moviesPage:not(.hide)) .formDialog.opened,
+    :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
+    :has(#tvRecommendedPage:not(.hide)) .formDialog,
+    :has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
+    :has(#musicRecommendedPage:not(.hide)) .formDialog,
+    :has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
+        top: 8em !important;
+        position: fixed;
+        bottom: auto !important;
+    }
+
+    /* Moving */
+    :has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(10.5em) !important; }
+    :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(13.5em) !important; }
+    :has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
+    :has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
+    :has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
+    :has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
+
+    /* Header */
+    :has(.centeredDialog[style*="top: 10px"]) .actionSheet                        { transform: translateY(3.3em) !important; }
+    :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet                      { transform: translateY(7.25em) !important; }
+
+    /* Player OSD */
+    :has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]               { transform: translateY(3.5em) !important; }
+    :has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
+}
+
+
+/* Layout Mobile - Dialogs
+──────────────────────────────────────────────────────────────────────────── */
+.layout-mobile {
+
+    .actionSheet,
+    .formDialog {
+        animation-duration: var(--anispeed) !important;
+        border: var(--buttonborder) !important;
+    }
+    .dialog-fullscreen-lowres,
+    .dialog-fixedSize.dialog-small {
+        box-shadow: none;
+        border-radius: 0 !important;
+        border: none !important;
+    }
+    .actionSheet {
+        background: rgba(0, 0, 0, 0.95); 
+        box-shadow: none !important;
+        border: var(--buttonborder);
+    }
+    .actionSheet:has(.listItem-button)                         { animation-duration: var(--anispeed) !important; }
+
+    /* Content */
+    .dialogContainer .dynamicFilterDialog                      { max-height: 75% !important; }
+    .dialogContainer .dynamicFilterDialog .collapseContent     {
+        max-height: 12em;
+        overflow-y: scroll;
+    }
+
+    /* Positioning: Sort By & Filter */
+    .formDialog.centeredDialog                                 { padding: 0 .5em; }
+
+    /* Positioning */
+    :has(#moviesPage:not(.hide)) .formDialog.opened,
+    :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened,
+    :has(#tvRecommendedPage:not(.hide)) .formDialog,
+    :has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
+    :has(#musicRecommendedPage:not(.hide)) .formDialog,
+    :has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog { top: 9.5em !important; position: fixed; }
+
+    /* Header */
+    :has(.centeredDialog[style*="top: 10px"]) .actionSheet      { transform: translateY(3em) !important; }
+    :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet    {
+        top: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) translateY(9.5em) !important;
+    }
+
+    /* Player OSD */
+    :has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"] { transform: translateY(3.5em) !important; }
+    :has(#videoOsdPage:not(.hide)) .actionSheet                     { transform: translateY(-5em) !important; }
+}
+
+/* Layout TV - Dialogs
+──────────────────────────────────────────────────────────────────────────── */
+.layout-tv {
+    /* Form Dialogs */
+    .formDialog {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        left: 0 !important;
+        margin: 0 !important;
+        top: 0 !important;
+        animation-duration: var(--anispeed) !important;
+    }
+
+    /* Action Sheets */
+    .actionSheet        { animation-duration: var(--anispeed) !important; }
+
+    /* Content */
+    .formDialogContent  { margin-bottom: 6.2em; }
+    .dialogContentInner {
+        padding: .5em 5em;
+        padding-top: 0 !important;
+        margin-top: -.5em !important;
+    }
+    .filterDialogContent { min-width: 24em; }
+    .dialogContainer .dynamicFilterDialog .collapseContent {
+        max-height: 12em;
+        overflow-y: scroll;
+    }
+
+    .actionSheetContent .listItem { padding: 1em 1em; }
+    .listItem-indexnumberleft     { margin: 1em; }
+    .listItem:focus .secondary    { color: hsla(0, 0%, 100%, .8) !important; }
+}
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Infos
+────────────────────────────────────────────────────────────────────────────
+*/
+
+.mediaInfoLabel      { color: hsla(0, 0%, 100%, .8); font-weight: 400; }
+.mediaInfoAttribute  { color: #fff; font-weight: 600; }
+.mediaInfoStreamType { color: hsla(0, 0%, 100%, .9); }
+
+/* Collapsible Menu */
+.collapseContent     { padding-top: 0em; padding-bottom: 0em; }
+
+/* Layout TV - Media Infos
+──────────────────────────────────────────────────────────────────────────── */
+.layout-tv {
+    /* Media Infos */
+    .formDialog:has(.dialog-fullscreen)     { align-content: normal; }
+    .dialog-fullscreen .btnCloseActionSheet { display: none; }
+    .dialog-fullscreen .formDialogHeader    {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-top: .5em;
+        padding-bottom: .25em;
+        border-bottom: var(--buttonborder);
+        border-radius: 0 !important;
+    }
+
+    /* Content */
+    .dialog-fullscreen .formDialogContent   {
+        scrollbar-color: aliceblue;
+        padding-top: .5em;
+        margin-top: 4em;
+        margin-bottom: 3em;
+        margin-left: 1.5em;
+        margin-right: 3em;
+        scrollbar-width: thin;
+    }
+    .dialog-fullscreen .mediaInfoContent    { width: 100%; font-size: 80%; }
+}
+/*
+────────────────────────────────────────────────────────────────────────────
+   Menu Drawer
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Main Drawer */
+.mainDrawer                    { margin-top: 3.9em; transition: background .5s ease-in-out; }
+
+/* Drawer Open: Match background and transition with header */
+.mainDrawer.drawer-open {
+    background-color: rgba(0, 0, 0, .9) !important;
+    backdrop-filter: var(--blur);
+    transition: transform .24s ease-out, left .26s ease-out, -webkit-transform .24s ease-out, background .3s ease-in-out;
+}
+
+/* Main Drawer: Menu Options */
+.navMenuOptionText             { margin-top: 0; }
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+.layout-mobile {
+    .mainDrawer     { margin-top: 4em; }
+
+    @media (min-width: 100em)      {
+        .mainDrawer { margin-top: 4.4em; }
+    }
+
+    /* Hide HeaderTabs & Footer when drawer opens */
+    .mainDrawer.drawer-open + .skinHeader > .headerTabs,
+    :has(.mainDrawer.drawer-open) ~ .appfooter { display: none !important; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Scrollbar
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Scrollbar Style */
+* { scrollbar-color: var(--accent60) rgba(0, 0, 0, .8) !important; }
+
+/* always show in desktop layout unless playing a video */
+.layout-desktop:not(:has(#videoOsdPage)) { scrollbar-width: thin; overflow-y: scroll; }
+
+/* don't show scrollbar */
+#loginPage,
+.layout-tv,
+.layout-mobile { scrollbar-width: none; }
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Header & Section Tabs
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Shorten transition time */
+.skinHeader, 
+.skinHeader.semiTransparent { 
+    transition: background .3s ease-in-out;
+    backdrop-filter: var(--blur) !important;
+}
+
+/* Match background with drawer background when opening it */
+[dir=ltr]:has(.drawer-open) .skinHeader-withBackground { background-color: rgba(0, 0, 0, .9) !important; }
+
+/* Page Title & Time */
+.pageTitle { font-weight: bold }
+.currentTimeText { font-size: 110% !important; font-weight: bold }
+
+/* Layout Desktop
+──────────────────────────────────────────────────────────────────────────── */
+.layout-desktop {
+    .skinHeader             { padding: .3em !important; height: 3.3em }
+    .headerTop              { padding: .3em !important; }
+    .headerTabs.sectionTabs {
+        font-size: 110% !important;
+        margin-top: -2.7em !important;
+        max-width: 58%;
+        min-width: 26vw;
+        scrollbar-width: none;
+        scroll-behavior: smooth !important;
+        white-space: nowrap;
+        align-items: center;
+        align-self: center;
+        position: relative;
+        transition: filter 0.2s;
+    }
+}
+
+/* Layout TV
+──────────────────────────────────────────────────────────────────────────── */
+.layout-tv {
+    .skinHeader { 
+        position: fixed !important;
+        padding: .3em !important; 
+        height: 3.3em;
+    }
+    .headerTop  { padding: .3em !important; }
+
+    /* Header Section Tabs: Stay in Header with invisible scroll */
+    .headerTabs.sectionTabs {
+        font-size: 110% !important;
+        margin-top: -2.7em !important;
+        width: 42vw;
+        min-width: 26vw;
+        scrollbar-width: none;
+        scroll-behavior: smooth !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        align-items: center;
+        align-self: center;
+        position: relative;
+        transition: filter 0.2s;
+    }
+
+    /* Buttons */
+    .formDialogHeader .paper-icon-button-light:focus {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+.layout-mobile {
+    .skinHeader          { background: rgba(0, 0, 0, 1) !important }
+
+    @media (max-width: 100em) {
+        .headerTop       {
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+            height: 3em;
+        }
+        .emby-tab-button { padding-top: 0em }
+    }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Buttons
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Buttons: Sign In, Save, Cancel...
+──────────────────────────────────────────────────────────────────────────── */
+
+.emby-button.block,
+.button-submit,
+.raised { margin: 0.5em 0; transform: none !important; }
+
+/* Buttons: Header Buttons
+──────────────────────────────────────────────────────────────────────────── */
+
+.emby-tab-button.show-focus:focus, 
+.headerButton:focus { transform: none !important; }
+
+.layout-desktop,
+.layout-tv {
+    .emby-tab-button { 
+        transform: none !important;
+        padding: .6em 1.25em .8em 1.25em !important;
+    }
+}
+
+/* Buttons: Action Sheet Menu Items
+──────────────────────────────────────────────────────────────────────────── */
+
+.actionSheetMenuItem {
+    transform: none !important;
+    margin-top: .2em !important;
+    margin-bottom: .2em !important;
+    padding-right: .5em !important;
+    padding-left: .5em !important;
+}
+
+.layout-desktop .actionSheetMenuItem { padding: .5em 1.75em .5em 1em !important; }
+
+/* Buttons: List Menu Items
+──────────────────────────────────────────────────────────────────────────── */
+
+.listTextButton-autohide {
+    transform: none !important;
+    padding: .75em !important;
+    margin: .2em !important;
+}
+
+.layout-desktop {
+    .listTextButton-autohide { padding: .6em !important; }
+}
+
+.layout-tv {
+    .listTextButton-autohide {
+        transform: none !important;
+        padding: 0.65em .75em !important;
+        margin: 0 !important;
+    }
+}
+
+/* Buttons: Collapsible
+──────────────────────────────────────────────────────────────────────────── */
+
+.emby-collapsible-button {
+    transform: none !important; 
+    padding: .75em !important;
+}
+
+/* Collapsible Button: Text */
+.emby-collapse > .emby-button.show-focus > .emby-collapsible-title { margin-left: 0.5em; }
+
+
+/* Buttons: Menu List Items
+──────────────────────────────────────────────────────────────────────────── */
+
+/* List Item Border */
+.listItem-border {
+    transform: none !important;
+    margin-top: .2em !important;
+    margin-bottom: .2em !important;
+    padding-left: 0.5em !important;
+    padding-right: 0.5em !important;
 }
 
 .layout-desktop,
 .layout-tv {
-    #myPreferencesMenuPage .readOnlyContent,
-    #userProfilePage > .padded-left,
-    .userPreferencesPage .padded-left > form {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--buttonborder);
-        border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
+    .userPreferencesPage .listItem-border {
+        padding-left: 3em !important;
+        padding-right: 3em !important;
+        min-width: 15em;
     }
 }
 
-/*
-────────────────────────────────────────────────────────────────────────────
-   Settings Pages
+/* Buttons: Media Buttons (Play, Watched, Favourite...)
 ──────────────────────────────────────────────────────────────────────────── */
-
-/* Settings Pages: Center content and Text */
-#myPreferencesMenuPage,
-#userProfilePage,
-#quickConnectPreferencesPage {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
-
-/* Settings Pages: Narrow contect margins */
-#homeScreenPreferencesPage .verticalSection-extrabottompadding,
-#languagePreferencesPage .verticalSection-extrabottompadding { margin-bottom: 0em; }
-
-#languagePreferencesPage .selectContainer,
-#displayPreferencesPage .inputContainer                      { margin-bottom: 1em; }
-
-#displayPreferencesPage .checkboxContainer,
-#displayPreferencesPage .selectContainer,
-#homeScreenPreferencesPage .selectContainer,
-#homeScreenPreferencesPage .checkboxContainer,
-#homeScreenPreferencesPage .checkboxListContainer,
-#languagePreferencesPage .checkboxContainer                 { margin-bottom: 1.25em; }
-
-#displayPreferencesPage .btnSave,
-#homeScreenPreferencesPage .btnSave,
-#languagePreferencesPage .btnSave                           { margin-top: 2em; }
-
-.layout-desktop, 
-.layout-tv {
-    /*  No text wrap */
-    .userPreferencesPage .listItemBodyText      { white-space: nowrap; }
-
-    /* Settings Page: Box size */
-    #myPreferencesMenuPage .readOnlyContent          { display: flex; max-width: 95%; }
-    #myPreferencesMenuPage > .padded-left            { padding-top: 0; }
-}
-
 .layout-desktop {
-    #myPreferencesMenuPage .verticalSection     { margin: 1em 2em; }
+    .mainDetailButtons .detailButton {
+        font-size: 120% !important;
+        margin-right: 1em !important;
+    }
 }
-
 .layout-tv {
-    #myPreferencesMenuPage .verticalSection          { margin: 2em; }
-    #clientSettingsPage                              { scrollbar-width: none; }
-} 
+    .mainDetailButtons .detailButton {
+        font-size: 120% !important;
+        margin-right: 1.5em !important;
+    }
+    .detailButton:focus { transform: scale(1.1) !important; }
+}
 
-/*
-────────────────────────────────────────────────────────────────────────────
-   User Profile
+/* Buttons: Slide Buttons (Desktop & Mobile)
 ──────────────────────────────────────────────────────────────────────────── */
-
-/* Form Alignment */
-.updatePasswordForm br                                      { display: none; }
-.updatePasswordForm .inputContainer                         { margin-bottom: 1em; }
-.updatePasswordForm .emby-button.block                      { margin-top: 2em; }
-
-/* Username bold */
-h2.username                                                 {
-    margin-top: 0px;
-    font-weight: 600;
-    color: #fff;
+.play-button,
+.detail-button,
+.favorite-button {
+    font-size: 120% !important;
+    color: inherit;
+    height: 3.5em;
+    margin-right: 1em !important;
 }
+.detail-button,
+.favorite-button { width: 3.5em; }
 
-/*
-────────────────────────────────────────────────────────────────────────────
-   Quick Connect
-──────────────────────────────────────────────────────────────────────────── */
+.play-button:focus,
+.detail-button:focus,
+.favorite-button:focus { transform: scale(1.2) !important; }
 
-.layout-desktop, 
-.layout-tv {
-    /* Box size */
-    #quickConnectPreferencesPage form                { padding: 1em 4em 2em 4em; }
-
-    /* Code input size */
-    #txtQuickConnectCode                             {
-        padding: 1em 0;
-        text-align: center;
-        font-size: 1.2em;
-    }
-
-    /* Label for input */
-    .inputLabel[for="txtQuickConnectCode"]           { font-size: 1.2em; padding: .5em; }
-}
-
-/*
-────────────────────────────────────────────────────────────────────────────
-   Subtitle Settings
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Subtitles: Preview-Box color */
-.subtitleappearance-preview { 
-    background: linear-gradient(140deg,var(--accent100),#111) !important;
-}
-
-/*
-────────────────────────────────────────────────────────────────────────────
-   Client Settings
-──────────────────────────────────────────────────────────────────────────── */
-
-/* Client Settings: Restart hint */
-#clientSettingsPage .infoBanner {
-    padding: .5em 1em .25em 1em;
-    margin: .5em 0;
-    font-weight: 500;
-    color: white;
-    background-color: var(--accent20);
-    text-align: center;
-}
-
-/* Section Titles */
-.settingsContainer .sectionTitle,
-.homeScreenSettingsContainer .sectionTitle,
-#controlsPreferencesPage .sectionTitle {
-    padding-top: .4em;
-    padding-bottom: .4em;
-    padding-left: .6em !important;
-    margin-left: -1.4em;
-    margin-right: -1.4em;
-    border-radius: var(--rounding-system);
-}
-
-/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
-.layout-desktop {
-    /* Content alignment */
-    .userPreferencesPage                    { padding-top: 5em !important; }
-    #myPreferencesMenuPage .readOnlyContent { padding: 1em; }
-    #userProfilePage .padded-left           { padding: 2em 4em; height: 28em; }
-    #clientSettingsPage form,
-    #displayPreferencesPage form,
-    #homeScreenPreferencesPage form,
-    #languagePreferencesPage form,
-    #controlsPreferencesPage form           { padding: 1em 4em; }
-
-    /* Save & Cancel Button */
-    .userPreferencesPage .btnSave,
-    .userPreferencesPage .button-cancel     {
-        margin-top: 2em;
-        margin-left: -1.75em;
-        width: 107%;
-        margin-bottom: 1.5em;
-    }
-
-    /* Section Titles in Main Menu */
-    #myPreferencesMenuPage .sectionTitle    {
-        padding-left: 0 !important;
-        margin-top: 0;
-        padding-bottom: 0.5em;
-        border-bottom: var(--buttonborder);
-        border-radius: 0 !important;
-    }
-}
-
-/* ─ Layout TV ───────────────────────────────────────────────────────────── */
-.layout-tv {
-    #clientSettingsPage form,
-    #displayPreferencesPage form,
-    #homeScreenPreferencesPage form,
-    #languagePreferencesPage form,
-    #controlsPreferencesPage form           { padding: .5em 4em 2em 4em; }
-
-    /* Settings */
-    #myPreferencesMenuPage > .padded-left   { padding-top: 0; }
-    #myPreferencesMenuPage .readOnlyContent { padding: 0 1em; }
-    #myPreferencesMenuPage .verticalSection { margin: 2em; }
-    #myPreferencesMenuPage .sectionTitle    { text-align: center; }
-
-    /* User Profile */
-    #userProfilePage .padded-left           { padding: 3em 4em; height: 26em; }
-
-    /* Section Titles */
-    .settingsContainer .sectionTitle,
-    .homeScreenSettingsContainer .sectionTitle,
-    #controlsPreferencesPage .sectionTitle {
-        padding-top: .25em;
-        padding-bottom: .25em;
-        padding-left: .5em;
-        margin-left: -1em;
-        margin-right: -1em;
-    }
-    #myPreferencesMenuPage .sectionTitle    {
-        padding-left: 0 !important;
-        margin-top: 0;
-        padding-bottom: 0.5em;
-        border-bottom: var(--buttonborder);
-        border-radius: 0 !important;
-    }
-}
-
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
-    .userPreferencesPage .settingsContainer,
-    .userPreferencesPage .homeScreenSettingsContainer {
-        background: rgba(0, 0, 0, var(--headeropacity));
-        border-radius: 0;
-    }
-
-    /* Background */
-    #myPreferencesMenuPage,
-    #userProfilePage,
-    #quickConnectPreferencesPage,
-    #controlsPreferencesPage                          {  background: rgba(0, 0, 0, var(--headeropacity)); }
-    .userPreferencesPage > .padded-left               {  padding-top: 0; }
-    .userPreferencesPage > .padded-left > .readOnlyContent,
-    .userPreferencesPage > .padded-left > form        {  width: 90%; }
-    .userPreferencesPage .settingsContainer,
-    .userPreferencesPage .homeScreenSettingsContainer {  padding-top: 1em; margin-top: -1em; }
-
-    /* Main Settings Page */
-    #myPreferencesMenuPage > .padded-left             {  width: 100%; }
-    #myPreferencesMenuPage .sectionTitle              {  padding-left: 0em !important; font-weight: 600; }
-
-    /* User Profile */
-    #userProfilePage                                  {  padding: 5em 5% !important; }
-    #userProfilePage > .padded-left                   {  padding: 0; width: 90%; }
-    #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) { margin-left: 2em !important; margin-right: 0 !important; }
-
-    /* Quick Connect */
-    #quickConnectPreferencesPage                      {  padding-top: 5em !important; }
-    #quickConnectPreferencesPage > .padded-left       {  display: flex; justify-content: center; }
-
-    /* Section Titles */
-    .settingsContainer .sectionTitle,
-    .homeScreenSettingsContainer .sectionTitle,
-    #controlsPreferencesPage .sectionTitle            {
-        margin-left: -.5em;
-        margin-right: -.5em;
-        padding-left: .5em;
-    }
-
-    /* List Items */
-    .userPreferencesPage .listItem-border             {
-        border: var(--buttonborder) !important;
-        margin-bottom: .6em !important;
-    }
-    .userPreferencesPage .listItem                    { padding-right: 1.5em !important; }
-    .userPreferencesPage .listItemIcon                {
-        width: 2% !important;
-        text-align: left;
-        margin-right: 0;
-        flex: auto;
-        padding-right: .5em;
-    }
-    .userPreferencesPage .listItemBody                {
-        flex: auto;
-        padding-top: .5em;
-        padding-bottom: .5em;
-        padding-left: .5em;
-        text-align: left;
-    }
+    .play-button,
+    .detail-button,
+    .favorite-button { margin: 0 .5em !important; }
 }
 
-/*
-────────────────────────────────────────────────────────────────────────────
-   Search Page
+/* Buttons: Links acting as Buttons
 ──────────────────────────────────────────────────────────────────────────── */
 
-#searchPage .searchFieldsInner { padding-bottom: 1em; }
-
-/* Section Titles */
-#searchPage .sectionTitle {
-    padding: .3em 0;
-    margin: .5em 0;
-    text-align: center;
-    font-weight: 600;
+.button-link,
+.overview-expand {
+    color: inherit !important;
+    transform: none !important;
+    text-decoration: none !important;
 }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
-.layout-mobile {
-    #episodesTab .itemsContainer { margin-bottom: 1em !important; }
-    #studiosTab .itemsContainer  { margin-top: 1em !important; }
+/* ClearLinks: Buttons with Link-Buttons inside
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Clearlink Container */
+.clearLink {
+    padding: 0em 1em !important;
+    transform: none !important;
+    margin-left: 0px !important;
+    margin: 0;
+}
+
+/* Clearlink: Buttons inside */
+.clearLink > .emby-button {
+    padding: 0em 1em !important;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    border: none !important;
+}
+
+/* Clearlinks: Won't focus with remote > hide in TV layout */
+.layout-tv {
+    .sectionTitleContainer > .clearLink { display: none; }
+}
+
+/* Misc Buttons
+──────────────────────────────────────────────────────────────────────────── */
+.listPaging .paper-icon-button-light:focus,
+.emby-button.sectionTitleTextButton.show-focus:focus {
+    transform: scale(1);
+    color: var(--accent100);
 }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Login Page
+   Inputs and Labels
 ────────────────────────────────────────────────────────────────────────────
 */
 
-/* Login: Form Dimensions & Colors */
-#loginPage .padded-bottom-page {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    width: 24em;
-    padding-bottom: 2em !important; 
+/* Input */
+.emby-input { padding: .5em .6em; }
+
+/* Textarea */
+.emby-textarea {
+    padding: .5em .6em;
+    resize: vertical !important;
+    font-family: monospace;
+    font-size: .9em;
+    min-height: 6em;
+    overflow-y: hidden;
 }
 
-/* Login: Hide some elements */
-#loginPage .btnForgotPassword,
-#loginPage .loginDisclaimerContainer { display: none; }
+/* Select Container */
+.emby-select-focusscale:focus { transform: none !important; }
 
-/* Login Form: Title marging (please sign in) */
-#loginPage .visualLoginForm          { padding-top: 1em; }
-#loginPage .manualLoginForm          { padding-top: 2em; }
+/* Select Container: Arrow */
+.selectContainer .selectArrowContainer              { top: 2em; }
+.trackSelectionFieldContainer .selectArrowContainer { top: .3em; }
+.selectArrow                                        { margin-top: .1em !important; }
 
-/* Login Form: User cards */
-#loginPage .squareCard               { width: 33% !important; margin: 1em !important; }
-#loginPage .cardBox                  { box-shadow: none !important; }
-#loginPage .cardScalable             { box-shadow: var(--cardshadow) !important; }
-#loginPage .card:hover .cardScalable { box-shadow: var(--cardglow) !important; }
+/* Select Container: Label */
+.selectLabel { align-self: center; }
 
-/* Manual Login Form */
-#loginPage .readOnlyContent,
-#loginPage form                      { max-width: 22em; }
-
-/*
-────────────────────────────────────────────────────────────────────────────
-   Select Server Page
-────────────────────────────────────────────────────────────────────────────
-*/ 
-
-/* Select Server: Form Dimensions & Colors */
-#selectServerPage .padded-bottom-page       { margin: 0 5%;
-                                              padding-top: 1em;
-                                              padding-bottom: 2em !important; }
-
-#selectServerPage .btnAddServer:hover,
-#selectServerPage .btnAddServer:focus       { border-color: var(--accent60) !important; }
-
-/* Select Server: Server cards */
-#selectServerPage .cardBox                  { margin:  1em !important; }
-#selectServerPage .cardFooter               { padding: 0.8em .3em; }
-
-#selectServerPage .cardBox:has(.cardFooter) 
-.cardScalable div                           { border-bottom-left-radius: 0 !important;
-                                              border-bottom-right-radius: 0 !important; }
-/* Connect to Server form */
-.standalonePage .addServerForm              { padding: 1em 4em 2em 4em; }
-.addServerForm h1                           { text-align: center; }
+.emby-select-withcolor:hover,
+.emby-select-withcolor:focus    { cursor: pointer; }
+.emby-select-withcolor > option { cursor: pointer !important; }
