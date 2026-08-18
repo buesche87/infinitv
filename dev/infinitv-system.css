@@ -81,14 +81,14 @@
     :has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
     :has(#musicRecommendedPage:not(.hide)) .formDialog,
     :has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog {
-        top: 8em !important;
+        top: 7.3em !important;
         position: fixed;
         bottom: auto !important;
     }
 
     /* Moving */
-    :has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(10.5em) !important; }
-    :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(13.5em) !important; }
+    :has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(11em) !important; }
+    :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(14em) !important; }
     :has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
     :has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
     :has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
@@ -96,11 +96,14 @@
 
     /* Header */
     :has(.centeredDialog[style*="top: 10px"]) .actionSheet                        { transform: translateY(3.3em) !important; }
-    :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet                      { transform: translateY(7.25em) !important; }
+    :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet                      {transform: translateY(6.6em) !important;}
 
     /* Player OSD */
     :has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]               { transform: translateY(3.5em) !important; }
     :has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
+
+    /* Dialog with Radio Buttons */
+    .dialogContainer .formDialog.opened:has(.mdl-radio__button) > div {padding-left: 2em !important;}
 }
 
 
