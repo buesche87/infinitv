@@ -20,7 +20,7 @@
 
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
-    @media(min-width: 50em)                                    {
+    @media(min-width: 50em)                         {
         .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 0vw; }
     }
 }
@@ -28,20 +28,19 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
     .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
+    .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.3em !important }
     #itemDetailPage                                { padding-top: 1em }
     .itemBackdrop                                  { margin-top: 0 }
 
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker     { padding-left: 2vw; padding-right: 6vw }
 
-    .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.3em !important }
-
-    @media (min-width: 50em)                                      {
+    @media (min-width: 50em)                       {
         .itemBackdrop                              { margin-top: 3.9rem }
         .libraryPage.noSecondaryNavPage            { padding-top: 4em !important }
         .libraryPage .padded-right-withalphapicker { padding-left: 2vw;  padding-right: 4vw }
     }
-    @media (min-width: 100em)                                     {
+    @media (min-width: 100em)                      {
         .libraryPage                               { padding-top: 4.3em !important }
         .libraryPage.noSecondaryNavPage            { padding-top: 4.3em !important }
         .libraryPage:not(.noSecondaryNavPage)      { padding-top: 4.3em !important }
@@ -54,13 +53,12 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Alphabet Picker: Buttons */
-.alphaPickerButton              { height: 1.6em }
+.alphaPickerButton              { height: 1.6em; }
 
 .alphaPickerButton:hover        {
     background: var(--accent60) !important;
     color: white !important;
 }
-
 .alphaPickerButton:focus,
 .alphaPickerButton:active       {
     transform: none !important;
@@ -78,9 +76,9 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
     /* Stretch Alphabet Picker */
-    .alphaPicker     { bottom: 2em }
+    .alphaPicker  { bottom: 2em }
     @media only screen and (max-height: 767px) and (orientation: landscape) {
-        .layout-mobile .alphaPicker { bottom: 1em }
+        .alphaPicker { bottom: 1em }
     }
 }
 
@@ -222,24 +220,21 @@
     }
 
     /* Multi-Select Dialog Buttons */
+    .itemSelectionCount,
+    .btnSelectionPanelOptions,
+    .btnCloseSelectionPanel {
+        margin: 0 .5em;
+        min-width: 1em;
+    }
+
     .itemSelectionCount {
+        order: 1;
         font-size: 140%;
         font-weight: 600;
-        order: 1;
-        margin: 0em .5em;
         margin-bottom: .1em;
-        min-width: 1em;
         text-align: center;
         cursor: default;
     }
-    .btnSelectionPanelOptions {
-        order: 2;
-        margin: 0em .5em;
-        min-width: 1em;
-    }
-    .btnCloseSelectionPanel {
-        order: 3;
-        margin: 0em .5em;
-        min-width: 1em;
-    }
+    .btnSelectionPanelOptions { order: 2; }
+    .btnCloseSelectionPanel   { order: 3; }
 }

@@ -137,7 +137,7 @@
 /* Large Image List Item */
 .listItem.listItem-largeImage {
     margin-bottom: 1em;
-    padding: 0em;
+    padding: 0;
     transform: none !important;
     background: var(--bgdark40) !important;
     backdrop-filter: var(--blur)
@@ -179,7 +179,7 @@
 
 /* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
-    .listItem.listItem-largeImage { margin-right: 0em; }
+    .listItem.listItem-largeImage { margin-right: 0; }
     .vertical-list .listItem-border {
         border: var(--buttonborder) !important;
         border-radius: var(--rounding-media) !important;

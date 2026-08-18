@@ -40,7 +40,7 @@
     }
 
     /* Primary Container */
-    .detailPagePrimaryContent     { padding: 0em 1.5vw 1em 32.45vw; }
+    .detailPagePrimaryContent     { padding: 0 1.5vw 1em 32.45vw; }
     .itemDetailsGroup             { margin: .5em 0 2em 0; }
     .itemTags                     { padding: 0; margin: 1em 0 !important; }
     .itemExternalLinks            { margin: 1em 0 .75em 0 !important; }
@@ -81,7 +81,7 @@
             padding-left: 30vw !important;
             align-content: flex-start;
             flex-wrap: wrap;
-            left: 0em;
+            left: 0;
         }
         .infoWrapper            { margin-top: .5em; }
         .mainDetailButtons      { margin-left: 2vw; }
@@ -135,7 +135,7 @@
         padding-top: 0;
     }
     .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
-    .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0em !important; }
+    .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0 !important; }
     .trackSelections .selectContainer .selectLabel       { flex-basis: 5em; }
     .detailSection                                       { padding-bottom: .5em; }
 
@@ -154,7 +154,7 @@
     /* TV Show Page ------------------------------------ */
     .libraryPage:not(.hide):has(.trackSelections.hide) {
         .detailPagePrimaryContent {
-            padding-top: 0em;
+            padding-top: 0;
             padding-left: 0;
         }
         .detailSectionContent { padding-left: .5em; }
@@ -234,8 +234,8 @@
 
     /* Primary Container */
     .detailPagePrimaryContent {
-        padding-top: 0em;
-        padding-bottom: 0em;
+        padding-top: 0;
+        padding-bottom: 0;
         padding-left: 3% !important;
         padding-right: 3% !important;
     }
@@ -250,7 +250,7 @@
     .layout-mobile .trackSelections { padding-top: 1em }
 
     /* Secondary Container */
-    .detailPageSecondaryContainer                    { padding-top: 0em !important }
+    .detailPageSecondaryContainer                    { padding-top: 0 !important }
     .detailPageSecondaryContainer .detailPageContent {
         padding-left: 3% !important;
         padding-right: 3% !important;
