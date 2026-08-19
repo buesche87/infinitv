@@ -381,7 +381,13 @@
             padding-bottom: 0.5em;
             height: 3em;
         }
-        .emby-tab-button { padding-top: 0em }
+        .emby-tab-button { 
+            padding-top: .25em;
+            padding-bottom: 1.25em;
+        }
+        .libraryPage .padded-right-withalphapicker {
+            padding-top: 2.75em;
+        }
     }
 }
 

@@ -366,6 +366,14 @@
         margin-bottom: .5em !important;
         margin-top: .75em !important;
     }
+
+    .itemsContainer .card.personCard > .cardBox {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: .5em !important;
+        margin-top: .75em !important;
+    }
+    
 }
 
 /*
