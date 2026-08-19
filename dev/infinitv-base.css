@@ -119,7 +119,7 @@
 .cardOverlayButton:hover,
 .detailButton:hover,
 .emby-button:hover,
-.emby-button:focus,
+.layout-tv .emby-button:focus,
 .emby-checkbox:focus + .checkboxLabel,
 .favorite-button:hover,
 .favorite-button.favorited,
