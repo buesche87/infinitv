@@ -29,15 +29,15 @@
 .layout-mobile {
     
     .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
-    .libraryPage:not(.noSecondaryNavPage)          {padding-top: 6.5em !important;}
+    .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.5em !important; }
     #itemDetailPage                                { padding-top: 1em }
     
     .itemBackdrop                                  { margin-top: 0 }
 
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker     { padding-left: 1%; padding-right: 6%;}
-    
     .libraryPage:not(.noSecondaryNavPage)  .padded-right-withalphapicker     {padding-top: 0px;}
+    
     @media (min-width: 20em) { 
         .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker { padding-right: 6%; }}
     @media (min-width: 30em) { 
@@ -55,8 +55,8 @@
         .libraryPage.noSecondaryNavPage            { padding-top: 4.3em !important }
     }
 
-    .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker     {padding-top: 0px;} }
-    
+    .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker     { padding-top: 0px;}}
+    .libraryPage.noSecondaryNavPage {  .itemsContainer     { padding-top: 2.5em;}}
 }
 
 /*
