@@ -25,7 +25,7 @@
     --card-overflow-backdrop-width: 50%;
 
     /* Overflow Cards in Primary Container not containing a NextUp Section */
-    --card-overflow-portrait-nextuphide-width: 50%;
+    --card-overflow-portrait-nextuphide-width: 33%;
     --card-overflow-square-nextuphide-width:   33%; /* not sure if used anywhere */
     --card-overflow-backdrop-nextuphide-width: 33.33%; /* not sure if used anywhere */
 

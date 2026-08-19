@@ -203,10 +203,11 @@
 .layout-mobile {
 
     .detailRibbon {
-        margin-top: -1em !important;
+        /* margin-top: -1em !important; */
         padding-bottom: 1.25em;
-        padding-right: 3% !important;
-        padding-left: 5%;
+        padding-right: 2vw !important;
+        padding-left: 2vw !important;
+        /* padding-left: 5%; */
     }
     
     /* Media Poster */
@@ -227,13 +228,20 @@
         margin-left: .5em !important;
     }
 
+    .overview {
+        margin: 0;
+    }
+    
+    .overview p {
+        margin-top: 0;
+    }
 
     /* Primary Container */
     .detailPagePrimaryContent {
         padding-top: 0;
         padding-bottom: 0;
-        padding-left: 3% !important;
-        padding-right: 3% !important;
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
     }
     .detailPagePrimaryContent .trackSelections,
     .detailPagePrimaryContent .detailSectionContent,
@@ -242,15 +250,21 @@
         padding-right: 2vw !important;
     }
 
+    #listChildrenCollapsible {
+        margin-top: 1em;
+    }
+
     /* Tracks & Subtitles */
     .layout-mobile .trackSelections { padding-top: 1em }
 
     /* Secondary Container */
     .detailPageSecondaryContainer                    { padding-top: 0 !important }
     .detailPageSecondaryContainer .detailPageContent {
-        padding-left: 3% !important;
-        padding-right: 3% !important;
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
     }
+
+    
 }
 
 /*
