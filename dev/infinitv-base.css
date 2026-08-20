@@ -442,7 +442,6 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Rounding: System */
-/* .actionSheetMenuItem, */
 .checkboxOutline,
 .emby-button,
 .emby-input,
@@ -455,8 +454,6 @@
 .listItemIcon,
 .listTextButton-autohide,
 .paperList,
-.layout-tv .sectionTitle,
-.layout-tv .sectionTitleContainer-cards,
 .detailPageWrapperContainer .sectionTitle,
 .detailPageWrapperContainer .sectionTitleContainer-cards,
 .subtitleSyncContainer,
@@ -466,6 +463,12 @@
 .selectionCommandsPanel,
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) { border-radius: var(--rounding-system) !important; }
+
+.layout-tv {
+    .sectionTitle,
+    .sectionTitleContainer-cards { border-radius: var(--rounding-system) !important; }
+} 
+
 
 /* Rounding: Media */
 .blurhash-canvas,
@@ -498,9 +501,13 @@
 .upNextContainer,
 .upNextDialog-poster-img                             { border-radius: var(--rounding-media) !important; }
 
+
 /* No Roundings */
 .backdrop-overlay,
 .dialog.dialog-fullscreen,
-.layout-desktop .homePage .sectionTitleContainer-cards,
-.layout-desktop .homePage .sectionTitle-cards,
 .navMenuOption                                       { border-radius: 0 !important; }
+
+.layout-desktop {
+    .homePage .sectionTitleContainer-cards,
+    .homePage .sectionTitle-cards                    { border-radius: 0 !important; }
+}

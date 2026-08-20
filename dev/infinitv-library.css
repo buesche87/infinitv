@@ -133,7 +133,9 @@
 
     /* Filterbar with buttons (top) */
     .itemsViewSettingsContainer,
-    .pageTabContent>.focuscontainer-x:has(>button) { justify-self: center; }
+    .pageTabContent>.focuscontainer-x:has(>button) { 
+        justify-self: center;
+    }
 
     /* Paging-bar (bottom right) */
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
@@ -141,7 +143,7 @@
     .pageTabContent>.focuscontainer-x:not(:has(>button))  {
         bottom: 0;
         right: .5em;
-        margin-bottom: .5em;
+        margin-bottom: .75em;
     }
 
     /* Padding for paging */
