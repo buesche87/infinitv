@@ -56,7 +56,7 @@
     }
 
     .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker     { padding-top: 0px;}}
-    .libraryPage.noSecondaryNavPage {  .itemsContainer     { padding-top: 2.5em;}}
+    .libraryPage.noSecondaryNavPage {  .itemsContainer     {padding-top: 3em;}}
 }
 
 /*
@@ -182,20 +182,22 @@
         padding: 0;
     }
 
-    .itemsViewSettingsContainer {
+    .padded-right-withalphapicker .itemsViewSettingsContainer {
         margin-right: -5vw;
     }
 
-
-
-    
     /* Filterbar with buttons (top) */
     .itemsViewSettingsContainer,
     .pageTabContent>.focuscontainer-x:has(>button) {
         justify-self: center;
-        font-size: 80%;
+        font-size: 100%;
         width: 100%;
         border-radius: 0;
+    }
+
+    .itemsViewSettingsContainer .paging,
+    .pageTabContent>.focuscontainer-x:has(>button) .paging {
+        display: none;
     }
 
     /* Paging-bar (bottom right) */
@@ -217,16 +219,15 @@
             width: auto;
             border-radius: var(--rounding-system);
         }
-        .pageTabContent:has(.alphaPicker)>.focuscontainer-x:has(>button)  { transform: translateX(-.75em) translateY(-6em); }
-        .padded-right-withalphapicker .itemsViewSettingsContainer { transform: translateY(-3.5em); }
 
-        
-        .alphaPicker { transform: translateY(-6em); }
+        .alphaPicker{transform: translateY(-5.5em);}
+        .pageTabContent>.focuscontainer-x:has(>button) {transform: translateY(-5.5em);}
+        .pageTabContent:has(.alphaPicker)>.focuscontainer-x:has(>button)  {transform: translateX(-.75em) translateY(-5.5em);}
+        .padded-right-withalphapicker .itemsViewSettingsContainer {transform: translateY(-3em);}       
     } 
 
     .withSectionTabs .headerTop { padding-bottom:.55em; }
     .sectionTabs { font-size: 90%; }
-
 }
 
 /*

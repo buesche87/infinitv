@@ -296,12 +296,6 @@ h2.username                                                 {
     font-weight: 600;
 }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
-.layout-mobile {
-    #episodesTab .itemsContainer { margin-bottom: 1em !important; }
-    #studiosTab .itemsContainer  { margin-top: 1em !important; }
-}
-
 /*
 ────────────────────────────────────────────────────────────────────────────
    Login Page

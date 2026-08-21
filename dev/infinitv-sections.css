@@ -233,16 +233,32 @@
         padding-right: 0em;
     }
 
+    
+    #tvRecommendedPage .itemsContainer {margin: 0 1vw;}
+
+    #tvRecommendedPage .itemsContainer.vertical-wrap {margin: 0;}
+    
     #favoritesTab .itemsContainer,
-    #tvRecommendedPage .itemsContainer,
     #moviesPage .itemsContainer,
-    #albumsPage .itemsContainer        { margin: 0 2vw; }
+    #albumsPage .itemsContainer        {margin: 0 2vw;}
 
     #seriesTab .itemsContainer,
     #moviesTab .itemsContainer,
-    #albumsTab .itemsContainer         { margin: 0; }
+    #albumsTab .itemsContainer         { 
+        margin: 0; 
+        padding-top: 3em;
+    }
+
+    #episodesTab .itemsContainer         { 
+        margin: 0; 
+        padding-top: 3.5em;
+    }
 
     /* Items Container with listItems */
-    .pageTabContent .itemsContainer:has(.listItem-border) { padding: .5em 3% !important }
+    .pageTabContent .itemsContainer:has(.listItem-border) { 
+        padding-right: 3% !important;
+        padding-left: 3% !important;
+    }
+    
     .pageTabContent .padded-right-withalphapicker:has(.listItem-border) { padding: 0.5em 8% .5em 4% !important }
 }
