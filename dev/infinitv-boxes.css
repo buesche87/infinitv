@@ -118,7 +118,7 @@
 
 /* hmmm... */
 .layout-desktop {
-    .libraryPage .verticalSection,
+
     .homePage .verticalSection,
     .itemDetailPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
@@ -128,18 +128,13 @@
         margin: 0 .25em 0 -.25em;
     }
     .homePage .verticalSection {
-        margin: 0 1vw 1em 1vw;
+        margin: 1em 1vw 0 1vw;
     }
 
     .itemDetailPage .detailVerticalSection {
         margin-bottom: 1em;
     }
 
-        /*
-    .libraryPage .verticalSection {
-        margin: .5em 1vw 0 1vw;
-    }
-    */
     .detailPagePrimaryContent {
         padding: 0 1vw 0 32.45vw;
     }

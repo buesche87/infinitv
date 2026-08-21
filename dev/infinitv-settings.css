@@ -64,7 +64,7 @@
 
     /* Settings Page: Box size */
     #myPreferencesMenuPage .readOnlyContent          { display: flex; max-width: 95%; }
-    #myPreferencesMenuPage > .padded-left            { padding-top: 0; }
+    #myPreferencesMenuPage > .padded-left            {padding-top: 0;padding-left: 0;}
 }
 
 .layout-desktop {
