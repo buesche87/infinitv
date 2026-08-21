@@ -72,7 +72,7 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
     /* Stretch Alphabet Picker */
-    .alphaPicker  {top: 6em;}
+    .alphaPicker  {top: 11em;bottom: auto}
     @media only screen and (max-height: 767px) and (orientation: landscape) {
         .alphaPicker { bottom: 1em }
     }
@@ -205,8 +205,9 @@
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
     .pageTabContent>.focuscontainer-x:not(:has(>button))  {
         bottom: 0;
-        right: .5em;
-        margin-bottom: .5em;
+        /* right: .5em; */
+        margin-bottom: 1em;
+        justify-self: center;
     }
 
     /* Padding for paging */
@@ -218,11 +219,12 @@
         .pageTabContent>.focuscontainer-x:has(>button) {
             width: auto;
             border-radius: var(--rounding-system);
+            top: 1em;
         }
 
-        .alphaPicker{transform: translateY(-5.5em);}
-        .pageTabContent>.focuscontainer-x:has(>button) {transform: translateY(-5.5em);}
-        .pageTabContent:has(.alphaPicker)>.focuscontainer-x:has(>button)  {transform: translateX(-.75em) translateY(-5.5em);}
+        .alphaPicker{/* transform: translateY(-9em); *//* top: 1em; */}
+        .pageTabContent>.focuscontainer-x:has(>button) {/* transform: translateY(-5.5em); */}
+        .pageTabContent:has(.alphaPicker)>.focuscontainer-x:has(>button)  {/* transform: translateX(-.75em) translateY(-5.5em); *//* top: 1em; */}
         .padded-right-withalphapicker .itemsViewSettingsContainer {transform: translateY(-3em);}       
     } 
 
