@@ -41,9 +41,7 @@
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker     {padding-left: 0;padding-right: 6%;}
     .libraryPage:not(.noSecondaryNavPage)  .padded-right-withalphapicker     {padding-top: 0px;}
-    
-    @media (min-width: 20em) { 
-        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker {/* padding-right: 6%; */}}
+
     @media (min-width: 30em) { 
         .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker     { padding-right: 5%; }}
     @media (min-width: 40em) { 
@@ -209,7 +207,6 @@
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
     .pageTabContent>.focuscontainer-x:not(:has(>button))  {
         bottom: 0;
-        /* right: .5em; */
         margin-bottom: 1em;
         justify-self: center;
     }
@@ -225,10 +222,6 @@
             border-radius: var(--rounding-system);
             top: 1em;
         }
-
-        .alphaPicker{/* transform: translateY(-9em); *//* top: 1em; */}
-        .pageTabContent>.focuscontainer-x:has(>button) {/* transform: translateY(-5.5em); */}
-        .pageTabContent:has(.alphaPicker)>.focuscontainer-x:has(>button)  {/* transform: translateX(-.75em) translateY(-5.5em); *//* top: 1em; */}
         .padded-right-withalphapicker .itemsViewSettingsContainer {transform: translateY(-3em);}       
     } 
 
