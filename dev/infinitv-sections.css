@@ -72,7 +72,7 @@
     .sectionTitleContainer-cards,
     :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
         text-align: center;
-        padding: .35em 0;
+        padding: .5em 0;
     }
 
     /* Titles */
