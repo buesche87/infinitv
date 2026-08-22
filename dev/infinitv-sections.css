@@ -243,7 +243,7 @@
     }
 
     
-    #tvRecommendedPage .itemsContainer {margin: 0 1vw;}
+    #tvRecommendedPage .itemsContainer {margin: .5em 0;}
 
     #tvRecommendedPage .itemsContainer.vertical-wrap {margin: 0;}
     
@@ -258,9 +258,9 @@
         padding-top: 3em;
     }
 
-    #episodesTab .itemsContainer         { 
-        margin: 0; 
-        padding-top: 3.5em;
+    #episodesTab .itemsContainer         {
+        margin: 0;
+        padding-top: 4em;
     }
 
     /* Items Container with listItems */

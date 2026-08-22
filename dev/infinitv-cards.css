@@ -361,12 +361,19 @@
 .layout-mobile {
     /* CardBoxes in General */
     .itemsContainer .card > .cardBox {
-        margin-left: .75em;
-        margin-right: .75em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
         margin-bottom: .5em !important;
         margin-top: .75em !important;
     }
 
+    .itemsContainer .card.portraitCard > .cardBox {
+        margin-left: 1.25em;
+        margin-right: 1.25em;
+        margin-bottom: 1em !important;
+        margin-top: 1.25em !important;
+    }
+    
     .itemsContainer .card.personCard > .cardBox {
         margin-left: 0;
         margin-right: 0;

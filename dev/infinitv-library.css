@@ -58,7 +58,7 @@
         .itemBackdrop                              {/* margin-top: 3.9rem; */}
     }
     @media (min-width: 100em)                      {
-        .libraryPage:not(.noSecondaryNavPage)                               { padding-top: 4.3em !important }
+        .libraryPage:not(.noSecondaryNavPage)                               {padding-top: 4em !important;}
         .libraryPage.noSecondaryNavPage            { padding-top: 4.3em !important }
     }
 
@@ -200,6 +200,11 @@
         font-size: 100%;
     }
 
+    .itemsViewSettingsContainer > .listTextButton-autohide {
+        padding-top: .5em !important;
+        padding-bottom: .5em !important;
+    }
+
     .pageTabContent>.focuscontainer-x:has(>button) {
         width: 100%;
         border-radius: 0;
@@ -218,12 +223,17 @@
     }
 
     /* Paging-bar (bottom right) */
-    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
-    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)), 
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center, 
     .pageTabContent>.focuscontainer-x:not(:has(>button))  {
         bottom: 0;
         margin-bottom: 1em;
         justify-self: center;
+    }
+    
+    .libraryPage .padded-right>.focuscontainer-x .paging {
+        padding-top: .5em !important; 
+        padding-bottom: .5em !important;
     }
 
     /* Padding for paging */
@@ -237,7 +247,8 @@
             border-radius: var(--rounding-system);
             top: 1em;
         }
-        .padded-right-withalphapicker .itemsViewSettingsContainer {transform: translateY(-3em);}       
+        .padded-right-withalphapicker .itemsViewSettingsContainer { transform: translateY(0); }
+        
     } 
 
     .withSectionTabs .headerTop { padding-bottom:.55em; }
