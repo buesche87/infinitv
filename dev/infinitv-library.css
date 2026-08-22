@@ -64,6 +64,9 @@
 
     .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker     { padding-top: 0px;}}
     .libraryPage.noSecondaryNavPage {  >.itemsContainer     {padding-top: 3em;}}
+    #musicRecommendedPage .itemsContainer {padding-top: 0}
+    #musicRecommendedPage:has(.is-active .focuscontainer-x) .itemsContainer {padding-top: 4em;}
+    
 }
 
 /*
@@ -239,6 +242,9 @@
     /* Padding for paging */
     .listPaging > span { padding: 0 .556em; }
 
+
+    
+
     /* Dynamic Filter Bar */
     [dir=ltr]:has(.headroom--unpinned) {
         .padded-right-withalphapicker .itemsViewSettingsContainer,
@@ -248,6 +254,8 @@
             top: 1em;
         }
         .padded-right-withalphapicker .itemsViewSettingsContainer { transform: translateY(0); }
+
+        
         
     } 
 

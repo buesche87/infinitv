@@ -72,7 +72,7 @@
     .sectionTitleContainer-cards,
     :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
         text-align: center;
-        padding: .5em 0;
+        padding: .35em 0;
     }
 
     /* Titles */
@@ -242,25 +242,14 @@
         padding-top: 3em;
     }
 
-    
     #tvRecommendedPage .itemsContainer {margin: .5em 0;}
-
-    #tvRecommendedPage .itemsContainer.vertical-wrap {margin: 0;}
+    #tvRecommendedPage .itemsContainer.vertical-wrap { margin: 0; }
     
-    #favoritesTab .itemsContainer,
-    #moviesPage .itemsContainer,
     #albumsPage .itemsContainer        {margin: 0 2vw;}
-
     #seriesTab .itemsContainer,
     #moviesTab .itemsContainer,
-    #albumsTab .itemsContainer         { 
-        margin: 0; 
-        padding-top: 3em;
-    }
-
-    #episodesTab .itemsContainer         {
-        margin: 0;
-        padding-top: 4em;
+    #albumsTab .itemsContainer         { margin: 0; padding-top: 3em; }
+    #episodesTab .itemsContainer       { margin: 0; padding-top: 4em;
     }
 
     /* Items Container with listItems */
