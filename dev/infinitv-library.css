@@ -3,6 +3,11 @@
    Library Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
+:root {
+    --sectiontitlepadding: .35em;
+}
+
+
 .standalonePage    { padding-top: 5.5em !important }
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
@@ -175,7 +180,7 @@
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)) {
         z-index: 1;
-        height: 3em;
+        /* height: 3em; */
         align-content: center;
         position: fixed;
         background-color: hsl(0deg 0% 62.03% / 17%);
@@ -198,6 +203,13 @@
     .pageTabContent>.focuscontainer-x:has(>button) {
         width: 100%;
         border-radius: 0;
+        font-size: 110%;
+    }
+
+    /* */
+    .focuscontainer-x .paper-icon-button-light {
+        padding-top: .5em !important;
+        padding-bottom: .5em !important;
     }
 
     .itemsViewSettingsContainer .paging,

@@ -66,13 +66,13 @@
 
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
-    .sectionTitle { font-size: 1.4em }
+    .sectionTitle {font-size: 1.4em;}
 
     /* Container */
     .sectionTitleContainer-cards,
     :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
         text-align: center;
-        padding: .35em 0 .35em 0;
+        padding: .5em 0;
     }
 
     /* Titles */
@@ -128,13 +128,18 @@
 
     /* Items Container */
     .itemsContainer                                      { padding: 0 }
+    #indexPage .itemsContainer { margin: 0 }
 
+
+    
     #suggestionsTab .itemsContainer,
     #genresTab .itemsContainer,
-    #favoritesTab .itemsContainer,
+    /* #favoritesTab .itemsContainer, */
     #tvRecommendedPage .verticalSection > .itemsContainer,
     #moviesPage .verticalSection > .itemsContainer,
     #albumsPage .verticalSection > .itemsContainer       { margin: 1em 1.5vw }
+
+    
     #items .itemsContainer                               { margin: 0 }
 
 
@@ -226,11 +231,15 @@
 
     /* Items Container */
     .itemsContainer                    { padding: 0; }
-
+    
     /* Center Content */
     .verticalSection .itemsContainer.vertical-wrap {
         justify-content: center;
         padding-right: 0em;
+    }
+
+    .itemsContainer.centered {
+        padding-top: 3em;
     }
 
     

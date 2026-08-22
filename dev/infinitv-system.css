@@ -150,9 +150,9 @@
     /* Header */
     :has(.centeredDialog[style*="top: 10px"]) .actionSheet      { transform: translateY(3em) !important; }
     :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet    {
-        top: 0 !important;
-        left: 50% !important;
-        transform: translateX(-50%) translateY(9.5em) !important;
+        /* top: 0 !important; */
+        /* left: 50% !important; */
+        transform: translateY(8.5em) !important;
     }
 
     /* Player OSD */
