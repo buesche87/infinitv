@@ -50,7 +50,7 @@
         .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker { padding-right: 3%;}
         .libraryPage.noSecondaryNavPage            { padding-top: 4em !important }
         
-        .itemBackdrop                              { margin-top: 3.9rem }
+        .itemBackdrop                              {/* margin-top: 3.9rem; */}
     }
     @media (min-width: 100em)                      {
         .libraryPage:not(.noSecondaryNavPage)                               { padding-top: 4.3em !important }
@@ -190,9 +190,12 @@
 
     /* Filterbar with buttons (top) */
     .itemsViewSettingsContainer,
-    .pageTabContent>.focuscontainer-x:has(>button) {
+    .pageTabContent>.focuscontainer-x {
         justify-self: center;
         font-size: 100%;
+    }
+
+    .pageTabContent>.focuscontainer-x:has(>button) {
         width: 100%;
         border-radius: 0;
     }

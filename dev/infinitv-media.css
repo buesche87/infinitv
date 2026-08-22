@@ -214,17 +214,17 @@
     .detailImageContainer .card.backdropCard {
         top: 1em;
         max-width: 33vw;
+        width: 33%;
     }
     .detailImageContainer .card {
-        left: 3%;
+        left: 3vw;
     }
     
     /* Info Container */
     .infoWrapper {
         padding-bottom: 0.15em;
-        padding-left: 38% !important;
     }
-    
+
     /* Buttons */
     .mainDetailButtons .detailButton {
         margin-right: .5em !important;
