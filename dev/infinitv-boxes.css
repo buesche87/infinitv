@@ -7,112 +7,97 @@
 
     /* Background & Border */
     .detailRibbon,
-    .detailPageSecondaryContainer .detailPageContent,
-    .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible,
-    .libraryPage:not(.hide):has(.trackSelections:not(.hide)) .detailSection,
-    .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent,
-    .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup,
-    .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection,
-    #nowPlayingPage .nowPlayingInfoContainer,
-    .playlistSection .playlistSectionButton {
+    .detailPagePrimaryContent .detailSection,
+    .itemDetailPage .verticalSection,
+    .itemDetailPage:has(.listItem-largeImage) .detailSectionContent {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--buttonborder);
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
     }
 
-    /* Small Border */
-    .detailImageContainer .card { border: solid 1px hsla(0, 0%, 100%, .1); }
-
-    /* Special Border radius */
-    .detailPagePrimaryContent,
-    .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
-        border-top-right-radius: 0;
-        border-top-left-radius: 0;
+    /* Card Container */
+    .detailImageContainer .card { 
+        border: solid 1px hsla(0, 0%, 100%, .1);
+        margin-top: 0;
     }
-
-    .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    /* Alignment & Fixes
-    ──────────────────────────────────────────────────────────────────────────── */
 
     /* Detail Ribbon */
-    .detailRibbon { padding: 1em 1vw 0 1vw; }
-
-    /* Card Container */
-    .detailImageContainer .card { margin-top: 0; }
+    [dir=ltr] .detailRibbon {padding: 1em 1.5em;margin-bottom: 1em;}
 
     /* Section Titles */
     .detailPagePrimaryContent .sectionTitle,
     .detailPageSecondaryContainer .sectionTitle { border-radius: 0 !important; }
 
+    /* Sections */
+    .verticalSection { margin-bottom: 1em !important; }
+    
     /* Primary Content */
-    .detailPagePrimaryContainer { margin-right: 1em; }
-    .detailPagePrimaryContent   { border-top-color: transparent; }
-    .itemDetailsGroup           { padding-bottom: .5em; }
+    .detailPagePrimaryContainer { margin-bottom: 1em; }
+    .detailPagePrimaryContent  { padding: 0; }
+    #listChildrenCollapsible {margin-top: 1em !important;}
+    
+    /* Secondary Content */
+    .detailPageSecondaryContainer { margin-top: 1em; }
 
-    /* Media (Item Details) */
-    .libraryPage:not(.hide):has(.trackSelections) .detailRibbon {padding: 1em 1.5em;}
-
-    .libraryPage:not(.hide):has(.trackSelections) .detailPagePrimaryContent {
-        padding-bottom: 0;
-        margin-top: 1em;
-        padding: 0;
-    }
-    .libraryPage:not(.hide):has(.trackSelections:not(.hide)) .detailSection {
-        padding: .5em 1.5em;
-        margin: 0;
-    }
-
-    /* TV Show */
-    .libraryPage:not(.hide):has(.trackSelections.hide) .detailPagePrimaryContent {
-        background: transparent;
-        border-color:  transparent;
-        padding-right: 0;
-    }
-    .libraryPage:not(.hide):has(.trackSelections.hide) .detailSectionContent {
-        border-bottom: none;
-        margin: 0;
-        padding: 0 1.5em .5em 1.5em;
-    }
-    .libraryPage:not(.hide):has(.trackSelections.hide) .itemDetailsGroup {
-        border-top: none;
-        padding: .5em 1em 1em 1.5em;
-    }
-    .libraryPage:not(.hide):has(.detailSectionContent > .overview.hide) .itemDetailsGroup {
-        display: none;
-    }
-
-    .libraryPage:not(.hide):has(.detailSectionContent > .overview.hide) .detailSectionContent {
-        border: none !important;
-    }
-
-    .libraryPage:not(.hide):has(.listItem-largeImage) .detailSection {
-        background: none;
-        border: none;
-        backdrop-filter: none;
-        padding: 0;
+    /* Page: Media Details */
+    .itemDetailPage:has(.trackSelections:not(.hide)) .detailSection { padding: 1em 1.5em; }
+    
+    /* Page: TV Show Overview */
+    .itemDetailPage:has(.trackSelections.hide) {
+        .detailPagePrimaryContent .detailSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+        .detailSection > div:not(.verticalSection) {
+            padding: .5em 1.5em .5em 1.5em;
+            margin-top: 0;
+        }
+        .detailSectionContent {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            backdrop-filter: var(--blur);
+            border: var(--buttonborder);
+            border-top-right-radius: var(--rounding-media);
+            border-top-left-radius: var(--rounding-media);
+            border-bottom: none;
+            margin: 0;
+            padding: 0 1.5em .5em 1.5em;
+        }
+        .itemDetailsGroup {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            backdrop-filter: var(--blur);
+            border: var(--buttonborder);
+            border-top: none;
+            border-bottom-right-radius: var(--rounding-media);
+            border-bottom-left-radius: var(--rounding-media);
+            padding: .5em 1em 1em 1.5em;
+            margin-bottom: 1em;
+        }
+        .itemGenres:not(:has(div)) { display: none; }
+        .overview.detail-clamp-text { margin: 0; }
     }
 
-    .libraryPage:not(.hide):has(.trackSelections.hide) .nextUpSection                              { margin-bottom: 3em !important; }
-    .libraryPage:not(.hide):has(.trackSelections.hide) .detailPageSecondaryContainer               { margin-top: 1em; }
-    .libraryPage:not(.hide):has(.trackSelections.hide) .detailSection                              { margin-left: 0; margin-right: 0; }
-    .libraryPage:not(.hide):has(.trackSelections.hide) #listChildrenCollapsible .itemsContainer-tv { margin: 0 1em; }
-
-    /* Episode List */
-    .libraryPage:not(.hide):has(.listItem-largeImage) .detailPagePrimaryContent                   { background: none; border-color: transparent; }
-    .libraryPage:not(.hide):has(.listItem-largeImage) #childrenContent                            { padding-left: 0 !important; }
-    .libraryPage:not(.hide):has(.listItem-largeImage) .detailRibbon                               { padding-left: 1.5em; }
-    .libraryPage:not(.hide):has(.listItem-largeImage) #listChildrenCollapsible .itemsContainer-tv { margin: 0 !important; }
-
-    /* Music */
-    #nowPlayingPage .nowPlayingInfoContainer { padding: 1em; }
-    #nowPlayingPage .nowPlayingInfoControls  { padding: 0 .5em; }
-    .playlistSection                         { margin-top: .5em; }
-    .playlistSection .playlistSectionButton  { margin-bottom: 1em; }
+    /* Page: Episode List */
+    .itemDetailPage:has(.listItem-largeImage) {
+        .detailPagePrimaryContainer .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+        .detailSectionContent {
+            /* padding: 0 1.5em 0 1.5em; */
+            margin-bottom: 1em !important;
+            margin-top: 1em !important;
+            border-bottom: var(--buttonborder) !important;
+        }
+        .itemDetailsGroup {
+            display:none;
+        }
+        #childrenContent {
+            padding-left: 0 !important;
+        }
+    }
 }
 
 

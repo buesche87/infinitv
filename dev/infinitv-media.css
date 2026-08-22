@@ -131,7 +131,7 @@
         padding-top: 0;
     }
     .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
-    .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0 !important; }
+    .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0; }
     .trackSelections .selectContainer .selectLabel       { flex-basis: 5em; }
     .detailSection                                       { padding-bottom: .5em; }
 
@@ -153,17 +153,17 @@
             padding-top: 0;
             padding-left: 0;
         }
-        .detailSectionContent { padding-left: .5em; }
+        .detailSectionContent {/* padding-left: .5em; */}
         .itemDetailsGroup {
-            padding-left: .5em;
-            padding-bottom: .5em;
-            margin-top: 0;
-            margin-bottom: 1em;
+            /* padding-left: .5em; */
+            /* padding-bottom: .5em; */
+            /* margin-top: 0; */
+            /* margin-bottom: 1em; */
         }
-        .itemDetailsGroup div { margin: .25em 0 !important; }
+        .itemDetailsGroup div {/* margin: .25em 0 !important; */}
         .nextUpSection {
             margin-top: 0;
-            margin-bottom: 2em !important;
+            margin-bottom: 2em;
         }
         .detailPagePrimaryContainer { margin-right: 1vw; }
         .detailPageSecondaryContainer { margin-top: 0; }
