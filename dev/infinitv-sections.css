@@ -222,7 +222,7 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
     /* Emby Scroller */
-    .emby-scroller                     { padding: 0; margin: 0 1vw; }
+    .emby-scroller                     {padding: 0;margin: 0;}
 
     /* Items Container */
     .itemsContainer                    { padding: 0; }

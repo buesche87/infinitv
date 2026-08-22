@@ -34,12 +34,16 @@
     
     .itemBackdrop                                  { margin-top: 0 }
 
+    #itemDetailPage:has(.detailImageContainer .portraitCard) .itemBackdrop {
+        height: 11em;
+    }
+    
     /* Library Pages: Content with Alphapicker */
-    .libraryPage .padded-right-withalphapicker     { padding-left: 1%; padding-right: 6%;}
+    .libraryPage .padded-right-withalphapicker     {padding-left: 0;padding-right: 6%;}
     .libraryPage:not(.noSecondaryNavPage)  .padded-right-withalphapicker     {padding-top: 0px;}
     
     @media (min-width: 20em) { 
-        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker { padding-right: 6%; }}
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker {/* padding-right: 6%; */}}
     @media (min-width: 30em) { 
         .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker     { padding-right: 5%; }}
     @media (min-width: 40em) { 
@@ -56,7 +60,7 @@
     }
 
     .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker     { padding-top: 0px;}}
-    .libraryPage.noSecondaryNavPage {  .itemsContainer     {padding-top: 3em;}}
+    .libraryPage.noSecondaryNavPage {  >.itemsContainer     {padding-top: 3em;}}
 }
 
 /*
