@@ -30,7 +30,7 @@
     .detailPageSecondaryContainer .sectionTitle { border-radius: 0 !important; }
 
     /* Sections */
-    .verticalSection { margin-bottom: 1em !important; }
+    .itemDetailPage .verticalSection { margin-bottom: 1em !important; }
     
     /* Primary Content */
     .detailPagePrimaryContainer { margin-bottom: 1em; }
@@ -41,10 +41,16 @@
     .detailPageSecondaryContainer { margin-top: 1em; }
 
     /* Page: Media Details */
-    .itemDetailPage:has(.trackSelections:not(.hide)) .detailSection { padding: 1em 1.5em; }
+    .itemDetailPage:has(.trackSelections:not(.hide)) {
+        .detailSection { padding: 1em 1.5em; }
+        .detailPagePrimaryContainer { padding-right: 1vw}
+    }
     
     /* Page: TV Show Overview */
     .itemDetailPage:has(.trackSelections.hide) {
+        .detailPagePrimaryContent {
+            padding-left: 0 !important;
+        }
         .detailPagePrimaryContent .detailSection {
             background: none;
             border: none;
@@ -73,6 +79,9 @@
             border-bottom-left-radius: var(--rounding-media);
             padding: .5em 1em 1em 1.5em;
             margin-bottom: 1em;
+        }
+        .nextUpSection {
+            margin-top: 0 !important;
         }
         .itemGenres:not(:has(div)) { display: none; }
         .overview.detail-clamp-text { margin: 0; }
