@@ -334,14 +334,11 @@
 .layout-tv  {
     /* CardBoxes in General */
     .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 1.4em .8em 1.4em !important; }
-    .itemsContainer > .portraitCard > .cardBox                    { margin: 2em 1.2em 1.6em 1.2em !important; }
+    .itemsContainer > .portraitCard > .cardBox                    { margin: 2em 9% 1.6em 9% !important; }
     .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 1.4em 1.6em 1.4em !important; }
 
     /* CardBoxes in OverflowCards */
-    /* .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 1.8em 1.4em 1.8em !important; } */
-    .itemsContainer > .overflowBackdropCard > .cardBox            {margin: 1.8em 7% 1.4em 7% !important;}
-
-    
+    .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 7% 1.4em 7% !important; }
     .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1.2em 1.6em 1.2em !important; }
     .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.6em 1em 1em 1.6em !important; }
 

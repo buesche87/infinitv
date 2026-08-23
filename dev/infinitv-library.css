@@ -26,7 +26,7 @@
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
     @media(min-width: 50em)                         {
-        .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 0vw; }
+        .libraryPage .padded-right-withalphapicker  {padding: 0 2vw 0 0vw;}
     }
 }
 
