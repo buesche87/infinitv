@@ -24,12 +24,12 @@
     --card-overflow-backdrop-width: 50%;
 
     /* Overflow Cards in Primary Container not containing a NextUp Section */
-    --card-overflow-portrait-nextuphide-width: 33%;
-    --card-overflow-square-nextuphide-width:   33%; /* not sure if used anywhere */
+    --card-overflow-portrait-nextuphide-width: 33.33%;
+    --card-overflow-square-nextuphide-width:   33.33%; /* not sure if used anywhere */
     --card-overflow-backdrop-nextuphide-width: 33.33%; /* not sure if used anywhere */
 
     /* Person Cards */
-    --card-person-width: 33%;
+    --card-person-width: 33.33%;
     --card-person-scalable-height: 33vw;
     --card-person-scalable-width: calc(33vw - 25%);
 
@@ -50,8 +50,8 @@
     --card-overflow-backdrop-width-tv: 50%;
 
     /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
-    --card-overflow-portrait-nextuphide-width-tv: 33%;
-    --card-overflow-square-nextuphide-width-tv:   33%;
+    --card-overflow-portrait-nextuphide-width-tv: 33.33%;
+    --card-overflow-square-nextuphide-width-tv:   33.33%;
     --card-overflow-backdrop-nextuphide-width-tv: 33.33%;
         
     /* Overflow Cards in Secondary Container - TV */
@@ -60,7 +60,7 @@
     --card-secondary-overflow-backdrop-width-tv: 50%;
 
     /* Person Cards - TV */
-    --card-person-width-tv: 33%;
+    --card-person-width-tv: 33.33%;
     --card-person-scalable-height-tv: 33vw;
     --card-person-scalable-width-tv: calc(33vw - 25%);
 
@@ -82,7 +82,7 @@
 
     /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
     --card-overflow-portrait-nextuphide-width-mobile: 50%;
-    --card-overflow-square-nextuphide-width-mobile:   33%;
+    --card-overflow-square-nextuphide-width-mobile:   33.33%;
     --card-overflow-backdrop-nextuphide-width-mobile: 50%;
         
     /* Overflow Cards in Secondary Container - Mobile */
@@ -118,8 +118,8 @@
         --card-backdrop-width-mobile: 33.33%;
         --card-overflow-backdrop-width-mobile: 33.33%;
         --card-overflow-portrait-width-mobile: 25%;
-        --card-overflow-backdrop-nextuphide-width-mobile: 33%;
-        --card-overflow-portrait-nextuphide-width-mobile: 33%;
+        --card-overflow-backdrop-nextuphide-width-mobile: 33.33%;
+        --card-overflow-portrait-nextuphide-width-mobile: 33.33%;
         --card-person-width-mobile: 20%;
         --card-person-scalable-height-mobile: 20vw;
         --card-person-scalable-width-mobile: calc(20vw - 25%);
@@ -225,8 +225,8 @@
         --card-secondary-overflow-backdrop-width-tv: 33.33%;
 
         /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
-        --card-overflow-portrait-nextuphide-width-tv: 33%;
-        --card-overflow-backdrop-nextuphide-width-tv: 33%;
+        --card-overflow-portrait-nextuphide-width-tv: 33.33%;
+        --card-overflow-backdrop-nextuphide-width-tv: 33.33%;
 
         /* Person Cards - TV */
         --card-person-width-tv: 20%;
@@ -381,7 +381,7 @@
 
         /* Overflow Cards in Secondary Container - TV */
         --card-secondary-overflow-square-width-tv: 14.25%;
-        --card-secondary-overflow-backdrop-width-tv: 33%;
+        --card-secondary-overflow-backdrop-width-tv: 33.33%;
 
         /* Person Cards - TV */
         --card-person-width-tv: 14.25%;
