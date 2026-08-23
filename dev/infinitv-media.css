@@ -222,12 +222,38 @@
         padding-bottom: 0.15em;
     }
 
+
+    @media (max-width: 32em) {
+        .itemMiscInfo {font-size: 85%;}
+
+        .itemMiscInfo div {margin-right: .75em; }
+        
+    }
+
+    @media (max-width: 42em) {
+        .detailImageContainer .card { max-width: 28vw; }
+        .itemMiscInfo .endsAt { display: none; }
+
+    }
+
     /* Buttons */
     .mainDetailButtons .detailButton {
         margin-right: .5em !important;
         margin-left: .5em !important;
     }
-
+    
+    @media (min-width: 32em) and (max-width: 38em) {
+        [dir=ltr] .mainDetailButtons {
+            margin-bottom: 0;
+            /* padding-left: 38%; */
+            font-size: 90%;
+        }
+        .mainDetailButtons .detailButton {
+            margin-left: .25em !important;
+            margin-right: .25em !important;
+        }
+    }
+    
     .overview {
         margin: 0;
     }

@@ -40,7 +40,7 @@
     .itemBackdrop                                  { margin-top: 0 }
 
     #itemDetailPage:has(.detailImageContainer .portraitCard) .itemBackdrop {
-        height: 11em;
+        /* height: 11em; */
     }
     
     /* Library Pages: Content with Alphapicker */
