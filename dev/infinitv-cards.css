@@ -333,7 +333,7 @@
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv  {
     /* CardBoxes in General */
-    .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 8% 0.8em 8% !important;}
+    .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 7% 0.8em 7% !important;}
     .itemsContainer > .portraitCard > .cardBox                    { margin: 2.0em 9% 1.6em 9% !important; }
     .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 8% 1.6em 8% !important; }
 
