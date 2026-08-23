@@ -36,37 +36,29 @@
     .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
     .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.5em !important; }
     #itemDetailPage                                { padding-top: 1em }
-    
     .itemBackdrop                                  { margin-top: 0 }
-
-    #itemDetailPage:has(.detailImageContainer .portraitCard) .itemBackdrop {
-        /* height: 11em; */
-    }
     
     /* Library Pages: Content with Alphapicker */
-    .libraryPage .padded-right-withalphapicker     {padding-left: 0;padding-right: 6%;}
-    .libraryPage:not(.noSecondaryNavPage)  .padded-right-withalphapicker     {padding-top: 0px;}
+    .libraryPage .padded-right-withalphapicker                               { padding-left: 0; padding-right: 6%; }
+    .libraryPage:not(.noSecondaryNavPage)  .padded-right-withalphapicker     { padding-top: 0px; }
 
     @media (min-width: 30em) { 
-        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker     { padding-right: 5%; }}
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 5%; }}
     @media (min-width: 40em) { 
-        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker     { padding-right: 4%; }}
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 4%; }}
     @media (min-width: 50em)                       {
-        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker { padding-right: 3%;}
-        .libraryPage.noSecondaryNavPage            { padding-top: 4em !important }
-        
-        .itemBackdrop                              {/* margin-top: 3.9rem; */}
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 3%;}
+        .libraryPage.noSecondaryNavPage                                      { padding-top: 4em !important }
     }
     @media (min-width: 100em)                      {
-        .libraryPage:not(.noSecondaryNavPage)                               {padding-top: 4em !important;}
-        .libraryPage.noSecondaryNavPage            { padding-top: 4.3em !important }
+        .libraryPage:not(.noSecondaryNavPage)                                { padding-top: 4em !important; }
+        .libraryPage.noSecondaryNavPage                                      { padding-top: 4.3em !important }
     }
 
-    .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker     { padding-top: 0px;}}
-    .libraryPage.noSecondaryNavPage {  >.itemsContainer     {padding-top: 3em;}}
-    #musicRecommendedPage .itemsContainer {padding-top: 0}
-    #musicRecommendedPage:has(.is-active .focuscontainer-x) .itemsContainer {padding-top: 4em;}
-    
+    .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker         { padding-top: 0; }}
+    .libraryPage.noSecondaryNavPage {  >.itemsContainer                      { padding-top: 3em; }}
+    #musicRecommendedPage .itemsContainer                                    { padding-top: 0 }
+    #musicRecommendedPage:has(.is-active .focuscontainer-x) .itemsContainer  { padding-top: 4em; }
 }
 
 /*
@@ -124,10 +116,9 @@
 
 /* Filter & Sorting Header: Buttons */
 .pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important }
+
 .itemsViewSettingsContainer .paging,
-.pageTabContent>.focuscontainer-x:has(>button) .paging {
-    display: none;
-}
+.pageTabContent>.focuscontainer-x:has(>button) .paging {  display: none; }
 
 /* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
@@ -145,8 +136,6 @@
         padding: 0;
         justify-self: center;
     }
-
-
 
     /* Paging-bar (bottom right) */
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
@@ -195,8 +184,10 @@
         margin-right: -6%;
     }
 
+    .itemsViewSettingsContainer:has(>button),
+    .pageTabContent>.focuscontainer-x:has(>button),
     .padded-right-withalphapicker .itemsViewSettingsContainer {
-        width: 110%;
+        width: 100%;
         border-radius: 0;
     }
 
@@ -207,31 +198,14 @@
         font-size: 100%;
     }
 
-    .itemsViewSettingsContainer:has(>button) {
-        width: 100%;
-        border-radius: 0;
-    }
-
-    .itemsViewSettingsContainer > .listTextButton-autohide {
+    .itemsViewSettingsContainer > .listTextButton-autohide,
+    .focuscontainer-x .paper-icon-button-light{
         padding-top: .5em !important;
         padding-bottom: .5em !important;
     }
 
     .pageTabContent>.focuscontainer-x:has(>button) {
-        width: 100%;
-        border-radius: 0;
         font-size: 110%;
-    }
-
-    /* */
-    .focuscontainer-x .paper-icon-button-light {
-        padding-top: .5em !important;
-        padding-bottom: .5em !important;
-    }
-
-    .itemsViewSettingsContainer .paging,
-    .pageTabContent>.focuscontainer-x:has(>button) .paging {
-        display: none;
     }
 
     /* Paging-bar Bottom*/
@@ -246,10 +220,8 @@
         padding: .5em 0 !important;
     }
     
-
     /* Padding for paging */
     .listPaging > span { padding: 0 .556em; }
-
 
     /* Dynamic Filter Bar */
     [dir=ltr]:has(.headroom--unpinned) {

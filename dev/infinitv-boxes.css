@@ -31,11 +31,24 @@
 
     /* Sections */
     .itemDetailPage .verticalSection { margin-bottom: 1em !important; }
+
+    .itemDetailPage .verticalSection .itemsContainer {
+        padding: 0;
+        margin: 0 .5vw;
+    }
     
     /* Primary Content */
     .detailPagePrimaryContainer { margin-bottom: 1em; }
     .detailPagePrimaryContent  { padding: 0; }
-    #listChildrenCollapsible {margin-top: 1em !important;}
+    #listChildrenCollapsible { 
+        margin-top: 1em !important; 
+    }
+
+    #listChildrenCollapsible:has(.verticalSection) {
+        background: none;
+        border: none;
+        backdrop-filter: none;
+    }
     
     /* Secondary Content */
     .detailPageSecondaryContainer { margin-top: 1em; }
@@ -48,9 +61,7 @@
     
     /* Page: TV Show Overview */
     .itemDetailPage:has(.trackSelections.hide) {
-        .detailPagePrimaryContent {
-            padding-left: 0 !important;
-        }
+        .detailPagePrimaryContent { padding-left: 0 !important; }
         .detailPagePrimaryContent .detailSection {
             background: none;
             border: none;
@@ -80,9 +91,7 @@
             padding: .5em 1em 1em 1.5em;
             margin-bottom: 1em;
         }
-        .nextUpSection {
-            margin-top: 0 !important;
-        }
+        .nextUpSection { margin-top: 0 !important; }
         .itemGenres:not(:has(div)) { display: none; }
         .overview.detail-clamp-text { margin: 0; }
     }
@@ -95,17 +104,13 @@
             backdrop-filter: none;
         }
         .detailSectionContent {
-            /* padding: 0 1.5em 0 1.5em; */
             margin-bottom: 1em !important;
             margin-top: 1em !important;
             border-bottom: var(--buttonborder) !important;
         }
-        .itemDetailsGroup {
-            display:none;
-        }
-        #childrenContent {
-            padding-left: 0 !important;
-        }
+        .verticalSection .itemsContainer { margin: 0 !important; }
+        .itemDetailsGroup { display:none; }
+        #childrenContent { padding-left: 0 !important; }
     }
 }
 
