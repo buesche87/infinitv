@@ -368,8 +368,8 @@
     }
 
     .itemsContainer .card.portraitCard > .cardBox {
-        margin-left: 1.25em;
-        margin-right: 1.25em;
+        margin-left: 1em;
+        margin-right: 1em;
         margin-bottom: 1em !important;
         margin-top: 1.25em !important;
     }
