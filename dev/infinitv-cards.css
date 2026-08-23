@@ -361,8 +361,8 @@
 .layout-mobile {
     /* CardBoxes in General */
     .itemsContainer .card > .cardBox {
-        margin-left: 1.5em;
-        margin-right: 1.5em;
+        margin-left: 1em;
+        margin-right: 1em;
         margin-bottom: .5em !important;
         margin-top: .75em !important;
     }

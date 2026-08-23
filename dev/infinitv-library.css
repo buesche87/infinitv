@@ -183,7 +183,6 @@
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)) {
         z-index: 1;
-        /* height: 3em; */
         align-content: center;
         position: fixed;
         background-color: hsl(0deg 0% 62.03% / 17%);
@@ -192,8 +191,14 @@
         padding: 0;
     }
 
+    .padded-right-withalphapicker .itemsViewSettingsContainer,
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center {
+        margin-right: -6%;
+    }
+
     .padded-right-withalphapicker .itemsViewSettingsContainer {
-        margin-right: -5vw;
+        width: 110%;
+        border-radius: 0;
     }
 
     /* Filterbar with buttons (top) */
@@ -201,6 +206,12 @@
     .pageTabContent>.focuscontainer-x {
         justify-self: center;
         font-size: 100%;
+        /* width: 100%; */
+    }
+
+    .itemsViewSettingsContainer:has(>button) {
+        width: 100%;
+        border-radius: 0;
     }
 
     .itemsViewSettingsContainer > .listTextButton-autohide {
@@ -225,25 +236,23 @@
         display: none;
     }
 
-    /* Paging-bar (bottom right) */
+    /* Paging-bar Bottom*/
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)), 
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center, 
-    .pageTabContent>.focuscontainer-x:not(:has(>button))  {
-        bottom: 0;
-        margin-bottom: 1em;
+    .pageTabContent>.focuscontainer-x:not(:has(>button)) {
+        bottom: 1em;
         justify-self: center;
     }
-    
-    .libraryPage .padded-right>.focuscontainer-x .paging {
-        padding-top: .5em !important; 
-        padding-bottom: .5em !important;
+
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(button)), 
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center {
+        padding: .5em 0 !important;
     }
+    
 
     /* Padding for paging */
     .listPaging > span { padding: 0 .556em; }
 
-
-    
 
     /* Dynamic Filter Bar */
     [dir=ltr]:has(.headroom--unpinned) {
