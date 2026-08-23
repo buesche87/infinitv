@@ -848,7 +848,6 @@
     }
 }
 
-
 .layout-tv {
 
     /* Default Cards */
@@ -872,7 +871,7 @@
     .detailPagePrimaryContainer:has(.nextUpSection.hide) .itemsContainer > .overflowBackdropCard { width: var(--card-overflow-backdrop-nextuphide-width-tv); }
 
     /* Overflow Cards in Secondary Container */
-    .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard { width: var(--card-secondary-overflow-portrait-width-tv); }
+    .detailPageSecondaryContainer .overflowPortraitCard { width: var(--card-secondary-overflow-portrait-width-tv); }
     .detailPageSecondaryContainer .itemsContainer > .overflowSquareCard   { width: var(--card-secondary-overflow-square-width-tv); }
     .detailPageSecondaryContainer .itemsContainer > .overflowBackdropCard { width: var(--card-secondary-overflow-backdrop-width-tv); }
 
