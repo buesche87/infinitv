@@ -124,6 +124,10 @@
 
 /* Filter & Sorting Header: Buttons */
 .pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important }
+.itemsViewSettingsContainer .paging,
+.pageTabContent>.focuscontainer-x:has(>button) .paging {
+    display: none;
+}
 
 /* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
@@ -142,11 +146,7 @@
         justify-self: center;
     }
 
-    /* Filterbar with buttons (top)
-    .itemsViewSettingsContainer,
-    .pageTabContent>.focuscontainer-x:has(>button) { 
-        justify-self: center;
-    } */
+
 
     /* Paging-bar (bottom right) */
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
@@ -205,7 +205,6 @@
     .pageTabContent>.focuscontainer-x {
         justify-self: center;
         font-size: 100%;
-        /* width: 100%; */
     }
 
     .itemsViewSettingsContainer:has(>button) {
