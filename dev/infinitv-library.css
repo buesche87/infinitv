@@ -244,8 +244,7 @@
         justify-self: center;
     }
 
-    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(button)), 
-    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center {
+    .pageTabContent>.focuscontainer-x:not(:has(button)), .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(button)), .libraryPage .padded-right-withalphapicker > .focuscontainer-x:not(:has(button)) {
         padding: .5em 0 !important;
     }
     
@@ -263,9 +262,6 @@
             top: 1em;
         }
         .padded-right-withalphapicker .itemsViewSettingsContainer { transform: translateY(0); }
-
-        
-        
     } 
 
     .withSectionTabs .headerTop { padding-bottom:.55em; }
