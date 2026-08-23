@@ -139,21 +139,20 @@
         backdrop-filter: var(--blur);
         border-radius: var(--rounding-system);
         padding: 0;
+        justify-self: center;
     }
 
-    /* Filterbar with buttons (top) */
+    /* Filterbar with buttons (top)
     .itemsViewSettingsContainer,
     .pageTabContent>.focuscontainer-x:has(>button) { 
         justify-self: center;
-    }
+    } */
 
     /* Paging-bar (bottom right) */
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
     .pageTabContent>.focuscontainer-x:not(:has(>button))  {
-        bottom: 0;
-        right: .5em;
-        margin-bottom: .75em;
+        bottom: 1em;
     }
 
     /* Padding for paging */
