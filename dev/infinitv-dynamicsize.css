@@ -52,7 +52,7 @@
     /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
     --card-overflow-portrait-nextuphide-width-tv: 33.33%;
     --card-overflow-square-nextuphide-width-tv:   33.33%;
-    --card-overflow-backdrop-nextuphide-width-tv: 33.33%;
+    --card-overflow-backdrop-nextuphide-width-tv: 50%;
         
     /* Overflow Cards in Secondary Container - TV */
     --card-secondary-overflow-portrait-width-tv: 33.33%;
@@ -226,7 +226,7 @@
 
         /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
         --card-overflow-portrait-nextuphide-width-tv: 33.33%;
-        --card-overflow-backdrop-nextuphide-width-tv: 33.33%;
+        --card-overflow-backdrop-nextuphide-width-tv: 50%;
 
         /* Person Cards - TV */
         --card-person-width-tv: 20%;
@@ -286,7 +286,8 @@
 
         /* Overflow Cards in Primary Container not containing a NextUp Section */
         --card-overflow-portrait-nextuphide-width: 25%;
-
+        --card-overflow-backdrop-nextuphide-width: 33%;
+            
         /* Person Cards */
         --card-person-width: 14.25%;
         --card-person-scalable-height: 14.25vw;
@@ -312,8 +313,8 @@
         --card-secondary-overflow-square-width-tv: 16.66%;
 
         /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
-        --card-overflow-backdrop-nextuphide-width-tv: 25%;
         --card-overflow-portrait-nextuphide-width-tv: 25%;
+        --card-overflow-backdrop-nextuphide-width-tv: 33%;
 
         /* Person Cards - TV */
         --card-person-width-tv: 16.66%;
@@ -531,7 +532,7 @@
 
         /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
         --card-overflow-portrait-nextuphide-width-tv: 20%;
-        --card-overflow-backdrop-nextuphide-width-tv: 20%;
+        --card-overflow-backdrop-nextuphide-width-tv: 25%;
 
         /* Person Cards - TV */
         --card-person-width-tv: 11.1%;
@@ -657,7 +658,7 @@
 
         /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
         --card-overflow-portrait-nextuphide-width-tv: 16.66%;
-        --card-overflow-backdrop-nextuphide-width-tv: 16.66%;
+        --card-overflow-backdrop-nextuphide-width-tv: 20%;
 
         /* Person Cards - TV */
         --card-person-width-tv: 10%;
@@ -733,7 +734,7 @@
 
         /* Overflow Cards in Primary Container not containing a NextUp Section - TV */
         --card-overflow-portrait-nextuphide-width-tv: 14.25%;
-        --card-overflow-backdrop-nextuphide-width-tv: 14.25%;
+        --card-overflow-backdrop-nextuphide-width-tv: 16.66%;
 
         /* Person Cards - TV */
         --card-person-width-tv: 9.09%;

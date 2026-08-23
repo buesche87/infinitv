@@ -31,10 +31,13 @@
 
     /* Sections */
     .itemDetailPage .verticalSection { margin-bottom: 1em !important; }
-
     .itemDetailPage .verticalSection .itemsContainer {
         padding: 0;
         margin: 0 .5vw;
+    }
+
+    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemsContainer {
+        margin: 0 1em;
     }
     
     /* Primary Content */
