@@ -339,7 +339,7 @@
 
     /* CardBoxes in OverflowCards */
     /* .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 1.8em 1.4em 1.8em !important; } */
-    .itemsContainer > .overflowBackdropCard > .cardBox            {margin: 1.8em 6% 1.4em 6% !important;}
+    .itemsContainer > .overflowBackdropCard > .cardBox            {margin: 1.8em 7% 1.4em 7% !important;}
 
     
     .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2em 1.2em 1.6em 1.2em !important; }
