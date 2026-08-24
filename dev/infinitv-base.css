@@ -509,5 +509,5 @@
 
 .layout-desktop {
     .homePage .sectionTitleContainer-cards,
-    .homePage .sectionTitle-cards                    { border-radius: 0 !important; }
+    .homePage .sectionTitle-cards                    { border-top-right-radius: var(--rounding-media);border-top-left-radius: var(--rounding-media);}
 }
