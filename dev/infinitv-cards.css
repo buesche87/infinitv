@@ -335,12 +335,12 @@
     /* CardBoxes in General */
     .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 7% 0.8em 7% !important;}
     .itemsContainer > .portraitCard > .cardBox                    { margin: 2.0em 9% 1.6em 9% !important; }
-    .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 8% 1.6em 8% !important; }
+    .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 8% 0.8em 8% !important; }
 
     /* CardBoxes in OverflowCards */
     .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 7% 1.4em 7% !important; }
     .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2.0em 8% 1.6em 8% !important; }
-    .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.6em 7% 1.0em 7% !important; }
+    .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.8em 8% 1.4em 8% !important; }
 
     /* CardBoxes in PersonCards */
     .itemsContainer > .overflowPortraitCard.personCard > .cardBox { margin: 1.5em 0 !important; }
