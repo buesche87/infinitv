@@ -11,7 +11,6 @@
 .layout-desktop {
     /* NextUp Card */
     .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-        width: 50% !important;
         max-width: 40em;
         min-width: 18em;
     }
@@ -33,7 +32,6 @@
 
     /* NextUp Card */
     .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-        width: 38% !important;
         max-width: 30em;
         min-width: 18em;
     }
@@ -43,7 +41,6 @@
 .layout-mobile {
     /* NextUp Card */
     .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-        width: 75% !important;
         max-width: 38em;
         min-width: 18em;
     }
@@ -362,7 +359,7 @@
     .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard.personCard > .cardBox { margin: 1.8em 0 1.6em 0 !important; }
 
     /* CardBoxes in Nextup Cards */
-    .nextUpSection .itemsContainer > .overflowBackdropCard > .cardBox {margin: 2em 1em 1.5em 2.5em !important;}
+    .nextUpSection .itemsContainer > .overflowBackdropCard > .cardBox { margin: 2em 1em 1.5em 2.5em !important; }
 }
 
 /* ─ Layout Mobile ───────────────────────────────────────────────────────── */
