@@ -64,6 +64,13 @@
     [data-type=Series] .listItemImage { display: none; }
 }
 
+/* Text of ListItems */
+.listItem-overview {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     /* List Item (Desktop) */
