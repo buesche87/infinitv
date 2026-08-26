@@ -278,7 +278,7 @@
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 .layout-mobile {
-    .mainDrawer     { margin-top: 4em; }
+    .mainDrawer     {margin-top: 4em;/* border-color: brown; */}
 
     @media (min-width: 100em)      {
         .mainDrawer { margin-top: 4.4em; }
@@ -391,8 +391,8 @@
             padding-bottom: 0.5em;
             height: 3em;
         }
-        .emby-tab-button { 
-            padding-top: .25em;
+        .emby-tab-button {
+            padding-top: .75em;
             padding-bottom: 1.25em;
         }
         .libraryPage .padded-right-withalphapicker {

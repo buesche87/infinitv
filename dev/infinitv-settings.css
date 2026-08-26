@@ -262,7 +262,7 @@ h2.username                                                 {
     /* List Items */
     .userPreferencesPage .listItem-border             {
         border: var(--buttonborder) !important;
-        margin-bottom: .6em !important;
+        margin-bottom: .75em !important;
     }
     .userPreferencesPage .listItem                    { padding-right: 1.5em !important; }
     .userPreferencesPage .listItemIcon                {

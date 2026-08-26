@@ -128,7 +128,7 @@
     .plot-container             { top: 50vh; width: 80% }
     .dots-container             { top: 59vh }
     .button-container           { text-align: center }
-    .homeSectionsContainer      { top: 65vh }
+    .homeSectionsContainer      {top: 64vh;}
 
     .video-container            {
         min-height: 90vh;

@@ -34,7 +34,7 @@
 .layout-mobile {
     
     .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
-    .libraryPage:not(.noSecondaryNavPage)          { padding-top: 6.5em !important; }
+    .libraryPage:not(.noSecondaryNavPage)          {padding-top: 7em !important;}
     #itemDetailPage                                { padding-top: 1em }
     .itemBackdrop                                  { margin-top: 0 }
     
@@ -69,15 +69,6 @@
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     .alphaPicker    { top: 128px; bottom: auto }
-}
-
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
-.layout-mobile {
-    /* Stretch Alphabet Picker */
-    .alphaPicker  {top: 11em;bottom: auto}
-    @media only screen and (max-height: 767px) and (orientation: landscape) {
-        .alphaPicker { bottom: 1em }
-    }
 }
 
 /* Alphabet Picker Buttons */
@@ -189,6 +180,7 @@
     .padded-right-withalphapicker .itemsViewSettingsContainer {
         width: 100%;
         border-radius: 0;
+        top: 6.9em;
     }
 
     /* Filterbar with buttons (top) */
@@ -202,10 +194,6 @@
     .focuscontainer-x .paper-icon-button-light{
         padding-top: .5em !important;
         padding-bottom: .5em !important;
-    }
-
-    .pageTabContent>.focuscontainer-x:has(>button) {
-        font-size: 110%;
     }
 
     /* Paging-bar Bottom*/
@@ -231,10 +219,15 @@
             border-radius: var(--rounding-system);
             top: 1em;
         }
+
+        .pageTabContent>.focuscontainer-x:has(>button) {
+            font-size: 110%;
+        }
+        
         .padded-right-withalphapicker .itemsViewSettingsContainer { transform: translateY(0); }
     } 
 
-    .withSectionTabs .headerTop { padding-bottom:.55em; }
+    .withSectionTabs .headerTop {padding-bottom: .5em;}
     .sectionTabs { font-size: 90%; }
 }
 

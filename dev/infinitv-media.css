@@ -290,7 +290,6 @@
     .layout-mobile .trackSelections { padding-top: 1em }
 
     /* Secondary Container */
-    .detailPageSecondaryContainer                    {padding-top: .5em !important;}
     .detailPageSecondaryContainer .detailPageContent {
         padding-left: 2vw !important;
         padding-right: 2vw !important;
