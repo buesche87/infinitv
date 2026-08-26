@@ -75,7 +75,7 @@
     }
 
     .sectionTitleContainer-cards {
-        padding: .25em;
+        padding: .5em;
     }
 
     :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
@@ -249,7 +249,7 @@
         padding-top: 3em;
     }
 
-    #tvRecommendedPage .itemsContainer {margin: .5em 0;}
+    #tvRecommendedPage .itemsContainer {/* margin: .5em 0; */}
     #tvRecommendedPage .itemsContainer.vertical-wrap { margin: 0; }
     
     #albumsPage .itemsContainer        {margin: 0 2vw;}

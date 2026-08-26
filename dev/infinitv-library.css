@@ -180,7 +180,8 @@
     .padded-right-withalphapicker .itemsViewSettingsContainer {
         width: 100%;
         border-radius: 0;
-        top: 6.9em;
+        /* top: 6.9em; */
+        padding: .1em 0;
     }
 
     /* Filterbar with buttons (top) */

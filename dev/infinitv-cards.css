@@ -124,9 +124,9 @@
     /* List Item: Content Secondary Text */
     .itemsContainer .listItemBodyText.secondary {
         justify-content: center;
-        line-clamp: 1;
-        -webkit-line-clamp: 1;
-        max-height: 1.6em;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        /* max-height: 1.6em; */
     }
 
     /* List Item: Overview */
@@ -190,6 +190,7 @@
         border-radius: var(--rounding-media) !important;
         background: var(--bgdark40) !important;
         height: 5.2em;
+        backdrop-filter: var(--blur);
     }
 
     /* Content */
@@ -216,7 +217,7 @@
     .vertical-list .listItem-border .listItemImage {
         transform: scale(1.6);
         margin-left: -.2em;
-        border-right: var(--buttonborder);
+        /* border-right: var(--buttonborder); */
     }
     .listItemImage-large { border-right: var(--buttonborder); }
 
@@ -366,11 +367,20 @@
 .layout-mobile {
     /* CardBoxes in General */
     .itemsContainer .card > .cardBox {
+        margin-top: 1.25em !important;
+        margin-bottom: .75em !important;
         margin-left: 1em;
         margin-right: 1em;
-        margin-bottom: .5em !important;
-        margin-top: .75em !important;
     }
+
+    .itemsContainer .card.overflowPortraitCard > .cardBox {
+        margin-top: 1.25em !important;
+        margin-bottom: .75em !important;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+    
 
     .itemsContainer .card.portraitCard > .cardBox {
         margin-left: 1em;

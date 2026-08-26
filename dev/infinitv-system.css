@@ -146,15 +146,18 @@
     :has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
     :has(#musicRecommendedPage:not(.hide)) .formDialog,
     :has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog { top: 9.5em !important; position: fixed; }
-
-    
-
-
     
     /* Header */
     :has(.centeredDialog[style*="top: 10px"]) .actionSheet      { transform: translateY(3em) !important; }
+
+    
     :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet    {
-        transform: translateY(8.5em) !important;
+        transform: translateY(9em) !important;
+    }
+    [dir=ltr]:has(.headroom--unpinned) {
+        :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet    {
+            transform: translateY(4em) !important;
+        }      
     }
 
     @media (min-width: 100em) {
@@ -162,8 +165,6 @@
         :has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
         :has(#tvRecommendedPage:not(.hide)) .formDialog { transform: translateY(-2.25em) !important; }
     }
-    
-
     
     /* Player OSD */
     :has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"] { transform: translateY(3.5em) !important; }
