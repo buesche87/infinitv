@@ -153,45 +153,60 @@
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
     }
-    .homePage .verticalSection {
-        /* margin: .5em 1vw 0 1vw; */
-    }
 
-    .itemDetailPage .detailVerticalSection {
-        margin-bottom: 1em;
-    }
+    .itemDetailPage .detailVerticalSection {margin-bottom: 1em; }
+    .detailPagePrimaryContainer   { margin-bottom: 1em; }
+    .detailPageSecondaryContainer { padding-top: 0em; }
+    .detailPagePrimaryContent     { padding: 0 1vw 0 32.45vw; }
 
-    .detailPagePrimaryContent {
-        padding: 0 1vw 0 32.45vw;
-    }
-
+        .trackSelections,
+        .itemDetailsGroup,
         .detailSectionContent {
             background: rgba(0, 0, 0, var(--bgdarkness));
             backdrop-filter: var(--blur);
             border: var(--buttonborder);
-            border-top-right-radius: var(--rounding-media);
-            border-top-left-radius: var(--rounding-media);
+            border-radius: var(--rounding-media);
+        }
+        .detailSectionContent {
             border-bottom: none;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
             padding: .5em 1em !important;
             margin-top: .5em;
         }
         .itemDetailsGroup {
-            background: rgba(0, 0, 0, var(--bgdarkness));
-            backdrop-filter: var(--blur);
-            border: var(--buttonborder);
             border-top: none;
-            border-bottom-right-radius: var(--rounding-media);
-            border-bottom-left-radius: var(--rounding-media);
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
             margin-bottom: 1em;
             margin-top: 0;
             padding: .5em 1em !important;
         }
+    
+    
+    /* Page: Media Details */
+    .itemDetailPage:has(.trackSelections:not(.hide)) {
 
-    .detailPagePrimaryContainer {
-        margin-bottom: 1em;
-    }
-    .detailPageSecondaryContainer {
-        padding-top: 0em;
+        .trackSelections {
+            border-bottom: none;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 1em 1em .5em 1em;
+            margin-bottom: 0;
+        }
+        .detailSectionContent {
+            border-top: none;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            padding: 0 1em .5em 1em !important;
+            margin-top: 0;
+        }
+        .itemDetailsGroup {
+            border-top: none;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: .5em 1em !important;
+        }
     }
     
     /* Page: Episode List */
@@ -204,8 +219,31 @@
         .detailPagePrimaryContainer {
             margin-bottom: 0;
         }
-        
-    }
 
-    
+        .trackSelections,
+        .itemDetailsGroup,
+        .detailSectionContent {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            backdrop-filter: var(--blur);
+            border: var(--buttonborder);
+        }
+        
+        .trackSelections,
+        .detailSectionContent {
+            border-top-right-radius: var(--rounding-media);
+            border-top-left-radius: var(--rounding-media);
+            border-bottom: none;
+            padding: .5em 1em !important;
+            margin-top: .5em;
+        }
+        .itemDetailsGroup {
+
+            border-top: none;
+            border-bottom-right-radius: var(--rounding-media);
+            border-bottom-left-radius: var(--rounding-media);
+            margin-bottom: 1em;
+            margin-top: 0;
+            padding: .5em 1em !important;
+        }
+    }
 }
