@@ -9,15 +9,17 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
+
     /* NextUp Card */
-    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-        max-width: 40em;
-        min-width: 18em;
-    }
+    .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 40em; }
 }
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
+
+    /* NextUp Card */
+    .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 30em; }
+
     /* Media Poster */
     .detailImageContainer .card {
         float: left;
@@ -29,21 +31,13 @@
     }
     .detailImageContainer .portraitCard { max-height: 78vh; }
     .detailImageContainer .squareCard   { margin-left: 0; }
-
-    /* NextUp Card */
-    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-        max-width: 30em;
-        min-width: 18em;
-    }
 }
 
 /* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
+
     /* NextUp Card */
-    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {
-        max-width: 38em;
-        min-width: 18em;
-    }
+    .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 38em; }
 } 
 
 /*
@@ -70,7 +64,8 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
-    /* List Item (Desktop) */
+
+    /* List Item Style and Animation */
     .itemsContainer > .listItem-border {
         border: solid 2px hsl(0deg 0% 100% / 20%) !important;
         border-radius: var(--rounding-media) !important;
@@ -84,12 +79,9 @@
     }
     .itemsContainer > .listItem-border:hover .listItemBodyText:not(.secondary) { color: var(--accent100) !important; }
 
-    /* List Item: Content (Desktop) */
-    .itemsContainer > .listItem-border .listItemImage {
-        transform: scale(1.3);
-        border-right: var(--buttonborder);
-    }
-    .itemsContainer > .listItem-border .listItemBody { padding-left: 2%; }
+    /* List Item Content */
+    .itemsContainer > .listItem-border .listItemImage    { transform: scale(1.3); }
+    .itemsContainer > .listItem-border .listItemBody     { padding-left: 2%; }
     .itemsContainer > .listItem-border .listItemBodyText { font-weight: 600; }
 }
 
@@ -113,23 +105,25 @@
 
 /* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
-    /* List Item: Content */
+
+    /* Center Content */
     .itemsContainer .listItemBodyText {
         justify-content: center;
+    }
+
+    /* Center Text */
+    .listItem-bottomoverview {
+        text-align: center;
+    }
+    
+    /* Define max. height and enable text-wrap after 2nd line */
+    .itemsContainer .listItemBodyText {
         line-clamp: 2;
         -webkit-line-clamp: 2;
         max-height: 3em;
     }
 
-    /* List Item: Content Secondary Text */
-    .itemsContainer .listItemBodyText.secondary {
-        justify-content: center;
-        line-clamp: 2;
-        -webkit-line-clamp: 2;
-        /* max-height: 1.6em; */
-    }
-
-    /* List Item: Overview */
+    /* Overview margins */
     .itemsContainer .listItem-overview   { padding-top: 0; }
     .itemsContainer .listItem-overview p { margin-top: .5em; }
 }
@@ -139,7 +133,6 @@
    Large Image List Items
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Large Image List Item */
 .listItem.listItem-largeImage {
     margin-bottom: 1em;
     padding: 0;
@@ -148,7 +141,7 @@
     backdrop-filter: var(--blur)
 }
 
-/* Large Image List Item: Align Body */
+/* Align Content */
 .listItem.listItem-largeImage .listItemBody {
     align-self: auto;
     margin: .5em;
@@ -158,7 +151,7 @@
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
-    /* Large Image List Item (TV) */
+
     .listItemImage-large-tv {
         max-height: 20em;
         min-height: 14em;
@@ -166,13 +159,13 @@
         height: 33% !important;
     }
 
-    /* Large Image List Item: Overview Text (TV) */
+    /* Overview Text */
     .listItem-overview {
         display: -webkit-box;
         -webkit-box-orient: vertical;
     }
 
-    /* Large Image List Item: Positioning on small screens (TV) */
+    /* Positioning on small screens */
     @media (max-width: 64em) {
         .listItemImage-large { margin-right: .5em !important; }
         .listItemImageButton,
@@ -249,7 +242,7 @@
 
     /* Card Glow */
     .card:hover .cardScalable,
-    .card:hover .cardBox:has(> .cardFooter) { box-shadow: var(--cardglow) }
+    .card:hover .cardBox:has(> .cardFooter) {box-shadow: var(--cardglow) !important;}
 }
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
@@ -269,6 +262,7 @@
 
     .card:focus .cardScalable,
     .card:focus .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow-focus) !important; }
+    
     /* No shadows / No Glow */
     .cardBox:has(> .cardFooter) > .cardScalable  { box-shadow: none !important; }
 }
@@ -374,46 +368,27 @@
 .layout-mobile {
     
     /* CardBoxes in General */
-    .itemsContainer .card > .cardBox {
-        margin-top: 1.25em;
-        margin-bottom: .75em;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
+    .itemsContainer .card > .cardBox              { margin: 1.25em 1em .75em 1em !important;  }
 
-    .itemsContainer .card.portraitCard > .cardBox {
-        /* margin-top: 1.25em !important; */
-        margin-bottom: 1em;
-        /* margin-left: 1em; */
-        /* margin-right: 1em; */
-    }
+    .itemsContainer .card.portraitCard > .cardBox { margin-bottom: 1em !important; }
 
     .itemsContainer .card.backdropCard > .cardBox {
-        margin-top: 1em;
-        margin-bottom: .5em;
-        /* margin-left: 1em; */
-        /* margin-right: 1em; */
+        margin-top: 1em !important;
+        margin-bottom: .5em !important;
     }
 
-    .itemsContainer .card.overflowPortraitCard > .cardBox {
-        /* margin-top: 1.25em !important; */
-        /* margin-bottom: .75em !important; */
-        /* margin-left: 1em; */
-        /* margin-right: 1em; */
-    }
-    
     .itemsContainer .card.overflowBackdropCard > .cardBox {
-        /* margin-top: 1.25em !important; */
+        margin-top: 1em !important;
         margin-bottom: .75em !important;
-        /* margin-left: 1em; */
-        /* margin-right: 1em; */
+        margin-left: .75em;
+        margin-right: .75em;
     }
     
     .itemsContainer .card.personCard > .cardBox {
+        margin-top: .75em !important;
+        margin-bottom: .5em !important;
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: .5em;
-        margin-top: .75em;
     }
     
 }

@@ -207,44 +207,33 @@
     }
     
     /* Media Poster */
+    .detailImageContainer .card { left: 2vw; }
     .detailImageContainer .card.backdropCard {
         top: 1em;
         max-width: 33vw;
         width: 33%;
+
     }
-    .detailImageContainer .card {
-        left: 3vw;
-    }
+    .detailImageContainer .card.portraitCard { left: 3vw; }
     
     /* Info Container */
-    .infoWrapper {
-        padding-bottom: 0.15em;
-    }
-
+    .infoWrapper { padding-bottom: 0.15em; }
 
     @media (max-width: 32em) {
-        .itemMiscInfo {font-size: 85%;}
-
-        .itemMiscInfo div {margin-right: .75em; }
-        
+        .itemMiscInfo     { font-size: 85%; }
+        .itemMiscInfo div { margin-right: .75em; }
     }
-
     @media (max-width: 42em) {
         .detailImageContainer .card { max-width: 28vw; }
-        .itemMiscInfo .endsAt { display: none; }
-
+        .itemMiscInfo .endsAt       { display: none; }
     }
 
     /* Buttons */
-    .mainDetailButtons .detailButton {
-        margin-right: .5em !important;
-        margin-left: .5em !important;
-    }
+    .mainDetailButtons .detailButton { margin: 0 .5em !important; }
     
     @media (min-width: 32em) and (max-width: 38em) {
         [dir=ltr] .mainDetailButtons {
             margin-bottom: 0;
-            /* padding-left: 38%; */
             font-size: 90%;
         }
         .mainDetailButtons .detailButton {
@@ -252,10 +241,9 @@
             margin-right: .25em !important;
         }
     }
-    
-    .overview {
-        margin: 0;
-    }
+
+    /* Media Overview Text */
+    .overview { margin: 0; }
 
     /* Primary Container */
     .detailPagePrimaryContent {

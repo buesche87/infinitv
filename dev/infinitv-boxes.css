@@ -1,5 +1,12 @@
 /* Background-Boxes for some page content only for TV-Layout
 ──────────────────────────────────────────────────────────────────────────── */
+
+:root {
+    /* --bgtitle: hsla(0, 0%, 75%, .1);     Title */
+    /* --bgtitle: transparent;     /* Title */
+    --boxborder: solid 1px hsla(0, 0%, 100%, .2);
+}
+
 .layout-tv {
 
     /* Background
@@ -16,6 +23,11 @@
         backdrop-filter: var(--blur);
     }
 
+    .itemDetailPage .verticalSection .card .cardBox,
+    .itemDetailPage .verticalSection .card .cardScalable {
+        box-shadow: none;
+    }
+
     /* Card Container */
     .detailImageContainer .card { 
         border: solid 1px hsla(0, 0%, 100%, .1);
@@ -23,7 +35,10 @@
     }
 
     /* Detail Ribbon */
-    [dir=ltr] .detailRibbon {padding: 1em 1.5em;margin-bottom: 1em;}
+    [dir=ltr] .detailRibbon {
+        padding: 1em 1.5em;
+        margin-bottom: 1em;
+    }
 
     /* Section Titles */
     .detailPagePrimaryContent .sectionTitle,
@@ -148,6 +163,11 @@
         padding: 0;
         margin: 0;
     }
+
+    .itemDetailPage .verticalSection .card .cardBox,
+    .itemDetailPage .verticalSection .card .cardScalable {
+        box-shadow: none;
+    }
     
     .itemDetailPage .sectionTitle,
     .itemDetailPage div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
@@ -181,14 +201,32 @@
 /* hmmm... */
 .layout-mobile {
 
+    .sectionTitle-cards {
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    
     /* .homePage .verticalSection, */
     .itemDetailPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--buttonborder);
+        border: var(--boxborder);
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
     }
 
+    .itemDetailPage .verticalSection .emby-scroller {
+        margin: 0 1vw;
+    }
+    
+    .itemDetailPage .verticalSection .card .cardBox,
+    .itemDetailPage .verticalSection .card .cardScalable {
+        box-shadow: none;
+    }
+
+    .overview p {
+        margin: .5em 0 1em 0;
+    }
+    
     .itemDetailPage .detailVerticalSection {margin-bottom: 1em; }
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
     .detailPageSecondaryContainer { padding-top: 0em; }
@@ -199,7 +237,7 @@
         .detailSectionContent {
             background: rgba(0, 0, 0, var(--bgdarkness));
             backdrop-filter: var(--blur);
-            border: var(--buttonborder);
+            border: var(--boxborder);
             border-radius: var(--rounding-media);
         }
         .detailSectionContent {
@@ -268,7 +306,6 @@
             border-top-right-radius: var(--rounding-media);
             border-top-left-radius: var(--rounding-media);
             border-bottom: none;
-            padding: .5em 1em !important;
             margin-top: .5em;
         }
         .itemDetailsGroup {
