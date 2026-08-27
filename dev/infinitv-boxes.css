@@ -114,8 +114,6 @@
         .verticalSection .itemsContainer { margin: 0 !important; }
         .itemDetailsGroup { display:none; }
         #childrenContent { padding-left: 0 !important; }
-
-        
     }
 }
 
@@ -123,7 +121,7 @@
 /* hmmm... */
 .layout-desktop {
 
-    .homePage .verticalSection,
+    /* .homePage .verticalSection, */
     .itemDetailPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--buttonborder);
@@ -131,8 +129,32 @@
         backdrop-filter: var(--blur);
         margin: 0 .25em 0 -.25em;
     }
+    /*
     .homePage .verticalSection {
         margin: 1em 1vw 0 1vw;
+    } */
+
+    .itemDetailPage .detailVerticalSection {
+        margin-bottom: 1em;
+    }
+
+    .detailPagePrimaryContent {
+        padding: 0 1vw 0 32.45vw;
+    }
+}
+
+/* hmmm... */
+.layout-mobile {
+
+    /* .homePage .verticalSection, */
+    .itemDetailPage .verticalSection {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--buttonborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
+    }
+    .homePage .verticalSection {
+        /* margin: .5em 1vw 0 1vw; */
     }
 
     .itemDetailPage .detailVerticalSection {
@@ -142,4 +164,48 @@
     .detailPagePrimaryContent {
         padding: 0 1vw 0 32.45vw;
     }
+
+        .detailSectionContent {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            backdrop-filter: var(--blur);
+            border: var(--buttonborder);
+            border-top-right-radius: var(--rounding-media);
+            border-top-left-radius: var(--rounding-media);
+            border-bottom: none;
+            padding: .5em 1em !important;
+            margin-top: .5em;
+        }
+        .itemDetailsGroup {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            backdrop-filter: var(--blur);
+            border: var(--buttonborder);
+            border-top: none;
+            border-bottom-right-radius: var(--rounding-media);
+            border-bottom-left-radius: var(--rounding-media);
+            margin-bottom: 1em;
+            margin-top: 0;
+            padding: .5em 1em !important;
+        }
+
+    .detailPagePrimaryContainer {
+        margin-bottom: 1em;
+    }
+    .detailPageSecondaryContainer {
+        padding-top: 0em;
+    }
+    
+    /* Page: Episode List */
+    .itemDetailPage:has(.listItem-largeImage) {
+        .detailPagePrimaryContainer .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+        .detailPagePrimaryContainer {
+            margin-bottom: 0;
+        }
+        
+    }
+
+    
 }

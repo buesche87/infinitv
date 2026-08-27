@@ -150,9 +150,7 @@
 .upNextDialog-countdownText              { color: var(--accent100) !important; }
 
 /* Color: White */
-.headerBackButton:focus,
-.paper-icon-button-light.emby-scrollbuttons-button:focus,
-.layout-mobile .overview-expand:focus    {color: white !important;}
+.paper-icon-button-light.headerBackButton:focus, .paper-icon-button-light.emby-scrollbuttons-button:focus, .layout-mobile .overview-expand:focus    { color: white !important; }
 
 /* Font Weight */
 .inputLabelFocused,

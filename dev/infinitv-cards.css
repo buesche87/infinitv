@@ -365,35 +365,48 @@
 
 /* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
+    
     /* CardBoxes in General */
     .itemsContainer .card > .cardBox {
-        margin-top: 1.25em !important;
-        margin-bottom: .75em !important;
+        margin-top: 1.25em;
+        margin-bottom: .75em;
         margin-left: 1em;
         margin-right: 1em;
+    }
+
+    .itemsContainer .card.portraitCard > .cardBox {
+        /* margin-top: 1.25em !important; */
+        margin-bottom: 1em;
+        /* margin-left: 1em; */
+        /* margin-right: 1em; */
+    }
+
+    .itemsContainer .card.backdropCard > .cardBox {
+        margin-top: 1em;
+        margin-bottom: .5em;
+        /* margin-left: 1em; */
+        /* margin-right: 1em; */
     }
 
     .itemsContainer .card.overflowPortraitCard > .cardBox {
-        margin-top: 1.25em !important;
-        margin-bottom: .75em !important;
-        margin-left: 1em;
-        margin-right: 1em;
+        /* margin-top: 1.25em !important; */
+        /* margin-bottom: .75em !important; */
+        /* margin-left: 1em; */
+        /* margin-right: 1em; */
     }
     
-    
-
-    .itemsContainer .card.portraitCard > .cardBox {
-        margin-left: 1em;
-        margin-right: 1em;
-        margin-bottom: 1em !important;
-        margin-top: 1.25em !important;
+    .itemsContainer .card.overflowBackdropCard > .cardBox {
+        /* margin-top: 1.25em !important; */
+        margin-bottom: .75em !important;
+        /* margin-left: 1em; */
+        /* margin-right: 1em; */
     }
     
     .itemsContainer .card.personCard > .cardBox {
         margin-left: 0;
         margin-right: 0;
-        margin-bottom: .5em !important;
-        margin-top: .75em !important;
+        margin-bottom: .5em;
+        margin-top: .75em;
     }
     
 }
