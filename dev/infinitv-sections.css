@@ -164,7 +164,7 @@
     .libraryPage .itemsContainer.padded-right-withalphapicker,
     .libraryPage .padded-right-withalphapicker > .itemsContainer,
     .libraryPage:has(.itemsViewSettingsContainer) .itemsContainer {
-        padding-left: 1vw;
+        padding-left: 0;
         padding-right: 2.5em;
         padding-top: 3.5em;
     }

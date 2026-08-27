@@ -326,7 +326,7 @@
     /* CardBoxes in General */
     .itemsContainer > .card > .cardBox                                      {margin: 1em 7% !important;}
     .itemsContainer > .card.backdropCard > .cardBox                         {margin: 1.2em 7% !important;}
-    .itemsContainer > .card.portraitCard > .cardBox                         {margin: 1.2em 10% !important;}
+    .itemsContainer > .card.portraitCard > .cardBox                         {margin: 1.2em 9% !important;}
     .itemsContainer > .card.overflowBackdropCard > .cardBox                 {margin: 1.5em 6% !important;}
     .itemsContainer > .card.overflowPortraitCard > .cardBox                 {margin: 1.2em 8% !important;}
 
