@@ -75,7 +75,7 @@
     .itemDetailPage .itemBackdrop   {height: 37vh;}
 
     /* Move logo to the right side */
-    .itemDetailPage .detailLogo     { right: 0; }
+    .itemDetailPage .detailLogo     {right: 10vw;}
 
     /* Increase Text Size */
     .selfBackdropPage h1.parentName { font-size: 175%; }

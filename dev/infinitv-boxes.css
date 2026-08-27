@@ -127,20 +127,55 @@
         border: var(--buttonborder);
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
-        margin: 0 .25em 0 -.25em;
     }
-    /*
-    .homePage .verticalSection {
-        margin: 1em 1vw 0 1vw;
-    } */
 
     .itemDetailPage .detailVerticalSection {
         margin-bottom: 1em;
     }
 
     .detailPagePrimaryContent {
-        padding: 0 1vw 0 32.45vw;
+        padding: 0 1.5vw 0 32.45vw;
     }
+    .detailPageSecondaryContainer {
+        padding: 0 1.5vw !important;
+    }
+
+    .detailSectionContent {
+        padding-right: .5vw;
+    }
+
+    .detailPagePrimaryContainer .itemsContainer {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .itemDetailPage .sectionTitle,
+    .itemDetailPage div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
+        margin-left: -31vw;
+        margin-right: 0;
+        margin-bottom: 1em !important;
+    }
+
+    .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) .verticalSection {
+        /* margin-right: .5vw; */
+        margin-bottom: 1em !important;
+    }
+
+    
+    .itemDetailPage:has(.listItem-largeImage) {
+        .detailPagePrimaryContainer .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+    }
+
+    
 }
 
 /* hmmm... */

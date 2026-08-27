@@ -45,13 +45,13 @@
 
     .detailPagePrimaryContainer #listChildrenCollapsible .sectionTitle-cards {
         padding-left: 0;
-        margin-left: -.5vw;
+        margin-left: 0;
     }
 
     /* Section Title NextUp */
     .detailPagePrimaryContainer .nextUpSection .sectionTitle {
-        margin-left: -31.45vw;
-        padding-left: 31.45vw;
+        /* margin-left: -31.45vw; */
+        padding-left: 1em;
         text-align: left;
     }
 
@@ -119,8 +119,8 @@
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop { 
     /* Emby Scroller */
-    .emby-scroller                                       {padding: 0;margin: 0 .5vw;}
-    .homePage .emby-scroller                             {padding: 0;margin: 0 1vw;}
+    .emby-scroller                                       {padding: 0;/* margin: 0 .5vw; */}
+    .homePage .emby-scroller                             {padding: 0;/* margin: 0 1vw; */}
 
     #tvRecommendedPage .verticalSection > .emby-scroller,
     #moviesPage .verticalSection > .emby-scroller,
@@ -128,8 +128,8 @@
 
     /* More Space to stretch Seasons Scroller */
     .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
-        margin-left: -30.5vw;
-        margin-right: -1vw;
+        margin-left: -31vw;
+        margin-right: 0;
         margin-bottom: -1.5em !important;
     }
 
@@ -139,10 +139,10 @@
 
 
     
-    #suggestionsTab .itemsContainer,
+    /* #suggestionsTab .itemsContainer, */
     #genresTab .itemsContainer,
     /* #favoritesTab .itemsContainer, */
-    #tvRecommendedPage .verticalSection > .itemsContainer,
+    /* #tvRecommendedPage .verticalSection > .itemsContainer, */
     #moviesPage .verticalSection > .itemsContainer,
     #albumsPage .verticalSection > .itemsContainer       { margin: 1em 1.5vw }
 
