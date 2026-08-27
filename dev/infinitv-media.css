@@ -201,9 +201,12 @@
     .detailRibbon {
         /* margin-top: -1em !important; */
         padding-bottom: 1.25em;
+        padding-top: .25em;
         padding-right: 2vw !important;
         padding-left: 2vw !important;
         /* padding-left: 5%; */
+        /* border-bottom: var(--boxborder); */
+        /* border-top: var(--boxborder); */
     }
     
     /* Media Poster */
@@ -263,8 +266,13 @@
         display: none;
     }
 
+    .tagline:has(bdi) {
+        padding-top: 1em !important;
+        margin-top: 0;
+    }
+
     .detailPagePrimaryContent .trackSelections {
-        margin-top: .5em;
+        margin-top: .75em;
         margin-bottom: .5em;
     }
     

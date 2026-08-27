@@ -1136,7 +1136,7 @@
 .layout-mobile {
 
     /* Person Cards */
-    .itemsContainer > .overflowPortraitCard.personCard { width: calc(var(--person-card-size-mobile) * 1%); }
+    .itemsContainer > .overflowPortraitCard.personCard {width: calc(var(--person-card-size-mobile) * 1%);justify-items: center;}
     .itemsContainer > .overflowPortraitCard.personCard .cardScalable { 
         height: calc(var(--person-card-size-mobile) * 1vw);
         width: calc(var(--person-card-size-mobile) * 1vw - 33%);

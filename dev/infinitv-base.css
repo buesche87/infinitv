@@ -23,7 +23,8 @@
     --bgbar: hsl(0deg 0% 12.29% / 74%);  /* Buttonbar */
     
     /* Borders */
-    --buttonborder: solid 2px hsla(0, 0%, 100%, .2);
+    /* --buttonborder: solid 2px hsla(0, 0%, 100%, .2); */
+    --buttonborder: solid 1px hsla(0, 0%, 80%, .2);
 
     /* Blur */
     --blur: blur(5.2px) saturate(1.35);
