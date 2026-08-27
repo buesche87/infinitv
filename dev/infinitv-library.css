@@ -3,11 +3,6 @@
    Library Pages
 ──────────────────────────────────────────────────────────────────────────── */
 
-:root {
-    --sectiontitlepadding: .35em;
-}
-
-
 .standalonePage    { padding-top: 5.5em !important }
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
@@ -19,24 +14,24 @@
 /*  Layout TV ────────────────────────────────────────────────────────────── */
 .layout-tv {
     .libraryPage                                    { padding: 0 1vw; padding-top: 5em !important; }
-    #studiosTab                                     { margin-left: -1vw }
+    #studiosTab                                     { margin-left: -1vw; }
 
-    .detailImageContainer .card                     { margin-left: 1vw }
+    .detailImageContainer .card                     { margin-left: 1vw; }
 
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
     @media(min-width: 50em)                         {
-        .libraryPage .padded-right-withalphapicker  {padding: 0 2vw 0 0vw;}
+        .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 0vw; }
     }
 }
 
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
     
-    .libraryPage.noSecondaryNavPage                { padding-top: 4em !important }
-    .libraryPage:not(.noSecondaryNavPage)          {padding-top: 7em !important;}
-    #itemDetailPage                                { padding-top: 1em }
-    .itemBackdrop                                  { margin-top: 0 }
+    .libraryPage.noSecondaryNavPage                { padding-top: 4em !important; }
+    .libraryPage:not(.noSecondaryNavPage)          { padding-top: 7em !important; }
+    #itemDetailPage                                { padding-top: 1em; }
+    .itemBackdrop                                  { margin-top: 0; }
     
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker                               { padding-left: 0; padding-right: 6%; }
@@ -47,17 +42,17 @@
     @media (min-width: 40em) { 
         .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 4%; }}
     @media (min-width: 50em)                       {
-        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 3%;}
-        .libraryPage.noSecondaryNavPage                                      { padding-top: 4em !important }
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 3%; }
+        .libraryPage.noSecondaryNavPage                                      { padding-top: 4em !important; }
     }
     @media (min-width: 100em)                      {
         .libraryPage:not(.noSecondaryNavPage)                                { padding-top: 4em !important; }
-        .libraryPage.noSecondaryNavPage                                      { padding-top: 4.3em !important }
+        .libraryPage.noSecondaryNavPage                                      { padding-top: 4.3em !important; }
     }
 
-    .libraryPage.noSecondaryNavPage {  .padded-right-withalphapicker         { padding-top: 0; }}
-    .libraryPage.noSecondaryNavPage {  >.itemsContainer                      { padding-top: 3em; }}
-    #musicRecommendedPage .itemsContainer                                    { padding-top: 0 }
+    .libraryPage.noSecondaryNavPage .padded-right-withalphapicker            { padding-top: 0; }
+    .libraryPage.noSecondaryNavPage >.itemsContainer                         { padding-top: 3em; }
+    #musicRecommendedPage .itemsContainer                                    { padding-top: 0; }
     #musicRecommendedPage:has(.is-active .focuscontainer-x) .itemsContainer  { padding-top: 4em; }
 }
 
@@ -68,7 +63,7 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
-    .alphaPicker    { top: 128px; bottom: auto }
+    .alphaPicker    { top: 128px; bottom: auto; }
 }
 
 /* Alphabet Picker Buttons */
@@ -96,7 +91,7 @@
 .listPaging > span              { margin: 0 .5em; }
 
 /* Filter Indicator */
-.filterIndicator                { color: black }
+.filterIndicator                { color: black; }
 
 /* Sorting Menu: Radio Button spacing */
 .radio-label-block              {
@@ -106,13 +101,15 @@
 }
 
 /* Filter & Sorting Header: Buttons */
-.pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important }
+.pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important; }
 
 .itemsViewSettingsContainer .paging,
 .pageTabContent>.focuscontainer-x:has(>button) .paging {  display: none; }
 
 /* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
+
+    /* Filter & Paging Bar */
     .itemsViewSettingsContainer,
     .pageTabContent>.focuscontainer-x,
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
@@ -128,7 +125,7 @@
         justify-self: center;
     }
 
-    /* Paging-bar (bottom right) */
+    /* Paging-Bar (bottom) */
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
     .pageTabContent>.focuscontainer-x:not(:has(>button))  {
@@ -141,6 +138,8 @@
 
 /* Layout TV ─────────────────────────────────────────────────────────────── */
 .layout-tv {
+
+    /* Filter-Bar */
     .itemsViewSettingsContainer,
     .pageTabContent>.focuscontainer-x {
         border-radius: var(--rounding-system) !important;
@@ -149,6 +148,7 @@
         margin-bottom: .5em;
     }
 
+    /* Filter-Bar on specific pages */
     #episodesTab > .focuscontainer-x,
     #songsTab > .focuscontainer-x { margin-bottom: 1.5em }
 }
@@ -157,6 +157,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 .layout-mobile {
 
+    /* Filter & Paging Bar */
     .itemsViewSettingsContainer,
     .pageTabContent>.focuscontainer-x,
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
@@ -170,49 +171,50 @@
         padding: 0;
     }
 
-    .padded-right-withalphapicker .itemsViewSettingsContainer,
-    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center {
-        margin-right: -6%;
-    }
-
-    .itemsViewSettingsContainer:has(>button),
-    .pageTabContent>.focuscontainer-x:has(>button),
-    .padded-right-withalphapicker .itemsViewSettingsContainer {
-        width: 100%;
-        border-radius: 0;
-        /* top: 6.9em; */
-        padding: .1em 0;
-    }
-
-    /* Filterbar with buttons (top) */
-    .itemsViewSettingsContainer,
-    .pageTabContent>.focuscontainer-x {
-        justify-self: center;
-        font-size: 100%;
-    }
-
+     /* Filterbar with buttons (top) */
     .itemsViewSettingsContainer > .listTextButton-autohide,
     .focuscontainer-x .paper-icon-button-light{
         padding-top: .5em !important;
         padding-bottom: .5em !important;
     }
 
-    /* Paging-bar Bottom*/
+    /* Filter-Bar on specific pages */
+    .padded-right-withalphapicker .itemsViewSettingsContainer,
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center {
+        margin-right: -6%;
+    }
+
+    /* ItemsContainer adjustments for new filter bar */
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x {
+        justify-self: center;
+        font-size: 100%;
+    }
+    .itemsViewSettingsContainer:has(>button),
+    .pageTabContent>.focuscontainer-x:has(>button),
+    .padded-right-withalphapicker .itemsViewSettingsContainer {
+        width: 100%;
+        border-radius: 0;
+        padding: .1em 0;
+    }
+
+    /* Paging-Bar (bottom) */
     .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)), 
     .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center, 
     .pageTabContent>.focuscontainer-x:not(:has(>button)) {
         bottom: 1em;
         justify-self: center;
     }
-
-    .pageTabContent>.focuscontainer-x:not(:has(button)), .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(button)), .libraryPage .padded-right-withalphapicker > .focuscontainer-x:not(:has(button)) {
+    .pageTabContent>.focuscontainer-x:not(:has(button)), 
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(button)), 
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x:not(:has(button)) {
         padding: .5em 0 !important;
     }
     
     /* Padding for paging */
     .listPaging > span { padding: 0 .556em; }
 
-    /* Dynamic Filter Bar */
+    /* Dynamic Filter Bar (when header is hidden) */
     [dir=ltr]:has(.headroom--unpinned) {
         .padded-right-withalphapicker .itemsViewSettingsContainer,
         .pageTabContent>.focuscontainer-x:has(>button) {
@@ -221,17 +223,14 @@
             top: 1em;
         }
 
-        .pageTabContent>.focuscontainer-x:has(>button) {
-            font-size: 110%;
-        }
-        
+        .pageTabContent>.focuscontainer-x:has(>button) { font-size: 110%; }
         .padded-right-withalphapicker .itemsViewSettingsContainer { 
             transform: translateY(0);
             font-size: 110%;
         }
     } 
 
-    .withSectionTabs .headerTop {padding-bottom: .5em;}
+    .withSectionTabs .headerTop { padding-bottom: .5em; }
     .sectionTabs { font-size: 90%; }
 }
 
@@ -245,11 +244,11 @@
     border-color: #0000 !important;
     background-color: rgba(0, 0, 0, 0.8);
 }
-.selectionCommandsPanel { top: 3.9em; padding: .5em }
-.itemSelectionCount     { color: var(--accent100) !important }
+.selectionCommandsPanel { top: 3.9em; padding: .5em; }
+.itemSelectionCount     { color: var(--accent100) !important; }
 
 /* Checkboxes & Indicators */
-.multiSelectCheckboxOutline { margin: .5em !important }
+.multiSelectCheckboxOutline { margin: .5em !important; }
 
 .chkItemSelect:hover + span + .multiSelectCheckboxOutline {
     box-shadow: var(--cardglow);
