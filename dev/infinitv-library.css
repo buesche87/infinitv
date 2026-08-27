@@ -225,7 +225,10 @@
             font-size: 110%;
         }
         
-        .padded-right-withalphapicker .itemsViewSettingsContainer { transform: translateY(0); }
+        .padded-right-withalphapicker .itemsViewSettingsContainer { 
+            transform: translateY(0);
+            font-size: 110%;
+        }
     } 
 
     .withSectionTabs .headerTop {padding-bottom: .5em;}
