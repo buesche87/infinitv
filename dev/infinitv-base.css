@@ -74,14 +74,11 @@
     background-repeat: no-repeat !important;
 }
 
-/* Darken Background with Backdrops enables */
+/* Darken Background with Backdrops enabled */
 .backgroundContainer.withBackdrop { background: rgba(0, 0, 0, var(--bgdarkness)) !important }
 
-/* Background Image on Homepage and Library Pages */
-[dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop,
-[dir=ltr]:has(#tvRecommendedPage:not(.hide)) .backgroundContainer.withBackdrop,
-[dir=ltr]:has(#moviesPage:not(.hide)) .backgroundContainer.withBackdrop,
-[dir=ltr]:has(#musicRecommendedPage:not(.hide)) .backgroundContainer.withBackdrop {
+/* Background Image on Homepage and some Library Pages,even with Backropds enabled */
+[dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop, [dir=ltr]:has(#itemDetailPage.hide) .backgroundContainer.withBackdrop {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
         var(--bgImage) !important;

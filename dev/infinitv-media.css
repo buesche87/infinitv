@@ -23,25 +23,42 @@
 
     /* Poster Card */
     .detailImageContainer .card {
-        left: 3vw;
-        width: 27vw;
-        max-width: 30vw;
+        left: 2vw;
+    }
+
+    .detailImageContainer .card.backdropCard {
+        margin-top: 1.6vh;
+        position: sticky;
+        width: 28vw;
+        max-width: 30em;
+    }
+
+    .detailImageContainer .card.portraitCard {
+        margin-top: -3em;
+        margin-bottom: -11.5em;
+        width: 28vw;
+        max-width: 30em;
+    }
+
+    @media (min-width: 100em) { 
+        .detailRibbon { padding-left:35em !important; }
+        .detailImageContainer .card { left: 2em !important;  }
+        .detailPagePrimaryContent { padding-left:35em !important; }
     }
 
     /* Detail Ribbon with media buttons */
     .detailRibbon               {height: 10em;margin-top: -10em;}
-    .infoWrapper                {padding-top: 1em;padding-bottom: 1em;}
+    .infoWrapper                {padding-top: 1.2em;padding-bottom: 1em;}
     .mainDetailButtons          {margin-left: 1em;}
     .itemMiscInfo               {
         font-size: 125%;
         margin-top: 0.25em;
-        margin-bottom: 0.6em;
     }
     
     /* Some Small Screen fixes */
-    @media (max-width: 62.5em) {
+    @media (max-width: 70em) {
         .detailImageContainer .card {top: -13em !important;}
-        .detailRibbon {flex-direction: column;height: 14em;margin-top: -14em;}
+        .detailRibbon {flex-direction: column;height: 30%;margin-top: -14em;/* max-height: 20em; */}
         .infoWrapper {
             padding-top: .5em !important;
             padding-bottom: .5em !important;
@@ -60,6 +77,12 @@
     .itemTags                     { padding: 0; margin: 1em 0 !important; }
     .itemExternalLinks            { margin: 1em 0 .75em 0 !important; }
     .itemTags > .button-link      { margin-left: .25em; }
+
+
+    .trackSelections {
+        margin-top: .5em;
+    }
+
     
     /* Secondary Container */
     .detailPageSecondaryContainer { padding: 1em 1.5vw !important; }

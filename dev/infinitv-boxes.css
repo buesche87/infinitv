@@ -29,17 +29,17 @@
         border-bottom-right-radius: 0 !important;
     }
 
+    /* NextUp Section */
     .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) {
-
         #listChildrenCollapsible {
             margin-left: -31vw;
             margin-right: 0;
             margin-bottom: 1em !important;
         }
-
         .verticalSection { margin-bottom: 1em !important; }
     } 
 
+    /* Episode List */
     .itemDetailPage:has(.listItem-largeImage) {
         .detailPagePrimaryContainer .verticalSection {
             background: none;
@@ -47,6 +47,34 @@
             backdrop-filter: none;
         }
     }
+
+
+    [dir=ltr]:has(.backgroundContainer.withBackdrop) {
+
+        .detailPagePrimaryContent .detailSection {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            border: var(--buttonborder);
+            border-radius: var(--rounding-media);
+            backdrop-filter: var(--blur);
+        }
+
+        .detailPagePrimaryContent .detailSection {
+            padding-top: .25em;
+            padding-left: 1.25em;
+            margin-left: -1em;
+            margin-top: 1.5vh;
+            margin-bottom: 1em;
+        }
+
+        .detailImageContainer .card.backdropCard {
+            /* margin-top: 1em; */
+        }
+
+        
+    }
+
+    
+
 }
 
 .layout-tv {
