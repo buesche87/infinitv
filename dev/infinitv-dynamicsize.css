@@ -1143,7 +1143,7 @@
     }
 
     /* NextUp Card */
-    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {width: 65% !important;}
+    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {width: 60% !important;}
 
     /* Line Clamping*/
     .listItem-overview { line-clamp: var(--lineclamp-mobile); -webkit-line-clamp: var(--lineclamp-mobile); }

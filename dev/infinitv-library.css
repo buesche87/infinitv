@@ -23,6 +23,9 @@
     @media(min-width: 50em)                         {
         .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 0vw; }
     }
+
+    /* Actor page alignment */
+    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemsContainer { margin: 0 1em; }
 }
 
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
@@ -54,6 +57,9 @@
     .libraryPage.noSecondaryNavPage >.itemsContainer                         { padding-top: 3em; }
     #musicRecommendedPage .itemsContainer                                    { padding-top: 0; }
     #musicRecommendedPage:has(.is-active .focuscontainer-x) .itemsContainer  { padding-top: 4em; }
+
+    /* Actor Page */
+    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemBackdrop { margin: -4em; }
 }
 
 /*

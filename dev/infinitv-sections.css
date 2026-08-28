@@ -70,18 +70,12 @@
 
     /* Container */
     .sectionTitleContainer-cards,
-    :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-        text-align: center;
-    }
+    :not(.sectionTitleContainer-cards) > .sectionTitle-cards { text-align: center; }
 
-    .sectionTitleContainer-cards {
-        padding: .5em;
-    }
-
-    :not(.sectionTitleContainer-cards) > .sectionTitle-cards {
-        padding: .25em 0;
-    }
-
+    .sectionTitleContainer-cards { padding: .5em; }
+    :not(.sectionTitleContainer-cards) > .sectionTitle-cards { padding: .5em 0; }
+    #itemDetailPage :not(.sectionTitleContainer-cards) > .sectionTitle-cards { padding: .25em 0; }
+    
     /* Titles */
     .sectionTitleTextButton .sectionTitle-cards {
         text-align: center;

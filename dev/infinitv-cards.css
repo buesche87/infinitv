@@ -137,8 +137,8 @@
     margin-bottom: 1em;
     padding: 0;
     transform: none !important;
-    background: var(--bgdark40) !important;
-    backdrop-filter: var(--blur)
+    background: var(--bgdark60) !important;
+    /* backdrop-filter: var(--blur); */
 }
 
 /* Align Content */

@@ -90,10 +90,7 @@
         padding: 0;
         margin: 0 .5vw;
     }
-
-    /* Actor page alignment */
-    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemsContainer { margin: 0 1em; }
-    
+   
     /* Primary Content */
     .detailPagePrimaryContainer { margin-bottom: 1em; }
     .detailPagePrimaryContent  { padding: 0; }
@@ -178,7 +175,7 @@
     .itemDetailsGroup,
     .detailSectionContent {
         background: rgba(0, 0, 0, var(--bgdarkness));
-        backdrop-filter: var(--blur);
+        /* backdrop-filter: var(--blur); */
         border: var(--boxborder);
         border-radius: var(--rounding-media);
     }
@@ -187,13 +184,14 @@
     .sectionTitle-cards {
         border-bottom-right-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
+        padding-left: 0;
     }
     
     .itemDetailPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--boxborder);
         border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
+        /* backdrop-filter: var(--blur); */
     }
    
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
@@ -227,6 +225,15 @@
     .listItem-largeImage { border: var(--boxborder) !important; }
     .overview p { margin: .5em 0 1em 0; }
 
+    
+    #listChildrenCollapsible:has(.verticalSection) {
+        background: none;
+        border: none;
+        backdrop-filter: none;
+    }
+    
+    #listChildrenCollapsible .verticalSection { margin-bottom: 1em; }
+    
     /* Page: Media Details */
     .itemDetailPage:has(.trackSelections:not(.hide)) {
 
@@ -253,7 +260,7 @@
         .itemDetailsGroup,
         .detailSectionContent {
             background: rgba(0, 0, 0, var(--bgdarkness));
-            backdrop-filter: var(--blur);
+            /* backdrop-filter: var(--blur); */
             border: var(--boxborder);
         }
 
