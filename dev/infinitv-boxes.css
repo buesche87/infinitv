@@ -2,9 +2,51 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 :root {
-    /* --bgtitle: hsla(0, 0%, 75%, .1);     Title */
-    /* --bgtitle: transparent;     /* Title */
     --boxborder: solid 1px hsla(0, 0%, 80%, .2);
+}
+
+.layout-desktop {
+
+    .itemDetailPage .verticalSection {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--buttonborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
+    }
+
+    .itemDetailPage .detailVerticalSection { margin-bottom: 1em; }
+    .detailPagePrimaryContainer .itemsContainer { padding: 0; margin: 0; }
+    .detailPagePrimaryContent { padding: 0 1.5vw 0 32.45vw; }
+    .detailPageSecondaryContainer { padding: 0 1.5vw !important; }
+    .detailSectionContent { padding-right: .5vw; }
+
+    .itemDetailPage .verticalSection .card .cardBox,
+    .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
+    
+    .itemDetailPage .sectionTitle,
+    .itemDetailPage div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) {
+
+        #listChildrenCollapsible {
+            margin-left: -31vw;
+            margin-right: 0;
+            margin-bottom: 1em !important;
+        }
+
+        .verticalSection { margin-bottom: 1em !important; }
+    } 
+
+    .itemDetailPage:has(.listItem-largeImage) {
+        .detailPagePrimaryContainer .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+    }
 }
 
 .layout-tv {
@@ -24,9 +66,7 @@
     }
 
     .itemDetailPage .verticalSection .card .cardBox,
-    .itemDetailPage .verticalSection .card .cardScalable {
-        box-shadow: none;
-    }
+    .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
 
     /* Card Container */
     .detailImageContainer .card { 
@@ -51,9 +91,8 @@
         margin: 0 .5vw;
     }
 
-    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemsContainer {
-        margin: 0 1em;
-    }
+    /* Actor page alignment */
+    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemsContainer { margin: 0 1em; }
     
     /* Primary Content */
     .detailPagePrimaryContainer { margin-bottom: 1em; }
@@ -132,178 +171,84 @@
     }
 }
 
-
-/* hmmm... */
-.layout-desktop {
-
-    /* .homePage .verticalSection, */
-    .itemDetailPage .verticalSection {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--buttonborder);
-        border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
-    }
-
-    .itemDetailPage .detailVerticalSection {
-        margin-bottom: 1em;
-    }
-
-    .detailPagePrimaryContent {
-        padding: 0 1.5vw 0 32.45vw;
-    }
-    .detailPageSecondaryContainer {
-        padding: 0 1.5vw !important;
-    }
-
-    .detailSectionContent {
-        padding-right: .5vw;
-    }
-
-    .detailPagePrimaryContainer .itemsContainer {
-        padding: 0;
-        margin: 0;
-    }
-
-    .itemDetailPage .verticalSection .card .cardBox,
-    .itemDetailPage .verticalSection .card .cardScalable {
-        box-shadow: none;
-    }
-    
-    .itemDetailPage .sectionTitle,
-    .itemDetailPage div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
-        border-bottom-left-radius: 0 !important;
-        border-bottom-right-radius: 0 !important;
-    }
-
-    .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
-        margin-left: -31vw;
-        margin-right: 0;
-        margin-bottom: 1em !important;
-    }
-
-    .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) .verticalSection {
-        /* margin-right: .5vw; */
-        margin-bottom: 1em !important;
-    }
-
-    
-    .itemDetailPage:has(.listItem-largeImage) {
-        .detailPagePrimaryContainer .verticalSection {
-            background: none;
-            border: none;
-            backdrop-filter: none;
-        }
-    }
-
-    
-}
-
-/* hmmm... */
 .layout-mobile {
 
+    /* Box for sub-elements */
+    .trackSelections,
+    .itemDetailsGroup,
+    .detailSectionContent {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        backdrop-filter: var(--blur);
+        border: var(--boxborder);
+        border-radius: var(--rounding-media);
+    }
+
+    /* Section title adjustments */
     .sectionTitle-cards {
         border-bottom-right-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
     }
     
-    /* .homePage .verticalSection, */
     .itemDetailPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--boxborder);
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
     }
-
-    .homePage .verticalSection {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        backdrop-filter: var(--blur);
-        margin-bottom: .5em;
-    }
-
-    .itemDetailPage .verticalSection .emby-scroller {
-        margin: 0 1vw;
-    }
-    
-    .verticalSection .card .cardBox,
-    .verticalSection .card .cardScalable {
-        box-shadow: none;
-    }
-
-    .overview p {
-        margin: .5em 0 1em 0;
-    }
-
-    .listItem-largeImage {
-        border: var(--boxborder) !important;
-    }
-    
-    .itemDetailPage .detailVerticalSection {margin-bottom: 1em; }
+   
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
     .detailPageSecondaryContainer { padding-top: 0em; }
     .detailPagePrimaryContent     { padding: 0 1vw 0 32.45vw; }
 
-        .trackSelections,
-        .itemDetailsGroup,
-        .detailSectionContent {
-            background: rgba(0, 0, 0, var(--bgdarkness));
-            backdrop-filter: var(--blur);
-            border: var(--boxborder);
-            border-radius: var(--rounding-media);
-        }
+    .itemDetailPage .detailVerticalSection { margin-bottom: 1em; }
     
-        .detailSectionContent {
-            border-bottom: none;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-            padding: .5em 1em !important;
-            margin-top: .5em;
-        }
-        .itemDetailsGroup {
-            border-top: none;
-            border-top-right-radius: 0;
-            border-top-left-radius: 0;
-            margin-bottom: 1em;
-            margin-top: 0;
-            padding: .5em 1em !important;
-        }
+    .detailSectionContent {
+        border-bottom: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: .5em 1em !important;
+        margin-top: .5em;
+    }
+
+    .itemDetailsGroup {
+        border-top: none;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        margin-bottom: 1em;
+        margin-top: 0;
+        padding: .5em 1em !important;
+    }
+
+    .itemDetailPage .verticalSection .emby-scroller { margin: 0 1vw; }
     
-    
+    .itemDetailPage .verticalSection .card .cardBox,
+    .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
+
+    .listItem-largeImage { border: var(--boxborder) !important; }
+    .overview p { margin: .5em 0 1em 0; }
+
     /* Page: Media Details */
     .itemDetailPage:has(.trackSelections:not(.hide)) {
 
         .trackSelections {
-            /* border-bottom: none; */
-            /* border-bottom-right-radius: 0; */
-            /* border-bottom-left-radius: 0; */
             padding: 1em;
             margin-bottom: 1em;
+            max-width: 100%;
         }
-        .detailSectionContent {
-            padding: .5em 1em .5em 1em !important;
-            /* border-top: none; */
-            /* border-top-right-radius: 0; */
-            /* border-top-left-radius: 0; */
-            margin-top: -2px;
-        }
+
+        .detailSectionContent { padding: .5em 1em .5em 1em !important; }
+
         .itemDetailsGroup {
             padding: 1em !important;
             border-top: none;
             margin-bottom: 0;
-            margin-top: -2px;
         }
     }
     
     /* Page: Episode List */
     .itemDetailPage:has(.listItem-largeImage) {
-        .detailPagePrimaryContainer .verticalSection {
-            background: none;
-            border: none;
-            backdrop-filter: none;
-        }
-        .detailPagePrimaryContainer {
-            margin-bottom: 0;
-        }
 
+        /* Box for sub-elements */
         .trackSelections,
         .itemDetailsGroup,
         .detailSectionContent {
@@ -312,14 +257,19 @@
             border: var(--boxborder);
         }
 
-
-        @media(max-width: 50em) {
-            .detailPageWrapperContainer .listItem-content {
-                border-bottom: var(--boxborder) !important;
-            }
+        /* No Box */
+        .detailPagePrimaryContainer .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
         }
 
-        
+        .detailPagePrimaryContainer { margin-bottom: 0; }
+
+        @media(max-width: 50em) {
+            .detailPageWrapperContainer .listItem-content { border-bottom: var(--boxborder) !important; }
+        }
+
         .trackSelections,
         .detailSectionContent {
             border-top-right-radius: var(--rounding-media);
@@ -327,6 +277,13 @@
             border-bottom: none;
             margin-top: .5em;
         }
-        .itemDetailsGroup {border-top: none;border-bottom-right-radius: var(--rounding-media);border-bottom-left-radius: var(--rounding-media);margin-bottom: 1em;margin-top: -2px;padding: .5em 1em !important;}
+
+        .itemDetailsGroup {
+            border-top: none;
+            border-bottom-right-radius: var(--rounding-media);
+            border-bottom-left-radius: var(--rounding-media);
+            margin-bottom: 1em;
+            padding: .5em 1em !important;
+        }
     }
 }

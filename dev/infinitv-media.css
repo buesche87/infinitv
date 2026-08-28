@@ -16,7 +16,7 @@
 
 /* Content */
 .detailTrackSelect          { padding: .35em 1.9em .35em .35em !important; }
-.overview.detail-clamp-text {margin: .5em 0;}
+.overview.detail-clamp-text { margin: .5em 0; }
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
@@ -53,9 +53,6 @@
             align-self: flex-start;
         }
     }
-
-    
-
 
     /* Primary Container */
     .detailPagePrimaryContent     { padding: 0 1.5vw 1em 32.45vw; }
@@ -199,14 +196,10 @@
 .layout-mobile {
 
     .detailRibbon {
-        /* margin-top: -1em !important; */
         padding-bottom: 1.25em;
         padding-top: .25em;
         padding-right: 2vw !important;
         padding-left: 2vw !important;
-        /* padding-left: 5%; */
-        /* border-bottom: var(--boxborder); */
-        /* border-top: var(--boxborder); */
     }
     
     /* Media Poster */
@@ -218,7 +211,7 @@
 
     }
     .detailImageContainer .card.portraitCard { left: 3vw; }
-    
+
     /* Info Container */
     .infoWrapper { padding-bottom: 0.15em; }
 
@@ -257,14 +250,9 @@
     }
     .detailPagePrimaryContent .trackSelections,
     .detailPagePrimaryContent .detailSectionContent,
-    .detailPagePrimaryContent .itemDetailsGroup {
-        padding: 0 2vw;
-        /* padding-right: 2vw !important; */
-    }
+    .detailPagePrimaryContent .itemDetailsGroup { padding: 0 2vw; }
 
-    .detailPagePrimaryContent .itemGenres:not(:has(div)) {
-        display: none;
-    }
+    .detailPagePrimaryContent .itemGenres:not(:has(div)) { display: none; }
 
     .tagline:has(bdi) {
         padding-top: 1em !important;
@@ -289,8 +277,6 @@
         padding-left: 2vw !important;
         padding-right: 2vw !important;
     }
-
-    
 }
 
 /*
