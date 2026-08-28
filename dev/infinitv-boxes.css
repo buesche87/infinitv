@@ -14,11 +14,11 @@
         backdrop-filter: var(--blur);
     }
 
-    .itemDetailPage .detailVerticalSection { margin-bottom: 1em; }
+    .itemDetailPage .detailVerticalSection {margin-bottom: 1em;/* padding-right: 1.25em; */}
     .detailPagePrimaryContainer .itemsContainer { padding: 0; margin: 0; }
     .detailPagePrimaryContent { padding: 0 1.5vw 0 32.45vw; }
     .detailPageSecondaryContainer { padding: 0 1.5vw !important; }
-    .detailSectionContent { padding-right: .5vw; }
+    .detailSectionContent {padding-right: 1vw;}
 
     .itemDetailPage .verticalSection .card .cardBox,
     .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
@@ -48,7 +48,6 @@
         }
     }
 
-
     [dir=ltr]:has(.backgroundContainer.withBackdrop) {
 
         .detailPagePrimaryContent .detailSection {
@@ -64,17 +63,9 @@
             margin-left: -1em;
             margin-top: 1.5vh;
             margin-bottom: 1em;
-        }
-
-        .detailImageContainer .card.backdropCard {
-            /* margin-top: 1em; */
-        }
-
-        
+            padding-right: 1.25em;
+        }    
     }
-
-    
-
 }
 
 .layout-tv {
