@@ -48,7 +48,7 @@
 
     /* Detail Ribbon with media buttons */
     .detailRibbon               {height: 10em;margin-top: -10em;}
-    .infoWrapper                {padding-top: 1.2em;padding-bottom: 1em;}
+    .infoWrapper                {padding-top: 2vh;padding-bottom: 1em;}
     .mainDetailButtons          {margin-left: 1em;}
     .itemMiscInfo               {
         font-size: 125%;
@@ -58,15 +58,15 @@
     /* Some Small Screen fixes */
     @media (max-width: 70em) {
         .detailImageContainer .card {top: -13em !important;}
-        .detailRibbon {flex-direction: column;height: 30%;margin-top: -14em;/* max-height: 20em; */}
+        .detailRibbon {flex-direction: column;height: 14em;margin-top: -14em;/* max-height: 20em; */}
         .infoWrapper {
-            padding-top: .5em !important;
+            /* padding-top: .5em !important; */
             padding-bottom: .5em !important;
             align-self: flex-start;
         }
         .mainDetailButtons {
             margin: 0;
-            margin-bottom: 1em;
+            margin-bottom: .5em;
             align-self: flex-start;
         }
     }
@@ -84,7 +84,7 @@
     .detailPageSecondaryContainer .detailPageContent { padding: 0; }
 
     /* Detail-Ribbon: Fix narrow Desktop layout */
-    .detailPageWrapperContainer     { margin-top: 1.5em !important; }
+    .detailPageWrapperContainer     {margin-top: 1.5em !important;}
 
     /* Make backdrop space with logo smaller */
     .itemDetailPage .itemBackdrop   { height: 37vh; }
