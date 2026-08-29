@@ -68,6 +68,19 @@
             margin: 1.5vh 0 1em -1em;
         }
     }
+
+
+    /* Home Page Slides */
+    .slide {
+        background: rgba(0, 0, 0, 1);
+        border: var(--buttonborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
+    }
+
+
+
+
 }
 
 .layout-tv {

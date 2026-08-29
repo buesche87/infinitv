@@ -223,10 +223,7 @@
 
 /* Background Color: Dark 20% */
 .button-submit:hover,
-.detail-button,
 .emby-button.block:hover,
-.favorite-button,
-.play-button,
 .raised:hover                                    { background-color: var(--bgdark20) !important; }
 
 /* Background Color: Dark 40% */
@@ -238,6 +235,9 @@
 .button-submit,
 .itemProgressBar,
 .paperList,
+.detail-button,
+.favorite-button,
+.play-button,
 .listItem-focusscale,
 .listItem-largeImage:hover,
 .cardOverlayButton.cardOverlayFab-primary:hover,
@@ -330,14 +330,14 @@
 
 /* Borders: Grey ─────────────────────────────────────────────────────────── */
 .layout-desktop .formDialog,
+.button-container button,
+.detailButton-content button,
 .checkboxOutline,
-.detailButton,
 .emby-button,
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
 .layout-desktop .emby-select-withcolor:focus,
-.favorite-button,
 .imagePlaceHolder,
 .itemSelectionPanel,
 .listItem-focusscale,
@@ -370,17 +370,16 @@
 /* Border Color: Accent ──────────────────────────────────────────────────── */
 
 /* Accent 40% */
+.button-container button:hover,
+.detailButton:hover,
 .listItem-largeImage:hover,
-.detail-button:hover,
 .emby-button.block:hover,
 .emby-checkbox:hover + span + .checkboxOutline,
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-input:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
-.favorite-button:hover,
 .imagePlaceHolder:hover,
-.detailButton:hover,
 .play-button:hover         { border-color: var(--accent40) !important; }
 
 /* Accent 60% */
@@ -390,9 +389,7 @@
 .emby-select-withcolor:focus,
 .emby-checkbox:focus + span + .checkboxOutline,
 .detail-button:focus,
-.favorite-button:focus,
 .itemsContainer > .listItem:focus,
-.detailButton:focus,
 .itemsContainer > .listItem-largeImage:focus,
 .toast                     { border-color: var(--accent60) !important; }
 
@@ -415,8 +412,8 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Button Glow*/
-.detailButton:focus,
-.favorite-button:focus,
+.detailButton:hover,
+.detailButton-content button:hover,
 .itemsContainer > .listItem-focusscale:focus,
 .itemsContainer > .listItem-largeImage:focus,
 .upNextDialog-button:focus                         { box-shadow: var(--buttonglow) !important; }
