@@ -82,7 +82,7 @@
     /* Default Cards */
     .itemsContainer > .portraitCard { width: 33.33%; }
     .itemsContainer > .squareCard   { width: 33.33%; }
-    .itemsContainer > .backdropCard { width: 33.33%; }
+    .itemsContainer > .backdropCard { width: 50%; }
 
     /* Default Overflow Cards */
     .itemsContainer > .overflowPortraitCard { width: 33.33%; }
