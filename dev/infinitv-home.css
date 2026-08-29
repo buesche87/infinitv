@@ -16,41 +16,27 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
+
     /* ── Base ── */
     .slide                     { height: 75vh }
     .backdrop-container        { height: 97% }
-    
+
     .video-container {
-        /* position: absolute; */
         top: -12%;
         left: auto;
         right: 0;
         transform: none;
-        /* width: 70vw; */
-        /* height: 55vw; */
-        /* min-height: 50%; */
-        /* min-width: 50%; */
     }
 
     .video-player {
         position: absolute;
-        /* top: -3em; */
         right: 0;
         left: auto;
-        /* width: 70%; */
         height: 100%;
     }
 
-    .backdrop.with-video {
-        width: 53%;
-        mask-image: linear-gradient(to top, #fff0 2%, rgb(0 0 0 / 0.5) 6%, #000000 8%), linear-gradient(to right, black 30%, transparent 85%);
-        -webkit-mask-image: linear-gradient(to top, #fff0 2%, rgb(0 0 0 / 0.5) 6%, #000000 8%), linear-gradient(to right, black 30%, transparent 85%);
-        mask-composite: source-in;
-        -webkit-mask-composite: source-in;
-    }
+    .backdrop.with-video       { width: 53%; }
 
-
-    
     .pause-button              { top: 5em; right: 2em }
     .volume-toggle             { top: 5em; right: 6em }
 
@@ -63,7 +49,7 @@
     .dots-container            { top: 69%; right: 2vw }
     .button-container          { top: 75% }
 
-    .homeSectionsContainer     { transform: translateY(-4em); /* top: 61vh */ }
+    .homeSectionsContainer     { transform: translateY(-4em); }
 
     /* ── Portrait (narrow) ── */
     @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -84,8 +70,8 @@
         .plot-container        { top: 52vh }
         .dots-container        { top: 69% }
         .button-container      { top: 61vh }
-        .homeSectionsContainer { transform: translateY(3em); /* top: 61vh */ }
-        
+        .homeSectionsContainer { transform: translateY(3em); }
+
     }
 
     /* ── Large Landscape ── */
@@ -96,6 +82,7 @@
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
+
     /* Disable Slides in TV layout because they don't work well with a remote */
     #slides-container               { display: none !important }
     .homeSectionsContainer          { top: 0 }
@@ -107,13 +94,14 @@
 
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
+
     /* ── Base ── */
     .homePage                   { padding-left: 0; padding-right: 0 }
 
     .volume-toggle              { top: 7.5em; right: 5em }
     .pause-button               { top: 7.5em; right: 2em }
 
-    @media (max-width: 768px)                  {
+    @media (max-width: 768px)   {
         .pause-button           { right: 4vw }
     }
 
@@ -122,23 +110,15 @@
     .backdrop-container,
     .slide                      { height: 90% }
 
+    .video-container            { min-height: 90vh; }
+
     .logo                       { max-height: 60% }
     .info-container             { top: 40vh }
     .genre                      { top: 44vh }
     .plot-container             { top: 50vh; width: 80% }
     .dots-container             { top: 59vh }
     .button-container           { text-align: center }
-    .homeSectionsContainer      {top: 64vh;}
-
-    .video-container            {
-        min-height: 90vh;
-        mask-image:
-            linear-gradient(to right, transparent 10%, black 30%),
-            linear-gradient(to top, transparent 15%, rgba(0,0,0,.5) 20%, black 30%);
-        -webkit-mask-image:
-            linear-gradient(to right, transparent 10%, black 30%),
-            linear-gradient(to top, transparent 15%, rgba(0,0,0,.5) 20%, black 30%);
-    }
+    .homeSectionsContainer      { top: 64vh; }
 
     /* ── Small height (both orientations) ── */
     @media only screen and (max-height: 767px) {

@@ -40,7 +40,7 @@
         max-width: 30em;
     }
 
-    @media (min-width: 100em) { 
+    @media (min-width: 100em) {
         .detailRibbon { padding-left:35em !important; }
         .detailImageContainer .card { left: 2em !important;  }
         .detailPagePrimaryContent { padding-left:35em !important; }
@@ -54,7 +54,7 @@
         font-size: 125%;
         margin-top: 0.25em;
     }
-    
+
     /* Some Small Screen fixes */
     @media (max-width: 70em) {
         .detailImageContainer .card {top: -13em !important;}
@@ -73,35 +73,29 @@
 
     /* Primary Container */
     .detailPagePrimaryContent     { padding: 0 1.5vw 1em 32.45vw; }
-    .itemDetailsGroup             {margin: 1.5em 0 2em 0;}
+    .itemDetailsGroup             { margin: 1.5em 0; }
+    .trackSelections              { margin-top: .5em; }
     .itemTags                     { padding: 0; margin: 1em 0 !important; }
-    .itemExternalLinks            {margin: 1.25em 0 .75em 0 !important;}
+    .itemExternalLinks            { margin: 1.25em 0 .75em 0 !important;}
     .itemTags > .button-link      { margin-left: .25em; }
 
-
-    .trackSelections {
-        margin-top: .5em;
-    }
-
-    
     /* Secondary Container */
     .detailPageSecondaryContainer { padding: 1em 1.5vw !important; }
     .detailPageSecondaryContainer .detailPageContent { padding: 0; }
 
     /* Detail-Ribbon: Fix narrow Desktop layout */
-    .detailPageWrapperContainer     {margin-top: 1.5em !important;}
+    .detailPageWrapperContainer     { margin-top: 1.5em !important; }
 
-    /* Make backdrop space with logo smaller */ 
-    .itemDetailPage .itemBackdrop   {height: 37vh;}
+    /* Make backdrop space with logo smaller */
+    .itemDetailPage .itemBackdrop   { height: 37vh; }
 
     /* Move logo to the right side */
-    .itemDetailPage .detailLogo     {right: 10vw;}
+    .itemDetailPage .detailLogo     { right: 10vw; }
 
     /* Increase Text Size */
     .selfBackdropPage h1.parentName { font-size: 175%; }
     .selfBackdropPage h3.itemName   { font-size: 150%; }
-
-} 
+}
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
@@ -126,10 +120,10 @@
         padding-right: 1vw;
         padding-bottom: .5em;
         padding-left: 1em;
-    } 
-    .mainDetailButtons     { 
-        margin: 1.5em 0 .5em 0; 
-        @media all and (max-width: 52em) { font-size: 90%; } 
+    }
+    .mainDetailButtons     {
+        margin: 1.5em 0 .5em 0;
+        @media all and (max-width: 52em) { font-size: 90%; }
     }
     .itemMiscInfo          { font-size: 125%; margin: .6em 0; }
     .tagline               { font-weight: 500; }
@@ -150,7 +144,7 @@
         padding-top: 0;
     }
     .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
-    .detailPageSecondaryContainer .detailVerticalSection {margin-bottom: 0 !important;}
+    .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0 !important; }
     .trackSelections .selectContainer .selectLabel       { flex-basis: 5em; }
     .detailSection                                       { padding-bottom: .5em; }
 
@@ -159,7 +153,7 @@
         padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-    .trackSelections .selectContainer {max-width: 30em;}
+    .trackSelections .selectContainer    { max-width: 30em; }
     .trackSelections .selectSubtitlesContainer .selectArrowContainer { right: .5em; }
     .trackSelections .selectLabelFocused {
         color: #fff !important;
@@ -177,7 +171,7 @@
             margin-bottom: 2em;
             margin-top: 2em;
         }
-        .detailPagePrimaryContainer { margin-right: 1vw; }
+        .detailPagePrimaryContainer   { margin-right: 1vw; }
         .detailPageSecondaryContainer { margin-top: 0; }
     }
 
@@ -199,19 +193,17 @@
             margin-right: 0 !important;
             background: none !important;
             border:  none !important;
-            backdrop-filter: none !important;  
+            backdrop-filter: none !important;
         }
-        .overview.detail-clamp-text {
-            margin: .5em;
-        }
+        .overview.detail-clamp-text { margin: .5em; }
         .itemDetailsGroup {
             margin-right: 0 !important;
             margin-left: 0 !important;
             padding-top: 0 !important;
         }
-        .itemGenres { display: none; }
-        #childrenContent { padding-left: .5em;}
-        .detailPageSecondaryContainer {margin-top: .5em !important;}
+        .itemGenres                   { display: none; }
+        #childrenContent              { padding-left: .5em;}
+        .detailPageSecondaryContainer { margin-top: .5em !important;}
     }
 }
 
@@ -224,14 +216,13 @@
         padding-right: 2vw !important;
         padding-left: 2vw !important;
     }
-    
+
     /* Media Poster */
     .detailImageContainer .card { left: 2vw; }
     .detailImageContainer .card.backdropCard {
         top: 1em;
         max-width: 33vw;
         width: 33%;
-
     }
     .detailImageContainer .card.portraitCard { left: 3vw; }
 
@@ -249,7 +240,7 @@
 
     /* Buttons */
     .mainDetailButtons .detailButton { margin: 0 .5em !important; }
-    
+
     @media (min-width: 32em) and (max-width: 38em) {
         [dir=ltr] .mainDetailButtons {
             margin-bottom: 0;
@@ -273,20 +264,19 @@
     }
     .detailPagePrimaryContent .trackSelections,
     .detailPagePrimaryContent .detailSectionContent,
-    .detailPagePrimaryContent .itemDetailsGroup { padding: 0 2vw; }
-
+    .detailPagePrimaryContent .itemDetailsGroup          { padding: 0 2vw; }
     .detailPagePrimaryContent .itemGenres:not(:has(div)) { display: none; }
+
+    .detailPagePrimaryContent .trackSelections {
+        margin-top: .75em;
+        margin-bottom: .5em;
+    }
 
     .tagline:has(bdi) {
         padding-top: 1em !important;
         margin-top: 0;
     }
 
-    .detailPagePrimaryContent .trackSelections {
-        margin-top: .75em;
-        margin-bottom: .5em;
-    }
-    
     #listChildrenCollapsible {
         margin-top: 1em;
         margin-bottom: 0;
@@ -299,7 +289,7 @@
     .detailPageSecondaryContainer .detailPageContent {
         padding-left: 2vw !important;
         padding-right: 2vw !important;
-    }    
+    }
 }
 
 /*
@@ -336,4 +326,4 @@
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     .availableImagesList .portraitCard .cardBox { margin: 1em .75em !important }
-} 
+}

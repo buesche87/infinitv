@@ -82,7 +82,7 @@
     /* Default Cards */
     .itemsContainer > .portraitCard { width: 33.33%; }
     .itemsContainer > .squareCard   { width: 33.33%; }
-    .itemsContainer > .backdropCard {/* width: 50%; */}
+    .itemsContainer > .backdropCard { width: 33.33%; }
 
     /* Default Overflow Cards */
     .itemsContainer > .overflowPortraitCard { width: 33.33%; }
@@ -1137,9 +1137,9 @@
 
     /* Person Cards */
     .itemsContainer > .overflowPortraitCard.personCard {width: calc(var(--person-card-size-mobile) * 1%);justify-items: center;}
-    .itemsContainer > .overflowPortraitCard.personCard .cardScalable { 
+    .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
         height: calc(var(--person-card-size-mobile) * 1vw);
-        width: calc(var(--person-card-size-mobile) * 1vw - 33%);
+        width: calc(var(--person-card-size-mobile) * 1vw - 25%);
     }
 
     /* NextUp Card */

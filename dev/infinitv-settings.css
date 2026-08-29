@@ -57,24 +57,24 @@
 #homeScreenPreferencesPage .btnSave,
 #languagePreferencesPage .btnSave                           { margin-top: 2em; }
 
-.layout-desktop, 
+.layout-desktop,
 .layout-tv {
     /*  No text wrap */
-    .userPreferencesPage .listItemBodyText      { white-space: nowrap; }
+    .userPreferencesPage .listItemBodyText  { white-space: nowrap; }
 
     /* Settings Page: Box size */
-    #myPreferencesMenuPage .readOnlyContent          { display: flex; max-width: 95%; }
-    #myPreferencesMenuPage > .padded-left            {padding-top: 0;padding-left: 0;}
+    #myPreferencesMenuPage .readOnlyContent { display: flex; max-width: 95%; }
+    #myPreferencesMenuPage > .padded-left   { padding-top: 0; padding-left: 0; }
 }
 
 .layout-desktop {
-    #myPreferencesMenuPage .verticalSection     { margin: 1em 2em; }
+    #myPreferencesMenuPage .verticalSection { margin: 1em 2em; }
 }
 
 .layout-tv {
-    #myPreferencesMenuPage .verticalSection          { margin: 2em; }
-    #clientSettingsPage                              { scrollbar-width: none; }
-} 
+    #myPreferencesMenuPage .verticalSection { margin: 2em; }
+    #clientSettingsPage                     { scrollbar-width: none; }
+}
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -82,12 +82,12 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Form Alignment */
-.updatePasswordForm br                                      { display: none; }
-.updatePasswordForm .inputContainer                         { margin-bottom: 1em; }
-.updatePasswordForm .emby-button.block                      { margin-top: 2em; }
+.updatePasswordForm br                 { display: none; }
+.updatePasswordForm .inputContainer    { margin-bottom: 1em; }
+.updatePasswordForm .emby-button.block { margin-top: 2em; }
 
 /* Username bold */
-h2.username                                                 {
+h2.username {
     margin-top: 0px;
     font-weight: 600;
     color: #fff;
@@ -98,20 +98,20 @@ h2.username                                                 {
    Quick Connect
 ──────────────────────────────────────────────────────────────────────────── */
 
-.layout-desktop, 
+.layout-desktop,
 .layout-tv {
     /* Box size */
-    #quickConnectPreferencesPage form                { padding: 1em 4em 2em 4em; }
+    #quickConnectPreferencesPage form  { padding: 1em 4em 2em 4em; }
 
     /* Code input size */
-    #txtQuickConnectCode                             {
+    #txtQuickConnectCode {
         padding: 1em 0;
         text-align: center;
         font-size: 1.2em;
     }
 
     /* Label for input */
-    .inputLabel[for="txtQuickConnectCode"]           { font-size: 1.2em; padding: .5em; }
+    .inputLabel[for="txtQuickConnectCode"] { font-size: 1.2em; padding: .5em; }
 }
 
 /*
@@ -120,7 +120,7 @@ h2.username                                                 {
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Subtitles: Preview-Box color */
-.subtitleappearance-preview { 
+.subtitleappearance-preview {
     background: linear-gradient(140deg,var(--accent100),#111) !important;
 }
 
@@ -202,7 +202,7 @@ h2.username                                                 {
     /* Section Titles */
     .settingsContainer .sectionTitle,
     .homeScreenSettingsContainer .sectionTitle,
-    #controlsPreferencesPage .sectionTitle {
+    #controlsPreferencesPage .sectionTitle  {
         padding-top: .25em;
         padding-bottom: .25em;
         padding-left: .5em;
@@ -235,7 +235,12 @@ h2.username                                                 {
     .userPreferencesPage > .padded-left > .readOnlyContent,
     .userPreferencesPage > .padded-left > form        {  width: 90%; }
     .userPreferencesPage .settingsContainer,
-    .userPreferencesPage .homeScreenSettingsContainer {padding-top: 1em;margin-top: -1em;padding-right: 1vw;padding-left: 1vw;}
+    .userPreferencesPage .homeScreenSettingsContainer {
+        margin-top: -1em;
+        padding-top: 1em;
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
 
     /* Main Settings Page */
     #myPreferencesMenuPage > .padded-left             {  width: 100%; }
@@ -244,7 +249,11 @@ h2.username                                                 {
     /* User Profile */
     #userProfilePage                                  {  padding: 5em 5% !important; }
     #userProfilePage > .padded-left                   {  padding: 0; width: 90%; }
-    #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) { margin-left: 2em !important; margin-right: 0 !important; }
+
+    #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) {
+        margin-left: 2em !important;
+        margin-right: 0 !important;
+    }
 
     /* Quick Connect */
     #quickConnectPreferencesPage                      {  padding-top: 5em !important; }
@@ -310,7 +319,7 @@ h2.username                                                 {
     transform: translate(-50%, -50%);
     margin: 0;
     width: 24em;
-    padding-bottom: 2em !important; 
+    padding-bottom: 2em !important;
 }
 
 /* Login: Hide some elements */
@@ -335,12 +344,14 @@ h2.username                                                 {
 ────────────────────────────────────────────────────────────────────────────
    Select Server Page
 ────────────────────────────────────────────────────────────────────────────
-*/ 
+*/
 
 /* Select Server: Form Dimensions & Colors */
-#selectServerPage .padded-bottom-page       { margin: 0 5%;
-                                              padding-top: 1em;
-                                              padding-bottom: 2em !important; }
+#selectServerPage .padded-bottom-page {
+    margin: 0 5%;
+    padding-top: 1em;
+    padding-bottom: 2em !important;
+}
 
 #selectServerPage .btnAddServer:hover,
 #selectServerPage .btnAddServer:focus       { border-color: var(--accent60) !important; }
@@ -349,9 +360,12 @@ h2.username                                                 {
 #selectServerPage .cardBox                  { margin:  1em !important; }
 #selectServerPage .cardFooter               { padding: 0.8em .3em; }
 
-#selectServerPage .cardBox:has(.cardFooter) 
-.cardScalable div                           { border-bottom-left-radius: 0 !important;
-                                              border-bottom-right-radius: 0 !important; }
+#selectServerPage .cardBox:has(.cardFooter)
+.cardScalable div                           {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 /* Connect to Server form */
 .standalonePage .addServerForm              { padding: 1em 4em 2em 4em; }
 .addServerForm h1                           { text-align: center; }

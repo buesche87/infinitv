@@ -28,8 +28,8 @@
 */
 
 /* Background: Black 85%  */
-.dialog { 
-    background: rgba(0, 0, 0, .9); 
+.dialog {
+    background: rgba(0, 0, 0, .9);
     backdrop-filter: var(--blur);
 }
 
@@ -37,9 +37,9 @@
 
 .layout-desktop,
 .layout-mobile {
-   
+
     .actionSheet {                         /* Action Sheets */
-        background: rgba(0, 0, 0, .9); 
+        background: rgba(0, 0, 0, .9);
         backdrop-filter: var(--blur);
         box-shadow: none !important;
         border: var(--buttonborder);
@@ -86,6 +86,9 @@
         bottom: auto !important;
     }
 
+    /* Dialog with Radio Buttons */
+    .dialogContainer .formDialog.opened:has(.mdl-radio__button) > div { padding-left: 2em !important; }
+
     /* Moving */
     :has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(11em) !important; }
     :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(14em) !important; }
@@ -101,9 +104,6 @@
     /* Player OSD */
     :has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"]               { transform: translateY(3.5em) !important; }
     :has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
-
-    /* Dialog with Radio Buttons */
-    .dialogContainer .formDialog.opened:has(.mdl-radio__button) > div {padding-left: 2em !important;}
 }
 
 
@@ -123,7 +123,7 @@
         border: none !important;
     }
     .actionSheet {
-        background: rgba(0, 0, 0, 0.95); 
+        background: rgba(0, 0, 0, 0.95);
         box-shadow: none !important;
         border: var(--buttonborder);
     }
@@ -146,18 +146,17 @@
     :has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
     :has(#musicRecommendedPage:not(.hide)) .formDialog,
     :has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog { top: 9.5em !important; position: fixed; }
-    
+
     /* Header */
     :has(.centeredDialog[style*="top: 10px"]) .actionSheet      { transform: translateY(3em) !important; }
 
-    
     :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet    {
         transform: translateY(9em) !important;
     }
     [dir=ltr]:has(.headroom--unpinned) {
-        :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet    {
+        :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet {
             transform: translateY(4em) !important;
-        }      
+        }
     }
 
     @media (min-width: 100em) {
@@ -165,7 +164,7 @@
         :has(#tvRecommendedPage:not(.hide)) .dynamicFilterDialog,
         :has(#tvRecommendedPage:not(.hide)) .formDialog { transform: translateY(-2.25em) !important; }
     }
-    
+
     /* Player OSD */
     :has(#videoOsdPage:not(.hide)) .actionSheet[style*="top: 10px"] { transform: translateY(3.5em) !important; }
     :has(#videoOsdPage:not(.hide)) .actionSheet                     { transform: translateY(-5em) !important; }
@@ -174,6 +173,7 @@
 /* Layout TV - Dialogs
 ──────────────────────────────────────────────────────────────────────────── */
 .layout-tv {
+
     /* Form Dialogs */
     .formDialog {
         position: fixed;
@@ -257,29 +257,29 @@
 */
 
 /* Main Drawer */
-.mainDrawer                    { 
-    margin-top: 3.9em; 
-    transition: background .5s ease-in-out; 
+.mainDrawer {
+    margin-top: 3.9em;
+    transition: background .5s ease-in-out;
 }
 
 /* Drawer Open: Match background and transition with header */
 .mainDrawer.drawer-open {
     background-color: rgba(0, 0, 0, .9) !important;
     backdrop-filter: var(--blur);
-    transition: 
-        transform .24s ease-out, 
-        left .26s ease-out, 
-        -webkit-transform .24s ease-out, 
+    transition:
+        transform .24s ease-out,
+        left .26s ease-out,
+        -webkit-transform .24s ease-out,
         background .3s ease-in-out;
 }
 /* Menu Options */
-.navMenuOption                 { border: solid 1px #0000 !important; }
-.navMenuOptionText             { margin-top: 0; }
+.navMenuOption     { border: solid 1px #0000 !important; }
+.navMenuOptionText { margin-top: 0; }
 
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 .layout-mobile {
-    .mainDrawer     {margin-top: 4em;/* border-color: brown; */}
+    .mainDrawer     { margin-top: 4em; }
 
     @media (min-width: 100em)      {
         .mainDrawer { margin-top: 4.4em; }
@@ -314,8 +314,8 @@
 */
 
 /* Shorten transition time */
-.skinHeader, 
-.skinHeader.semiTransparent { 
+.skinHeader,
+.skinHeader.semiTransparent {
     transition: background .3s ease-in-out;
     backdrop-filter: var(--blur) !important;
 }
@@ -350,9 +350,9 @@
 /* Layout TV
 ──────────────────────────────────────────────────────────────────────────── */
 .layout-tv {
-    .skinHeader { 
+    .skinHeader {
         position: fixed !important;
-        padding: .3em !important; 
+        padding: .3em !important;
         height: 3.3em;
     }
     .headerTop  { padding: .3em !important; }
@@ -384,10 +384,10 @@
 /* Layout Mobile
 ──────────────────────────────────────────────────────────────────────────── */
 .layout-mobile {
-    .skinHeader          { background: rgba(0, 0, 0, 1) !important }
+    .skinHeader { background: rgba(0, 0, 0, 1) !important }
 
     @media (max-width: 100em) {
-        .headerTop       {
+        .headerTop {
             padding-top: 0.5em;
             padding-bottom: 0.5em;
             height: 3em;
@@ -418,12 +418,12 @@
 /* Buttons: Header Buttons
 ──────────────────────────────────────────────────────────────────────────── */
 
-.emby-tab-button.show-focus:focus, 
+.emby-tab-button.show-focus:focus,
 .headerButton:focus { transform: none !important; }
 
 .layout-desktop,
 .layout-tv {
-    .emby-tab-button { 
+    .emby-tab-button {
         transform: none !important;
         padding: .6em 1.25em .8em 1.25em !important;
     }
@@ -467,7 +467,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 .emby-collapsible-button {
-    transform: none !important; 
+    transform: none !important;
     padding: .75em !important;
 }
 

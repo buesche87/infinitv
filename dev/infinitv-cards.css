@@ -38,7 +38,7 @@
 
     /* NextUp Card */
     .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 38em; }
-} 
+}
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -87,7 +87,7 @@
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
-    
+
     /* List Item (TV) */
     .libraryPage .listItem-button:not(.listItem-largeImage) {
         padding-top: 1.5em;
@@ -115,7 +115,7 @@
     .listItem-bottomoverview {
         text-align: center;
     }
-    
+
     /* Define max. height and enable text-wrap after 2nd line */
     .itemsContainer .listItemBodyText {
         line-clamp: 2;
@@ -260,7 +260,7 @@
 
     .card:focus .cardScalable,
     .card:focus .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow-focus) !important; }
-    
+
     /* No shadows / No Glow */
     .cardBox:has(> .cardFooter) > .cardScalable  { box-shadow: none !important; }
 }
@@ -293,7 +293,6 @@
 }
 
 /* But not for Cards beeing displayed in the ImageEditor */
-/* > TODO: Move to a new or existing block */
 #images .visualCardBox .cardContent,
 #backdrops .visualCardBox .cardContent {
     border-bottom-left-radius: inherit !important;
@@ -314,16 +313,16 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
-    
-    /* CardBoxes in General */
-    .itemsContainer > .card > .cardBox                                      {margin: 1em 7% !important;}
-    .itemsContainer > .card.backdropCard > .cardBox                         {margin: 1.2em 7% !important;}
-    .itemsContainer > .card.portraitCard > .cardBox                         {margin: 1.2em 9% !important;}
-    .itemsContainer > .card.overflowBackdropCard > .cardBox                 {margin: 1.5em 6% !important;}
-    .itemsContainer > .card.overflowPortraitCard > .cardBox                 {margin: 1.2em 8% !important;}
 
-    .itemsContainer > .card.overflowPortraitCard.personCard > .cardBox      {margin: 1.5em 6% !important;}
-    
+    /* CardBoxes in General */
+    .itemsContainer > .card > .cardBox                                      { margin: 1em 7% !important; }
+    .itemsContainer > .card.backdropCard > .cardBox                         { margin: 1.2em 7% !important; }
+    .itemsContainer > .card.portraitCard > .cardBox                         { margin: 1.2em 9% !important; }
+    .itemsContainer > .card.overflowBackdropCard > .cardBox                 { margin: 1.5em 6% !important; }
+    .itemsContainer > .card.overflowPortraitCard > .cardBox                 { margin: 1.2em 8% !important; }
+
+    .itemsContainer > .card.overflowPortraitCard.personCard > .cardBox      { margin: 1.5em 6% !important; }
+
     /* CardBoxes in BannerCards */
     .itemsContainer > .bannerCard > .cardBox                                { margin: 1em !important; }
 
@@ -332,7 +331,7 @@
 
     /* CardBoxes in OverflowPortraitCards residing in a SecondaryContainer */
     .detailPageSecondaryContainer .overflowPortraitCard .cardBox            { margin: 2em 1em !important; }
-    .detailPageSecondaryContainer .overflowPortraitCard.personCard .cardBox {margin: 1.5em 8% !important;}
+    .detailPageSecondaryContainer .overflowPortraitCard.personCard .cardBox { margin: 1.5em 8% !important; }
 }
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
@@ -364,9 +363,9 @@
 
 /* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {
-    
+
     /* CardBoxes in General */
-    .itemsContainer .card > .cardBox              { margin: 1.25em 1em .75em 1em !important;  }
+    .itemsContainer .card > .cardBox              {margin: 1.25em 1em .75em 1em !important;}
 
     .itemsContainer .card.portraitCard > .cardBox { margin-bottom: 1em !important; }
 
@@ -381,14 +380,14 @@
         margin-left: .75em;
         margin-right: .75em;
     }
-    
+
     .itemsContainer .card.personCard > .cardBox {
         margin-top: .75em !important;
         margin-bottom: .5em !important;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
-    
+
 }
 
 /*
@@ -399,7 +398,7 @@
 
 /* Hide Series Title in Recent & NextUp Section */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
-.NextUp .card[data-type="Episode"] .cardText-first { 
+.NextUp .card[data-type="Episode"] .cardText-first {
     display: none;
 }
 
@@ -416,6 +415,7 @@
 .NextUp .card[data-type="Movie"] .cardText-secondary { display: none; }
 
 /* Card Text First: Spacing with and without card footer */
+.personCard .cardTextCentered {margin: 0 0.25em;padding-left: 0;padding-right: 0;}
 .cardText-first { padding-top: .5em !important; }
 .cardFooter > .cardText.cardText-first { padding-top: .25em !important; }
 
@@ -482,7 +482,7 @@
         font-size: .75em !important
     }
     .listItem-border .listItemIndicators { display: none; }
-} 
+}
 
 /*
 ────────────────────────────────────────────────────────────────────────────

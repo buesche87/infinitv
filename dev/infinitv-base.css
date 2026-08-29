@@ -21,19 +21,19 @@
     /* Backgrounds */
     --bgtitle: hsla(0, 0%, 75%, .1);     /* Title */
     --bgbar: hsl(0deg 0% 12.29% / 74%);  /* Buttonbar */
-    
+
     /* Borders */
     /* --buttonborder: solid 2px hsla(0, 0%, 100%, .2); */
     --buttonborder: solid 1px hsla(0, 0%, 80%, .2);
 
     /* Blur */
     --blur: blur(5.2px) saturate(1.35);
-    
+
     /* Glow Animation */
     --cardglow: 0px 0px 10px 3px var(--accent80);
     --cardglow-focus: 0px 0px 10px 3px var(--accent80);
     --buttonglow: 0px 0px 10px 1px var(--accent100);
-    
+
     /* Default Accents */
     --accent100: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 1.0);
     --accent80:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
@@ -53,7 +53,7 @@
 
     /* Animation Duration */
     --anispeed: 240ms;
-    
+
     /* Card Smoothening */
     --insettop: inset -1px 3px 14px 0px rgb(255 255 255 / 10%);
     --insetbottom: inset -3px -3px 14px 0px rgb(0 0 0 / 40%);
@@ -78,7 +78,8 @@
 .backgroundContainer.withBackdrop { background: rgba(0, 0, 0, var(--bgdarkness)) !important }
 
 /* Background Image on Homepage and some Library Pages,even with Backropds enabled */
-[dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop, [dir=ltr]:has(#itemDetailPage.hide) .backgroundContainer.withBackdrop {
+[dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop,
+[dir=ltr]:has(#itemDetailPage.hide) .backgroundContainer.withBackdrop {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
         var(--bgImage) !important;
@@ -97,12 +98,10 @@
 
 /* Color: Accent 80% */
 #loginPage .cardImage,
-/* .actionSheetMenuItem:hover, */
 .button-link:hover,
 .emby-collapsible-button:hover,
 .emby-textarea:hover + .textareaLabel,
 .emby-checkbox:hover + .checkboxLabel,
-/* .detailButton:focus, */
 .listTextButton-autohide:hover,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__inner-circle,
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
@@ -126,8 +125,6 @@
 .right-arrow:hover,
 .pause-button:hover,
 .volume-toggle:hover,
-/* .listItem-border:hover, */
-/* .listItem-border:focus, */
 .listItem-button:focus h2.listItemBodyText,
 .listItemIcon.check,
 .listTextButton-autohide:focus,
@@ -148,7 +145,9 @@
 .upNextDialog-countdownText              { color: var(--accent100) !important; }
 
 /* Color: White */
-.paper-icon-button-light.headerBackButton:focus, .paper-icon-button-light.emby-scrollbuttons-button:focus, .layout-mobile .overview-expand:focus    { color: white !important; }
+.paper-icon-button-light.headerBackButton:focus,
+.paper-icon-button-light.emby-scrollbuttons-button:focus,
+.layout-mobile .overview-expand:focus    { color: white !important; }
 
 /* Font Weight */
 .inputLabelFocused,
@@ -209,7 +208,7 @@
 .homeScreenSettingsContainer .sectionTitle,
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
-.verticalSection > .sectionTitleContainer-cards  { 
+.verticalSection > .sectionTitleContainer-cards  {
     background-color: var(--bgtitle);
     backdrop-filter: var(--blur);
 }
@@ -245,21 +244,21 @@
 .upNextDialog-button:hover                       { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
-.checkboxOutline:not(:disabled):hover, 
-.emby-input:not(:disabled):hover, 
-.emby-select-withcolor:not(:disabled):hover, 
-.emby-textarea:not(:disabled):hover, 
-.listItem-largeImage:focus, 
-.layout-desktop .listItem-focusscale:hover, 
-.listItemImageButton:hover, 
-.button-submit:hover, 
-.button-submit:focus, 
-.emby-button.block:hover, 
-.emby-button.block:focus, 
-.favorite-button:hover, 
-.favorite-button:focus, 
-.detailButton:hover, 
-.detailButton:focus, 
+.checkboxOutline:not(:disabled):hover,
+.emby-input:not(:disabled):hover,
+.emby-select-withcolor:not(:disabled):hover,
+.emby-textarea:not(:disabled):hover,
+.listItem-largeImage:focus,
+.layout-desktop .listItem-focusscale:hover,
+.listItemImageButton:hover,
+.button-submit:hover,
+.button-submit:focus,
+.emby-button.block:hover,
+.emby-button.block:focus,
+.favorite-button:hover,
+.favorite-button:focus,
+.detailButton:hover,
+.detailButton:focus,
 .play-button:hover,
 .play-button:focus,
 .upNextDialog-button:hover,
@@ -278,7 +277,6 @@
 .emby-select option:hover                        { background-color: var(--accent40) !important; }
 
 /* Background Color: Accent 80% */
-/* .alphaPickerButton:focus, */
 .emby-checkbox:checked + span + .checkboxOutline,
 .emby-select option:focus                        { background-color: var(--accent80) !important; }
 
@@ -307,7 +305,7 @@
 .collapseContent .listItem:hover,
 .emby-collapsible-button:focus,
 .emby-button,
-.emby-button.skip-button, 
+.emby-button.skip-button,
 .emby-tab-button:focus,
 .listItem,
 .listItemBodyText,
@@ -321,6 +319,7 @@
 .paper-icon-button-light:not(.alphaPickerButton):active,
 .sectionTitleTextButton:focus,
 .sliderBubble                          { background-color: #0000 !important; }
+
 /*
 ────────────────────────────────────────────────────────────────────────────
     Borders
@@ -369,7 +368,7 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Border Color: Accent ──────────────────────────────────────────────────── */
-                                                  
+
 /* Accent 40% */
 .listItem-largeImage:hover,
 .detail-button:hover,
@@ -405,11 +404,9 @@
 .progressring-spiner       { border-color: var(--accent100) !important; }
 
 /* Border Color: Transparent ──────────────────────────────────────────────────── */
-                                                  
-/* .actionSheetMenuItem:focus, */
+
 .card:focus .cardBox:not(.visualCardBox) .cardScalable,
 .navMenuOption:focus,
-/* .userPreferencesPage .listItem-border:focus, */
 .upNextDialog-button:focus { border-color: #0000 !important; }
 
 /*
@@ -461,12 +458,6 @@
 .searchSuggestionsList > div:hover,
 .searchSuggestionsList > div:has(.emby-button:focus) { border-radius: var(--rounding-system) !important; }
 
-.layout-tv {
-    .sectionTitle,
-    .sectionTitleContainer-cards { border-radius: var(--rounding-system) !important; }
-} 
-
-
 /* Rounding: Media */
 .blurhash-canvas,
 .dialog,
@@ -497,7 +488,6 @@
 .paper-icon-button-light,
 .upNextContainer,
 .upNextDialog-poster-img                             { border-radius: var(--rounding-media) !important; }
-
 
 /* No Roundings */
 .backdrop-overlay,

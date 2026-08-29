@@ -5,8 +5,18 @@
     --boxborder: solid 1px hsla(0, 0%, 80%, .2);
 }
 
+/* No card shadows in sections with background */
+.itemDetailPage .verticalSection .card .cardBox,
+.itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
+
+/* Card Container */
+.detailImageContainer .card {
+    border: solid 1px hsla(0, 0%, 20%, .1);
+}
+
 .layout-desktop {
 
+    /* Background & Blur for vertical media Sections */
     .itemDetailPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--buttonborder);
@@ -14,15 +24,14 @@
         backdrop-filter: var(--blur);
     }
 
-    .itemDetailPage .detailVerticalSection {margin-bottom: 1em;/* padding-right: 1.25em; */}
+    /* Content alignment */
+    .itemDetailPage .detailVerticalSection      { margin-bottom: 1em; }
+    .detailPagePrimaryContent                   { padding: 0 1.5vw 0 32.45vw; }
     .detailPagePrimaryContainer .itemsContainer { padding: 0; margin: 0; }
-    .detailPagePrimaryContent { padding: 0 1.5vw 0 32.45vw; }
-    .detailPageSecondaryContainer { padding: 0 1.5vw !important; }
-    .detailSectionContent {padding-right: 1vw;}
+    .detailPageSecondaryContainer               { padding: 0 1.5vw !important; }
+    .detailSectionContent                       { padding-right: 1vw; }
 
-    .itemDetailPage .verticalSection .card .cardBox,
-    .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
-    
+    /* Section Titles */
     .itemDetailPage .sectionTitle,
     .itemDetailPage div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
         border-bottom-left-radius: 0 !important;
@@ -37,7 +46,7 @@
             margin-bottom: 1em !important;
         }
         .verticalSection { margin-bottom: 1em !important; }
-    } 
+    }
 
     /* Episode List */
     .itemDetailPage:has(.listItem-largeImage) {
@@ -48,23 +57,16 @@
         }
     }
 
+    /* Box for Media Description if Backdrops enabled */
     [dir=ltr]:has(.backgroundContainer.withBackdrop) {
-
         .detailPagePrimaryContent .detailSection {
             background: rgba(0, 0, 0, var(--bgdarkness));
             border: var(--buttonborder);
             border-radius: var(--rounding-media);
             backdrop-filter: var(--blur);
+            padding: .25em 1.25em 0 1.25em;
+            margin: 1.5vh 0 1em -1em;
         }
-
-        .detailPagePrimaryContent .detailSection {
-            padding-top: .25em;
-            padding-left: 1.25em;
-            margin-left: -1em;
-            margin-top: 1.5vh;
-            margin-bottom: 1em;
-            padding-right: 1.25em;
-        }    
     }
 }
 
@@ -84,14 +86,8 @@
         backdrop-filter: var(--blur);
     }
 
-    .itemDetailPage .verticalSection .card .cardBox,
-    .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
-
     /* Card Container */
-    .detailImageContainer .card { 
-        border: solid 1px hsla(0, 0%, 100%, .1);
-        margin-top: 0;
-    }
+    .detailImageContainer .card { margin-top: 0; }
 
     /* Detail Ribbon */
     [dir=ltr] .detailRibbon {
@@ -99,41 +95,46 @@
         margin-bottom: 1em;
     }
 
-    /* Section Titles */
-    .detailPagePrimaryContent .sectionTitle,
-    .detailPageSecondaryContainer .sectionTitle { border-radius: 0 !important; }
-
     /* Sections */
     .itemDetailPage .verticalSection { margin-bottom: 1em !important; }
-    .itemDetailPage .verticalSection .itemsContainer {
-        padding: 0;
-        margin: 0 .5vw;
-    }
-   
-    /* Primary Content */
-    .detailPagePrimaryContainer { margin-bottom: 1em; }
-    .detailPagePrimaryContent  { padding: 0; }
-    #listChildrenCollapsible { 
-        margin-top: 1em !important; 
-    }
-
     #listChildrenCollapsible:has(.verticalSection) {
         background: none;
         border: none;
         backdrop-filter: none;
     }
-    
-    /* Secondary Content */
+
+    /* Items Container */
+    .itemDetailPage .verticalSection .itemsContainer {
+        padding: 0;
+        margin: 0 .5vw;
+    }
+
+    /* Section Titles */
+    .detailPagePrimaryContent .sectionTitle,
+    .detailPageSecondaryContainer .sectionTitle { border-radius: 0 !important; }
+
+    /* Content */
+    .detailPagePrimaryContainer   { margin-bottom: 1em; }
+    .detailPagePrimaryContent     { padding: 0; }
     .detailPageSecondaryContainer { margin-top: 1em; }
+    #listChildrenCollapsible      { margin-top: 1em !important; }
 
     /* Page: Media Details */
     .itemDetailPage:has(.trackSelections:not(.hide)) {
         .detailSection { padding: 1em 1.5em; }
         .detailPagePrimaryContainer { padding-right: 1vw}
     }
-    
+
     /* Page: TV Show Overview */
     .itemDetailPage:has(.trackSelections.hide) {
+
+        .detailSectionContent,
+        .itemDetailsGroup {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            backdrop-filter: var(--blur);
+            border: var(--buttonborder);
+        }
+
         .detailPagePrimaryContent { padding-left: 0 !important; }
         .detailPagePrimaryContent .detailSection {
             background: none;
@@ -145,27 +146,22 @@
             margin-top: 0;
         }
         .detailSectionContent {
-            background: rgba(0, 0, 0, var(--bgdarkness));
-            backdrop-filter: var(--blur);
-            border: var(--buttonborder);
+            border-bottom: none;
             border-top-right-radius: var(--rounding-media);
             border-top-left-radius: var(--rounding-media);
-            border-bottom: none;
             margin: 0;
             padding: 0 1.5em .5em 1.5em;
         }
         .itemDetailsGroup {
-            background: rgba(0, 0, 0, var(--bgdarkness));
-            backdrop-filter: var(--blur);
-            border: var(--buttonborder);
             border-top: none;
             border-bottom-right-radius: var(--rounding-media);
             border-bottom-left-radius: var(--rounding-media);
-            padding: .5em 1em 1em 1.5em;
             margin-bottom: 1em;
+            padding: .5em 1em 1em 1.5em;
         }
         .nextUpSection { margin-top: 0 !important; }
-        .itemGenres:not(:has(div)) { display: none; }
+
+        .itemGenres:not(:has(div))  { display: none; }
         .overview.detail-clamp-text { margin: 0; }
     }
 
@@ -182,8 +178,8 @@
             border-bottom: var(--buttonborder) !important;
         }
         .verticalSection .itemsContainer { margin: 0 !important; }
-        .itemDetailsGroup { display:none; }
-        #childrenContent { padding-left: 0 !important; }
+        .itemDetailsGroup                { display:none; }
+        #childrenContent                 { padding-left: 0 !important; }
     }
 }
 
@@ -192,41 +188,33 @@
     /* Box for sub-elements */
     .trackSelections,
     .itemDetailsGroup,
-    .detailSectionContent {
+    .detailSectionContent,
+    .itemDetailPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
-        /* backdrop-filter: var(--blur); */
         border: var(--boxborder);
         border-radius: var(--rounding-media);
     }
 
-    /* Section title adjustments */
+    /* Section Titles */
     .sectionTitle-cards {
         border-bottom-right-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
         padding-left: 0;
     }
-    
-    .itemDetailPage .verticalSection {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--boxborder);
-        border-radius: var(--rounding-media);
-        /* backdrop-filter: var(--blur); */
-    }
-   
+
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
     .detailPageSecondaryContainer { padding-top: 0em; }
     .detailPagePrimaryContent     { padding: 0 1vw 0 32.45vw; }
 
     .itemDetailPage .detailVerticalSection { margin-bottom: 1em; }
-    
+
     .detailSectionContent {
         border-bottom: none;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        padding: .5em 1em !important;
         margin-top: .5em;
+        padding: .5em 1em !important;
     }
-
     .itemDetailsGroup {
         border-top: none;
         border-top-right-radius: 0;
@@ -236,31 +224,19 @@
         padding: .5em 1em !important;
     }
 
+    #listChildrenCollapsible:has(.verticalSection) {
+        background: none;
+        border: none;
+    }
+    #listChildrenCollapsible .verticalSection { margin-bottom: 1em; }
+
     .itemDetailPage .verticalSection .emby-scroller { margin: 0 1vw; }
-    
-    .itemDetailPage .verticalSection .card .cardBox,
-    .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
 
     .listItem-largeImage { border: var(--boxborder) !important; }
     .overview p { margin: .5em 0 1em 0; }
 
-    
-    #listChildrenCollapsible:has(.verticalSection) {
-        background: none;
-        border: none;
-        backdrop-filter: none;
-    }
-    
-    #listChildrenCollapsible .verticalSection { margin-bottom: 1em; }
-    
     /* Page: Media Details */
     .itemDetailPage:has(.trackSelections:not(.hide)) {
-
-        .trackSelections {
-            padding: 1em;
-            margin-bottom: 1em;
-            max-width: 100%;
-        }
 
         .detailSectionContent { padding: .5em 1em .5em 1em !important; }
 
@@ -269,8 +245,14 @@
             border-top: none;
             margin-bottom: 0;
         }
+
+        .trackSelections {
+            padding: 1em;
+            margin-bottom: 1em;
+            max-width: 100%;
+        }
     }
-    
+
     /* Page: Episode List */
     .itemDetailPage:has(.listItem-largeImage) {
 
@@ -279,7 +261,6 @@
         .itemDetailsGroup,
         .detailSectionContent {
             background: rgba(0, 0, 0, var(--bgdarkness));
-            /* backdrop-filter: var(--blur); */
             border: var(--boxborder);
         }
 
@@ -287,7 +268,6 @@
         .detailPagePrimaryContainer .verticalSection {
             background: none;
             border: none;
-            backdrop-filter: none;
         }
 
         .detailPagePrimaryContainer { margin-bottom: 0; }
@@ -298,9 +278,9 @@
 
         .trackSelections,
         .detailSectionContent {
+            border-bottom: none;
             border-top-right-radius: var(--rounding-media);
             border-top-left-radius: var(--rounding-media);
-            border-bottom: none;
             margin-top: .5em;
         }
 
