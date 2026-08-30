@@ -221,23 +221,15 @@
 
 /* ─ BG Dark ──────────────────────────────────────────────────────── */
 
-/* Background Color: Dark 20% */
-.button-submit:hover,
-.emby-button.block:hover,
-.raised:hover                                    { background-color: var(--bgdark20) !important; }
-
 /* Background Color: Dark 40% */
 .emby-button.block,
 .emby-input,
 .emby-textarea,
 .emby-select,
 .checkboxOutline,
-.button-submit,
 .itemProgressBar,
 .paperList,
-.detail-button,
-.favorite-button,
-.play-button,
+.button-container button,
 .listItem-focusscale,
 .listItem-largeImage:hover,
 .cardOverlayButton.cardOverlayFab-primary:hover,
@@ -251,16 +243,13 @@
 .listItem-largeImage:focus,
 .layout-desktop .listItem-focusscale:hover,
 .listItemImageButton:hover,
-.button-submit:hover,
-.button-submit:focus,
 .emby-button.block:hover,
 .emby-button.block:focus,
-.favorite-button:hover,
-.favorite-button:focus,
-.detailButton:hover,
-.detailButton:focus,
-.play-button:hover,
-.play-button:focus,
+.button-container button:hover,
+.button-container button:focus,
+.mainDetailButtons button:hover,
+.mainDetailButtons button:focus,
+.raised:hover,
 .upNextDialog-button:hover,
 .upNextDialog-button:focus                       { background-color: var(--bgdark60) !important; }
 
@@ -411,9 +400,10 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Button Glow*/
-.detailButton:hover,
-.detailButton:focus,
 .detailButton-content button:hover,
+.button-container button:hover,
+.mainDetailButtons button:hover,
+.mainDetailButtons button:focus,
 .itemsContainer > .listItem-focusscale:focus,
 .itemsContainer > .listItem-largeImage:focus,
 .upNextDialog-button:focus                         { box-shadow: var(--buttonglow) !important; }
