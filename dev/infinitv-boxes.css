@@ -202,7 +202,8 @@
     .trackSelections,
     .itemDetailsGroup,
     .detailSectionContent,
-    .itemDetailPage .verticalSection {
+    .itemDetailPage .verticalSection,
+    #searchPage .verticalSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--boxborder);
         border-radius: var(--rounding-media);
@@ -305,4 +306,5 @@
             padding: .5em 1em !important;
         }
     }
+
 }

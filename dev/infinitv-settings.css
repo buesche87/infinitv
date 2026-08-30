@@ -295,14 +295,48 @@ h2.username {
    Search Page
 ──────────────────────────────────────────────────────────────────────────── */
 
-#searchPage .searchFieldsInner { padding-bottom: 1em; }
+/* Search Field */
+#searchPage .searchFields {
+    position: fixed;
+    width: 80%;
+    justify-self: center;
+    z-index: 5;
+}
 
-/* Section Titles */
+#searchPage .searchFieldsInner {
+    padding-bottom: 1em;
+}
+
+[dir=ltr]:has(.headroom--unpinned) {
+    #searchPage .searchFields {top: 0em;}
+}
+
+/* Suggestion list */
+#searchPage .verticalSection {
+    margin: .5em 2vw;
+    padding-bottom: 1em;
+    top: 5em;
+    position: relative;
+}
 #searchPage .sectionTitle {
     padding: .3em 0;
-    margin: .5em 0;
+    margin-top:  0;
+    margin-bottom: .5em;
     text-align: center;
     font-weight: 600;
+}
+#searchPage .searchSuggestionsList div {
+    padding: .25em;
+    border: var(--buttonborder);
+    border-radius: var(--rounding-system);
+    margin-bottom: .25em;
+}
+#searchPage .emby-button.button-link {
+    width: 80vw;
+}
+
+#searchTextInput {
+    backdrop-filter: var(--blur);
 }
 
 /*
