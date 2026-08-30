@@ -265,13 +265,19 @@
 /* Drawer Open: Match background and transition with header */
 .mainDrawer.drawer-open {
     background-color: rgba(0, 0, 0, .9) !important;
-    backdrop-filter: var(--blur);
     transition:
         transform .24s ease-out,
         left .26s ease-out,
         -webkit-transform .24s ease-out,
         background .3s ease-in-out;
 }
+
+.layout-desktop,
+.layout-tv {
+    .mainDrawer.drawer-open { backdrop-filter: var(--blur); }
+}
+
+
 /* Menu Options */
 .navMenuOption     { border: solid 1px #0000 !important; }
 .navMenuOptionText { margin-top: 0; }

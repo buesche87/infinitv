@@ -379,8 +379,7 @@
 .emby-input:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
-.imagePlaceHolder:hover,
-.play-button:hover         { border-color: var(--accent40) !important; }
+.imagePlaceHolder:hover    { border-color: var(--accent40) !important; }
 
 /* Accent 60% */
 .emby-button.block:focus,
@@ -413,6 +412,7 @@
 
 /* Button Glow*/
 .detailButton:hover,
+.detailButton:focus,
 .detailButton-content button:hover,
 .itemsContainer > .listItem-focusscale:focus,
 .itemsContainer > .listItem-largeImage:focus,
