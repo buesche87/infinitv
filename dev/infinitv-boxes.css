@@ -57,7 +57,7 @@
         }
     }
 
-    /* Box for Media Description if Backdrops enabled */
+    /* Box for Media Description if Backdrops enabled
     [dir=ltr]:has(.backgroundContainer.withBackdrop) {
         .detailPagePrimaryContent .detailSection {
             background: rgba(0, 0, 0, var(--bgdarkness));
@@ -67,9 +67,7 @@
             padding: .25em 1.25em 0 1.25em;
             margin: 1.5vh 0 1em -1em;
         }
-    }
-
-
+    } */
     /* Home Page Slides */
     .slide {
         background: rgba(0, 0, 0, 1);
@@ -77,9 +75,6 @@
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
     }
-
-
-
 
 }
 
