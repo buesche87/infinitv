@@ -302,18 +302,12 @@ h2.username {
     justify-self: center;
     z-index: 5;
 }
-
-#searchPage .searchFieldsInner {
-    padding-bottom: 1em;
-}
-
-[dir=ltr]:has(.headroom--unpinned) {
-    #searchPage .searchFields {top: 0em;}
-}
+#searchPage .searchFieldsInner { padding-bottom: 1em; }
+#searchTextInput { backdrop-filter: var(--blur); }
 
 /* Suggestion list */
 #searchPage .verticalSection {
-    margin: .5em 2vw;
+    margin: .5em 0;
     padding-bottom: 1em;
     top: 5em;
     position: relative;
@@ -325,18 +319,21 @@ h2.username {
     text-align: center;
     font-weight: 600;
 }
-#searchPage .searchSuggestionsList div {
-    padding: .25em;
-    border: var(--buttonborder);
-    border-radius: var(--rounding-system);
-    margin-bottom: .25em;
-}
-#searchPage .emby-button.button-link {
-    width: 80vw;
-}
 
-#searchTextInput {
-    backdrop-filter: var(--blur);
+#searchPage .emby-button.button-link { width: 80vw; }
+
+.layout-mobile {
+
+    #searchPage .searchSuggestionsList div {
+        padding: .25em;
+        border: var(--buttonborder);
+        border-radius: var(--rounding-system);
+        margin-bottom: .25em;
+    }
+
+    [dir=ltr]:has(.headroom--unpinned) {
+        #searchPage .searchFields { top: 0em; }
+    }
 }
 
 /*
