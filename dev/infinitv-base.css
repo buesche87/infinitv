@@ -76,13 +76,10 @@
 /* Darken Background */
 .backgroundContainer.withBackdrop { background: rgba(0, 0, 0, var(--bgdarkness)) !important; }
 
+/* Backdrops: Only on Media Detail Page */
 
-/* Backdrops */
-
-
-/* Backdrops only on Media Detail Page */
-[dir=ltr]:not(:has(#itemDetailPage)) .backgroundContainer.withBackdrop,
-[dir=ltr]:has(#itemDetailPage.hide) .backgroundContainer.withBackdrop {
+[dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop,
+[dir=ltr]:not(:has(#itemDetailPage:not(.hide))) .backgroundContainer.withBackdrop {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
         var(--bgImage) !important;
@@ -91,7 +88,7 @@
     background-repeat: no-repeat !important;
 }
 
-/* Don't fadi in background picture */
+/* Don't fade in background picture */
 .backdropImageFadeIn {
     -webkit-animation: none;
     animation: none;

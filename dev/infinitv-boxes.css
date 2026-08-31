@@ -25,25 +25,10 @@
     border: var(--boxborder);
     border-radius: var(--rounding-media);
 }
+
 .layout-desktop {
 
-    /* TV Show Overview */
-    .itemDetailPage:has(.trackSelections:not(.hide)) {
-        .detailSection {
-            background: rgba(0, 0, 0, var(--bgdarkness));
-            border: var(--boxborder);
-            border-radius: var(--rounding-media);
-            padding: .5em 1.5em;
-            margin: 1em 0;
-        }
 
-        .itemDetailsGroup { margin-bottom: 1em; }
-    }
-
-    trackSelections,
-    .selectSubtitlesContainer {
-        width: 100%;
-    }
 }
 
 /* Box for sub-elements */
@@ -76,6 +61,19 @@
 
 .layout-desktop {
 
+    .itemDetailPage .detailSection {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--boxborder);
+        border-radius: var(--rounding-media);
+        padding: .5em 1.5em;
+        margin: 1em 0;
+    }
+
+
+
+    .trackSelections,
+    .selectSubtitlesContainer { width: 100%; }
+
     /* Content alignment */
     .itemDetailPage .detailVerticalSection      { margin-bottom: 1em; }
     .detailPagePrimaryContent                   { padding: 0 1.5vw 0 32.45vw; }
@@ -100,13 +98,47 @@
         .verticalSection { margin-bottom: 1em !important; }
     }
 
-    /* Episode List */
-    .itemDetailPage:has(.listItem-largeImage) {
-        .detailPagePrimaryContainer .verticalSection {
-            background: none;
-            border: none;
-            backdrop-filter: none;
+    /* Show */
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+        background: none;
+        border: none;
+        border-radius: var(--rounding-media);
+        padding: 0;
+        margin: .5em 0 1em 0;
+    }
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+
+        .trackSelections,
+        .itemDetailsGroup,
+        .detailSectionContent {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            border: var(--boxborder);
+            border-radius: var(--rounding-media);
+            padding-left: 1.5em;
         }
+
+        .itemDetailsGroup {
+            margin-top: 0;
+            border-top: none;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+
+        .detailSectionContent {
+            border-bottom: none;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            padding-bottom: 1em;
+        }
+    }
+
+    /* Episode List */
+    .itemDetailPage .detailPagePrimaryContainer .verticalSection:has(.listItem-largeImage) {
+        background: none;
+        border: none;
+        backdrop-filter: none;
     }
 
     /* Home Page Slides */
@@ -119,7 +151,6 @@
 
     /* Page: Search */
     #searchPage .verticalSection { margin: .5em 2vw; }
-
 }
 
 .layout-tv {

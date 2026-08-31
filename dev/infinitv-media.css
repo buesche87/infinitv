@@ -22,9 +22,7 @@
 .layout-desktop {
 
     /* Poster Card */
-    .detailImageContainer .card {
-        left: 2vw;
-    }
+    .detailImageContainer .card { left: 2vw; }
 
     .detailImageContainer .card.backdropCard {
         margin-top: 1.6vh;
