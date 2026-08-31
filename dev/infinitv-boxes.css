@@ -184,7 +184,7 @@
     }
 
     /* Suggestion list */
-    #searchPage .verticalSection { margin: .5em 2vw; }
+    #searchPage .verticalSection {margin: 1em 2vw;}
 }
 
 .layout-mobile {

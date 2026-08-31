@@ -297,7 +297,6 @@ h2.username {
 
 /* Search Field */
 #searchPage .searchFields {
-    position: fixed;
     width: 80%;
     justify-self: center;
     z-index: 5;
@@ -309,8 +308,6 @@ h2.username {
 #searchPage .verticalSection {
     margin: .5em 0;
     padding-bottom: 1em;
-    top: 5em;
-    position: relative;
 }
 #searchPage .sectionTitle {
     padding: .3em 0;
@@ -322,7 +319,43 @@ h2.username {
 
 #searchPage .emby-button.button-link { width: 80vw; }
 
+.layout-desktop {
+
+    /* Search Field */
+    #searchPage .searchFields {
+        position: fixed;
+        width: 80%;
+        justify-self: center;
+        z-index: 5;
+    }
+
+    /* Suggestion list */
+    #searchPage .verticalSection {
+        margin: .5em 0;
+        padding-bottom: 1em;
+        top: 5em;
+        position: relative;
+    }
+}
+
+.layout-tv {
+    /* Suggestion list */
+    #searchPage .verticalSection {
+        margin: .5em 0;
+        padding-bottom: 1em;
+        /* top: 10em; */
+    }
+}
+
 .layout-mobile {
+
+    /* Search Field */
+    #searchPage .searchFields {
+        position: fixed;
+        width: 80%;
+        justify-self: center;
+        z-index: 5;
+    }
 
     #searchPage .searchSuggestionsList div {
         padding: .25em;
