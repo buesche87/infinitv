@@ -410,8 +410,8 @@
 .detailImageContainer .card                        { box-shadow: var(--cardshadow) !important; }
 
 /* No Shadows / no Glow */
+.mainDrawer                                        { box-shadow: none !important; }
 .cardPadder,
-.mainDrawer,
 .card:hover .cardBox.withMultiSelect,
 .card:hover .cardBox.withMultiSelect .cardScalable { box-shadow: none !important; }
 
