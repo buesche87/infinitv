@@ -10,20 +10,20 @@
 
     /* Darkness & Opacity */
     --bgdarkness:    0.6;  /* Background Darkness */
-    --headeropacity: 0.7;  /* Header & Drawer Opacity */
-    --itemopacity:   0.8;  /* Item Opacity (Like Card-Footer) */
-    --osdopacity:    0.4;  /* OSD Opacity */
+    --headeropacity: 0.7;  /* Header Opacity (Drawer included) */
+    --itemopacity:   0.8;  /* Item Opacity   (Ribbon & Card-Footer for now) */
+    --osdopacity:    0.5;  /* OSD Opacity    (Header + Footer) */
 
     /* Roundings */
     --rounding-media: 12px;
     --rounding-system: 6px;
 
     /* Backgrounds */
-    --bgtitle: hsla(0, 0%, 75%, .1);     /* Title */
-    --bgbar: hsl(0deg 0% 12.29% / 74%);  /* Buttonbar */
+    --bgtitle: hsla(0, 0%, 75%, .1);     /* Section Title background in white */
+    --bgbar: hsl(0deg 0% 12.29% / 74%);  /* NotInUse (Buttonbar color) */
 
     /* Borders */
-    /* --buttonborder: solid 2px hsla(0, 0%, 100%, .2); */
+    /* --buttonborder: solid 2px hsla(0, 0%, 100%, .2); */  /* thicker borders */
     --buttonborder: solid 1px hsla(0, 0%, 80%, .2);
 
     /* Blur */
@@ -76,7 +76,12 @@
 /* Darken Background */
 .backgroundContainer.withBackdrop { background: rgba(0, 0, 0, var(--bgdarkness)) !important; }
 
+
+/* Backdrops */
+
+
 /* Backdrops only on Media Detail Page */
+[dir=ltr]:not(:has(#itemDetailPage)) .backgroundContainer.withBackdrop,
 [dir=ltr]:has(#itemDetailPage.hide) .backgroundContainer.withBackdrop {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -84,6 +89,12 @@
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+}
+
+/* Don't fadi in background picture */
+.backdropImageFadeIn {
+    -webkit-animation: none;
+    animation: none;
 }
 
 /*
@@ -200,16 +211,13 @@
 
 /* ─  BG Light ──────────────────────────────────────────────────────── */
 
-/* Title Background */
+/* Title Background with Blur */
 #searchPage .sectionTitle,
 #controlsPreferencesPage .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
 .settingsContainer .sectionTitle,
 .verticalSection > .sectionTitle-cards,
-.verticalSection > .sectionTitleContainer-cards  {
-    background-color: var(--bgtitle);
-    backdrop-filter: var(--blur);
-}
+.verticalSection > .sectionTitleContainer-cards  { background-color: var(--bgtitle); backdrop-filter: var(--blur); }
 
 /* Background Color: White 10% */
 .searchSuggestionsList > div:hover,

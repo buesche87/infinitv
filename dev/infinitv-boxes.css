@@ -5,25 +5,76 @@
     --boxborder: solid 1px hsla(0, 0%, 80%, .2);
 }
 
-/* No card shadows in sections with background */
+/* No card shadows */
 .itemDetailPage .verticalSection .card .cardBox,
 .itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
 
-/* Card Container */
+/* Border around media poster */
 .detailImageContainer .card {
     border: solid 1px hsla(0, 0%, 20%, .1);
 }
 
+/*
+────────────────────────────────────────────────────────────────────────────
+    Box
+──────────────────────────────────────────────────────────────────────────── */
+
+#searchPage .verticalSection,
+.itemDetailPage .verticalSection {
+    background: rgba(0, 0, 0, var(--bgdarkness));
+    border: var(--boxborder);
+    border-radius: var(--rounding-media);
+}
 .layout-desktop {
 
-    /* Background & Blur for vertical media Sections */
-    #searchPage .verticalSection,
-    .itemDetailPage .verticalSection {
+    /* TV Show Overview */
+    .itemDetailPage:has(.trackSelections:not(.hide)) {
+        .detailSection {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            border: var(--boxborder);
+            border-radius: var(--rounding-media);
+            padding: .5em 1.5em;
+            margin: 1em 0;
+        }
+
+        .itemDetailsGroup { margin-bottom: 1em; }
+    }
+
+    trackSelections,
+    .selectSubtitlesContainer {
+        width: 100%;
+    }
+}
+
+/* Box for sub-elements */
+.layout-tv {
+    .detailRibbon,
+    .detailPagePrimaryContent .detailSection,
+    .itemDetailPage:has(.listItem-largeImage) .detailSectionContent,
+    #searchPage .searchFields {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--buttonborder);
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
     }
+}
+.layout-mobile {
+    .trackSelections,
+    .itemDetailsGroup,
+    .detailSectionContent {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--boxborder);
+        border-radius: var(--rounding-media);
+    }
+}
+
+
+/*
+────────────────────────────────────────────────────────────────────────────
+    Alignment
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop {
 
     /* Content alignment */
     .itemDetailPage .detailVerticalSection      { margin-bottom: 1em; }
@@ -72,22 +123,6 @@
 }
 
 .layout-tv {
-
-    /* Background
-    ──────────────────────────────────────────────────────────────────────────── */
-
-    /* Background & Border */
-    .detailRibbon,
-    .detailPagePrimaryContent .detailSection,
-    .itemDetailPage .verticalSection,
-    .itemDetailPage:has(.listItem-largeImage) .detailSectionContent,
-    #searchPage .verticalSection,
-    #searchPage .searchFields {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--buttonborder);
-        border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
-    }
 
     /* Card Container */
     .detailImageContainer .card { margin-top: 0; }
@@ -194,17 +229,6 @@
 }
 
 .layout-mobile {
-
-    /* Box for sub-elements */
-    .trackSelections,
-    .itemDetailsGroup,
-    .detailSectionContent,
-    .itemDetailPage .verticalSection,
-    #searchPage .verticalSection {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--boxborder);
-        border-radius: var(--rounding-media);
-    }
 
     /* Section Titles */
     .sectionTitle-cards {
