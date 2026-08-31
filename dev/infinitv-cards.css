@@ -270,7 +270,7 @@
 
 /* No shadows / No Glow */
 .cardBox:has(> .cardFooter) > .cardScalable,
-.cardBox:hover:has(> .cardFooter) > .cardScalable,
+.card:hover .cardBox:has(> .cardFooter) > .cardScalable,
 .dialogContentInner .imageEditorCard .cardBox,
 .detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
 
