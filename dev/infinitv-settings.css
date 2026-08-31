@@ -301,8 +301,14 @@ h2.username {
     justify-self: center;
     z-index: 5;
 }
-#searchPage .searchFieldsInner { padding-bottom: 1em; }
-#searchTextInput { backdrop-filter: var(--blur); }
+#searchPage .searchFieldsInner {padding-bottom: 1em;}
+#searchTextInput {
+    background-color: var(--bgdark60) !important;
+    backdrop-filter: var(--blur);
+}
+#searchTextInput:focus {
+    background-color: var(--bgdark80) !important;
+}
 
 /* Suggestion list */
 #searchPage .verticalSection {

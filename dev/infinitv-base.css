@@ -229,15 +229,15 @@
 .paperList,
 .button-container button,
 .listItem-focusscale,
-.listItem-largeImage:hover,
-.cardOverlayButton.cardOverlayFab-primary:hover,
-.upNextDialog-button:hover                       { background-color: var(--bgdark40) !important; }
+.listItem-largeImage,
+.cardOverlayButton.cardOverlayFab-primary:hover  { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
 .checkboxOutline:not(:disabled):hover,
 .emby-input:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,
 .emby-textarea:not(:disabled):hover,
+.listItem-largeImage:hover,
 .listItem-largeImage:focus,
 .layout-desktop .listItem-focusscale:hover,
 .listItemImageButton:hover,
@@ -410,8 +410,8 @@
 .detailImageContainer .card                        { box-shadow: var(--cardshadow) !important; }
 
 /* No Shadows / no Glow */
-.mainDrawer                                        { box-shadow: none !important; }
 .cardPadder,
+.mainDrawer,
 .card:hover .cardBox.withMultiSelect,
 .card:hover .cardBox.withMultiSelect .cardScalable { box-shadow: none !important; }
 

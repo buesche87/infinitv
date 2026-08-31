@@ -68,6 +68,7 @@
 
     /* Page: Search */
     #searchPage .verticalSection { margin: .5em 2vw; }
+
 }
 
 .layout-tv {
@@ -80,7 +81,8 @@
     .detailPagePrimaryContent .detailSection,
     .itemDetailPage .verticalSection,
     .itemDetailPage:has(.listItem-largeImage) .detailSectionContent,
-    #searchPage .verticalSection {
+    #searchPage .verticalSection,
+    #searchPage .searchFields {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--buttonborder);
         border-radius: var(--rounding-media);
@@ -185,6 +187,10 @@
 
     /* Page: Search */
     #searchPage .verticalSection { margin: 1em 2vw; }
+    #searchPage .searchFields {
+        padding: 0 2em 1em 2em;
+        margin: 0px 2vw;
+    }
 }
 
 .layout-mobile {
