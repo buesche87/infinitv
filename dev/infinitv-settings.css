@@ -301,7 +301,8 @@ h2.username {
     justify-self: center;
     z-index: 5;
 }
-#searchPage .searchFieldsInner {padding-bottom: 1em;}
+#searchPage .searchFieldsInner { padding-bottom: 1em; }
+
 #searchTextInput {
     background-color: var(--bgdark60) !important;
     backdrop-filter: var(--blur);
@@ -349,7 +350,6 @@ h2.username {
     #searchPage .verticalSection {
         margin: .5em 0;
         padding-bottom: 1em;
-        /* top: 10em; */
     }
 }
 
@@ -363,11 +363,18 @@ h2.username {
         z-index: 5;
     }
 
+    #searchTextInput {
+        background-color: var(--bgwhite10) !important;
+        backdrop-filter: var(--blur);
+        min-width: 20em;
+    }
+
     /* Suggestion list */
     #searchPage .verticalSection {
         margin: .5em 2vw;
         position: relative;
         top: 5em;
+        padding-bottom: 0;
     }
 
     #searchPage .searchSuggestionsList div {
@@ -383,6 +390,18 @@ h2.username {
     [dir=ltr]:has(.headroom--unpinned) {
         #searchPage .searchFields { top: 0em; }
     }
+
+    .searchResults {
+        padding-top: 0;
+    }
+    .searchResults .verticalSection {
+        margin-bottom: 1em !important;
+    }
+    .searchResults .sectionTitle {
+        margin-bottom: 0 !important;
+    }
+
+
 }
 
 /*

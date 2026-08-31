@@ -246,6 +246,18 @@
     .listItem-largeImage { border: var(--boxborder) !important; }
     .overview p { margin: .5em 0 1em 0; }
 
+    [dir=ltr]:has(.headroom--unpinned) {
+
+        .searchFieldsInner {
+            width: 33%;
+        }
+
+        #searchTextInput {
+            background-color: var(--bgwhite10) !important;
+            backdrop-filter: var(--blur);
+        }
+    }
+
     /* Page: Media Details */
     .itemDetailPage:has(.trackSelections:not(.hide)) {
 
