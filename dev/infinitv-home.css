@@ -19,19 +19,12 @@
 
     /* ── Base ── */
 
-    #slides-container {
-        height: 72.5vh;
-    }
+    #slides-container          { height: 72.5vh; }
     @media only screen and (max-height: 767px) and (orientation: landscape) {
-        #slides-container {
-             height: 76vh;
-        }
+        #slides-container      { height: 76vh; }
     }
 
-    .slide                     {height: 78vh;}
-
-
-
+    .slide                     { height: 78vh; }
     .video-container {
         top: -12%;
         left: auto;
@@ -48,46 +41,46 @@
 
     .backdrop.with-video       { width: 53%; }
 
-    .pause-button              { top: 5em; right: 2em }
-    .volume-toggle             { top: 5em; right: 6em }
+    .pause-button              { top: 5em; right: 2em; }
+    .volume-toggle             { top: 5em; right: 6em; }
 
-    .logo-container            {top: 4em;}
-    .logo                      { max-height: 60% }
+    .logo-container            { top: 4em; }
+    .logo                      { max-height: 60%; }
 
-    .info-container            { top: 37vh }
-    .genre                     { top: 41vh }
-    .plot-container            { top: 47vh; width: 80% }
-    .dots-container            { top: 69%; right: 2vw }
-    .button-container          {top: 60vh;margin-left: 0.5em;}
+    .info-container            { top: 37vh; }
+    .genre                     { top: 41vh; }
+    .plot-container            { top: 47vh; width: 80%; }
+    .dots-container            { top: 69%; right: 2vw; }
+    .button-container          { top: 60vh; margin-left: 0.5em; }
 
-    .homeSectionsContainer     {/* transform: translateY(-2em); */top: 65vh;}
+    .homeSectionsContainer     { top: 65vh; }
 
     /* ── Portrait (narrow) ── */
     @media only screen and (max-width: 767px) and (orientation: portrait) {
-        .backdrop-container    { height: 74vh }
-        .pause-button          { right: 1em }
-        .logo-container        { top: 33% }
-        .info-container        { top: 40vh }
-        .genre                 { top: 43vh }
-        .dots-container        { top: 60% }
-        .button-container      { top: 58vh }
+        .backdrop-container    { height: 74vh; }
+        .pause-button          { right: 1em; }
+        .logo-container        { top: 33%; }
+        .info-container        { top: 40vh; }
+        .genre                 { top: 43vh; }
+        .dots-container        { top: 60%; }
+        .button-container      { top: 58vh; }
     }
 
     /* ── Small Landscape ── */
     @media only screen and (max-height: 767px) and (orientation: landscape) {
-        .slide                 {height: 80vh;}
-        .info-container        {top: 38vh;}
-        .genre                 {top: 44vh;}
-        .plot-container        {top: 50vh;}
-        .dots-container        { top: 69% }
-        .button-container      {top: 58vh;margin-left: .25em;}
-        .homeSectionsContainer {top: 63vh;}
+        .slide                 { height: 80vh; }
+        .info-container        { top: 38vh; }
+        .genre                 { top: 44vh; }
+        .plot-container        { top: 50vh; }
+        .dots-container        { top: 69%; }
+        .button-container      { top: 58vh; margin-left: .25em; }
+        .homeSectionsContainer { top: 63vh; }
 
     }
 
     /* ── Large Landscape ── */
     @media only screen and (min-height: 767px) and (orientation: landscape) {
-        .button-container      {top: 57vh;margin-left: 0em;}
+        .button-container      { top: 57vh; margin-left: 0em; }
     }
 }
 
@@ -95,66 +88,66 @@
 .layout-tv {
 
     /* Disable Slides in TV layout because they don't work well with a remote */
-    #slides-container               { display: none !important }
-    .homeSectionsContainer          { top: 0 }
+    #slides-container               { display: none !important; }
+    .homeSectionsContainer          { top: 0; }
 
     /* User Button focus animation when profile image is set */
-    .headerUserButtonRound          { border-radius: 100em !important }
-    .headerUserButtonRound:focus    { box-shadow: var(--buttonglow) }
+    .headerUserButtonRound          { border-radius: 100em !important; }
+    .headerUserButtonRound:focus    { box-shadow: var(--buttonglow); }
 }
 
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
     /* ── Base ── */
-    .homePage                   { padding-left: 0; padding-right: 0 }
+    .homePage                   { padding-left: 0; padding-right: 0; }
 
-    .volume-toggle              { top: 7.5em; right: 5em }
-    .pause-button               { top: 7.5em; right: 2em }
+    .volume-toggle              { top: 7.5em; right: 5em; }
+    .pause-button               { top: 7.5em; right: 2em; }
 
     @media (max-width: 768px)   {
-        .pause-button           { right: 4vw }
+        .pause-button           { right: 4vw; }
     }
 
-    #slides-container           { height: 100% }
+    #slides-container           { height: 100%; }
 
     .backdrop-container,
-    .slide                      { height: 90% }
+    .slide                      { height: 90%; }
 
     .video-container            { min-height: 90vh; }
 
-    .logo                       { max-height: 60% }
-    .info-container             { top: 40vh }
-    .genre                      { top: 44vh }
-    .plot-container             { top: 50vh; width: 80% }
-    .dots-container             { top: 59vh }
-    .button-container           { text-align: center }
+    .logo                       { max-height: 60%; }
+    .info-container             { top: 40vh; }
+    .genre                      { top: 44vh; }
+    .plot-container             { top: 50vh; width: 80%; }
+    .dots-container             { top: 59vh; }
+    .button-container           { text-align: center; }
     .homeSectionsContainer      { top: 64vh; }
 
     /* ── Small height (both orientations) ── */
     @media only screen and (max-height: 767px) {
-        #slides-container       { height: 90% }
+        #slides-container       { height: 90%; }
     }
 
     /* ── Small Portrait ── */
     @media only screen and (max-height: 767px) and (orientation: portrait) {
-        .pause-button           { right: 1.5em }
-        .logo-container         { top: 30vh }
-        .info-container         { top: 45vh }
-        .genre                  { top: 49vh }
+        .pause-button           { right: 1.5em; }
+        .logo-container         { top: 30vh; }
+        .info-container         { top: 45vh; }
+        .genre                  { top: 49vh; }
         .dots-container         { top: 54.5vh; background-color: transparent; }
-        .button-container       { top: 58vh }
+        .button-container       { top: 58vh; }
         .play-button,
         .detail-button,
-        .favorite-button        { margin: 0 .5em !important }
-        .homeSectionsContainer  { top: 57vh }
+        .favorite-button        { margin: 0 .5em !important; }
+        .homeSectionsContainer  { top: 57vh; }
     }
 
     /* ── Narrow Portrait (max-width) ── */
     @media only screen and (max-width: 767px) and (orientation: portrait) {
-        .info-container         { top: calc(50% + 10vh) }
-        .genre                  { top: calc(50% + 13vh) }
-        .dots-container         { top: calc(50% + 13vh) }
+        .info-container         { top: calc(50% + 10vh); }
+        .genre                  { top: calc(50% + 13vh); }
+        .dots-container         { top: calc(50% + 13vh); }
         .button-container       {
             top: calc(50% + 21vh);
             transform: translateX(-50%) scale(0.9);
@@ -176,36 +169,36 @@
     /* ── Large ≥50em ── */
     @media only screen and (min-height: 767px) and (min-width: 50em) {
         .slide,
-        .backdrop-container     { max-height: 90vh }
-        .button-container       { top: 57vh }
-        .homeSectionsContainer  { top: 57vh }
+        .backdrop-container     { max-height: 90vh; }
+        .button-container       { top: 57vh; }
+        .homeSectionsContainer  { top: 57vh; }
     }
 
     @media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: portrait) {
-        .slide                  { height: 72vh }
-        .backdrop-container     { height: 100% }
-        .button-container       { left: 3vw }
+        .slide                  { height: 72vh; }
+        .backdrop-container     { height: 100%; }
+        .button-container       { left: 3vw; }
     }
 
     @media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: landscape) {
-        .slide                  { height: 81% }
-        .backdrop-container     { height: 72vh }
-        .button-container       { left: 3.5% }
+        .slide                  { height: 81%; }
+        .backdrop-container     { height: 72vh; }
+        .button-container       { left: 3.5%; }
     }
 
     /* ── Large ≥100em ── */
     @media only screen and (min-height: 767px) and (min-width: 100em) {
-        .backdrop-container     { height: 100% }
-        .button-container       { top: 58vh }
-        .video-container        { height: 80% }
-        .homeSectionsContainer  { top: 61vh }
+        .backdrop-container     { height: 100%; }
+        .button-container       { top: 58vh; }
+        .video-container        { height: 80%; }
+        .homeSectionsContainer  { top: 61vh; }
     }
 
     @media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: portrait) {
-        .slide                  { height: 75% }
+        .slide                  { height: 75%; }
     }
 
     @media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) {
-        .slide                  { height: 72vh }
+        .slide                  { height: 72vh; }
     }
 }

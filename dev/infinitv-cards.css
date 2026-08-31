@@ -137,8 +137,11 @@
     margin-bottom: 1em;
     padding: 0;
     transform: none !important;
-    background: var(--bgdark60) !important;
-    /* backdrop-filter: var(--blur); */
+}
+
+.layout-desktop,
+.layout-tv {
+    .listItem.listItem-largeImage { backdrop-filter: var(--blur); }
 }
 
 /* Align Content */
@@ -181,9 +184,8 @@
     .vertical-list .listItem-border {
         border: var(--buttonborder) !important;
         border-radius: var(--rounding-media) !important;
-        background: var(--bgdark40) !important;
+        background: var(--bgdark60) !important;
         height: 5.2em;
-        backdrop-filter: var(--blur);
     }
 
     /* Content */
@@ -222,13 +224,13 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Card Shadows */
-.cardScalable                                           { box-shadow: var(--cardshadow); }
+.cardScalable                    { box-shadow: var(--cardshadow); }
 
 /* Shadow for cardBox if footer present */
-.cardBox:has(> .cardFooter)                             { box-shadow: var(--cardshadow); }
+.cardBox:has(> .cardFooter)      { box-shadow: var(--cardshadow); }
 
 /* Inset Shadow for Cards (smoothening) */
-.libraryPage .cardImageContainer                        { box-shadow: var(--insettop), var(--insetbottom); }
+.libraryPage .cardImageContainer { box-shadow: var(--insettop), var(--insetbottom); }
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
@@ -240,29 +242,25 @@
 
     /* Card Glow */
     .card:hover .cardScalable,
-    .card:hover .cardBox:has(> .cardFooter) {box-shadow: var(--cardglow) !important;}
+    .card:hover .cardBox:has(> .cardFooter)                  { box-shadow: var(--cardglow) !important; }
 }
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
 
     /* Zoom Card on focus */
-    .card.show-animation:focus .cardBox { transform: scale(1.1); }
+    .card.show-animation:focus .cardBox               { transform: scale(1.1); }
 
     /* Bold Text on focus */
     .card.show-animation:focus .cardText-first,
     .card.show-animation:focus .cardText-secondary,
-    .itemsContainer-tv .listItem:focus .listItemBodyText:not(.secondary) { font-weight: 600; }
+    .listItem:focus .listItemBodyText:not(.secondary) { font-weight: 600; }
 
     /* Card Glow */
     .card:hover .cardScalable,
-    .card:hover .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow) !important; }
-
+    .card:hover .cardBox:has(> .cardFooter),
     .card:focus .cardScalable,
-    .card:focus .cardBox:has(> .cardFooter)      { box-shadow: var(--cardglow-focus) !important; }
-
-    /* No shadows / No Glow */
-    .cardBox:has(> .cardFooter) > .cardScalable  { box-shadow: none !important; }
+    .card:focus .cardBox:has(> .cardFooter)           { box-shadow: var(--cardglow) !important; }
 }
 
 /*
@@ -272,8 +270,9 @@
 
 /* No shadows / No Glow */
 .cardBox:has(> .cardFooter) > .cardScalable,
+.cardBox:hover:has(> .cardFooter) > .cardScalable,
 .dialogContentInner .imageEditorCard .cardBox,
-.detailImageContainer .card:hover .cardScalable         { box-shadow: none !important; }
+.detailImageContainer .card:hover .cardScalable { box-shadow: none !important; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -365,7 +364,7 @@
 .layout-mobile {
 
     /* CardBoxes in General */
-    .itemsContainer .card > .cardBox              {margin: 1.25em 1em .75em 1em !important;}
+    .itemsContainer .card > .cardBox              { margin: 1.25em 1em .75em 1em !important; }
 
     .itemsContainer .card.portraitCard > .cardBox { margin-bottom: 1em !important; }
 
@@ -387,7 +386,6 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-
 }
 
 /*
@@ -396,11 +394,11 @@
 ──────────────────────────────────────────────────────────────────────────── */
 /* > needs plugin "home section containers" */
 
-/* Hide Series Title in Recent & NextUp Section */
+/* Hide Series Title & Movie Year in Recent & NextUp Section */
 .ContinueWatching .card[data-type="Episode"] .cardText-first,
-.NextUp .card[data-type="Episode"] .cardText-first {
-    display: none;
-}
+.NextUp .card[data-type="Episode"] .cardText-first,
+.ContinueWatching .card[data-type="Movie"] .cardText-secondary,
+.NextUp .card[data-type="Movie"] .cardText-secondary   { display: none; }
 
 /* Secondary Text in Recent & NextUp Section */
 .ContinueWatching .card[data-type="Episode"] .cardText-secondary,
@@ -410,20 +408,16 @@
     color: inherit;
 }
 
-/* Recent & NextUp: Hide Movie Year */
-.ContinueWatching .card[data-type="Movie"] .cardText-secondary,
-.NextUp .card[data-type="Movie"] .cardText-secondary { display: none; }
-
 /* Card Text First: Spacing with and without card footer */
-.personCard .cardTextCentered {margin: 0 0.25em;padding-left: 0;padding-right: 0;}
-.cardText-first { padding-top: .5em !important; }
+.personCard .cardTextCentered          { margin: 0 0.25em; padding-left: 0; padding-right: 0; }
+.cardText-first                        { padding-top: .5em !important; }
 .cardFooter > .cardText.cardText-first { padding-top: .25em !important; }
 
 /* Card Text Secondary: Font size */
 .cardText.cardText-secondary { font-size: 75% !important; }
 
 /* Links / Action-Text in card footer */
-.textActionButton { text-decoration: none !important; }
+.textActionButton            { text-decoration: none !important; }
 
 /* ─ Layout Mobile ───────────────────────────────────────────────────────── */
 .layout-mobile {

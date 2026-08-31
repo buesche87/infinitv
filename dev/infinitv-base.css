@@ -31,7 +31,6 @@
 
     /* Glow Animation */
     --cardglow: 0px 0px 10px 3px var(--accent80);
-    --cardglow-focus: 0px 0px 10px 3px var(--accent80);
     --buttonglow: 0px 0px 10px 1px var(--accent100);
 
     /* Default Accents */
@@ -74,11 +73,10 @@
     background-repeat: no-repeat !important;
 }
 
-/* Darken Background with Backdrops enabled */
-.backgroundContainer.withBackdrop { background: rgba(0, 0, 0, var(--bgdarkness)) !important }
+/* Darken Background */
+.backgroundContainer.withBackdrop { background: rgba(0, 0, 0, var(--bgdarkness)) !important; }
 
-/* Background Image on Homepage and some Library Pages,even with Backropds enabled */
-[dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop,
+/* Backdrops only on Media Detail Page */
 [dir=ltr]:has(#itemDetailPage.hide) .backgroundContainer.withBackdrop {
     background:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 70%)),
@@ -442,8 +440,7 @@
 .subtitleappearance-preview,
 .toast,
 .selectionCommandsPanel,
-.searchSuggestionsList > div:hover,
-.searchSuggestionsList > div:has(.emby-button:focus) { border-radius: var(--rounding-system) !important; }
+.searchSuggestionsList > div { border-radius: var(--rounding-system) !important; }
 
 /* Rounding: Media */
 .blurhash-canvas,

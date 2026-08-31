@@ -31,10 +31,10 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
-    .libraryPage.noSecondaryNavPage                { padding-top: 4em !important; }
-    .libraryPage:not(.noSecondaryNavPage)          { padding-top: 7em !important; }
-    #itemDetailPage                                { padding-top: 1em; }
-    .itemBackdrop                                  { margin-top: 0; }
+    .libraryPage.noSecondaryNavPage                                          { padding-top: 4em !important; }
+    .libraryPage:not(.noSecondaryNavPage)                                    { padding-top: 7em !important; }
+    #itemDetailPage                                                          { padding-top: 1em; }
+    .itemBackdrop                                                            { margin-top: 0; }
 
     /* Library Pages: Content with Alphapicker */
     .libraryPage .padded-right-withalphapicker                               { padding-left: 0; padding-right: 6%; }
@@ -46,10 +46,9 @@
     @media (min-width: 40em) {
         .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 4%; }}
     @media (min-width: 50em) {
-        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 3%; }
-    }
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 3%; }}
     @media (min-width: 100em) {
-        .libraryPage:not(.noSecondaryNavPage)                                {padding-top: 4.2em !important;}
+        .libraryPage:not(.noSecondaryNavPage)                                { padding-top: 4.2em !important; }
         .libraryPage.noSecondaryNavPage                                      { padding-top: 4.3em !important; }
     }
 
@@ -58,7 +57,7 @@
     #musicRecommendedPage:has(.is-active .focuscontainer-x) .itemsContainer  { padding-top: 4em; }
 
     /* Actor Page */
-    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemBackdrop { margin: -4em; }
+    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemBackdrop              { margin: -4em; }
 }
 
 /*
@@ -110,6 +109,9 @@
 
 .itemsViewSettingsContainer .paging,
 .pageTabContent>.focuscontainer-x:has(>button) .paging     { display: none; }
+
+
+
 
 /* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
@@ -220,7 +222,7 @@
     /* Padding for paging */
     .listPaging > span { padding: 0 .556em; }
 
-    /* Dynamic Filter Bar (when header is hidden) */
+    /* Dynamic Filter Bar when header is hidden */
     [dir=ltr]:has(.headroom--unpinned) {
         .padded-right-withalphapicker .itemsViewSettingsContainer,
         .pageTabContent>.focuscontainer-x:has(>button) {
@@ -236,11 +238,11 @@
         }
     }
 
-    .withSectionTabs .headerTop { padding-bottom: .5em; }
+    .withSectionTabs .headerTop     { padding-bottom: .5em; }
     @media (min-width: 100em) {
         .withSectionTabs .headerTop { padding-bottom: .8em; }
     }
-    .sectionTabs { font-size: 90%; }
+    .sectionTabs                    { font-size: 90%; }
 }
 
 /*
