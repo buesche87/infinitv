@@ -49,7 +49,7 @@
         .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 3%; }
     }
     @media (min-width: 100em) {
-        .libraryPage:not(.noSecondaryNavPage)                                { padding-top: 4em !important; }
+        .libraryPage:not(.noSecondaryNavPage)                                {padding-top: 4.2em !important;}
         .libraryPage.noSecondaryNavPage                                      { padding-top: 4.3em !important; }
     }
 
@@ -237,6 +237,9 @@
     }
 
     .withSectionTabs .headerTop { padding-bottom: .5em; }
+    @media (min-width: 100em) {
+        .withSectionTabs .headerTop { padding-bottom: .8em; }
+    }
     .sectionTabs { font-size: 90%; }
 }
 

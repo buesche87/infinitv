@@ -66,7 +66,7 @@
         backdrop-filter: var(--blur);
     }
 
-    /* Suggestion list */
+    /* Page: Search */
     #searchPage .verticalSection { margin: .5em 2vw; }
 }
 
@@ -183,8 +183,8 @@
         #childrenContent                 { padding-left: 0 !important; }
     }
 
-    /* Suggestion list */
-    #searchPage .verticalSection {margin: 1em 2vw;}
+    /* Page: Search */
+    #searchPage .verticalSection { margin: 1em 2vw; }
 }
 
 .layout-mobile {

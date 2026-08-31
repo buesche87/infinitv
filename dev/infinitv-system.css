@@ -288,7 +288,7 @@
     .mainDrawer     { margin-top: 4em; }
 
     @media (min-width: 100em)      {
-        .mainDrawer { margin-top: 4.4em; }
+        .mainDrawer {margin-top: 4.2em;}
     }
 
     /* Hide HeaderTabs & Footer when drawer opens */
