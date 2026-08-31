@@ -357,12 +357,22 @@ h2.username {
         z-index: 5;
     }
 
+    /* Suggestion list */
+    #searchPage .verticalSection {
+        margin: .5em 2vw;
+        position: relative;
+        top: 5em;
+    }
+
     #searchPage .searchSuggestionsList div {
         padding: .25em;
         border: var(--buttonborder);
         border-radius: var(--rounding-system);
         margin-bottom: .25em;
     }
+
+    #searchPage .sectionTitle { margin-bottom: 1em; }
+    #searchPage .searchSuggestionsList div { margin-bottom: .5em; }
 
     [dir=ltr]:has(.headroom--unpinned) {
         #searchPage .searchFields { top: 0em; }
