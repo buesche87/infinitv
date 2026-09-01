@@ -152,12 +152,13 @@
     /* ── Narrow Portrait (max-width) ── */
     @media only screen and (max-width: 767px) and (orientation: portrait) {
         .info-container         { top: calc(50% + 10vh); }
-        .genre                  { top: calc(50% + 13vh); }
+        .genre                  { top: calc(50% + 13.25vh); }
         .dots-container         { top: calc(50% + 13vh); }
         .button-container       {
             top: calc(50% + 21vh);
             transform: translateX(-50%) scale(0.9);
         }
+        .misc-info              { gap: 7px; }
     }
 
     /* ── Small Landscape ── */
