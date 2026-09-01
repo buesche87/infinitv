@@ -67,7 +67,7 @@
 .layout-desktop {
 
     /* Style */
-    .formDialog.dialog-fixedSize.dialog-small                     { width: 40%; height: auto; }
+    .formDialog.dialog-fixedSize.dialog-small                     {width: 40%;/* height: auto; */}
     .formDialog.dialog-fixedSize.dialog-small .dialogContentInner { padding-bottom: 2em; }
 
     /* Style: Content */
@@ -90,12 +90,12 @@
     .dialogContainer .formDialog.opened:has(.mdl-radio__button) > div { padding-left: 2em !important; }
 
     /* Moving */
-    :has(#moviesPage:not(.hide)) .formDialog.opened                               { transform: translateX(11em) !important; }
-    :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           { transform: translateX(14em) !important; }
-    :has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        { transform: translateX(7em) !important; }
-    :has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    { transform: translateX(10em) !important; }
-    :has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     { transform: translateX(6em) !important; }
-    :has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened { transform: translateX(9em) !important; }
+    :has(#moviesPage:not(.hide)) .formDialog.opened                               {transform: translateX(3em) !important;}
+    :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           {transform: translateX(7em) !important;}
+    :has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        {/* transform: translateX(7em) !important; */}
+    :has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    {transform: translateX(3em) !important;}
+    :has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     {transform: translateX(3em) !important;}
+    :has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {transform: translateX(6em) !important;}
 
     /* Header */
     :has(.centeredDialog[style*="top: 10px"]) .actionSheet                        { transform: translateY(3.3em) !important; }
