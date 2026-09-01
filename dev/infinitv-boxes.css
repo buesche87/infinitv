@@ -85,7 +85,7 @@
         border: none;
         border-radius: var(--rounding-media);
         padding: 0;
-        margin: .5em 0 1em 0;
+        margin: 1em 0;
     }
     .itemDetailPage .detailSection:has(.trackSelections.hide) {
 
