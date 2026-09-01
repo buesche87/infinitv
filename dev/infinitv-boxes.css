@@ -26,53 +26,25 @@
     border-radius: var(--rounding-media);
 }
 
-.layout-desktop {
-
-
-}
-
-/* Box for sub-elements */
-.layout-tv {
-    .detailRibbon,
-    .detailPagePrimaryContent .detailSection,
-    .itemDetailPage:has(.listItem-largeImage) .detailSectionContent,
-    #searchPage .searchFields {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--buttonborder);
-        border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
-    }
-}
-.layout-mobile {
-    .trackSelections,
-    .itemDetailsGroup,
-    .detailSectionContent {
-        background: rgba(0, 0, 0, var(--bgdarkness));
-        border: var(--boxborder);
-        border-radius: var(--rounding-media);
-    }
-}
-
 
 /*
 ────────────────────────────────────────────────────────────────────────────
-    Alignment
+    Per Layout
 ──────────────────────────────────────────────────────────────────────────── */
 
 .layout-desktop {
 
+    /* Box for Sub-Elements */
     .itemDetailPage .detailSection {
         background: rgba(0, 0, 0, var(--bgdarkness));
         border: var(--boxborder);
         border-radius: var(--rounding-media);
-        padding: .5em 1.5em;
-        margin: 1em 0;
     }
 
-
-
-    .trackSelections,
-    .selectSubtitlesContainer { width: 100%; }
+    /* Sub-Element Alignment */
+    .itemDetailPage .detailSection              { padding: .5em 1.5em; margin: 1em 0; }
+    .itemDetailPage .trackSelections,
+    .itemDetailPage .selectSubtitlesContainer   { width: 100%; }
 
     /* Content alignment */
     .itemDetailPage .detailVerticalSection      { margin-bottom: 1em; }
@@ -89,7 +61,7 @@
     }
 
     /* NextUp Section */
-    .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) {
+    .itemDetailPage .detailSection:has(.nextUpSection:not(.hide)) {
         #listChildrenCollapsible {
             margin-left: -31vw;
             margin-right: 0;
@@ -98,7 +70,7 @@
         .verticalSection { margin-bottom: 1em !important; }
     }
 
-    /* Show */
+    /* Page: TV Show Overview */
     .itemDetailPage .detailSection:has(.trackSelections.hide) {
         background: none;
         border: none;
@@ -134,19 +106,13 @@
         }
     }
 
-    /* Episode List */
-    .itemDetailPage .detailPagePrimaryContainer .verticalSection:has(.listItem-largeImage) {
-        background: none;
-        border: none;
-        backdrop-filter: none;
-    }
-
-    /* Home Page Slides */
-    .slide {
-        background: rgba(0, 0, 0, 1);
-        border: var(--buttonborder);
-        border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
+    /* Page: Episode List */
+    .itemDetailPage .detailSection:has(.listItem-largeImage) {
+        .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
     }
 
     /* Page: Search */
@@ -155,28 +121,36 @@
 
 .layout-tv {
 
-    /* Card Container */
-    .detailImageContainer .card { margin-top: 0; }
-
-    /* Detail Ribbon */
-    [dir=ltr] .detailRibbon {
-        padding: 1em 1.5em;
-        margin-bottom: 1em;
+    /* Box for Sub-Elements */
+    .detailRibbon,
+    .detailPagePrimaryContent .detailSection,
+    .itemDetailPage:has(.listItem-largeImage) .detailSectionContent,
+    #searchPage .searchFields {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--buttonborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
     }
 
-    /* Sections */
-    .itemDetailPage .verticalSection { margin-bottom: 1em !important; }
+    /* No Box */
     #listChildrenCollapsible:has(.verticalSection) {
         background: none;
         border: none;
         backdrop-filter: none;
     }
 
+    /* Card Container */
+    .detailImageContainer .card { margin-top: 0; }
+
+    /* Detail Ribbon */
+    [dir=ltr] .detailRibbon { padding: 1em 1.5em; margin-bottom: 1em; }
+
+    /* Sections */
+    .itemDetailPage .verticalSection { margin-bottom: 1em !important; }
+
+
     /* Items Container */
-    .itemDetailPage .verticalSection .itemsContainer {
-        padding: 0;
-        margin: 0 .5vw;
-    }
+    .itemDetailPage .verticalSection .itemsContainer { padding: 0; margin: 0 .5vw; }
 
     /* Section Titles */
     .detailPagePrimaryContent .sectionTitle,
@@ -184,19 +158,25 @@
 
     /* Content */
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
-    .detailPagePrimaryContent     { padding: 0; }
+    .detailPagePrimaryContent     { padding: 0 !important; }
     .detailPageSecondaryContainer { margin-top: 1em; }
     #listChildrenCollapsible      { margin-top: 1em !important; }
 
     /* Page: Media Details */
     .itemDetailPage:has(.trackSelections:not(.hide)) {
-        .detailSection { padding: 1em 1.5em; }
-        .detailPagePrimaryContainer { padding-right: 1vw}
+        .detailSection              { padding: 1em 1.5em; }
+        .detailPagePrimaryContainer { padding-right: 1vw; }
     }
 
     /* Page: TV Show Overview */
-    .itemDetailPage:has(.trackSelections.hide) {
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+        background: none;
+        border: none;
+        border-radius: var(--rounding-media);
+    }
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
 
+        /* Box for Sub-Elements */
         .detailSectionContent,
         .itemDetailsGroup {
             background: rgba(0, 0, 0, var(--bgdarkness));
@@ -204,16 +184,8 @@
             border: var(--buttonborder);
         }
 
-        .detailPagePrimaryContent { padding-left: 0 !important; }
-        .detailPagePrimaryContent .detailSection {
-            background: none;
-            border: none;
-            backdrop-filter: none;
-        }
-        .detailSection > div:not(.verticalSection) {
-            padding: .5em 1.5em .5em 1.5em;
-            margin-top: 0;
-        }
+        > div:not(.verticalSection) { padding: .5em 1.5em; margin-top: 0; }
+
         .detailSectionContent {
             border-bottom: none;
             border-top-right-radius: var(--rounding-media);
@@ -235,8 +207,8 @@
     }
 
     /* Page: Episode List */
-    .itemDetailPage:has(.listItem-largeImage) {
-        .detailPagePrimaryContainer .verticalSection {
+    .itemDetailPage .detailSection:has(.listItem-largeImage) {
+        .verticalSection {
             background: none;
             border: none;
             backdrop-filter: none;
@@ -248,18 +220,26 @@
         }
         .verticalSection .itemsContainer { margin: 0 !important; }
         .itemDetailsGroup                { display:none; }
-        #childrenContent                 { padding-left: 0 !important; }
     }
 
     /* Page: Search */
     #searchPage .verticalSection { margin: 1em 2vw; }
     #searchPage .searchFields {
         padding: 0 2em 1em 2em;
-        margin: 0px 2vw;
+        margin: 0 2vw;
     }
 }
 
 .layout-mobile {
+
+    /* Box for sub-elements */
+    .trackSelections,
+    .itemDetailsGroup,
+    .detailSectionContent {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--boxborder);
+        border-radius: var(--rounding-media);
+    }
 
     /* Section Titles */
     .sectionTitle-cards {
@@ -268,6 +248,7 @@
         padding-left: 0;
     }
 
+    /* Content */
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
     .detailPageSecondaryContainer { padding-top: 0em; }
     .detailPagePrimaryContent     { padding: 0 1vw 0 32.45vw; }
@@ -290,28 +271,15 @@
         padding: .5em 1em !important;
     }
 
-    #listChildrenCollapsible:has(.verticalSection) {
+    .itemDetailPage #listChildrenCollapsible:has(.verticalSection) {
         background: none;
         border: none;
     }
-    #listChildrenCollapsible .verticalSection { margin-bottom: 1em; }
-
+    .itemDetailPage #listChildrenCollapsible .verticalSection       { margin-bottom: 1em; }
     .itemDetailPage .verticalSection .emby-scroller { margin: 0 1vw; }
 
-    .listItem-largeImage { border: var(--boxborder) !important; }
-    .overview p { margin: .5em 0 1em 0; }
-
-    [dir=ltr]:has(.headroom--unpinned) {
-
-        .searchFieldsInner {
-            width: 33%;
-        }
-
-        #searchTextInput {
-            background-color: var(--bgwhite10) !important;
-            backdrop-filter: var(--blur);
-        }
-    }
+    .itemDetailPage .listItem-largeImage { border: var(--boxborder) !important; }
+    .itemDetailPage .overview p { margin: .5em 0 1em 0; }
 
     /* Page: Media Details */
     .itemDetailPage:has(.trackSelections:not(.hide)) {
@@ -368,6 +336,16 @@
             border-bottom-left-radius: var(--rounding-media);
             margin-bottom: 1em;
             padding: .5em 1em !important;
+        }
+    }
+
+    /* Page: Search */
+    [dir=ltr]:has(.headroom--unpinned) {
+        .searchFieldsInner { width: 33%; }
+
+        #searchTextInput {
+            background-color: var(--bgwhite10) !important;
+            backdrop-filter: var(--blur);
         }
     }
 }
