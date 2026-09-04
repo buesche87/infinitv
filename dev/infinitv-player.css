@@ -51,14 +51,15 @@
 
 /* OSD Header: Height */
 .osdHeader {
-    height: 3.3em !important;
-    backdrop-filter: none !important;
     background: rgba(0, 0, 0, var(--osdopacity)) !important;
+    backdrop-filter: var(--blur);
+    height: 3.3em !important;
 }
 
 /* OSD Footer: Full Layout */
 .videoOsdBottom {
     background: rgba(0, 0, 0, var(--osdopacity)) !important;
+    backdrop-filter: var(--blur);
     padding: .5em 0;
 }
 
