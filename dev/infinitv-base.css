@@ -151,7 +151,7 @@
 .upNextDialog-countdownText              { color: var(--accent100) !important; }
 
 /* Color: White */
-.paper-icon-button-light.headerBackButton:focus,
+.layout-mobile .paper-icon-button-light.headerBackButton:focus,
 .paper-icon-button-light.emby-scrollbuttons-button:focus,
 .layout-mobile .overview-expand:focus    { color: white !important; }
 
