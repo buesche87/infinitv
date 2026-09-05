@@ -254,7 +254,7 @@
     /* Bold Text on focus */
     .card.show-animation:focus .cardText-first,
     .card.show-animation:focus .cardText-secondary,
-    .listItem-button:focus .listItemBodyText:not(.secondary) { font-weight: 600; }
+    .listItem-largeImage:focus .listItemBodyText:not(.secondary) { font-weight: 600; }
 
     /* Card Glow */
     .card:hover .cardScalable,
