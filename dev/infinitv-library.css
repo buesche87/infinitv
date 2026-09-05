@@ -252,8 +252,10 @@
 
 /* Multi-Select Dialog */
 .itemSelectionPanel {
-    border-color: #0000 !important;
-    background-color: rgba(0, 0, 0, 0.8);
+    /* border-color: #0000 !important; */
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-right: -1px;
+    margin-bottom: 3em;
 }
 .selectionCommandsPanel { top: 3.9em; padding: .5em; }
 .itemSelectionCount     { color: var(--accent100) !important; }
@@ -269,12 +271,14 @@
 /* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
     .selectionCommandsPanel {
-        top: 7.65em;
+        top: auto;
+        bottom: 1em;
         left:  auto;
-        right: 4.3em;
+        right: 1vw;
         max-width: 10em;
         margin: 0 auto;
         padding: 0 .5em;
+        border-color: var(--accent60) !important;
     }
 
     /* Multi-Select Dialog Buttons */

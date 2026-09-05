@@ -335,7 +335,7 @@
 .listItem-focusscale,
 .listItem-largeImage,
 .selectionCommandsPanel,
-.toast                       { border: var(--buttonborder) !important; }
+.toast                       {border: var(--buttonborder) !important;}
 
 /* Borders: Transparent ──────────────────────────────────────────────────── */
 .actionSheetMenuItem,
