@@ -92,7 +92,6 @@
     /* Moving */
     :has(#moviesPage:not(.hide)) .formDialog.opened                               {transform: translateX(3em) !important;}
     :has(#moviesPage:not(.hide)) .formDialog.dynamicFilterDialog.opened           {transform: translateX(7em) !important;}
-    :has(#tvRecommendedPage:not(.hide)) .formDialog.opened                        {/* transform: translateX(7em) !important; */}
     :has(#tvRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened    {transform: translateX(3em) !important;}
     :has(#musicRecommendedPage:not(.hide)) .formDialog.opened                     {transform: translateX(3em) !important;}
     :has(#musicRecommendedPage:not(.hide)) .formDialog.dynamicFilterDialog.opened {transform: translateX(6em) !important;}
@@ -205,7 +204,7 @@
         overflow-y: scroll;
     }
 
-    .actionSheetContent .listItem { padding: 1em 1em; }
+    .actionSheetContent .listItem { padding: 1em; }
     .listItem-indexnumberleft     { margin: 1em; }
     .listItem:focus .secondary    { color: hsla(0, 0%, 100%, .8) !important; }
 }
