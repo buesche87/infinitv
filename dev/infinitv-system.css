@@ -50,7 +50,7 @@
         margin-bottom: .2em !important;
         margin-top: 0em !important;
         cursor: default;
-        border-bottom: solid 2px hsl(0deg 0% 100% / 20%);
+        border-bottom: var(--buttonborder);
         padding: .6em .5em;
         text-align: center !important;
     }
@@ -147,7 +147,7 @@
     :has(#musicRecommendedPage:not(.hide)) .dynamicFilterDialog { top: 9.5em !important; position: fixed; }
 
     /* Header */
-    :has(.centeredDialog[style*="top: 10px"]) .actionSheet      { transform: translateY(3em) !important; }
+    :has(.centeredDialog[style*="top: 10px"]) .actionSheet      {transform: translateY(3.5em) !important;}
 
     :has(.actionSheetMenuItem[data-id*="List"]) .actionSheet    {
         transform: translateY(9em) !important;

@@ -110,9 +110,6 @@
 .itemsViewSettingsContainer .paging,
 .pageTabContent>.focuscontainer-x:has(>button) .paging     { display: none; }
 
-
-
-
 /* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
 

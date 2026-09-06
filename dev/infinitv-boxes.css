@@ -26,7 +26,6 @@
     border-radius: var(--rounding-media);
 }
 
-
 /*
 ────────────────────────────────────────────────────────────────────────────
     Per Layout
@@ -288,7 +287,7 @@
     .itemDetailPage #listChildrenCollapsible .verticalSection       { margin-bottom: 1em; }
     .itemDetailPage .verticalSection .emby-scroller { margin: 0 1vw; }
 
-    .itemDetailPage .listItem-largeImage { border: var(--boxborder) !important; }
+    .itemDetailPage .listItem-largeImage {border: var(--boxborder) !important;background-color: var(--bgdark60) !important;}
     .itemDetailPage .overview p { margin: .5em 0 1em 0; }
 
     /* Page: Media Details */
