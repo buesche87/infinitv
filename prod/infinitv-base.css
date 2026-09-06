@@ -1,6 +1,6 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
-    Variables
+    Base
 ──────────────────────────────────────────────────────────────────────────── */
 
 :root {
@@ -235,10 +235,10 @@
 .paperList,
 .button-container button,
 .listItem-focusscale,
-.listItem-largeImage,
-.cardOverlayButton.cardOverlayFab-primary:hover  { background-color: var(--bgdark40) !important; }
+.listItem-largeImage { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
+.cardOverlayButton.cardOverlayFab-primary:hover,
 .checkboxOutline:not(:disabled):hover,
 .emby-input:not(:disabled):hover,
 .emby-select-withcolor:not(:disabled):hover,

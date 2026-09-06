@@ -127,6 +127,7 @@
     }
 
     /* Page: Episode List */
+    .itemDetailPage .detailSection:has(.listItem-largeImage) { backdrop-filter: none; }
     .itemDetailPage .detailSection:has(.listItem-largeImage) {
         .verticalSection {
             background: none;
