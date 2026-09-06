@@ -221,7 +221,7 @@
 .searchSuggestionsList > div:hover,
 .pageTabContent > .focuscontainer-x,
 #loginPage .cardImage,
-.itemsViewSettingsContainer                      { background-color: var(--bgwhite10); }
+.itemsViewSettingsContainer                      { background-color: var(--bgwhite10); backdrop-filter: var(--blur); }
 
 /* ─ BG Dark ──────────────────────────────────────────────────────── */
 

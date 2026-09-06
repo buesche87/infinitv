@@ -1,23 +1,12 @@
-# v0.5.0 (announcement)
+# v0.5.0
 
-> Big TV-Layout update
+> Big update
 
-- a lot of lines have been exchanged
-- an optional theme will bring background boxes
+- fixed a lot of stuff
+- there are now boxes on some pages
+- mobile layout got more responsive
 
-Those boxes will be available at release by adding the following code to your custom css:
-
-```css
-@import url('https://buesche87.github.io/infinitv/infinitv-boxes.css');
-```
-
-<table>
-  <tr>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-episode-boxes.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-episodelist-boxes.png"></td>
-    <td><img src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/tv-movie-boxes.png"></td>
-  </tr>
-</table>
+Try it and you'll see. If you don't like the changes there is now an archive.
 
 
 # v0.4.3
@@ -46,7 +35,7 @@ Those boxes will be available at release by adding the following code to your cu
 > Mainly a bugfix release with the following changes
 
 - hide he scrollbar while playing a video (bugfix)
-- show wallpaper on library pages, even if backdrops are enabled 
+- show wallpaper on library pages, even if backdrops are enabled
 - some other fixes
 
 
@@ -124,5 +113,5 @@ If you would like to keep the previous mobile layout with the header at the bott
 - Reworked the image search dialog
 - Compacted portrait mode for small mobile phones (now optional)
 - Further improved accent usage
-- Other smaller and bigger stuff fixed or optimized 
+- Other smaller and bigger stuff fixed or optimized
 - A lot of cleanup

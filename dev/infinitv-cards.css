@@ -126,8 +126,6 @@
     /* Overview margins */
     .itemsContainer .listItem-overview   { padding-top: 0; }
     .itemsContainer .listItem-overview p { margin-top: .5em; }
-
-    #emby-ratingbutton:focus { color: #fff !important; }
 }
 
 /*
@@ -143,7 +141,7 @@
 
 .layout-desktop,
 .layout-tv {
-    .listItem.listItem-largeImage { backdrop-filter: var(--blur); }
+    .listItem.listItem-largeImage {backdrop-filter: var(--blur);background-color: var(--bgdark60) !important;}
 }
 
 /* Align Content */
@@ -200,7 +198,7 @@
             border-bottom: solid 2px hsl(0deg 0% 100% / 20%) !important;
         }
     }
-    .detailPageWrapperContainer .listItem-bottomoverview {margin: .5em;align-self: center;}
+    .detailPageWrapperContainer .listItem-bottomoverview { margin: .5em; }
 
     /* Center Text */
     .detailPageWrapperContainer .listItemBody { text-align: center; }
@@ -225,15 +223,17 @@
    Card Animation
 ──────────────────────────────────────────────────────────────────────────── */
 
+/* Card Shadows */
+.cardScalable                    { box-shadow: var(--cardshadow); }
+
+/* Shadow for cardBox if footer present */
+.cardBox:has(> .cardFooter)      { box-shadow: var(--cardshadow); }
+
 /* Inset Shadow for Cards (smoothening) */
 .libraryPage .cardImageContainer { box-shadow: var(--insettop), var(--insetbottom); }
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
-
-    /* Card Shadows */
-    .cardScalable                    { box-shadow: var(--cardshadow); }
-    .cardBox:has(> .cardFooter)      { box-shadow: var(--cardshadow); }
 
     /* Scale Cardtext on Hover */
     .bannerCard:hover > .cardText,
@@ -247,10 +247,6 @@
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
-
-    /* Card Shadows */
-    .cardScalable                    { box-shadow: var(--cardshadow); }
-    .cardBox:has(> .cardFooter)      { box-shadow: var(--cardshadow); }
 
     /* Zoom Card on focus */
     .card.show-animation:focus .cardBox               { transform: scale(1.1); }

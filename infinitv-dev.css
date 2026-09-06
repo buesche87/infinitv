@@ -9,9 +9,9 @@
       \|__|\|__| \|__|\|__|    \|__|\|__| \|__|\|__|    \|__|  \|__|/
 
 
-                         The Big Screen Experience                         
+                         The Big Screen Experience
 
-*                               v0.5.0-dev                                 */
+*                               v0.5.1-dev                                 */
 
 /* Load Stylesheets */
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-base.css');
@@ -27,7 +27,6 @@
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-dynamicsize.css');
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-player.css');
 
-/* will be removed in prod */
 @import url('https://buesche87.github.io/infinitv/dev/infinitv-boxes.css');
 
 /* Font */

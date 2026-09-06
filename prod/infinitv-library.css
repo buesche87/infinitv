@@ -1,0 +1,299 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+   Library Pages
+──────────────────────────────────────────────────────────────────────────── */
+
+.standalonePage    { padding-top: 5.5em !important }
+
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+    .libraryPage   { padding-top: 3.9em !important }
+    #studiosTab    { padding: 2vh 2vw }
+}
+
+/*  Layout TV ────────────────────────────────────────────────────────────── */
+.layout-tv {
+    .libraryPage                                    { padding: 0 1vw; padding-top: 5em !important; }
+    #studiosTab                                     { margin-left: -1vw; }
+
+    .detailImageContainer .card                     { margin-left: 1vw; }
+
+    /* Library Pages: Content with Alphapicker */
+    .libraryPage .padded-right-withalphapicker      { padding: 0 3vw 0 2vw; }
+    @media(min-width: 50em)                         {
+        .libraryPage .padded-right-withalphapicker  { padding: 0 2vw 0 0vw; }
+    }
+
+    /* Actor page alignment */
+    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemsContainer { margin: 0 1em; }
+}
+
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+
+    .libraryPage.noSecondaryNavPage                                          { padding-top: 4em !important; }
+    .libraryPage:not(.noSecondaryNavPage)                                    { padding-top: 7em !important; }
+    #itemDetailPage                                                          { padding-top: 1em; }
+    .itemBackdrop                                                            { margin-top: 0; }
+
+    /* Library Pages: Content with Alphapicker */
+    .libraryPage .padded-right-withalphapicker                               { padding-left: 0; padding-right: 6%; }
+    .libraryPage.noSecondaryNavPage .padded-right-withalphapicker            { padding-top: 0; }
+    .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker      { padding-top: 0; }
+
+    @media (min-width: 30em) {
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 5%; }}
+    @media (min-width: 40em) {
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 4%; }}
+    @media (min-width: 50em) {
+        .libraryPage:not(.noSecondaryNavPage) .padded-right-withalphapicker  { padding-right: 3%; }}
+    @media (min-width: 100em) {
+        .libraryPage:not(.noSecondaryNavPage)                                { padding-top: 4.2em !important; }
+        .libraryPage.noSecondaryNavPage                                      { padding-top: 4.3em !important; }
+    }
+
+    .libraryPage.noSecondaryNavPage >.itemsContainer                         { padding-top: 3em; }
+    #musicRecommendedPage .itemsContainer                                    { padding-top: 0; }
+    #musicRecommendedPage:has(.is-active .focuscontainer-x) .itemsContainer  { padding-top: 4em; }
+
+    /* Actor Page */
+    .itemDetailPage:has(#itemBirthday:not(.hide)) .itemBackdrop              { margin: -4em; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Alphabet Picker
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Alphabet Picker Buttons */
+.alphaPickerButton              { height: 1.6em; }
+
+.alphaPickerButton:hover        {
+    background: var(--accent60) !important;
+    color: white !important;
+}
+.alphaPickerButton:focus,
+.alphaPickerButton:active       {
+    transform: none !important;
+    transition: none !important;
+    background: var(--accent80) !important;
+    color: white !important;
+    font-weight: 600;
+}
+
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+    .alphaPicker    { top: 128px; bottom: auto; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Library Pages: Sorting & Filter
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Item Count */
+.listPaging > span              { margin: 0 .5em; }
+
+/* Filter Indicator */
+.filterIndicator                { color: black; }
+
+/* Sorting Menu: Radio Button spacing */
+.radio-label-block              {
+    margin: 0 !important;
+    padding: .5em 1em !important;
+    cursor: pointer;
+}
+
+/* Filter & Sorting Header: Buttons */
+.pageTabContent .focuscontainer-x .paper-icon-button-light { transform: none !important; }
+
+.itemsViewSettingsContainer .paging,
+.pageTabContent>.focuscontainer-x:has(>button) .paging     { display: none; }
+
+/* Layout Desktop ────────────────────────────────────────────────────────── */
+.layout-desktop {
+
+    /* Filter & Paging Bar */
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x,
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)) {
+        z-index: 1;
+        height: 3em;
+        align-content: center;
+        position: fixed;
+        background-color: hsl(0deg 0% 62.03% / 17%);
+        backdrop-filter: var(--blur);
+        border-radius: var(--rounding-system);
+        padding: 0;
+        justify-self: center;
+    }
+
+    /* Paging-Bar (bottom) */
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
+    .pageTabContent>.focuscontainer-x:not(:has(>button))  {
+        bottom: 1em;
+    }
+
+    /* Padding for paging */
+    .listPaging > span { padding: 0 .556em; }
+}
+
+/* Layout TV ─────────────────────────────────────────────────────────────── */
+.layout-tv {
+
+    /* Filter-Bar */
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x {
+        border-radius: var(--rounding-system) !important;
+        padding: 0.05em;
+        min-height: 2em;
+        margin-bottom: .5em;
+    }
+
+    /* Filter-Bar on specific pages */
+    #episodesTab > .focuscontainer-x,
+    #songsTab > .focuscontainer-x { margin-bottom: 1.5em }
+}
+
+/* Layout Mobile
+──────────────────────────────────────────────────────────────────────────── */
+.layout-mobile {
+
+    /* Filter & Paging Bar */
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x,
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)) {
+        z-index: 1;
+        align-content: center;
+        position: fixed;
+        background-color: hsl(0deg 0% 62.03% / 17%);
+        backdrop-filter: var(--blur);
+        border-radius: var(--rounding-system);
+        padding: 0;
+    }
+
+     /* Filterbar with buttons (top) */
+    .itemsViewSettingsContainer > .listTextButton-autohide,
+    .focuscontainer-x .paper-icon-button-light{
+        padding-top: .5em !important;
+        padding-bottom: .5em !important;
+    }
+
+    /* Filter-Bar on specific pages */
+    .padded-right-withalphapicker .itemsViewSettingsContainer,
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center {
+        margin-right: -6%;
+    }
+
+    /* ItemsContainer adjustments for new filter bar */
+    .itemsViewSettingsContainer,
+    .pageTabContent>.focuscontainer-x {
+        justify-self: center;
+        font-size: 100%;
+    }
+    .itemsViewSettingsContainer:has(>button),
+    .pageTabContent>.focuscontainer-x:has(>button),
+    .padded-right-withalphapicker .itemsViewSettingsContainer {
+        width: 100%;
+        border-radius: 0;
+        padding: .1em 0;
+        transform: translateY(-1px);
+    }
+
+    /* Paging-Bar (bottom) */
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(>button)),
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x.justify-content-center,
+    .pageTabContent>.focuscontainer-x:not(:has(>button)) {
+        bottom: 1em;
+        justify-self: center;
+    }
+    .pageTabContent>.focuscontainer-x:not(:has(button)),
+    .libraryPage:has(.itemsViewSettingsContainer) .focuscontainer-x:not(:has(button)),
+    .libraryPage .padded-right-withalphapicker > .focuscontainer-x:not(:has(button)) {
+        padding: .5em 0 !important;
+    }
+
+    /* Padding for paging */
+    .listPaging > span { padding: 0 .556em; }
+
+    /* Dynamic Filter Bar when header is hidden */
+    [dir=ltr]:has(.headroom--unpinned) {
+        .padded-right-withalphapicker .itemsViewSettingsContainer,
+        .pageTabContent>.focuscontainer-x:has(>button) {
+            width: auto;
+            border-radius: var(--rounding-system);
+            top: 1em;
+        }
+
+        .pageTabContent>.focuscontainer-x:has(>button) { font-size: 110%; }
+        .padded-right-withalphapicker .itemsViewSettingsContainer {
+            transform: translateY(0);
+            font-size: 110%;
+        }
+    }
+
+    .withSectionTabs .headerTop     { padding-bottom: .5em; }
+    @media (min-width: 100em) {
+        .withSectionTabs .headerTop { padding-bottom: .8em; }
+    }
+    .sectionTabs                    { font-size: 90%; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Library Page: Multi-Select
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Multi-Select Dialog */
+.itemSelectionPanel {
+    /* border-color: #0000 !important; */
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-right: -1px;
+    margin-bottom: 3em;
+}
+.selectionCommandsPanel { top: 3.9em; padding: .5em; }
+.itemSelectionCount     { color: var(--accent100) !important; }
+
+/* Checkboxes & Indicators */
+.multiSelectCheckboxOutline { margin: .5em !important; }
+
+.chkItemSelect:hover + span + .multiSelectCheckboxOutline {
+    box-shadow: var(--cardglow);
+    border-color: var(--accent60) !important;
+}
+
+/* Layout Desktop ────────────────────────────────────────────────────────── */
+.layout-desktop {
+    .selectionCommandsPanel {
+        top: auto;
+        bottom: 1em;
+        left:  auto;
+        right: 1vw;
+        max-width: 10em;
+        margin: 0 auto;
+        padding: 0 .5em;
+        border-color: var(--accent60) !important;
+    }
+
+    /* Multi-Select Dialog Buttons */
+    .itemSelectionCount,
+    .btnSelectionPanelOptions,
+    .btnCloseSelectionPanel {
+        margin: 0 .5em;
+        min-width: 1em;
+    }
+
+    .itemSelectionCount {
+        order: 1;
+        font-size: 140%;
+        font-weight: 600;
+        margin-bottom: .1em;
+        text-align: center;
+        cursor: default;
+    }
+    .btnSelectionPanelOptions { order: 2; }
+    .btnCloseSelectionPanel   { order: 3; }
+}
