@@ -11,7 +11,7 @@
                         The Big Screen Experience                          
 ```
 
-> This theme is designed with a strong focus on htpc setups using Jellyfin Desktop as the client, while fully supporting both desktop and mobile devices.
+> This theme is designed with a strong focus on htpc setups using Jellium Desktop as the client, while fully supporting both desktop and mobile devices.
 
 ## Key features
 
@@ -42,17 +42,19 @@ Add the following to your custom branding
   --bgImage: url("https://wallpaperaccess.com/download/purple-galaxy-439751");
 
   /* Darkness & Opacity */
-  --bgdarkness:    0.6;  /* Background Darkness */
-  --headeropacity: 0.7;  /* Header & Drawer Opacity */
-  --itemopacity:   0.8;  /* Item Opacity (Card Footer, Detail Ribbon) */
+  --bgdarkness: 0.6;    /* Background Darkness */
+  --headeropacity: 0.7; /* Header & Drawer Opacity */
+  --itemopacity: 0.8;   /* Item Opacity (Card Footer, Detail Ribbon) */
+  --osdopacity: 0.6;    /* OSD Opacity */
 
   /* Roundings */
   --rounding-media: 12px;
   --rounding-system: 6px;
 
-  /* Glow (uncomment to remove glow animations) */
+  /* Glow & Blur (uncomment to remove glow animations) */
   /* --cardglow: none; */
   /* --buttonglow: none; */
+  /* --blur: none; */
 }
 ```
 
