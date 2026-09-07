@@ -14,6 +14,9 @@
 - [x] theme designed with a strong focus on htpcs running jellium-desktop as client
 - [x] fully supporting desktop and mobile devices with or without backdrops enabled
 
+<img width="641" height="385" alt="infinitv-backdrop" src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/infinitv-backdrop.png" />
+
+
 
 ## Key features
 
