@@ -23,7 +23,7 @@
 - Improved use of previously unused screen space, especially in TV mode
 - A compact player OSD if spacing allows
 - More responsive elements on mobile devices
-- Support for user-defined accent-colors, transparency, and background images
+- Support for userdefined accent-colors, transparency, and background images
 - Many additional small and large refinements throughout the UI
 
 
