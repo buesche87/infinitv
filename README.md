@@ -11,7 +11,7 @@
                         The Big Screen Experience                          
 ```
 
-> This theme is designed with a strong focus on htpc setups using Jellium Desktop as the client, while fully supporting both desktop and mobile devices.
+> This theme is designed with a strong focus on htpc setups using jellium-desktop as the client, while fully supporting both desktop and mobile devices.
 
 ## Key features
 
