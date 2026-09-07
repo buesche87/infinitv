@@ -11,7 +11,9 @@
                         The Big Screen Experience                          
 ```
 
-> This theme is designed with a strong focus on htpc setups using jellium-desktop as the client, while fully supporting both desktop and mobile devices.
+- [x] theme designed with a strong focus on htpcs running jellium-desktop as client
+- [x] fully supporting desktop and mobile devices with or without backdrops enabled
+
 
 ## Key features
 
@@ -19,13 +21,13 @@
 - Custom cards with a smoother overall appearance and custom animations
 - Consistently centered menus, pages, and titles where appropriate
 - Improved use of previously unused screen space, especially in TV mode
-- A new, compact player OSD on sufficiently wide displays
-- Full support for user-defined colors, transparency, and background images
+- A compact player OSD if spacing allows
+- More responsive elements on mobile devices
+- Support for user-defined accent-colors, transparency, and background images
 - Many additional small and large refinements throughout the UI
 
-Give it a try!
 
-## Apply
+## Give it a try
 
 Add the following to your custom branding
 
@@ -48,15 +50,18 @@ Add the following to your custom branding
   --osdopacity: 0.6;    /* OSD Opacity */
 
   /* Roundings */
-  --rounding-media: 12px;
-  --rounding-system: 6px;
+  --rounding-media: 12px; /* Cards and media related stuff */
+  --rounding-system: 6px; /* buttons, text fields and you know... */
 
-  /* Glow & Blur (uncomment to remove glow animations) */
+  /* Glow & Blur (uncomment to enable) */
   /* --cardglow: none; */
   /* --buttonglow: none; */
   /* --blur: none; */
+  /* --cardshadow: none; */
+  /* --anispeed: 240ms; */
 }
 ```
+
 
 ## Customize
 
@@ -64,18 +69,23 @@ Give it your style by changing `:root` values:
 - Accent color: `--accent-h: 310` > use the `H` value from an HSL-color picker
 - Set your wallpaper with `--bgImage: url("https://url.to/picture.jpg")`
 - Set background darkness from `0.00` to `1.00`
-- Set opacity from `1.00` to `0.00`
-- Give roundings more radius
-
+- Set opacity of different elements from `1.00` to `0.00`
+- Give border-roundings a diffeent radius
+- Remove glow animations (or set them your way)
+- Don't blur backgrounds (*current blur effect eats a lot of performance*)
+- Remove all card shadows (*will save a little on performance*)
+- even set a custom animation speed for dialogs and some menus
 
 ## Optimal Results
 
-- Chromium based client (v105 and later)
+- [jellium-desktop](https://github.com/andrewrabert/jellium-desktop) or a chromium based client (v105 and later)
 - Set `theme` to `Dark`
-- Set `display mode` to `TV` (htpc only)
-- Use the home sections plugin from [IAmParadox27/jellyfin-plugin-home-sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections) (optional)
+- HTPC only: Set `display mode` to `TV`
+- Use your settings in `:root`
+- Optional: Install [IAmParadox27/jellyfin-plugin-home-sections](https://github.com/IAmParadox27/jellyfin-plugin-home-sections)
 
-# TV Layout
+
+# TV
 
 <table>
   <tr>
@@ -93,7 +103,7 @@ Give it your style by changing `:root` values:
 </table>
 
 
-# Desktop Layout
+# Desktop
 
 <table>
   <tr>
@@ -111,7 +121,7 @@ Give it your style by changing `:root` values:
 </table>
 
 
-# Mobile Layout
+# Mobile
 
 <table>
   <tr>
@@ -129,5 +139,4 @@ Give it your style by changing `:root` values:
 
 ## Disclamer
 
-*This is a hobby project to expand my basic knowledge of CSS. Therefore, it does not claim to be complete or bug-free. Ideas and problems will be addressed when free time allows.*
-
+*This is an out-of-hand hobby project that was started with the intent to go beyond a basic knowledge of CSS. No agent touched this so far, so no claim for it to be complete or bug-free. The theme will be demanding on your computer's hardware (I'm trying to reduce that). Ideas and problems will be addressed when free time allows.*
