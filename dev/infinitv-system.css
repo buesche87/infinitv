@@ -26,6 +26,8 @@
 ────────────────────────────────────────────────────────────────────────────
 */
 
+/* TODO > Split Dialogs & Action sheets */
+
 /* Background: Black 85%  */
 .dialog {
     background: rgba(0, 0, 0, .9);
@@ -34,6 +36,7 @@
 
 .toast { background-color: #000 !important; }
 
+/* Action Sheets */
 .layout-desktop,
 .layout-mobile {
 
@@ -61,8 +64,7 @@
     .actionSheetItemText { font-size: 1.1em; }
 }
 
-/* Layout Desktop - Dialogs
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
 
     /* Style */
@@ -103,9 +105,7 @@
     :has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
 }
 
-
-/* Layout Mobile - Dialogs
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
     .actionSheet,
@@ -167,8 +167,7 @@
     :has(#videoOsdPage:not(.hide)) .actionSheet                     { transform: translateY(-5em) !important; }
 }
 
-/* Layout TV - Dialogs
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout TV ─────────────────────────────────────────────────────────────── */
 .layout-tv {
 
     /* Form Dialogs */
@@ -206,9 +205,10 @@
     .listItem-indexnumberleft     { margin: 1em; }
     .listItem:focus .secondary    { color: hsla(0, 0%, 100%, .8) !important; }
 }
+
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Media Infos
+   Media Info Dialogs
 ────────────────────────────────────────────────────────────────────────────
 */
 
@@ -247,6 +247,7 @@
     }
     .dialog-fullscreen .mediaInfoContent    { width: 100%; font-size: 80%; }
 }
+
 /*
 ────────────────────────────────────────────────────────────────────────────
    Menu Drawer
@@ -274,6 +275,11 @@
     .mainDrawer.drawer-open { backdrop-filter: var(--blur); }
 }
 
+.layout-desktop {
+    .mainDrawer-scrollContainer {
+        padding-bottom: 2vh;
+    }
+}
 
 /* Menu Options */
 .navMenuOption     { border: solid 1px #0000 !important; }
@@ -292,6 +298,58 @@
     .mainDrawer.drawer-open + .skinHeader > .headerTabs,
     :has(.mainDrawer.drawer-open) ~ .appfooter { display: none !important; }
 }
+
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   TODO: Multi ToolBar (v12.0)
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/*
+.MuiToolbar-root {
+
+}
+
+
+.MuiStack-root {
+
+}
+
+
+
+.MuiButton-root {
+
+}
+
+.MuiButton-icon {
+
+}
+
+
+
+.MuiBox-root {
+
+}
+
+.MuiButtonBase-root {
+
+}
+
+
+
+.MuiBadge-root {
+
+}
+
+.MuiSvgIcon-root {
+
+}
+
+.MuiBadge-badge {
+
+}
+*/
 
 /*
 ────────────────────────────────────────────────────────────────────────────
