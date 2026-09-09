@@ -16,7 +16,8 @@
 
 <img width="641" height="385" alt="infinitv-backdrop" src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/infinitv-backdrop.png" />
 
-
+> [!CAUTION]
+> Not (yet) compatible with Jellyfin v12.0
 
 ## Key features
 
