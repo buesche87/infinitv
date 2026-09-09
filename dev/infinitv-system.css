@@ -418,6 +418,8 @@
 .button-submit,
 .raised { margin: 0.5em 0; transform: none !important; }
 
+.button-submit { color: var(--textcolor); }
+
 /* Buttons: Header Buttons
 ──────────────────────────────────────────────────────────────────────────── */
 

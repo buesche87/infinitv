@@ -56,6 +56,9 @@
     /* Card Smoothening */
     --insettop: inset -1px 3px 14px 0px rgb(255 255 255 / 10%);
     --insetbottom: inset -3px -3px 14px 0px rgb(0 0 0 / 40%);
+
+    /* New for v12.0 */
+    --textcolor: rgba(255, 255, 255, 0.7);
 }
 
 /*
