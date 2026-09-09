@@ -203,6 +203,7 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
+    /* Detail Ribbon */
     .detailRibbon {
         padding-bottom: 1.25em;
         padding-top: .25em;
@@ -210,7 +211,7 @@
         padding-left: 2vw !important;
     }
 
-    /* Media Poster */
+    /* Poster Card */
     .detailImageContainer .card { left: 2vw; }
     .detailImageContainer .card.backdropCard {
         top: 1em;
@@ -219,7 +220,7 @@
     }
     .detailImageContainer .card.portraitCard { left: 3vw; }
 
-    /* Info Container */
+    /* Misc Info */
     .infoWrapper { padding-bottom: 0.15em; }
 
     @media (max-width: 32em) {
@@ -245,7 +246,7 @@
         }
     }
 
-    /* Media Overview Text */
+    /* Media Overview */
     .overview { margin: 0; }
 
     /* Primary Container */
