@@ -364,7 +364,7 @@
     .headerTabs.sectionTabs {
         font-size: 110% !important;
         margin-top: -2.7em !important;
-        width: 42vw;
+        width: 50vw;
         min-width: 26vw;
         scrollbar-width: none;
         scroll-behavior: smooth !important;
