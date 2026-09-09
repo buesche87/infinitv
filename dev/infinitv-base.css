@@ -105,6 +105,9 @@
 /* TRY: colorize navMenuOption "Dashboard" */
 .navMenuOption[data-itemid*="dashboard"] { color: hsla(var(--accent-h),85%,85%, 0.75); }
 
+/* Color: Accent 60% */
+.videoIndicator { color: var(--accent60) !important; }
+
 /* Color: Accent 80% */
 #loginPage .cardImage,
 .button-link:hover,
@@ -119,7 +122,7 @@
 .Mui-selected,
 .navMenuOption-selected,
 .radio-label-block:hover,
-.overview-expand:hover                   { color: var(--accent80) !important; }
+.overview-expand:hover { color: var(--accent80) !important; }
 
 /* Color: Accent 100% */
 .cardOverlayButton:hover,
