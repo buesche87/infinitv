@@ -137,6 +137,7 @@
     /* Items Container */
     .itemsContainer                                      { padding-left: 1vw }
     #indexPage .itemsContainer                           { padding-left: 0 }
+    #favoritesTab .itemsContainer                        { padding-left: 1vw }
     .padded-bottom-page > .itemsContainer                { padding-left: 2vw }
 
     .alphaPicker-fixed-right ~ .itemsContainer                 { padding-right: 3vw }
