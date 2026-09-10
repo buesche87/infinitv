@@ -7,7 +7,7 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
-    .libraryPage   { padding-top: 3.9em !important }
+    .libraryPage   {/* padding-top: 3.9em !important; */}
     #studiosTab    { padding: 2vh 2vw }
 }
 
