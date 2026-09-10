@@ -7,7 +7,8 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
-    .libraryPage   {/* padding-top: 3.9em !important; */}
+    .libraryPage   {padding-top: 3.9em !important;}
+    .MuiBox-root .libraryPage   { padding-top: 0 !important; }
     #studiosTab    { padding: 2vh 2vw }
 }
 
@@ -65,12 +66,12 @@
    Alphabet Picker
 ──────────────────────────────────────────────────────────────────────────── */
 
+/* Alphabet Picker Buttons */
 .alphaPicker-fixed-right .MuiPaper-root {
     border-radius: var(--rounding-system);
     background-color: var(--bgdark80);
+    border: var(--buttonborder);
 }
-
-/* Alphabet Picker Buttons */
 .alphaPicker-fixed-right .MuiButtonBase-root {
     background-color: transparent;
     font-size: 110%;
@@ -80,6 +81,20 @@
     padding-left: calc(1 * var(--jf-spacing));
 }
 
+/* Alphabet Picker Buttons - Legacy */
+.alphaPickerButton              { height: 1.6em; }
+.alphaPickerButton:hover        {
+    background: var(--accent60) !important;
+    color: white !important;
+}
+.alphaPickerButton:focus,
+.alphaPickerButton:active       {
+    transform: none !important;
+    transition: none !important;
+    background: var(--accent80) !important;
+    color: white !important;
+    font-weight: 600;
+}
 
 /*
 ────────────────────────────────────────────────────────────────────────────

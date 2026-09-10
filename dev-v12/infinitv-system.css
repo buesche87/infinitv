@@ -308,39 +308,52 @@
     backdrop-filter: var(--blur) !important;
 }
 
-/* Header Buttons */
-.MuiButtonBase-root { border-radius: var(--rounding-system); }
-.MuiButtonBase-root:hover {
-    background-color: transparent;
-    color: var(--accent100);
-}
-.css-19rbmc7 {
-    color: var(--accent100);
-}
-
 /* Buttons */
 .MuiButton-colorPrimary {
     background-color: transparent;
     color: var(--textcolor);
 }
 
+/* Header Buttons */
+.MuiButtonBase-root { border-radius: var(--rounding-system); }
+.MuiButtonBase-root:hover,
+.MuiButtonBase-root:focus {
+    background-color: transparent;
+    color: var(--accent100);
+}
+ /* Focused Header Button */
+.css-19rbmc7 { color: var(--accent100); }
+
+/* Media Buttons */
+.MuiButtonGroup-grouped {
+    border: var(--buttonborder) !important;
+    margin-left: .25em;
+}
+.MuiButtonGroup-grouped:hover { border-color: var(--accent60) !important; }
+
+
+
 /* Save Button */
 .userPreferencesPage .MuiButton-colorPrimary       { border: var(--buttonborder); }
 .userPreferencesPage .MuiButton-colorPrimary:hover { border-color: var(--accent60); }
-
 
 /* Chip / Tag */
 .MuiChip-root {
     color: var(--accent100);
     border-radius: var(--rounding-system);
-    background-color: var(--bgwhite10);
+    background-color: transparent;
 }
+.MuiChip-sizeMedium { font-size: 102%; }
 
 /* Menu List */
 div.MuiPaper-root {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     backdrop-filter: var(--blur);
     border-radius: var(--rounding-system);
+}
+
+div.MuiPaper-root .MuiButtonBase-root {
+    border-radius: 0;
 }
 .MuiDivider-root {
     margin: .2em 0 !important;
@@ -360,6 +373,36 @@ div.MuiPaper-root {
     color: var(--accent100) !important;
 }
 
+/* Alphabet picker */
+.alphaPicker-fixed-right .MuiPaper-root {
+    border-radius: var(--rounding-system);
+    background-color: var(--bgdark80);
+}
+
+/* Alphabet Picker Buttons */
+.alphaPicker-fixed-right .MuiButtonBase-root {
+    background-color: transparent;
+    font-size: 100%;
+    padding-top: calc(0.3 * var(--jf-spacing));
+    padding-bottom: calc(0.3 * var(--jf-spacing));
+    padding-right: calc(1 * var(--jf-spacing));
+    padding-left: calc(1 * var(--jf-spacing));
+    background-color: var(--bgdark40) !important;
+
+    @media(min-height: 54em) { font-size: 110%; }
+    @media(min-height: 60em) { font-size: 120%; }
+    @media(min-height: 72em) { font-size: 130%; }
+    @media(min-height: 80em) { font-size: 140%; }
+}
+
+.Mui-checked {
+    color: var(--accent100) !important;
+}
+
+/* Checkbox color on Label Hover (Settings Page) */
+.MuiFormControlLabel-root:hover .MuiButtonBase-root {
+    color: var(--accent60) !important;
+}
 
 
 /*
@@ -683,13 +726,13 @@ div.MuiPaper-root {
    Inputs and Labels
 ──────────────────────────────────────────────────────────────────────────── */
 
-.MuiInputBase-root {
-    background-color: var(--bgdark80);
-}
+.MuiInputBase-root { background-color: var(--bgdark80); }
 .MuiInputBase-root:hover {
     background-color: var(--bgwhite10);
-}
+    color: var(--accent80)
 
+}
+.MuiInputBase-root:hover { background-color: var(--bgwhite10); }
 
 /* Input */
 .emby-input { padding: .5em .6em; }
