@@ -299,13 +299,9 @@
    Multi ToolBar (v12.0)
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Librarypage Jump fix (v12.0) */
-[dir=ltr],
-.MuiPaper-root { padding-right: 0 !important; }
-
+/* Header Toolbar */
 .MuiToolbar-root { padding: 0 1vw !important; }
-
-.MuiAvatar-root {  background-color: transparent; }
+.MuiAvatar-root  { background-color: transparent; }
 
 .MuiAppBar-colorDefault {
     background: rgba(0, 0, 0, var(--headeropacity));
