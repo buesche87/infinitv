@@ -14,29 +14,28 @@
     .slide .plot-container { font-size: 120% }
 }
 
+:root {
+    --slideheight: 78vh;
+}
+
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
 
     /* ── Base ── */
 
-    #slides-container          { height: 72.5vh; }
+    #slides-container          {height: 72.5vh;position: absolute;top: 0;}
     @media only screen and (max-height: 767px) and (orientation: landscape) {
-        #slides-container      { height: 76vh; }
+        #slides-container      { height: var(--slideheight); }
     }
 
     /* Home Page Slides */
     .slide {
         background: rgba(0, 0, 0, 1);
-        border: var(--buttonborder);
-        border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
-        height: 78vh;
+        height: var(--slideheight);
     }
     .video-container {
-        top: -12%;
-        left: auto;
-        right: 0;
-        transform: translate(25%, 0);
+        right: 25%;
+        height: var(--slideheight);
     }
     .video-player {
         position: absolute;
@@ -59,7 +58,7 @@
     .dots-container            { top: 69%; right: 2vw; }
     .button-container          { top: 60vh; margin-left: 0.5em; }
 
-    .homeSectionsContainer     { top: 65vh; }
+    .homeSectionsContainer     {top: 66vh;}
 
     /* ── Portrait (narrow) ── */
     @media only screen and (max-width: 767px) and (orientation: portrait) {

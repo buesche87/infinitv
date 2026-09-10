@@ -307,6 +307,16 @@
 
 .MuiAvatar-root {  background-color: transparent; }
 
+.MuiAppBar-colorDefault {
+    background: rgba(0, 0, 0, var(--headeropacity));
+    backdrop-filter: var(--blur) !important;
+}
+
+.MuiButtonBase-root:hover {
+    background-color: var(--bgdark20);
+    color: var(--accent100);
+}
+
 
 /*
 .MuiStack-root {
@@ -355,17 +365,6 @@
 
 /* Scrollbar Style */
 * { scrollbar-color: var(--accent60) rgba(0, 0, 0, .8) !important; }
-
-/* always show in desktop layout unless playing a video */
-.layout-desktop:not(:has(#videoOsdPage)) {
-    scrollbar-width: thin;
-    overflow-y: scroll !important;
-}
-
-/* don't show scrollbar */
-#loginPage,
-.layout-tv,
-.layout-mobile { scrollbar-width: none; }
 
 /*
 ────────────────────────────────────────────────────────────────────────────

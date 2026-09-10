@@ -27,9 +27,6 @@
     /* Home Page Slides */
     .slide {
         background: rgba(0, 0, 0, 1);
-        border: var(--buttonborder);
-        border-radius: var(--rounding-media);
-        backdrop-filter: var(--blur);
         height: 78vh;
     }
     .video-container {
