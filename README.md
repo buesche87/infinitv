@@ -17,7 +17,7 @@
 <img width="641" height="385" alt="infinitv-backdrop" src="https://raw.githubusercontent.com/buesche87/infinitv/refs/heads/main/resource/infinitv-backdrop.png" />
 
 > [!CAUTION]
-> Not compatible with the new `Auto` display mode for Jellyfin v12.0. Use `TV` or one of the the `Legacy` display modes
+> Not compatible with the new `Auto` display mode from Jellyfin v12.0. Use `TV` or one of the `Legacy` display modes
 
 ## Key features
 
