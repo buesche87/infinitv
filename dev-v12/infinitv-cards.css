@@ -1,0 +1,308 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+   Person Cards
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Person Cards */
+.overflowPortraitCard.personCard            { font-size: 90% !important }
+.overflowPortraitCard.personCard > .cardBox { text-align: center; text-align: -webkit-center; }
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Nextup Cards
+──────────────────────────────────────────────────────────────────────────── */
+
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+    .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 40em; }
+}
+
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+.layout-tv {
+    .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 30em; }
+}
+
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
+.layout-mobile {
+    .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 38em; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Poster Card
+──────────────────────────────────────────────────────────────────────────── */
+
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+.layout-tv {
+    .detailImageContainer .card {
+        float: left;
+        position: sticky;
+        margin-top: 1em;
+        width: 25.5vw;
+        max-width: 25.5vw;
+        left: 1vw;
+    }
+    .detailImageContainer .portraitCard { max-height: 78vh; }
+    .detailImageContainer .squareCard   { margin-left: 0; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Card Animations
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Card Shadows */
+.cardScalable                    { box-shadow: var(--cardshadow); }
+.cardBox:has(> .cardFooter)      { box-shadow: var(--cardshadow); }
+
+/* Card smoothening */
+.libraryPage .cardImageContainer { box-shadow: var(--insettop), var(--insetbottom); }
+
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+
+    /* Scale Cardtext on hover */
+    .bannerCard:hover > .cardText,
+    .itemsContainer > .card:hover .cardText                  { transform: scale(1.1); }
+    .itemsContainer > .card:hover:has(.cardFooter) .cardText { transform: scale(1); }
+
+    /* Glow on hover */
+    .card:hover .cardScalable,
+    .card:hover .cardBox:has(> .cardFooter)                  { box-shadow: var(--cardglow) !important; }
+}
+
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+.layout-tv {
+
+    /* Zoom on focus */
+    .card.show-animation:focus .cardBox               { transform: scale(1.1); }
+
+    /* Bold Text on focus */
+    .card.show-animation:focus .cardText-first,
+    .card.show-animation:focus .cardText-secondary,
+    .listItem-largeImage:focus .listItemBodyText:not(.secondary) { font-weight: 600; }
+
+    /* Glow on hover & focus */
+    .card:hover .cardScalable,
+    .card:hover .cardBox:has(> .cardFooter),
+    .card:focus .cardScalable,
+    .card:focus .cardBox:has(> .cardFooter)           { box-shadow: var(--cardglow) !important; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   No Animations
+──────────────────────────────────────────────────────────────────────────── */
+
+/* No shadows / No Glow */
+.cardBox:has(> .cardFooter) > .cardScalable,
+.card:hover .cardBox:has(> .cardFooter) > .cardScalable,
+.card:focus .cardBox:has(> .cardFooter) > .cardScalable,
+.dialogContentInner .imageEditorCard .cardBox,
+.detailImageContainer .card:hover .cardScalable        { box-shadow: none !important; }
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Cardborder Roundings
+──────────────────────────────────────────────────────────────────────────── */
+
+/* CardImage BottomBorder stays flat if card coontains a footer */
+.visualCardBox:has(.cardFooter) .blurhash-canvas,
+.visualCardBox:has(.cardFooter) .cardContent,
+.visualCardBox:has(.cardFooter) .cardImage,
+.visualCardBox:has(.cardFooter) .cardPadder-portrait,
+.visualCardBox:has(.cardFooter) .coveredImage,
+.visualCardBox:has(.cardFooter) .cardImageContainer,
+.visualCardBox:has(.cardFooter) .cardOverlayContainer {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* But not for Cards beeing displayed in the ImageEditor */
+#images .visualCardBox .cardContent,
+#backdrops .visualCardBox .cardContent {
+    border-bottom-left-radius: inherit !important;
+    border-bottom-right-radius: inherit !important;
+}
+
+/* Footer itself gets a flat top */
+.cardFooter:not(.visualCardBox-cardFooter) {
+    border-bottom-left-radius: var(--rounding-media) !important;
+    border-bottom-right-radius: var(--rounding-media) !important;
+    text-align: center;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   CardBoxes
+──────────────────────────────────────────────────────────────────────────── */
+
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+
+    /* CardBoxes in General */
+    .itemsContainer > .card > .cardBox                                      { margin: 1em 7% !important; }
+    .itemsContainer > .card.backdropCard > .cardBox                         { margin: 1.2em 7% !important; }
+    .itemsContainer > .card.portraitCard > .cardBox                         { margin: 1.2em 9% !important; }
+    .itemsContainer > .card.overflowBackdropCard > .cardBox                 { margin: 1.5em 6% !important; }
+    .itemsContainer > .card.overflowPortraitCard > .cardBox                 { margin: 1.2em 8% !important; }
+
+    .itemsContainer > .card.overflowPortraitCard.personCard > .cardBox      { margin: 1.5em 6% !important; }
+
+    /* CardBoxes in BannerCards */
+    .itemsContainer > .bannerCard > .cardBox                                { margin: 1em !important; }
+
+    /* CardBoxes in Person Cards */
+    .itemsContainer > .overflowPortraitCard.personCard > .cardBox           { margin: 1.5em 0 !important; }
+
+    /* CardBoxes in OverflowPortraitCards residing in a SecondaryContainer */
+    .detailPageSecondaryContainer .overflowPortraitCard .cardBox            { margin: 2em 1em !important; }
+    .detailPageSecondaryContainer .overflowPortraitCard.personCard .cardBox { margin: 1.5em 8% !important; }
+}
+
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+.layout-tv  {
+    /* CardBoxes in General */
+    .itemsContainer > .backdropCard > .cardBox                    { margin: 1.4em 7% 0.8em 7% !important;}
+    .itemsContainer > .portraitCard > .cardBox                    { margin: 2.0em 9% 1.6em 9% !important; }
+    .itemsContainer > .squareCard > .cardBox                      { margin: 1.4em 8% 0.8em 8% !important; }
+
+    /* CardBoxes in OverflowCards */
+    .itemsContainer > .overflowBackdropCard > .cardBox            { margin: 1.8em 7% 1.4em 7% !important; }
+    .itemsContainer > .overflowPortraitCard > .cardBox            { margin: 2.0em 8% 1.6em 8% !important; }
+    .itemsContainer > .overflowSquareCard > .cardBox              { margin: 1.8em 8% 1.4em 8% !important; }
+
+    /* CardBoxes in PersonCards */
+    .itemsContainer > .overflowPortraitCard.personCard > .cardBox { margin: 1.5em 0 !important; }
+
+    /* CardBoxes in BannerCards */
+    .itemsContainer > .bannerCard > .cardBox                      { margin: 1vw 1.2vw !important; }
+
+    /* CardBoxes in OverflowCards residing in a PrimaryContainer */
+    .detailPagePrimaryContent .itemsContainer > .overflowPortraitCard > .cardBox,
+    .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard > .cardBox { margin: 2.2em 1.2em 1.8em 1.2em !important; }
+    .detailPageSecondaryContainer .itemsContainer > .overflowPortraitCard.personCard > .cardBox { margin: 1.8em 0 1.6em 0 !important; }
+
+    /* CardBoxes in Nextup Cards */
+    .nextUpSection .itemsContainer > .overflowBackdropCard > .cardBox { margin: 2em 1em 1.5em 2.5em !important; }
+}
+
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
+.layout-mobile {
+
+    /* CardBoxes in General */
+    .itemsContainer .card > .cardBox              { margin: 1.25em 1em .75em 1em !important; }
+
+    .itemsContainer .card.portraitCard > .cardBox { margin-bottom: 1em !important; }
+
+    .itemsContainer .card.backdropCard > .cardBox {
+        margin-top: 1em !important;
+        margin-bottom: .5em !important;
+    }
+
+    .itemsContainer .card.overflowBackdropCard > .cardBox {
+        margin-top: 1em !important;
+        margin-bottom: .75em !important;
+        margin-left: .75em;
+        margin-right: .75em;
+    }
+
+    .itemsContainer .card.personCard > .cardBox {
+        margin-top: .75em !important;
+        margin-bottom: .5em !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   CardText & Buttons
+──────────────────────────────────────────────────────────────────────────── */
+/* > needs plugin "home section containers" */
+
+/* Hide Series Title & Movie Year in Recent & NextUp Section */
+.ContinueWatching .card[data-type="Episode"] .cardText-first,
+.NextUp .card[data-type="Episode"] .cardText-first,
+.ContinueWatching .card[data-type="Movie"] .cardText-secondary,
+.NextUp .card[data-type="Movie"] .cardText-secondary   { display: none; }
+
+/* Secondary Text in Recent & NextUp Section */
+.ContinueWatching .card[data-type="Episode"] .cardText-secondary,
+.NextUp .card[data-type="Episode"] .cardText-secondary {
+    font-size: 100% !important;
+    padding-top: .5em !important;
+    color: inherit;
+}
+
+/* Card Text First: Spacing with and without card footer */
+.personCard .cardTextCentered          { margin: 0 0.25em; padding-left: 0; padding-right: 0; }
+.cardText-first                        { padding-top: .5em !important; }
+.cardFooter > .cardText.cardText-first { padding-top: .25em !important; }
+
+/* Card Text Secondary: Font size */
+.cardText.cardText-secondary { font-size: 75% !important; }
+
+/* Links / Action-Text in card footer */
+.textActionButton            { text-decoration: none !important; }
+
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
+.layout-mobile {
+    /* Card Action-Button*/
+    .cardFooter .itemAction {
+        margin-bottom: 4.4em !important;
+        margin-right: .25em !important;
+    }
+    .itemAction > .material-icons { color: white; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Indicators & Progressbar
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Indicator Alignment */
+.cardContent .cardIndicators,
+.mediaSourceIndicator { right: 0.5em !important; top: 0.5em !important; }
+
+/* Count & Played Indicators */
+.countIndicator,
+.mediaSourceIndicator,
+.playedIndicator,
+.videoIndicator { background: rgba(0, 0, 0, 1); }
+
+.countIndicator,
+.mediaSourceIndicator { font-weight: 600; font-size: 89%; }
+
+/* Missing & Unaired Indicators */
+.missingIndicator,
+.unairedIndicator {
+    color: #fff;
+    background: #ae3030eb;
+    padding: .3em .6em;
+}
+
+/* Progressbar on Cards */
+.itemProgressBar {
+    height: .4em !important;
+    margin: .5em .8em !important;
+    backdrop-filter: blur(6px);
+}
+.itemProgressBarForeground { background-color: var(--accent100) !important }
+
+/* List Items Indicator */
+.listItemIndicators {
+    position: fixed;
+    left: 0.75em;
+    top: 0.75em;
+}
+
+/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
+.layout-mobile {
+    .listItemImage-large .listItemIndicators {
+        left: 0.5em;
+        top: 0.5em;
+        font-size: .75em !important
+    }
+    .listItem-border .listItemIndicators { display: none; }
+}

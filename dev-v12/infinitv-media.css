@@ -1,0 +1,323 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Pages
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Content Background without Backdrops */
+.noBackdropTransparency .detailPagePrimaryContainer,
+.noBackdropTransparency .detailPageSecondaryContainer { background: rgba(0, 0, 0, var(--itemopacity)) !important; }
+
+/* Text Color */
+.selfBackdropPage h1.parentName,
+.selfBackdropPage h3.itemName   { color: rgba(255, 255, 255, 0.8); }
+
+/* Detail-Ribbon */
+.detailRibbon               { padding-right: 2% !important; }
+
+/* Content */
+.detailTrackSelect          { padding: .35em 1.9em .35em .35em !important; }
+.overview.detail-clamp-text { margin: .5em 0; }
+
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+
+    /* Poster Card */
+    .detailImageContainer .card { left: 2vw; }
+
+    .detailImageContainer .card.backdropCard {
+        margin-top: 1.6vh;
+        position: sticky;
+        width: 28vw;
+        max-width: 30em;
+    }
+
+    .detailImageContainer .card.portraitCard {
+        margin-top: -3em;
+        margin-bottom: -11.5em;
+        width: 28vw;
+        max-width: 30em;
+    }
+
+    /* Detail Ribbon with media buttons */
+    .detailRibbon               {height: 10em;margin-top: -10em;}
+    .infoWrapper                {padding-top: 2vh;padding-bottom: 1em;}
+    .mainDetailButtons          {margin-left: 1em;}
+    .itemMiscInfo               {
+        font-size: 125%;
+        margin-top: 0.25em;
+    }
+
+    /* Some Small Screen fixes */
+    @media (max-width: 70em) {
+        .detailImageContainer .card {top: -13em !important;}
+        .detailRibbon {flex-direction: column;height: 14em;margin-top: -14em;/* max-height: 20em; */}
+        .infoWrapper {
+            /* padding-top: .5em !important; */
+            padding-bottom: .5em !important;
+            align-self: flex-start;
+        }
+        .mainDetailButtons {
+            margin: 0;
+            margin-bottom: .5em;
+            align-self: flex-start;
+        }
+    }
+
+    /* Primary Container */
+    .detailPagePrimaryContent     { padding: 0 1.5vw 1em 32.45vw; }
+    .itemDetailsGroup             { margin: 1.5em 0; }
+    .trackSelections              { margin-top: .5em; }
+    .itemTags                     { padding: 0; margin: 1em 0 !important; }
+    .itemExternalLinks            { margin: 1.25em 0 .75em 0 !important;}
+    .itemTags > .button-link      { margin-left: .25em; }
+
+    /* Secondary Container */
+    .detailPageSecondaryContainer { padding: 1em 1.5vw !important; }
+    .detailPageSecondaryContainer .detailPageContent { padding: 0; }
+
+    /* Detail-Ribbon: Fix narrow Desktop layout */
+    .detailPageWrapperContainer     {margin-top: 1.5em !important;}
+
+    /* Make backdrop space with logo smaller */
+    .itemDetailPage .itemBackdrop   { height: 37vh; }
+
+    /* Move logo to the right side */
+    .itemDetailPage .detailLogo     { right: 10vw; }
+
+    /* Increase Text Size */
+    .selfBackdropPage h1.parentName { font-size: 175%; }
+    .selfBackdropPage h3.itemName   { font-size: 150%; }
+}
+
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+.layout-tv {
+
+    /* Hide some Elements */
+    .itemExternalLinks,
+    .detailsGroupItem.directorsGroup,
+    .detailsGroupItem.writersGroup,
+    .detailsGroupItem.studiosGroup,
+    .hide+.detailPageWrapperContainer .itemName,
+    .endsAt,
+    .itemTags { display: none !important; }
+
+    /* Increase Text Size */
+    .selfBackdropPage h1.parentName { font-size: 175%; }
+    .selfBackdropPage h3.itemName   { font-size: 150%; }
+
+    /* Detail Ribbon */
+    [dir=ltr] .detailRibbon {
+        margin-left: 28vw;
+        padding-top: 1em;
+        padding-right: 1vw;
+        padding-bottom: .5em;
+        padding-left: 1em;
+    }
+    .mainDetailButtons     {
+        margin: 1.5em 0 .5em 0;
+        @media all and (max-width: 52em) { font-size: 90%; }
+    }
+    .itemMiscInfo          { font-size: 125%; margin: .6em 0; }
+    .tagline               { font-weight: 500; }
+
+    /* Content */
+    .detailPagePrimaryContent {
+        margin-left: 28vw;
+        padding-top: 0;
+        padding-right: 1vw;
+        padding-bottom: 1em;
+        padding-left: 1vw;
+    }
+    .detailPageSecondaryContainer {
+        margin-top: 1em;
+        margin-right: 1vw;
+        margin-bottom: 0;
+        margin-left: 1vw;
+        padding-top: 0;
+        padding-left: 0;
+    }
+    .detailPageSecondaryContainer .detailPageContent     { padding: 0 }
+    .detailPageSecondaryContainer .detailVerticalSection { margin-bottom: 0 !important; }
+    .trackSelections .selectContainer .selectLabel       { flex-basis: 5em; }
+    .detailSection                                       { padding-bottom: .5em; }
+
+    /* Tracks & Subtitles */
+    .trackSelections {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .trackSelections .selectContainer    { max-width: 30em; }
+    .trackSelections .selectSubtitlesContainer .selectArrowContainer { right: .5em; }
+    .trackSelections .selectLabelFocused {
+        color: #fff !important;
+        font-weight: 600 !important;
+    }
+
+    /* TV Show Page ------------------------------------ */
+    .libraryPage:not(.hide):has(.trackSelections.hide) {
+        .detailPagePrimaryContent {
+            padding-top: 0;
+            padding-left: 1em;
+        }
+        .nextUpSection {
+            margin-top: 0;
+            margin-bottom: 2em;
+            margin-top: 2em;
+        }
+        .detailPagePrimaryContainer   { margin-right: 1vw; }
+        .detailPageSecondaryContainer { margin-top: 0; }
+    }
+
+    /* Episode List */
+    .libraryPage:not(.hide):has(.listItem-largeImage) {
+        .detailRibbon {
+            margin-bottom: 0 !important;
+            margin-left: 28vw;
+        }
+        .detailPagePrimaryContent {
+            padding-bottom: 0;
+            padding-right: 0 !important;
+            margin-left: 28vw;
+            padding-left: 0 !important;
+        }
+        .detailSection {
+            padding: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            background: none !important;
+            border:  none !important;
+            backdrop-filter: none !important;
+        }
+        .overview.detail-clamp-text { margin: .5em; }
+        .itemDetailsGroup {
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            padding-top: 0 !important;
+        }
+        .itemGenres                   { display: none; }
+        #childrenContent              { padding-left: .5em;}
+        .detailPageSecondaryContainer { margin-top: .5em !important;}
+    }
+}
+
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+
+    /* Detail Ribbon */
+    .detailRibbon {
+        padding-bottom: 1.25em;
+        padding-top: .25em;
+        padding-right: 2vw !important;
+        padding-left: 2vw !important;
+    }
+
+    /* Poster Card */
+    .detailImageContainer .card { left: 2vw; }
+    .detailImageContainer .card.backdropCard {
+        top: 1em;
+        max-width: 33vw;
+        width: 33%;
+    }
+    .detailImageContainer .card.portraitCard { left: 3vw; }
+
+    /* Misc Info */
+    .infoWrapper { padding-bottom: 0.15em; }
+
+    @media (max-width: 32em) {
+        .itemMiscInfo     { font-size: 85%; }
+        .itemMiscInfo div { margin-right: .75em; }
+    }
+    @media (max-width: 42em) {
+        .detailImageContainer .card { max-width: 28vw; }
+        .itemMiscInfo .endsAt       { display: none; }
+    }
+
+    /* Buttons */
+    .mainDetailButtons .detailButton { margin: 0 .5em !important; }
+
+    @media (min-width: 32em) and (max-width: 38em) {
+        [dir=ltr] .mainDetailButtons {
+            margin-bottom: 0;
+            font-size: 90%;
+        }
+        .mainDetailButtons .detailButton {
+            margin-left: .25em !important;
+            margin-right: .25em !important;
+        }
+    }
+
+    /* Media Overview */
+    .overview { margin: 0; }
+
+    /* Primary Container */
+    .detailPagePrimaryContent {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
+    }
+    .detailPagePrimaryContent .trackSelections,
+    .detailPagePrimaryContent .detailSectionContent,
+    .detailPagePrimaryContent .itemDetailsGroup          { padding: 0 2vw; }
+    .detailPagePrimaryContent .itemGenres:not(:has(div)) { display: none; }
+
+    .detailPagePrimaryContent .trackSelections {
+        margin-top: .75em;
+        margin-bottom: .5em;
+    }
+
+    .tagline:has(bdi) {
+        padding-top: 1em !important;
+        margin-top: 0;
+    }
+
+    #listChildrenCollapsible {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    /* Tracks & Subtitles */
+    .layout-mobile .trackSelections { padding-top: 1em }
+
+    /* Secondary Container */
+    .detailPageSecondaryContainer .detailPageContent {
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
+    }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Media Pages: Image Search
+──────────────────────────────────────────────────────────────────────────── */
+
+/* ListItem Color on Hover */
+.paperList .listItem:hover { color: var(--accent100) }
+
+/* Cards */
+#backdropsContainer .imageEditorCard > .cardBox,
+#imagesContainer .imageEditorCard > .cardBox,
+.availableImagesList .imageEditorCard > .cardBox  {
+    background-color: rgb(0 0 0 / 0%) !important;
+    border: var(--buttonborder);
+}
+
+/* Align card image */
+.dialogContentInner .portraitCard .cardContent .cardImageContainer { top: -.6em }
+
+/* Card Footer */
+#backdropsContainer .imageEditorCard .cardFooter,
+#imagesContainer .imageEditorCard .cardFooter     { padding-top: .5em; padding-bottom: 0 }
+.availableImagesList .imageEditorCard .cardFooter {
+    border-top: var(--buttonborder);
+    padding-top: .5em;
+    padding-bottom: 0;
+}
+
+/* Buttons */
+#backdropsContainer .paper-icon-button-light { margin: .1em }
+
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+.layout-tv {
+    .availableImagesList .portraitCard .cardBox { margin: 1em .75em !important }
+}

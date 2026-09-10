@@ -11,7 +11,7 @@
 .progressring-bg     { display: none; }
 .progressring-spiner { border-width: .35em; }
 
-/* Toast  */
+/* Toast: Center */
 .toastContainer {
     left: 50% !important;
     right: auto !important;
@@ -20,11 +20,9 @@
     bottom: .25em;
 }
 
-.toast { background-color: #000 !important; }
-
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Dialogs
+   Dialogs (deprecated ?)
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* TODO > Split Dialogs & Action sheets */
@@ -34,6 +32,8 @@
     background: rgba(0, 0, 0, .9);
     backdrop-filter: var(--blur);
 }
+
+.toast { background-color: #000 !important; }
 
 /* Action Sheets */
 .layout-desktop,
@@ -217,7 +217,7 @@
 /* Collapsible Menu */
 .collapseContent     { padding-top: 0em; padding-bottom: 0em; }
 
-/* Layout TV ─────────────────────────────────────────────────────────────── */
+/* Layout TV ──────────────────────────────────────────────────────────────── */
 .layout-tv {
     /* Media Infos */
     .formDialog:has(.dialog-fullscreen)     { align-content: normal; }
@@ -247,7 +247,7 @@
 
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Menu Drawer
+   Menu Drawer (deprecated?)
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Main Drawer */
@@ -281,7 +281,7 @@
 .navMenuOption     { border: solid 1px #0000 !important; }
 .navMenuOptionText { margin-top: 0; }
 
-/* Layout Mobile ─────────────────────────────────────────────────────────── */
+/* Layout Mobile ──────────────────────────────────────────────────────────── */
 .layout-mobile {
     .mainDrawer     { margin-top: 4em; }
 
@@ -293,6 +293,60 @@
     .mainDrawer.drawer-open + .skinHeader > .headerTabs,
     :has(.mainDrawer.drawer-open) ~ .appfooter { display: none !important; }
 }
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Multi ToolBar (v12.0)
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Librarypage Jump fix (v12.0) */
+[dir=ltr],
+.MuiPaper-root { padding-right: 0 !important; }
+
+.MuiToolbar-root { padding: 0 1vw !important; }
+
+.MuiAvatar-root {  background-color: transparent; }
+
+
+/*
+.MuiStack-root {
+
+}
+
+
+
+.MuiButton-root {
+
+}
+
+.MuiButton-icon {
+
+}
+
+
+
+.MuiBox-root {
+
+}
+
+.MuiButtonBase-root {
+
+}
+
+
+
+.MuiBadge-root {
+
+}
+
+.MuiSvgIcon-root {
+
+}
+
+.MuiBadge-badge {
+
+}
+*/
 
 /*
 ────────────────────────────────────────────────────────────────────────────
@@ -315,7 +369,7 @@
 
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Header & Section Tabs
+   Header & Section Tabs (Deprecated?)
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Shorten transition time */
@@ -332,7 +386,7 @@
 .pageTitle { font-weight: bold }
 .currentTimeText { font-size: 110% !important; font-weight: bold }
 
-/* Layout Desktop ────────────────────────────────────────────────────────── */
+/* Layout Desktop ─────────────────────────────────────────────────────────── */
 .layout-desktop {
     .skinHeader             { padding: .3em !important; height: 3.3em }
     .headerTop              { padding: .3em !important; }
@@ -351,7 +405,7 @@
     }
 }
 
-/* Layout TV ────────────────────────────────────────────────────────────── */
+/* Layout TV ──────────────────────────────────────────────────────────────── */
 .layout-tv {
     .skinHeader {
         position: fixed !important;
@@ -384,7 +438,7 @@
     }
 }
 
-/* Layout Mobile ────────────────────────────────────────────────────────── */
+/* Layout Mobile ────────────────────────────────────────────────────────────── */
 .layout-mobile {
     .skinHeader { background: rgba(0, 0, 0, 1) !important }
 

@@ -1,0 +1,374 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+    Boxes
+──────────────────────────────────────────────────────────────────────────── */
+
+:root {
+    --boxborder: solid 1px hsla(0, 0%, 80%, .2);
+}
+
+/* No card shadows */
+.itemDetailPage .verticalSection .card .cardBox,
+.itemDetailPage .verticalSection .card .cardScalable { box-shadow: none; }
+
+/* Border around media poster */
+.detailImageContainer .card {
+    border: solid 1px hsla(0, 0%, 20%, .1);
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+    Box
+──────────────────────────────────────────────────────────────────────────── */
+
+#searchPage .verticalSection,
+.itemDetailPage .verticalSection {
+    background: rgba(0, 0, 0, var(--bgdarkness));
+    border: var(--boxborder);
+    border-radius: var(--rounding-media);
+}
+
+.layout-desktop,
+.layout-tv {
+    #searchPage .verticalSection,
+    .itemDetailPage .verticalSection {
+        backdrop-filter: var(--blur);
+    }
+}
+
+
+/*
+────────────────────────────────────────────────────────────────────────────
+    Per Layout
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop {
+
+    /* Box for Sub-Elements */
+    .itemDetailPage .detailSection {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--boxborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
+    }
+
+    .itemDetailPage .infoWrapper { padding-left: 1em; }
+
+    @media (max-width: 70em) {
+        .mainDetailButtons {
+            padding-left: 1em;
+            margin-bottom: 2em;
+        }
+    }
+
+    /* Sub-Element Alignment */
+    .itemDetailPage .detailSection              { padding: .5em 1.5em; margin: 1em 0; }
+    .itemDetailPage .trackSelections,
+    .itemDetailPage .selectSubtitlesContainer   { width: 100%; }
+
+    /* Content alignment */
+    .itemDetailPage .detailVerticalSection      { margin-bottom: 1em; }
+    .detailPagePrimaryContent                   { padding: 0 1.5vw 0 32.45vw; }
+    .detailPagePrimaryContainer .itemsContainer { padding: 0; margin: 0; }
+    .detailPageSecondaryContainer               { padding: 0 1.5vw !important; }
+    .detailSectionContent                       { padding-right: 1vw; }
+
+    /* Section Titles */
+    .itemDetailPage .sectionTitle,
+    .itemDetailPage div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+
+    /* NextUp Section */
+    .itemDetailPage .detailSection:has(.nextUpSection:not(.hide)) {
+        #listChildrenCollapsible {
+            margin-left: -31vw;
+            margin-right: 0;
+            margin-bottom: 1em !important;
+        }
+        .verticalSection { margin-bottom: 1em !important; }
+    }
+
+    /* Page: TV Show Overview */
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+        background: none;
+        border: none;
+        border-radius: var(--rounding-media);
+        padding: 0;
+        margin: 1em 0;
+    }
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+
+        .trackSelections,
+        .itemDetailsGroup,
+        .detailSectionContent {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            border: var(--boxborder);
+            border-radius: var(--rounding-media);
+
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+
+        .itemDetailsGroup {
+            margin-top: 0;
+            border-top: none;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+
+        .detailSectionContent {
+            border-bottom: none;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            padding-bottom: 1em;
+        }
+    }
+
+    /* Page: Episode List */
+    .itemDetailPage .detailSection:has(.listItem-largeImage) { backdrop-filter: none; }
+    .itemDetailPage .detailSection:has(.listItem-largeImage) {
+        .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+    }
+
+    /* Page: Search */
+    #searchPage .verticalSection { margin: .5em 2vw; }
+}
+
+.layout-tv {
+
+    /* Box for Sub-Elements */
+    .detailRibbon,
+    .detailPagePrimaryContent .detailSection,
+    .itemDetailPage:has(.listItem-largeImage) .detailSectionContent,
+    #searchPage .searchFields {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--buttonborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
+    }
+
+    /* No Box */
+    #listChildrenCollapsible:has(.verticalSection) {
+        background: none;
+        border: none;
+        backdrop-filter: none;
+    }
+
+    /* Card Container */
+    .detailImageContainer .card { margin-top: 0; }
+
+    /* Detail Ribbon */
+    [dir=ltr] .detailRibbon { padding: 1em 1.5em; margin-bottom: 1em; }
+
+    /* Sections */
+    .itemDetailPage .verticalSection { margin-bottom: 1em !important; }
+
+
+    /* Items Container */
+    .itemDetailPage .verticalSection .itemsContainer { padding: 0; margin: 0 .5vw; }
+
+    /* Section Titles */
+    .detailPagePrimaryContent .sectionTitle,
+    .detailPageSecondaryContainer .sectionTitle { border-radius: 0 !important; }
+
+    /* Content */
+    .detailPagePrimaryContainer   { margin-bottom: 1em; }
+    .detailPagePrimaryContent     { padding: 0 !important; }
+    .detailPageSecondaryContainer { margin-top: 1em; }
+    #listChildrenCollapsible      { margin-top: 1em !important; }
+
+    /* Page: Media Details */
+    .itemDetailPage:has(.trackSelections:not(.hide)) {
+        .detailSection              { padding: 1em 1.5em; }
+        .detailPagePrimaryContainer { padding-right: 1vw; }
+    }
+
+    /* Page: TV Show Overview */
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+        background: none;
+        border: none;
+        border-radius: var(--rounding-media);
+    }
+    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+
+        /* Box for Sub-Elements */
+        .detailSectionContent,
+        .itemDetailsGroup {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            backdrop-filter: var(--blur);
+            border: var(--buttonborder);
+        }
+
+        > div:not(.verticalSection) { padding: .5em 1.5em; margin-top: 0; }
+
+        .detailSectionContent {
+            border-bottom: none;
+            border-top-right-radius: var(--rounding-media);
+            border-top-left-radius: var(--rounding-media);
+            margin: 0;
+            padding: 0 1.5em .5em 1.5em;
+        }
+        .itemDetailsGroup {
+            border-top: none;
+            border-bottom-right-radius: var(--rounding-media);
+            border-bottom-left-radius: var(--rounding-media);
+            margin-bottom: 1em;
+            padding: .5em 1em 1em 1.5em;
+        }
+        .nextUpSection { margin-top: 0 !important; }
+
+        .itemGenres:not(:has(div))  { display: none; }
+        .overview.detail-clamp-text { margin: 0; }
+    }
+
+    /* Page: Episode List */
+    .itemDetailPage .detailSection:has(.listItem-largeImage) {
+        .verticalSection {
+            background: none;
+            border: none;
+            backdrop-filter: none;
+        }
+        .detailSectionContent {
+            margin-bottom: 1em !important;
+            margin-top: 1em !important;
+            border-bottom: var(--buttonborder) !important;
+        }
+        .verticalSection .itemsContainer { margin: 0 !important; }
+        .itemDetailsGroup                { display:none; }
+    }
+
+    /* Page: Search */
+    #searchPage .verticalSection { margin: 1em 2vw; }
+    #searchPage .searchFields {
+        padding: 0 2em 1em 2em;
+        margin: 0 2vw;
+    }
+}
+
+.layout-mobile {
+
+    /* Box for sub-elements */
+    .trackSelections,
+    .itemDetailsGroup,
+    .detailSectionContent {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--boxborder);
+        border-radius: var(--rounding-media);
+    }
+
+    /* Section Titles */
+    .sectionTitle-cards {
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        padding-left: 0;
+    }
+
+    /* Content */
+    .detailPagePrimaryContainer   { margin-bottom: 1em; }
+    .detailPageSecondaryContainer { padding-top: 0em; }
+    .detailPagePrimaryContent     { padding: 0 1vw 0 32.45vw; }
+
+    .itemDetailPage .detailVerticalSection { margin-bottom: 1em; }
+
+    .detailSectionContent {
+        border-bottom: none;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-top: .5em;
+        padding: .5em 1em !important;
+    }
+    .itemDetailsGroup {
+        border-top: none;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        margin-bottom: 1em;
+        margin-top: 0;
+        padding: .5em 1em !important;
+    }
+
+    .itemDetailPage #listChildrenCollapsible:has(.verticalSection) {
+        background: none;
+        border: none;
+    }
+    .itemDetailPage #listChildrenCollapsible .verticalSection       { margin-bottom: 1em; }
+    .itemDetailPage .verticalSection .emby-scroller { margin: 0 1vw; }
+
+    .itemDetailPage .listItem-largeImage {border: var(--boxborder) !important;background-color: var(--bgdark60) !important;justify-self: center;}
+    .itemDetailPage .overview p { margin: .5em 0 1em 0; }
+
+    /* Page: Media Details */
+    .itemDetailPage:has(.trackSelections:not(.hide)) {
+
+        .detailSectionContent { padding: .5em 1em .5em 1em !important; }
+
+        .itemDetailsGroup {
+            padding: 1em !important;
+            border-top: none;
+            margin-bottom: 0;
+        }
+
+        .trackSelections {
+            padding: 1em;
+            margin-bottom: 1em;
+            max-width: 100%;
+        }
+    }
+
+    /* Page: Episode List */
+    .itemDetailPage:has(.listItem-largeImage) {
+
+        /* Box for sub-elements */
+        .trackSelections,
+        .itemDetailsGroup,
+        .detailSectionContent {
+            background: rgba(0, 0, 0, var(--bgdarkness));
+            border: var(--boxborder);
+        }
+
+        /* No Box */
+        .detailPagePrimaryContainer .verticalSection {
+            background: none;
+            border: none;
+        }
+
+        .detailPagePrimaryContainer { margin-bottom: 0; }
+
+        @media(max-width: 50em) {
+            .detailPageWrapperContainer .listItem-content { border-bottom: var(--boxborder) !important; }
+        }
+
+        .trackSelections,
+        .detailSectionContent {
+            border-bottom: none;
+            border-top-right-radius: var(--rounding-media);
+            border-top-left-radius: var(--rounding-media);
+            margin-top: .5em;
+        }
+
+        .itemDetailsGroup {
+            border-top: none;
+            border-bottom-right-radius: var(--rounding-media);
+            border-bottom-left-radius: var(--rounding-media);
+            margin-bottom: 1em;
+            padding: .5em 1em !important;
+        }
+    }
+
+    /* Page: Search */
+    [dir=ltr]:has(.headroom--unpinned) {
+        .searchFieldsInner { width: 33%; }
+
+        #searchTextInput {
+            background-color: var(--bgwhite10) !important;
+            backdrop-filter: var(--blur);
+        }
+    }
+}

@@ -1,0 +1,36 @@
+/*                                                                         *
+
+   ___  ________   ________ ___  ________   ___  _________  ___      ___
+  |\  \|\   ___  \|\  _____\\  \|\   ___  \|\  \|\___   ___\\  \    /  /|
+  \ \  \ \  \\ \  \ \  \__/\ \  \ \  \\ \  \ \  \|___ \  \_\ \  \  /  / /
+   \ \  \ \  \\ \  \ \   __\\ \  \ \  \\ \  \ \  \   \ \  \ \ \  \/  / /
+    \ \  \ \  \\ \  \ \  \_| \ \  \ \  \\ \  \ \  \   \ \  \ \ \    / /
+     \ \__\ \__\\ \__\ \__\   \ \__\ \__\\ \__\ \__\   \ \__\ \ \__/ /
+      \|__|\|__| \|__|\|__|    \|__|\|__| \|__|\|__|    \|__|  \|__|/
+
+
+                         The Big Screen Experience
+
+*                               v0.5.1-dev-12                              */
+
+/* Load Stylesheets */
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-base.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-system.css');
+
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-home.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-library.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-media.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-settings.css');
+
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-sections.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-cards.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-listitems.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-dynamicsize.css');
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-player.css');
+
+@import url('https://buesche87.github.io/infinitv/dev-v12/infinitv-boxes.css');
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}

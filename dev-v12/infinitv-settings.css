@@ -1,0 +1,469 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+   Settings Pages: Background & Borders
+──────────────────────────────────────────────────────────────────────────── */
+
+#selectServerPage .padded-bottom-page,
+#loginPage .padded-bottom-page,
+.standalonePage .addServerForm {
+    background: rgba(0, 0, 0, var(--bgdarkness));
+    border: var(--buttonborder);
+    border-radius: var(--rounding-media);
+    backdrop-filter: var(--blur);
+}
+
+.layout-desktop,
+.layout-tv {
+    #myPreferencesMenuPage .readOnlyContent,
+    #userProfilePage > .padded-left,
+    .userPreferencesPage .padded-left > form {
+        background: rgba(0, 0, 0, var(--bgdarkness));
+        border: var(--buttonborder);
+        border-radius: var(--rounding-media);
+        backdrop-filter: var(--blur);
+    }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Settings Pages
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Settings Pages: Center content and Text */
+#myPreferencesMenuPage,
+#userProfilePage,
+#quickConnectPreferencesPage {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+/* Settings Pages: Narrow contect margins */
+#homeScreenPreferencesPage .verticalSection-extrabottompadding,
+#languagePreferencesPage .verticalSection-extrabottompadding { margin-bottom: 0em; }
+
+#languagePreferencesPage .selectContainer,
+#displayPreferencesPage .inputContainer                      { margin-bottom: 1em; }
+
+#displayPreferencesPage .checkboxContainer,
+#displayPreferencesPage .selectContainer,
+#homeScreenPreferencesPage .selectContainer,
+#homeScreenPreferencesPage .checkboxContainer,
+#homeScreenPreferencesPage .checkboxListContainer,
+#languagePreferencesPage .checkboxContainer                 { margin-bottom: 1.25em; }
+
+#displayPreferencesPage .btnSave,
+#homeScreenPreferencesPage .btnSave,
+#languagePreferencesPage .btnSave                           { margin-top: 2em; }
+
+.layout-desktop,
+.layout-tv {
+    /*  No text wrap */
+    .userPreferencesPage .listItemBodyText  { white-space: nowrap; }
+
+    /* Settings Page: Box size */
+    #myPreferencesMenuPage .readOnlyContent { display: flex; max-width: 95%; }
+    #myPreferencesMenuPage > .padded-left   { padding-top: 0; padding-left: 0; }
+}
+
+.layout-desktop {
+    #myPreferencesMenuPage .verticalSection { margin: 1em 2em; }
+}
+
+.layout-tv {
+    #myPreferencesMenuPage .verticalSection { margin: 2em; }
+    #clientSettingsPage                     { scrollbar-width: none; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   User Profile
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Form Alignment */
+.updatePasswordForm br                 { display: none; }
+.updatePasswordForm .inputContainer    { margin-bottom: 1em; }
+.updatePasswordForm .emby-button.block { margin-top: 2em; }
+
+/* Username bold */
+h2.username {
+    margin-top: 0px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Quick Connect
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop,
+.layout-tv {
+    /* Box size */
+    #quickConnectPreferencesPage form  { padding: 1em 4em 2em 4em; }
+
+    /* Code input size */
+    #txtQuickConnectCode {
+        padding: 1em 0;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    /* Label for input */
+    .inputLabel[for="txtQuickConnectCode"] { font-size: 1.2em; padding: .5em; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Subtitle Settings
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Subtitles: Preview-Box color */
+.subtitleappearance-preview {
+    background: linear-gradient(140deg,var(--accent100),#111) !important;
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Client Settings
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Client Settings: Restart hint */
+#clientSettingsPage .infoBanner {
+    padding: .5em 1em .25em 1em;
+    margin: .5em 0;
+    font-weight: 500;
+    color: white;
+    background-color: var(--accent20);
+    text-align: center;
+}
+
+/* Section Titles */
+.settingsContainer .sectionTitle,
+.homeScreenSettingsContainer .sectionTitle,
+#controlsPreferencesPage .sectionTitle {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-left: .6em !important;
+    margin-left: -1.4em;
+    margin-right: -1.4em;
+    border-radius: var(--rounding-system);
+}
+
+/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+.layout-desktop {
+    /* Content alignment */
+    .userPreferencesPage                    { padding-top: 5em !important; }
+    #myPreferencesMenuPage .readOnlyContent { padding: 1em; }
+    #userProfilePage .padded-left           { padding: 2em 4em; height: 28em; }
+    #clientSettingsPage form,
+    #displayPreferencesPage form,
+    #homeScreenPreferencesPage form,
+    #languagePreferencesPage form,
+    #controlsPreferencesPage form           { padding: 1em 4em; }
+
+    /* Save & Cancel Button */
+    .userPreferencesPage .btnSave,
+    .userPreferencesPage .button-cancel     {
+        margin-top: 2em;
+        margin-left: -1.75em;
+        width: 107%;
+        margin-bottom: 1.5em;
+    }
+
+    /* Section Titles in Main Menu */
+    #myPreferencesMenuPage .sectionTitle    {
+        padding-left: 0 !important;
+        margin-top: 0;
+        padding-bottom: 0.5em;
+        border-bottom: var(--buttonborder);
+        border-radius: 0 !important;
+    }
+}
+
+/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+.layout-tv {
+    #clientSettingsPage form,
+    #displayPreferencesPage form,
+    #homeScreenPreferencesPage form,
+    #languagePreferencesPage form,
+    #controlsPreferencesPage form           { padding: .5em 4em 2em 4em; }
+
+    /* Settings */
+    #myPreferencesMenuPage > .padded-left   { padding-top: 0; }
+    #myPreferencesMenuPage .readOnlyContent { padding: 0 1em; }
+    #myPreferencesMenuPage .verticalSection { margin: 2em; }
+    #myPreferencesMenuPage .sectionTitle    { text-align: center; }
+
+    /* User Profile */
+    #userProfilePage .padded-left           { padding: 3em 4em; height: 26em; }
+
+    /* Section Titles */
+    .settingsContainer .sectionTitle,
+    .homeScreenSettingsContainer .sectionTitle,
+    #controlsPreferencesPage .sectionTitle  {
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-left: .5em;
+        margin-left: -1em;
+        margin-right: -1em;
+    }
+    #myPreferencesMenuPage .sectionTitle    {
+        padding-left: 0 !important;
+        margin-top: 0;
+        padding-bottom: 0.5em;
+        border-bottom: var(--buttonborder);
+        border-radius: 0 !important;
+    }
+}
+
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
+.layout-mobile {
+    .userPreferencesPage .settingsContainer,
+    .userPreferencesPage .homeScreenSettingsContainer {
+        background: rgba(0, 0, 0, var(--headeropacity));
+        border-radius: 0;
+    }
+
+    /* Background */
+    #myPreferencesMenuPage,
+    #userProfilePage,
+    #quickConnectPreferencesPage,
+    #controlsPreferencesPage                          {  background: rgba(0, 0, 0, var(--headeropacity)); }
+    .userPreferencesPage > .padded-left               {  padding-top: 0; }
+    .userPreferencesPage > .padded-left > .readOnlyContent,
+    .userPreferencesPage > .padded-left > form        {  width: 90%; }
+    .userPreferencesPage .settingsContainer,
+    .userPreferencesPage .homeScreenSettingsContainer {
+        margin-top: -1em;
+        padding-top: 1em;
+        padding-right: 1vw;
+        padding-left: 1vw;
+    }
+
+    /* Main Settings Page */
+    #myPreferencesMenuPage > .padded-left             {  width: 100%; }
+    #myPreferencesMenuPage .sectionTitle              {  padding-left: 0em !important; font-weight: 600; }
+
+    /* User Profile */
+    #userProfilePage                                  {  padding: 5em 5% !important; }
+    #userProfilePage > .padded-left                   {  padding: 0; width: 90%; }
+
+    #userProfilePage .readOnlyContent > div:not(.imagePlaceHolder) {
+        margin-left: 2em !important;
+        margin-right: 0 !important;
+    }
+
+    /* Quick Connect */
+    #quickConnectPreferencesPage                      {  padding-top: 5em !important; }
+    #quickConnectPreferencesPage > .padded-left       {  display: flex; justify-content: center; }
+
+    /* Section Titles */
+    .settingsContainer .sectionTitle,
+    .homeScreenSettingsContainer .sectionTitle,
+    #controlsPreferencesPage .sectionTitle            {
+        margin-left: -.5em;
+        margin-right: -.5em;
+        padding-left: .5em;
+    }
+
+    /* List Items */
+    .userPreferencesPage .listItem-border             {
+        border: var(--buttonborder) !important;
+        margin-bottom: .75em !important;
+    }
+    .userPreferencesPage .listItem                    { padding-right: 1.5em !important; }
+    .userPreferencesPage .listItemIcon                {
+        width: 2% !important;
+        text-align: left;
+        margin-right: 0;
+        flex: auto;
+        padding-right: .5em;
+    }
+    .userPreferencesPage .listItemBody                {
+        flex: auto;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        padding-left: .5em;
+        text-align: left;
+    }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Search Page
+──────────────────────────────────────────────────────────────────────────── */
+
+/* Search Field */
+#searchPage .searchFields {
+    width: 80%;
+    justify-self: center;
+    z-index: 5;
+}
+#searchPage .searchFieldsInner { padding-bottom: 1em; }
+
+#searchTextInput {
+    background-color: var(--bgdark60) !important;
+    backdrop-filter: var(--blur);
+}
+#searchTextInput:focus {
+    background-color: var(--bgdark80) !important;
+}
+
+/* Suggestion list */
+#searchPage .verticalSection {
+    margin: .5em 0;
+    padding-bottom: 1em;
+}
+#searchPage .sectionTitle {
+    padding: .3em 0;
+    margin-top:  0;
+    margin-bottom: .5em;
+    text-align: center;
+    font-weight: 600;
+}
+
+#searchPage .emby-button.button-link { width: 80vw; }
+
+.layout-desktop {
+
+    /* Search Field */
+    #searchPage .searchFields {
+        position: fixed;
+        width: 80%;
+        justify-self: center;
+        z-index: 5;
+    }
+
+    /* Suggestion list */
+    #searchPage .verticalSection {
+        margin: .5em 0;
+        padding-bottom: 1em;
+        top: 5em;
+        position: relative;
+    }
+}
+
+.layout-tv {
+    /* Suggestion list */
+    #searchPage .verticalSection {
+        margin: .5em 0;
+        padding-bottom: 1em;
+    }
+}
+
+.layout-mobile {
+
+    /* Search Field */
+    #searchPage .searchFields {
+        position: fixed;
+        width: 80%;
+        justify-self: center;
+        z-index: 5;
+    }
+
+    #searchTextInput {
+        background-color: var(--bgwhite10) !important;
+        backdrop-filter: var(--blur);
+        min-width: 20em;
+    }
+
+    /* Suggestion list */
+    #searchPage .verticalSection {
+        margin: .5em 2vw;
+        position: relative;
+        top: 5em;
+        padding-bottom: 0;
+    }
+
+    #searchPage .searchSuggestionsList div {
+        padding: .25em;
+        border: var(--buttonborder);
+        border-radius: var(--rounding-system);
+        margin-bottom: .25em;
+    }
+
+    #searchPage .sectionTitle { margin-bottom: 1em; }
+    #searchPage .searchSuggestionsList div { margin-bottom: .5em; }
+
+    [dir=ltr]:has(.headroom--unpinned) {
+        #searchPage .searchFields { top: 0em; }
+    }
+
+    .searchResults {
+        padding-top: 0;
+    }
+    .searchResults .verticalSection {
+        margin-bottom: 1em !important;
+    }
+    .searchResults .sectionTitle {
+        margin-bottom: 0 !important;
+    }
+
+
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Login Page
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Login: Form Dimensions & Colors */
+#loginPage .padded-bottom-page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 24em;
+    padding-bottom: 2em !important;
+}
+
+/* Login: Hide some elements */
+#loginPage .btnForgotPassword,
+#loginPage .loginDisclaimerContainer { display: none; }
+
+/* Login Form: Title marging (please sign in) */
+#loginPage .visualLoginForm          { padding-top: 1em; }
+#loginPage .manualLoginForm          { padding-top: 2em; }
+
+/* Login Form: User cards */
+#loginPage .squareCard               { width: 33% !important; margin: 1em !important; }
+#loginPage .cardBox                  { box-shadow: none !important; }
+#loginPage .cardScalable             { box-shadow: var(--cardshadow) !important; }
+#loginPage .card:hover .cardScalable { box-shadow: var(--cardglow) !important; }
+
+/* Manual Login Form */
+#loginPage .readOnlyContent,
+#loginPage form                      { max-width: 22em; }
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Select Server Page
+────────────────────────────────────────────────────────────────────────────
+*/
+
+/* Select Server: Form Dimensions & Colors */
+#selectServerPage .padded-bottom-page {
+    margin: 0 5%;
+    padding-top: 1em;
+    padding-bottom: 2em !important;
+}
+
+#selectServerPage .btnAddServer:hover,
+#selectServerPage .btnAddServer:focus       { border-color: var(--accent60) !important; }
+
+/* Select Server: Server cards */
+#selectServerPage .cardBox                  { margin:  1em !important; }
+#selectServerPage .cardFooter               { padding: 0.8em .3em; }
+
+#selectServerPage .cardBox:has(.cardFooter)
+.cardScalable div                           {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Connect to Server form */
+.standalonePage .addServerForm              { padding: 1em 4em 2em 4em; }
+.addServerForm h1                           { text-align: center; }

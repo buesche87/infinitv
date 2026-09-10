@@ -1,0 +1,1150 @@
+/*
+────────────────────────────────────────────────────────────────────────────
+   Minimal Card Size
+──────────────────────────────────────────────────────────────────────────── */
+
+:root {
+    --person-card-size-desktop: 25;
+    --person-card-size-tv:      25;
+    --person-card-size-mobile:  25;
+
+    --lineclamp-desktop: 5;
+    --lineclamp-tv: 5;
+    --lineclamp-mobile: 3;
+}
+
+/* go back to these...? */
+.layout-desktop {
+
+    /* Default Cards */
+    .itemsContainer > .portraitCard             { width: 33.33%; }
+    .itemsContainer > .squareCard               { width: 33.33%; }
+    .itemsContainer > .backdropCard             { width: 50% }
+
+    /* Overflow Cards */
+    .itemsContainer > .overflowPortraitCard     { width: 33.33%; }
+    .itemsContainer > .overflowSquareCard       { width: 33.33%; }
+    .itemsContainer > .overflowBackdropCard     { width: 50%; }
+
+    /* OverflowCards in PrimaryContainer without a NextUp Section */
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+        .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+        .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+        .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+    }
+
+    /* Image Search Cards */
+    .dialogContainer .portraitCard              { width: 25%; }
+    .dialogContainer .squareCard                { width: 25%; }
+    .dialogContainer .backdropCard              { width: 33.33% }
+
+    /* ListItem Text Clamping */
+    .listItem-overview                          { line-clamp: 5; -webkit-line-clamp: 5; }
+}
+
+.layout-tv {
+
+    /* Default Cards */
+    .itemsContainer > .portraitCard { width: 33.33%; }
+    .itemsContainer > .squareCard   { width: 33.33%; }
+    .itemsContainer > .backdropCard { width: 50%; }
+
+    /* Overflow Cards */
+    .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+    .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+    .itemsContainer > .overflowBackdropCard { width: 50%; }
+
+    /* Overflow Cards in PrimaryContainer without a NextUp Section */
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+        .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+        .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+        .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+    } 
+
+    /* Overflow Cards in SecondaryContainer */
+    .detailPageSecondaryContainer {
+        .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+        .itemsContainer > .overflowSquareCard   { width: 25%; }
+        .itemsContainer > .overflowBackdropCard { width: 50%; }
+    } 
+
+    /* Image Search Cards */
+    .dialogContainer .portraitCard { width: 33.33%; }
+    .dialogContainer .squareCard   { width: 33.33%; }
+    .dialogContainer .backdropCard { width: 50%;}
+
+    /* ListItem Text Clamping */
+    .listItem-overview { line-clamp: 5; -webkit-line-clamp: 5; }
+}
+
+.layout-mobile {
+
+    /* Default Cards */
+    .itemsContainer > .portraitCard { width: 33.33%; }
+    .itemsContainer > .squareCard   { width: 33.33%; }
+    .itemsContainer > .backdropCard { width: 50%; }
+
+    /* Default Overflow Cards */
+    .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+    .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+    .itemsContainer > .overflowBackdropCard { width: 50% }
+
+    /* Overflow Cards in PrimaryContainer without a NextUp Section */
+    .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+        .itemsContainer > .overflowPortraitCard { width: 50%; }
+        .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+        .itemsContainer > .overflowBackdropCard { width: 50%; }
+    } 
+
+    /* Image Search Cards */
+    .dialogContainer .portraitCard { width: 33.33%; }
+    .dialogContainer .squareCard   { width: 33.33%; }
+    .dialogContainer .backdropCard { width: 50%; }
+
+    /* ListItem Text Clamping */
+    .listItem-overview { line-clamp: 3; -webkit-line-clamp: 3; }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Dynamic Card Size
+──────────────────────────────────────────────────────────────────────────── */
+
+@media(min-width: 30em) {
+
+    :root {
+        --person-card-size-mobile: 25;
+
+        --lineclamp-mobile: 3;
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 25%; }
+        .itemsContainer > .squareCard   { width: 33.33%; }
+        .itemsContainer > .backdropCard { width: 33.33%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 25%; }
+        .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+        .itemsContainer > .overflowBackdropCard { width: 33.33% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+            .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Person Cards */
+        .itemsContainer > .overflowPortraitCard.personCard { width: 25%; }
+        .itemsContainer > .overflowPortraitCard.personCard .cardScalable { width: 25vw;  height: calc(25vw - 33%); }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 33.33%; }
+        .dialogContainer .squareCard   { width: 33.33%; }
+        .dialogContainer .backdropCard { width: 50%; }
+    }
+}
+@media(min-width: 43.75em) {
+
+    :root {
+        --person-card-size-desktop: 16.66;
+        --person-card-size-tv:      20;
+        --person-card-size-mobile:  16.66;
+
+        --lineclamp-desktop: 5;
+        --lineclamp-tv: 5;
+        --lineclamp-mobile: 3;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 25%; }
+        .itemsContainer > .squareCard   { width: 25%; }
+        .itemsContainer > .backdropCard { width: 33.33% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 25%; }
+        .itemsContainer > .overflowSquareCard   { width: 25%; }
+        .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+            .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 25%; }
+        .dialogContainer .squareCard   { width: 25%; }
+        .dialogContainer .backdropCard { width: 33.33% }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 33.33%; }
+        .itemsContainer > .squareCard   { width: 25%; }
+        .itemsContainer > .backdropCard { width: 50%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+        .itemsContainer > .overflowSquareCard   { width: 25%; }
+        .itemsContainer > .overflowBackdropCard { width: 50%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+            .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+            .itemsContainer > .overflowSquareCard   { width: 25%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 33.33%; }
+        .dialogContainer .squareCard   { width: 33.33%; }
+        .dialogContainer .backdropCard { width: 50%;}
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 25%; }
+        .itemsContainer > .squareCard   { width: 25%; }
+        .itemsContainer > .backdropCard { width: 33.33%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 25%; }
+        .itemsContainer > .overflowSquareCard   { width: 25%; }
+        .itemsContainer > .overflowBackdropCard { width: 33.33% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+            .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 33.33%; }
+        .dialogContainer .squareCard   { width: 33.33%; }
+        .dialogContainer .backdropCard { width: 50%; }
+    }
+}
+@media(min-width: 50em) {
+
+    :root {
+        --person-card-size-desktop: 14.28;
+        --person-card-size-tv:      16.66;
+        --person-card-size-mobile:  14.28;
+
+        --lineclamp-desktop: 5;
+        --lineclamp-tv: 5;
+        --lineclamp-mobile: 3;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 20%; }
+        .itemsContainer > .squareCard   { width: 20%; }
+        .itemsContainer > .backdropCard { width: 33.33% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 20%; }
+        .itemsContainer > .overflowSquareCard   { width: 20%; }
+        .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+            .itemsContainer > .overflowSquareCard   { width: 33.33%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 25%; }
+        .dialogContainer .squareCard   { width: 25%; }
+        .dialogContainer .backdropCard { width: 33.33%; }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 25%; }
+        .itemsContainer > .squareCard   { width: 20%; }
+        .itemsContainer > .backdropCard { width: 33.33%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 25%; }
+        .itemsContainer > .overflowSquareCard   { width: 20%; }
+        .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 33.33%; }
+            .itemsContainer > .overflowSquareCard   { width: 25%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard {width: 25%;}
+            .itemsContainer > .overflowSquareCard   { width: 25%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 25%; }
+        .dialogContainer .squareCard   { width: 25%; }
+        .dialogContainer .backdropCard { width: 33.33%;}
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 20%; }
+        .itemsContainer > .squareCard   { width: 20%; }
+        .itemsContainer > .backdropCard { width: 25%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 20%; }
+        .itemsContainer > .overflowSquareCard   { width: 20%; }
+        .itemsContainer > .overflowBackdropCard { width: 25% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 25%; }
+            .itemsContainer > .overflowSquareCard   { width: 25%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 20%; }
+        .dialogContainer .squareCard   { width: 20%; }
+        .dialogContainer .backdropCard { width: 25%; }
+    }
+}
+@media(min-width: 60em)  {
+
+    .layout-desktop {
+        .itemsContainer > .backdropCard { width: 25% }
+    }
+
+    .layout-mobile {
+        .listItem-overview { line-clamp: 4; -webkit-line-clamp: 4; }
+    }
+}
+@media(min-width: 75em) {
+
+    :root {
+        --person-card-size-desktop: 12.5;
+        --person-card-size-tv:      14.28;
+        --person-card-size-mobile:  12.5;
+
+        --lineclamp-desktop: 5;
+        --lineclamp-tv: 5;
+        --lineclamp-mobile: 3;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 16.66%; }
+        .itemsContainer > .squareCard   { width: 16.66%; }
+        .itemsContainer > .backdropCard { width: 25% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+        .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+        .itemsContainer > .overflowBackdropCard { width: 25%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 25%; }
+            .itemsContainer > .overflowSquareCard   { width: 25%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 20%; }
+        .dialogContainer .squareCard   { width: 20%; }
+        .dialogContainer .backdropCard { width: 25% }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 20%; }
+        .itemsContainer > .squareCard   { width: 16.66%; }
+        .itemsContainer > .backdropCard { width: 25%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 20%; }
+        .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+        .itemsContainer > .overflowBackdropCard { width: 25%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 25%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard {width: 25%;}
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 20%; }
+        .dialogContainer .squareCard   { width: 16.66%; }
+        .dialogContainer .backdropCard { width: 25%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 16.66%; }
+        .itemsContainer > .squareCard   { width: 16.66%; }
+        .itemsContainer > .backdropCard { width: 20%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+        .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+        .itemsContainer > .overflowBackdropCard { width: 20% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 20%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 16.66%; }
+        .dialogContainer .squareCard   { width: 16.66%; }
+        .dialogContainer .backdropCard { width: 20%; }
+    }
+}
+@media(min-width: 87.5em) {
+
+    :root {
+        --person-card-size-desktop: 11.11;
+        --person-card-size-tv:      14.28;
+        --person-card-size-mobile:  11.11;
+
+        --lineclamp-desktop: 5;
+        --lineclamp-tv: 5;
+        --lineclamp-mobile: 5;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 16.66%; }
+        .itemsContainer > .squareCard   { width: 14.28%; }
+        .itemsContainer > .backdropCard { width: 25% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+        .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+        .itemsContainer > .overflowBackdropCard { width: 25%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 25%; }
+            .itemsContainer > .overflowSquareCard   { width: 25%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 20%; }
+        .dialogContainer .squareCard   { width: 20%; }
+        .dialogContainer .backdropCard { width: 20%; }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 20%; }
+        .itemsContainer > .squareCard   { width: 16.66%; }
+        .itemsContainer > .backdropCard { width: 25%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+        .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+        .itemsContainer > .overflowBackdropCard { width: 25%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 25%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 20%; }
+            .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 20%; }
+        .dialogContainer .squareCard   { width: 16.66%; }
+        .dialogContainer .backdropCard { width: 25%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 16.66%; }
+        .itemsContainer > .squareCard   { width: 16.66%; }
+        .itemsContainer > .backdropCard { width: 20%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+        .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+        .itemsContainer > .overflowBackdropCard { width: 20% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 20%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 16.66%; }
+        .dialogContainer .squareCard   { width: 16.66%; }
+        .dialogContainer .backdropCard { width: 20%; }
+    }
+}
+@media(min-width: 100em) {
+
+    :root {
+        --person-card-size-desktop: 10;
+        --person-card-size-tv:      12.5;
+        --person-card-size-mobile:  10;
+
+        --lineclamp-desktop: 6;
+        --lineclamp-tv: 5;
+        --lineclamp-mobile: 6;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 14.28%; }
+        .itemsContainer > .squareCard   { width: 12.5%; }
+        .itemsContainer > .backdropCard { width: 20% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+        .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+        .itemsContainer > .overflowBackdropCard { width: 25%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 20%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 16.66%; }
+        .dialogContainer .squareCard   { width: 16.66%; }
+        .dialogContainer .backdropCard { width: 20%; }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 16.66%; }
+        .itemsContainer > .squareCard   { width: 14.28%; }
+        .itemsContainer > .backdropCard { width: 20%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+        .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+        .itemsContainer > .overflowBackdropCard { width: 25%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 25%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 33.33%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+            .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 16.66%; }
+        .dialogContainer .squareCard   { width: 14.28%; }
+        .dialogContainer .backdropCard { width: 20%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 14.28%; }
+        .itemsContainer > .squareCard   { width: 14.28%; }
+        .itemsContainer > .backdropCard { width: 16.66%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+        .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+        .itemsContainer > .overflowBackdropCard { width: 16.66% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+            .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 14.28%; }
+        .dialogContainer .squareCard   { width: 14.28%; }
+        .dialogContainer .backdropCard { width: 16.66%; }
+    }
+}
+@media(min-width: 120em) {
+
+    :root {
+        --person-card-size-desktop: 9.09;
+        --person-card-size-tv:      11.11;
+        --person-card-size-mobile:  9.09;
+
+        --lineclamp-desktop: 7;
+        --lineclamp-tv: 6;
+        --lineclamp-mobile: 7;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 12.5%; }
+        .itemsContainer > .squareCard   { width: 12.5%; }
+        .itemsContainer > .backdropCard { width: 16.66% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+        .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+        .itemsContainer > .overflowBackdropCard { width: 20%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+            .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 14.28%; }
+        .dialogContainer .squareCard   { width: 14.28%; }
+        .dialogContainer .backdropCard { width: 20% }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 14.28%; }
+        .itemsContainer > .squareCard   { width: 12.5%; }
+        .itemsContainer > .backdropCard { width: 20%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+        .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+        .itemsContainer > .overflowBackdropCard { width: 20%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 20%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+            .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 14.28%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 20%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 12.5%; }
+        .itemsContainer > .squareCard   { width: 12.5%; }
+        .itemsContainer > .backdropCard { width: 16.66%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+        .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+        .itemsContainer > .overflowBackdropCard { width: 14.28% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+            .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 14.28%; }
+        .dialogContainer .squareCard   { width: 14.28%; }
+        .dialogContainer .backdropCard { width: 14.28%; }
+    }
+}
+@media(min-width: 135em) {
+
+    :root {
+        --person-card-size-desktop: 8.33;
+        --person-card-size-tv:      10;
+        --person-card-size-mobile:  8.33;
+
+        --lineclamp-desktop: 7;
+        --lineclamp-tv: 7;
+        --lineclamp-mobile: 7;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 11.11%; }
+        .itemsContainer > .squareCard   { width: 11.11%; }
+        .itemsContainer > .backdropCard { width: 16.66% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+        .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+        .itemsContainer > .overflowBackdropCard { width: 20%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+            .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 14.28%; }
+        .dialogContainer .squareCard   { width: 14.28%; }
+        .dialogContainer .backdropCard { width: 16.66% }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 14.28%; }
+        .itemsContainer > .squareCard   { width: 12.5%; }
+        .itemsContainer > .backdropCard { width: 16.66%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+        .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+        .itemsContainer > .overflowBackdropCard { width: 20%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 20%; }
+            .itemsContainer > .overflowSquareCard   { width: 20%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+            .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+            .itemsContainer > .overflowBackdropCard { width: 25%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 14.28%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 20%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 11.11%; }
+        .itemsContainer > .squareCard   { width: 11.11%; }
+        .itemsContainer > .backdropCard { width: 14.28%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+        .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+        .itemsContainer > .overflowBackdropCard { width: 14.28% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+            .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 14.28%; }
+        .dialogContainer .squareCard   { width: 14.28%; }
+        .dialogContainer .backdropCard { width: 14.28%; }
+    }
+}
+@media(min-width: 150em) {
+
+    :root {
+        --person-card-size-desktop: 7.69;
+        --person-card-size-tv: 9.09;
+        --person-card-size-mobile: 7.69;
+
+        --lineclamp-desktop: 7;
+        --lineclamp-tv: 7;
+        --lineclamp-mobile: 7;
+    }
+    
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 10%; }
+        .itemsContainer > .squareCard   { width: 10%; }
+        .itemsContainer > .backdropCard { width: 14.28% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+        .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+        .itemsContainer > .overflowBackdropCard { width: 20%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+            .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 16.66% }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 12.5%; }
+        .itemsContainer > .squareCard   { width: 11.11%; }
+        .itemsContainer > .backdropCard { width: 14.28%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+        .itemsContainer > .overflowSquareCard   { width: 10%; }
+        .itemsContainer > .overflowBackdropCard { width: 16.66%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 16.66%; }
+            .itemsContainer > .overflowSquareCard   { width: 16.66%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+            .itemsContainer > .overflowSquareCard   { width: 9.09%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 11.11%; }
+        .dialogContainer .backdropCard { width: 16.66%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 10%; }
+        .itemsContainer > .squareCard   { width: 10%; }
+        .itemsContainer > .backdropCard { width: 12.5%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+        .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+        .itemsContainer > .overflowBackdropCard { width: 12.5% }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+            .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 14.28%; }
+    }
+}
+@media(min-width: 175em) {
+
+    :root {
+        --person-card-size-desktop: 7.14;
+        --person-card-size-tv: 8.33;
+        --person-card-size-mobile: 7.14;
+
+        --lineclamp-desktop: 7;
+        --lineclamp-tv: 7;
+        --lineclamp-mobile: 9;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 9.09%; }
+        .itemsContainer > .squareCard   { width: 9.09%; }
+        .itemsContainer > .backdropCard { width: 12.5% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+        .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+        .itemsContainer > .overflowBackdropCard { width: 20%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+            .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+            .itemsContainer > .overflowBackdropCard { width: 16.66%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 14.28%; }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 11.11%; }
+        .itemsContainer > .squareCard   { width: 10%; }
+        .itemsContainer > .backdropCard { width: 12.5%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+        .itemsContainer > .overflowSquareCard   { width: 10%; }
+        .itemsContainer > .overflowBackdropCard { width: 14.28%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+            .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+            .itemsContainer > .overflowBackdropCard { width: 16.66%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+            .itemsContainer > .overflowSquareCard   { width: 8.33%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 11.11%; }
+        .dialogContainer .backdropCard { width: 16.66%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 10%; }
+        .itemsContainer > .squareCard   { width: 10%; }
+        .itemsContainer > .backdropCard { width: 11.11%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+        .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+        .itemsContainer > .overflowBackdropCard { width: 11.11%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+            .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 14.28%; }
+    }
+}
+@media(min-width: 200em) {
+
+    :root {
+        --person-card-size-desktop: 6.66;
+        --person-card-size-tv: 7.69;
+        --person-card-size-mobile: 6.66;
+
+        --lineclamp-desktop: 7;
+        --lineclamp-tv: 10;
+        --lineclamp-mobile: 9;
+    }
+
+    .layout-desktop {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 8.33%; }
+        .itemsContainer > .squareCard   { width: 8.33%; }
+        .itemsContainer > .backdropCard { width: 11.11% }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+        .itemsContainer > .overflowSquareCard   { width: 10%; }
+        .itemsContainer > .overflowBackdropCard { width: 16.66%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 12.5%; }
+            .itemsContainer > .overflowSquareCard   { width: 12.5%; }
+            .itemsContainer > .overflowBackdropCard { width: 16.66%; }
+        }
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 12.5%; }
+    }
+
+    .layout-tv {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 10%; }
+        .itemsContainer > .squareCard   { width: 9.09%; }
+        .itemsContainer > .backdropCard { width: 12.5%; }
+
+        /* Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+        .itemsContainer > .overflowSquareCard   { width: 10%; }
+        .itemsContainer > .overflowBackdropCard { width: 12.5%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 14.28%; }
+            .itemsContainer > .overflowSquareCard   { width: 14.28%; }
+            .itemsContainer > .overflowBackdropCard { width: 16.66%; }
+        } 
+
+        /* Overflow Cards in SecondaryContainer */
+        .detailPageSecondaryContainer {
+            .itemsContainer > .overflowPortraitCard { width: 10%; }
+            .itemsContainer > .overflowSquareCard   { width: 8.33%; }
+            .itemsContainer > .overflowBackdropCard { width: 16.66%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 11.11%; }
+        .dialogContainer .backdropCard { width: 16.66%; }
+    }
+
+    .layout-mobile {
+
+        /* Default Cards */
+        .itemsContainer > .portraitCard { width: 10%; }
+        .itemsContainer > .squareCard   { width: 10%; }
+        .itemsContainer > .backdropCard { width: 11.11%; }
+
+        /* Default Overflow Cards */
+        .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+        .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+        .itemsContainer > .overflowBackdropCard { width: 11.11%; }
+
+        /* Overflow Cards in PrimaryContainer without a NextUp Section */
+        .detailPagePrimaryContainer:has(.nextUpSection.hide) {
+            .itemsContainer > .overflowPortraitCard { width: 11.11%; }
+            .itemsContainer > .overflowSquareCard   { width: 11.11%; }
+            .itemsContainer > .overflowBackdropCard { width: 20%; }
+        } 
+
+        /* Image Search Cards */
+        .dialogContainer .portraitCard { width: 12.5%; }
+        .dialogContainer .squareCard   { width: 12.5%; }
+        .dialogContainer .backdropCard { width: 14.28%; }
+    }
+}
+
+/*
+────────────────────────────────────────────────────────────────────────────
+   Apply calculated and fixed sizes
+──────────────────────────────────────────────────────────────────────────── */
+
+.layout-desktop {
+
+    /* Person Cards */
+    .itemsContainer > .overflowPortraitCard.personCard { width: calc(var(--person-card-size-desktop) * 1%); }
+    .itemsContainer > .overflowPortraitCard.personCard .cardScalable { 
+        height: calc(var(--person-card-size-desktop) * 1vw);
+        width: calc(var(--person-card-size-desktop) * 1vw - 33%);
+    }
+
+    /* NextUp Card */
+    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard { width: 50% !important; }
+
+    /* Line Clamping*/
+    .listItem-overview { line-clamp: var(--lineclamp-desktop); -webkit-line-clamp: var(--lineclamp-desktop); }
+}
+.layout-tv {
+
+    /* Person Cards */
+    .itemsContainer > .overflowPortraitCard.personCard { width: calc(var(--person-card-size-tv) * 1%); }
+    .itemsContainer > .overflowPortraitCard.personCard .cardScalable { 
+        height: calc(var(--person-card-size-tv) * 1vw);
+        width: calc(var(--person-card-size-tv) * 1vw - 33%);
+    }
+
+    /* NextUp Card */
+    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard { width: 38% !important; }
+
+    /* Line Clamping*/
+    .listItem-overview { line-clamp: var(--lineclamp-tv); -webkit-line-clamp: var(--lineclamp-tv); }
+}
+.layout-mobile {
+
+    /* Person Cards */
+    .itemsContainer > .overflowPortraitCard.personCard {width: calc(var(--person-card-size-mobile) * 1%);justify-items: center;}
+    .itemsContainer > .overflowPortraitCard.personCard .cardScalable {
+        height: calc(var(--person-card-size-mobile) * 1vw);
+        width: calc(var(--person-card-size-mobile) * 1vw - 25%);
+    }
+
+    /* NextUp Card */
+    .detailPagePrimaryContent .nextUpSection .itemsContainer > .overflowBackdropCard {width: 60% !important;}
+
+    /* Line Clamping*/
+    .listItem-overview { line-clamp: var(--lineclamp-mobile); -webkit-line-clamp: var(--lineclamp-mobile); }
+} 
