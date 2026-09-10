@@ -311,22 +311,22 @@
 /* Header Buttons */
 .MuiButtonBase-root { border-radius: var(--rounding-system); }
 .MuiButtonBase-root:hover {
-    background-color: var(--bgdark20);
+    background-color: transparent;
     color: var(--accent100);
 }
 .css-19rbmc7 {
     color: var(--accent100);
 }
 
-/* Save Button */
+/* Buttons */
 .MuiButton-colorPrimary {
     background-color: transparent;
-    border: var(--buttonborder);
     color: var(--textcolor);
 }
-.MuiButton-colorPrimary:hover {
-    border-color: var(--accent60);
-}
+
+/* Save Button */
+.userPreferencesPage .MuiButton-colorPrimary       { border: var(--buttonborder); }
+.userPreferencesPage .MuiButton-colorPrimary:hover { border-color: var(--accent60); }
 
 
 /* Chip / Tag */
