@@ -121,7 +121,6 @@
 .mdl-radio__button:hover + .mdl-radio__circles .mdl-radio__outer-circle,
 .mdl-radio__button:hover + .mdl-radio__circles + .mdl-radio__label,
 .radio-label-block:hover,
-.Mui-selected,
 .navMenuOption-selected,
 .radio-label-block:hover,
 .overview-expand:hover { color: var(--accent80) !important; }

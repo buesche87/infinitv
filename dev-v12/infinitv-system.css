@@ -322,8 +322,26 @@
     color: var(--accent100);
 }
 
+/* Save Button */
+.MuiButton-colorPrimary {
+    background-color: transparent;
+    border: var(--buttonborder);
+    color: var(--textcolor);
+}
+.MuiButton-colorPrimary:hover {
+    border-color: var(--accent60);
+}
+
+
+/* Chip / Tag */
+.MuiChip-root {
+    color: var(--accent100);
+    border-radius: var(--rounding-system);
+    background-color: var(--bgwhite10);
+}
+
 /* Menu List */
-.MuiMenu-paper {
+.MuiPaper-root {
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
     backdrop-filter: var(--blur);
     border-radius: var(--rounding-system);
@@ -336,6 +354,14 @@
 /* Select Menu List */
 .MuiMenu-paper:has(ul[role="listbox"]) .MuiMenuItem-root {
     justify-content: center;
+}
+.MuiMenu-paper:has(ul[role="listbox"]) .MuiMenuItem-root:hover {
+    background-color: var(--bgwhite10) !important;
+    color: var(--accent100) !important;
+}
+.Mui-selected {
+    background-color: transparent !important;
+    color: var(--accent100) !important;
 }
 
 

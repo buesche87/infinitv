@@ -160,7 +160,7 @@ h2.username {
     #displayPreferencesPage form,
     #homeScreenPreferencesPage form,
     #languagePreferencesPage form,
-    #controlsPreferencesPage form           { padding: 1em 4em; }
+    #controlsPreferencesPage form           { padding: 1em 4em 2em 4em; }
 
     /* Save & Cancel Button */
     .userPreferencesPage .btnSave,
