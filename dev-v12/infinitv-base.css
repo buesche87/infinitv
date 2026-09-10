@@ -159,9 +159,7 @@
 .upNextDialog-countdownText              { color: var(--accent100) !important; }
 
 /* Color: White */
-.layout-mobile .paper-icon-button-light.headerBackButton:focus,
-.paper-icon-button-light.emby-scrollbuttons-button:focus,
-.layout-mobile .overview-expand:focus    { color: white !important; }
+.paper-icon-button-light.emby-scrollbuttons-button:focus    { color: white !important; }
 
 /* Font Weight */
 .inputLabelFocused,
@@ -194,8 +192,7 @@
 
 /* Background: --itemopacity */
 .cardFooter:not(.visualCardBox-cardFooter),
-.layout-desktop .detailRibbon,
-.layout-mobile .detailRibbon                 { background: rgba(0, 0, 0, var(--itemopacity)); }
+.layout-desktop .detailRibbon                { background: rgba(0, 0, 0, var(--itemopacity)); }
 
 /* Background: Dark 60%  */
 .btnAddServer,
@@ -252,7 +249,6 @@
 .emby-textarea:not(:disabled):hover,
 .listItem-largeImage:hover,
 .listItem-largeImage:focus,
-.layout-desktop .listItem-focusscale:hover,
 .listItemImageButton:hover,
 .emby-button.block:hover,
 .emby-button.block:focus,
@@ -291,8 +287,7 @@
 .sliderMarker.watched                            { background-color: var(--accent100) !important; }
 
 /* Background Color: Transparent */
-.layout-tv .itemsContainer .card .cardBox,
-.layout-desktop .itemsContainer .card .cardBox,
+.itemsContainer .card .cardBox,
 .listTextButton-autohide:focus,
 .actionSheetMenuItem:hover,
 .actionSheetMenuItem:focus,
@@ -331,6 +326,7 @@
 
 /* Borders: Grey ─────────────────────────────────────────────────────────── */
 .layout-desktop .formDialog,
+.layout-desktop .emby-select-withcolor:focus,
 .button-container button,
 .detailButton-content button,
 .checkboxOutline,
@@ -338,7 +334,6 @@
 .emby-input,
 .emby-textarea,
 .emby-select-withcolor,
-.layout-desktop .emby-select-withcolor:focus,
 .imagePlaceHolder,
 .itemSelectionPanel,
 .listItem-focusscale,

@@ -25,17 +25,18 @@
 
     #slides-container          {height: 72.5vh;position: absolute;top: 0;}
     @media only screen and (max-height: 767px) and (orientation: landscape) {
-        #slides-container      { height: var(--slideheight); }
+        #slides-container      { height: 78vh; }
     }
 
     /* Home Page Slides */
     .slide {
         background: rgba(0, 0, 0, 1);
-        height: var(--slideheight);
+        height: 78vh;
     }
     .video-container {
         right: 25%;
-        height: var(--slideheight);
+        height: 80vh;
+        margin-top: -2vh;
     }
     .video-player {
         position: absolute;
