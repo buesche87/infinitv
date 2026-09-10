@@ -312,12 +312,32 @@
     backdrop-filter: var(--blur) !important;
 }
 
+/* Header Buttons */
 .MuiButtonBase-root { border-radius: var(--rounding-system); }
-
 .MuiButtonBase-root:hover {
     background-color: var(--bgdark20);
     color: var(--accent100);
 }
+.css-19rbmc7 {
+    color: var(--accent100);
+}
+
+/* Menu List */
+.MuiMenu-paper {
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+    backdrop-filter: var(--blur);
+    border-radius: var(--rounding-system);
+}
+.MuiDivider-root {
+    margin: .2em 0 !important;
+    background: rgba(0, 0, 0, var(--headeropacity)) !important;
+}
+
+/* Select Menu List */
+.MuiMenu-paper:has(ul[role="listbox"]) .MuiMenuItem-root {
+    justify-content: center;
+}
+
 
 
 /*
@@ -640,6 +660,14 @@
 ────────────────────────────────────────────────────────────────────────────
    Inputs and Labels
 ──────────────────────────────────────────────────────────────────────────── */
+
+.MuiInputBase-root {
+    background-color: var(--bgdark80);
+}
+.MuiInputBase-root:hover {
+    background-color: var(--bgwhite10);
+}
+
 
 /* Input */
 .emby-input { padding: .5em .6em; }
