@@ -18,6 +18,8 @@
 
 > [!CAUTION]
 > Not yet compatible with the new `Auto` display mode from Jellyfin v12.0. Use `TV` or one of the `Legacy` display modes
+>
+> You can have a look at the progress here: @import url('https://buesche87.github.io/infinitv/infinitv-dev-12.css'); 
 
 ## Key features
 
