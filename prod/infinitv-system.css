@@ -11,7 +11,7 @@
 .progressring-bg     { display: none; }
 .progressring-spiner { border-width: .35em; }
 
-/* Toast: Center */
+/* Toast  */
 .toastContainer {
     left: 50% !important;
     right: auto !important;
@@ -20,11 +20,14 @@
     bottom: .25em;
 }
 
+.toast { background-color: #000 !important; }
+
 /*
 ────────────────────────────────────────────────────────────────────────────
    Dialogs
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
+
+/* TODO > Split Dialogs & Action sheets */
 
 /* Background: Black 85%  */
 .dialog {
@@ -32,8 +35,7 @@
     backdrop-filter: var(--blur);
 }
 
-.toast { background-color: #000 !important; }
-
+/* Action Sheets */
 .layout-desktop,
 .layout-mobile {
 
@@ -61,8 +63,7 @@
     .actionSheetItemText { font-size: 1.1em; }
 }
 
-/* Layout Desktop - Dialogs
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
 
     /* Style */
@@ -103,9 +104,7 @@
     :has(#videoOsdPage:not(.hide)) .actionSheet                                   { transform: translateY(-5em) !important; }
 }
 
-
-/* Layout Mobile - Dialogs
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
     .actionSheet,
@@ -167,8 +166,7 @@
     :has(#videoOsdPage:not(.hide)) .actionSheet                     { transform: translateY(-5em) !important; }
 }
 
-/* Layout TV - Dialogs
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout TV ─────────────────────────────────────────────────────────────── */
 .layout-tv {
 
     /* Form Dialogs */
@@ -206,11 +204,11 @@
     .listItem-indexnumberleft     { margin: 1em; }
     .listItem:focus .secondary    { color: hsla(0, 0%, 100%, .8) !important; }
 }
+
 /*
 ────────────────────────────────────────────────────────────────────────────
-   Media Infos
-────────────────────────────────────────────────────────────────────────────
-*/
+   Media Info Dialogs
+──────────────────────────────────────────────────────────────────────────── */
 
 .mediaInfoLabel      { color: hsla(0, 0%, 100%, .8); font-weight: 400; }
 .mediaInfoAttribute  { color: #fff; font-weight: 600; }
@@ -219,8 +217,7 @@
 /* Collapsible Menu */
 .collapseContent     { padding-top: 0em; padding-bottom: 0em; }
 
-/* Layout TV - Media Infos
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout TV ─────────────────────────────────────────────────────────────── */
 .layout-tv {
     /* Media Infos */
     .formDialog:has(.dialog-fullscreen)     { align-content: normal; }
@@ -247,11 +244,11 @@
     }
     .dialog-fullscreen .mediaInfoContent    { width: 100%; font-size: 80%; }
 }
+
 /*
 ────────────────────────────────────────────────────────────────────────────
    Menu Drawer
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Main Drawer */
 .mainDrawer {
@@ -274,13 +271,17 @@
     .mainDrawer.drawer-open { backdrop-filter: var(--blur); }
 }
 
+.layout-desktop {
+    .mainDrawer-scrollContainer {
+        padding-bottom: 2vh;
+    }
+}
 
 /* Menu Options */
 .navMenuOption     { border: solid 1px #0000 !important; }
 .navMenuOptionText { margin-top: 0; }
 
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
     .mainDrawer     { margin-top: 4em; }
 
@@ -296,14 +297,16 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
    Scrollbar
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Scrollbar Style */
 * { scrollbar-color: var(--accent60) rgba(0, 0, 0, .8) !important; }
 
 /* always show in desktop layout unless playing a video */
-.layout-desktop:not(:has(#videoOsdPage)) { scrollbar-width: thin; overflow-y: scroll; }
+.layout-desktop:not(:has(#videoOsdPage)) {
+    scrollbar-width: thin;
+    overflow-y: scroll !important;
+}
 
 /* don't show scrollbar */
 #loginPage,
@@ -313,8 +316,7 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
    Header & Section Tabs
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Shorten transition time */
 .skinHeader,
@@ -330,8 +332,7 @@
 .pageTitle { font-weight: bold }
 .currentTimeText { font-size: 110% !important; font-weight: bold }
 
-/* Layout Desktop
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Desktop ────────────────────────────────────────────────────────── */
 .layout-desktop {
     .skinHeader             { padding: .3em !important; height: 3.3em }
     .headerTop              { padding: .3em !important; }
@@ -350,8 +351,7 @@
     }
 }
 
-/* Layout TV
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout TV ────────────────────────────────────────────────────────────── */
 .layout-tv {
     .skinHeader {
         position: fixed !important;
@@ -364,7 +364,7 @@
     .headerTabs.sectionTabs {
         font-size: 110% !important;
         margin-top: -2.7em !important;
-        width: 42vw;
+        width: 50vw;
         min-width: 26vw;
         scrollbar-width: none;
         scroll-behavior: smooth !important;
@@ -384,8 +384,7 @@
     }
 }
 
-/* Layout Mobile
-──────────────────────────────────────────────────────────────────────────── */
+/* Layout Mobile ────────────────────────────────────────────────────────── */
 .layout-mobile {
     .skinHeader { background: rgba(0, 0, 0, 1) !important }
 
@@ -408,8 +407,7 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
    Buttons
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Buttons: Sign In, Save, Cancel...
 ──────────────────────────────────────────────────────────────────────────── */
@@ -417,6 +415,8 @@
 .emby-button.block,
 .button-submit,
 .raised { margin: 0.5em 0; transform: none !important; }
+
+.button-submit { color: var(--textcolor); }
 
 /* Buttons: Header Buttons
 ──────────────────────────────────────────────────────────────────────────── */
@@ -584,8 +584,7 @@
 /*
 ────────────────────────────────────────────────────────────────────────────
    Inputs and Labels
-────────────────────────────────────────────────────────────────────────────
-*/
+──────────────────────────────────────────────────────────────────────────── */
 
 /* Input */
 .emby-input { padding: .5em .6em; }

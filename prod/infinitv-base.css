@@ -56,6 +56,9 @@
     /* Card Smoothening */
     --insettop: inset -1px 3px 14px 0px rgb(255 255 255 / 10%);
     --insetbottom: inset -3px -3px 14px 0px rgb(0 0 0 / 40%);
+
+    /* New for v12.0 */
+    --textcolor: rgba(255, 255, 255, 0.7);
 }
 
 /*
@@ -102,6 +105,9 @@
 /* TRY: colorize navMenuOption "Dashboard" */
 .navMenuOption[data-itemid*="dashboard"] { color: hsla(var(--accent-h),85%,85%, 0.75); }
 
+/* Color: Accent 60% */
+.videoIndicator { color: var(--accent60) !important; }
+
 /* Color: Accent 80% */
 #loginPage .cardImage,
 .button-link:hover,
@@ -116,7 +122,7 @@
 .Mui-selected,
 .navMenuOption-selected,
 .radio-label-block:hover,
-.overview-expand:hover                   { color: var(--accent80) !important; }
+.overview-expand:hover { color: var(--accent80) !important; }
 
 /* Color: Accent 100% */
 .cardOverlayButton:hover,
@@ -234,10 +240,10 @@
 .itemProgressBar,
 .paperList,
 .button-container button,
-.listItem-focusscale,
-.listItem-largeImage { background-color: var(--bgdark40) !important; }
+.listItem.listItem-largeImage { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
+.listItem.listItem-focusscale,
 .cardOverlayButton.cardOverlayFab-primary:hover,
 .checkboxOutline:not(:disabled):hover,
 .emby-input:not(:disabled):hover,
@@ -245,7 +251,6 @@
 .emby-textarea:not(:disabled):hover,
 .listItem-largeImage:hover,
 .listItem-largeImage:focus,
-.layout-desktop .listItem-focusscale:hover,
 .listItemImageButton:hover,
 .emby-button.block:hover,
 .emby-button.block:focus,
@@ -262,6 +267,7 @@
 .emby-input:focus,
 .emby-select option,
 .emby-textarea:focus,
+.listItem-focusscale:hover,
 .listItem-focusscale:focus                       { background-color: var(--bgdark80) !important; }
 
 /* ─ BG: Accent ──────────────────────────────────────────────────────── */
@@ -400,19 +406,17 @@
 
 /*
 ────────────────────────────────────────────────────────────────────────────
-    Glow, Shadows & Blur
+    Glow & Shadows
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Button Glow*/
+/* Glow*/
 .detailButton-content button:hover,
 .button-container button:hover,
 .mainDetailButtons button:hover,
 .mainDetailButtons button:focus,
-.itemsContainer > .listItem-focusscale:focus,
-.itemsContainer > .listItem-largeImage:focus,
 .upNextDialog-button:focus                         { box-shadow: var(--buttonglow) !important; }
 
-/* Box Shadows */
+/* Shadows */
 .detailImageContainer .card                        { box-shadow: var(--cardshadow) !important; }
 
 /* No Shadows / no Glow */
