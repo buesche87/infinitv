@@ -65,26 +65,21 @@
    Alphabet Picker
 ──────────────────────────────────────────────────────────────────────────── */
 
+.alphaPicker-fixed-right .MuiPaper-root {
+    border-radius: var(--rounding-system);
+    background-color: var(--bgdark80);
+}
+
 /* Alphabet Picker Buttons */
-.alphaPickerButton              { height: 1.6em; }
-
-.alphaPickerButton:hover        {
-    background: var(--accent60) !important;
-    color: white !important;
-}
-.alphaPickerButton:focus,
-.alphaPickerButton:active       {
-    transform: none !important;
-    transition: none !important;
-    background: var(--accent80) !important;
-    color: white !important;
-    font-weight: 600;
+.alphaPicker-fixed-right .MuiButtonBase-root {
+    background-color: transparent;
+    font-size: 110%;
+    padding-top: calc(0.3 * var(--jf-spacing));
+    padding-bottom: calc(0.3 * var(--jf-spacing));
+    padding-right: calc(1 * var(--jf-spacing));
+    padding-left: calc(1 * var(--jf-spacing));
 }
 
-/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
-.layout-desktop {
-    .alphaPicker    { top: 128px; bottom: auto; }
-}
 
 /*
 ────────────────────────────────────────────────────────────────────────────

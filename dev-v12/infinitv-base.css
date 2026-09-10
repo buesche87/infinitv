@@ -8,8 +8,7 @@
     /* Background Image */
     --bgImage: url("https://wallpaperaccess.com/download/purple-galaxy-439751");
 
-    /* Darkness & Opacity */
-    --bgdarkness:    0.6;  /* Background Darkness */
+    /* Darkness & Opacity */--bgdarkness:    0.6;  /* Background Darkness */
     --headeropacity: 0.7;  /* Header Opacity (Drawer included) */
     --itemopacity:   0.8;  /* Item Opacity   (Ribbon & Card-Footer for now) */
     --osdopacity:    0.5;  /* OSD Opacity    (Header + Footer) */
@@ -29,16 +28,15 @@
     /* Blur */
     --blur: blur(5.2px) saturate(1.35);
 
-    /* Glow Animation */
-    --cardglow: 0px 0px 10px 3px var(--accent80);
-    --buttonglow: 0px 0px 10px 1px var(--accent100);
-
     /* Default Accents */
     --accent100: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 1.0);
     --accent80:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.8);
     --accent60:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.6);
     --accent40:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.4);
     --accent20:  hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.2);
+
+    /* Glow Animation */
+    --cardglow: 0px 0px 10px 3px var(--accent80);--buttonglow: 0px 0px 10px 1px var(--accent100);
 
     /* Default Backgrounds */
     --bgwhite10: hsla(0, 0%, 100%, .1);
@@ -80,7 +78,6 @@
 .backgroundContainer.withBackdrop { background: rgba(0, 0, 0, var(--bgdarkness)) !important; }
 
 /* Backdrops: Only on Media Detail Page */
-
 [dir=ltr]:has(.homePage:not(.hide)) .backgroundContainer.withBackdrop,
 [dir=ltr]:not(:has(#itemDetailPage:not(.hide))) .backgroundContainer.withBackdrop {
     background:
@@ -89,6 +86,11 @@
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
+}
+
+[dir=ltr]:has(.homePage:not(.hide)) .backdropContainer,
+[dir=ltr]:not(:has(#itemDetailPage:not(.hide))) .backdropContainer {
+    display: none;
 }
 
 /* Don't fade in background picture */

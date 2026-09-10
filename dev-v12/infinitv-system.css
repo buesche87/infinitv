@@ -312,6 +312,8 @@
     backdrop-filter: var(--blur) !important;
 }
 
+.MuiButtonBase-root { border-radius: var(--rounding-system); }
+
 .MuiButtonBase-root:hover {
     background-color: var(--bgdark20);
     color: var(--accent100);

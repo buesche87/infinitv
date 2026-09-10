@@ -38,6 +38,12 @@
         max-width: 30em;
     }
 
+    @media (min-width: 100em) {
+        .detailRibbon { padding-left:35em !important; }
+        .detailImageContainer .card { left: 2em !important;  }
+        .detailPagePrimaryContent { padding-left:35em !important; }
+    }
+
     /* Detail Ribbon with media buttons */
     .detailRibbon               {height: 10em;margin-top: -10em;}
     .infoWrapper                {padding-top: 2vh;padding-bottom: 1em;}
