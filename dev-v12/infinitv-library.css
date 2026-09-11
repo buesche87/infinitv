@@ -33,17 +33,12 @@
 .layout-mobile {
 
     .libraryPage.noSecondaryNavPage                                          { padding-top: 4em !important; }
-    .libraryPage:not(.noSecondaryNavPage)                                    {/* padding-top: 7em !important; */}
-
     .libraryPage:has(.alphaPicker-fixed-right)                               {
         padding-right: 3em;
         padding-left: 1vw
-
     }
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-        .libraryPage:has(.alphaPicker-fixed-right)                               {
-            padding-right: 2em;
-        }
+    @media only screen and (max-width: 767px) and (orientation: portrait)    {
+        .libraryPage:has(.alphaPicker-fixed-right)                           { padding-right: 2em; }
     }
 
     #itemDetailPage                                                          { padding-top: 1em; }
