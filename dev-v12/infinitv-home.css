@@ -111,19 +111,20 @@
     /* ── Base ── */
     .homePage                   { padding-left: 0; padding-right: 0; }
 
-    .volume-toggle              { top: 7.5em; right: 5em; }
-    .pause-button               { top: 7.5em; right: 2em; }
+    .volume-toggle              {top: 4.5em;right: 5em;}
+    .pause-button               {top: 4.5em;right: 2em;}
 
     @media (max-width: 768px)   {
-        .pause-button           { right: 4vw; }
+        .pause-button           {right: 5vw;top: 5em;}
     }
 
-    #slides-container           { height: 100%; }
+    #slides-container           {height: 100%;position: absolute;top: 0;}
 
     .backdrop-container,
-    .slide                      { height: 90%; }
+    .slide                      {height: 90%;}
 
-    .video-container            { min-height: 90vh; }
+    .video-container            {min-height: 90vh;}
+    .logo-container             {top: 6vh;}
 
     .logo                       { max-height: 60%; }
     .info-container             { top: 40vh; }
@@ -131,7 +132,7 @@
     .plot-container             { top: 50vh; width: 80%; }
     .dots-container             { top: 59vh; }
     .button-container           { text-align: center; }
-    .homeSectionsContainer      { top: 64vh; }
+    .homeSectionsContainer      {top: 60vh;}
 
     /* ── Small height (both orientations) ── */
     @media only screen and (max-height: 767px) {
@@ -140,8 +141,8 @@
 
     /* ── Small Portrait ── */
     @media only screen and (max-height: 767px) and (orientation: portrait) {
-        .pause-button           { right: 1.5em; }
-        .logo-container         { top: 30vh; }
+        .pause-button           {right: 1.5em;top: 4em;}
+        .logo-container         {top: 27vh;}
         .info-container         { top: 45vh; }
         .genre                  { top: 49vh; }
         .dots-container         { top: 54.5vh; background-color: transparent; }
@@ -149,51 +150,76 @@
         .play-button,
         .detail-button,
         .favorite-button        { margin: 0 .5em !important; }
-        .homeSectionsContainer  { top: 57vh; }
+        .homeSectionsContainer  {top: 46vh;}
     }
 
     /* ── Narrow Portrait (max-width) ── */
     @media only screen and (max-width: 767px) and (orientation: portrait) {
-        .info-container         { top: calc(50% + 10vh); }
-        .genre                  { top: calc(50% + 13.25vh); }
-        .dots-container         { top: calc(50% + 13vh); }
+        .info-container         {top: calc(50% + 3vh);}
+        .genre                  {top: calc(50% + 7.25vh);}
+        .dots-container         {top: calc(50% + 8vh);}
         .button-container       {
-            top: calc(50% + 21vh);
-            transform: translateX(-50%) scale(0.9);
+            top: calc(50% + 16vh);
+            transform: translateX(-50%) scale(0.85);
         }
         .misc-info              { gap: 7px; }
+        .logo-container         {top: 30%;}
+        .homeSectionsContainer  {top: 58vh;}
     }
 
     /* ── Small Landscape ── */
     @media only screen and (max-height: 767px) and (orientation: landscape) {
         .slide,
-        .backdrop-container     { height: 100%; max-height: 90vh; }
-        .info-container         { top: 39vh; }
-        .genre                  { top: 46vh; }
-        .dots-container         { top: 73vh; right: 0; transform: scale(0.8); background-color: transparent; }
-        .plot-container         { top: 54vh; font-size: 90%; }
-        .button-container       { top: 63vh; left: 3vw; }
-        .homeSectionsContainer  { top: 61vh }
+        .backdrop-container     {height: 100%; max-height: 90vh;}
+        .backdrop.with-video    { height: 75vh; }
+        .info-container         {top: 39vh;}
+        .genre                  {top: 46vh;}
+        .dots-container         {top: 69vh;right: 0;transform: scale(0.8);background-color: transparent;}
+        .plot-container         {top: 53vh;font-size: 90%;}
+        .button-container       {top: 65vh;left: 2vw;}
+        .homeSectionsContainer  {top: 62vh;}
+        .logo-container         {top: 12%;}
     }
 
     /* ── Large ≥50em ── */
     @media only screen and (min-height: 767px) and (min-width: 50em) {
         .slide,
         .backdrop-container     { max-height: 90vh; }
+        .backdrop.with-video    { height: 75vh; }
+        .info-container         {top: 39vh;}
+        .genre                  {top: 46vh;}
+        .dots-container         {top: 69vh;right: 0;transform: scale(0.8);background-color: transparent;}
+        .plot-container         {top: 53vh;font-size: 90%;}
         .button-container       { top: 57vh; }
-        .homeSectionsContainer  { top: 57vh; }
+        .homeSectionsContainer  {top: 48vh;}
+        .logo-container         {top: 12%;}
     }
 
     @media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: portrait) {
-        .slide                  { height: 72vh; }
-        .backdrop-container     { height: 100%; }
+        .slide,
+        .backdrop-container     {height: 72vh;}
+        .backdrop.with-video    { height: 75vh; }
+        .video-container        { height: 75vh; }
+        .info-container         {top: 39vh;}
+        .genre                  {top: 46vh;}
+        .dots-container         {top: 63vh;right: 0;transform: scale(0.8);background-color: transparent;}
+        .plot-container         {top: 53vh;font-size: 90%;}
         .button-container       { left: 3vw; }
+        .homeSectionsContainer  {top: 55vh;}
+        .logo-container         {top: 12%;}
     }
 
     @media only screen and (min-height: 767px) and (min-width: 50em) and (orientation: landscape) {
-        .slide                  { height: 81%; }
+        .slide,
         .backdrop-container     { height: 72vh; }
+        .info-container         {top: 41vh;}
+        .genre                  {top: 45vh;}
+        .dots-container         {top: 69vh;right: 0;transform: scale(0.8);background-color: transparent;}
+        .plot-container         {top: 50vh;font-size: 90%;}
         .button-container       { left: 3.5%; }
+        .homeSectionsContainer  {top: 48vh;}
+        .logo-container         { top: 5em; }
+
     }
 
     /* ── Large ≥100em ── */

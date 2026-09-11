@@ -331,8 +331,6 @@
 }
 .MuiButtonGroup-grouped:hover { border-color: var(--accent60) !important; }
 
-
-
 /* Save Button */
 .userPreferencesPage .MuiButton-colorPrimary       { border: var(--buttonborder); }
 .userPreferencesPage .MuiButton-colorPrimary:hover { border-color: var(--accent60); }
@@ -352,9 +350,7 @@ div.MuiPaper-root {
     border-radius: var(--rounding-system);
 }
 
-div.MuiPaper-root .MuiButtonBase-root {
-    border-radius: 0;
-}
+div.MuiPaper-root .MuiButtonBase-root { border-radius: 0; }
 .MuiDivider-root {
     margin: .2em 0 !important;
     background: rgba(0, 0, 0, var(--headeropacity)) !important;
@@ -395,55 +391,14 @@ div.MuiPaper-root .MuiButtonBase-root {
     @media(min-height: 80em) { font-size: 140%; }
 }
 
-.Mui-checked {
-    color: var(--accent100) !important;
-}
+.Mui-checked { color: var(--accent100) !important; }
 
 /* Checkbox color on Label Hover (Settings Page) */
-.MuiFormControlLabel-root:hover .MuiButtonBase-root {
-    color: var(--accent60) !important;
-}
+.MuiFormControlLabel-root:hover .MuiButtonBase-root { color: var(--accent60) !important; }
 
+/* Drawer width */
+.MuiDrawer-paper { padding-right: 1em; }
 
-/*
-.MuiStack-root {
-
-}
-
-
-
-.MuiButton-root {
-
-}
-
-.MuiButton-icon {
-
-}
-
-
-
-.MuiBox-root {
-
-}
-
-.MuiButtonBase-root {
-
-}
-
-
-
-.MuiBadge-root {
-
-}
-
-.MuiSvgIcon-root {
-
-}
-
-.MuiBadge-badge {
-
-}
-*/
 
 /*
 ────────────────────────────────────────────────────────────────────────────
