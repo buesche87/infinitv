@@ -85,10 +85,10 @@
     .detailPageWrapperContainer     {margin-top: 1.5em !important;}
 
     /* Make backdrop space with logo smaller */
-    .itemDetailPage .itemBackdrop   { height: 37vh; }
+    .itemDetailPage .itemBackdrop   {height: 38vh;}
 
     /* Move logo to the right side */
-    .itemDetailPage .detailLogo     { right: 10vw; }
+    .itemDetailPage .detailLogo     {right: 3em;top: 1vw;}
 
     /* Increase Text Size */
     .selfBackdropPage h1.parentName { font-size: 175%; }
