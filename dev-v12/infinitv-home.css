@@ -159,12 +159,12 @@
         .genre                  {top: calc(50% + 7.25vh);}
         .dots-container         {top: calc(50% + 8vh);}
         .button-container       {
-            top: calc(50% + 16vh);
+            top: calc(50% + 18vh);
             transform: translateX(-50%) scale(0.85);
         }
         .misc-info              { gap: 7px; }
         .logo-container         {top: 30%;}
-        .homeSectionsContainer  {top: 58vh;}
+        .homeSectionsContainer  {top: 69vh;}
     }
 
     /* ── Small Landscape ── */
