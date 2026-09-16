@@ -15,39 +15,46 @@
 }
 
 :root {
-    --slideheight: 70%;
+    --slideheight: 72%;
 }
 
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
 
-    #slides-container .slide {
-        height: var(--slideheight);
+    /* Smaller Slides */
+
+    #slides-container {
+        .slide { height: 86%; }
+
+        @media (min-width: 767px) {
+            .slide { height: var(--slideheight); }
+
+            .slide-content {
+                bottom: calc(
+                    var(--slideshow-height) - var(--slideshow-content-top) +
+                     var(--slideshow-dots-reserve) - 34%
+                );
+            }
+        }
+
+        .video-container {
+            width: var(--slideheight);
+            justify-self: right;
+        }
+
+        .button-container { margin-bottom: .5em; }
+        .backdrop.with-video { width: 50%; }
+        .arrow { transform: translateY(-2em) translateX(1vw) !important; }
+        .ss-chrome { transform: translateY(-3em) translateX(-1vw); }
     }
 
-    #slides-container .slide-content {
-        bottom: calc(
-        var(--slideshow-height) - var(--slideshow-content-top) +
-            var(--slideshow-dots-reserve) - 40%
+    /*
+    .homeSectionsContainer {
+      margin-top: calc(
+        var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) + 8vh
       );
-      max-height: calc(
-          var(--slideshow-rows-top, var(--slideshow-content-top)) - 8vh
-      );
-    }
-
-
-    #slides-container .video-container {
-        width: var(--slideheight);
-        justify-self: right;
-    }
-
-
-    #slides-container .button-container { margin-bottom: .5em; }
-
-    .backdrop.with-video {
-        width: 50%;
-    }
+    } */
 
     /* ── Base ──
     #slides-container {
@@ -126,8 +133,6 @@
     @media only screen and (min-height: 767px) and (orientation: landscape) {
         .button-container      { top: 57vh; margin-left: 0em; }
     }*/
-
-
 
 }
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
@@ -269,6 +274,10 @@
 
     @media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: portrait) {
         .slide                  { height: 75%; }
+    }
+
+    @media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) {
+        .slide                  { height: 72vh; }
     }
 
     @media only screen and (min-height: 767px) and (min-width: 100em) and (orientation: landscape) {
