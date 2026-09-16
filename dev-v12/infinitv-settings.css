@@ -196,7 +196,7 @@ h2.username {
     #myPreferencesMenuPage .sectionTitle    { text-align: center; }
 
     /* User Profile */
-    #userProfilePage .padded-left           { padding: 3em 4em; height: 26em; }
+    #userProfilePage .padded-left           {padding: 3em 4em;}
 
     /* Section Titles */
     .settingsContainer .sectionTitle,
