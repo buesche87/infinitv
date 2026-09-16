@@ -408,7 +408,6 @@
 
 /* Glow*/
 .detailButton-content button:hover,
-.button-container button:hover,
 .mainDetailButtons button:hover,
 .mainDetailButtons button:focus,
 .upNextDialog-button:focus                         { box-shadow: var(--buttonglow) !important; }

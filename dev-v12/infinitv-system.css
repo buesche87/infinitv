@@ -623,10 +623,6 @@ div.MuiPaper-root .MuiButtonBase-root { border-radius: 0; }
 .detail-button,
 .favorite-button { width: 3.5em; }
 
-.play-button:focus,
-.detail-button:focus,
-.favorite-button:focus { transform: scale(1.2) !important; }
-
 .layout-mobile {
     .play-button,
     .detail-button,
