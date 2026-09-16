@@ -23,7 +23,6 @@
 .layout-desktop {
 
     /* Smaller Slides */
-
     #slides-container {
         .slide { height: 86%; }
 
@@ -48,99 +47,13 @@
         .arrow { transform: translateY(-2em) translateX(1vw) !important; }
         .ss-chrome { transform: translateY(-3em) translateX(-1vw); }
     }
-
-    /*
-    .homeSectionsContainer {
-      margin-top: calc(
-        var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) + 8vh
-      );
-    } */
-
-    /* ── Base ──
-    #slides-container {
-        height: 72.5vh;
-        position: absolute;
-        top: 0;
-    } */
-    /*
-    @media only screen and (max-height: 767px) and (orientation: landscape) {
-        #slides-container      { height: var(--slideheight); }
-    }*/
-
-    /* Home Page Slides
-    .slide {
-        background: rgba(0, 0, 0, 1);
-        height: var(--slideheight);
-    }
-    .video-container {
-        right: 25%;
-        height: var(--slideheight);
-    }
-    .video-player {
-        position: absolute;
-        right: 0;
-        left: auto;
-        height: 100%;
-    }
-
-    .backdrop.with-video       { width: 53%; }
-
-    .pause-button              { top: 5em; right: 2em; }
-    .volume-toggle             { top: 5em; right: 6em; }
-
-    .logo-container            { top: 4em; }
-    .logo                      { max-height: 60%; }
-
-    .info-container            { top: 37vh; }
-    .genre                     { top: 41vh; }
-    .plot-container            { top: 47vh; width: 80%; }
-    .dots-container            {margin-top: .5em;right: 2vw;}
-    .button-container          { top: 60vh; margin-left: 0.5em; }
-
-    .homeSectionsContainer {
-      margin-top: calc(
-        var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) + 6.5vh
-      );
-    }*/
-
-    /* ── Portrait (narrow) ──
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-        .backdrop-container    { height: 74vh; }
-        .pause-button          { right: 1em; }
-        .logo-container        { top: 33%; }
-        .info-container        { top: 40vh; }
-        .genre                 { top: 43vh; }
-        .dots-container        { top: 60%; }
-        .button-container      { top: 58vh; }
-    }*/
-
-    /* ── Small Landscape ──
-    @media only screen and (max-height: 767px) and (orientation: landscape) {
-        .slide                 { height: 80vh; }
-        .info-container        { top: 38vh; }
-        .genre                 { top: 44vh; }
-        .plot-container        { top: 50vh; }
-        .dots-container        { top: 69%; }
-        .button-container      { top: 58vh; margin-left: .25em; }
-        .homeSectionsContainer {
-          margin-top: calc(
-            var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) + 9vh
-          );
-        }
-    }*/
-
-    /* ── Large Landscape ──
-    @media only screen and (min-height: 767px) and (orientation: landscape) {
-        .button-container      { top: 57vh; margin-left: 0em; }
-    }*/
-
 }
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
 
     /* Disable Slides in TV layout because they don't work well with a remote */
     #slides-container               { display: none !important; }
-    .homeSectionsContainer          { top: 0; }
+    .homeSectionsContainer          { margin-top: 10em !important; }
 
     /* User Button focus animation when profile image is set */
     .headerUserButtonRound          { border-radius: 100em !important; }
