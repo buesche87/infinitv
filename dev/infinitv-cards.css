@@ -261,18 +261,25 @@
    Indicators & Progressbar
 ──────────────────────────────────────────────────────────────────────────── */
 
+.countIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator,
+.playedIndicator           { background: var(--bgdark80); }
+
+.countIndicator>svg,
+.fullSyncIndicator>svg,
+.mediaSourceIndicator>svg,
+.playedIndicator>svg       { fill: var(--accent100,rgba(0,0,0,.80)) }
+
+
 /* Indicator Alignment */
 .cardContent .cardIndicators,
 .mediaSourceIndicator { right: 0.5em !important; top: 0.5em !important; }
 
 /* Count & Played Indicators */
 .countIndicator,
-.mediaSourceIndicator,
-.playedIndicator,
-.videoIndicator { background: rgba(0, 0, 0, 1); }
-
-.countIndicator,
 .mediaSourceIndicator { font-weight: 600; font-size: 89%; }
+
 
 /* Missing & Unaired Indicators */
 .missingIndicator,
