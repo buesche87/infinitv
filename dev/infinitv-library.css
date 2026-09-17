@@ -7,7 +7,14 @@
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
-    .libraryPage   { padding-top: 3.9em !important }
+    .libraryPage   {padding-top: 3.9em !important;}
+    .MuiBox-root .libraryPage   {padding-top: 0 !important;}
+
+    .libraryPage:has(.alphaPicker-fixed-right) {
+        padding-top: .5em !important;
+        padding-right: 1em;
+    }
+
     #studiosTab    { padding: 2vh 2vw }
 }
 
@@ -32,7 +39,14 @@
 .layout-mobile {
 
     .libraryPage.noSecondaryNavPage                                          { padding-top: 4em !important; }
-    .libraryPage:not(.noSecondaryNavPage)                                    { padding-top: 7em !important; }
+    .libraryPage:has(.alphaPicker-fixed-right)                               {
+        padding-right: 3em;
+        padding-left: 1vw
+    }
+    @media only screen and (max-width: 767px) and (orientation: portrait)    {
+        .libraryPage:has(.alphaPicker-fixed-right)                           { padding-right: 2em; }
+    }
+
     #itemDetailPage                                                          { padding-top: 1em; }
     .itemBackdrop                                                            { margin-top: 0; }
 
@@ -66,8 +80,22 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 /* Alphabet Picker Buttons */
-.alphaPickerButton              { height: 1.6em; }
+.alphaPicker-fixed-right .MuiPaper-root {
+    border-radius: var(--rounding-system);
+    background-color: var(--bgdark80);
+    border: var(--buttonborder);
+}
+.alphaPicker-fixed-right .MuiButtonBase-root {
+    background-color: transparent;
+    font-size: 110%;
+    padding-top: calc(0.3 * var(--jf-spacing));
+    padding-bottom: calc(0.3 * var(--jf-spacing));
+    padding-right: calc(1 * var(--jf-spacing));
+    padding-left: calc(1 * var(--jf-spacing));
+}
 
+/* Alphabet Picker Buttons - Legacy */
+.alphaPickerButton              { height: 1.6em; }
 .alphaPickerButton:hover        {
     background: var(--accent60) !important;
     color: white !important;
@@ -79,11 +107,6 @@
     background: var(--accent80) !important;
     color: white !important;
     font-weight: 600;
-}
-
-/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
-.layout-desktop {
-    .alphaPicker    { top: 128px; bottom: auto; }
 }
 
 /*

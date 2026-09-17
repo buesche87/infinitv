@@ -273,7 +273,7 @@
 
     /* Content */
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
-    .detailPageSecondaryContainer { padding-top: 0em; }
+    .detailPageSecondaryContainer {padding: 0 2vw 5em 2vw;}
     .detailPagePrimaryContent     { padding: 0 1vw 0 32.45vw; }
 
     .itemDetailPage .detailVerticalSection { margin-bottom: 1em; }

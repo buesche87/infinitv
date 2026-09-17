@@ -12,17 +12,17 @@
    Nextup Cards
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* ─ Layout Desktop ──────────────────────────────────────────────────────── */
+/* ─ Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
     .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 40em; }
 }
 
-/* ─ Layout TV ───────────────────────────────────────────────────────────── */
+/* ─ TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
     .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 30em; }
 }
 
-/* ─ Layout Mobile ───────────────────────────────────────────────────────── */
+/* ─ Mobile (Legacy) ───────────────────────────────────────────────────────── */
 .layout-mobile {
     .detailPagePrimaryContent .nextUpSection .overflowBackdropCard { max-width: 38em; }
 }

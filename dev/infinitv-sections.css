@@ -69,7 +69,10 @@
     }
 
     /* Scroll Buttons in Section Titles */
-    .verticalSection > .emby-scrollbuttons { padding: 0.4em; }
+    .verticalSection > .emby-scrollbuttons {
+        padding: 0.4em;
+        right: 3vw;
+    }
 }
 
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
@@ -122,12 +125,9 @@
 .layout-desktop {
 
     /* Emby Scroller */
-    .emby-scroller                                       { padding: 0; }
-    #tvRecommendedPage .verticalSection > .emby-scroller,
-    #moviesPage .verticalSection > .emby-scroller,
-    #albumsPage .verticalSection > .emby-scroller        { margin: .5vw 1vw; }
+    .emby-scroller                                       { padding: 0 }
 
-    /* More Space to stretch Seasons Scroller */
+    More Space to stretch Seasons Scroller
     .detailPagePrimaryContent .detailSection:has(.nextUpSection:not(.hide)) #listChildrenCollapsible {
         margin-left: -31vw;
         margin-right: 0;
@@ -135,8 +135,15 @@
     }
 
     /* Items Container */
-    .itemsContainer                                      { padding: 0; }
-    #indexPage .itemsContainer,
+    .itemsContainer                                      { padding-left: 1vw }
+    #indexPage .itemsContainer                           { padding-left: 0 }
+    #favoritesTab .itemsContainer                        { padding-left: 1vw }
+    .padded-bottom-page > .itemsContainer                {padding-left: .75%;}
+
+    .alphaPicker-fixed-right ~ .itemsContainer                 {padding-right: 2em;}
+    .alphaPicker-fixed-right ~ .verticalSection .emby-scroller { margin-right: 3vw }
+
+
     #genresTab .itemsContainer,
     #items .itemsContainer                               { margin: 0; }
     #moviesPage .verticalSection > .itemsContainer,
