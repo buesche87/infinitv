@@ -43,6 +43,12 @@
     background-color: var(--bgdark20) !important;
 }
 
+.layout-desktop {
+    .homeSectionsContainer {
+        margin-top: calc(var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) - 5%);
+    }
+}
+
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
