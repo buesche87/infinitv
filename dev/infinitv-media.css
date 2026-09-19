@@ -201,8 +201,8 @@
             padding-top: 0 !important;
         }
         .itemGenres                   { display: none; }
-        #childrenContent              { padding-left: .5em;}
-        .detailPageSecondaryContainer { margin-top: .5em !important;}
+        #childrenContent              { padding-left: .5em; }
+        .detailPageSecondaryContainer { margin-top: .5em !important; }
     }
 }
 

@@ -196,8 +196,10 @@
         background: none;
         border: none;
         border-radius: var(--rounding-media);
+        backdrop-filter: none;
     }
-    .itemDetailPage .detailSection:has(.trackSelections.hide) {
+
+    .itemDetailPage:has(.trackSelections.hide) {
 
         /* Box for Sub-Elements */
         .detailSectionContent,
@@ -207,7 +209,7 @@
             border: var(--buttonborder);
         }
 
-        > div:not(.verticalSection) { padding: .5em 1.5em; margin-top: 0; }
+        .detailSection > div:not(.verticalSection) { padding: .5em 1.5em; margin-top: 0; }
 
         .detailSectionContent {
             border-bottom: none;
@@ -230,19 +232,24 @@
     }
 
     /* Page: Episode List */
-    .itemDetailPage .detailSection:has(.listItem-largeImage) {
-        .verticalSection {
+    .itemDetailPage:has(.listItem-largeImage) {
+        .detailSection,
+        #listChildrenCollapsible {
             background: none;
             border: none;
             backdrop-filter: none;
         }
+
         .detailSectionContent {
             margin-bottom: 1em !important;
             margin-top: 1em !important;
             border-bottom: var(--buttonborder) !important;
         }
+
         .verticalSection .itemsContainer { margin: 0 !important; }
         .itemDetailsGroup                { display:none; }
+        #childrenContent                 { padding-left: 0 !important; }
+        .detailPagePrimaryContainer      { margin-bottom: 0 !important; }
     }
 
     /* Page: Search */
@@ -273,7 +280,7 @@
 
     /* Content */
     .detailPagePrimaryContainer   { margin-bottom: 1em; }
-    .detailPageSecondaryContainer {padding: 0 2vw 5em 2vw;}
+    .detailPageSecondaryContainer { padding: 0 2vw 5em 2vw; }
     .detailPagePrimaryContent     { padding: 0 1vw 0 32.45vw; }
 
     .itemDetailPage .detailVerticalSection { margin-bottom: 1em; }
