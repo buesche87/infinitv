@@ -163,7 +163,7 @@
     }
 
     /* Card Container */
-    .detailImageContainer .card { margin-top: 0; }
+    .detailImageContainer .card {margin-top: 0;margin-bottom: 1em;}
 
     /* Detail Ribbon */
     [dir=ltr] .detailRibbon { padding: 1em 1.5em; margin-bottom: 1em; }
