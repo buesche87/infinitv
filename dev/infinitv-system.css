@@ -315,7 +315,7 @@
 }
 
 /* Header Buttons */
-.MuiButtonBase-root { border-radius: var(--rounding-system); }
+/* .MuiButtonBase-root { border-radius: var(--rounding-system); } */
 .MuiButtonBase-root:hover,
 .MuiButtonBase-root:focus {
     background-color: transparent;

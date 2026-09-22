@@ -4,51 +4,50 @@
 ──────────────────────────────────────────────────────────────────────────── */
 
 :root {
-  --slideshow-height: 68vh;
-  --slideshow-content-top: 65vh;
-  --slideshow-dots-reserve: max(5vh, 3rem);
-  --slideshow-bottom-fade: linear-gradient(
-    to top,
-    #fff0 2%,
-    rgb(0 0 0 / 0.5) 4%,
-    #000 4%
-  );
+    --slideshow-height: 68vh;
+    --slideshow-content-top: 65vh;
+    --slideshow-dots-reserve: max(5vh, 3rem);
+    --slideshow-bottom-fade: linear-gradient(
+        to top,
+        #fff0 2%,
+        rgb(0 0 0 / 0.5) 4%,
+        #000 4%
+    );
 
     --slideshow-video-side-fade: linear-gradient(
-    to right,
-    transparent 10%,
-    black 30%
-  );
+        to right,
+        transparent 10%,
+        black 30%
+    );
 }
 
-
-@media (max-width: 767px) and (orientation: portrait) {
-    :root.sspure-marquee, :root.sspure-plate {
-        --slideshow-height: 58vh;
-        --slideshow-content-top: 54vh;
-    }
-}
-
-#slides-container {
-    .ss-chrome { top: 4em; transform: translateX(-1vw); }
-    .arrow     { transform: translateX(1em) translateY(-1vh) !important; }
-}
-
-.slide-content .button-container button {
-    padding: 1.5em !important;
-    background-color: var(--bgdark20) !important;
-}
-
-.slide-content .button-container button:hover {
-    background-color: var(--bgdark20) !important;
-}
-
+/* ─ Layout Desktop ───────────────────────────────────────────────────────────── */
 .layout-desktop {
+    @media (max-width: 767px) and (orientation: portrait) {
+        :root.sspure-marquee, :root.sspure-plate {
+            --slideshow-height: 58vh;
+            --slideshow-content-top: 54vh;
+        }
+    }
+
+    #slides-container {
+        .ss-chrome { top: 4em; transform: translateX(-1vw); }
+        .arrow     { transform: translateX(1em) translateY(-1vh) !important; }
+    }
+
+    .slide-content .button-container button {
+        padding: 1.5em !important;
+        background-color: var(--bgdark20) !important;
+    }
+
+    .slide-content .button-container button:hover {
+        background-color: var(--bgdark20) !important;
+    }
+
     .homeSectionsContainer {
         margin-top: calc(var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) - 5%);
     }
 }
-
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
@@ -66,7 +65,7 @@
 
 
 
-/* this will die anyway,,,  */
+/* this will die anyway... */
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 

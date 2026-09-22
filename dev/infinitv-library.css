@@ -35,6 +35,12 @@
     .itemDetailPage:has(#itemBirthday:not(.hide)) .itemsContainer { margin: 0 1em; }
 }
 
+
+
+
+
+
+
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 

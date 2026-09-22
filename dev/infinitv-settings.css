@@ -22,6 +22,13 @@
         border-radius: var(--rounding-media);
         backdrop-filter: var(--blur);
     }
+
+    @media (max-width: 767px) and (orientation: portrait) {
+        .userPreferencesPage .padded-left > form {
+            border: none;
+            border-radius: 0;
+        }
+    }
 }
 
 /*
@@ -62,8 +69,8 @@
     .userPreferencesPage .listItemBodyText  { white-space: nowrap; }
 
     /* Settings Page: Box size */
-    #myPreferencesMenuPage .readOnlyContent { display: flex; max-width: 95%; }
-    #myPreferencesMenuPage > .padded-left   { padding-top: 0; padding-left: 0; }
+    /* #myPreferencesMenuPage .readOnlyContent {display: flex;max-width: 95%;} */
+    /* #myPreferencesMenuPage > .padded-left   { padding-top: 0; padding-left: 0; } */
 }
 
 .layout-desktop {
@@ -152,15 +159,29 @@ h2.username {
 
 /* ─ Layout Desktop ──────────────────────────────────────────────────────── */
 .layout-desktop {
+
     /* Content alignment */
     .userPreferencesPage                    { padding-top: 5em !important; }
+    .userPreferencesPage form               {padding: 2em 4em;/* margin-top: 1em; */}
+
+    /*
     #myPreferencesMenuPage .readOnlyContent { padding: 1em; }
     #userProfilePage .padded-left           { padding: 2em 4em; height: 28em; }
+    */
+
+    /*
     #clientSettingsPage form,
     #displayPreferencesPage form,
     #homeScreenPreferencesPage form,
     #languagePreferencesPage form,
-    #controlsPreferencesPage form           { padding: 1em 4em 2em 4em; }
+    #controlsPreferencesPage form           {padding: 1em 4em 2em 4em;}
+    */
+
+
+    @media (max-width: 767px) and (orientation: portrait) {
+        .settingsContainer                  {padding: 0 !important;}
+        .userPreferencesPage form           { padding: 2em 5% !important; }
+    }
 
     /* Save & Cancel Button */
     .userPreferencesPage .btnSave,
@@ -179,6 +200,9 @@ h2.username {
         border-bottom: var(--buttonborder);
         border-radius: 0 !important;
     }
+
+
+
 }
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
@@ -216,6 +240,11 @@ h2.username {
         border-radius: 0 !important;
     }
 }
+
+
+
+
+
 
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {

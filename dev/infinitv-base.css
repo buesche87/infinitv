@@ -214,6 +214,7 @@
 /* ─  BG Light ──────────────────────────────────────────────────────── */
 
 /* Title Background with Blur */
+.MuiTypography-h2,
 #searchPage .sectionTitle,
 #controlsPreferencesPage .sectionTitle,
 .homeScreenSettingsContainer .sectionTitle,
@@ -426,7 +427,13 @@
     Roundings
 ──────────────────────────────────────────────────────────────────────────── */
 
-/* Rounding: System */
+/* Rounding System ───────────────────────────────────────────────────────── */
+
+/* v12 */
+.MuiTypography-h2,
+.MuiButtonBase-root,
+
+/* existing (cleanup..?) */
 .checkboxOutline,
 .emby-button,
 .emby-input,
@@ -448,7 +455,7 @@
 .selectionCommandsPanel,
 .searchSuggestionsList > div { border-radius: var(--rounding-system) !important; }
 
-/* Rounding: Media */
+/* Rounding Media ───────────────────────────────────────────────────────── */
 .blurhash-canvas,
 .dialog,
 .cardBox,
