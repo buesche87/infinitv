@@ -63,21 +63,20 @@
 #homeScreenPreferencesPage .btnSave,
 #languagePreferencesPage .btnSave                           { margin-top: 2em; }
 
-.layout-desktop,
+
+.layout-desktop  {
+    /*  No text wrap */
+    .userPreferencesPage .listItemBodyText  { white-space: nowrap; }
+    #myPreferencesMenuPage .verticalSection { margin: 1em 2em; }
+}
+
 .layout-tv {
     /*  No text wrap */
     .userPreferencesPage .listItemBodyText  { white-space: nowrap; }
 
     /* Settings Page: Box size */
-    /* #myPreferencesMenuPage .readOnlyContent {display: flex;max-width: 95%;} */
-    /* #myPreferencesMenuPage > .padded-left   { padding-top: 0; padding-left: 0; } */
-}
-
-.layout-desktop {
-    #myPreferencesMenuPage .verticalSection { margin: 1em 2em; }
-}
-
-.layout-tv {
+    #myPreferencesMenuPage .readOnlyContent {display: flex;max-width: 95%;}
+    #myPreferencesMenuPage > .padded-left   { padding-top: 0; padding-left: 0; }
     #myPreferencesMenuPage .verticalSection { margin: 2em; }
     #clientSettingsPage                     { scrollbar-width: none; }
 }
@@ -183,14 +182,14 @@ h2.username {
         .userPreferencesPage form           { padding: 2em 5% !important; }
     }
 
-    /* Save & Cancel Button */
+    /* Save & Cancel Button
     .userPreferencesPage .btnSave,
     .userPreferencesPage .button-cancel     {
         margin-top: 2em;
         margin-left: -1.75em;
         width: 107%;
         margin-bottom: 1.5em;
-    }
+    } */
 
     /* Section Titles in Main Menu */
     #myPreferencesMenuPage .sectionTitle    {
@@ -199,6 +198,11 @@ h2.username {
         padding-bottom: 0.5em;
         border-bottom: var(--buttonborder);
         border-radius: 0 !important;
+    }
+
+    /* User Profile Page */
+    #userProfilePage .readOnlyContent {
+        margin-top: 2em !important;
     }
 
 
