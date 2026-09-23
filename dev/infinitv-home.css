@@ -110,13 +110,14 @@
         }
 
         .slide                     { height: 70%; }
+        .slide .gradient-overlay,
         .slide .backdrop-container { height: 85%; }
 
         .homeSectionsContainer {
             margin-top: calc(var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) + -6%);
         }
 
-        #slides-container.layout-marquee .slide-content { transform: translateY(1%); }
+        #slides-container.layout-marquee .slide-content {transform: translateY(0%);}
 
         #slides-container .button-container button { padding: 1.4em !important; }
     }

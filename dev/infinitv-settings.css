@@ -266,7 +266,7 @@ h2.username {
     .userPreferencesPage > .padded-left               {  padding-top: 0; }
     .userPreferencesPage > .padded-left > .readOnlyContent,
     .userPreferencesPage > .padded-left > form        {  width: 90%; }
-    .userPreferencesPage .settingsContainer,
+    .userPreferencesPage .settingsContainer           { padding-top: 1.5em }
     .userPreferencesPage .homeScreenSettingsContainer {
         margin-top: -1em;
         padding-top: 1em;

@@ -38,7 +38,7 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
-    .libraryPage.noSecondaryNavPage                                          { padding-top: 4em !important; }
+    /* .libraryPage.noSecondaryNavPage                                          { padding-top: 4em !important; } */
     .libraryPage:has(.alphaPicker-fixed-right)                               {
         padding-right: 3em;
         padding-left: 1vw
