@@ -72,11 +72,6 @@
 /* Layout Mobile ─────────────────────────────────────────────────────────── */
 .layout-mobile {
 
-    .homePage                   {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     #slides-container           {
         height: 100%;
         position: absolute;
@@ -86,6 +81,8 @@
     #slides-container {
 
         .slide                      { height: 80%; }
+        .slide .backdrop-container  { height: 85%; }
+
 
         /* Media Infos */
         .info-container             { top: 40vh; }
@@ -96,18 +93,20 @@
         .ss-settings-toggle,
         .pause-button,
         .volume-toggle          { top: 4em; }
-        .ss-settings-toggle     { right: 2em; }
-        .pause-button           { right: 5em; }
+        .ss-settings-toggle     { right: 1.5em; }
+        .pause-button           { right: 4.75em; }
         .volume-toggle          { right: 8em; }
 
-
+        /* Media Buttons */
         .button-container button      {
             padding: 1.4em !important;
             font-size: 120% !important;
             color: inherit;
         }
-    }
 
+        /* Content */
+        .slide-content {transform: translateY(-30%);}
+    }
 
     /* Smartphone Portrait  */
     @media (max-width: 767px)   {
@@ -132,15 +131,20 @@
         }
     }
 
-
     /* Smartphone Landscape */
     @media only screen and (max-width: 1024px) and (max-height: 767px) and (orientation: landscape) {
-        .homeSectionsContainer {
-            margin-top: calc(var(--slideshow-content-top) - var(--slideshow-page-offset, 0px) + 5.5%);
-        }
 
-        .slide-content div { margin-left: 2%}
-        .slide-content div.button-container { margin-left: 0 }
+        #slides-container {
+            .ss-settings-toggle     {right: 2%;}
+            .pause-button           {right: 6.75%;}
+            .volume-toggle          {right: 12%;}
+
+            .slide-content div { margin-left: 2%}
+            .slide-content div.button-container { margin-left: 0 }
+
+            .right-arrow {right: 2%;}
+            .left-arrow {right: 6.75%;}
+        }
     }
 }
 
