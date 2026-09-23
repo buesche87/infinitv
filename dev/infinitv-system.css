@@ -610,25 +610,6 @@ div.MuiPaper-root .MuiButtonBase-root { border-radius: 0; }
     .detailButton:focus { transform: scale(1.1) !important; }
 }
 
-/* Buttons: Slide Buttons (Desktop & Mobile)
-──────────────────────────────────────────────────────────────────────────── */
-.play-button,
-.detail-button,
-.favorite-button {
-    font-size: 120% !important;
-    color: inherit;
-    height: 3.5em;
-    margin-right: 1em !important;
-}
-.detail-button,
-.favorite-button { width: 3.5em; }
-
-.layout-mobile {
-    .play-button,
-    .detail-button,
-    .favorite-button { margin: 0 .5em !important; }
-}
-
 /* Buttons: Links acting as Buttons
 ──────────────────────────────────────────────────────────────────────────── */
 

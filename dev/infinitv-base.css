@@ -229,6 +229,8 @@
 .itemsViewSettingsContainer                      { background-color: var(--bgwhite10); backdrop-filter: var(--blur); }
 
 /* ─ BG Dark ──────────────────────────────────────────────────────── */
+.button-container button {background-color: var(--bgdark20) !important;}
+
 
 /* Background Color: Dark 40% */
 .emby-button.block,
@@ -238,7 +240,6 @@
 .checkboxOutline,
 .itemProgressBar,
 .paperList,
-.button-container button,
 .listItem.listItem-largeImage { background-color: var(--bgdark40) !important; }
 
 /* Background Color: Dark 60% */
