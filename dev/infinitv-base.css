@@ -6,9 +6,10 @@
 :root {
 
     /* Background Image */
-    --bgImage: url("https://wallpaperaccess.com/download/purple-galaxy-439751");
+    /* --bgImage: url("https://wallpaperaccess.com/download/purple-galaxy-439751"); */
 
-    /* Darkness & Opacity */--bgdarkness:    0.6;  /* Background Darkness */
+    /* Darkness & Opacity */
+    --bgdarkness:    0.6;  /* Background Darkness */
     --headeropacity: 0.7;  /* Header Opacity (Drawer included) */
     --itemopacity:   0.8;  /* Item Opacity   (Ribbon & Card-Footer for now) */
     --osdopacity:    0.5;  /* OSD Opacity    (Header + Footer) */
