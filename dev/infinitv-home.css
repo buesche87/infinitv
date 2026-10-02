@@ -62,9 +62,9 @@
         .right-arrow { right: 20px; }
         .left-arrow  { right: 64px; }
 
-        button {
-            padding: 1.5em !important;
-        }
+        button { padding: 1.5em !important; }
+
+        .dots-container { display: none; }
 
     }
 
