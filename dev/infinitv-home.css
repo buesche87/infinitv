@@ -29,26 +29,43 @@
             --slideshow-height: 58vh;
             --slideshow-content-top: 54vh;
         }
-
-
     }
+
+    #slides-container {
 
         .ss-settings-toggle,
         .pause-button,
-        .volume-toggle          { top: 4em; }
+        .volume-toggle {
+            top: 4em;
+            transform: translateX(-1em) !important;
+        }
 
+        .arrow,
+        button {
+            border-radius: var(--rounding-media);
+            background-color: var(--bgdark20) ;
+            color: #fff;
+            backdrop-filter: var(--blur) !important;
+        }
+        .arrow:hover,
+        button:hover {
+            color: var(--accent100) !important;
+            background-color: var(--bgdark20) !important;
+            border-color: var(--accent60) !important;
+        }
 
-    .slide-content .button-container button {
-        padding: 1.5em !important;
-        background-color: var(--bgdark20) !important;
-        color: inherit;
-    }
-    .slide-content .button-container button:hover {
-        background-color: var(--bgdark20) !important;
-    }
+        .arrow {
+            top: auto !important;
+            bottom: 5vh !important;
+        }
 
-    .homeSectionsContainer {
-        margin-top: calc(var(--slideshow-content-top) - var(--slideshow-page-offset, 0px));
+        .right-arrow { right: 20px; }
+        .left-arrow  { right: 64px; }
+
+        button {
+            padding: 1.5em !important;
+        }
+
     }
 
     @media (max-width: 767px) and (orientation: portrait) {
@@ -57,6 +74,8 @@
         }
     }
 }
+
+
 
 /* ─ Layout TV ───────────────────────────────────────────────────────────── */
 .layout-tv {
